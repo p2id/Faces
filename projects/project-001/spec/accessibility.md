@@ -1,0 +1,15 @@
+Targets:
+- Conform to WCAG 2.2 AA.
+- Keyboard access: all actions, menus, dialogs, and forms operable without a pointer.
+- Focus: visible focus indicator with at least 3:1 contrast against adjacent colors.
+- Color: normal text at least 4.5:1; large text at least 3:1; non-text controls at least 3:1.
+- Touch: interactive targets at least 44×44px.
+- Semantics: use native controls and one logical heading hierarchy.
+- Names: every control has a unique, programmatic accessible name.
+- Errors: identify the affected field, describe the problem, and provide correction guidance.
+- Status: expose loading, success, and error updates through an appropriate live region.
+- Motion: respect reduced-motion preferences and provide non-motion equivalents.
+- Reflow: support 320px viewport width and 200% text scaling without clipped essential content.
+- Forms: associate labels, instructions, required state, and errors programmatically.
+- Dialogs: trap focus while open, restore focus on close, and provide an explicit close control.
+- Content: do not use color, position, shape, or animation as the sole meaning carrier.
