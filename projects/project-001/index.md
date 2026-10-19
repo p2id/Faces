@@ -1,0 +1,13 @@
+# Project index
+- Project id: project-001
+- Date: 2026-10-19
+- Root: `/projects/project-001/`
+- `/design/wireframes.svg` — structural layout and rationale.
+- `/design/state-matrix.svg` — state coverage.
+- `/design/token-map.mmd` — semantic token relationships.
+- `/design/responsive.svg` — breakpoint behavior.
+- `/design/flows.mmd` — primary transition path and gates.
+- `/specimens/interface.html` — semantic specimen.
+- `/docs/audit-trail.md` — scope, decisions, and quality gates.
+- `/docs/gap-analysis.md` — known gaps and closure conditions.
+- Index rule: each artifact must retain project id, date, purpose, format, and review status.
