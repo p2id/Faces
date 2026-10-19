@@ -1,22 +1,22 @@
 flowchart TD
-  A[Entry] --> B[Orient]
-  B --> C{Required input valid?}
-  C -- No --> D[Inline guidance]
-  D --> C
-  C -- Yes --> E[Review]
-  E --> F{Confirm action}
-  F -- No --> B
-  F -- Yes --> G[Progress state]
-  G --> H{Completed?}
-  H -- No --> I[Recovery or retry]
-  I --> G
-  H -- Yes --> J[Completion summary]
-  J --> K[Next available view]
-  Q[Quality gates] --> Q1[Keyboard path]
-  Q --> Q2[Visible status]
-  Q --> Q3[Reversible action]
-  Q --> Q4[No dead ends]
-  Q1 --> A
-  Q2 --> A
-  Q3 --> A
-  Q4 --> A
+A[Entry] --> B[Orient]
+B --> C{Input valid?}
+C -- No --> D[Inline guidance]
+D --> C
+C -- Yes --> E[Review]
+E --> F{Confirm?}
+F -- No --> B
+F -- Yes --> G[Progress]
+G --> H{Complete?}
+H -- No --> I[Recovery or retry]
+I --> G
+H -- Yes --> J[Completion summary]
+J --> K[Next available view]
+Q[Quality gates] --> Q1[Keyboard path]
+Q --> Q2[Visible status]
+Q --> Q3[Reversible action]
+Q --> Q4[No dead ends]
+Q1 --> A
+Q2 --> A
+Q3 --> A
+Q4 --> A
