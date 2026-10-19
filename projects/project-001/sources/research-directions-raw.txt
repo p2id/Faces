@@ -1,0 +1,71 @@
+===PATTERNS_MD===
+Project: project-001 | Date: 2026-10-19
+
+Dominant: clear hierarchy, restrained surfaces, compact navigation, progressive disclosure, persistent orientation, and task-focused feedback.
+Emerging: adaptive density, contextual summaries, modular cards, quiet status signaling, reversible actions, and preference-aware layouts.
+Deprecated: ornamental gradients, dense control chrome, hidden critical actions, excessive modal interruption, decorative motion, and low-contrast secondary text.
+Outlier: compressed command-style layouts optimized for speed but limited discoverability.
+
+Visual DNA: neutral foundation, one restrained accent, tonal layering, crisp dividers, moderate radius, purposeful iconography, and content-led composition.
+Interactional DNA: predictable focus order, direct manipulation, progressive disclosure, immediate state feedback, reversible actions, and low-friction recovery.
+Accessibility DNA: semantic structure, visible focus, keyboard parity, strong contrast, non-color status cues, scalable text, reduced-motion support, and generous hit areas.
+Responsive DNA: fluid containers, priority-based content reduction, stacked narrow layouts, preserved primary actions, adaptive navigation, and stable reading rhythm.
+
+Candidate domains:
+1. Planning workspace — organizes priorities and related information into an adaptive overview.
+2. Learning library — supports discovery, structured reading, progress tracking, and reference retrieval.
+3. Service management — coordinates requests, statuses, records, and next actions in a transparent sequence.
+4. Resource catalog — enables browsing, comparison, filtering, and detailed inspection of reusable items.
+5. Wellness tracker — presents routines, trends, reminders, and summaries without clinical claims.
+6. Content review space — supports collecting, annotating, comparing, and approving structured material.
+
+Weighted scoring matrix, scale 1–5; weights: reusability 25%, clarity 20%, responsive fit 20%, accessibility fit 20%, visual range 15%.
+Planning workspace: 5, 5, 5, 4, 5 = 4.80
+Learning library: 5, 4, 5, 5, 4 = 4.65
+Service management: 4, 5, 4, 4, 4 = 4.20
+Resource catalog: 5, 4, 5, 4, 5 = 4.65
+Wellness tracker: 4, 4, 5, 4, 4 = 4.20
+Content review space: 4, 4, 4, 5, 4 = 4.20
+
+Selected domain: Planning workspace. Rationale: it provides the broadest reusable model for hierarchy, status, filtering, prioritization, responsive behavior, and reversible actions.
+Cycle lock: retain the selected domain, scoring weights, and core DNA for this cycle; evaluate only within the defined directions.
+Fallback rule: if clarity or responsive fit fails validation, use Learning library without changing the visual DNA or accessibility baseline.
+
+===EVIDENCE_MD===
+Evidence summary: durable product interfaces benefit from visible hierarchy, stable orientation, concise labels, predictable state changes, progressive disclosure, and task-focused feedback. Neutral tonal systems reduce visual competition, while one restrained accent supports emphasis. Responsive quality improves when secondary content collapses before primary actions and reading order remains stable. Accessibility quality improves through semantic structure, keyboard parity, visible focus, contrast, non-color status cues, scalable type, and reduced-motion support. Planning workspace ranks highest because it exercises the widest reusable set of navigation, prioritization, status, comparison, and responsive patterns.
+
+===DIRECTION_A===
+Positioning: calm command center for prioritizing information and next actions.
+Palette rationale: warm white, graphite, soft gray, and muted blue create focus without urgency.
+Type rationale: neutral sans-serif with clear numeric forms supports scanning, hierarchy, and compact metadata.
+Layout rules: use a responsive two-region frame; keep primary context persistent; group content into ordered modules; expose detail progressively.
+Motion intent: use short fades and position shifts for state changes; preserve spatial continuity; honor reduced-motion preferences.
+Avoided traps: dense control walls, competing accents, deep nesting, persistent overlays, decorative motion, and hidden critical actions.
+
+===DIRECTION_B===
+Positioning: modular overview for comparing relationships, categories, and status.
+Palette rationale: cool gray with muted teal and amber status tones provides separation without visual noise.
+Type rationale: high-legibility sans-serif with clear weight contrast distinguishes labels, values, and supporting text.
+Layout rules: use an adaptable card grid with consistent alignment; reserve wide modules for summaries; collapse secondary modules before primary content.
+Motion intent: use subtle transitions between overview and detail; animate only changed regions and status updates.
+Avoided traps: card fragmentation, equal emphasis everywhere, color-only meaning, excessive rounding, and unstable reflow.
+
+===DIRECTION_C===
+Positioning: focused sequential workspace for completing one priority at a time.
+Palette rationale: deep charcoal text on pale neutral surfaces with a restrained violet accent supports concentration and progression.
+Type rationale: reading-optimized sans-serif proportions support extended text while a compact weight scale preserves task hierarchy.
+Layout rules: use one dominant column with an optional supporting rail; keep actions near relevant content; separate stages with clear landmarks.
+Motion intent: use restrained slide and reveal transitions to explain progression; avoid auto-advancing content and preserve position on return.
+Avoided traps: tunnel navigation, hidden context, oversized hero areas, mandatory linearity, and state-dependent action movement.
+
+===DIRECTION_SELECTION===
+Chosen direction: A.
+Rationale: it offers the strongest balance of reuse, orientation, responsive behavior, accessibility, and low cognitive load for a generic product experience.
+Secondary direction: B for comparison, categorization, or status visibility.
+Guardrails: retain neutral styling, semantic hierarchy, keyboard parity, visible focus, non-color status cues, scalable type, and reduced-motion support.
+
+===CHANGELOG_ENTRY===
+Date: 2026-10-19
+Project: project-001
+Entry: Established reusable interface patterns, evidence, candidate-domain scoring, selected domain, cycle lock, fallback rule, three visual directions, and direction selection.
+Status: locked for the current design cycle.
