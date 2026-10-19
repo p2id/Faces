@@ -1,13 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 420" role="img" aria-label="Interface state matrix">
-  <rect width="960" height="420" fill="#FFFFFF"/>
-  <g font-family="sans-serif" font-size="14" fill="#17202A">
-    <text x="24" y="32" font-weight="700">State matrix</text>
-    <text x="24" y="72">Surface</text><text x="220" y="72">Default</text><text x="380" y="72">Loading</text><text x="540" y="72">Empty</text><text x="700" y="72">Error</text><text x="840" y="72">Complete</text>
-    <text x="24" y="120">Primary view</text><text x="220" y="120">Ready</text><text x="380" y="120">Placeholder</text><text x="540" y="120">Guidance</text><text x="700" y="120">Recovery</text><text x="840" y="120">Updated</text>
-    <text x="24" y="168">Form control</text><text x="220" y="168">Idle</text><text x="380" y="168">Disabled</text><text x="540" y="168">Optional</text><text x="700" y="168">Invalid</text><text x="840" y="168">Accepted</text>
-    <text x="24" y="216">List</text><text x="220" y="216">Populated</text><text x="380" y="216">Skeleton</text><text x="540" y="216">No items</text><text x="700" y="216">Unavailable</text><text x="840" y="216">Filtered</text>
-    <text x="24" y="264">Feedback</text><text x="220" y="264">Hidden</text><text x="380" y="264">Progress</text><text x="540" y="264">Instruction</text><text x="700" y="264">Actionable</text><text x="840" y="264">Dismissible</text>
-  </g>
-  <g stroke="#D9DEE7"><path d="M16 48H944M16 88H944M16 136H944M16 184H944M16 232H944M16 280H944"/><path d="M16 48V280M208 48V280M368 48V280M528 48V280M688 48V280M824 48V280M944 48V280"/></g>
-  <text x="24" y="330" font-family="sans-serif" font-size="12" fill="#667085">Coverage gate: every surface defines entry, progress, no-content, failure, and successful completion behavior.</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 330" role="img" aria-label="Generic interface state matrix">
+<rect width="900" height="330" fill="#FFF"/><g font-family="sans-serif" font-size="13" fill="#17202A">
+<text x="20" y="28" font-weight="700">State matrix</text><text x="20" y="64">Surface</text><text x="190" y="64">Default</text><text x="330" y="64">Loading</text><text x="480" y="64">Empty</text><text x="620" y="64">Error</text><text x="760" y="64">Complete</text>
+<text x="20" y="108">Primary view</text><text x="190" y="108">Ready</text><text x="330" y="108">Placeholder</text><text x="480" y="108">Guidance</text><text x="620" y="108">Recovery</text><text x="760" y="108">Updated</text>
+<text x="20" y="152">Input</text><text x="190" y="152">Idle</text><text x="330" y="152">Disabled</text><text x="480" y="152">Optional</text><text x="620" y="152">Invalid</text><text x="760" y="152">Accepted</text>
+<text x="20" y="196">List</text><text x="190" y="196">Populated</text><text x="330" y="196">Skeleton</text><text x="480" y="196">No items</text><text x="620" y="196">Unavailable</text><text x="760" y="196">Filtered</text>
+<text x="20" y="240">Feedback</text><text x="190" y="240">Hidden</text><text x="330" y="240">Progress</text><text x="480" y="240">Instruction</text><text x="620" y="240">Actionable</text><text x="760" y="240">Dismissible</text>
+</g><g stroke="#D9DEE7"><path d="M12 42H888M12 78H888M12 122H888M12 166H888M12 210H888M12 254H888"/><path d="M12 42V254M174 42V254M314 42V254M464 42V254M604 42V254M744 42V254M888 42V254"/></g>
+<text x="20" y="294" font-family="sans-serif" font-size="11" fill="#667085">Gate coverage: entry, progress, no-content, failure, validation, recovery, and successful completion.</text>
 </svg>
