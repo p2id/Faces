@@ -1,0 +1,58 @@
+meta:
+  projectId: project-001
+  date: 2026-10-19
+color:
+  bg:
+    canvas: "{color.neutral.0}"
+    surface: "{color.neutral.50}"
+    subtle: "{color.neutral.100}"
+    inverse: "{color.neutral.900}"
+  text:
+    primary: "{color.neutral.900}"
+    secondary: "{color.neutral.600}"
+    muted: "{color.neutral.500}"
+    inverse: "{color.neutral.0}"
+    link: "{color.blue.700}"
+  border:
+    default: "{color.neutral.300}"
+    strong: "{color.neutral.500}"
+    focus: "{color.blue.600}"
+  status:
+    info: "{color.blue.700}"
+    success: "{color.green.700}"
+    warning: "{color.amber.800}"
+    error: "{color.red.700}"
+  neutral:
+    "0": "#FFFFFF"
+    "50": "#F8FAFC"
+    "100": "#F1F5F9"
+    "300": "#CBD5E1"
+    "500": "#64748B"
+    "600": "#475569"
+    "900": "#0F172A"
+  blue: { "600": "#2563EB", "700": "#1D4ED8" }
+  green: { "700": "#15803D" }
+  amber: { "800": "#92400E" }
+  red: { "700": "#B91C1C" }
+typography:
+  fontFamily: { sans: "system-ui, sans-serif", mono: "ui-monospace, monospace" }
+  size: { xs: "0.75rem", sm: "0.875rem", md: "1rem", lg: "1.125rem", xl: "1.5rem", "2xl": "2rem" }
+  lineHeight: { tight: "1.2", normal: "1.5", relaxed: "1.7" }
+  weight: { regular: 400, medium: 500, semibold: 600, bold: 700 }
+spacing: { "0": "0", "1": "0.25rem", "2": "0.5rem", "3": "0.75rem", "4": "1rem", "6": "1.5rem", "8": "2rem", "12": "3rem" }
+radius: { none: "0", sm: "0.25rem", md: "0.5rem", lg: "0.75rem", pill: "999px" }
+border: { thin: "1px", medium: "2px", style: "solid" }
+shadow: { none: "none", sm: "0 1px 2px rgb(15 23 42 / 0.08)", md: "0 4px 12px rgb(15 23 42 / 0.12)" }
+opacity: { disabled: "0.5", muted: "0.7", overlay: "0.6" }
+motion: { fast: "120ms", normal: "200ms", slow: "320ms", easing: "cubic-bezier(0.2, 0, 0, 1)", reduced: "0ms" }
+layout: { contentMax: "1200px", compactPadding: "1rem", mediumPadding: "1.5rem", expandedPadding: "2rem", gap: "1rem" }
+size: { control: "2.75rem", icon: "1.25rem", touchTarget: "2.75rem", avatar: "2rem" }
+zIndex: { base: 0, sticky: 10, dropdown: 20, modal: 30, toast: 40 }
+state:
+  focusRing: "0 0 0 3px rgb(37 99 235 / 0.35)"
+  disabledOpacity: "{opacity.disabled}"
+  hoverSurface: "{color.neutral.100}"
+  selectedSurface: "#EFF6FF"
+  errorBorder: "{color.red.700}"
+  successSurface: "#F0FDF4"
+  warningSurface: "#FFFBEB"
