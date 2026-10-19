@@ -1,0 +1,14 @@
+flowchart LR
+  A[Semantic tokens] --> B[Color]
+  A --> C[Type]
+  A --> D[Space]
+  A --> E[Shape]
+  A --> F[Motion]
+  B --> B1[Canvas / surface / text / action / status]
+  C --> C1[Display / heading / body / label / caption]
+  D --> D1[4px base scale]
+  E --> E1[Radius and border]
+  F --> F1[Reduced-motion safe]
+  G[Component tokens] --> A
+  H[Quality gate] --> I[Contrast, scale, consistency, fallback]
+  I --> A
