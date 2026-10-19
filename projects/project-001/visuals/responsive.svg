@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 360" role="img" aria-label="Responsive layout specification">
+  <rect width="960" height="360" fill="#F7F8FA"/>
+  <g font-family="sans-serif" fill="#17202A">
+    <text x="32" y="32" font-size="18" font-weight="700">Responsive behavior</text>
+    <text x="32" y="70" font-size="13">Small: 320–599</text><text x="352" y="70" font-size="13">Medium: 600–1023</text><text x="704" y="70" font-size="13">Large: 1024+</text>
+  </g>
+  <rect x="32" y="88" width="240" height="216" rx="8" fill="#FFF" stroke="#D9DEE7"/>
+  <rect x="352" y="88" width="280" height="216" rx="8" fill="#FFF" stroke="#D9DEE7"/>
+  <rect x="704" y="88" width="224" height="216" rx="8" fill="#FFF" stroke="#D9DEE7"/>
+  <g font-family="sans-serif" font-size="12" fill="#667085">
+    <text x="52" y="124">One column</text><text x="52" y="150">Navigation collapses</text><text x="52" y="176">Actions stack</text><text x="52" y="202">Touch target ≥44px</text><text x="52" y="228">Padding 16px</text>
+    <text x="372" y="124">Flexible two-column</text><text x="372" y="150">Navigation condenses</text><text x="372" y="176">Actions may group</text><text x="372" y="202">Padding 24px</text><text x="372" y="228">Overflow is explicit</text>
+    <text x="724" y="124">Persistent navigation</text><text x="724" y="150">Grid gains columns</text><text x="724" y="176">Actions remain visible</text><text x="724" y="202">Max width 1200px</text><text x="724" y="228">Padding 32px</text>
+  </g>
+  <text x="32" y="338" font-family="sans-serif" font-size="12" fill="#667085">Rationale: preserve hierarchy and action visibility while reducing density before reducing legibility.</text>
+</svg>
