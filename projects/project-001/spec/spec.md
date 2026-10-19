@@ -1,22 +1,22 @@
 Project: project-001
 Date: 2026-10-19
-Product: Generic product experience
-Purpose: Help users discover, review, and complete a primary product task with clear feedback and low cognitive load.
+Purpose: Support discovery, review, and completion of one primary product task.
+
 Surfaces:
-- Desktop web: full navigation, multi-column content, persistent task context.
-- Mobile web: compact navigation, single-column content, bottom action area.
-- Empty, loading, error, success, and permission-limited surfaces.
+- Expanded web: full navigation, two-column workspace, persistent summary.
+- Compact web: condensed navigation, single-column content, visible primary action.
+- Loading, empty, error, success, and unavailable surfaces.
 
 Sections:
-1. Header: product name, primary navigation, search or filter control, utility action.
-2. Page heading: title, concise description, status or count.
-3. Primary workspace: main content list or form, supporting metadata, inline actions.
-4. Secondary panel: summary, guidance, related options, contextual status.
-5. Feedback region: validation, progress, success, warning, and error messaging.
-6. Footer: help, legal, preferences, and version information.
+1. Header: product label, navigation, search or filter, utility action.
+2. Page heading: title, description, status, result count.
+3. Primary workspace: list, detail view, or form with contextual actions.
+4. Secondary panel: summary, guidance, related options, status.
+5. Feedback region: validation, progress, success, warning, error.
+6. Footer: help, preferences, legal, version links.
 
 Real content examples:
-- Page title: “Review items”
+- Title: “Review items”
 - Description: “Check the details before completing this task.”
 - Search placeholder: “Search items”
 - Empty message: “No items match your criteria.”
@@ -25,12 +25,11 @@ Real content examples:
 - Success message: “Changes saved.”
 - Error message: “We couldn’t save your changes. Try again.”
 - Confirmation title: “Ready to continue?”
-- Confirmation body: “Review the selected details, then continue.”
 - Status labels: “Draft”, “In progress”, “Complete”
 
 Content rules:
-- Use sentence case and concise labels.
-- Put the result or next action first.
-- Explain required input before submission.
-- Never rely on color alone to communicate status.
-- Keep examples neutral, reusable, and free of personal or identity-specific data.
+- Use sentence case and verb-led actions.
+- Put the outcome or next step first.
+- Keep required guidance visible before submission.
+- Do not communicate meaning through color alone.
+- Avoid personal, identity-specific, and implementation-specific content.
