@@ -1,0 +1,14 @@
+Budgets:
+- Initial page payload: ≤300 KB compressed for core experience.
+- JavaScript: ≤170 KB compressed on initial load.
+- CSS: ≤60 KB compressed on initial load.
+- Fonts: ≤100 KB compressed; use no more than two families and three weights.
+- Largest Contentful Paint: ≤2.5s on a typical mobile connection.
+- Interaction to Next Paint: ≤200ms for primary interactions.
+- Cumulative Layout Shift: ≤0.1.
+- First Contentful Paint: ≤1.8s.
+- Time to usable primary action: ≤3s.
+- Image policy: responsive sizing, modern formats, lazy-load below-the-fold media.
+- Rendering: reserve media dimensions, avoid layout shifts, virtualize long collections.
+- Resilience: core content and primary action remain usable if nonessential media fails.
+- Motion: use transform and opacity for transitions; avoid expensive continuous effects.
