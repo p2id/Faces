@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 560" role="img" aria-label="Neutral product interface wireframe">
+  <rect width="960" height="560" fill="#F7F8FA"/>
+  <rect x="24" y="24" width="912" height="56" rx="8" fill="#FFFFFF" stroke="#D9DEE7"/>
+  <rect x="48" y="43" width="150" height="18" rx="4" fill="#C9D1DC"/>
+  <rect x="720" y="42" width="72" height="20" rx="4" fill="#E6EAF0"/>
+  <rect x="808" y="42" width="96" height="20" rx="4" fill="#2F6FED"/>
+  <rect x="24" y="104" width="216" height="432" rx="8" fill="#FFFFFF" stroke="#D9DEE7"/>
+  <rect x="48" y="132" width="152" height="16" rx="4" fill="#B6C0CC"/>
+  <rect x="48" y="176" width="144" height="12" rx="3" fill="#E2E6EC"/>
+  <rect x="48" y="208" width="128" height="12" rx="3" fill="#E2E6EC"/>
+  <rect x="48" y="240" width="152" height="12" rx="3" fill="#E2E6EC"/>
+  <rect x="264" y="104" width="672" height="160" rx="8" fill="#FFFFFF" stroke="#D9DEE7"/>
+  <rect x="296" y="136" width="240" height="20" rx="4" fill="#A9B4C2"/>
+  <rect x="296" y="176" width="480" height="12" rx="3" fill="#E2E6EC"/>
+  <rect x="296" y="200" width="360" height="12" rx="3" fill="#E2E6EC"/>
+  <rect x="264" y="288" width="672" height="248" rx="8" fill="#FFFFFF" stroke="#D9DEE7"/>
+  <rect x="296" y="320" width="160" height="16" rx="4" fill="#B6C0CC"/>
+  <line x1="296" y1="368" x2="904" y2="368" stroke="#D9DEE7"/>
+  <line x1="296" y1="416" x2="904" y2="416" stroke="#E7EAF0"/>
+  <line x1="296" y1="464" x2="904" y2="464" stroke="#E7EAF0"/>
+  <text x="24" y="552" font-family="sans-serif" font-size="12" fill="#667085">Rationale: hierarchy, navigation, primary action, content density, and empty-space balance are represented without domain-specific identity.</text>
+</svg>
