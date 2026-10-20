@@ -1,35 +1,34 @@
 Project: project-001
-Date: 2026-10-19
-Purpose: Support discovery, review, and completion of one primary product task.
+Date: 2026-10-20
+Purpose: Generic product interface for reviewing structured records and adjusting settings.
 
 Surfaces:
-- Expanded web: full navigation, two-column workspace, persistent summary.
-- Compact web: condensed navigation, single-column content, visible primary action.
-- Loading, empty, error, success, and unavailable surfaces.
+- Desktop web
+- Tablet layout
+- Mobile layout
+- Keyboard and screen-reader presentation
 
 Sections:
-1. Header: product label, navigation, search or filter, utility action.
-2. Page heading: title, description, status, result count.
-3. Primary workspace: list, detail view, or form with contextual actions.
-4. Secondary panel: summary, guidance, related options, status.
-5. Feedback region: validation, progress, success, warning, error.
-6. Footer: help, preferences, legal, version links.
+1. Global shell: header, navigation, breadcrumbs, page title, primary action.
+2. Overview: summary cards, date range, status distribution, activity summary.
+3. Records: search, filters, sortable results, pagination, empty and error handling.
+4. Configuration: grouped fields, validation, save and cancel actions.
+5. Feedback: loading, success, warning, error, confirmation, and empty states.
 
 Real content examples:
-- Title: “Review items”
-- Description: “Check the details before completing this task.”
-- Search placeholder: “Search items”
-- Empty message: “No items match your criteria.”
-- Primary action: “Continue”
-- Secondary action: “Save for later”
-- Success message: “Changes saved.”
-- Error message: “We couldn’t save your changes. Try again.”
-- Confirmation title: “Ready to continue?”
-- Status labels: “Draft”, “In progress”, “Complete”
-
-Content rules:
-- Use sentence case and verb-led actions.
-- Put the outcome or next step first.
-- Keep required guidance visible before submission.
-- Do not communicate meaning through color alone.
-- Avoid personal, identity-specific, and implementation-specific content.
+- Page title: Overview
+- Description: Review current activity and configuration status.
+- Navigation: Overview, Records, Configuration
+- Summary labels: Total records, Active items, Pending review
+- Date range: 01 Oct 2026 – 20 Oct 2026
+- Search placeholder: Search records
+- Filter label: Status
+- Filter options: All, Active, Pending, Archived
+- Primary action: Add record
+- Secondary action: Export view
+- Empty message: No records match the selected filters.
+- Validation message: Enter a valid date.
+- Success message: Changes saved.
+- Error message: Unable to load records. Try again.
+- Confirmation title: Discard unsaved changes?
+- Confirmation actions: Keep editing, Discard
