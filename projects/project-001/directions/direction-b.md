@@ -1,6 +1,6 @@
-Positioning: modular overview for comparing relationships, categories, and status.
-Palette rationale: cool gray with muted teal and amber status tones provides separation without visual noise.
-Type rationale: high-legibility sans-serif with clear weight contrast distinguishes labels, values, and supporting text.
-Layout rules: use an adaptable card grid with consistent alignment; reserve wide modules for summaries; collapse secondary modules before primary content.
-Motion intent: use subtle transitions between overview and detail; animate only changed regions and status updates.
-Avoided traps: card fragmentation, equal emphasis everywhere, color-only meaning, excessive rounding, and unstable reflow.
+Positioning: Editorial planning canvas that presents sequence, priority, and context as a clear visual narrative.
+Palette rationale: Soft neutral background, deep ink, pale lavender secondary surfaces, and restrained coral emphasis distinguish priority without alarm-heavy contrast.
+Type rationale: Neutral sans-serif with clear section scale, readable control sizing, and strong weight contrast; no decorative type in controls.
+Layout rules: Wide content canvas with narrow context column; alternate dense lists and spacious detail blocks; on narrow screens, stack context before detail and retain anchored actions.
+Motion intent: Gentle crossfades and positional continuity clarify sequence changes; no parallax or attention-seeking movement.
+Avoided traps: Ambiguous editorial styling, oversized headings, color-only priority, excessive whitespace in dense states, and scroll-dependent actions.
