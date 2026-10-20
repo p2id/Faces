@@ -1,13 +1,17 @@
-<!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Neutral interface specimen</title>
-<style>
-:root{--bg:#f7f8fa;--surface:#fff;--text:#17202a;--muted:#667085;--line:#d9dee7;--accent:#2f6fed}
-*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.5 system-ui,sans-serif}main{max-width:720px;margin:auto;padding:32px}.panel{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:24px}label{display:block;font-weight:600;margin:0 0 6px}input,select,button{width:100%;min-height:44px;padding:8px 12px;border-radius:6px;font:inherit}input,select{border:1px solid var(--line);margin:0 0 16px}button{border:0;background:var(--accent);color:#fff;font-weight:600}button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid #9cc0ff;outline-offset:2px}.status{color:var(--muted)}
-</style>
-</head>
-<body><main><h1>Interface specimen</h1><section class="panel" aria-labelledby="title"><h2 id="title">Input and confirmation</h2><label for="value">Value</label><input id="value" name="value" placeholder="Enter a value"><label for="mode">Mode</label><select id="mode" name="mode"><option>Default</option><option>Alternative</option></select><button type="button">Continue</button><p class="status" role="status">Status appears here without displacing the primary action.</p></section></main></body>
-</html>
+<section class="specimen" aria-labelledby="specimen-title">
+<header>
+<p class="eyebrow">Product area</p>
+<h1 id="specimen-title">Clear task title</h1>
+<p>Short context explains purpose, scope, and expected result.</p>
+</header>
+<form>
+<label for="field">Required field</label>
+<input id="field" name="field" aria-describedby="field-help">
+<p id="field-help">Use concise guidance before input.</p>
+<p role="status" hidden>Specific validation appears near the affected field.</p>
+<button type="submit">Primary action</button>
+<button type="button">Secondary action</button>
+</form>
+</section>
+Specimen rules: use semantic HTML, visible labels, meaningful controls, logical headings, accessible names, and explicit empty, loading, error, and completion states.
+Publishing gates: validate syntax, keyboard traversal, focus visibility, contrast, responsive rendering, reduced motion, truncation, and reading order.
