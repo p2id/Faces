@@ -1,10 +1,15 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 330" role="img" aria-label="Generic interface state matrix">
-<rect width="900" height="330" fill="#FFF"/><g font-family="sans-serif" font-size="13" fill="#17202A">
-<text x="20" y="28" font-weight="700">State matrix</text><text x="20" y="64">Surface</text><text x="190" y="64">Default</text><text x="330" y="64">Loading</text><text x="480" y="64">Empty</text><text x="620" y="64">Error</text><text x="760" y="64">Complete</text>
-<text x="20" y="108">Primary view</text><text x="190" y="108">Ready</text><text x="330" y="108">Placeholder</text><text x="480" y="108">Guidance</text><text x="620" y="108">Recovery</text><text x="760" y="108">Updated</text>
-<text x="20" y="152">Input</text><text x="190" y="152">Idle</text><text x="330" y="152">Disabled</text><text x="480" y="152">Optional</text><text x="620" y="152">Invalid</text><text x="760" y="152">Accepted</text>
-<text x="20" y="196">List</text><text x="190" y="196">Populated</text><text x="330" y="196">Skeleton</text><text x="480" y="196">No items</text><text x="620" y="196">Unavailable</text><text x="760" y="196">Filtered</text>
-<text x="20" y="240">Feedback</text><text x="190" y="240">Hidden</text><text x="330" y="240">Progress</text><text x="480" y="240">Instruction</text><text x="620" y="240">Actionable</text><text x="760" y="240">Dismissible</text>
-</g><g stroke="#D9DEE7"><path d="M12 42H888M12 78H888M12 122H888M12 166H888M12 210H888M12 254H888"/><path d="M12 42V254M174 42V254M314 42V254M464 42V254M604 42V254M744 42V254M888 42V254"/></g>
-<text x="20" y="294" font-family="sans-serif" font-size="11" fill="#667085">Gate coverage: entry, progress, no-content, failure, validation, recovery, and successful completion.</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 420" role="img" aria-label="Interface state matrix">
+<rect width="960" height="420" fill="#fff"/>
+<g font-family="sans-serif" font-size="16" fill="#26364a">
+<text x="32" y="34">State</text><text x="220" y="34">View</text><text x="420" y="34">Action</text><text x="650" y="34">Feedback</text>
+<text x="32" y="88">Initial</text><text x="220" y="88">Empty or guided</text><text x="420" y="88">Start</text><text x="650" y="88">Next-step guidance</text>
+<text x="32" y="142">Loading</text><text x="220" y="142">Stable skeleton</text><text x="420" y="142">Deferred controls</text><text x="650" y="142">Progress indication</text>
+<text x="32" y="196">Ready</text><text x="220" y="196">Complete content</text><text x="420" y="196">Primary and secondary</text><text x="650" y="196">Status confirmation</text>
+<text x="32" y="250">Validation</text><text x="220" y="250">Input retained</text><text x="420" y="250">Correct or retry</text><text x="650" y="250">Inline message</text>
+<text x="32" y="304">Failure</text><text x="220" y="304">Recoverable notice</text><text x="420" y="304">Retry or alternate</text><text x="650" y="304">Cause and recovery</text>
+<text x="32" y="358">Complete</text><text x="220" y="358">Outcome summary</text><text x="420" y="358">Continue or close</text><text x="650" y="358">Persistent result</text>
+</g>
+<path d="M24 48H936M24 102H936M24 156H936M24 210H936M24 264H936M24 318H936M24 372H936" stroke="#d9dfe7"/>
 </svg>
+Rationale: Explicit states define predictable content, action, feedback, and recovery behavior.
+Quality gates: every action covers pending, success, validation, and failure; state changes are perceivable; focus is retained or intentionally moved; no high-impact transition is implicit.
