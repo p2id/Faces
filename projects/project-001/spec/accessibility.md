@@ -1,15 +1,15 @@
 Targets:
-- WCAG 2.2 AA conformance.
-- Keyboard operation for every interactive element.
-- Visible focus indicator with at least 3:1 contrast.
-- Text contrast: 4.5:1 normal, 3:1 large text.
-- Non-text control contrast: at least 3:1.
-- Minimum touch target: 44×44px.
-- Native semantics, landmarks, and one logical heading hierarchy.
-- Unique accessible name for every control.
-- Programmatic association for labels, instructions, required state, and errors.
-- Loading, success, and error changes exposed through suitable live regions.
-- Dialog focus trapped while open, Escape supported, focus restored on close.
-- Reflow at 320px and 200% text scaling without clipped essential content.
-- Reduced-motion preference supported with non-motion equivalents.
-- No meaning conveyed by color, position, shape, or animation alone.
+- WCAG 2.2 AA.
+- Complete keyboard operation with visible focus.
+- Contrast: 4.5:1 for normal text, 3:1 for large text and non-text boundaries.
+- Minimum interactive target: 44px by 44px.
+- Semantic landmarks for header, navigation, main, complementary content, and footer when used.
+- One logical h1 per page with ordered heading levels.
+- Persistent labels, instructions, required state, and associated errors for form controls.
+- Status and alert messages use suitable live-region behavior.
+- Dialogs expose a name, trap focus, support Escape, and restore focus on close.
+- Tables expose caption, headers, sort state, and relationships.
+- Tabs expose tablist, tab, and tabpanel semantics with keyboard behavior.
+- Color is never the sole state indicator.
+- Content reflows at 320px CSS width and remains usable at 200% zoom.
+- Motion is disabled or minimized under prefers-reduced-motion.
