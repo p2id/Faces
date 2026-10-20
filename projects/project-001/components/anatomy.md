@@ -1,43 +1,31 @@
-Global anatomy:
-- Shell: header, navigation, main landmark, optional secondary region, footer.
-- Header: product label, navigation, search or utility controls.
-- Main: context, page heading, primary workspace, feedback region.
-- Workspace: collection or form, supporting summary, action group.
-- Feedback: inline message near source and global status when needed.
-- Footer: help, preferences, legal, version links.
+Global shell
+- Anatomy: header, navigation, breadcrumbs, main content, optional footer.
+- Variants: persistent desktop, collapsible tablet, overlay mobile.
+- States: default, loading, degraded, offline.
+- Usage: keep navigation and context stable.
+- Anti-patterns: changing navigation order, inaccessible collapsed menu, duplicate titles.
+- Accessibility: landmarks, skip link, focus restoration, zoom and reflow support.
 
-Variants:
-- Collection: filters, count, list or table, pagination.
-- Detail: summary, grouped fields, related information, actions.
-- Form: instructions, fields, validation, review, submit action.
-- Compact: condensed header, stacked content, persistent primary action.
+Overview
+- Anatomy: page title, description, date range, summary cards, activity summary, primary action.
+- Variants: full, compact, loading.
+- States: default, empty, error, partial.
+- Usage: present context, high-level status, then detail.
+- Anti-patterns: excessive cards, unlabeled metrics, visual summaries without text.
+- Accessibility: heading hierarchy and text equivalents for visual information.
 
-States:
-- Loading: preserve structure with lightweight placeholders.
-- Empty: explain absence and offer a relevant next step.
-- Error: state failure, preserve recoverable input, provide retry or correction.
-- Success: confirm completion and identify the next action.
-- Unavailable: explain the limitation without implementation detail.
+Records
+- Anatomy: search, filters, result count, table or list, pagination, empty/error region.
+- Variants: table, stacked list, filtered, read-only.
+- States: loading, populated, sorted, filtered, empty, error.
+- Usage: preserve filters and make result changes clear.
+- Anti-patterns: hidden active filters, missing current-page state, inaccessible overflow.
+- Accessibility: labeled controls, live result count, sortable headers, keyboard pagination.
 
-Usage:
-- Establish one primary task per surface.
-- Group related content with headings and consistent spacing.
-- Keep status beside the content it describes.
-- Order actions as primary, secondary, low-emphasis.
-- Use progressive disclosure for optional detail.
-
-Anti-patterns:
-- Dense ungrouped content.
-- Hidden required fields.
-- Ambiguous or unnamed controls.
-- Layout changes that reorder meaning.
-- Modal use for routine information.
-- Truncation that hides action meaning.
-- Decorative motion that delays completion.
-
-Accessibility:
-- Use landmarks, headings, lists, tables, and native controls semantically.
-- Maintain logical reading and focus order in every variant.
-- Provide visible focus, sufficient contrast, text alternatives, and status announcements.
-- Support keyboard, touch, zoom, reflow, and reduced motion.
-- Give every visual state an understandable text equivalent.
+Configuration form
+- Anatomy: section heading, field groups, hints, validation messages, save/cancel actions.
+- Variants: single-column, two-column, compact.
+- States: pristine, dirty, submitting, saved, invalid, error.
+- Usage: group related settings and keep actions consistent.
+- Anti-patterns: unannounced auto-save, destructive reset beside save, unexplained defaults.
+- Accessibility: fieldsets and legends, explicit errors, focused recovery, clear unsaved-change warning.
