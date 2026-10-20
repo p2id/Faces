@@ -1,6 +1,6 @@
-Positioning: calm command center for prioritizing information and next actions.
-Palette rationale: warm white, graphite, soft gray, and muted blue create focus without urgency.
-Type rationale: neutral sans-serif with clear numeric forms supports scanning, hierarchy, and compact metadata.
-Layout rules: use a responsive two-region frame; keep primary context persistent; group content into ordered modules; expose detail progressively.
-Motion intent: use short fades and position shifts for state changes; preserve spatial continuity; honor reduced-motion preferences.
-Avoided traps: dense control walls, competing accents, deep nesting, persistent overlays, decorative motion, and hidden critical actions.
+Positioning: Quiet command center for organizing complex work into visible, manageable stages.
+Palette rationale: Warm off-white base, graphite text, slate surfaces, and muted blue accent establish hierarchy without pressure; semantic colors are reserved for status.
+Type rationale: Neutral sans-serif with tabular numerals, moderate scale, and generous line height supports scanning and readability.
+Layout rules: Persistent rail above 1024px; collapsible rail below; overview header, grouped content, and one primary action per region; cards represent bounded groups.
+Motion intent: 160–240ms transitions support panel continuity, focus movement, and status confirmation; reduced motion removes nonessential movement.
+Avoided traps: Dashboard clutter, excessive badges, hidden dependencies, ambiguous icons, constant animation, and modal chains.
