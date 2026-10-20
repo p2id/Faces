@@ -1,7 +1,15 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 300" role="img" aria-label="Generic responsive layout rules">
-<rect width="900" height="300" fill="#F7F8FA"/><text x="24" y="30" font-family="sans-serif" font-size="18" font-weight="700" fill="#17202A">Responsive behavior</text>
-<g font-family="sans-serif" font-size="13" fill="#17202A"><text x="24" y="66">Small: 320–599</text><text x="322" y="66">Medium: 600–1023</text><text x="638" y="66">Large: 1024+</text></g>
-<rect x="24" y="82" width="240" height="170" rx="8" fill="#FFF" stroke="#D9DEE7"/><rect x="322" y="82" width="280" height="170" rx="8" fill="#FFF" stroke="#D9DEE7"/><rect x="638" y="82" width="238" height="170" rx="8" fill="#FFF" stroke="#D9DEE7"/>
-<g font-family="sans-serif" font-size="11" fill="#667085"><text x="44" y="116">One column</text><text x="44" y="142">Navigation condenses</text><text x="44" y="168">Actions stack</text><text x="44" y="194">Targets ≥44px</text><text x="44" y="220">Padding 16px</text><text x="342" y="116">Flexible two-column</text><text x="342" y="142">Navigation reduces</text><text x="342" y="168">Actions may group</text><text x="342" y="194">Padding 24px</text><text x="342" y="220">Overflow is explicit</text><text x="658" y="116">Persistent navigation</text><text x="658" y="142">Grid gains columns</text><text x="658" y="168">Actions remain visible</text><text x="658" y="194">Max width 1200px</text><text x="658" y="220">Padding 32px</text></g>
-<text x="24" y="280" font-family="sans-serif" font-size="11" fill="#667085">Rationale: preserve hierarchy and action visibility before reducing legibility.</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 360" role="img" aria-label="Responsive layout model">
+<rect width="960" height="360" fill="#fff"/>
+<g fill="none" stroke="#26364a" stroke-width="2">
+<rect x="24" y="40" width="280" height="240"/><rect x="340" y="40" width="280" height="240"/><rect x="656" y="40" width="280" height="240"/>
+</g>
+<g fill="#eef1f5">
+<rect x="40" y="72" width="248" height="36"/><rect x="40" y="124" width="248" height="100"/>
+<rect x="356" y="72" width="248" height="36"/><rect x="356" y="124" width="248" height="42"/><rect x="356" y="182" width="248" height="42"/>
+<rect x="672" y="72" width="248" height="36"/><rect x="672" y="124" width="248" height="100"/>
+</g>
+<g font-family="sans-serif" font-size="16" fill="#26364a"><text x="112" y="310">Compact</text><text x="430" y="310">Medium</text><text x="750" y="310">Wide</text></g>
 </svg>
+Rationale: Three layout classes communicate stacking, grouping, bounded width, and whitespace behavior.
+Quality gates: validate at 320px, 768px, and 1440px; test 200% zoom, reflow, overflow, keyboard access, focus, and 44px controls.
+Rules: compact layouts stack regions and retain primary actions; medium layouts preserve grouped panels; wide layouts use bounded content.
