@@ -1,6 +1,6 @@
-Positioning: focused sequential workspace for completing one priority at a time.
-Palette rationale: deep charcoal text on pale neutral surfaces with a restrained violet accent supports concentration and progression.
-Type rationale: reading-optimized sans-serif proportions support extended text while a compact weight scale preserves task hierarchy.
-Layout rules: use one dominant column with an optional supporting rail; keep actions near relevant content; separate stages with clear landmarks.
-Motion intent: use restrained slide and reveal transitions to explain progression; avoid auto-advancing content and preserve position on return.
-Avoided traps: tunnel navigation, hidden context, oversized hero areas, mandatory linearity, and state-dependent action movement.
+Positioning: Modular operations surface optimized for comparison, filtering, and controlled updates.
+Palette rationale: Cool gray foundation, white work surfaces, charcoal text, and teal accent support precision; status colors always pair with labels or icons.
+Type rationale: Compact neutral sans-serif with clear numeral distinction, readable minimum sizes, and no ultra-light weights.
+Layout rules: Filter bar above content; responsive table-to-card transformation; fixed summary region on wide screens; staged edit panels replace disruptive dialogs.
+Motion intent: Fast 120–180ms feedback supports filtering and validation; subtle expansion clarifies detail; data never animates continuously.
+Avoided traps: Spreadsheet density, unbounded filters, destructive defaults, low-contrast metadata, fixed-width layouts, and hover-only information.
