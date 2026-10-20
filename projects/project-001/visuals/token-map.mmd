@@ -1,13 +1,10 @@
-flowchart LR
-A[Semantic tokens] --> B[Color]
-A --> C[Type]
-A --> D[Spacing]
-A --> E[Shape]
-A --> F[Motion]
-B --> B1[Canvas, surface, text, action, status]
-C --> C1[Display, heading, body, label, caption]
-D --> D1[4px base scale]
-E --> E1[Radius, border, elevation]
-F --> F1[Reduced-motion safe]
-G[Quality gates] --> H[Contrast, scale, consistency, fallback]
-H --> A
+# Token map
+- Color: canvas #FFFFFF; surface #F5F7FA; text #26364A; muted #667386; border #D9DFE7; accent #2F6FED; critical #B42318; success #197A55.
+- Type: display 28/36; heading 20/28; body 16/24; caption 13/18; system sans.
+- Space: 4, 8, 12, 16, 24, 32, 48.
+- Shape: radius 4; control radius 6; focus ring 2px accent with 2px offset.
+- Motion: 150ms standard; 250ms emphasis; reduced-motion equivalent required.
+- Layout: 8px grid; 1200px content maximum; 44px minimum control size.
+
+Rationale: Semantic tokens improve consistency, substitution, maintenance, and visual validation.
+Quality gates: WCAG AA contrast; semantic names; no unexplained one-off values; light, zoom, and high-contrast checks.
