@@ -1,17 +1,21 @@
 Breakpoints:
-- Compact: 0–599px.
-- Medium: 600–1023px.
-- Expanded: 1024px and above.
-- Wide enhancement: 1440px and above.
+- xs: 0–479px
+- sm: 480–767px
+- md: 768–1023px
+- lg: 1024–1279px
+- xl: 1280px and above
 
 Responsive rules:
-- Use one column below 600px.
-- Stack secondary content below primary content on compact layouts.
-- Replace persistent navigation with a compact menu at 1023px and below.
-- Keep the primary action near completion content; use a bottom action region when needed.
-- Container padding: 16px compact, 24px medium, 32px expanded.
-- Allow meaningful wrapping; never truncate required labels.
-- Use horizontal scrolling only when reflow would damage comprehension.
-- Keep touch targets at least 44×44px.
-- Preserve reading and focus order across layouts.
-- Support 320px width, 200% text scaling, and 400% zoom without loss of function.
+- Use base-first layout and a 4px spacing scale.
+- xs: one column, 16px page padding, full-width actions, stacked fields.
+- sm: optional two-column field groups, 20px page padding.
+- md: collapsible navigation, two-column content where useful, 24px padding.
+- lg: persistent navigation, 12-column grid, 32px padding.
+- xl: 1200px maximum content width, 40px page padding.
+- Collapse or wrap header actions before overflow.
+- Below md, tables use priority columns, horizontal scroll, or stacked rows.
+- Below md, modal width is viewport width minus 32px; maximum width is 560px.
+- Tabs scroll horizontally without wrapping.
+- Interactive targets remain at least 44px by 44px.
+- Essential information is never hover-only.
+- Reduced-motion preferences apply at every breakpoint.
