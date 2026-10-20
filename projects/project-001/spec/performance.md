@@ -1,14 +1,15 @@
 Budgets:
-- Initial payload: ≤300 KB compressed.
-- Initial JavaScript: ≤170 KB compressed.
-- Initial CSS: ≤60 KB compressed.
-- Fonts: ≤100 KB compressed; maximum two families and three weights.
-- First Contentful Paint: ≤1.8s.
-- Largest Contentful Paint: ≤2.5s.
-- Interaction to Next Paint: ≤200ms.
-- Cumulative Layout Shift: ≤0.1.
-- Primary action usable: ≤3s.
-- Media: responsive dimensions, modern formats, lazy-load below-the-fold content.
-- Rendering: reserve media space, avoid layout shifts, virtualize long collections.
-- Resilience: core content and primary action remain usable when nonessential media fails.
-- Motion: use transform and opacity; avoid continuous expensive effects.
+- Initial HTML: <= 50 KB compressed.
+- Critical CSS: <= 35 KB compressed.
+- Initial route JavaScript: <= 170 KB compressed.
+- Fonts: <= 100 KB compressed; maximum two families and four weights.
+- First Contentful Paint: <= 1.8s.
+- Largest Contentful Paint: <= 2.5s on mid-tier mobile.
+- Interaction to Next Paint: <= 200ms for common actions.
+- Cumulative Layout Shift: <= 0.1.
+- Total blocking time: <= 200ms.
+- Initial image payload: <= 150 KB.
+- Deferred media, icons, and fonts must not cause layout shift.
+- Lazy-load below-fold content and preserve visible geometry during loading.
+- Avoid duplicate work and unbounded rendered lists.
+- Test on representative mobile hardware and constrained networks.
