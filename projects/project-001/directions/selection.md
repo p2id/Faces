@@ -1,4 +1,4 @@
-Chosen direction: A.
-Rationale: it offers the strongest balance of reuse, orientation, responsive behavior, accessibility, and low cognitive load for a generic product experience.
-Secondary direction: B for comparison, categorization, or status visibility.
-Guardrails: retain neutral styling, semantic hierarchy, keyboard parity, visible focus, non-color status cues, scalable type, and reduced-motion support.
+Selected direction: A
+Rationale: Direction A best matches the selected domain and extracted DNA through calm hierarchy, broad reuse, responsive resilience, and accessible state communication.
+Evaluation gates: Hierarchy clarity; action discoverability; keyboard completion; narrow-layout continuity; reduced-motion parity; absence of unnecessary cognitive load.
+Fallback: If Direction A fails two or more gates, evaluate Direction B; use Direction C when comparison density and rapid filtering become dominant requirements.
