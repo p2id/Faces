@@ -1,34 +1,40 @@
 Project: project-001
-Date: 2026-10-20
-Purpose: Generic product interface for reviewing structured records and adjusting settings.
+Date: 2026-10-21
+Purpose: Generic, neutral product experience with clear navigation, reviewable content, and predictable actions.
 
 Surfaces:
-- Desktop web
-- Tablet layout
-- Mobile layout
-- Keyboard and screen-reader presentation
+- App shell: header, navigation, main content, footer.
+- Overview: summary metrics, activity, primary actions.
+- Collection: search, filters, sorting, results, pagination.
+- Detail: title, metadata, grouped information, related actions.
+- Feedback: inline status, confirmation, warning, and error messaging.
 
 Sections:
-1. Global shell: header, navigation, breadcrumbs, page title, primary action.
-2. Overview: summary cards, date range, status distribution, activity summary.
-3. Records: search, filters, sortable results, pagination, empty and error handling.
-4. Configuration: grouped fields, validation, save and cancel actions.
-5. Feedback: loading, success, warning, error, confirmation, and empty states.
+- Header: product title, navigation toggle, primary action.
+- Page heading: title, description, contextual action.
+- Summary: three or four metric cards.
+- Filters: search field, select controls, clear action.
+- Results: table or card list with sortable headings.
+- Detail content: overview, attributes, history, related items.
+- Footer actions: cancel, save, and delete where applicable.
 
 Real content examples:
-- Page title: Overview
-- Description: Review current activity and configuration status.
-- Navigation: Overview, Records, Configuration
-- Summary labels: Total records, Active items, Pending review
-- Date range: 01 Oct 2026 – 20 Oct 2026
-- Search placeholder: Search records
+- Title: Overview
+- Description: Review current activity and outstanding items.
+- Metric: Open items — 24
+- Metric: Completed this week — 18
+- Search label: Search items
 - Filter label: Status
-- Filter options: All, Active, Pending, Archived
-- Primary action: Add record
-- Secondary action: Export view
-- Empty message: No records match the selected filters.
-- Validation message: Enter a valid date.
-- Success message: Changes saved.
-- Error message: Unable to load records. Try again.
-- Confirmation title: Discard unsaved changes?
-- Confirmation actions: Keep editing, Discard
+- Filter value: All statuses
+- Table headings: Name, Status, Updated, Actions
+- Row: Quarterly review | In progress | 21 Oct 2026
+- Empty message: No items match these filters.
+- Error message: Something went wrong. Try again.
+- Confirmation: Changes saved.
+- Actions: Create item, Cancel, Delete item
+
+Content rules:
+- Use sentence case, concise labels, and explicit verbs.
+- Keep labels stable across surfaces.
+- Pair status color with text or an icon.
+- Preserve entered values after validation errors.
