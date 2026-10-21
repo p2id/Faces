@@ -1,25 +1,13 @@
-# Core flow
-1. Enter initial view.
-2. Inspect content or guidance.
-3. Select the primary action.
-4. Complete required input.
-5. Receive inline validation when needed.
-6. Confirm the intended action.
-7. Observe the persistent outcome.
-8. Continue, revise, or exit.
-
-# Recovery paths
-- Missing input -> retain valid values -> identify the affected field -> correct -> continue.
-- Delay -> show stable progress -> retain context -> resolve or retry.
-- Invalid outcome -> state cause plainly -> provide safe alternate -> prevent duplicate submission.
-- Early exit -> preserve data only when permitted -> provide a clear return path.
-
-# Representation rationale
-The flow separates intent, confirmation, outcome, and recovery so it can be reused across product experiences without backend assumptions.
-
-# Quality gates
-- Every transition has a visible trigger and destination.
-- The primary path has no dead ends.
-- Recovery does not erase valid input.
-- Confirmation is proportional to impact.
-- Keyboard, reduced-motion, and narrow-layout paths remain equivalent.
+flowchart TD
+  A[Open surface] --> B[Review summary]
+  B --> C{Required input complete?}
+  C -- No --> D[Show inline guidance]
+  D --> C
+  C -- Yes --> E[Enable primary action]
+  E --> F[Show progress state]
+  F --> G{Outcome available?}
+  G -- Success --> H[Show confirmation]
+  G -- Recoverable issue --> I[Show cause and retry]
+  I --> F
+  G -- Unavailable --> J[Show alternate path]
+  J --> B
