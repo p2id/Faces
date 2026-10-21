@@ -1,6 +1,6 @@
-Positioning: Modular operations surface optimized for comparison, filtering, and controlled updates.
-Palette rationale: Cool gray foundation, white work surfaces, charcoal text, and teal accent support precision; status colors always pair with labels or icons.
-Type rationale: Compact neutral sans-serif with clear numeral distinction, readable minimum sizes, and no ultra-light weights.
-Layout rules: Filter bar above content; responsive table-to-card transformation; fixed summary region on wide screens; staged edit panels replace disruptive dialogs.
-Motion intent: Fast 120–180ms feedback supports filtering and validation; subtle expansion clarifies detail; data never animates continuously.
-Avoided traps: Spreadsheet density, unbounded filters, destructive defaults, low-contrast metadata, fixed-width layouts, and hover-only information.
+Positioning: Guided operational overview that converts complexity into a readable sequence.
+Palette rationale: Soft ivory, slate text, desaturated teal, and restrained warning color add warmth while preserving contrast.
+Type rationale: Readable sans-serif with distinct metric and explanatory styles; clear scale and line length.
+Layout rules: Summary first, ordered sections next, featured exception module, optional trend panel, progressive detail, sequence-preserving mobile layout.
+Motion intent: Brief section reveal and focus movement only for meaningful content changes; all motion is suppressible.
+Avoided traps: Decorative editorial treatment, long introductions, ambiguous disclosure, ornamental imagery, blocked direct access.
