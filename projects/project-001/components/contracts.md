@@ -1,47 +1,47 @@
-AppShell
-- Anatomy: header, navigation, main, optional complementary region.
-- Variants: persistent, collapsible, compact.
-- States: default, loading, degraded, offline.
-- Usage: provide one consistent frame and landmark structure.
-- Anti-patterns: nested shells, hidden navigation without a trigger, loading layout shift.
-- Accessibility: landmarks, skip link, logical focus order, responsive reflow.
-
 Button
-- Anatomy: label, optional icon, optional progress indicator.
-- Variants: primary, secondary, quiet, destructive, icon-only.
-- States: default, hover, pressed, focus-visible, loading, disabled.
-- Usage: use a specific verb and one primary action per region.
-- Anti-patterns: vague labels, unnamed icons, low-contrast disabled text.
-- Accessibility: 44px target, keyboard operation, visible focus, announced busy state.
+- Anatomy: label, optional leading/trailing icon, optional progress indicator.
+- Variants: primary, secondary, tertiary, destructive, icon-only.
+- States: default, hover, focus-visible, pressed, disabled, loading.
+- Usage: one primary action per region; label states the result.
+- Anti-patterns: vague labels, competing primary actions, unnamed icon-only controls.
+- Accessibility: native button semantics, 44×44px target, loading text, non-color disabled indication.
 
-FormField
-- Anatomy: label, control, hint, error, required indicator.
-- Variants: text, select, date, checkbox, toggle.
-- States: default, focused, filled, valid, invalid, disabled, read-only.
-- Usage: keep labels visible and place errors beside the control.
-- Anti-patterns: placeholder-only labels, color-only validation, clearing values after errors.
-- Accessibility: label association, hint/error description, required and invalid semantics.
+Text field
+- Anatomy: label, input, hint, error, optional leading icon.
+- Variants: single-line, multiline, search, read-only.
+- States: empty, filled, hover, focus, invalid, valid, disabled, read-only.
+- Usage: persistent label, concise hint, inline validation.
+- Anti-patterns: placeholder-only labels, silent clearing, errors shown only after submission.
+- Accessibility: programmatic label, autocomplete where applicable, hint/error association, visible focus.
 
-Table
-- Anatomy: caption, headers, rows, sortable headers, empty/error region.
-- Variants: compact, standard, priority-column, stacked.
-- States: loading, populated, sorted, filtered, empty, error, selected.
-- Usage: use for comparable structured values.
-- Anti-patterns: unreadable density, hidden sorting, inaccessible horizontal overflow.
-- Accessibility: semantic table markup, header associations, sort state, selection announcement.
+Select
+- Anatomy: label, trigger, value, option list, hint, error.
+- Variants: single-select, multi-select, compact.
+- States: closed, open, selected, empty, hover, focus, invalid, disabled.
+- Usage: bounded option sets with an explicit empty value when needed.
+- Anti-patterns: excessive option lists, hidden selection, inconsistent keyboard behavior.
+- Accessibility: name, expanded and selected states, keyboard operation, option count when useful.
+
+Data table
+- Anatomy: caption, header row, body rows, sortable headings, row actions, status region.
+- Variants: compact, standard, responsive.
+- States: loading, populated, sorted, selected-row, empty, error, narrow-viewport.
+- Usage: align comparable values and expose sort direction.
+- Anti-patterns: unreadable density, unnamed icon actions, color-only status.
+- Accessibility: table semantics, headers, caption or accessible name, keyboard actions, announced sorting.
 
 Modal
-- Anatomy: title, description, body, actions, close control.
-- Variants: confirmation, form, informational.
-- States: closed, opening, open, submitting, validation-error, error, closing.
-- Usage: reserve for focused decisions or short tasks.
-- Anti-patterns: stacked dialogs, destructive default action, routine navigation in a modal.
-- Accessibility: name, focus trap, Escape support, inert background, focus restoration.
+- Anatomy: backdrop, title, description, content, close action, footer actions.
+- Variants: standard, confirmation, destructive, wide.
+- States: closed, opening, open, closing, validation-error.
+- Usage: focused decisions with clear completion and cancellation.
+- Anti-patterns: nested modals, unstructured long forms, silent dismissal of entered data.
+- Accessibility: dialog role, labelled title, focus containment, Escape support, focus return, inert background.
 
 Toast
-- Anatomy: status indicator, message, optional action, dismiss control.
-- Variants: info, success, warning, error.
-- States: visible, dismissible, timed.
-- Usage: confirm nonblocking outcomes.
-- Anti-patterns: essential instructions in timed messages, competing message stacks.
-- Accessibility: suitable status or alert role, dismissible timing, sufficient contrast.
+- Anatomy: status icon, message, optional action, dismiss action.
+- Variants: success, info, warning, error.
+- States: entering, visible, dismissing.
+- Usage: brief non-blocking feedback; repeat essential information inline.
+- Anti-patterns: essential instructions only in a toast, rapid stacking, unclear timeout.
+- Accessibility: appropriate status or alert role, readable message, dismiss control, sufficient duration.
