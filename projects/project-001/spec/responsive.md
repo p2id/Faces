@@ -6,16 +6,13 @@ Breakpoints:
 - xl: 1280px and above
 
 Responsive rules:
-- Use base-first layout and a 4px spacing scale.
-- xs: one column, 16px page padding, full-width actions, stacked fields.
-- sm: optional two-column field groups, 20px page padding.
-- md: collapsible navigation, two-column content where useful, 24px padding.
-- lg: persistent navigation, 12-column grid, 32px padding.
-- xl: 1200px maximum content width, 40px page padding.
-- Collapse or wrap header actions before overflow.
-- Below md, tables use priority columns, horizontal scroll, or stacked rows.
-- Below md, modal width is viewport width minus 32px; maximum width is 560px.
-- Tabs scroll horizontally without wrapping.
-- Interactive targets remain at least 44px by 44px.
-- Essential information is never hover-only.
-- Reduced-motion preferences apply at every breakpoint.
+- xs: single column, compact spacing, collapsed navigation, stacked cards, isolated table scrolling.
+- sm: single column with optional two-column metrics; filters wrap.
+- md: two-column content where useful; navigation may remain collapsed; modal max-width is 80vw.
+- lg: persistent navigation; content max-width 1200px; metrics use four columns.
+- xl: retain max-width and increase outer gutters rather than text size.
+- Below 640px, header actions wrap or move into an overflow region.
+- Interactive targets remain at least 44×44px.
+- Body text remains at least 16px; content reflows without clipping.
+- Preserve reading order and action priority when columns collapse.
+- Reduce or remove motion for reduced-motion preferences.
