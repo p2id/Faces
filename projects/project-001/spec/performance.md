@@ -1,15 +1,15 @@
 Budgets:
-- Initial HTML: <= 50 KB compressed.
-- Critical CSS: <= 35 KB compressed.
-- Initial route JavaScript: <= 170 KB compressed.
-- Fonts: <= 100 KB compressed; maximum two families and four weights.
-- First Contentful Paint: <= 1.8s.
-- Largest Contentful Paint: <= 2.5s on mid-tier mobile.
-- Interaction to Next Paint: <= 200ms for common actions.
-- Cumulative Layout Shift: <= 0.1.
-- Total blocking time: <= 200ms.
-- Initial image payload: <= 150 KB.
-- Deferred media, icons, and fonts must not cause layout shift.
-- Lazy-load below-fold content and preserve visible geometry during loading.
-- Avoid duplicate work and unbounded rendered lists.
-- Test on representative mobile hardware and constrained networks.
+- Critical CSS: ≤40 KB compressed.
+- Initial JavaScript: ≤170 KB compressed.
+- Above-the-fold media: ≤250 KB.
+- Total initial transfer: ≤500 KB compressed.
+- First Contentful Paint: ≤1.8 s on mid-tier mobile.
+- Largest Contentful Paint: ≤2.5 s.
+- Interaction to Next Paint: ≤200 ms for primary interactions.
+- Cumulative Layout Shift: ≤0.1.
+- Interactive region readiness: ≤3 s on mid-tier mobile.
+- Visible list baseline: ≤50 rows without jank.
+- Modal response: ≤100 ms after activation.
+- Reserve media dimensions and defer noncritical effects.
+- Prefer stable system-font fallbacks and subset non-system fonts.
+- Use skeletons only beyond 300 ms; expose progress text for longer operations.
