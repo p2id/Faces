@@ -1,33 +1,60 @@
-Date: 2026-10-20
-Project: project-001
+Project: project-001 | Date: 2026-10-21 | Section A
 
-Dominant patterns: Calm neutral surfaces; strong hierarchy; compact navigation; grouped cards; progressive disclosure; explicit status; one primary action per region.
-Emerging patterns: Semantic design tokens; inline validation; contextual empty states; split panes that collapse into staged views; reduced-motion parity.
-Deprecated patterns: Equal-weight dashboards; decorative gradients; hidden navigation; icon-only actions without labels; modal-heavy flows; continuous animation.
-Outlier patterns: Monochrome interfaces with one accent; command-style search surfaces; sparse editorial layouts for structured content.
+Dominant patterns:
+- Clear hierarchy, persistent orientation, one primary action per view.
+- Modular cards, tables, filters, search, status labels, and progressive disclosure.
+- Neutral surfaces, restrained accent color, consistent spacing, visible focus, responsive stacking.
 
-Visual DNA: Neutral base, one functional accent, 8px spacing rhythm, 12px radius, thin borders, restrained elevation, sentence-case labels.
-Interactional DNA: Predictable focus order, progressive disclosure, inline feedback, reversible actions, visible status, no dead-end states.
-Accessibility DNA: WCAG 2.2 AA target; visible focus; minimum 4.5:1 text contrast; 3:1 large-text and non-text contrast; keyboard parity; semantic headings; labeled status; reduced-motion support.
-Responsive DNA: Fluid content-first grid; 12 columns on wide screens and 4 on narrow screens; 44px minimum targets; panel collapse before type reduction; primary actions remain visible; no horizontal scrolling.
+Emerging patterns:
+- Command search, inline reversible edits, adaptive density, contextual empty states.
+- Text-plus-icon status communication, reduced-motion defaults, user-controlled display density.
 
-Candidate domains:
-1. Planning workspace — Organizes goals, stages, dependencies, and next actions in a flexible surface.
-2. Resource library — Supports discovery, filtering, preview, saving, and retrieval of reusable materials.
-3. Configuration console — Presents settings, validation, status, and safely staged changes.
-4. Insight explorer — Supports comparison, trends, annotations, and focused detail views.
-5. Request center — Guides intake, progress tracking, supporting context, and resolution states.
-6. Learning catalog — Arranges sequential content, progress, prerequisites, and optional exploration.
+Deprecated patterns:
+- Hidden navigation, auto-advancing carousels, decorative low-contrast gradients.
+- Icon-only controls, hover-dependent meaning, modal-first routine actions.
 
-Weighted scoring matrix; weights: clarity 25, reuse 20, responsive fit 20, accessibility fit 20, visual range 15; scale 1–5.
-Domain                       Clarity Reuse Responsive Access Visual Weighted
-Planning workspace              5      5       5        5      4      4.80
-Resource library                4      5       5        5      4      4.60
-Configuration console           5      4       4        5      3      4.25
-Insight explorer                4      4       4        4      5      4.05
-Request center                  4      4       4        5      3      4.00
-Learning catalog                4      4       5        4      4      4.20
+Outlier patterns:
+- Dense split panes, timeline or graph views, monochrome interfaces with one emphasis color.
+- Command palettes used as secondary navigation.
 
-Selected domain rationale: Planning workspace leads in clarity, reuse, responsive fit, and accessibility while supporting a broad reusable component vocabulary.
-Cycle lock: Lock selected domain, DNA, weights, and evaluation criteria for 2026-10-20 under project-001.
-Fallback rule: If the selected domain falls by more than 0.40 points after review, use Resource library; if its score falls below 4.00, use Configuration console.
+Visual DNA:
+- Quiet neutral foundation, one functional accent, subtle borders, moderate radius, restrained elevation, compact breathable spacing.
+- Priority expressed through scale, weight, spacing, and contrast rather than ornament.
+
+Interactional DNA:
+- Predictable navigation, visible location, direct reversible actions, inline validation, progressive disclosure, clear loading, empty, error, and success states.
+- Stable primary actions across breakpoints; secondary actions may collapse into menus.
+
+Accessibility DNA:
+- Contrast-safe colors, visible focus, logical headings and landmarks, keyboard-complete operation, text alternatives, comfortable targets, non-color status cues, reduced-motion support.
+
+Responsive DNA:
+- Mobile-first priority order, fluid spacing, reduced columns, stacked modules, labeled table rows or controlled horizontal scrolling, filter drawers, no essential hover behavior.
+
+Candidate product domains:
+1. Operations dashboard — Reviews status, queues, metrics, and exceptions in one control surface.
+2. Planning workspace — Organizes schedules, priorities, dependencies, and progress.
+3. Knowledge library — Supports discovery, reading, filtering, and content maintenance.
+4. Catalog explorer — Enables browsing, comparison, filtering, and detail inspection.
+5. Service status center — Communicates availability, incidents, maintenance, and history.
+6. Finance overview — Presents balances, trends, categories, and review summaries without transaction execution.
+
+Weighted scoring matrix, scale 1–5; weights: clarity 25%, reusable structure 20%, interaction breadth 20%, accessibility fit 20%, responsive fit 15%:
+- Operations dashboard: 5,5,5,4,4 = 4.65
+- Knowledge library: 5,4,4,5,5 = 4.60
+- Planning workspace: 4,5,5,4,4 = 4.45
+- Catalog explorer: 4,4,4,5,5 = 4.30
+- Service status center: 5,3,3,5,5 = 4.25
+- Finance overview: 4,4,4,4,4 = 4.00
+
+Selected domain rationale:
+Operations dashboard scores highest and exercises reusable navigation, metrics, filters, tables, status communication, density, empty states, and exception handling without requiring specialized assumptions.
+
+Cycle lock:
+- Domain: Operations dashboard.
+- Visual: neutral utility surface, single accent, modular hierarchy.
+- Interaction: progressive disclosure, reversible actions, keyboard-complete controls.
+- Responsive: multi-column desktop, reduced-column tablet, priority-stacked mobile.
+
+Fallback rule:
+If the selected domain becomes overly specialized, inaccessible, or dependent on unavailable detail, use Knowledge library while preserving the locked visual, interactional, accessibility, and responsive DNA.
