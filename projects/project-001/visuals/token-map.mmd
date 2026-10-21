@@ -1,10 +1,30 @@
-# Token map
-- Color: canvas #FFFFFF; surface #F5F7FA; text #26364A; muted #667386; border #D9DFE7; accent #2F6FED; critical #B42318; success #197A55.
-- Type: display 28/36; heading 20/28; body 16/24; caption 13/18; system sans.
-- Space: 4, 8, 12, 16, 24, 32, 48.
-- Shape: radius 4; control radius 6; focus ring 2px accent with 2px offset.
-- Motion: 150ms standard; 250ms emphasis; reduced-motion equivalent required.
-- Layout: 8px grid; 1200px content maximum; 44px minimum control size.
-
-Rationale: Semantic tokens improve consistency, substitution, maintenance, and visual validation.
-Quality gates: WCAG AA contrast; semantic names; no unexplained one-off values; light, zoom, and high-contrast checks.
+mindmap
+  root((project-001))
+    Foundation
+      surface #F7F8FA
+      content #FFFFFF
+      ink #17212B
+      muted #667483
+      accent #4F8CFF
+      success #439463
+      warning #D99A00
+      error #C94C4C
+    Type
+      family system-sans
+      body 16px
+      caption 13px
+      heading 24px
+      line-height 1.5
+    Space
+      unit 4px
+      compact 8px
+      standard 16px
+      expanded 24px
+    Shape
+      radius-small 4px
+      radius-medium 8px
+      border 1px
+    Motion
+      fast 120ms
+      standard 200ms
+      reduced-motion supported
