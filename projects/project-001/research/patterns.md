@@ -1,60 +1,27 @@
-Project: project-001 | Date: 2026-10-21 | Section A
-
-Dominant patterns:
-- Clear hierarchy, persistent orientation, one primary action per view.
-- Modular cards, tables, filters, search, status labels, and progressive disclosure.
-- Neutral surfaces, restrained accent color, consistent spacing, visible focus, responsive stacking.
-
-Emerging patterns:
-- Command search, inline reversible edits, adaptive density, contextual empty states.
-- Text-plus-icon status communication, reduced-motion defaults, user-controlled display density.
-
-Deprecated patterns:
-- Hidden navigation, auto-advancing carousels, decorative low-contrast gradients.
-- Icon-only controls, hover-dependent meaning, modal-first routine actions.
-
-Outlier patterns:
-- Dense split panes, timeline or graph views, monochrome interfaces with one emphasis color.
-- Command palettes used as secondary navigation.
-
-Visual DNA:
-- Quiet neutral foundation, one functional accent, subtle borders, moderate radius, restrained elevation, compact breathable spacing.
-- Priority expressed through scale, weight, spacing, and contrast rather than ornament.
-
-Interactional DNA:
-- Predictable navigation, visible location, direct reversible actions, inline validation, progressive disclosure, clear loading, empty, error, and success states.
-- Stable primary actions across breakpoints; secondary actions may collapse into menus.
-
-Accessibility DNA:
-- Contrast-safe colors, visible focus, logical headings and landmarks, keyboard-complete operation, text alternatives, comfortable targets, non-color status cues, reduced-motion support.
-
-Responsive DNA:
-- Mobile-first priority order, fluid spacing, reduced columns, stacked modules, labeled table rows or controlled horizontal scrolling, filter drawers, no essential hover behavior.
-
-Candidate product domains:
-1. Operations dashboard — Reviews status, queues, metrics, and exceptions in one control surface.
-2. Planning workspace — Organizes schedules, priorities, dependencies, and progress.
-3. Knowledge library — Supports discovery, reading, filtering, and content maintenance.
-4. Catalog explorer — Enables browsing, comparison, filtering, and detail inspection.
-5. Service status center — Communicates availability, incidents, maintenance, and history.
-6. Finance overview — Presents balances, trends, categories, and review summaries without transaction execution.
-
-Weighted scoring matrix, scale 1–5; weights: clarity 25%, reusable structure 20%, interaction breadth 20%, accessibility fit 20%, responsive fit 15%:
-- Operations dashboard: 5,5,5,4,4 = 4.65
-- Knowledge library: 5,4,4,5,5 = 4.60
-- Planning workspace: 4,5,5,4,4 = 4.45
-- Catalog explorer: 4,4,4,5,5 = 4.30
-- Service status center: 5,3,3,5,5 = 4.25
-- Finance overview: 4,4,4,4,4 = 4.00
-
-Selected domain rationale:
-Operations dashboard scores highest and exercises reusable navigation, metrics, filters, tables, status communication, density, empty states, and exception handling without requiring specialized assumptions.
-
-Cycle lock:
-- Domain: Operations dashboard.
-- Visual: neutral utility surface, single accent, modular hierarchy.
-- Interaction: progressive disclosure, reversible actions, keyboard-complete controls.
-- Responsive: multi-column desktop, reduced-column tablet, priority-stacked mobile.
-
-Fallback rule:
-If the selected domain becomes overly specialized, inaccessible, or dependent on unavailable detail, use Knowledge library while preserving the locked visual, interactional, accessibility, and responsive DNA.
+Project: project-001 | Date: 2026-10-22
+Dominant: modular cards, persistent navigation, compact tables, progressive disclosure, explicit status tokens, restrained surfaces.
+Emerging: command search, inline filters, density controls, contextual empty states, adaptive split views, tokenized systems.
+Deprecated: decorative gradients, modal-heavy flows, unlabeled dashboards, hover-only actions, excessive color coding.
+Outlier: timeline-table hybrids, utility rails, analytical no-data canvases, keyboard-first command layers.
+Visual DNA: neutral canvas, one restrained accent, thin dividers, medium-radius containers, clear hierarchy, tabular numerals, minimal decoration.
+Interaction DNA: predictable navigation, visible selection, reversible actions, inline validation, progressive disclosure, keyboard support, explicit consequential-action confirmation.
+Accessibility DNA: contrast-compliant colors, text-plus-structure status, visible focus, semantic grouping, logical order, scalable type, reduced-motion support.
+Responsive DNA: desktop split views, tablet stacked panels, mobile single-column priority, persistent primary action, secondary overflow controls, comfortable touch targets.
+Candidate domains:
+1. Inventory planning — organize stock levels, replenishment signals, and exceptions.
+2. Facility monitoring — review conditions, alerts, and maintenance states.
+3. Content scheduling — coordinate items, statuses, dependencies, and time windows.
+4. Financial planning — compare budgets, forecasts, assumptions, and variances.
+5. Learning library — browse resources, progress states, and saved references.
+6. Compliance review — inspect requirements, evidence states, and outstanding actions.
+Weighted matrix; scale 1–5; total = usability 30% + density 25% + responsive fit 20% + accessibility 15% + neutrality 10%.
+Domain                 U   D   R   A   N   Score
+Inventory planning     4   5   4   4   4   4.25
+Facility monitoring    4   5   4   4   3   4.15
+Content scheduling     5   4   5   4   5   4.65
+Financial planning     4   5   4   4   3   4.15
+Learning library       5   3   5   5   5   4.55
+Compliance review      4   4   4   5   4   4.15
+Selected domain rationale: Content scheduling best balances navigation, information density, responsive transformation, accessibility, and cross-domain reuse.
+Cycle lock: retain the selected domain, neutral visual system, accessibility baseline, and responsive hierarchy for this cycle.
+Fallback rule: if scheduling becomes too specialized, substitute learning library without changing the core structure.
