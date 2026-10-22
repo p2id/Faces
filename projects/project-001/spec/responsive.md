@@ -1,18 +1,18 @@
-Breakpoints:
+# Breakpoints
 - xs: 0–479px
 - sm: 480–767px
 - md: 768–1023px
-- lg: 1024–1279px
-- xl: 1280px and above
+- lg: 1024–1439px
+- xl: 1440px+
 
-Responsive rules:
-- xs: single column, compact spacing, collapsed navigation, stacked cards, isolated table scrolling.
-- sm: single column with optional two-column metrics; filters wrap.
-- md: two-column content where useful; navigation may remain collapsed; modal max-width is 80vw.
-- lg: persistent navigation; content max-width 1200px; metrics use four columns.
-- xl: retain max-width and increase outer gutters rather than text size.
-- Below 640px, header actions wrap or move into an overflow region.
-- Interactive targets remain at least 44×44px.
-- Body text remains at least 16px; content reflows without clipping.
-- Preserve reading order and action priority when columns collapse.
-- Reduce or remove motion for reduced-motion preferences.
+# Responsive Rules
+- Use a fluid container with 16px minimum gutters and 1200px maximum width.
+- xs/sm: collapse navigation, stack cards and fields, replace tables with labeled row cards, keep the primary action visible.
+- md: support two-column layouts when readable; retain compact navigation.
+- lg/xl: show full navigation, multi-column summaries, and standard tables.
+- Maintain 44×44px minimum touch targets.
+- Use 12px mobile, 16–24px tablet, and 24–32px desktop section gaps.
+- Allow wrapping; never clip essential labels or values.
+- Keep dialogs within the viewport with scrollable content and grouped actions.
+- Preserve order: heading, context, primary action, content, secondary actions.
+- Prefer layout adaptation over duplicate content variants.
