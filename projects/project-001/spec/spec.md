@@ -1,40 +1,47 @@
-Project: project-001
-Date: 2026-10-21
-Purpose: Generic, neutral product experience with clear navigation, reviewable content, and predictable actions.
+# Product Experience Specification
+- Date: 2026-10-22
+- Project: project-001
+- Scope: generic, neutral, reusable product interface.
 
-Surfaces:
-- App shell: header, navigation, main content, footer.
-- Overview: summary metrics, activity, primary actions.
-- Collection: search, filters, sorting, results, pagination.
-- Detail: title, metadata, grouped information, related actions.
-- Feedback: inline status, confirmation, warning, and error messaging.
+## Surfaces
+- Overview: summary, search, filters, recent items.
+- Items: structured list, sorting, pagination, item actions.
+- Detail: item summary, metadata, activity, actions.
+- Settings: display, density, notification preferences.
+- Feedback: validation, alerts, confirmations, empty and error regions.
+- Compact layout: stacked content, condensed navigation, touch controls.
 
-Sections:
-- Header: product title, navigation toggle, primary action.
-- Page heading: title, description, contextual action.
-- Summary: three or four metric cards.
-- Filters: search field, select controls, clear action.
-- Results: table or card list with sortable headings.
-- Detail content: overview, attributes, history, related items.
-- Footer actions: cancel, save, and delete where applicable.
+## Sections
+1. Global navigation
+   - Label: “Product”
+   - Links: “Overview”, “Items”, “Settings”
+   - Primary action: “Create item”
+2. Overview
+   - Heading: “Overview”
+   - Description: “Review recent activity and manage items.”
+   - Cards: “Total items”, “Needs attention”, “Completed”
+   - Search: “Search items”
+   - Filter: “Filter by status”
+   - Empty message: “No items match the current filters.”
+3. Items
+   - Columns: “Name”, “Status”, “Updated”, “Actions”
+   - Example row: “Sample item | Ready | 22 Oct 2026 | View details”
+4. Detail
+   - Heading: “Sample item”
+   - Status: “Ready”
+   - Sections: “Summary”, “Details”, “Activity”
+   - Actions: “Edit”, “Archive”
+5. Settings
+   - Heading: “Settings”
+   - Controls: “Theme”, “Density”, “Notifications”
+   - Action: “Save changes”
+6. Feedback
+   - Success: “Changes saved.”
+   - Validation: “Enter a valid value.”
+   - Error: “Something went wrong. Try again.”
+   - Confirmation: “Archive this item?”
 
-Real content examples:
-- Title: Overview
-- Description: Review current activity and outstanding items.
-- Metric: Open items — 24
-- Metric: Completed this week — 18
-- Search label: Search items
-- Filter label: Status
-- Filter value: All statuses
-- Table headings: Name, Status, Updated, Actions
-- Row: Quarterly review | In progress | 21 Oct 2026
-- Empty message: No items match these filters.
-- Error message: Something went wrong. Try again.
-- Confirmation: Changes saved.
-- Actions: Create item, Cancel, Delete item
-
-Content rules:
-- Use sentence case, concise labels, and explicit verbs.
-- Keep labels stable across surfaces.
-- Pair status color with text or an icon.
-- Preserve entered values after validation errors.
+## Content Rules
+- Use sentence case, concise labels, explicit verbs, and neutral examples.
+- Preserve essential text when content wraps or is unavailable.
+- Never communicate status by color alone.
