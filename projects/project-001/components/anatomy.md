@@ -1,39 +1,49 @@
-App shell
-- Anatomy: header, navigation, main content, optional footer.
-- Variants: persistent navigation, collapsed navigation, narrow viewport.
-- States: default, navigation-collapsed, loading, error.
-- Usage: maintain consistent landmarks and page context.
-- Anti-patterns: changing navigation order, hidden current location, nested scroll traps.
-- Accessibility: landmark semantics, skip link, logical focus order, current-location indication.
+# Shared Anatomy and Interaction Rules
 
-Page heading
-- Anatomy: optional eyebrow, title, description, action group.
-- Variants: title-only, title-plus-description, title-with-actions.
-- States: default, loading, error.
-- Usage: start main content with a specific title.
-- Anti-patterns: competing page titles, action-only heading, unexplained abbreviations.
-- Accessibility: one h1, descriptive title, action labels independent of position.
+## Page Shell
+- Anatomy: skip link, header, navigation, main landmark, optional footer.
+- Variants: full navigation, compact navigation, focused layout.
+- States: default, loading, unavailable-notice.
+- Usage: establish structure and orientation.
+- Anti-patterns: duplicate landmarks, missing page title, content hidden behind fixed regions.
+- Accessibility: landmarks, skip link, logical headings, visible focus.
 
-Metric card
-- Anatomy: label, value, supporting text, optional trend or status.
-- Variants: standard, emphasized, unavailable, loading.
-- States: default, hover, focus, loading, unavailable.
-- Usage: one meaningful measure per card with time scope where relevant.
-- Anti-patterns: decorative precision, unlabeled units, color-only trend direction.
-- Accessibility: reading order is label, value, context; trend meaning is text; avoid unnecessary live updates.
+## Form Field
+- Anatomy: label, control, hint, validation message, required indicator.
+- Variants: inline, stacked, grouped.
+- States: empty, filled, focused, invalid, valid, disabled, read-only.
+- Usage: present each label and control as one understandable unit.
+- Anti-patterns: unlabeled controls, placeholder-only instructions, detached errors.
+- Accessibility: programmatic label, description, invalid state, error association, adequate target.
 
-Filter bar
-- Anatomy: query field, filter controls, active-filter summary, clear action.
-- Variants: inline, wrapped, expandable.
-- States: default, active-filters, expanded, collapsed, disabled.
-- Usage: preserve selections, show criteria, provide clear-all.
-- Anti-patterns: silent filtering, hidden criteria, destructive reset without confirmation.
-- Accessibility: labels for all controls, announced result changes when appropriate, keyboard-complete operation, descriptive clear action.
+## Navigation Item
+- Anatomy: optional icon, text label, active indicator, optional count badge.
+- Variants: primary, secondary, compact.
+- States: default, hover, focus-visible, active, disabled.
+- Usage: move between stable destinations.
+- Anti-patterns: color-only active state, ambiguous icons, changing item position.
+- Accessibility: link semantics, current-location state, visible labels, keyboard access.
 
-Empty state
-- Anatomy: title, explanation, optional icon, primary action.
-- Variants: first-use, filtered, error-recovery.
-- States: default, recovery-ready.
-- Usage: explain absent content and provide the next useful action.
-- Anti-patterns: blame-oriented language, purposeless decoration, dead-end messaging.
-- Accessibility: text equivalent for visuals, correct heading level, actionable recovery path.
+## Status Indicator
+- Anatomy: text label, optional icon, supporting detail.
+- Variants: neutral, informative, success, warning, critical.
+- States: static, updating, unavailable.
+- Usage: communicate state with redundant text and visual treatment.
+- Anti-patterns: color-only status, unexplained symbols, flashing indicators.
+- Accessibility: text equivalent, sufficient contrast, polite updates, no rapid flashing.
+
+## Empty and Error Region
+- Anatomy: heading, explanation, optional decorative graphic, recovery action.
+- Variants: initial empty, filtered empty, unavailable, recoverable error.
+- States: default, retrying, resolved.
+- Usage: explain absence or failure and provide the next action.
+- Anti-patterns: blank screens, blame-oriented language, retry loops without feedback.
+- Accessibility: descriptive heading, concise explanation, keyboard recovery, contextual focus movement.
+
+## Overlay Layer
+- Anatomy: backdrop, panel, title, content, actions, close control.
+- Variants: dropdown, drawer, modal, tooltip.
+- States: hidden, opening, open, closing.
+- Usage: present temporary context without losing orientation.
+- Anti-patterns: inaccessible dismissal, essential content permanently covered, motion without fallback.
+- Accessibility: correct role, focus management, Escape behavior, viewport containment, reduced-motion support.
