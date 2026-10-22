@@ -1,30 +1,19 @@
-mindmap
-  root((project-001))
-    Foundation
-      surface #F7F8FA
-      content #FFFFFF
-      ink #17212B
-      muted #667483
-      accent #4F8CFF
-      success #439463
-      warning #D99A00
-      error #C94C4C
-    Type
-      family system-sans
-      body 16px
-      caption 13px
-      heading 24px
-      line-height 1.5
-    Space
-      unit 4px
-      compact 8px
-      standard 16px
-      expanded 24px
-    Shape
-      radius-small 4px
-      radius-medium 8px
-      border 1px
-    Motion
-      fast 120ms
-      standard 200ms
-      reduced-motion supported
+flowchart LR
+  F[Foundations] --> S[Semantic tokens]
+  S --> C[Components]
+  F --> F1[Color]
+  F --> F2[Type]
+  F --> F3[Space]
+  F --> F4[Shape]
+  F --> F5[Motion]
+  S --> S1[Surface]
+  S --> S2[Content]
+  S --> S3[Action]
+  S --> S4[Status]
+  C --> C1[Navigation]
+  C --> C2[Control]
+  C --> C3[Feedback]
+  C --> C4[Container]
+Rationale: foundations remain replaceable while semantic roles preserve consistency.
+Quality gates: components use semantic tokens; role-based names are stable; contrast pairs are defined; spacing follows a scale; reduced-motion behavior is specified.
+Examples: surface.default=#FFFFFF; surface.subtle=#F7F8FA; content.primary=#17202A; content.muted=#667085; action.primary=#315EFB; status.error=#B42318; space.1=4px; space.2=8px; radius.sm=6px; radius.md=8px.
