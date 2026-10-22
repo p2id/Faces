@@ -1,15 +1,14 @@
-Budgets:
-- Critical CSS: ≤40 KB compressed.
-- Initial JavaScript: ≤170 KB compressed.
-- Above-the-fold media: ≤250 KB.
-- Total initial transfer: ≤500 KB compressed.
-- First Contentful Paint: ≤1.8 s on mid-tier mobile.
-- Largest Contentful Paint: ≤2.5 s.
-- Interaction to Next Paint: ≤200 ms for primary interactions.
+# Performance Budgets
+- Critical render: ≤2.5s on a mid-range mobile profile.
+- Largest Contentful Paint: ≤2.5s.
+- Interaction to Next Paint: ≤200ms.
 - Cumulative Layout Shift: ≤0.1.
-- Interactive region readiness: ≤3 s on mid-tier mobile.
-- Visible list baseline: ≤50 rows without jank.
-- Modal response: ≤100 ms after activation.
-- Reserve media dimensions and defer noncritical effects.
-- Prefer stable system-font fallbacks and subset non-system fonts.
-- Use skeletons only beyond 300 ms; expose progress text for longer operations.
+- First Input Delay where measured: ≤100ms.
+- Initial JavaScript: ≤170KB compressed.
+- Initial CSS: ≤50KB compressed.
+- Above-the-fold media: ≤250KB.
+- Initial requests: ≤40.
+- Reserve dimensions for media, tables, dialogs, and loading regions.
+- Defer non-critical content and settings surfaces.
+- Use skeletons only for expected loading; do not animate indefinitely.
+- Disable nonessential motion when reduced motion is enabled.
