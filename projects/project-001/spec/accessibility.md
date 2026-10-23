@@ -1,14 +1,14 @@
-# Accessibility Targets
+Targets
 - Meet WCAG 2.2 AA.
-- Provide keyboard access, logical tab order, skip navigation, and visible focus.
-- Use 4.5:1 contrast for normal text, 3:1 for large text and UI boundaries, and 3:1 focus contrast.
-- Do not use color alone for status, selection, validation, or errors.
-- Provide accessible names for controls and meaningful alternatives for non-decorative graphics.
-- Associate labels, hints, descriptions, and errors programmatically.
-- Use semantic landmarks, headings, lists, buttons, links, and table headers.
-- Announce relevant dynamic status changes without interrupting input.
-- Manage modal focus entry, containment, Escape behavior, and restoration.
-- Support 200% text zoom and 400% reflow without loss of content or function.
-- Respect reduced-motion preferences and provide non-motion equivalents.
-- Maintain 44×44px touch targets with adequate spacing.
-- Expose expanded, selected, checked, invalid, busy, and disabled states to assistive technology.
+- Contrast: at least 4.5:1 for normal text and 3:1 for large text and essential controls.
+- Focus: visible 2px or greater indicator with 3:1 contrast.
+- Targets: 44x44px minimum where practical.
+- Keyboard: complete operation, logical order, no keyboard trap except active modal scope.
+- Semantics: landmarks, headings, labels, lists, tables, buttons, and links.
+- Status: announce loading, validation, success, and error changes.
+- Do not use color, hover, motion, or shape as the only status signal.
+- Provide text alternatives for meaningful icons; hide decorative icons.
+- Support reduced motion, forced colors, 320px reflow, and 200% zoom.
+- Associate help and errors programmatically with controls.
+- Dialogs expose name, role, description; trap and restore focus.
+- Menus, tabs, selects, forms, and tables expose correct roles and states.
