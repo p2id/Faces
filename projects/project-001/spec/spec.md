@@ -1,47 +1,33 @@
-# Product Experience Specification
-- Date: 2026-10-22
+Metadata
+- Date: 2026-10-23
 - Project: project-001
-- Scope: generic, neutral, reusable product interface.
+- Scope: generic, neutral, reusable product experience
 
-## Surfaces
-- Overview: summary, search, filters, recent items.
-- Items: structured list, sorting, pagination, item actions.
-- Detail: item summary, metadata, activity, actions.
-- Settings: display, density, notification preferences.
-- Feedback: validation, alerts, confirmations, empty and error regions.
-- Compact layout: stacked content, condensed navigation, touch controls.
+Surfaces
+- Workspace: navigation, header, main content, optional side panel.
+- Overlay: dialog, menu, tooltip, toast, notification.
+- Narrow layout: collapsed navigation, single-column content, stacked controls.
 
-## Sections
-1. Global navigation
-   - Label: “Product”
-   - Links: “Overview”, “Items”, “Settings”
-   - Primary action: “Create item”
-2. Overview
-   - Heading: “Overview”
-   - Description: “Review recent activity and manage items.”
-   - Cards: “Total items”, “Needs attention”, “Completed”
-   - Search: “Search items”
-   - Filter: “Filter by status”
-   - Empty message: “No items match the current filters.”
-3. Items
-   - Columns: “Name”, “Status”, “Updated”, “Actions”
-   - Example row: “Sample item | Ready | 22 Oct 2026 | View details”
-4. Detail
-   - Heading: “Sample item”
-   - Status: “Ready”
-   - Sections: “Summary”, “Details”, “Activity”
-   - Actions: “Edit”, “Archive”
-5. Settings
-   - Heading: “Settings”
-   - Controls: “Theme”, “Density”, “Notifications”
-   - Action: “Save changes”
-6. Feedback
-   - Success: “Changes saved.”
-   - Validation: “Enter a valid value.”
-   - Error: “Something went wrong. Try again.”
-   - Confirmation: “Archive this item?”
+Sections
+- Header: title, description, primary action.
+- Navigation: Overview, Activity, Settings.
+- Summary: Total, Active, Updated.
+- Controls: Search, Status filter, date filter, reset.
+- Data: table, cards, pagination.
+- Feedback: loading, empty, error, success.
+- Footer: secondary actions, status, version label.
 
-## Content Rules
-- Use sentence case, concise labels, explicit verbs, and neutral examples.
-- Preserve essential text when content wraps or is unavailable.
-- Never communicate status by color alone.
+Content examples
+- Title: Overview
+- Description: Review current information and available actions.
+- Search placeholder: Search
+- Filter: Status — All, Active, Archived
+- Action: Save changes
+- Secondary action: Cancel
+- Empty message: No results found.
+- Error message: Something went wrong. Try again.
+- Success message: Changes saved.
+- Table headers: Name, Status, Updated, Actions
+- Pagination: Previous, Page 1 of 4, Next
+- Dialog title: Confirm changes
+- Dialog body: Review the selected changes before continuing.
