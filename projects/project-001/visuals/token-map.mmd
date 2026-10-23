@@ -1,19 +1,20 @@
 flowchart LR
-  F[Foundations] --> S[Semantic tokens]
-  S --> C[Components]
-  F --> F1[Color]
-  F --> F2[Type]
-  F --> F3[Space]
-  F --> F4[Shape]
-  F --> F5[Motion]
-  S --> S1[Surface]
-  S --> S2[Content]
-  S --> S3[Action]
-  S --> S4[Status]
-  C --> C1[Navigation]
-  C --> C2[Control]
-  C --> C3[Feedback]
-  C --> C4[Container]
-Rationale: foundations remain replaceable while semantic roles preserve consistency.
-Quality gates: components use semantic tokens; role-based names are stable; contrast pairs are defined; spacing follows a scale; reduced-motion behavior is specified.
-Examples: surface.default=#FFFFFF; surface.subtle=#F7F8FA; content.primary=#17202A; content.muted=#667085; action.primary=#315EFB; status.error=#B42318; space.1=4px; space.2=8px; radius.sm=6px; radius.md=8px.
+A[Semantic tokens] --> B[Color]
+A --> C[Type]
+A --> D[Spacing]
+A --> E[Shape]
+A --> F[Motion]
+B --> B1[Canvas #F7F8FA]
+B --> B2[Surface #FFFFFF]
+B --> B3[Text #1D2939]
+B --> B4[Accent #175CD3]
+C --> C1[System sans]
+C --> C2[16px base / 1.5 line]
+D --> D1[4px unit]
+E --> E1[8px radius]
+F --> F1[150ms ease-out]
+G[Rules] --> H[Use semantic aliases]
+G --> I[Preserve contrast]
+G --> J[Honor reduced motion]
+Rationale: Semantic tokens support reuse, consistent theming, and controlled visual change.
+Quality gates: purpose-based names; contrast review; spacing derived from one unit; motion has a reduced-motion alternative.
