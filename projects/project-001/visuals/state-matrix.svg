@@ -1,14 +1,18 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 430" role="img" aria-label="Component state matrix">
-<title>Component state matrix</title>
-<rect width="980" height="430" fill="#fff"/>
-<g font-family="sans-serif" font-size="16" fill="#17202a">
-<text x="32" y="36" font-size="22" font-weight="700">State coverage</text>
-<text x="32" y="82">Component</text><text x="260" y="82">Default</text><text x="410" y="82">Focus</text><text x="560" y="82">Disabled</text><text x="730" y="82">Error / Empty</text>
-<g fill="none" stroke="#cfd6df"><rect x="24" y="58" width="932" height="320"/><path d="M24 98h932M24 158h932M24 218h932M24 278h932M24 338h932M240 58v320M390 58v320M540 58v320M710 58v320"/></g>
-<text x="40" y="136">Control</text><text x="260" y="136">Visible</text><text x="410" y="136">Outline</text><text x="560" y="136">Muted</text><text x="730" y="136">Message</text>
-<text x="40" y="196">Input</text><text x="260" y="196">Placeholder</text><text x="410" y="196">Caret / outline</text><text x="560" y="196">Read-only</text><text x="730" y="196">Inline guidance</text>
-<text x="40" y="256">Loading</text><text x="260" y="256">Progress</text><text x="410" y="256">Stable layout</text><text x="560" y="256">Unavailable</text><text x="730" y="256">Retry path</text>
-<text x="40" y="316">Content</text><text x="260" y="316">Populated</text><text x="410" y="316">Selected</text><text x="560" y="316">Restricted</text><text x="730" y="316">Empty guidance</text>
-</g></svg>
-Rationale: explicit states prevent default-only specifications and make feedback predictable.
-Quality gates: each interactive element covers default, focus, disabled, loading, error, and empty behavior; feedback is adjacent; layout shift is minimized.
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 420" role="img" aria-label="Interface state matrix">
+<rect width="900" height="420" fill="#fff"/>
+<g fill="#f2f4f7" stroke="#98a2b3">
+<rect x="24" y="24" width="852" height="52"/><rect x="24" y="76" width="852" height="64"/>
+<rect x="24" y="140" width="852" height="64"/><rect x="24" y="204" width="852" height="64"/>
+<rect x="24" y="268" width="852" height="64"/><rect x="24" y="332" width="852" height="64"/>
+</g>
+<g font-family="system-ui,sans-serif" font-size="16" fill="#344054">
+<text x="40" y="57">Region</text><text x="250" y="57">Default</text><text x="420" y="57">Loading</text><text x="590" y="57">Empty / Error</text>
+<text x="40" y="114">Frame</text><text x="250" y="114">Content visible</text><text x="420" y="114">Reserved structure</text><text x="590" y="114">Recovery notice</text>
+<text x="40" y="178">Content</text><text x="250" y="178">Structured items</text><text x="420" y="178">Placeholder rows</text><text x="590" y="178">Guidance and retry</text>
+<text x="40" y="242">Control</text><text x="250" y="242">Enabled</text><text x="420" y="242">Pending or disabled</text><text x="590" y="242">Validation message</text>
+<text x="40" y="306">Navigation</text><text x="250" y="306">Current location</text><text x="420" y="306">Stable location</text><text x="590" y="306">Fallback location</text>
+<text x="40" y="370">Feedback</text><text x="250" y="370">Neutral confirmation</text><text x="420" y="370">Progress indication</text><text x="590" y="370">Actionable resolution</text>
+</g>
+</svg>
+Rationale: A compact matrix makes state coverage reviewable without coupling the interface to implementation details.
+Quality gates: default, loading, empty, error, disabled, focus, and reduced-motion behavior are defined for major regions; recovery preserves context.
