@@ -1,14 +1,14 @@
-# Performance Budgets
-- Critical render: ≤2.5s on a mid-range mobile profile.
-- Largest Contentful Paint: ≤2.5s.
-- Interaction to Next Paint: ≤200ms.
-- Cumulative Layout Shift: ≤0.1.
-- First Input Delay where measured: ≤100ms.
-- Initial JavaScript: ≤170KB compressed.
-- Initial CSS: ≤50KB compressed.
-- Above-the-fold media: ≤250KB.
-- Initial requests: ≤40.
-- Reserve dimensions for media, tables, dialogs, and loading regions.
-- Defer non-critical content and settings surfaces.
-- Use skeletons only for expected loading; do not animate indefinitely.
-- Disable nonessential motion when reduced motion is enabled.
+Budgets
+- Critical CSS: 50KB compressed maximum.
+- Initial JavaScript: 170KB compressed maximum.
+- First-load transfer: 500KB compressed maximum, excluding selected media.
+- First Contentful Paint: 1.8s maximum.
+- Largest Contentful Paint: 2.5s maximum.
+- Interaction to Next Paint: 200ms maximum.
+- Cumulative Layout Shift: 0.1 maximum.
+- Ready interaction time: 3.5s maximum.
+- Above-fold media: 150KB maximum; use responsive formats.
+- Fonts: maximum 2 families and 4 weights; use fallbacks.
+- Lazy-load below-fold media and noncritical panels.
+- Reserve media dimensions and avoid render-blocking noncritical resources.
+- Prefer CSS transitions; cap nonessential motion at 280ms.
