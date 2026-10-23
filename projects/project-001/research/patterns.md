@@ -1,27 +1,56 @@
-Project: project-001 | Date: 2026-10-22
-Dominant: modular cards, persistent navigation, compact tables, progressive disclosure, explicit status tokens, restrained surfaces.
-Emerging: command search, inline filters, density controls, contextual empty states, adaptive split views, tokenized systems.
-Deprecated: decorative gradients, modal-heavy flows, unlabeled dashboards, hover-only actions, excessive color coding.
-Outlier: timeline-table hybrids, utility rails, analytical no-data canvases, keyboard-first command layers.
-Visual DNA: neutral canvas, one restrained accent, thin dividers, medium-radius containers, clear hierarchy, tabular numerals, minimal decoration.
-Interaction DNA: predictable navigation, visible selection, reversible actions, inline validation, progressive disclosure, keyboard support, explicit consequential-action confirmation.
-Accessibility DNA: contrast-compliant colors, text-plus-structure status, visible focus, semantic grouping, logical order, scalable type, reduced-motion support.
-Responsive DNA: desktop split views, tablet stacked panels, mobile single-column priority, persistent primary action, secondary overflow controls, comfortable touch targets.
-Candidate domains:
-1. Inventory planning — organize stock levels, replenishment signals, and exceptions.
-2. Facility monitoring — review conditions, alerts, and maintenance states.
-3. Content scheduling — coordinate items, statuses, dependencies, and time windows.
-4. Financial planning — compare budgets, forecasts, assumptions, and variances.
-5. Learning library — browse resources, progress states, and saved references.
-6. Compliance review — inspect requirements, evidence states, and outstanding actions.
-Weighted matrix; scale 1–5; total = usability 30% + density 25% + responsive fit 20% + accessibility 15% + neutrality 10%.
-Domain                 U   D   R   A   N   Score
-Inventory planning     4   5   4   4   4   4.25
-Facility monitoring    4   5   4   4   3   4.15
-Content scheduling     5   4   5   4   5   4.65
-Financial planning     4   5   4   4   3   4.15
-Learning library       5   3   5   5   5   4.55
-Compliance review      4   4   4   5   4   4.15
-Selected domain rationale: Content scheduling best balances navigation, information density, responsive transformation, accessibility, and cross-domain reuse.
-Cycle lock: retain the selected domain, neutral visual system, accessibility baseline, and responsive hierarchy for this cycle.
-Fallback rule: if scheduling becomes too specialized, substitute learning library without changing the core structure.
+Project ID: project-001
+Date: 2026-10-23
+
+DOMINANT PATTERNS
+- Modular cards, structured lists, persistent navigation, clear hierarchy.
+- Neutral surfaces, one restrained accent, semantic status colors.
+- Search, filter, sort, save, undo, and explicit empty/loading/error states.
+- Dense wide layouts with progressive stacking on narrow screens.
+
+EMERGING PATTERNS
+- Quick actions with visible labels and limited scope.
+- Inline editing with validation and reversible confirmation.
+- Shared tokens for color, spacing, typography, density, and motion.
+- Accessibility-first focus, contrast, keyboard order, and reduced-motion support.
+
+DEPRECATED PATTERNS
+- Excessive gradients, decorative glass effects, and low-contrast text.
+- Hidden navigation, unlabeled icon-only controls, irreversible destructive actions.
+- Color-only status indicators and hover-only information.
+
+OUTLIER PATTERNS
+- Editorial long-form layouts inside utility products.
+- Display typography in dense operational interfaces.
+- Full-screen visual canvases where compact lists improve scanning.
+
+EXTRACTED DNA
+Visual: neutral base, high-contrast text, one primary accent, 8-point spacing, medium-radius containers, restrained borders.
+Interactional: predictable navigation, direct manipulation, progressive disclosure, inline validation, reversible actions, explicit feedback.
+Accessibility: WCAG AA contrast target, visible focus, logical reading order, keyboard-complete controls, labeled icons, reduced-motion alternative, non-color status cues.
+Responsive: wide layouts use columns; medium layouts collapse secondary panels; narrow layouts stack sections and retain visible primary actions.
+
+CANDIDATE PRODUCT DOMAINS
+1. Project planning: Organizes tasks, milestones, priorities, and progress in a structured workspace.
+2. Knowledge library: Classifies, searches, annotates, and retrieves reference material.
+3. Inventory catalog: Tracks items, categories, availability, and condition in compact records.
+4. Travel planning: Arranges destinations, schedules, reservations, and preparation details.
+5. Habit tracking: Presents recurring activities, targets, streaks, and trends with low cognitive load.
+6. Content calendar: Coordinates draft states, dates, channels, and review checkpoints.
+
+WEIGHTED SCORING MATRIX
+Weights: clarity 25, reuse 20, responsive fit 20, accessibility fit 20, visual flexibility 15. Scores are 1-5; result is out of 5.
+Project planning: 5, 5, 5, 5, 4 = 4.80
+Knowledge library: 5, 5, 4, 5, 4 = 4.60
+Inventory catalog: 4, 5, 5, 4, 4 = 4.45
+Travel planning: 4, 4, 4, 4, 5 = 4.10
+Content calendar: 4, 4, 4, 4, 4 = 4.00
+Habit tracking: 4, 3, 4, 5, 4 = 3.95
+
+SELECTED DOMAIN RATIONALE
+Project planning supports the broadest reusable pattern set: navigation, filters, statuses, timelines, lists, cards, forms, dashboards, responsive density, and accessible progress communication.
+
+CYCLE LOCK
+Lock the selected domain, visual DNA, interaction principles, and accessibility baseline for this cycle. Permit only copy, spacing, component-state, and responsive refinements unless evidence shows a fundamental usability conflict.
+
+FALLBACK RULE
+If project planning requires specialized assumptions that reduce reuse, select knowledge library while preserving the same DNA, scoring criteria, and accessibility baseline.
