@@ -1,17 +1,13 @@
 flowchart TD
-  A[Entry] --> B{Content available?}
-  B -->|Yes| C[View primary content]
-  B -->|No| D[Show empty guidance]
-  C --> E[Choose action]
-  E --> F[Complete fields]
-  F --> G{Input valid?}
-  G -->|No| H[Show inline correction]
-  H --> F
-  G -->|Yes| I[Preview result]
-  I --> J{Confirm?}
-  J -->|No| F
-  J -->|Yes| K[Show completion state]
-  K --> L[Offer next relevant action]
-Rationale: context, correction, preview, confirmation, and completion remain distinct.
-Quality gates: every branch is recoverable; no destructive action is implicit; confirmation is specific; completion and interruption states are visible.
-Publishing rule: flow labels and identifiers remain stable after publication; revisions include date, reason, and affected artifact.
+A[Open product frame] --> B[Review overview]
+B --> C{Input valid?}
+C -- No --> D[Show inline guidance]
+D --> C
+C -- Yes --> E[Apply interface action]
+E --> F{Content available?}
+F -- Yes --> G[Show updated content and confirmation]
+F -- No --> H[Show empty or recovery state]
+H --> E
+G --> I[Retain location and state]
+Rationale: The flow covers the primary path, validation, unavailable content, recovery, confirmation, and continuity.
+Quality gates: every branch has visible feedback; actions are reversible where practical; no hidden prerequisite; focus returns to the affected region.
