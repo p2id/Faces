@@ -1,49 +1,45 @@
-# Shared Anatomy and Interaction Rules
+Global anatomy
+- Shell: navigation, header, main landmark, optional side panel, notification layer.
+- Header: context, title, description, primary action.
+- Content: section heading, controls, primary content, feedback.
+- Action group: primary action, secondary action, separated destructive action.
+- Feedback: status marker, concise title, supporting text, recovery action.
 
-## Page Shell
-- Anatomy: skip link, header, navigation, main landmark, optional footer.
-- Variants: full navigation, compact navigation, focused layout.
-- States: default, loading, unavailable-notice.
-- Usage: establish structure and orientation.
-- Anti-patterns: duplicate landmarks, missing page title, content hidden behind fixed regions.
-- Accessibility: landmarks, skip link, logical headings, visible focus.
+Variants
+- Density: comfortable, compact.
+- Emphasis: neutral, accent, success, warning, danger.
+- Surface: flat, bordered, elevated, overlay.
+- Content: empty, populated, loading, error.
+- Navigation: expanded, compact, collapsed.
 
-## Form Field
-- Anatomy: label, control, hint, validation message, required indicator.
-- Variants: inline, stacked, grouped.
-- States: empty, filled, focused, invalid, valid, disabled, read-only.
-- Usage: present each label and control as one understandable unit.
-- Anti-patterns: unlabeled controls, placeholder-only instructions, detached errors.
-- Accessibility: programmatic label, description, invalid state, error association, adequate target.
+States
+- Rest: stable content and available actions.
+- Hover: subtle surface or border change.
+- Focus-visible: high-contrast ring without layout shift.
+- Active: clear pressed or selected treatment.
+- Disabled: reduced emphasis with explanation when needed.
+- Loading: preserve structure and communicate progress.
+- Empty: explain absence and offer a relevant next action.
+- Error: state issue, preserve context, provide recovery.
+- Success: confirm completion without blocking continued use.
 
-## Navigation Item
-- Anatomy: optional icon, text label, active indicator, optional count badge.
-- Variants: primary, secondary, compact.
-- States: default, hover, focus-visible, active, disabled.
-- Usage: move between stable destinations.
-- Anti-patterns: color-only active state, ambiguous icons, changing item position.
-- Accessibility: link semantics, current-location state, visible labels, keyboard access.
+Usage
+- Prefer plain labels, predictable placement, semantic components, and concise feedback.
+- Align content to a consistent grid and preserve reading order when columns collapse.
+- Use progressive disclosure for secondary detail.
+- Keep destructive actions explicit and reversible where possible.
 
-## Status Indicator
-- Anatomy: text label, optional icon, supporting detail.
-- Variants: neutral, informative, success, warning, critical.
-- States: static, updating, unavailable.
-- Usage: communicate state with redundant text and visual treatment.
-- Anti-patterns: color-only status, unexplained symbols, flashing indicators.
-- Accessibility: text equivalent, sufficient contrast, polite updates, no rapid flashing.
+Anti-patterns
+- Ambiguous icon-only actions.
+- Placeholder-only labels.
+- Layout shifts during status changes.
+- Interaction dependent only on color, hover, drag, or motion.
+- Excessive elevation, nested overlays, competing primary actions.
+- Truncation without a full-value path.
 
-## Empty and Error Region
-- Anatomy: heading, explanation, optional decorative graphic, recovery action.
-- Variants: initial empty, filtered empty, unavailable, recoverable error.
-- States: default, retrying, resolved.
-- Usage: explain absence or failure and provide the next action.
-- Anti-patterns: blank screens, blame-oriented language, retry loops without feedback.
-- Accessibility: descriptive heading, concise explanation, keyboard recovery, contextual focus movement.
-
-## Overlay Layer
-- Anatomy: backdrop, panel, title, content, actions, close control.
-- Variants: dropdown, drawer, modal, tooltip.
-- States: hidden, opening, open, closing.
-- Usage: present temporary context without losing orientation.
-- Anti-patterns: inaccessible dismissal, essential content permanently covered, motion without fallback.
-- Accessibility: correct role, focus management, Escape behavior, viewport containment, reduced-motion support.
+Accessibility
+- Meet WCAG 2.2 AA and support keyboard-only operation.
+- Provide landmarks, heading hierarchy, labels, descriptions, and status announcements.
+- Maintain contrast, focus visibility, target size, zoom, reflow, and reduced-motion support.
+- Expose correct roles and states for dialogs, menus, tabs, tables, and forms.
+- Test keyboard navigation, screen readers, 200% zoom, 320px reflow, and forced colors.
