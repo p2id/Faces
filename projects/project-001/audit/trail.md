@@ -1,9 +1,9 @@
 # Audit trail
 - Project: project-001
-- Date: 2026-10-20
-- Scope: wireframes, states, tokens, responsive rules, flows, specimens, documentation, and quality evidence.
-- Decisions: use neutral reusable patterns; separate structure, behavior, content, and evidence; exclude backend assumptions.
-- Evidence: every artifact includes representation rationale and quality gates.
-- Status: prepared for structural, accessibility, responsive, content, and publication checks.
-- Change rule: append dated entries with reason, affected path, and gate result; do not overwrite prior decisions.
-- Publication rule: publish only after mandatory gates pass or a documented exception exists.
+- Date: 2026-10-23
+- Scope: generic product experience; interface-only
+- Outputs: wireframes, state matrix, token map, responsive model, flow model, HTML specimens
+- Representation rationale: SVG communicates geometry; MMD communicates relationships; HTML communicates semantics; Markdown records decisions, evidence, and rules.
+- Quality gates: hierarchy, states, accessibility, contrast, focus, keyboard order, responsive overflow, reduced motion, neutral language, path integrity.
+- Repository path intent: `/projects/project-001/ux/` contains project artifacts; `/projects/project-001/docs/` contains records; `/shared/standards/` contains reusable conventions; `/index/` contains discovery metadata.
+- Publishing rule: publish stable filenames with date, status, revision note, and review evidence. Do not publish unsupported claims or private data.
