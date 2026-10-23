@@ -1,6 +1,6 @@
-Positioning: quiet analytical workspace focused on comparison, evidence, and low-distraction review.
-Palette rationale: near-white canvas, graphite text, cool gray borders, restrained teal accent, high-contrast warning token; supports extended review.
-Type rationale: functional sans-serif with tabular numerals, compact heading scale, and explicit label-value contrast.
-Layout rules: comparison table or board on desktop, collapsible utility rail, sticky headers, summary metrics above detail, mobile single-record priority.
-Motion intent: subtle state transitions, loading placeholders, and focus movement; avoid parallax, looping animation, and attention competition.
-Avoided traps: dashboard clutter, context-free metrics, unexplained abbreviations, low-contrast borders, positionless infinite scroll, excessive alerts, anthropomorphic status language.
+Positioning: Flexible operational canvas for turning priorities into visible progress.
+Palette rationale: Bright neutral base, charcoal text, restrained violet accent, and distinct non-color status treatments.
+Type rationale: Compact sans serif for controls paired with readable text for explanations; use weight and spacing before color for hierarchy.
+Layout rules: Concise overview first; expandable detail groups; optional list, board, and timeline views; collapse secondary controls before primary content.
+Motion intent: Subtle reorder and expand/collapse transitions with immediate confirmation and stable orientation.
+Avoided traps: Novel navigation metaphors, drag-only operations, excessive controls, dense timelines, ambiguous completion, and animation-heavy onboarding.
