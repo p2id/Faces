@@ -1,17 +1,19 @@
-<section class="specimen" aria-labelledby="specimen-title">
-<header>
-<p class="eyebrow">Product area</p>
-<h1 id="specimen-title">Clear task title</h1>
-<p>Short context explains purpose, scope, and expected result.</p>
-</header>
-<form>
-<label for="field">Required field</label>
-<input id="field" name="field" aria-describedby="field-help">
-<p id="field-help">Use concise guidance before input.</p>
-<p role="status" hidden>Specific validation appears near the affected field.</p>
-<button type="submit">Primary action</button>
-<button type="button">Secondary action</button>
-</form>
-</section>
-Specimen rules: use semantic HTML, visible labels, meaningful controls, logical headings, accessible names, and explicit empty, loading, error, and completion states.
-Publishing gates: validate syntax, keyboard traversal, focus visibility, contrast, responsive rendering, reduced motion, truncation, and reading order.
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Generic Product Specimens</title>
+<style>
+:root{--canvas:#f7f8fa;--surface:#fff;--text:#1d2939;--muted:#667085;--accent:#175cd3;--line:#d0d5dd;--radius:8px}
+*{box-sizing:border-box}body{margin:0;background:var(--canvas);color:var(--text);font:16px/1.5 system-ui,sans-serif}
+main{max-width:960px;margin:auto;padding:24px}section{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:20px;margin:16px 0}
+button,input{font:inherit;min-height:44px;border-radius:6px;border:1px solid var(--line);padding:8px 12px}button{background:var(--accent);color:#fff;border-color:var(--accent)}input{width:100%;max-width:360px}.muted{color:var(--muted)}.notice{border-left:4px solid var(--accent);padding:12px;background:#eff8ff}
+</style>
+</head>
+<body><main>
+<header><h1>Product frame</h1><p class="muted">Neutral specimens for reusable interface patterns.</p></header>
+<section aria-labelledby="overview"><h2 id="overview">Overview</h2><p>Structured content remains grouped and scannable.</p><label for="value">Value</label><br><input id="value" placeholder="Enter a value"> <button type="button">Apply</button></section>
+<section class="notice" role="status"><strong>Ready</strong><br>Feedback is concise, visible, and non-blocking.</section>
+</main></body>
+</html>
+Writing and publishing rules: use plain language, outcome-based labels, semantic HTML, supported statements, version, date, status, and accessibility notes. Publish only reviewed specimens.
