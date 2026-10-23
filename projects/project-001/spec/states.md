@@ -1,31 +1,24 @@
-# Component Inventory
-- App shell: default, compact, loading, unavailable-notice.
-- Navigation: default, active, hover, focus-visible, pressed, disabled, collapsed.
-- Button: default, hover, focus-visible, pressed, disabled, loading, destructive.
-- Icon button: default, hover, focus-visible, pressed, disabled, loading.
-- Text input: empty, filled, hover, focus-visible, invalid, valid, disabled, read-only.
-- Select: closed, open, hover, focus-visible, selected, invalid, disabled.
-- Checkbox: unchecked, checked, indeterminate, focus-visible, disabled.
-- Radio: unselected, selected, focus-visible, disabled.
-- Toggle: off, on, focus-visible, disabled.
-- Search field: empty, typing, populated, loading, no-results, invalid.
-- Filter: default, active, open, focus-visible, disabled.
-- Card: default, hover, focus-visible, selected, disabled.
-- Table: loading, populated, empty, filtered-empty, error, responsive-stack.
-- Table row: default, hover, focus-visible, selected, disabled.
-- Badge: neutral, informative, success, warning, critical, disabled.
-- Alert: info, success, warning, error, dismissible.
-- Modal: closed, opening, open, submitting, error, closing.
-- Drawer: closed, opening, open, closing.
-- Tooltip: hidden, visible, delayed, disabled.
-- Pagination: default, first-page, last-page, disabled, loading.
-- Skeleton: active, complete, reduced-motion.
-- Toast: entering, visible, paused, exiting.
-- Empty state: default, filtered, error, action-required.
-
-## State Rules
-- Loading preserves layout and indicates progress.
-- Every interactive component has a visible focus-visible state.
-- Errors identify the issue, location, and recovery action.
-- Disabled controls remain legible and explain unavailability nearby when needed.
-- Destructive actions use explicit labels and confirmation when loss is consequential.
+Component inventory and states
+- Shell: default, compact, narrow, loading, offline, error.
+- Navigation item: default, hover, focus-visible, active, disabled, loading.
+- Button: default, hover, focus-visible, active, disabled, loading, success, error.
+- Icon button: default, hover, focus-visible, active, disabled, loading.
+- Link: default, hover, focus-visible, active, visited, disabled.
+- Input: empty, filled, hover, focus-visible, disabled, read-only, invalid, valid, loading.
+- Select: closed, open, hover, focus-visible, disabled, invalid, loading.
+- Checkbox: unchecked, checked, indeterminate, hover, focus-visible, disabled, invalid.
+- Radio: unselected, selected, hover, focus-visible, disabled, invalid.
+- Switch: off, on, hover, focus-visible, disabled, invalid.
+- Tabs: default, hover, focus-visible, active, disabled.
+- Card: default, hover, focus-visible, selected, disabled, loading, error.
+- Table: loading, empty, populated, row-hover, row-selected, error.
+- Pagination: default, hover, focus-visible, current, disabled, loading.
+- Badge: neutral, accent, success, warning, danger, disabled.
+- Alert: info, success, warning, error, dismissing.
+- Toast: entering, visible, action-focused, dismissing, expired.
+- Dialog: closed, opening, open, submitting, success, error, closing.
+- Menu: closed, opening, open, item-hover, item-focused, item-disabled, closing.
+- Tooltip: hidden, delayed, visible, dismissing.
+- Skeleton: active, paused, complete, error.
+- Progress: determinate, indeterminate, complete, error.
+- Divider: default, emphasized, hidden.
