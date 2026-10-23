@@ -1,24 +1,25 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-label="Generic product experience wireframe">
-<title>Generic product experience</title>
-<rect width="1200" height="760" fill="#f7f8fa"/>
-<g fill="#fff" stroke="#d9dee7">
-<rect x="32" y="24" width="1136" height="64" rx="8"/>
-<rect x="32" y="112" width="260" height="616" rx="8"/>
-<rect x="320" y="112" width="848" height="616" rx="8"/>
-<rect x="352" y="240" width="240" height="128" rx="8"/>
-<rect x="616" y="240" width="240" height="128" rx="8"/>
-<rect x="880" y="240" width="240" height="128" rx="8"/>
-<rect x="352" y="408" width="768" height="220" rx="8"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 640" role="img" aria-label="Generic product interface wireframe">
+<title>Generic product interface wireframe</title>
+<rect width="960" height="640" fill="#f7f8fa"/>
+<g fill="#fff" stroke="#98a2b3" stroke-width="2">
+<rect x="24" y="24" width="912" height="64" rx="8"/>
+<rect x="24" y="112" width="216" height="504" rx="8"/>
+<rect x="264" y="112" width="672" height="136" rx="8"/>
+<rect x="264" y="272" width="324" height="344" rx="8"/>
+<rect x="612" y="272" width="324" height="344" rx="8"/>
 </g>
-<g fill="#c8d0db">
-<rect x="56" y="46" width="180" height="20" rx="4"/>
-<rect x="900" y="44" width="96" height="24" rx="4"/>
-<rect x="1012" y="44" width="112" height="24" rx="4"/>
-<rect x="56" y="144" width="180" height="16" rx="4"/>
-<rect x="352" y="144" width="280" height="28" rx="5"/>
-<rect x="352" y="190" width="520" height="16" rx="4"/>
+<g font-family="system-ui,sans-serif" font-size="18" fill="#344054">
+<text x="48" y="63">Product frame</text><text x="48" y="151">Navigation</text>
+<text x="288" y="151">Overview</text><text x="288" y="311">Primary content</text>
+<text x="636" y="311">Secondary content</text>
 </g>
-<g stroke="#d9dee7"><path d="M384 456h704M384 510h704M384 564h704"/></g>
+<g stroke="#d0d5dd" stroke-width="10" stroke-linecap="round">
+<path d="M48 190h140M48 222h120M48 254h136M48 286h96"/>
+<path d="M288 192h392M288 224h304"/>
+<path d="M288 360h224M288 396h184M288 432h244M288 468h160"/>
+<path d="M636 360h224M636 396h184M636 432h244M636 468h160"/>
+</g>
+<g fill="#e4e7ec"><rect x="48" y="540" width="112" height="36" rx="6"/><rect x="288" y="548" width="112" height="36" rx="6"/></g>
 </svg>
-Rationale: navigation, summary, repeated cards, and detail content establish a reusable hierarchy before visual styling.
-Quality gates: valid SVG; scalable viewBox; labeled regions; readable contrast intent; no required decorative elements.
+Rationale: A stable shell establishes hierarchy, navigation, content grouping, and action placement before visual refinement.
+Quality gates: semantic regions; readable hierarchy; visible primary action; no overlap at reference width; neutral labels.
