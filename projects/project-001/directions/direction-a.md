@@ -1,6 +1,6 @@
-Positioning: calm operational clarity focused on scanning, state recognition, and dependable next actions.
-Palette rationale: warm off-white canvas, charcoal text, slate surfaces, muted blue accent, amber for attention; reduces fatigue and preserves semantic colors.
-Type rationale: neutral sans-serif with clear numerals, moderate x-height, and two primary weights; supports dense labels.
-Layout rules: persistent side navigation, 12-column desktop grid, summary row, split list-detail view, stacked tablet panels, mobile-priority action placement.
-Motion intent: brief opacity and position transitions for panel changes; no decorative motion; honor reduced-motion settings.
-Avoided traps: color-only states, oversized hero areas, modal-first editing, hidden filters, ambiguous destructive actions, decorative or anthropomorphic imagery.
+Positioning: Focused workspace for organizing complex work with minimal visual noise.
+Palette rationale: Warm off-white surface, graphite text, muted slate secondary text, and deep blue accent support hierarchy and durable contrast.
+Type rationale: Neutral sans serif with clear numerals, compact headings, limited weight variation, and 1.45-1.6 reading line height.
+Layout rules: Persistent wide navigation; two-column medium layout; stacked narrow layout; 8-point spacing; cards only for meaningful grouping.
+Motion intent: Short opacity and position transitions for state changes; no decorative motion; reduced-motion alternative.
+Avoided traps: Dashboard clutter, excessive badges, ambiguous color semantics, hidden primary actions, gradients, and hover-only information.
