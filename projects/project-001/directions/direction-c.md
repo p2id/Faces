@@ -1,6 +1,17 @@
-Positioning: Flexible operational canvas for turning priorities into visible progress.
-Palette rationale: Bright neutral base, charcoal text, restrained violet accent, and distinct non-color status treatments.
-Type rationale: Compact sans serif for controls paired with readable text for explanations; use weight and spacing before color for hierarchy.
-Layout rules: Concise overview first; expandable detail groups; optional list, board, and timeline views; collapse secondary controls before primary content.
-Motion intent: Subtle reorder and expand/collapse transitions with immediate confirmation and stable orientation.
-Avoided traps: Novel navigation metaphors, drag-only operations, excessive controls, dense timelines, ambiguous completion, and animation-heavy onboarding.
+POSITIONING
+Flexible library prioritizing browsing, organization, preview, and controlled density.
+
+PALETTE RATIONALE
+Light neutral surfaces, graphite text, a violet-blue accent, and restrained dividers distinguish groups without imposing excessive hierarchy.
+
+TYPE RATIONALE
+Use a neutral sans-serif with comfortable body sizing and optional compact density. Metadata remains readable at the smallest supported size.
+
+LAYOUT RULES
+Provide list and grid representations with identical information architecture. Use left navigation on wide screens, a filter drawer on medium screens, and stacked controls on mobile.
+
+MOTION INTENT
+Use 180–240ms transitions for view changes, preview panels, and reordering. Provide stable placeholders and avoid disorienting rearrangement.
+
+AVOIDED TRAPS
+No image-dependent hierarchy, position loss after long lists, ambiguous selection states, drag-only actions, or preview panels that obscure navigation.
