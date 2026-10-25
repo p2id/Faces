@@ -1,58 +1,48 @@
-meta:
-  date: "2026-10-23"
-  project: project-001
-  layer: semantic
 color:
   background:
-    canvas: "$color.neutral.050"
-    surface: "$color.neutral.000"
-    subtle: "$color.neutral.100"
-    inverse: "$color.neutral.900"
-  text:
-    default: "$color.neutral.900"
-    muted: "$color.neutral.600"
-    subtle: "$color.neutral.500"
-    inverse: "$color.neutral.000"
-    disabled: "$color.neutral.400"
-    link: "$color.blue.700"
+    canvas: "#FFFFFF"
+    surface: "#F8FAFC"
+    raised: "#FFFFFF"
+    inverse: "#0F172A"
+  content:
+    primary: "#0F172A"
+    secondary: "#475569"
+    muted: "#64748B"
+    inverse: "#FFFFFF"
+    link: "#1D4ED8"
   border:
-    default: "$color.neutral.300"
-    subtle: "$color.neutral.200"
-    strong: "$color.neutral.500"
-    focus: "$color.blue.600"
-  accent:
-    default: "$color.blue.700"
-    hover: "$color.blue.800"
-    soft: "$color.blue.050"
+    default: "#CBD5E1"
+    subtle: "#E2E8F0"
+    strong: "#94A3B8"
   status:
-    info: "$color.blue.700"
-    infoSoft: "$color.blue.050"
-    success: "$color.green.700"
-    successSoft: "$color.green.050"
-    warning: "$color.amber.800"
-    warningSoft: "$color.amber.050"
-    danger: "$color.red.700"
-    dangerSoft: "$color.red.050"
+    info: "#2563EB"
+    positive: "#15803D"
+    caution: "#A16207"
+    negative: "#B91C1C"
+  action:
+    primary: "#1D4ED8"
+    primaryHover: "#1E40AF"
+    primaryActive: "#1E3A8A"
 typography:
-  family:
-    sans: "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif"
-    mono: "ui-monospace, SFMono-Regular, Menlo, monospace"
+  fontFamily:
+    sans: "system-ui, sans-serif"
+    mono: "ui-monospace, monospace"
   size:
     xs: "0.75rem"
     sm: "0.875rem"
     md: "1rem"
-    lg: "1.125rem"
+    lg: "1.25rem"
     xl: "1.5rem"
     display: "2rem"
-  weight:
-    regular: "400"
-    medium: "500"
-    semibold: "600"
-    bold: "700"
   lineHeight:
     tight: "1.2"
     normal: "1.5"
     relaxed: "1.7"
+  weight:
+    regular: 400
+    medium: 500
+    semibold: 600
+    bold: 700
 spacing:
   "0": "0"
   "1": "0.25rem"
@@ -62,9 +52,7 @@ spacing:
   "6": "1.5rem"
   "8": "2rem"
   "12": "3rem"
-  "16": "4rem"
 radius:
-  none: "0"
   sm: "0.25rem"
   md: "0.5rem"
   lg: "0.75rem"
@@ -74,46 +62,44 @@ border:
   thick: "2px"
 shadow:
   none: "none"
-  sm: "0 1px 2px rgb(0 0 0 / 0.08)"
-  md: "0 4px 12px rgb(0 0 0 / 0.12)"
-  lg: "0 12px 32px rgb(0 0 0 / 0.16)"
+  sm: "0 1px 2px rgb(15 23 42 / 0.08)"
+  md: "0 4px 12px rgb(15 23 42 / 0.12)"
 opacity:
-  disabled: "0.48"
-  muted: "0.68"
-  overlay: "0.56"
+  disabled: 0.5
+  muted: 0.7
+  overlay: 0.6
 motion:
-  fast: "100ms"
-  normal: "180ms"
-  slow: "280ms"
-  ease: "cubic-bezier(0.2, 0, 0, 1)"
-  none: "0ms"
+  duration:
+    fast: "120ms"
+    normal: "200ms"
+    slow: "320ms"
+  easing:
+    standard: "cubic-bezier(0.2, 0, 0, 1)"
+    emphasis: "cubic-bezier(0.2, 0, 0, 1)"
+  reduced: "none"
 layout:
   contentMax: "75rem"
-  navWidth: "16rem"
-  navCompactWidth: "4.5rem"
-  gutter: "$spacing.6"
-  gutterNarrow: "$spacing.4"
+  readingMax: "45rem"
+  gutter: "{spacing.4}"
+  gutterWide: "{spacing.8}"
+  columns: 12
 size:
-  control: "2.75rem"
-  controlSmall: "2.25rem"
+  controlHeight: "2.75rem"
   icon: "1.25rem"
-  iconLarge: "1.5rem"
-  touchTarget: "2.75rem"
+  focusRing: "0.1875rem"
+  headerHeight: "4rem"
 zIndex:
-  base: "0"
-  header: "10"
-  sticky: "20"
-  dropdown: "30"
-  overlay: "40"
-  toast: "50"
-  tooltip: "60"
+  base: 0
+  sticky: 10
+  dropdown: 20
+  overlay: 30
+  dialog: 40
+  toast: 50
 state:
-  hoverOpacity: "0.92"
-  pressedScale: "0.98"
-  focusRingWidth: "$border.thick"
-  focusRingOffset: "$spacing.1"
-  disabledOpacity: "$opacity.disabled"
-  loadingOpacity: "$opacity.muted"
-  selectedBackground: "$color.accent.soft"
-  errorBorder: "$color.status.danger"
-  successBorder: "$color.status.success"
+  hoverOpacity: 0.92
+  pressedOpacity: 0.84
+  disabledOpacity: "{opacity.disabled}"
+  focusRingColor: "{color.action.primary}"
+  focusRingWidth: "{size.focusRing}"
+  errorColor: "{color.status.negative}"
+  successColor: "{color.status.positive}"
