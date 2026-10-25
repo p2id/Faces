@@ -1,18 +1,20 @@
-Breakpoints
+Breakpoints:
 - xs: 0–479px
 - sm: 480–767px
 - md: 768–1023px
 - lg: 1024–1279px
 - xl: 1280px and above
 
-Rules
-- xs/sm: single column; collapse navigation; convert side panel to drawer; stack controls; allow table scroll or row layout.
-- md: permit two columns; use compact navigation; dialogs use up to 90vw.
-- lg/xl: persistent navigation; content max-width 1200px; side panel may remain visible.
-- Cards: one column xs, two sm/md, three or more lg/xl.
-- Header actions wrap below the title without truncation.
-- Preserve labels and function before reducing text size.
-- Maintain 44px minimum interactive targets.
-- Use safe-area insets on narrow displays.
-- Support 320px reflow and 200% zoom without loss of content.
-- Remove nonessential motion when reduced motion is requested.
+Rules:
+- Use fluid widths with a centered 1200px maximum content width.
+- xs: single column, full-width controls, compact header, no horizontal overflow.
+- sm: single column; grouped controls may wrap.
+- md: use two columns where useful; navigation may collapse.
+- lg: use a two-column workspace; retain secondary panels when space permits.
+- xl: increase outer gutters while preserving readable line length.
+- Maintain 44x44px minimum interactive targets.
+- Stack actions below 480px; use inline actions from 768px.
+- Convert tables to labeled rows or horizontal scrolling below 768px.
+- Use near-full-width dialogs below 480px and capped widths above 480px.
+- Do not hide required content solely due to viewport width.
+- Respect text scaling and reduced-motion preferences.
