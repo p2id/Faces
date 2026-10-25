@@ -1,14 +1,14 @@
-Budgets
-- Critical CSS: 50KB compressed maximum.
-- Initial JavaScript: 170KB compressed maximum.
-- First-load transfer: 500KB compressed maximum, excluding selected media.
-- First Contentful Paint: 1.8s maximum.
-- Largest Contentful Paint: 2.5s maximum.
-- Interaction to Next Paint: 200ms maximum.
-- Cumulative Layout Shift: 0.1 maximum.
-- Ready interaction time: 3.5s maximum.
-- Above-fold media: 150KB maximum; use responsive formats.
-- Fonts: maximum 2 families and 4 weights; use fallbacks.
-- Lazy-load below-fold media and noncritical panels.
-- Reserve media dimensions and avoid render-blocking noncritical resources.
-- Prefer CSS transitions; cap nonessential motion at 280ms.
+Budgets:
+- Critical CSS: maximum 40KB compressed.
+- Initial JavaScript: maximum 170KB compressed.
+- Initial image payload: maximum 250KB compressed.
+- First-view transfer: maximum 500KB compressed.
+- Largest Contentful Paint: maximum 2.5s on representative mobile conditions.
+- Interaction latency: maximum 100ms.
+- Cumulative Layout Shift: maximum 0.1.
+- Time to interactive: maximum 3.5s on representative mobile conditions.
+- Route transition response: maximum 200ms perceived latency.
+- Animation: target 60fps; avoid layout-triggering animation.
+- Use responsive image sizes, explicit dimensions, modern formats, and below-fold lazy loading.
+- Reserve space for asynchronous content and virtualize long lists.
+- Provide lightweight loading, empty, and error states without blocking the shell.
