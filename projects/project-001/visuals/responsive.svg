@@ -1,16 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 430" role="img" aria-label="Responsive layout behavior">
-<g font-family="system-ui,sans-serif" fill="#344054" font-size="16">
-<text x="32" y="28">Responsive behavior</text><text x="32" y="68">Wide ≥ 1024</text>
-<text x="352" y="68">Medium 768–1023</text><text x="672" y="68">Compact &lt; 768</text>
-</g>
-<g fill="#fff" stroke="#98a2b3" stroke-width="2">
-<rect x="32" y="88" width="280" height="300" rx="8"/><rect x="352" y="88" width="280" height="300" rx="8"/><rect x="672" y="88" width="256" height="300" rx="8"/>
-</g>
-<g fill="#e4e7ec">
-<rect x="48" y="104" width="248" height="40" rx="5"/><rect x="48" y="160" width="72" height="212" rx="5"/><rect x="132" y="160" width="164" height="96" rx="5"/><rect x="132" y="268" width="164" height="104" rx="5"/>
-<rect x="368" y="104" width="248" height="40" rx="5"/><rect x="368" y="160" width="248" height="52" rx="5"/><rect x="368" y="228" width="120" height="144" rx="5"/><rect x="504" y="228" width="112" height="144" rx="5"/>
-<rect x="688" y="104" width="224" height="40" rx="5"/><rect x="688" y="160" width="224" height="48" rx="5"/><rect x="688" y="224" width="224" height="68" rx="5"/><rect x="688" y="308" width="224" height="64" rx="5"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 330" role="img" aria-label="Generic responsive layout plan">
+<title>Generic responsive layout plan</title>
+<rect width="960" height="330" fill="#f7f8fa"/>
+<g fill="#fff" stroke="#c9ced6"><rect x="32" y="40" width="240" height="240" rx="8"/><rect x="360" y="40" width="240" height="240" rx="8"/><rect x="688" y="40" width="240" height="240" rx="8"/></g>
+<g font-family="Arial,sans-serif" fill="#273142"><text x="48" y="74" font-size="18" font-weight="700">Compact</text><text x="48" y="98" font-size="12">0–599px</text><text x="376" y="74" font-size="18" font-weight="700">Medium</text><text x="376" y="98" font-size="12">600–959px</text><text x="704" y="74" font-size="18" font-weight="700">Wide</text><text x="704" y="98" font-size="12">960px+</text></g>
+<g font-family="Arial,sans-serif" font-size="12" fill="#596579">
+<text x="48" y="138">Single column</text><text x="48" y="164">Collapsed navigation</text><text x="48" y="190">Full-width actions</text><text x="48" y="216">44px minimum targets</text>
+<text x="376" y="138">Two regions</text><text x="376" y="164">Condensed navigation</text><text x="376" y="190">Flexible cards</text><text x="376" y="216">Readable line length</text>
+<text x="704" y="138">Persistent navigation</text><text x="704" y="164">Multi-region layout</text><text x="704" y="190">Bounded content width</text><text x="704" y="216">Stable hierarchy</text>
 </g>
 </svg>
-Rationale: Reflow changes density and column count while preserving content order and hierarchy.
-Quality gates: no horizontal overflow; minimum 44px interactive targets; logical reading order; visible focus; compact navigation remains discoverable.
