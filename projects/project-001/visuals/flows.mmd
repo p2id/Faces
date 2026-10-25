@@ -1,13 +1,9 @@
-flowchart TD
-A[Open product frame] --> B[Review overview]
-B --> C{Input valid?}
-C -- No --> D[Show inline guidance]
-D --> C
-C -- Yes --> E[Apply interface action]
-E --> F{Content available?}
-F -- Yes --> G[Show updated content and confirmation]
-F -- No --> H[Show empty or recovery state]
-H --> E
-G --> I[Retain location and state]
-Rationale: The flow covers the primary path, validation, unavailable content, recovery, confirmation, and continuity.
-Quality gates: every branch has visible feedback; actions are reversible where practical; no hidden prerequisite; focus returns to the affected region.
+flowchart LR
+  A[Entry] --> B[Orient]
+  B --> C[Inspect content]
+  C --> D[Select action]
+  D --> E[Validate]
+  E --> F[Completion]
+  E --> G[Recovery]
+  G --> D
+  F --> H[Persist status]
