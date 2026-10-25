@@ -1,18 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 420" role="img" aria-label="Interface state matrix">
-<rect width="900" height="420" fill="#fff"/>
-<g fill="#f2f4f7" stroke="#98a2b3">
-<rect x="24" y="24" width="852" height="52"/><rect x="24" y="76" width="852" height="64"/>
-<rect x="24" y="140" width="852" height="64"/><rect x="24" y="204" width="852" height="64"/>
-<rect x="24" y="268" width="852" height="64"/><rect x="24" y="332" width="852" height="64"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 360" role="img" aria-label="Generic interface state matrix">
+<title>Generic interface state matrix</title>
+<rect width="960" height="360" fill="#fff"/>
+<g fill="none" stroke="#c9ced6"><rect x="24" y="24" width="912" height="288" rx="6"/><path d="M24 72h912M24 120h912M24 168h912M24 216h912M24 264h912M206 24v288M388 24v288M570 24v288M752 24v288"/></g>
+<g font-family="Arial,sans-serif" font-size="14" fill="#273142">
+<text x="40" y="54" font-weight="700">Ready</text><text x="222" y="54" font-weight="700">Loading</text><text x="404" y="54" font-weight="700">Empty</text><text x="586" y="54" font-weight="700">Error</text><text x="768" y="54" font-weight="700">Success</text>
 </g>
-<g font-family="system-ui,sans-serif" font-size="16" fill="#344054">
-<text x="40" y="57">Region</text><text x="250" y="57">Default</text><text x="420" y="57">Loading</text><text x="590" y="57">Empty / Error</text>
-<text x="40" y="114">Frame</text><text x="250" y="114">Content visible</text><text x="420" y="114">Reserved structure</text><text x="590" y="114">Recovery notice</text>
-<text x="40" y="178">Content</text><text x="250" y="178">Structured items</text><text x="420" y="178">Placeholder rows</text><text x="590" y="178">Guidance and retry</text>
-<text x="40" y="242">Control</text><text x="250" y="242">Enabled</text><text x="420" y="242">Pending or disabled</text><text x="590" y="242">Validation message</text>
-<text x="40" y="306">Navigation</text><text x="250" y="306">Current location</text><text x="420" y="306">Stable location</text><text x="590" y="306">Fallback location</text>
-<text x="40" y="370">Feedback</text><text x="250" y="370">Neutral confirmation</text><text x="420" y="370">Progress indication</text><text x="590" y="370">Actionable resolution</text>
+<g font-family="Arial,sans-serif" font-size="12" fill="#596579">
+<text x="40" y="102">Content + controls</text><text x="222" y="102">Progress + stable layout</text><text x="404" y="102">Explanation + action</text><text x="586" y="102">Cause + recovery</text><text x="768" y="102">Confirmation + next step</text>
+<text x="40" y="150">Visible focus</text><text x="222" y="150">Announced change</text><text x="404" y="150">No fabricated data</text><text x="586" y="150">Input preserved</text><text x="768" y="150">Status persists</text>
+<text x="40" y="198">Enabled actions</text><text x="222" y="198">Limited actions</text><text x="404" y="198">Primary action</text><text x="586" y="198">Retry or edit</text><text x="768" y="198">Continue or review</text>
+<text x="40" y="246">Accessible labels</text><text x="222" y="246">Reduced motion</text><text x="404" y="246">Clear absence</text><text x="586" y="246">Neutral language</text><text x="768" y="246">Clear outcome</text>
 </g>
 </svg>
-Rationale: A compact matrix makes state coverage reviewable without coupling the interface to implementation details.
-Quality gates: default, loading, empty, error, disabled, focus, and reduced-motion behavior are defined for major regions; recovery preserves context.
