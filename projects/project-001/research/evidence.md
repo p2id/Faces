@@ -1,9 +1,9 @@
-SUPPORTING EVIDENCE
-- Content-led domains best fit a generic, neutral, reusable product experience.
-- Knowledge library supports navigation, search, filtering, metadata, empty states, and responsive prioritization.
-- Strong hierarchy, explicit states, keyboard access, scalable type, and low-distraction surfaces are consistent quality signals.
-- Progressive disclosure and stable reading order reduce narrow-screen complexity.
-- Motion is most useful for loading, filtering, expansion, and confirmation, with suppression support.
-- Likely failure modes include decorative complexity, hidden controls, modal overuse, and color-only status.
-- Knowledge library scores 4.85/5, narrowly exceeding File library at 4.80/5.
-- Confidence: high for structural patterns; medium for domain selection pending visual and responsive checks.
+Supporting evidence summary:
+- Clear hierarchy, compact grouping, and explicit status communication improve scanability.
+- Neutral surfaces with one strong accent reduce competition and preserve semantic color meaning.
+- Progressive disclosure lowers initial complexity without removing advanced controls.
+- Priority-based responsive collapse protects essential content on narrow screens.
+- Keyboard access, visible focus, contrast, text alternatives, and reduced-motion support are baseline requirements.
+- Resource catalog ranks highest across clarity, accessibility, responsive fit, reuse, and distinctiveness.
+- No supporting evidence favors decorative motion, hidden navigation, modal-first flows, low-contrast labels, or color-only states.
+- Confidence: medium-high; conclusions are reusable and independent of specialized data or services.
