@@ -1,45 +1,39 @@
-Global anatomy
-- Shell: navigation, header, main landmark, optional side panel, notification layer.
-- Header: context, title, description, primary action.
-- Content: section heading, controls, primary content, feedback.
-- Action group: primary action, secondary action, separated destructive action.
-- Feedback: status marker, concise title, supporting text, recovery action.
+Global shell
+- Anatomy: header, navigation, main region, optional footer.
+- Variants: full navigation, compact navigation, focused workspace.
+- States: loading, ready, offline, error.
+- Usage: keep navigation stable and preserve page context.
+- Anti-patterns: changing navigation position, blocking shell rendering for content.
+- Accessibility: landmarks, skip link, logical heading hierarchy, visible focus.
 
-Variants
-- Density: comfortable, compact.
-- Emphasis: neutral, accent, success, warning, danger.
-- Surface: flat, bordered, elevated, overlay.
-- Content: empty, populated, loading, error.
-- Navigation: expanded, compact, collapsed.
+Page composition
+- Anatomy: context label, title, description, action group, content sections, feedback region.
+- Variants: overview, list, detail, form, empty.
+- States: loading, populated, empty, filtered-empty, error, success.
+- Usage: place the primary task above secondary content; use progressive disclosure.
+- Anti-patterns: competing primary actions, unexplained abbreviations, dense uninterrupted text.
+- Accessibility: one clear page heading, meaningful section headings, readable line length, preserved reading order.
 
-States
-- Rest: stable content and available actions.
-- Hover: subtle surface or border change.
-- Focus-visible: high-contrast ring without layout shift.
-- Active: clear pressed or selected treatment.
-- Disabled: reduced emphasis with explanation when needed.
-- Loading: preserve structure and communicate progress.
-- Empty: explain absence and offer a relevant next action.
-- Error: state issue, preserve context, provide recovery.
-- Success: confirm completion without blocking continued use.
+Navigation
+- Anatomy: link label, selected indicator, optional icon, overflow control.
+- Variants: sidebar, horizontal, compact.
+- States: default, selected, hover, focus, disabled, collapsed.
+- Usage: labels describe destinations and remain consistent.
+- Anti-patterns: color-only selection, hidden current location, inaccessible overflow.
+- Accessibility: navigation landmark, current-page indication, keyboard operation, visible focus, adequate target size.
 
-Usage
-- Prefer plain labels, predictable placement, semantic components, and concise feedback.
-- Align content to a consistent grid and preserve reading order when columns collapse.
-- Use progressive disclosure for secondary detail.
-- Keep destructive actions explicit and reversible where possible.
+Feedback
+- Anatomy: status, concise message, next step, optional details.
+- Variants: inline, banner, toast, progress.
+- States: pending, active, complete, error, dismissible.
+- Usage: explain what occurred and identify available next steps.
+- Anti-patterns: generic errors, silent failure, conflicting simultaneous messages.
+- Accessibility: announce meaningful updates, pair color with text and iconography, do not rely on motion.
 
-Anti-patterns
-- Ambiguous icon-only actions.
-- Placeholder-only labels.
-- Layout shifts during status changes.
-- Interaction dependent only on color, hover, drag, or motion.
-- Excessive elevation, nested overlays, competing primary actions.
-- Truncation without a full-value path.
-
-Accessibility
-- Meet WCAG 2.2 AA and support keyboard-only operation.
-- Provide landmarks, heading hierarchy, labels, descriptions, and status announcements.
-- Maintain contrast, focus visibility, target size, zoom, reflow, and reduced-motion support.
-- Expose correct roles and states for dialogs, menus, tabs, tables, and forms.
-- Test keyboard navigation, screen readers, 200% zoom, 320px reflow, and forced colors.
+Content controls
+- Anatomy: label, control, hint, validation, action.
+- Variants: text, choice, date, numeric, metadata.
+- States: empty, filled, focus, valid, invalid, disabled, read-only.
+- Usage: group related controls and keep instructions adjacent.
+- Anti-patterns: unlabeled controls, placeholder-only instructions, indistinct destructive actions.
+- Accessibility: explicit labels, error recovery guidance, adequate contrast, keyboard and assistive-technology support.
