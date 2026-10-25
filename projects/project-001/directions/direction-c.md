@@ -1,17 +1,6 @@
-POSITIONING
-Flexible library prioritizing browsing, organization, preview, and controlled density.
-
-PALETTE RATIONALE
-Light neutral surfaces, graphite text, a violet-blue accent, and restrained dividers distinguish groups without imposing excessive hierarchy.
-
-TYPE RATIONALE
-Use a neutral sans-serif with comfortable body sizing and optional compact density. Metadata remains readable at the smallest supported size.
-
-LAYOUT RULES
-Provide list and grid representations with identical information architecture. Use left navigation on wide screens, a filter drawer on medium screens, and stacked controls on mobile.
-
-MOTION INTENT
-Use 180–240ms transitions for view changes, preview panels, and reordering. Provide stable placeholders and avoid disorienting rearrangement.
-
-AVOIDED TRAPS
-No image-dependent hierarchy, position loss after long lists, ambiguous selection states, drag-only actions, or preview panels that obscure navigation.
+Positioning: Guided catalog that reveals complexity progressively through curated groups and contextual detail.
+Palette rationale: Soft neutral canvas, dark plum accent, pale lavender support tint, and reserved semantic colors provide distinction without excess.
+Type rationale: Open, legible sans-serif, generous descriptive line height, and limited emphasis styles preserve hierarchy.
+Layout rules: Curated entry point, grouped collections, compact summaries, progressive detail panel, persistent breadcrumb context, single-column mobile flow.
+Motion intent: Gentle section reveal, panel transition, and focus handoff; provide static equivalents when motion is reduced.
+Avoided traps: Forced onboarding, carousel-dependent discovery, excessive personalization cues, hidden hierarchy, decorative content competing with information.
