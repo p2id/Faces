@@ -1,6 +1,6 @@
-Positioning: Analytical comparison catalog centered on attributes, trade-offs, and side-by-side inspection.
-Palette rationale: Cool gray foundation, deep navy text, teal accent, and high-contrast semantic markers create focus without noise.
-Type rationale: Highly legible sans-serif, aligned numerals, compact labels, and clear heading-to-body contrast.
-Layout rules: Persistent search and sort; comparison tray anchored near the viewport edge; aligned attribute rows; stacked comparison sections on mobile.
-Motion intent: Low-amplitude tray expansion, row highlighting, and reorder feedback; no continuous animation.
-Avoided traps: Spreadsheet overload, uncontrolled column growth, color-only distinctions, obstructive sticky elements, excessive truncation.
+Positioning: Efficient catalog optimized for comparison and repeated review.
+Palette rationale: Cool gray foundation, deep indigo accent, and semantic highlights separate structure from status while remaining compact.
+Type rationale: High-x-height sans-serif, tabular numerals, and distinct heading steps improve repeated-value comparison.
+Layout rules: Dense table on wide screens; stacked records on narrow screens; persistent filter summary; aligned comparison attributes; actions remain adjacent to context.
+Motion intent: Minimal transitions for sorting, expansion, and confirmation; all states remain clear when motion is disabled.
+Avoided traps: Overloaded tables, horizontal-scroll dependence, hover-only actions, excessive badges, and decorative visualizations.
