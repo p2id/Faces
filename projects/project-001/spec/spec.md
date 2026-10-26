@@ -1,34 +1,24 @@
 Project: project-001
-Date: 2026-10-25
-Scope: Generic, neutral product experience for creating, reviewing, and managing structured items.
+Date: 2026-10-26
+Scope: generic, neutral, reusable product experience.
 
 Surfaces:
-- Overview: summary, filters, and item list.
-- Workspace: focused item creation and editing.
-- Detail: item content, metadata, and actions.
-- Settings: preferences and display configuration.
+- Responsive web application
+- Overview dashboard
+- Item detail view
+- Settings view
+- Dialog, menu, toast, and inline feedback layers
 
 Sections:
-- Global header: product label, navigation, contextual actions.
-- Page header: title, description, status, primary action.
-- Navigation: overview, workspace, settings.
-- Content region: cards, tables, forms, and feedback.
-- Footer: secondary links and version information.
-
-Real content examples:
-- Title: “Overview”
-- Description: “Review current items and manage available content.”
-- Primary action: “Create item”
-- Search placeholder: “Search items”
-- Empty state: “No items match these filters.”
-- Success message: “Item saved.”
-- Validation message: “Enter a valid title.”
-- Error message: “Unable to load items. Try again.”
-- Status labels: “Draft”, “In review”, “Complete”
-- Table headings: “Title”, “Status”, “Updated”, “Actions”
+- Header: “Workspace”; navigation “Overview”, “Activity”, “Settings”; utility action “Help”
+- Overview: title “Overview”; description “Review current items and recent changes.”; primary action “Create item”
+- Summary: “Open items” 24; “Completed” 18; “Needs review” 6
+- Item list: heading “Items”; search “Search items”; filters “All”, “Open”, “Completed”
+- Example rows: “Quarterly review”; “Content update”; “Access check”
+- Detail: title “Quarterly review”; status “Needs review”; actions “Edit”, “Archive”
+- Feedback: “Item updated.”; “Unable to update item. Try again.”; “Loading items…”
 
 Content rules:
-- Use concise, specific, sentence-case labels.
-- Keep one primary action per surface.
-- Preserve meaning when text wraps or is translated.
-- Never rely on color alone for status.
+- Use sentence case, concise labels, explicit verbs, and one primary action per context.
+- Preserve meaning without color alone.
+- Use neutral examples without personal, organizational, external-service, or identity references.
