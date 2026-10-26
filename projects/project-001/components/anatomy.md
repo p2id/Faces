@@ -1,39 +1,39 @@
 Global shell
-- Anatomy: header, navigation, main region, optional footer.
-- Variants: full navigation, compact navigation, focused workspace.
-- States: loading, ready, offline, error.
-- Usage: keep navigation stable and preserve page context.
-- Anti-patterns: changing navigation position, blocking shell rendering for content.
-- Accessibility: landmarks, skip link, logical heading hierarchy, visible focus.
+- Anatomy: header, navigation, skip link, page container, main content, overlay layer.
+- Variants: full navigation at md+, compact navigation below md.
+- States: default, loading, empty, error.
+- Usage: maintain consistent hierarchy and route context.
+- Anti-patterns: changing navigation placement, hidden page title, overlays covering content.
+- Accessibility: landmarks, skip link, logical headings, keyboard navigation.
 
-Page composition
-- Anatomy: context label, title, description, action group, content sections, feedback region.
-- Variants: overview, list, detail, form, empty.
-- States: loading, populated, empty, filtered-empty, error, success.
-- Usage: place the primary task above secondary content; use progressive disclosure.
-- Anti-patterns: competing primary actions, unexplained abbreviations, dense uninterrupted text.
-- Accessibility: one clear page heading, meaningful section headings, readable line length, preserved reading order.
+Overview surface
+- Anatomy: title block, primary action, summary cards, filter row, item collection, feedback region.
+- Variants: populated, empty, filtered, loading, error.
+- States: ready, refreshing, no-results, failed.
+- Usage: place orientation before controls and content.
+- Anti-patterns: unexplained controls, blank empty canvas, mixed action priority.
+- Accessibility: labeled regions, announced result changes, preserved focus after filtering.
 
-Navigation
-- Anatomy: link label, selected indicator, optional icon, overflow control.
-- Variants: sidebar, horizontal, compact.
-- States: default, selected, hover, focus, disabled, collapsed.
-- Usage: labels describe destinations and remain consistent.
-- Anti-patterns: color-only selection, hidden current location, inaccessible overflow.
-- Accessibility: navigation landmark, current-page indication, keyboard operation, visible focus, adequate target size.
+Item row
+- Anatomy: status indicator, title, supporting metadata, optional action menu.
+- Variants: compact, standard, selected.
+- States: default, hover, focus-visible, selected, disabled, loading.
+- Usage: keep title primary and metadata secondary.
+- Anti-patterns: color-only status, ambiguous menus, clipped essential text.
+- Accessibility: expose row name and status; provide distinct names for actions; support keyboard access.
 
-Feedback
-- Anatomy: status, concise message, next step, optional details.
-- Variants: inline, banner, toast, progress.
-- States: pending, active, complete, error, dismissible.
-- Usage: explain what occurred and identify available next steps.
-- Anti-patterns: generic errors, silent failure, conflicting simultaneous messages.
-- Accessibility: announce meaningful updates, pair color with text and iconography, do not rely on motion.
+Detail panel
+- Anatomy: title, status, description, metadata, action group, close or back control.
+- Variants: inline, side panel, dialog.
+- States: viewing, editing, saving, saved, error.
+- Usage: preserve originating context and show completion feedback.
+- Anti-patterns: hidden close control, silent loss of changes, unclear action consequences.
+- Accessibility: heading on entry, managed focus for overlays, associated errors, announced status updates.
 
-Content controls
-- Anatomy: label, control, hint, validation, action.
-- Variants: text, choice, date, numeric, metadata.
-- States: empty, filled, focus, valid, invalid, disabled, read-only.
-- Usage: group related controls and keep instructions adjacent.
-- Anti-patterns: unlabeled controls, placeholder-only instructions, indistinct destructive actions.
-- Accessibility: explicit labels, error recovery guidance, adequate contrast, keyboard and assistive-technology support.
+Feedback region
+- Anatomy: loading indicator, empty message, error message, recovery action.
+- Variants: inline, full-region, toast.
+- States: loading, empty, success, warning, error.
+- Usage: explain the condition and the next available action.
+- Anti-patterns: indefinite spinner, technical error text, visual-only feedback.
+- Accessibility: appropriate live regions, text alternatives, sufficient contrast, reduced-motion support.
