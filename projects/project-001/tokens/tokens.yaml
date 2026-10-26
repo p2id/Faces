@@ -1,32 +1,38 @@
+meta:
+  projectId: project-001
+  date: "2026-10-26"
+  version: "1.0.0"
 color:
-  background:
+  surface:
     canvas: "#FFFFFF"
-    surface: "#F8FAFC"
+    subtle: "#F7F8FA"
     raised: "#FFFFFF"
-    inverse: "#0F172A"
-  content:
-    primary: "#0F172A"
-    secondary: "#475569"
-    muted: "#64748B"
+    inverse: "#17202A"
+  text:
+    primary: "#17202A"
+    secondary: "#52606D"
+    muted: "#6B7785"
     inverse: "#FFFFFF"
-    link: "#1D4ED8"
+    disabled: "#9AA5B1"
   border:
-    default: "#CBD5E1"
-    subtle: "#E2E8F0"
-    strong: "#94A3B8"
-  status:
-    info: "#2563EB"
-    positive: "#15803D"
-    caution: "#A16207"
-    negative: "#B91C1C"
+    default: "#D9E2EC"
+    strong: "#9AA5B1"
+    focus: "#2F6FED"
+    error: "#C53030"
   action:
-    primary: "#1D4ED8"
-    primaryHover: "#1E40AF"
-    primaryActive: "#1E3A8A"
+    primary: "#2F6FED"
+    primaryHover: "#2459C4"
+    secondary: "#E8F0FE"
+    danger: "#C53030"
+  status:
+    info: "#2F6FED"
+    success: "#237A57"
+    warning: "#A15C00"
+    error: "#C53030"
 typography:
   fontFamily:
-    sans: "system-ui, sans-serif"
-    mono: "ui-monospace, monospace"
+    sans: "Inter, system-ui, sans-serif"
+    mono: "ui-monospace, SFMono-Regular, monospace"
   size:
     xs: "0.75rem"
     sm: "0.875rem"
@@ -34,25 +40,28 @@ typography:
     lg: "1.25rem"
     xl: "1.5rem"
     display: "2rem"
-  lineHeight:
-    tight: "1.2"
-    normal: "1.5"
-    relaxed: "1.7"
   weight:
     regular: 400
     medium: 500
     semibold: 600
     bold: 700
+  lineHeight:
+    tight: 1.2
+    normal: 1.5
+    relaxed: 1.7
 spacing:
   "0": "0"
   "1": "0.25rem"
   "2": "0.5rem"
   "3": "0.75rem"
   "4": "1rem"
+  "5": "1.25rem"
   "6": "1.5rem"
   "8": "2rem"
+  "10": "2.5rem"
   "12": "3rem"
 radius:
+  none: "0"
   sm: "0.25rem"
   md: "0.5rem"
   lg: "0.75rem"
@@ -62,44 +71,46 @@ border:
   thick: "2px"
 shadow:
   none: "none"
-  sm: "0 1px 2px rgb(15 23 42 / 0.08)"
-  md: "0 4px 12px rgb(15 23 42 / 0.12)"
+  sm: "0 1px 2px rgba(23,32,42,0.08)"
+  md: "0 4px 12px rgba(23,32,42,0.12)"
+  lg: "0 12px 32px rgba(23,32,42,0.16)"
 opacity:
   disabled: 0.5
-  muted: 0.7
-  overlay: 0.6
+  subtle: 0.72
+  overlay: 0.56
 motion:
   duration:
+    instant: "0ms"
     fast: "120ms"
-    normal: "200ms"
+    standard: "200ms"
     slow: "320ms"
   easing:
-    standard: "cubic-bezier(0.2, 0, 0, 1)"
-    emphasis: "cubic-bezier(0.2, 0, 0, 1)"
-  reduced: "none"
+    standard: "cubic-bezier(0.2,0,0,1)"
+    emphasis: "cubic-bezier(0.2,0,0,1)"
+  reduced: "0ms"
 layout:
-  contentMax: "75rem"
+  contentMax: "80rem"
   readingMax: "45rem"
-  gutter: "{spacing.4}"
-  gutterWide: "{spacing.8}"
-  columns: 12
+  pagePadding: "{spacing.4}"
+  columnGap: "{spacing.6}"
+  sectionGap: "{spacing.8}"
 size:
   controlHeight: "2.75rem"
-  icon: "1.25rem"
-  focusRing: "0.1875rem"
-  headerHeight: "4rem"
+  compactControlHeight: "2.25rem"
+  touchTarget: "2.75rem"
+  iconSm: "1rem"
+  iconMd: "1.25rem"
+  iconLg: "1.5rem"
 zIndex:
   base: 0
   sticky: 10
   dropdown: 20
-  overlay: 30
-  dialog: 40
-  toast: 50
+  toast: 30
+  modal: 40
 state:
-  hoverOpacity: 0.92
-  pressedOpacity: 0.84
+  focusRing: "0 0 0 3px rgba(47,111,237,0.32)"
   disabledOpacity: "{opacity.disabled}"
-  focusRingColor: "{color.action.primary}"
-  focusRingWidth: "{size.focusRing}"
-  errorColor: "{color.status.negative}"
-  successColor: "{color.status.positive}"
+  hoverOpacity: 0.92
+  pressedScale: 0.98
+  loadingOpacity: 0.72
+  selectedSurface: "{color.action.secondary}"
