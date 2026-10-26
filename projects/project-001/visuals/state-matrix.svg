@@ -1,14 +1,15 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 360" role="img" aria-label="Generic interface state matrix">
-<title>Generic interface state matrix</title>
-<rect width="960" height="360" fill="#fff"/>
-<g fill="none" stroke="#c9ced6"><rect x="24" y="24" width="912" height="288" rx="6"/><path d="M24 72h912M24 120h912M24 168h912M24 216h912M24 264h912M206 24v288M388 24v288M570 24v288M752 24v288"/></g>
-<g font-family="Arial,sans-serif" font-size="14" fill="#273142">
-<text x="40" y="54" font-weight="700">Ready</text><text x="222" y="54" font-weight="700">Loading</text><text x="404" y="54" font-weight="700">Empty</text><text x="586" y="54" font-weight="700">Error</text><text x="768" y="54" font-weight="700">Success</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 390" role="img" aria-label="Interface state matrix">
+<title>State matrix</title>
+<rect width="960" height="390" fill="#fff"/>
+<g font-family="Arial" font-size="14" fill="#212529">
+<text x="32" y="34" font-weight="700">Component</text><text x="220" y="34" font-weight="700">Default</text><text x="370" y="34" font-weight="700">Focus</text><text x="520" y="34" font-weight="700">Error</text><text x="670" y="34" font-weight="700">Empty</text><text x="820" y="34" font-weight="700">Disabled</text>
 </g>
-<g font-family="Arial,sans-serif" font-size="12" fill="#596579">
-<text x="40" y="102">Content + controls</text><text x="222" y="102">Progress + stable layout</text><text x="404" y="102">Explanation + action</text><text x="586" y="102">Cause + recovery</text><text x="768" y="102">Confirmation + next step</text>
-<text x="40" y="150">Visible focus</text><text x="222" y="150">Announced change</text><text x="404" y="150">No fabricated data</text><text x="586" y="150">Input preserved</text><text x="768" y="150">Status persists</text>
-<text x="40" y="198">Enabled actions</text><text x="222" y="198">Limited actions</text><text x="404" y="198">Primary action</text><text x="586" y="198">Retry or edit</text><text x="768" y="198">Continue or review</text>
-<text x="40" y="246">Accessible labels</text><text x="222" y="246">Reduced motion</text><text x="404" y="246">Clear absence</text><text x="586" y="246">Neutral language</text><text x="768" y="246">Clear outcome</text>
+<g stroke="#dee2e6" fill="none"><path d="M24 50H936M24 110H936M24 170H936M24 230H936M24 290H936M24 350H936"/><path d="M200 18V350M350 18V350M500 18V350M650 18V350M800 18V350"/></g>
+<g font-family="Arial" font-size="13" fill="#495057">
+<text x="32" y="86">Field</text><text x="220" y="86">Value</text><text x="370" y="86">Outline</text><text x="520" y="86">Message</text><text x="670" y="86">Hint</text><text x="820" y="86">Muted</text>
+<text x="32" y="146">Action</text><text x="220" y="146">Available</text><text x="370" y="146">Outline</text><text x="520" y="146">Notice</text><text x="670" y="146">—</text><text x="820" y="146">Unavailable</text>
+<text x="32" y="206">Panel</text><text x="220" y="206">Content</text><text x="370" y="206">—</text><text x="520" y="206">Alert</text><text x="670" y="206">Placeholder</text><text x="820" y="206">Muted</text>
+<text x="32" y="266">List</text><text x="220" y="266">Rows</text><text x="370" y="266">Row outline</text><text x="520" y="266">Retry note</text><text x="670" y="266">No results</text><text x="820" y="266">Muted rows</text>
+<text x="32" y="326">Navigation</text><text x="220" y="326">Current</text><text x="370" y="326">Outline</text><text x="520" y="326">—</text><text x="670" y="326">—</text><text x="820" y="326">Muted</text>
 </g>
 </svg>
