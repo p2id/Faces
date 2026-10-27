@@ -1,9 +1,8 @@
-Supporting evidence for project-001 on 2026-10-26:
-- Clear hierarchy, modular surfaces, visible states, and responsive prioritization are broadly reusable.
-- Neutral palettes with one controlled accent improve adaptability and semantic clarity.
-- Dense content benefits from filtering, sorting, grouping, and progressive disclosure.
-- Responsive quality depends on priority-based transformation rather than proportional shrinking.
-- Status is clearest when conveyed through text, icon, position, and color together.
-- Motion should clarify change and retain orientation, with a reduced-motion alternative.
-- Resource catalog scored highest because it exercises the widest reusable pattern set while remaining generic.
-- Evidence confidence: medium; reassess after visual and interaction validation.
+Supporting evidence summary:
+- Structural evidence favors hierarchy, modular surfaces, explicit states, and restrained visual emphasis.
+- Interaction evidence favors predictable controls, reversible changes, progressive disclosure, and persistent state visibility.
+- Accessibility evidence favors semantic structure, keyboard operation, visible focus, strong contrast, sufficient targets, zoom resilience, and reduced motion.
+- Responsive evidence favors content-fit breakpoints, fluid type, bounded reading width, stacking, and resilient wrapping.
+- Risk evidence identifies hover dependence, color-only meaning, dense undifferentiated layouts, auto-motion, tiny controls, and layout shifts as recurring failures.
+- Weighted scoring ties Planning workspace and Resource library at 4.55/5; Planning workspace wins on structured task coverage.
+- Confidence: medium-high for structural and accessibility patterns; medium for domain preference; low for visual distinctiveness due to generic scope.
