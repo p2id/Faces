@@ -1,6 +1,6 @@
-Positioning: Efficient catalog optimized for comparison and repeated review.
-Palette rationale: Cool gray foundation, deep indigo accent, and semantic highlights separate structure from status while remaining compact.
-Type rationale: High-x-height sans-serif, tabular numerals, and distinct heading steps improve repeated-value comparison.
-Layout rules: Dense table on wide screens; stacked records on narrow screens; persistent filter summary; aligned comparison attributes; actions remain adjacent to context.
-Motion intent: Minimal transitions for sorting, expansion, and confirmation; all states remain clear when motion is disabled.
-Avoided traps: Overloaded tables, horizontal-scroll dependence, hover-only actions, excessive badges, and decorative visualizations.
+Positioning: Context-rich planning canvas emphasizing sequence, explanation, and readable detail.
+Palette rationale: Soft paper-like base, charcoal text, muted sand surfaces, and restrained amber for emphasis.
+Type rationale: High-legibility sans-serif with measured scale and stable line height; avoid ornamental treatment.
+Layout rules: Bounded reading column with optional utility rail; generous vertical rhythm; inline metadata; rail becomes an ordered section on narrow screens.
+Motion intent: Gentle disclosure transitions with stable loading geometry and no automatic movement.
+Avoided traps: Oversized hero areas, ambiguous metaphors, low-contrast secondary text, hidden navigation, layout shifts.
