@@ -1,116 +1,111 @@
 meta:
   projectId: project-001
-  date: "2026-10-26"
-  version: "1.0.0"
+  date: 2026-10-27
+  layer: semantic
 color:
-  surface:
-    canvas: "#FFFFFF"
-    subtle: "#F7F8FA"
-    raised: "#FFFFFF"
-    inverse: "#17202A"
+  background:
+    canvas: { $value: "#FFFFFF" }
+    surface: { $value: "#F8FAFC" }
+    raised: { $value: "#FFFFFF" }
+    inverse: { $value: "#0F172A" }
   text:
-    primary: "#17202A"
-    secondary: "#52606D"
-    muted: "#6B7785"
-    inverse: "#FFFFFF"
-    disabled: "#9AA5B1"
+    primary: { $value: "#0F172A" }
+    secondary: { $value: "#475569" }
+    muted: { $value: "#64748B" }
+    inverse: { $value: "#FFFFFF" }
+    disabled: { $value: "#94A3B8" }
   border:
-    default: "#D9E2EC"
-    strong: "#9AA5B1"
-    focus: "#2F6FED"
-    error: "#C53030"
+    default: { $value: "#CBD5E1" }
+    subtle: { $value: "#E2E8F0" }
+    strong: { $value: "#94A3B8" }
   action:
-    primary: "#2F6FED"
-    primaryHover: "#2459C4"
-    secondary: "#E8F0FE"
-    danger: "#C53030"
-  status:
-    info: "#2F6FED"
-    success: "#237A57"
-    warning: "#A15C00"
-    error: "#C53030"
+    primary: { $value: "#2563EB" }
+    primaryHover: { $value: "#1D4ED8" }
+    secondary: { $value: "#E2E8F0" }
+    focus: { $value: "#7C3AED" }
+  feedback:
+    info: { $value: "#2563EB" }
+    success: { $value: "#15803D" }
+    warning: { $value: "#A16207" }
+    error: { $value: "#B91C1C" }
 typography:
   fontFamily:
-    sans: "Inter, system-ui, sans-serif"
-    mono: "ui-monospace, SFMono-Regular, monospace"
+    sans: { $value: "Inter, system-ui, sans-serif" }
+    mono: { $value: "ui-monospace, monospace" }
   size:
-    xs: "0.75rem"
-    sm: "0.875rem"
-    md: "1rem"
-    lg: "1.25rem"
-    xl: "1.5rem"
-    display: "2rem"
+    xs: { $value: "0.75rem" }
+    sm: { $value: "0.875rem" }
+    md: { $value: "1rem" }
+    lg: { $value: "1.125rem" }
+    xl: { $value: "1.5rem" }
+    display: { $value: "2rem" }
   weight:
-    regular: 400
-    medium: 500
-    semibold: 600
-    bold: 700
+    regular: { $value: "400" }
+    medium: { $value: "500" }
+    semibold: { $value: "600" }
+    bold: { $value: "700" }
   lineHeight:
-    tight: 1.2
-    normal: 1.5
-    relaxed: 1.7
+    tight: { $value: "1.2" }
+    normal: { $value: "1.5" }
+    relaxed: { $value: "1.7" }
 spacing:
-  "0": "0"
-  "1": "0.25rem"
-  "2": "0.5rem"
-  "3": "0.75rem"
-  "4": "1rem"
-  "5": "1.25rem"
-  "6": "1.5rem"
-  "8": "2rem"
-  "10": "2.5rem"
-  "12": "3rem"
+  "1": { $value: "4px" }
+  "2": { $value: "8px" }
+  "3": { $value: "12px" }
+  "4": { $value: "16px" }
+  "5": { $value: "20px" }
+  "6": { $value: "24px" }
+  "8": { $value: "32px" }
+  "10": { $value: "40px" }
+  "12": { $value: "48px" }
 radius:
-  none: "0"
-  sm: "0.25rem"
-  md: "0.5rem"
-  lg: "0.75rem"
-  pill: "999px"
+  sm: { $value: "4px" }
+  md: { $value: "8px" }
+  lg: { $value: "12px" }
+  pill: { $value: "999px" }
 border:
-  thin: "1px"
-  thick: "2px"
+  thin: { $value: "1px" }
+  thick: { $value: "2px" }
+  style: { $value: "solid" }
 shadow:
-  none: "none"
-  sm: "0 1px 2px rgba(23,32,42,0.08)"
-  md: "0 4px 12px rgba(23,32,42,0.12)"
-  lg: "0 12px 32px rgba(23,32,42,0.16)"
+  none: { $value: "none" }
+  sm: { $value: "0 1px 2px rgb(15 23 42 / 0.08)" }
+  md: { $value: "0 4px 12px rgb(15 23 42 / 0.12)" }
+  lg: { $value: "0 12px 32px rgb(15 23 42 / 0.16)" }
 opacity:
-  disabled: 0.5
-  subtle: 0.72
-  overlay: 0.56
+  disabled: { $value: "0.5" }
+  muted: { $value: "0.7" }
+  overlay: { $value: "0.6" }
 motion:
   duration:
-    instant: "0ms"
-    fast: "120ms"
-    standard: "200ms"
-    slow: "320ms"
+    fast: { $value: "120ms" }
+    normal: { $value: "200ms" }
+    slow: { $value: "320ms" }
   easing:
-    standard: "cubic-bezier(0.2,0,0,1)"
-    emphasis: "cubic-bezier(0.2,0,0,1)"
-  reduced: "0ms"
+    standard: { $value: "cubic-bezier(0.2, 0, 0, 1)" }
+    emphasis: { $value: "cubic-bezier(0.16, 1, 0.3, 1)" }
+  reduced: { $value: "0ms" }
 layout:
-  contentMax: "80rem"
-  readingMax: "45rem"
-  pagePadding: "{spacing.4}"
-  columnGap: "{spacing.6}"
-  sectionGap: "{spacing.8}"
+  contentMax: { $value: "1440px" }
+  navigationWidth: { $value: "240px" }
+  gridColumns: { $value: "12" }
+  gutter: { $value: "{spacing.4}" }
 size:
-  controlHeight: "2.75rem"
-  compactControlHeight: "2.25rem"
-  touchTarget: "2.75rem"
-  iconSm: "1rem"
-  iconMd: "1.25rem"
-  iconLg: "1.5rem"
+  controlHeight: { $value: "44px" }
+  icon: { $value: "20px" }
+  iconSmall: { $value: "16px" }
+  avatar: { $value: "32px" }
 zIndex:
-  base: 0
-  sticky: 10
-  dropdown: 20
-  toast: 30
-  modal: 40
+  base: { $value: "0" }
+  sticky: { $value: "10" }
+  dropdown: { $value: "20" }
+  overlay: { $value: "30" }
+  toast: { $value: "40" }
+  tooltip: { $value: "50" }
 state:
-  focusRing: "0 0 0 3px rgba(47,111,237,0.32)"
-  disabledOpacity: "{opacity.disabled}"
-  hoverOpacity: 0.92
-  pressedScale: 0.98
-  loadingOpacity: 0.72
-  selectedSurface: "{color.action.secondary}"
+  hoverDuration: { $value: "{motion.duration.fast}" }
+  focusRing: { $value: "0 0 0 3px rgb(124 58 237 / 0.32)" }
+  disabledOpacity: { $value: "{opacity.disabled}" }
+  selectedSurface: { $value: "#EFF6FF" }
+  invalidSurface: { $value: "#FEF2F2" }
+  successSurface: { $value: "#F0FDF4" }
