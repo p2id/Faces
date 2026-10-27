@@ -1,13 +1,17 @@
 Targets:
-- Meet WCAG 2.2 AA.
-- Support complete keyboard operation and visible focus.
-- Focus indicator contrast: at least 3:1 against adjacent colors.
-- Normal text contrast: at least 4.5:1; large text: at least 3:1.
-- Non-text control boundaries: at least 3:1.
-- Never communicate status, error, or selection by color alone.
-- Use landmarks, ordered headings, native controls, and explicit labels.
-- Every input has a programmatic label and associated instructions or errors as needed.
-- Dialogs have an accessible name, focus containment, Escape handling, and focus return.
-- Use polite live announcements for routine updates and assertive announcements only for urgent errors.
-- Support 200% zoom, reflow, reduced motion, and minimum 44×44px targets.
-- Expose correct semantics for lists, tables, tabs, menus, pagination, and current states.
+- WCAG 2.2 AA conformance.
+- Text contrast: at least 4.5:1; large text: at least 3:1.
+- Non-text controls and focus indicators: at least 3:1 against adjacent colors.
+- Visible focus indicator: 2px minimum thickness with practical offset.
+- Interactive target: at least 44×44px.
+- Full keyboard operation with logical focus order and no keyboard traps.
+- Modal focus is contained and restored on close.
+- Every control has an accessible name; icon-only controls have labels.
+- Form errors are programmatically associated and announced.
+- Status updates use suitable polite or assertive announcements.
+- Never rely on color alone for status, selection, or validation.
+- Respect reduced-motion preferences.
+- Support 200% zoom without loss of essential content or function.
+- Use semantic landmarks, headings, labels, lists, tables, dialogs, and document language.
+- Provide skip navigation and a descriptive page title.
+- Provide equivalent outcomes for pointer, keyboard, touch, and assistive technology.
