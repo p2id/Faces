@@ -1,24 +1,37 @@
 Project: project-001
-Date: 2026-10-26
-Scope: generic, neutral, reusable product experience.
+Date: 2026-10-27
+Purpose: Generic product experience for browsing, filtering, reviewing, and configuring structured content.
 
 Surfaces:
-- Responsive web application
-- Overview dashboard
-- Item detail view
-- Settings view
-- Dialog, menu, toast, and inline feedback layers
+- App shell: navigation, header, utility actions, main content.
+- Collection: title, controls, results, pagination.
+- Detail: summary, attributes, related sections, actions.
+- Overlay: modal, drawer, popover, tooltip.
+- Feedback: loading, empty, success, warning, error.
 
 Sections:
-- Header: “Workspace”; navigation “Overview”, “Activity”, “Settings”; utility action “Help”
-- Overview: title “Overview”; description “Review current items and recent changes.”; primary action “Create item”
-- Summary: “Open items” 24; “Completed” 18; “Needs review” 6
-- Item list: heading “Items”; search “Search items”; filters “All”, “Open”, “Completed”
-- Example rows: “Quarterly review”; “Content update”; “Access check”
-- Detail: title “Quarterly review”; status “Needs review”; actions “Edit”, “Archive”
-- Feedback: “Item updated.”; “Unable to update item. Try again.”; “Loading items…”
+- Header: title, description, primary action.
+- Controls: search, filters, sort, view switcher, reset.
+- Results: cards or table with status, metadata, and actions.
+- Detail: grouped information and secondary actions.
+- Feedback: contextual status and recovery action.
+- Footer: result count, pagination, optional supporting information.
+
+Real content examples:
+- Title: “Workspace overview”
+- Description: “Review configured items and recent changes.”
+- Primary action: “Create item”
+- Search placeholder: “Search items”
+- Filters: “Status”, “Category”, “Updated”
+- Table headers: “Name”, “Status”, “Category”, “Updated”
+- Rows: “Release plan” / “Active” / “Planning” / “27 Oct 2026”; “Review queue” / “Draft” / “Operations” / “26 Oct 2026”
+- Empty: “No items match these filters.”
+- Success: “Item created successfully.”
+- Error: “Unable to load items. Try again.”
+- Confirmation: “Delete item?” / “This action cannot be undone.” / “Cancel” / “Delete”
 
 Content rules:
-- Use sentence case, concise labels, explicit verbs, and one primary action per context.
-- Preserve meaning without color alone.
-- Use neutral examples without personal, organizational, external-service, or identity references.
+- Use sentence case, concise labels, explicit actions, and consistent terminology.
+- Preserve entered values and context during state changes.
+- Pair status color with text, icon, or structure.
+- Prefer progressive disclosure to dense initial presentation.
