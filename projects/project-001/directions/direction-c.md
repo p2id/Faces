@@ -1,6 +1,6 @@
-Positioning: Guided catalog that supports discovery without restricting control.
-Palette rationale: Light neutral canvas, graphite text, soft sage accent, and low-saturation semantic tones create a calm, adaptable system.
-Type rationale: Readable sans-serif, moderate contrast, and generous spacing support descriptions alongside compact controls.
-Layout rules: Featured summary above categorized collections; progressive metadata disclosure; split desktop layout becomes ordered mobile sections; search remains persistent.
-Motion intent: Gentle reveals support disclosure and category changes; reading position remains stable and reduced motion is respected.
-Avoided traps: Oversized introductory areas, hidden metadata, forced linear journeys, ornamental imagery, and excessive narrative framing.
+Positioning: Compact planning console optimized for scanning, filtering, and controlled updates.
+Palette rationale: Light neutral foundation, graphite text, cool gray panels, and violet reserved for selected or actionable states.
+Type rationale: Functional sans-serif with tabular numerals, compact labels, and clear value hierarchy.
+Layout rules: Toolbar above content; filters remain visible; table or list on wide screens; cards replace rows on narrow screens; secondary details disclose progressively.
+Motion intent: Minimal motion; immediate filter feedback; brief expansion transitions; preserve focus and scroll position.
+Avoided traps: Spreadsheet clutter, tiny controls, adjacent destructive actions, tooltip-only explanations, narrow-screen horizontal overflow.
