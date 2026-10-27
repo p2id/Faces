@@ -1,6 +1,6 @@
-Positioning: Calm, structured catalog for fast discovery and confident comparison.
-Palette rationale: Warm off-white, charcoal text, muted blue accent, and restrained semantic colors create clarity without visual intensity.
-Type rationale: Neutral sans-serif, strong numerals, compact labels, and generous line height support scanning and metadata.
-Layout rules: Twelve-column desktop grid; single-column mobile flow; summary and filters precede results; consistent card metadata slots; detail view preserves context and primary action.
-Motion intent: Short fades and positional transitions clarify filtering, sorting, and panel changes; no essential meaning depends on motion.
-Avoided traps: Decorative cards, hidden filters, ambiguous selected states, low-contrast secondary text, and irreversible visual changes.
+Positioning: Calm, structured planning surface optimized for quick comprehension and clear status.
+Palette rationale: Warm neutral canvas, dark text, soft surfaces, and a blue-green accent that signals action without dominating.
+Type rationale: Neutral sans-serif with strong numerals, compact labels, and a clear display-to-body hierarchy.
+Layout rules: Bounded shell; title and primary action remain prominent; two columns on wide screens; one-column stack on narrow screens; group content by status.
+Motion intent: Short opacity and position transitions for state changes; no parallax; honor reduced motion.
+Avoided traps: Dashboard overload, color-only status, hidden primary action, crowded cards, decorative visuals without function.
