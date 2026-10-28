@@ -1,26 +1,32 @@
-Component inventory:
-- App shell: default, loading, error, navigation-collapsed, navigation-expanded, mobile-menu-closed, mobile-menu-open.
-- Navigation item: default, hover, focus-visible, active, disabled.
-- Page header: default, compact, with-status, with-primary-action.
-- Button: default, hover, focus-visible, pressed, disabled, loading, destructive.
-- Icon button: default, hover, focus-visible, pressed, disabled, loading.
-- Text input: empty, filled, hover, focus-visible, invalid, valid, disabled, read-only, loading.
-- Search field: empty, filled, focused, filtered, no-results, disabled.
-- Select: closed, hover, focus-visible, open, selected, invalid, disabled.
-- Checkbox: unchecked, checked, indeterminate, focus-visible, disabled.
-- Radio group: unselected, selected, focus-visible, invalid, disabled.
-- Tabs: default, hover, focus-visible, active, disabled, overflow.
-- Card: default, hover, focus-visible, selected, disabled, loading.
-- Table: loading, populated, sorted, filtered, selected-row, empty, error, overflow.
-- Pagination: default, previous-disabled, next-disabled, focus-visible, loading.
-- Badge: neutral, informative, positive, caution, negative, disabled.
-- Alert: info, success, warning, error, dismissible, persistent.
-- Toast: queued, visible, exiting, success, warning, error.
-- Modal: closed, opening, open, submitting, success, error, closing.
-- Drawer: closed, opening, open, error, closing.
-- Tooltip: hidden, delayed, visible, dismissed.
-- Skeleton: loading, resolved, error.
-- Progress: determinate, indeterminate, complete, error.
-- Empty state: default, filtered, error, permission-limited.
-- Date field: empty, filled, focused, invalid, disabled, read-only.
-- Divider: default, subtle, strong.
+Component inventory and complete state coverage:
+- App shell: default, loading, offline, permission-limited, error
+- Header: default, compact, action-hover, action-focus, action-disabled
+- Navigation: default, selected, hover, focus, disabled, collapsed
+- Breadcrumbs: default, truncated, focus
+- Button: default, hover, focus, pressed, disabled, loading, destructive
+- Icon button: default, hover, focus, pressed, disabled, loading
+- Text input: empty, filled, hover, focus, invalid, valid, disabled, read-only
+- Text area: empty, filled, focus, invalid, valid, disabled, read-only
+- Select: closed, open, selected, hover-option, focus-option, invalid, disabled
+- Checkbox: unchecked, checked, indeterminate, hover, focus, disabled
+- Radio: unselected, selected, hover, focus, disabled
+- Switch: off, on, hover, focus, disabled, pending
+- Date field: empty, filled, open, invalid, disabled, read-only
+- Search field: empty, typing, populated, no-results, clear-focus, disabled
+- Filter chip: inactive, active, hover, focus, removable, disabled
+- Tabs: inactive, active, hover, focus, disabled
+- Card: default, hover, focus, selected, disabled, loading
+- List row: default, hover, focus, selected, disabled, loading
+- Table: loading, populated, empty, error, sorted, filtered, responsive
+- Pagination: default, previous-disabled, next-disabled, current, focus
+- Badge: neutral, positive, caution, negative, informative
+- Tooltip: hidden, visible, delayed, focus-visible
+- Popover: closed, open, focus-trapped, dismissed
+- Dialog: closed, opening, open, submitting, success, error
+- Drawer: closed, opening, open, submitting, error
+- Toast: hidden, entering, visible, dismissing, persistent
+- Progress: pending, active, complete, error
+- Skeleton: visible, resolved, failed
+- Empty state: default, filtered, permission-limited, error
+- Pagination separator: default, hidden-on-mobile
+- Divider: default, compact, hidden-on-mobile
