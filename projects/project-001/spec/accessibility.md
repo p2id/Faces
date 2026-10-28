@@ -1,17 +1,14 @@
 Targets:
-- WCAG 2.2 AA conformance.
-- Text contrast: at least 4.5:1; large text: at least 3:1.
-- Non-text controls and focus indicators: at least 3:1 against adjacent colors.
-- Visible focus indicator: 2px minimum thickness with practical offset.
-- Interactive target: at least 44×44px.
-- Full keyboard operation with logical focus order and no keyboard traps.
-- Modal focus is contained and restored on close.
-- Every control has an accessible name; icon-only controls have labels.
-- Form errors are programmatically associated and announced.
-- Status updates use suitable polite or assertive announcements.
-- Never rely on color alone for status, selection, or validation.
-- Respect reduced-motion preferences.
-- Support 200% zoom without loss of essential content or function.
-- Use semantic landmarks, headings, labels, lists, tables, dialogs, and document language.
-- Provide skip navigation and a descriptive page title.
-- Provide equivalent outcomes for pointer, keyboard, touch, and assistive technology.
+- Conform to WCAG 2.2 AA.
+- Text contrast: at least 4.5:1 normal text and 3:1 large text.
+- Non-text contrast: at least 3:1 for controls, focus indicators, and meaningful graphics.
+- Interactive target: minimum 44×44 CSS px.
+- Keyboard: all actions reachable, ordered, and operable without pointer input.
+- Focus: visible, persistent, and not obscured; use a 2px indicator with 2px offset.
+- Semantics: use native controls, correct landmarks, heading order, labels, descriptions, and live regions.
+- Forms: associate labels and errors programmatically; identify invalid fields; provide recovery guidance.
+- Dialogs/drawers: move focus on open, trap focus while modal, restore focus on close, support Escape.
+- Status: announce loading, completion, errors, and dynamic result counts through polite live regions.
+- Motion: support prefers-reduced-motion; avoid flashing content.
+- Zoom/reflow: remain usable at 200% zoom and 320px CSS width without horizontal loss of essential content.
+- Content: do not use color as the sole status indicator; preserve readable text and meaningful accessible names.
