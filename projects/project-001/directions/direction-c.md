@@ -1,6 +1,6 @@
-Positioning: Compact planning console optimized for scanning, filtering, and controlled updates.
-Palette rationale: Light neutral foundation, graphite text, cool gray panels, and violet reserved for selected or actionable states.
-Type rationale: Functional sans-serif with tabular numerals, compact labels, and clear value hierarchy.
-Layout rules: Toolbar above content; filters remain visible; table or list on wide screens; cards replace rows on narrow screens; secondary details disclose progressively.
-Motion intent: Minimal motion; immediate filter feedback; brief expansion transitions; preserve focus and scroll position.
-Avoided traps: Spreadsheet clutter, tiny controls, adjacent destructive actions, tooltip-only explanations, narrow-screen horizontal overflow.
+Positioning: flexible overview for monitoring schedules, exceptions, and upcoming commitments.
+Palette rationale: light neutral base with dark content panels and a restrained violet accent for categorization; semantic states remain accessible without color dependence.
+Type rationale: editorial contrast between concise display headings and highly readable utility text; dates and durations use aligned numerals.
+Layout rules: modular dashboard with reorderable summary blocks; dense desktop overview converts to prioritized cards; exceptions appear before routine items; filters remain discoverable.
+Motion intent: low-amplitude reordering feedback, filter transitions, and expandable detail; avoid continuous movement and preserve stable reading order.
+Avoided traps: dashboard sprawl, arbitrary tile sizing, excessive personalization, hidden filters, unbounded scrolling, decorative data visuals.
