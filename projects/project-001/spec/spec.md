@@ -1,37 +1,28 @@
 Project: project-001
-Date: 2026-10-27
-Purpose: Generic product experience for browsing, filtering, reviewing, and configuring structured content.
+Date: 2026-10-28
+Scope: Generic, neutral product experience
 
 Surfaces:
-- App shell: navigation, header, utility actions, main content.
-- Collection: title, controls, results, pagination.
-- Detail: summary, attributes, related sections, actions.
-- Overlay: modal, drawer, popover, tooltip.
-- Feedback: loading, empty, success, warning, error.
+- App shell: navigation, page title, utility actions
+- Collection view: filters, sorting, result list, pagination
+- Detail view: summary, metadata, actions, related content
+- Form surface: fields, validation, confirmation
+- Overlay surface: dialog, drawer, popover, toast
+- System surface: loading, empty, error, offline, permission notice
 
 Sections:
-- Header: title, description, primary action.
-- Controls: search, filters, sort, view switcher, reset.
-- Results: cards or table with status, metadata, and actions.
-- Detail: grouped information and secondary actions.
-- Feedback: contextual status and recovery action.
-- Footer: result count, pagination, optional supporting information.
-
-Real content examples:
-- Title: “Workspace overview”
-- Description: “Review configured items and recent changes.”
-- Primary action: “Create item”
-- Search placeholder: “Search items”
-- Filters: “Status”, “Category”, “Updated”
-- Table headers: “Name”, “Status”, “Category”, “Updated”
-- Rows: “Release plan” / “Active” / “Planning” / “27 Oct 2026”; “Review queue” / “Draft” / “Operations” / “26 Oct 2026”
-- Empty: “No items match these filters.”
-- Success: “Item created successfully.”
-- Error: “Unable to load items. Try again.”
-- Confirmation: “Delete item?” / “This action cannot be undone.” / “Cancel” / “Delete”
+- Header: “Product overview”, “Last updated 28 Oct 2026”
+- Navigation: “Overview”, “Items”, “Settings”
+- Collection: “Items”, “Search items”, “Filter”, “Sort by”, “12 results”
+- Detail: “Item summary”, “Details”, “Activity”
+- Form: “Create item”, “Name”, “Description”, “Save”, “Cancel”
+- Empty: “No items found”, “Adjust the search or filters”
+- Error: “Unable to load items”, “Try again”
+- Confirmation: “Item saved”, “Changes are now available”
 
 Content rules:
-- Use sentence case, concise labels, explicit actions, and consistent terminology.
-- Preserve entered values and context during state changes.
-- Pair status color with text, icon, or structure.
-- Prefer progressive disclosure to dense initial presentation.
+- Use concise labels, sentence case, and explicit action verbs.
+- Preserve stable terminology across surfaces.
+- Show dates in ISO format where precision is required: 2026-10-28.
+- Provide visible labels for all controls and descriptive empty/error copy.
+- Avoid identity, entity, tool, backend, workflow, or implementation references.
