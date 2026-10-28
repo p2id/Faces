@@ -1,41 +1,41 @@
 App shell
-- Anatomy: skip link, navigation, header, main region, optional utility region, responsive menu.
-- Variants: persistent navigation, collapsed navigation, mobile navigation.
-- States: default, loading, error, navigation-open.
-- Usage: keep landmark structure stable and primary content in main.
-- Anti-patterns: changing navigation order, trapped menu focus, hidden essential labels.
-- Accessibility: landmarks, skip link, logical tab order, menu state, Escape-to-close.
+- Anatomy: skip link, navigation region, header, main region, optional footer.
+- Variants: full navigation, compact navigation, single-surface.
+- States: loading, ready, offline, permission-limited, error.
+- Usage: maintain consistent landmarks and page title.
+- Anti-patterns: duplicated navigation, inaccessible collapse control, content hidden behind fixed elements.
+- Accessibility: landmark labels, logical heading hierarchy, keyboard skip mechanism, visible focus.
 
-Card
-- Anatomy: container, eyebrow, heading, body, metadata, action area.
-- Variants: informational, actionable, selectable, featured.
-- States: default, hover, focus-visible, selected, disabled, loading.
-- Usage: represent one coherent subject; make the destination clear.
-- Anti-patterns: nested interactive elements, decorative density, unclear click target.
-- Accessibility: heading hierarchy, accessible name, semantic link or button, visible focus.
+Collection view
+- Anatomy: title, result count, search, filters, sort, result region, pagination.
+- Variants: list, grid, table, filtered.
+- States: loading, populated, empty, no-results, error.
+- Usage: keep controls adjacent to result context; retain applied filters.
+- Anti-patterns: resetting filters unexpectedly, ambiguous sort labels, infinite loading without status.
+- Accessibility: announce result changes; label filter groups; expose sort direction; support keyboard traversal.
 
-Badge
-- Anatomy: text label, optional icon, optional status marker.
-- Variants: neutral, informative, positive, caution, negative.
-- States: default, disabled.
-- Usage: show concise status or category information.
-- Anti-patterns: color-only meaning, long sentences, excessive stacking.
-- Accessibility: meaningful text, sufficient contrast, stable announcements for changing status.
+Detail view
+- Anatomy: title, summary, metadata, primary action, secondary actions, related sections.
+- Variants: read-only, editable, compact.
+- States: loading, ready, saving, saved, error.
+- Usage: prioritize summary and primary action above secondary information.
+- Anti-patterns: hidden required fields, action labels based only on icons, unclear save status.
+- Accessibility: descriptive title, structured headings, status announcements, explicit action names.
 
-Tabs
-- Anatomy: tab list, tab, active indicator, tab panel.
-- Variants: standard, compact, scrollable.
-- States: default, hover, focus-visible, active, disabled, overflow.
-- Usage: group peer sections with persistent context.
-- Anti-patterns: unrelated destinations, hidden active state, disruptive automatic switching.
-- Accessibility: tablist, tab, tabpanel semantics, arrow-key navigation, selected state, panel association.
+Form surface
+- Anatomy: heading, instructions, field groups, validation messages, action group.
+- Variants: short, multi-section, inline edit.
+- States: pristine, editing, invalid, submitting, success, error.
+- Usage: group related fields; preserve entered values after errors.
+- Anti-patterns: validation only after submission, unexplained required markers, destructive reset as default.
+- Accessibility: visible labels, fieldset/legend for groups, error summary, programmatic associations, keyboard-complete operation.
 
-Pagination
-- Anatomy: previous control, page controls, next control, result summary.
-- Variants: full, compact, cursor-like.
-- States: default, previous-disabled, next-disabled, focus-visible, loading.
-- Usage: show current position and preserve filters between pages.
-- Anti-patterns: unlabeled icon controls, unexpected scroll reset, lost context.
-- Accessibility: labeled navigation landmark, current-page indication, descriptive previous/next labels, predictable focus.
+Overlay surface
+- Anatomy: trigger, layer, title or label, content, close behavior.
+- Variants: tooltip, popover, drawer, dialog, toast.
+- States: hidden, opening, open, closing, blocked.
+- Usage: select the least disruptive overlay appropriate to the task.
+- Anti-patterns: hover-only essential content, overlays without dismissal, stacked competing layers.
+- Accessibility: correct overlay role, focus management, Escape handling, sufficient contrast, no obscured focus.
 
-===END===
+===DONE===
