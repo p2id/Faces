@@ -1,6 +1,6 @@
-Positioning: Context-rich planning canvas emphasizing sequence, explanation, and readable detail.
-Palette rationale: Soft paper-like base, charcoal text, muted sand surfaces, and restrained amber for emphasis.
-Type rationale: High-legibility sans-serif with measured scale and stable line height; avoid ornamental treatment.
-Layout rules: Bounded reading column with optional utility rail; generous vertical rhythm; inline metadata; rail becomes an ordered section on narrow screens.
-Motion intent: Gentle disclosure transitions with stable loading geometry and no automatic movement.
-Avoided traps: Oversized hero areas, ambiguous metaphors, low-contrast secondary text, hidden navigation, layout shifts.
+Positioning: focused, low-friction planning with one clear next action.
+Palette rationale: near-monochrome foundation with one saturated accent reserved for selection and progression; warning and completion states use distinct tone and text labels.
+Type rationale: generous body sizing, strong numeric alignment, limited weights, and clear differentiation between dates, labels, and instructions.
+Layout rules: one primary task per screen; progressive disclosure for advanced recurrence; compact timeline on mobile; split view on wide screens; persistent context label.
+Motion intent: subtle selection highlight, anchored panel reveal, and completion transition; preserve spatial continuity and avoid moving targets.
+Avoided traps: multi-action ambiguity, long forms, nested overlays, tiny controls, unexpected auto-advance, reliance on hover.
