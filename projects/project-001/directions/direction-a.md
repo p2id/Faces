@@ -1,6 +1,6 @@
-Positioning: Calm, structured planning surface optimized for quick comprehension and clear status.
-Palette rationale: Warm neutral canvas, dark text, soft surfaces, and a blue-green accent that signals action without dominating.
-Type rationale: Neutral sans-serif with strong numerals, compact labels, and a clear display-to-body hierarchy.
-Layout rules: Bounded shell; title and primary action remain prominent; two columns on wide screens; one-column stack on narrow screens; group content by status.
-Motion intent: Short opacity and position transitions for state changes; no parallax; honor reduced motion.
-Avoided traps: Dashboard overload, color-only status, hidden primary action, crowded cards, decorative visuals without function.
+Positioning: calm operational clarity for recurring time-based planning.
+Palette rationale: warm neutral canvas, deep ink text, cool blue primary accent, amber caution, green completion; semantic colors remain paired with labels or icons.
+Type rationale: highly legible sans-serif with compact headings, tabular numerals for time, and measured line height for scanning.
+Layout rules: 12-column desktop grid; single-column mobile flow; summary strip first; schedule content second; primary action fixed to a predictable edge; cards use consistent padding and alignment.
+Motion intent: short fades and position shifts for filtering, expansion, and confirmation; no motion required for comprehension; respect reduced-motion settings.
+Avoided traps: calendar overload, color-only status, hidden recurring rules, excessive density, destructive actions without reversal, decorative animation.
