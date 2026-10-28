@@ -1,17 +1,12 @@
-Performance budgets:
-- Initial HTML: ≤50KB compressed.
-- Critical CSS: ≤30KB compressed.
-- Initial JavaScript: ≤150KB compressed.
-- Above-the-fold media: ≤200KB total.
-- Initial fonts: ≤100KB with limited weights.
-- Largest Contentful Paint: ≤2.5s on representative mobile conditions.
-- First Contentful Paint: ≤1.8s.
-- Interaction to Next Paint: ≤200ms for common interactions.
-- Cumulative Layout Shift: ≤0.1.
-- Usable primary content: ≤3.5s.
-- Lazy-load below-fold media and reserve media dimensions.
-- Paginate or virtualize large collections.
-- Debounce search and avoid redundant renders.
-- Use lightweight skeletons for asynchronous regions.
-- Prefer CSS transitions; honor reduced motion.
-- Prevent layout shifts from fonts, alerts, navigation, and late content.
+Budgets:
+- Initial HTML response: ≤100 KB compressed
+- Critical CSS: ≤40 KB compressed
+- JavaScript on initial route: ≤170 KB compressed
+- Fonts: ≤120 KB compressed; maximum two families and four weights
+- Images: ≤250 KB above the fold; use responsive formats and lazy loading below the fold
+- Largest Contentful Paint: ≤2.5 s on mid-tier mobile
+- Interaction to Next Paint: ≤200 ms for primary interactions
+- Cumulative Layout Shift: ≤0.1
+- First Contentful Paint: ≤1.8 s
+- Long tasks: fewer than 3 over 50 ms during initial load
+- UI rules: reserve media dimensions, avoid layout shifts, virtualize dense lists, debounce search at 150–250 ms, defer noncritical overlays, and preserve usable loading states.
