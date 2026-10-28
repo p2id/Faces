@@ -5,14 +5,13 @@ Breakpoints:
 - lg: 1024–1279px
 - xl: 1280px and above
 
-Responsive rules:
-- Use 100% width, 16px minimum side padding, and a 12-column grid from md upward.
-- xs/sm: single column; navigation becomes a menu; tables stack or scroll horizontally; secondary actions move to overflow.
-- md: navigation may collapse; cards use two columns when space permits.
-- lg/xl: persistent navigation; content max-width 1440px; inline controls when they fit.
-- Keep interactive targets at least 44px in every layout.
-- Wrap or stack controls before shortening labels.
-- Preserve reading order, focus order, and semantic grouping.
-- Overlays use viewport width minus 16px margins on xs/sm and centered max-width on md+.
-- Support a 320px minimum viewport without requiring horizontal scrolling for essential content.
-- Use fluid spacing and type within token limits; avoid fixed-height content containers.
+Rules:
+- xs: single column; 16px page padding; navigation collapses; tables become stacked rows; dialogs use full width; actions stack.
+- sm: single column with optional two-column form groups; 20px page padding; drawers use 90vw.
+- md: two-column layouts where content permits; 24px page padding; navigation may remain compact; dialogs max 560px.
+- lg: persistent navigation; two- or three-column content; 32px page padding; drawers max 420px.
+- xl: content max-width 1200px; preserve readable line length; optional secondary panel; 40px page padding.
+- All: maintain 44px minimum interactive target; wrap labels before truncating; use overflow scrolling for dense horizontal controls; preserve focus visibility; never rely on color alone.
+- Tables: prioritize essential columns; move secondary values into row details below md.
+- Forms: keep labels above controls; place related fields in groups only at md and above.
+- Motion: reduce or remove nonessential transitions when reduced-motion preference is active.
