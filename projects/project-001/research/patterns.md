@@ -1,33 +1,20 @@
-Project: project-001
-Date: 2026-10-27
-
-DOMINANT: Clear hierarchy; modular cards and lists; restrained neutral palette; one primary action; explicit loading, empty, error, selected, and disabled states; mobile-first stacking.
-EMERGING: Semantic design tokens; container-aware responsiveness; inline validation; progressive disclosure; reduced-motion support; persistent filter and sort controls.
-DEPRECATED: Hover-only actions; icon-only unlabeled controls; dense undifferentiated dashboards; auto-advancing content; low-contrast decorative gradients; modal overuse.
-OUTLIER: Editorial long-form layouts; split-pane comparison views; monochrome interfaces with one signal color; extremely sparse single-task screens.
-
-VISUAL DNA: Neutral canvas, layered surfaces, subtle borders, restrained radius, compact spacing scale, one accent reserved for action and status.
-INTERACTIONAL DNA: Predictable navigation, direct manipulation, reversible changes, persistent primary action, progressive disclosure, explicit confirmation for irreversible actions.
-ACCESSIBILITY DNA: Semantic structure, logical headings, keyboard-complete operation, visible focus, minimum 4.5:1 normal-text contrast, minimum 44px targets, zoom resilience, non-color status cues, reduced-motion support.
-RESPONSIVE DNA: Content-first stacking, bounded reading width, fluid type with safe limits, content-fit breakpoints, resilient wrapping, intentional overflow only for complex data.
-
-CANDIDATE DOMAINS
-1. Planning workspace — organizes priorities, sequences, and statuses in a structured view.
-2. Resource library — supports browsing, filtering, previewing, and organizing reusable content.
-3. Configuration console — presents settings and rules through grouped controls and progressive disclosure.
-4. Comparison workspace — supports side-by-side evaluation of options and attributes.
-5. Monitoring overview — summarizes conditions, changes, alerts, and supporting detail.
-6. Review hub — presents structured entries through clear stages, decisions, and outcomes.
-
-WEIGHTED MATRIX
-Weights: clarity 25, reuse 20, responsive fit 20, accessibility 15, distinctiveness 10, neutrality 10; scores 1–5.
-Planning workspace: 5,5,4,5,3,5 = 4.55/5.
-Resource library: 4,5,5,5,3,5 = 4.55/5.
-Configuration console: 4,4,4,5,4,5 = 4.25/5.
-Comparison workspace: 4,4,3,4,5,4 = 3.85/5.
-Monitoring overview: 4,4,4,4,4,4 = 4.00/5.
-Review hub: 5,4,4,5,3,5 = 4.35/5.
-
-SELECTED DOMAIN RATIONALE: Planning workspace is selected for strong hierarchy, broad reuse, clear state coverage, and neutral applicability without specialized assumptions.
-CYCLE LOCK: Lock selected domain, extracted DNA, accessibility baseline, and primary interaction model for 2026-10-27.
-FALLBACK RULE: If content density or responsive accessibility fails review, use Resource library while preserving the DNA and record the reason.
+Date: 2026-10-28
+Project ID: project-001
+Dominant patterns: clear hierarchy; card-based grouping; restrained neutral palette; persistent primary action; concise status labels; progressive disclosure.
+Emerging patterns: command-style search; context-aware summaries; compact timeline views; tokenized personalization; lightweight motion for state change.
+Deprecated patterns: dense dashboards; decorative gradients; hidden navigation; modal-heavy flows; low-contrast secondary text; autoplay motion.
+Outlier patterns: asymmetric editorial grids; monochrome data views; edge-to-edge mobile panels; single-purpose focus modes.
+Visual DNA: neutral canvas, one accent color, high-contrast text, 8px spacing rhythm, medium-radius containers, thin borders, restrained elevation.
+Interactional DNA: direct manipulation, predictable back behavior, visible system status, reversible actions, inline validation, one dominant action per view.
+Accessibility DNA: semantic structure, keyboard reachability, visible focus, minimum 4.5:1 text contrast, non-color status cues, reduced-motion support, 44px minimum targets.
+Responsive DNA: mobile-first stacking, fluid type, content-driven breakpoints, persistent primary action, tables converting to cards, navigation collapsing without loss of context.
+Candidate domains:
+1. Scheduling: coordinate time-based items through calendar, list, and reminder views.
+2. Inventory: monitor quantities, locations, thresholds, and item status.
+3. Learning: organize modules, progress, references, and completion states.
+4. Finance: review budgets, transactions, categories, and trend summaries.
+5. Wellness: track routines, measurements, goals, and recurring activities.
+Weighted scoring matrix (1–5; weighted total / 5): scheduling—clarity 5×25%, repeatability 5×20%, responsive fit 5×20%, accessibility 4×20%, visual flexibility 4×15% = 4.65; inventory—4,4,4,4,4 = 4.00; learning—4,4,5,5,4 = 4.40; finance—4,4,4,4,3 = 3.80; wellness—4,3,4,4,4 = 3.80.
+Selected domain rationale: Scheduling best exposes hierarchy, status, responsive transformation, and reversible interaction without requiring specialized visual language.
+Cycle lock: lock scheduling as the reference domain for this cycle; preserve the pattern and scoring assumptions until the next dated review.
+Fallback rule: if scheduling cannot support the required states or accessibility checks, use learning while retaining the same DNA and scoring model.
