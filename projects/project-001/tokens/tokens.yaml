@@ -1,111 +1,121 @@
 meta:
-  projectId: project-001
-  date: 2026-10-27
+  project: project-001
+  date: 2026-10-28
   layer: semantic
 color:
-  background:
-    canvas: { $value: "#FFFFFF" }
-    surface: { $value: "#F8FAFC" }
-    raised: { $value: "#FFFFFF" }
-    inverse: { $value: "#0F172A" }
-  text:
-    primary: { $value: "#0F172A" }
-    secondary: { $value: "#475569" }
-    muted: { $value: "#64748B" }
-    inverse: { $value: "#FFFFFF" }
-    disabled: { $value: "#94A3B8" }
+  surface:
+    canvas: "#FFFFFF"
+    raised: "#F8FAFC"
+    sunken: "#F1F5F9"
+    inverse: "#0F172A"
+  content:
+    primary: "#0F172A"
+    secondary: "#475569"
+    muted: "#64748B"
+    inverse: "#FFFFFF"
+    disabled: "#94A3B8"
   border:
-    default: { $value: "#CBD5E1" }
-    subtle: { $value: "#E2E8F0" }
-    strong: { $value: "#94A3B8" }
-  action:
-    primary: { $value: "#2563EB" }
-    primaryHover: { $value: "#1D4ED8" }
-    secondary: { $value: "#E2E8F0" }
-    focus: { $value: "#7C3AED" }
-  feedback:
-    info: { $value: "#2563EB" }
-    success: { $value: "#15803D" }
-    warning: { $value: "#A16207" }
-    error: { $value: "#B91C1C" }
+    default: "#CBD5E1"
+    strong: "#94A3B8"
+    focus: "#2563EB"
+    disabled: "#E2E8F0"
+  accent:
+    default: "#2563EB"
+    hover: "#1D4ED8"
+    active: "#1E40AF"
+    subtle: "#DBEAFE"
+  state:
+    positive: "#15803D"
+    positiveSubtle: "#DCFCE7"
+    caution: "#A16207"
+    cautionSubtle: "#FEF3C7"
+    negative: "#B91C1C"
+    negativeSubtle: "#FEE2E2"
+    informative: "#0369A1"
+    informativeSubtle: "#E0F2FE"
 typography:
   fontFamily:
-    sans: { $value: "Inter, system-ui, sans-serif" }
-    mono: { $value: "ui-monospace, monospace" }
-  size:
-    xs: { $value: "0.75rem" }
-    sm: { $value: "0.875rem" }
-    md: { $value: "1rem" }
-    lg: { $value: "1.125rem" }
-    xl: { $value: "1.5rem" }
-    display: { $value: "2rem" }
-  weight:
-    regular: { $value: "400" }
-    medium: { $value: "500" }
-    semibold: { $value: "600" }
-    bold: { $value: "700" }
+    sans: "Inter, ui-sans-serif, system-ui, sans-serif"
+    mono: "ui-monospace, SFMono-Regular, monospace"
+  fontSize:
+    xs: "0.75rem"
+    sm: "0.875rem"
+    md: "1rem"
+    lg: "1.125rem"
+    xl: "1.5rem"
+    xxl: "2rem"
+  fontWeight:
+    regular: 400
+    medium: 500
+    semibold: 600
+    bold: 700
   lineHeight:
-    tight: { $value: "1.2" }
-    normal: { $value: "1.5" }
-    relaxed: { $value: "1.7" }
+    tight: 1.2
+    normal: 1.5
+    relaxed: 1.7
 spacing:
-  "1": { $value: "4px" }
-  "2": { $value: "8px" }
-  "3": { $value: "12px" }
-  "4": { $value: "16px" }
-  "5": { $value: "20px" }
-  "6": { $value: "24px" }
-  "8": { $value: "32px" }
-  "10": { $value: "40px" }
-  "12": { $value: "48px" }
+  "0": "0"
+  "1": "0.25rem"
+  "2": "0.5rem"
+  "3": "0.75rem"
+  "4": "1rem"
+  "5": "1.25rem"
+  "6": "1.5rem"
+  "8": "2rem"
+  "10": "2.5rem"
+  "12": "3rem"
+  "16": "4rem"
 radius:
-  sm: { $value: "4px" }
-  md: { $value: "8px" }
-  lg: { $value: "12px" }
-  pill: { $value: "999px" }
+  none: "0"
+  sm: "0.25rem"
+  md: "0.5rem"
+  lg: "0.75rem"
+  pill: "999px"
 border:
-  thin: { $value: "1px" }
-  thick: { $value: "2px" }
-  style: { $value: "solid" }
+  thin: "1px"
+  thick: "2px"
+  style: solid
 shadow:
-  none: { $value: "none" }
-  sm: { $value: "0 1px 2px rgb(15 23 42 / 0.08)" }
-  md: { $value: "0 4px 12px rgb(15 23 42 / 0.12)" }
-  lg: { $value: "0 12px 32px rgb(15 23 42 / 0.16)" }
+  none: none
+  sm: "0 1px 2px rgb(15 23 42 / 0.08)"
+  md: "0 4px 12px rgb(15 23 42 / 0.12)"
+  lg: "0 12px 32px rgb(15 23 42 / 0.16)"
 opacity:
-  disabled: { $value: "0.5" }
-  muted: { $value: "0.7" }
-  overlay: { $value: "0.6" }
+  disabled: 0.5
+  muted: 0.7
+  overlay: 0.6
 motion:
   duration:
-    fast: { $value: "120ms" }
-    normal: { $value: "200ms" }
-    slow: { $value: "320ms" }
+    fast: "120ms"
+    normal: "200ms"
+    slow: "300ms"
   easing:
-    standard: { $value: "cubic-bezier(0.2, 0, 0, 1)" }
-    emphasis: { $value: "cubic-bezier(0.16, 1, 0.3, 1)" }
-  reduced: { $value: "0ms" }
+    standard: "cubic-bezier(0.2, 0, 0, 1)"
+    emphasized: "cubic-bezier(0.2, 0, 0, 1)"
+  reduced: "0ms"
 layout:
-  contentMax: { $value: "1440px" }
-  navigationWidth: { $value: "240px" }
-  gridColumns: { $value: "12" }
-  gutter: { $value: "{spacing.4}" }
+  contentMax: "1200px"
+  readingMax: "720px"
+  pagePadding: "{spacing.4}"
+  sectionGap: "{spacing.8}"
+  gridGap: "{spacing.4}"
 size:
-  controlHeight: { $value: "44px" }
-  icon: { $value: "20px" }
-  iconSmall: { $value: "16px" }
-  avatar: { $value: "32px" }
+  controlHeight: "44px"
+  icon: "20px"
+  avatar: "32px"
+  drawerWidth: "420px"
+  dialogWidth: "560px"
 zIndex:
-  base: { $value: "0" }
-  sticky: { $value: "10" }
-  dropdown: { $value: "20" }
-  overlay: { $value: "30" }
-  toast: { $value: "40" }
-  tooltip: { $value: "50" }
-state:
-  hoverDuration: { $value: "{motion.duration.fast}" }
-  focusRing: { $value: "0 0 0 3px rgb(124 58 237 / 0.32)" }
-  disabledOpacity: { $value: "{opacity.disabled}" }
-  selectedSurface: { $value: "#EFF6FF" }
-  invalidSurface: { $value: "#FEF2F2" }
-  successSurface: { $value: "#F0FDF4" }
+  base: 0
+  sticky: 10
+  dropdown: 20
+  drawer: 30
+  dialog: 40
+  toast: 50
+stateRelated:
+  focusRing: "{border.thick} {color.border.focus}"
+  disabledOpacity: "{opacity.disabled}"
+  selectedBackground: "{color.accent.subtle}"
+  errorBorder: "{color.state.negative}"
+  successBorder: "{color.state.positive}"
+  loadingOpacity: "{opacity.muted}"
