@@ -1,0 +1,48 @@
+name: Validate design artifacts
+
+on:
+  push:
+    branches: ["**"]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Validate JSON and SVG syntax
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          import xml.etree.ElementTree as ET
+
+          root = Path(".")
+          json_files = sorted(p for p in root.rglob("*.json") if ".git" not in p.parts)
+          svg_files = sorted(p for p in root.rglob("*.svg") if ".git" not in p.parts)
+
+          if not json_files and not svg_files:
+              raise SystemExit("No JSON or SVG artifacts found to validate")
+
+          for path in json_files:
+              json.loads(path.read_text(encoding="utf-8"))
+              print(f"Valid JSON: {path}")
+
+          for path in svg_files:
+              ET.parse(path)
+              print(f"Valid SVG/XML: {path}")
+
+          print(f"Validated {len(json_files)} JSON file(s) and {len(svg_files)} SVG file(s).")
+          PY
