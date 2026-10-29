@@ -1,1 +1,9 @@
-Evidence summary for 2026-10-28: reusable product interfaces consistently benefit from strong hierarchy, compact grouping, explicit state communication, predictable navigation, and responsive content transformation. High-value evidence signals are task clarity, action discoverability, contrast, focus visibility, target size, reduced-motion behavior, and resilience across narrow and wide layouts. The selected direction should be evaluated against representative empty, loading, active, completed, error, and overflow states. No claim depends on a named source, private data, identity, external system, or implementation detail.
+Supporting evidence summary:
+- Repeated hierarchy and modular surfaces support fast scanning and predictable composition.
+- Neutral foundations with one accent improve reuse across domains and reduce visual noise.
+- Progressive disclosure balances compact presentation with access to detail.
+- Visible filters, persistent orientation, and reversible actions reduce navigation and recovery cost.
+- Contrast, focus visibility, semantic labeling, and non-color status cues improve inclusive operation.
+- One-column mobile flow, stacked actions, and transformed data structures preserve function across widths.
+- The scoring matrix favors Knowledge library because it performs consistently across reuse, responsiveness, accessibility, differentiation, and interaction simplicity.
+- No specialized imagery, identity cues, backend assumptions, or domain-specific dependencies are required.
