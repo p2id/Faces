@@ -1,4 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" role="img" aria-label="Generic product workspace layout">
+<desc>Defines a reusable shell with clear hierarchy, stable regions, and a predictable reduction path.</desc>
 <rect width="960" height="540" fill="#f7f8fa"/>
 <rect x="24" y="24" width="912" height="56" rx="8" fill="#fff" stroke="#d9dee7"/>
 <rect x="48" y="44" width="180" height="16" rx="4" fill="#c8d0dc"/>
@@ -16,4 +17,3 @@
 <rect x="716" y="224" width="180" height="136" rx="8" fill="#f1f4f8"/>
 <rect x="296" y="396" width="600" height="16" rx="4" fill="#e1e6ed"/>
 </svg>
-Rationale: Defines a reusable shell with clear hierarchy, stable regions, and a predictable reduction path.
