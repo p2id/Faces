@@ -1,19 +1,22 @@
-flowchart LR
-A[Foundation]-->B[Color]
-A-->C[Type]
-A-->D[Spacing]
-A-->E[Shape]
-A-->F[Motion]
-B-->B1[Canvas #F7F8FA]
-B-->B2[Surface #FFFFFF]
-B-->B3[Text #182230]
-B-->B4[Accent #344054]
-C-->C1[Base 16px]
-C-->C2[Heading 24px]
-D-->D1[4px scale]
-D-->D2[16px inset]
-E-->E1[8px radius]
-E-->E2[1px border]
-F-->F1[150ms ease]
-F-->F2[Reduced-motion safe]
-Rationale: A small token set keeps layout, specimens, and responsive states consistent and replaceable.
+# Token map
+Date: 2026-10-30
+Project: project-001
+
+## Tokens
+- surface/base: #FFFFFF
+- surface/subtle: #F5F7F9
+- text/primary: #20252B
+- text/muted: #687381
+- border/default: #C9D0D9
+- action/primary: #315E9B
+- status/error: #B42318
+- type/body: system sans-serif, 16px/1.5
+- type/title: 32px/1.2/700
+- space/base: 4px
+- space/unit: 8px
+- radius/small: 4px
+- radius/medium: 8px
+- focus/ring: 2px solid #315E9B
+
+Rationale: semantic tokens support consistent hierarchy, contrast review, responsive reuse, and controlled visual change.
+Quality gates: semantic names used; contrast reviewed; focus visible; spacing follows the scale; raw values do not replace tokens without rationale.
