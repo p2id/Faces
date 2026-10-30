@@ -1,14 +1,18 @@
 Targets:
-- Conform to WCAG 2.2 AA.
-- Text contrast: at least 4.5:1 normal text and 3:1 large text.
-- Non-text contrast: at least 3:1 for controls, focus indicators, and meaningful graphics.
-- Interactive target: minimum 44×44 CSS px.
-- Keyboard: all actions reachable, ordered, and operable without pointer input.
-- Focus: visible, persistent, and not obscured; use a 2px indicator with 2px offset.
-- Semantics: use native controls, correct landmarks, heading order, labels, descriptions, and live regions.
-- Forms: associate labels and errors programmatically; identify invalid fields; provide recovery guidance.
-- Dialogs/drawers: move focus on open, trap focus while modal, restore focus on close, support Escape.
-- Status: announce loading, completion, errors, and dynamic result counts through polite live regions.
-- Motion: support prefers-reduced-motion; avoid flashing content.
-- Zoom/reflow: remain usable at 200% zoom and 320px CSS width without horizontal loss of essential content.
-- Content: do not use color as the sole status indicator; preserve readable text and meaningful accessible names.
+- WCAG 2.2 AA.
+- Complete keyboard operation with logical tab order.
+- Minimum interactive target: 44×44 CSS px.
+- Text contrast: 4.5:1 normal text; 3:1 large text.
+- Non-text contrast: 3:1 for controls, boundaries, focus indicators, and meaningful graphics.
+- Focus indicator: visible, at least 2px equivalent, with strong contrast.
+- Use header, navigation, main, complementary, and footer landmarks as applicable.
+- Use one descriptive page heading and hierarchical headings.
+- Give every control an accessible name; label icon-only controls.
+- Provide persistent form labels, instructions, and specific errors.
+- Announce dynamic status politely; announce critical errors assertively.
+- Dialogs label title and purpose, trap focus, and restore focus on close.
+- Tables expose captions, headers, and row/column relationships.
+- Never communicate meaning by color alone.
+- Support 200% zoom and reflow at 320 CSS px.
+- Respect reduced-motion preferences and provide non-motion equivalents.
+- Support screen readers, keyboard, touch, high contrast, and zoom.
