@@ -1,17 +1,6 @@
-Positioning:
-Calm, structured knowledge surface for finding, grouping, and reviewing information with minimal cognitive load.
-
-Palette rationale:
-Soft neutral background, elevated neutral panels, deep text, and one blue-green accent; semantic colors remain reserved for state communication.
-
-Type rationale:
-Neutral sans-serif with clear x-height, moderate weight contrast, compact numerals, and sentence case labels for scanability.
-
-Layout rules:
-Bounded reading width; persistent section rail on large screens; search and filters above results; cards use consistent metadata order; details open in a side panel or stacked view.
-
-Motion intent:
-Use short fades and positional continuity for filtering, opening, saving, and state changes; respect reduced-motion preferences.
-
-Avoided traps:
-No decorative gradients, oversized hero areas, hidden filters, simultaneous competing accents, dense ungrouped metadata, or modal-heavy detail flows.
+Positioning: Quiet precision; a dependable, information-first experience for structured planning.
+Palette rationale: Warm gray foundation, charcoal text, muted blue accent, and semantic green, amber, and red reserved for state.
+Type rationale: Neutral sans-serif with strong x-height, compact hierarchy, readable labels, and tabular figures for comparison.
+Layout rules: Use an 8px spacing base, constrained reading width, persistent navigation, summary row above content, two-column desktop structure, one-column mobile structure, and actions adjacent to context.
+Motion intent: Use 160–220ms transitions for state changes, expansion, and reordering; provide instant alternatives when reduced motion is enabled.
+Avoided traps: Dashboard overload, excessive badges, hidden filters, color-only status, oversized hero areas, hover-dependent actions, and decorative animation.
