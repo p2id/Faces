@@ -1,9 +1,17 @@
-Supporting evidence summary:
-- Repeated hierarchy and modular surfaces support fast scanning and predictable composition.
-- Neutral foundations with one accent improve reuse across domains and reduce visual noise.
-- Progressive disclosure balances compact presentation with access to detail.
-- Visible filters, persistent orientation, and reversible actions reduce navigation and recovery cost.
-- Contrast, focus visibility, semantic labeling, and non-color status cues improve inclusive operation.
-- One-column mobile flow, stacked actions, and transformed data structures preserve function across widths.
-- The scoring matrix favors Knowledge library because it performs consistently across reuse, responsiveness, accessibility, differentiation, and interaction simplicity.
-- No specialized imagery, identity cues, backend assumptions, or domain-specific dependencies are required.
+Section B: Evidence Summary
+
+Supporting evidence:
+- Cross-domain interface conventions favor clear hierarchy, predictable navigation, visible status, modular content, and progressive disclosure.
+- Accessibility guidance supports strong contrast, keyboard access, visible focus, semantic structure, non-color status cues, adequate touch targets, and reduced-motion alternatives.
+- Responsive practice favors mobile-first prioritization, stacked content, adaptive navigation, fluid spacing, and deliberate treatment of dense data.
+- Usability evidence favors concise labels, immediate feedback, reversible actions, stable layouts, and limited simultaneous choices.
+- Visual-system evidence supports neutral foundations, semantic color restraint, consistent spacing tokens, and typography-led hierarchy.
+- Risk evidence identifies decorative complexity, hidden actions, ambiguous states, dense defaults, and motion without task value as common failure modes.
+
+Confidence:
+- High for hierarchy, accessibility, responsive behavior, and interaction predictability.
+- Medium for content density, accent preference, and editorial expression.
+- Low for preference toward any single visual direction.
+
+Validation priorities:
+- First-use comprehension, primary-action discovery, keyboard flow, mobile completion, dense-content scanning, focus visibility, reduced-motion behavior, and recovery from incorrect input.
