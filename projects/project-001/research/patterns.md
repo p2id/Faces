@@ -1,83 +1,57 @@
-Date: 2026-10-29
+Section A: Pattern Synthesis
+Date: 2026-10-30
 Project ID: project-001
+Cycle status: locked
 
 Dominant patterns:
-- Clear hierarchy: one primary title, one supporting line, one decisive action.
-- Modular surfaces: cards, panels, tabs, tables, and compact status indicators.
-- Restrained contrast: neutral base, one accent, semantic status colors.
-- Progressive disclosure: show essentials first; reveal detail on demand.
-- Persistent orientation: stable navigation, visible section state, consistent back behavior.
+- Modular layouts, clear hierarchy, generous spacing, restrained color, and task-focused surfaces.
+- Responsive cards, filters, tabs, summaries, progressive disclosure, and persistent primary actions.
+- Neutral foundations with one controlled accent for action, focus, and status.
 
 Emerging patterns:
-- Density controls for compact, comfortable, and expanded views.
-- Inline filtering with removable tokens and saved view states.
-- Contextual empty states with one useful next action.
-- Tokenized themes supporting light and dark presentation.
-- Motion used as confirmation, continuity, and spatial explanation.
+- Contextual summaries, adaptive density, compact command areas, explainable state changes, and tokenized light, dark, and high-contrast themes.
 
 Deprecated patterns:
-- Decorative gradients without semantic purpose.
-- Hidden navigation dependent on gesture discovery.
-- Excessive modal stacking and interruptive prompts.
-- Low-contrast placeholder text as primary instruction.
-- Dense dashboards with equal visual weight for every metric.
+- Decorative gradients without purpose, dense dashboards with competing priorities, hover-only actions, auto-advancing content, and low-contrast secondary text.
 
 Outlier patterns:
-- Monochrome interfaces with a single high-salience accent.
-- Vertical timelines used as primary navigation.
-- Fully borderless layouts relying on spacing and tonal separation.
-- Command-style keyboard interaction paired with conventional controls.
+- Editorial asymmetry, monochrome interfaces, oversized type, and single-focus canvases; useful selectively but unsuitable as default system behavior.
 
-Extracted visual DNA:
-- Warm-neutral or cool-neutral foundation.
-- 8-point spacing rhythm; medium corner radius; quiet elevation.
-- One accent family plus semantic success, warning, and error states.
-- Sentence case labels, restrained iconography, short descriptive copy.
-- Strong alignment, predictable grouping, minimal ornament.
+Visual DNA:
+- Soft neutral base, high-contrast text, one accent hue, restrained borders, moderate radius, compact elevation, consistent icon geometry, and purposeful whitespace.
 
-Extracted interactional DNA:
-- Direct manipulation with immediate, reversible feedback.
-- Primary action remains visually stable across states.
-- Filters and selections remain visible after application.
-- Confirmation for destructive or irreversible actions only.
-- Keyboard, pointer, and touch paths expose equivalent outcomes.
+Interactional DNA:
+- Direct manipulation, visible status, reversible actions, inline validation, predictable keyboard order, persistent navigation, progressive disclosure, and explicit confirmation for consequential actions.
 
-Extracted accessibility DNA:
-- WCAG-oriented contrast targets; color never carries meaning alone.
-- Visible focus treatment with logical focus order.
-- Labels, instructions, and errors tied to their controls.
-- Touch targets at least 44 by 44 CSS pixels.
-- Reduced-motion mode preserves state clarity without animation dependence.
+Accessibility DNA:
+- WCAG 2.2 AA target, 4.5:1 normal-text contrast, 3:1 large-text and non-text contrast, visible focus, semantic headings, labeled controls, keyboard completeness, reduced-motion support, and status conveyed without color alone.
 
-Extracted responsive DNA:
-- Small screens use one-column flow and stacked actions.
-- Medium screens introduce split panes or compact secondary rails.
-- Large screens support bounded content widths and optional utility panels.
-- Tables transform into labeled rows or horizontal scroll regions.
-- Navigation collapses without removing orientation or current-state cues.
+Responsive DNA:
+- Mobile-first stacking, fluid type within bounded scales, content-priority reduction, minimum 44px touch targets, resilient dense-content views, adaptive navigation, and no horizontal scrolling for primary tasks.
 
 Candidate product domains:
-1. Knowledge library: organize, search, filter, and review structured information.
-2. Schedule planner: arrange time-based items with clear conflicts and priorities.
-3. Catalog browser: compare, filter, and inspect grouped offerings.
-4. Asset monitor: review statuses, trends, and exceptions across tracked items.
-5. Form workspace: complete, validate, save, and revisit structured records.
-6. Settings console: configure preferences through grouped, reversible controls.
+1. Planning workspace — Organizes priorities, milestones, and structured decisions in one calm surface.
+2. Learning library — Supports browsing, comparison, saving, and resuming structured content.
+3. Resource directory — Provides searchable, filterable, comparable reference information.
+4. Finance overview — Summarizes categories, trends, thresholds, and review actions.
+5. Routine planner — Supports repeatable routines, reminders, progress views, and adjustment.
+6. Asset catalog — Presents collections, metadata, states, and review queues.
 
-Weighted scoring matrix, scale 1–5:
-Criteria weights: reusable structure 25; responsive fit 20; accessibility clarity 20; visual differentiation 15; interaction simplicity 20.
-Knowledge library: 5, 5, 5, 4, 5 = 4.80
-Schedule planner: 4, 4, 4, 5, 3 = 3.90
-Catalog browser: 5, 5, 4, 4, 5 = 4.65
-Asset monitor: 4, 4, 4, 4, 3 = 3.80
-Form workspace: 4, 4, 5, 3, 4 = 4.05
-Settings console: 4, 4, 5, 3, 4 = 4.05
+Weighted scoring matrix:
+Criteria weights: Reusability 25, accessibility fit 20, responsive clarity 15, visual distinction 15, interaction depth 15, low complexity 10.
+Scores use 1–5; weighted result shown out of 5.
+- Planning workspace: 5,5,5,4,5,4 = 4.75
+- Learning library: 5,5,4,4,4,5 = 4.60
+- Resource directory: 5,5,5,3,4,5 = 4.55
+- Finance overview: 4,5,4,4,5,3 = 4.25
+- Routine planner: 4,5,4,4,4,4 = 4.25
+- Asset catalog: 4,4,5,4,5,3 = 4.20
 
 Selected domain rationale:
-Knowledge library offers the strongest reusable foundation for hierarchy, search, filtering, responsive density, accessibility, and progressive disclosure without requiring specialized visual conventions.
+- Planning workspace ranks highest because it exercises hierarchy, filtering, statuses, responsive restructuring, accessible controls, and reusable content patterns without requiring specialized visual language.
 
 Cycle lock:
-Lock the selected domain, neutral visual DNA, 8-point rhythm, primary action hierarchy, responsive transformations, and accessibility rules for the current cycle dated 2026-10-29.
+- Retain the selected domain, neutral visual DNA, interactional DNA, accessibility DNA, and responsive DNA as fixed baselines for this cycle.
 
 Fallback rule:
-If evidence invalidates the selected domain, retain the visual, interactional, accessibility, and responsive DNA; switch to Catalog browser, then Form workspace, using the highest-scoring compatible domain without changing the core system.
+- If the selected domain is unsuitable, use Resource directory while retaining the same tokens, interaction rules, accessibility targets, and responsive behavior.
