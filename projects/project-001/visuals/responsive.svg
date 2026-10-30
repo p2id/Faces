@@ -1,11 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 330" role="img" aria-label="Generic responsive layout plan">
-<title>Generic responsive layout plan</title>
-<rect width="960" height="330" fill="#f7f8fa"/>
-<g fill="#fff" stroke="#c9ced6"><rect x="32" y="40" width="240" height="240" rx="8"/><rect x="360" y="40" width="240" height="240" rx="8"/><rect x="688" y="40" width="240" height="240" rx="8"/></g>
-<g font-family="Arial,sans-serif" fill="#273142"><text x="48" y="74" font-size="18" font-weight="700">Compact</text><text x="48" y="98" font-size="12">0–599px</text><text x="376" y="74" font-size="18" font-weight="700">Medium</text><text x="376" y="98" font-size="12">600–959px</text><text x="704" y="74" font-size="18" font-weight="700">Wide</text><text x="704" y="98" font-size="12">960px+</text></g>
-<g font-family="Arial,sans-serif" font-size="12" fill="#596579">
-<text x="48" y="138">Single column</text><text x="48" y="164">Collapsed navigation</text><text x="48" y="190">Full-width actions</text><text x="48" y="216">44px minimum targets</text>
-<text x="376" y="138">Two regions</text><text x="376" y="164">Condensed navigation</text><text x="376" y="190">Flexible cards</text><text x="376" y="216">Readable line length</text>
-<text x="704" y="138">Persistent navigation</text><text x="704" y="164">Multi-region layout</text><text x="704" y="190">Bounded content width</text><text x="704" y="216">Stable hierarchy</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 360" role="img" aria-label="Responsive layout rules">
+<title>Responsive layout rules</title>
+<rect width="960" height="360" fill="#fff"/>
+<g font-family="Arial" fill="#20252b">
+<text x="32" y="36" font-size="20" font-weight="bold">Responsive layout</text>
+<text x="32" y="82" font-size="16">Compact: 320–599px</text>
+<text x="32" y="108" font-size="14">One column; stacked actions; 16px inset; no horizontal scroll.</text>
+<text x="32" y="158" font-size="16">Medium: 600–959px</text>
+<text x="32" y="184" font-size="14">Two columns where useful; 24px inset; preserve reading order.</text>
+<text x="32" y="234" font-size="16">Wide: 960px+</text>
+<text x="32" y="260" font-size="14">Up to three content regions; 32px inset; 1200px maximum content width.</text>
+<text x="32" y="310" font-size="14">All widths: targets at least 44px; readable type; focus order follows content order.</text>
 </g>
 </svg>
