@@ -1,57 +1,47 @@
 meta:
-  project: project-001
-  date: 2026-10-28
-  layer: semantic
+  projectId: project-001
+  date: "2026-10-30"
 color:
-  surface:
-    canvas: "#FFFFFF"
-    raised: "#F8FAFC"
-    sunken: "#F1F5F9"
-    inverse: "#0F172A"
-  content:
-    primary: "#0F172A"
-    secondary: "#475569"
-    muted: "#64748B"
+  background:
+    canvas: "#F7F8FA"
+    surface: "#FFFFFF"
+    subtle: "#EEF1F4"
+    inverse: "#18212B"
+  text:
+    primary: "#18212B"
+    secondary: "#52606D"
+    muted: "#697586"
     inverse: "#FFFFFF"
-    disabled: "#94A3B8"
+    link: "#155EEF"
   border:
-    default: "#CBD5E1"
-    strong: "#94A3B8"
-    focus: "#2563EB"
-    disabled: "#E2E8F0"
-  accent:
-    default: "#2563EB"
-    hover: "#1D4ED8"
-    active: "#1E40AF"
-    subtle: "#DBEAFE"
+    default: "#D0D5DD"
+    strong: "#98A2B3"
+    focus: "#155EEF"
   state:
-    positive: "#15803D"
-    positiveSubtle: "#DCFCE7"
-    caution: "#A16207"
-    cautionSubtle: "#FEF3C7"
-    negative: "#B91C1C"
-    negativeSubtle: "#FEE2E2"
-    informative: "#0369A1"
-    informativeSubtle: "#E0F2FE"
+    info: "#155EEF"
+    success: "#16803C"
+    warning: "#B54708"
+    danger: "#C01048"
+    disabled: "#98A2B3"
 typography:
-  fontFamily:
+  family:
     sans: "Inter, ui-sans-serif, system-ui, sans-serif"
     mono: "ui-monospace, SFMono-Regular, monospace"
-  fontSize:
+  size:
     xs: "0.75rem"
     sm: "0.875rem"
     md: "1rem"
     lg: "1.125rem"
     xl: "1.5rem"
-    xxl: "2rem"
-  fontWeight:
+    display: "2rem"
+  weight:
     regular: 400
     medium: 500
     semibold: 600
     bold: 700
   lineHeight:
     tight: 1.2
-    normal: 1.5
+    body: 1.5
     relaxed: 1.7
 spacing:
   "0": "0"
@@ -59,12 +49,9 @@ spacing:
   "2": "0.5rem"
   "3": "0.75rem"
   "4": "1rem"
-  "5": "1.25rem"
   "6": "1.5rem"
   "8": "2rem"
-  "10": "2.5rem"
   "12": "3rem"
-  "16": "4rem"
 radius:
   none: "0"
   sm: "0.25rem"
@@ -74,12 +61,10 @@ radius:
 border:
   thin: "1px"
   thick: "2px"
-  style: solid
 shadow:
-  none: none
-  sm: "0 1px 2px rgb(15 23 42 / 0.08)"
-  md: "0 4px 12px rgb(15 23 42 / 0.12)"
-  lg: "0 12px 32px rgb(15 23 42 / 0.16)"
+  none: "none"
+  sm: "0 1px 2px rgb(16 24 40 / 0.08)"
+  md: "0 4px 12px rgb(16 24 40 / 0.12)"
 opacity:
   disabled: 0.5
   muted: 0.7
@@ -91,31 +76,29 @@ motion:
     slow: "300ms"
   easing:
     standard: "cubic-bezier(0.2, 0, 0, 1)"
-    emphasized: "cubic-bezier(0.2, 0, 0, 1)"
+    exit: "cubic-bezier(0.4, 0, 1, 1)"
   reduced: "0ms"
 layout:
-  contentMax: "1200px"
-  readingMax: "720px"
-  pagePadding: "{spacing.4}"
-  sectionGap: "{spacing.8}"
-  gridGap: "{spacing.4}"
+  contentMax: "75rem"
+  navigationWidth: "15rem"
+  gutter: "1rem"
+  gutterWide: "2rem"
 size:
-  controlHeight: "44px"
-  icon: "20px"
-  avatar: "32px"
-  drawerWidth: "420px"
-  dialogWidth: "560px"
+  targetMin: "2.75rem"
+  inputHeight: "2.75rem"
+  iconSm: "1rem"
+  iconMd: "1.25rem"
+  iconLg: "1.5rem"
 zIndex:
   base: 0
-  sticky: 10
-  dropdown: 20
-  drawer: 30
-  dialog: 40
-  toast: 50
-stateRelated:
-  focusRing: "{border.thick} {color.border.focus}"
-  disabledOpacity: "{opacity.disabled}"
-  selectedBackground: "{color.accent.subtle}"
-  errorBorder: "{color.state.negative}"
-  successBorder: "{color.state.positive}"
-  loadingOpacity: "{opacity.muted}"
+  header: 10
+  sticky: 20
+  dropdown: 30
+  toast: 40
+  dialog: 50
+state:
+  hoverOpacity: 0.92
+  pressedOpacity: 0.84
+  focusRing: "0 0 0 3px rgb(21 94 239 / 0.28)"
+  disabledText: "{color.text.muted}"
+  disabledBackground: "{color.background.subtle}"
