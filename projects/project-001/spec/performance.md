@@ -1,12 +1,15 @@
 Budgets:
-- Initial HTML response: ≤100 KB compressed
-- Critical CSS: ≤40 KB compressed
-- JavaScript on initial route: ≤170 KB compressed
-- Fonts: ≤120 KB compressed; maximum two families and four weights
-- Images: ≤250 KB above the fold; use responsive formats and lazy loading below the fold
-- Largest Contentful Paint: ≤2.5 s on mid-tier mobile
-- Interaction to Next Paint: ≤200 ms for primary interactions
-- Cumulative Layout Shift: ≤0.1
-- First Contentful Paint: ≤1.8 s
-- Long tasks: fewer than 3 over 50 ms during initial load
-- UI rules: reserve media dimensions, avoid layout shifts, virtualize dense lists, debounce search at 150–250 ms, defer noncritical overlays, and preserve usable loading states.
+- Initial HTML: ≤100 KB compressed.
+- Critical CSS: ≤30 KB compressed.
+- Initial JavaScript: ≤170 KB compressed per route.
+- Images: ≤250 KB per route.
+- Fonts: ≤100 KB total.
+- Largest Contentful Paint: ≤2.5s on mid-tier mobile.
+- First Contentful Paint: ≤1.8s.
+- Interaction to Next Paint: ≤200ms for common actions.
+- Cumulative Layout Shift: ≤0.1.
+- Route readiness: ≤3.5s.
+- Reserve media dimensions and prevent font, banner, and async-content layout shift.
+- Lazy-load below-fold media and virtualize long lists.
+- Prefer CSS transitions; avoid continuous animation and unnecessary rerendering.
+- Cache immutable assets and bound route payloads.
