@@ -1,17 +1,6 @@
-Positioning:
-Efficient command surface for comparing, sorting, and acting on structured items in a high-density layout.
-
-Palette rationale:
-Cool neutral canvas, tonal row separation, strong accent for selection, and restrained semantic colors for exceptions only.
-
-Type rationale:
-Highly legible sans-serif with tabular numerals, compact headings, generous line height for dense rows, and explicit label-value pairing.
-
-Layout rules:
-Toolbar stays near the result set; filters appear as visible tokens; desktop supports table-plus-detail; small screens convert rows into labeled cards; primary action is fixed within the active context.
-
-Motion intent:
-Use immediate selection feedback, subtle row transitions, and clear expansion cues; never animate data position without explaining the change.
-
-Avoided traps:
-No dashboard wall, no equal emphasis for every metric, no color-only sorting state, no tiny controls, no horizontal overflow without an accessible alternative.
+Positioning: Guided momentum; a clear sequence for turning complex planning into manageable progress.
+Palette rationale: Cool off-white base, deep navy text, restrained violet accent, and tonal step surfaces that distinguish progression without excessive emphasis.
+Type rationale: Open-counter sans-serif, medium-weight labels, generous line height, and distinct styles for guidance, content, and status.
+Layout rules: Keep one dominant task region, use a step rail or progress strip, provide one primary action per view, disclose supporting detail inline, and preserve action visibility on small screens.
+Motion intent: Use short directional transitions for progression and subtle completion feedback; disable looping effects and provide instant reduced-motion states.
+Avoided traps: Forced linearity, excessive guidance, false certainty, lengthy setup, modal interruption, unclear exit paths, and progress indicators without meaningful state.
