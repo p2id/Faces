@@ -1,14 +1,13 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 400" role="img" aria-label="Interface state matrix">
-<rect width="900" height="400" fill="#fff"/>
-<g font-family="sans-serif" font-size="16" fill="#182230">
-<text x="30" y="36" font-weight="700">State</text><text x="250" y="36" font-weight="700">Presentation</text><text x="650" y="36" font-weight="700">Available response</text>
-<text x="30" y="82">Idle</text><text x="250" y="82">Stable content</text><text x="650" y="82">Primary action</text>
-<text x="30" y="142">Loading</text><text x="250" y="142">Reserved space</text><text x="650" y="142">No layout shift</text>
-<text x="30" y="202">Empty</text><text x="250" y="202">Guidance and next step</text><text x="650" y="202">Clear alternative</text>
-<text x="30" y="262">Error</text><text x="250" y="262">Concise recovery message</text><text x="650" y="262">Retry or exit</text>
-<text x="30" y="322">Success</text><text x="250" y="322">Confirmation signal</text><text x="650" y="322">Continue or review</text>
-<text x="30" y="382">Disabled</text><text x="250" y="382">Muted with reason</text><text x="650" y="382">No false affordance</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 360" role="img" aria-label="Interface state matrix">
+<title>Interface state matrix</title>
+<rect width="960" height="360" fill="#fff"/>
+<g font-family="Arial" font-size="16" fill="#20252b">
+<text x="32" y="34" font-weight="bold">Element</text><text x="220" y="34" font-weight="bold">Default</text><text x="390" y="34" font-weight="bold">Focus</text><text x="560" y="34" font-weight="bold">Error</text><text x="730" y="34" font-weight="bold">Unavailable</text>
+<text x="32" y="82">Navigation</text><text x="220" y="82">Visible</text><text x="390" y="82">Outlined</text><text x="560" y="82">N/A</text><text x="730" y="82">Reduced</text>
+<text x="32" y="130">Field</text><text x="220" y="130">Empty</text><text x="390" y="130">Active</text><text x="560" y="130">Message</text><text x="730" y="130">Locked</text>
+<text x="32" y="178">Action</text><text x="220" y="178">Enabled</text><text x="390" y="178">Outlined</text><text x="560" y="178">N/A</text><text x="730" y="178">Disabled</text>
+<text x="32" y="226">Content</text><text x="220" y="226">Loaded</text><text x="390" y="226">N/A</text><text x="560" y="226">Retry</text><text x="730" y="226">Placeholder</text>
+<text x="32" y="274">Feedback</text><text x="220" y="274">Hidden</text><text x="390" y="274">Visible</text><text x="560" y="274">Assertive</text><text x="730" y="274">Persistent</text>
 </g>
-<g stroke="#d9dee7"><path d="M20 50H880M20 110H880M20 170H880M20 230H880M20 290H880M20 350H880M20 395H880"/><path d="M220 20V395M620 20V395"/></g>
+<path d="M24 48H936M24 96H936M24 144H936M24 192H936M24 240H936M24 288H936M24 312H936" stroke="#c9d0d9"/>
 </svg>
-Rationale: Covers primary, transitional, absent, failed, completed, and unavailable states without relying on hidden context.
