@@ -1,13 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 360" role="img" aria-label="Interface state matrix">
-<title>Interface state matrix</title>
-<rect width="960" height="360" fill="#fff"/>
-<g font-family="Arial" font-size="16" fill="#20252b">
-<text x="32" y="34" font-weight="bold">Element</text><text x="220" y="34" font-weight="bold">Default</text><text x="390" y="34" font-weight="bold">Focus</text><text x="560" y="34" font-weight="bold">Error</text><text x="730" y="34" font-weight="bold">Unavailable</text>
-<text x="32" y="82">Navigation</text><text x="220" y="82">Visible</text><text x="390" y="82">Outlined</text><text x="560" y="82">N/A</text><text x="730" y="82">Reduced</text>
-<text x="32" y="130">Field</text><text x="220" y="130">Empty</text><text x="390" y="130">Active</text><text x="560" y="130">Message</text><text x="730" y="130">Locked</text>
-<text x="32" y="178">Action</text><text x="220" y="178">Enabled</text><text x="390" y="178">Outlined</text><text x="560" y="178">N/A</text><text x="730" y="178">Disabled</text>
-<text x="32" y="226">Content</text><text x="220" y="226">Loaded</text><text x="390" y="226">N/A</text><text x="560" y="226">Retry</text><text x="730" y="226">Placeholder</text>
-<text x="32" y="274">Feedback</text><text x="220" y="274">Hidden</text><text x="390" y="274">Visible</text><text x="560" y="274">Assertive</text><text x="730" y="274">Persistent</text>
-</g>
-<path d="M24 48H936M24 96H936M24 144H936M24 192H936M24 240H936M24 288H936M24 312H936" stroke="#c9d0d9"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 440" role="img" aria-label="Component state matrix">
+<title>State matrix</title>
+<rect width="960" height="440" fill="#F7F8FA"/>
+<rect x="24" y="24" width="912" height="392" rx="8" fill="#FFF" stroke="#D8DDE6"/>
+<g font-family="Arial,sans-serif" font-size="14" fill="#172033">
+<rect x="24" y="24" width="912" height="48" fill="#EEF1F5"/>
+<text x="48" y="54">Component</text><text x="250" y="54">Default</text><text x="410" y="54">Focus</text><text x="570" y="54">Disabled</text><text x="730" y="54">Empty / Error</text>
+<g stroke="#D8DDE6"><path d="M24 72h912M24 140h912M24 208h912M24 276h912M24 344h912M220 24v392M380 24v392M540 24v392M700 24v392"/></g>
+<text x="48" y="112">Primary action</text><text x="250" y="112">Ready</text><text x="410" y="112">Visible ring</text><text x="570" y="112">Muted</text><text x="730" y="112">Inline message</text>
+<text x="48" y="180">Text field</text><text x="250" y="180">Placeholder</text><text x="410" y="180">Caret and ring</text><text x="570" y="180">Read-only</text><text x="730" y="180">Correction text</text>
+<text x="48" y="248">Content panel</text><text x="250" y="248">Content</text><text x="410" y="248">Unchanged</text><text x="570" y="248">Reduced contrast</text><text x="730" y="248">Empty guidance</text>
+<text x="48" y="316">Loading region</text><text x="250" y="316">Stable shell</text><text x="410" y="316">Stable shell</text><text x="570" y="316">Unavailable</text><text x="730" y="316">Progress status</text>
+<text x="48" y="384">Notification</text><text x="250" y="384">Hidden</text><text x="410" y="384">Hidden</text><text x="570" y="384">Hidden</text><text x="730" y="384">Clear and dismissible</text>
+</g></svg>
