@@ -1,22 +1,32 @@
-# Token map
-Date: 2026-10-30
-Project: project-001
-
-## Tokens
-- surface/base: #FFFFFF
-- surface/subtle: #F5F7F9
-- text/primary: #20252B
-- text/muted: #687381
-- border/default: #C9D0D9
-- action/primary: #315E9B
-- status/error: #B42318
-- type/body: system sans-serif, 16px/1.5
-- type/title: 32px/1.2/700
-- space/base: 4px
-- space/unit: 8px
-- radius/small: 4px
-- radius/medium: 8px
-- focus/ring: 2px solid #315E9B
-
-Rationale: semantic tokens support consistent hierarchy, contrast review, responsive reuse, and controlled visual change.
-Quality gates: semantic names used; contrast reviewed; focus visible; spacing follows the scale; raw values do not replace tokens without rationale.
+mindmap
+  root((Project 001 tokens))
+    Color
+      canvas: #F7F8FA
+      surface: #FFFFFF
+      text: #172033
+      muted: #667085
+      border: #D8DDE6
+      accent: #1F5EFF
+      danger: #C93636
+    Type
+      family: system-ui
+      body: 16/24
+      label: 14/20
+      heading: 28/36
+    Space
+      xs: 4
+      sm: 8
+      md: 16
+      lg: 24
+      xl: 32
+    Shape
+      radius: 4/8
+      control-height: 40
+    Motion
+      fast: 120ms
+      standard: 200ms
+      reduced-motion: nonessential motion off
+    Rules
+      semantic names over raw values
+      contrast checked for every pairing
+      platform-neutral definitions
