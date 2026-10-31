@@ -1,6 +1,17 @@
-Positioning: Guided momentum; a clear sequence for turning complex planning into manageable progress.
-Palette rationale: Cool off-white base, deep navy text, restrained violet accent, and tonal step surfaces that distinguish progression without excessive emphasis.
-Type rationale: Open-counter sans-serif, medium-weight labels, generous line height, and distinct styles for guidance, content, and status.
-Layout rules: Keep one dominant task region, use a step rail or progress strip, provide one primary action per view, disclose supporting detail inline, and preserve action visibility on small screens.
-Motion intent: Use short directional transitions for progression and subtle completion feedback; disable looping effects and provide instant reduced-motion states.
-Avoided traps: Forced linearity, excessive guidance, false certainty, lengthy setup, modal interruption, unclear exit paths, and progress indicators without meaningful state.
+POSITIONING
+Structured planning workspace that clarifies time, dependencies, and progress.
+
+PALETTE RATIONALE
+Cool gray base, navy text, pale blue structural surfaces, and amber reserved for attention states create separation through tone.
+
+TYPE RATIONALE
+Geometric sans serif supports alignment; differentiated numeric styling clarifies dates and durations while labels remain explicit.
+
+LAYOUT RULES
+Lead with a period selector, followed by list and timeline views. Collapse timeline detail into stacked events on small screens while preserving sequence.
+
+MOTION INTENT
+Use restrained continuity for period changes and subtle emphasis for newly revealed states. Never communicate essential information through motion alone.
+
+AVOIDED TRAPS
+Avoid spreadsheet density, ambiguous dates, excessive connectors, obstructive sticky elements, and status conveyed only by position.
