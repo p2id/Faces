@@ -1,22 +1,35 @@
-Component inventory and states:
-- Header: default, scrolled, compact, loading, unavailable.
-- Navigation: expanded, collapsed, active, hover, focus-visible, loading, unavailable.
-- Page title: default, with-action, loading.
-- Search field: empty, focused, filled, invalid, disabled, loading.
-- Filter: closed, open, selected, invalid, disabled, loading.
-- Summary card: default, hover, focus-visible, loading, unavailable.
-- Data table: populated, sorted, filtered, loading, empty, error, unavailable.
-- Table row: default, hover, selected, focus-visible, disabled.
-- Pagination: default, first-page, last-page, disabled, loading.
-- Status badge: neutral, informative, positive, caution, negative, disabled.
-- Button: default, hover, pressed, focus-visible, disabled, loading.
-- Icon button: default, hover, pressed, focus-visible, disabled, loading.
-- Text input: empty, focused, filled, invalid, disabled, read-only, loading.
-- Select: closed, open, selected, invalid, disabled, loading.
-- Checkbox: unchecked, checked, indeterminate, focus-visible, disabled, invalid.
-- Dialog: closed, opening, open, submitting, validation-error, closing.
-- Toast: entering, visible, dismissing, expired.
-- Inline alert: informative, positive, caution, negative, dismissible.
-- Skeleton: active, complete, failed.
-- Tooltip: hidden, visible, delayed, unavailable.
-- Footer: default, compact, loading.
+# Component Inventory and States
+| Component | States |
+|---|---|
+| App shell | default, compact, navigation-expanded, navigation-collapsed |
+| Header | default, scrolled, action-focused |
+| Navigation | default, active, hover, focus-visible, expanded, collapsed, disabled |
+| Breadcrumb | default, current, focus-visible, truncated |
+| Page title | default, with-description, with-actions |
+| Tabs | default, active, hover, focus-visible, disabled |
+| Card | default, hover, focus-visible, selected, disabled, loading |
+| Text field | empty, filled, hover, focus-visible, disabled, read-only, invalid, valid |
+| Select | closed, open, hover, focus-visible, disabled, invalid, selected |
+| Date picker | closed, open, date-selected, range-selected, invalid, disabled |
+| Checkbox | unchecked, checked, mixed, hover, focus-visible, disabled, invalid |
+| Radio group | unselected, selected, hover, focus-visible, disabled, invalid |
+| Toggle | off, on, hover, focus-visible, disabled |
+| Button | default, hover, pressed, focus-visible, disabled, loading, destructive |
+| Alert | info, success, warning, error, dismissible |
+| Toast | entering, visible, dismissing, success, error |
+| List/table | loading, populated, sorted, filtered, empty, error, selected |
+| Pagination | default, current, hover, focus-visible, disabled |
+| Modal | closed, opening, open, submitting, validation-error, closing |
+| Tooltip | hidden, visible, focus-visible |
+| Progress | idle, active, complete, error |
+| Skeleton | loading, resolved |
+| Empty state | default, actionable, filtered |
+| Icon action | default, hover, pressed, focus-visible, disabled |
+
+# State Rules
+- Focus-visible uses a persistent high-contrast outline.
+- Disabled controls remain perceivable and non-interactive.
+- Invalid controls include adjacent text guidance.
+- Loading controls preserve dimensions and prevent duplicate submission.
+- Empty, error, and success states include a clear next action where useful.
+- Dynamic changes use an appropriate live region.
