@@ -1,18 +1,18 @@
-Targets:
-- WCAG 2.2 AA.
-- Complete keyboard operation with logical tab order.
-- Minimum interactive target: 44×44 CSS px.
-- Text contrast: 4.5:1 normal text; 3:1 large text.
-- Non-text contrast: 3:1 for controls, boundaries, focus indicators, and meaningful graphics.
-- Focus indicator: visible, at least 2px equivalent, with strong contrast.
-- Use header, navigation, main, complementary, and footer landmarks as applicable.
-- Use one descriptive page heading and hierarchical headings.
-- Give every control an accessible name; label icon-only controls.
-- Provide persistent form labels, instructions, and specific errors.
-- Announce dynamic status politely; announce critical errors assertively.
-- Dialogs label title and purpose, trap focus, and restore focus on close.
-- Tables expose captions, headers, and row/column relationships.
-- Never communicate meaning by color alone.
-- Support 200% zoom and reflow at 320 CSS px.
-- Respect reduced-motion preferences and provide non-motion equivalents.
-- Support screen readers, keyboard, touch, high contrast, and zoom.
+# Accessibility Targets
+- Conform to WCAG 2.2 AA.
+- Support complete keyboard operation, logical focus order, and no keyboard traps.
+- Provide a visible focus indicator with at least 3:1 contrast.
+- Provide 4.5:1 contrast for normal text, 3:1 for large text, and 3:1 for non-text controls.
+- Use interactive targets of at least 44×44 CSS pixels.
+- Give every control a programmatic name, purpose, instructions, and error association.
+- Use semantic landmarks: header, navigation, main, complementary, and footer.
+- Maintain a logical heading order with one primary page heading.
+- Never communicate state by color alone.
+- Provide table captions or accessible names, header associations, and sort announcements.
+- Give dialogs an accessible name, focus management, and background inertness.
+- Announce dynamic updates through appropriately polite live regions.
+- Give meaningful graphics alternatives; hide decorative graphics from assistive technology.
+- Support 200% zoom and reflow at 320px CSS width.
+- Support screen readers, forced colors, high contrast, and reduced motion.
+- Present dates in readable, locale-aware formats with keyboard support.
+- Associate errors with affected controls and explain correction.
