@@ -1,9 +1,21 @@
-flowchart LR
-  A[Entry] --> B[Orient]
-  B --> C[Inspect content]
-  C --> D[Select action]
-  D --> E[Validate]
-  E --> F[Completion]
-  E --> G[Recovery]
-  G --> D
-  F --> H[Persist status]
+flowchart TD
+  A[Entry] --> B[Overview]
+  B --> C{Choose surface}
+  C --> D[Collection]
+  C --> E[Form]
+  D --> F[Inspect item]
+  F --> G[Edit or return]
+  E --> H{Validate}
+  H -->|Valid| I[Confirm]
+  H -->|Invalid| J[Inline correction]
+  J --> H
+  I --> K[Success feedback]
+  K --> B
+  B --> L[Guidance]
+  L --> B
+  D --> M[No content]
+  M --> E
+  D --> N[Failure]
+  N --> O[Retry]
+  O --> D
+Rationale: paths are short, reversible, and explicit about validation, empty conditions, success, and recovery.
