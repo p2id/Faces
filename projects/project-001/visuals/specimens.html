@@ -1,17 +1,22 @@
 <!doctype html>
 <html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Generic product specimen</title>
-<style>
-:root{--canvas:#f7f8fa;--surface:#fff;--text:#273142;--muted:#596579;--action:#315cce;--line:#c9ced6}
-*{box-sizing:border-box}body{margin:0;background:var(--canvas);color:var(--text);font:16px/1.5 system-ui,sans-serif}
-main{max-width:960px;margin:auto;padding:32px}.panel{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:24px}
-h1{font-size:28px;margin:0 0 8px}p{color:var(--muted)}button{min-height:44px;padding:0 16px;border:0;border-radius:6px;background:var(--action);color:#fff;font-weight:600}button:focus-visible{outline:3px solid #9db5ff;outline-offset:2px}
-</style>
-</head>
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Generic Product Specimens</title></head>
 <body>
-<main><section class="panel" aria-labelledby="title"><h1 id="title">Product overview</h1><p>Review available content, select an action, and confirm the resulting status.</p><button type="button">Continue</button></section></main>
+<main>
+<h1>Overview</h1>
+<p>Clear status, useful summary, and one primary next action.</p>
+<section aria-label="Summary">
+<article><h2>Summary A</h2><p>Supporting value or status.</p><button type="button">Open</button></article>
+<article><h2>Summary B</h2><p>Supporting value or status.</p><button type="button">Review</button></article>
+</section>
+<form>
+<label for="field">Field label</label>
+<input id="field" name="field" aria-describedby="hint">
+<small id="hint">Short, specific guidance.</small>
+<button type="submit">Save</button>
+</form>
+<div role="status" aria-live="polite">Status feedback appears here.</div>
+</main>
 </body>
 </html>
+Rationale: semantic structure, explicit labels, concise copy, status announcement, and native controls support reuse and accessibility review.
