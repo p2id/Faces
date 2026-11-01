@@ -1,36 +1,37 @@
-# Product Experience Specification
-- Project: project-001
-- Date: 2026-10-31
-- Product: generic information-management interface
-- Principles: neutral, clear, reusable, task-oriented
+Date: 2026-11-01
+Project: project-001
+Scope: Generic reusable product experience for browsing, viewing, and editing content.
 
-## Surfaces
-- Desktop web
-- Tablet layout
-- Mobile layout
-- Modal and overlay layer
-- Print-friendly view
+Surfaces:
+- Browse: navigation, title, search, filters, result list.
+- Detail: title, metadata, description, related content, actions.
+- Form: title, fields, guidance, validation, actions.
+- Feedback: loading, empty, success, warning, error, unavailable.
 
-## Sections
-- App shell: navigation, page title, utility actions
-- Overview: summary cards, status notice, recent activity
-- Items: search, filters, sortable list, pagination
-- Item detail: metadata, grouped fields, contextual actions
-- Preferences: display, notification, accessibility settings
-- Help: searchable guidance and support content
+Sections:
+- Header: product label, navigation, search, utility actions.
+- Main: page title, supporting text, controls, content.
+- Detail panel: summary, metadata, body, action row.
+- Form panel: field groups, help text, validation, submit row.
+- Footer: secondary links and support information.
 
-## Real Content Examples
-- Page title: “Items”
-- Description: “Review, filter, and organize available items.”
-- Search label: “Search items”
-- Placeholder: “Enter a title or reference”
-- Filters: “Status”, “Date range”, “Category”
-- Actions: “Apply filters”, “Clear filters”, “Create item”, “Save changes”, “Cancel”
-- Columns: “Reference”, “Title”, “Status”, “Updated”, “Actions”
-- Example row: “ITM-1042 | Quarterly review | In progress | 31 Oct 2026 | View”
-- Statuses: “Not started”, “In progress”, “Complete”, “Archived”
-- Empty message: “No items match the selected filters.”
-- Error message: “Items could not be displayed. Try again.”
-- Success message: “Changes saved.”
-- Confirmation: “Archive this item? Archived items are hidden from the default list.”
-- Loading label: “Loading items”
+Real content examples:
+- Title: “Browse content”
+- Supporting text: “Find and organize reusable content.”
+- Search placeholder: “Search content”
+- Filter label: “Sort by”
+- Options: “Recently updated”, “Name”, “Most used”
+- Empty message: “No content matches these filters.”
+- Detail title: “Launch checklist”
+- Metadata: “12 items · Updated Nov 1, 2026”
+- Primary action: “Create content”
+- Secondary action: “Cancel”
+- Success message: “Content created.”
+- Error message: “Enter a title to continue.”
+- Offline notice: “Some content may be unavailable offline.”
+
+Content rules:
+- Use concise, literal, sentence-case labels.
+- Provide one primary action per region.
+- Preserve entered values after recoverable errors.
+- Never use color as the only state indicator.
