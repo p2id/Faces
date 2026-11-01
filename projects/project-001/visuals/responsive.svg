@@ -1,14 +1,15 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 360" role="img" aria-label="Responsive layout rules">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 380" role="img" aria-label="Responsive layout rules">
 <title>Responsive layout rules</title>
-<rect width="960" height="360" fill="#fff"/>
-<g font-family="Arial" fill="#20252b">
-<text x="32" y="36" font-size="20" font-weight="bold">Responsive layout</text>
-<text x="32" y="82" font-size="16">Compact: 320–599px</text>
-<text x="32" y="108" font-size="14">One column; stacked actions; 16px inset; no horizontal scroll.</text>
-<text x="32" y="158" font-size="16">Medium: 600–959px</text>
-<text x="32" y="184" font-size="14">Two columns where useful; 24px inset; preserve reading order.</text>
-<text x="32" y="234" font-size="16">Wide: 960px+</text>
-<text x="32" y="260" font-size="14">Up to three content regions; 32px inset; 1200px maximum content width.</text>
-<text x="32" y="310" font-size="14">All widths: targets at least 44px; readable type; focus order follows content order.</text>
+<rect width="960" height="380" fill="#f7f8fa"/>
+<g font-family="Arial" fill="#263142">
+<text x="32" y="42" font-size="20" font-weight="700">Responsive composition</text>
+<text x="32" y="88" font-size="15">Compact: 0–639px</text><text x="32" y="116" font-size="13">Single column; navigation collapses; cards stack; primary actions expand.</text>
+<text x="32" y="164" font-size="15">Medium: 640–1023px</text><text x="32" y="192" font-size="13">Two-column content where space permits; actions remain available.</text>
+<text x="32" y="240" font-size="15">Wide: 1024px+</text><text x="32" y="268" font-size="13">Navigation rail, three-card summary, bounded content width.</text>
+<text x="32" y="320" font-size="13">Rules: no horizontal scrolling; preserve order; use 44px minimum touch targets; reflow at 200% zoom.</text>
 </g>
+<rect x="650" y="72" width="96" height="180" rx="10" fill="#fff" stroke="#2864dc"/><rect x="770" y="72" width="112" height="180" rx="10" fill="#fff" stroke="#2864dc"/>
+<rect x="662" y="92" width="72" height="20" fill="#e9efff"/><rect x="782" y="92" width="88" height="20" fill="#e9efff"/>
+<rect x="662" y="128" width="72" height="72" fill="#e9edf3"/><rect x="782" y="128" width="40" height="72" fill="#e9edf3"/><rect x="830" y="128" width="40" height="72" fill="#e9edf3"/>
 </svg>
+Rationale: breakpoint rules prioritize reading order, touch access, bounded density, and predictable reflow.
