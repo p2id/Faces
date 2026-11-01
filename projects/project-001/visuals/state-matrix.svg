@@ -1,14 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 440" role="img" aria-label="Component state matrix">
-<title>State matrix</title>
-<rect width="960" height="440" fill="#F7F8FA"/>
-<rect x="24" y="24" width="912" height="392" rx="8" fill="#FFF" stroke="#D8DDE6"/>
-<g font-family="Arial,sans-serif" font-size="14" fill="#172033">
-<rect x="24" y="24" width="912" height="48" fill="#EEF1F5"/>
-<text x="48" y="54">Component</text><text x="250" y="54">Default</text><text x="410" y="54">Focus</text><text x="570" y="54">Disabled</text><text x="730" y="54">Empty / Error</text>
-<g stroke="#D8DDE6"><path d="M24 72h912M24 140h912M24 208h912M24 276h912M24 344h912M220 24v392M380 24v392M540 24v392M700 24v392"/></g>
-<text x="48" y="112">Primary action</text><text x="250" y="112">Ready</text><text x="410" y="112">Visible ring</text><text x="570" y="112">Muted</text><text x="730" y="112">Inline message</text>
-<text x="48" y="180">Text field</text><text x="250" y="180">Placeholder</text><text x="410" y="180">Caret and ring</text><text x="570" y="180">Read-only</text><text x="730" y="180">Correction text</text>
-<text x="48" y="248">Content panel</text><text x="250" y="248">Content</text><text x="410" y="248">Unchanged</text><text x="570" y="248">Reduced contrast</text><text x="730" y="248">Empty guidance</text>
-<text x="48" y="316">Loading region</text><text x="250" y="316">Stable shell</text><text x="410" y="316">Stable shell</text><text x="570" y="316">Unavailable</text><text x="730" y="316">Progress status</text>
-<text x="48" y="384">Notification</text><text x="250" y="384">Hidden</text><text x="410" y="384">Hidden</text><text x="570" y="384">Hidden</text><text x="730" y="384">Clear and dismissible</text>
-</g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 430" role="img" aria-label="Interface state matrix">
+<title>Interface state matrix</title>
+<rect width="960" height="430" fill="#f7f8fa"/>
+<g font-family="Arial" font-size="16" fill="#263142">
+<text x="32" y="40" font-weight="700">Surface</text><text x="220" y="40" font-weight="700">Default</text><text x="390" y="40" font-weight="700">Loading</text><text x="560" y="40" font-weight="700">Empty</text><text x="730" y="40" font-weight="700">Error / Recovery</text>
+<text x="32" y="92">Overview</text><text x="220" y="92">Content shown</text><text x="390" y="92">Reserved blocks</text><text x="560" y="92">Guidance</text><text x="730" y="92">Retry + detail</text>
+<text x="32" y="152">Collection</text><text x="220" y="152">Items + filters</text><text x="390" y="152">Row placeholders</text><text x="560" y="152">Create action</text><text x="730" y="152">Retry + preserve filters</text>
+<text x="32" y="212">Form</text><text x="220" y="212">Editable fields</text><text x="390" y="212">Disabled submit</text><text x="560" y="212">Optional fields</text><text x="730" y="212">Inline correction</text>
+<text x="32" y="272">Dialog</text><text x="220" y="272">Context + actions</text><text x="390" y="272">Progress indicator</text><text x="560" y="272">Not applicable</text><text x="730" y="272">Cancel + retry</text>
+<text x="32" y="332">Notification</text><text x="220" y="332">Transient feedback</text><text x="390" y="332">Queued feedback</text><text x="560" y="332">Hidden</text><text x="730" y="332">Persistent recovery</text>
+</g>
+<g stroke="#c9ced6" fill="none"><path d="M24 56H936M24 106H936M24 166H936M24 226H936M24 286H936M24 346H936M24 396H936"/><path d="M24 24V396M204 24V396M374 24V396M544 24V396M714 24V396M936 24V396"/></g>
+</svg>
+Coverage rationale: default, progress, empty, validation, failure, recovery, and success conditions are represented across core surfaces.
