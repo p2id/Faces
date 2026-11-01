@@ -1,52 +1,63 @@
+Date: 2026-11-01
 Project ID: project-001
-Date: 2026-10-31
 
 DOMINANT PATTERNS
-- Neutral surfaces, one accent, clear hierarchy, consistent spacing, restrained elevation.
-- One primary action per view, progressive disclosure, inline feedback, reversible changes.
-- List-to-detail navigation with explicit empty, active, completed, and error states.
-- Mobile stacking with wider multi-column layouts at larger widths.
+- Clear hierarchy with one primary action per view.
+- Modular cards, panels, tabs, filters, and status indicators.
+- Neutral foundation, restrained accent, strong contrast.
+- Responsive collapse from wide grid to narrow single-column priority.
+- Persistent context through title, location cue, summary, and consistent controls.
 
 EMERGING PATTERNS
-- Contextual action groups that expose only relevant controls.
-- Tokenized themes supporting light, dark, and high-contrast modes.
-- User-selectable compact and comfortable density.
-- Motion used for continuity and state feedback rather than decoration.
+- Quick actions with visible alternatives.
+- Compact, comfortable, and expanded density modes.
+- Inline validation and contextual guidance.
+- Light, dark, and high-contrast tokenized themes.
+- Motion limited to state, continuity, and completion feedback.
 
 DEPRECATED PATTERNS
-- Unprioritized dense grids, excessive modal interruptions, weak contrast, and color-only status.
-- Decorative gradients, heavy glass effects, persistent shadows, and hidden primary actions.
+- Decorative gradients, blur, and excessive glass effects.
+- Auto-advancing carousels and carousel-dependent discovery.
+- Unlabeled icon-only controls.
+- Stacked modals and irreversible actions without recovery.
+- Low-contrast text and color-only status indicators.
 
 OUTLIER PATTERNS
-- Editorial asymmetry, oversized metric typography, and optional timeline views.
-- These patterns are useful only when they improve discovery, measurement, or sequence comprehension.
+- Asymmetric emphasis for exceptional priority states.
+- Geometric empty states without illustration.
+- Split-view comparison for complex choices.
+- Static reduced-motion transitions with explicit state labels.
 
 EXTRACTED DNA
-Visual: neutral base, single accent, 8-point spacing, 12–16px radius, one elevation tier, compact icons, clear dividers.
-Interactional: one primary action, predictable navigation, inline editing, reversible destructive actions, explicit feedback.
-Accessibility: semantic structure, keyboard coverage, visible focus, at least 4.5:1 normal-text contrast, non-color status cues, reduced-motion support, 44px minimum touch targets.
-Responsive: mobile-first stacking, fluid type, intrinsic controls, preserved action priority, breakpoint changes only when hierarchy requires them.
+Visual: neutral base, one accent family, 8-point spacing, 10–14px radius, 1px separators, restrained elevation, concise labels, limited semantic colors.
+Interactional: predictable focus order, one primary action per surface, reversible changes, inline feedback, explicit loading and completion states, keyboard-accessible controls.
+Accessibility: semantic structure, visible focus, minimum 4.5:1 text contrast, non-color status cues, scalable text, 44px minimum touch targets, reduced-motion option, no time-critical interaction by default.
+Responsive: 12-column wide grid and 4-column narrow grid; content-first collapse; fluid type within safe bounds; intentional overflow only for dense data; controls wrap before clipping.
 
 CANDIDATE PRODUCT DOMAINS
-1. Planning and scheduling: organize dated items, priorities, and sequences.
-2. Learning library: browse, filter, and resume structured content.
-3. Home operations: coordinate recurring maintenance, supplies, and schedules.
-4. Media collection: discover, organize, and continue saved content.
-5. Personal finance overview: summarize categories, trends, and planned actions without transaction processing.
+1. Planning workspace — organizes priorities, schedules, and related materials in one adaptable view.
+2. Learning library — supports structured discovery, progress tracking, and reference access.
+3. Service directory — supports comparison, filtering, and selection of categorized offerings.
+4. Resource dashboard — summarizes availability, status, trends, and next actions.
+5. Configuration center — presents settings and safe, reversible changes.
+6. Collection browser — supports scanning, sorting, saving, and comparing grouped items.
 
 WEIGHTED SCORING MATRIX
-Weights: clarity 25, repeat-use value 20, responsive fit 20, accessibility fit 15, visual flexibility 10, content safety 10.
-Planning and scheduling: 24+18+19+14+9+10 = 94/100.
-Learning library: 22+18+18+14+9+9 = 90/100.
-Home operations: 21+17+18+14+8+10 = 88/100.
-Media collection: 20+16+17+13+10+9 = 85/100.
-Personal finance overview: 21+17+17+13+8+7 = 83/100.
+Weights: clarity 30%, reuse 25%, responsive fit 20%, accessibility fit 15%, flexibility 10%. Scores use a 1–5 scale; total is normalized to 100.
+
+Domain                  Clarity  Reuse  Responsive  A11y  Flexibility  Total
+Planning workspace       5        5      5           5     4            96
+Learning library         4        5      5           5     4            91
+Service directory        4        5      5           4     5            89
+Resource dashboard       5        4      4           5     4            88
+Configuration center     4        4      5           5     3            84
+Collection browser       4        5      4           4     5            86
 
 SELECTED DOMAIN RATIONALE
-Planning and scheduling provides clear hierarchy, date-aware states, strong responsive variation, and reusable interactions without requiring specialized visual conventions.
+Planning workspace ranks highest because it expresses hierarchy, modular composition, responsive behavior, reversible interaction, and accessible status communication without specialized visual assumptions.
 
 CYCLE LOCK
-Lock domain, DNA, accessibility baseline, and responsive rules for project-001 on 2026-10-31. Directions may vary expression but not core behavior or constraints.
+Retain the selected domain, DNA, scoring weights, and primary direction for this cycle. Change only when documented evidence shows a structural or accessibility failure.
 
 FALLBACK RULE
-If scheduling content is too sparse or complex for validation, use Learning library while retaining the same DNA, scoring criteria, accessibility baseline, and responsive rules.
+If the selected domain cannot support clear primary actions, responsive compression, or accessible status cues, use Learning library while retaining the same DNA and scoring weights.
