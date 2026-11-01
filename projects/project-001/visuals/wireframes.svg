@@ -1,31 +1,29 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" role="img" aria-label="Generic product experience wireframe">
-<title>Project 001 wireframe</title>
-<rect width="960" height="540" fill="#F7F8FA"/>
-<g fill="#FFF" stroke="#D8DDE6">
-<rect x="24" y="24" width="912" height="64" rx="8"/>
-<rect x="24" y="112" width="600" height="180" rx="8"/>
-<rect x="648" y="112" width="288" height="180" rx="8"/>
-<rect x="24" y="316" width="912" height="196" rx="8"/>
-</g>
-<g fill="#CBD2DE">
-<rect x="48" y="44" width="150" height="24" rx="4"/>
-<rect x="48" y="140" width="320" height="20" rx="4"/>
-<rect x="672" y="140" width="120" height="16" rx="4"/>
-<rect x="48" y="344" width="180" height="16" rx="4"/>
-</g>
-<g fill="#E2E6ED">
-<rect x="48" y="176" width="500" height="12" rx="3"/>
-<rect x="48" y="198" width="420" height="12" rx="3"/>
-<rect x="672" y="180" width="220" height="12" rx="3"/>
-<rect x="672" y="204" width="180" height="12" rx="3"/>
-<rect x="48" y="384" width="840" height="1"/>
-<rect x="48" y="408" width="260" height="12" rx="3"/>
-<rect x="340" y="408" width="180" height="12" rx="3"/>
-<rect x="552" y="408" width="144" height="12" rx="3"/>
-<rect x="48" y="448" width="260" height="12" rx="3"/>
-<rect x="340" y="448" width="180" height="12" rx="3"/>
-<rect x="552" y="448" width="144" height="12" rx="3"/>
-</g>
-<rect x="804" y="42" width="104" height="28" rx="6" fill="#1F5EFF"/>
-<rect x="48" y="236" width="116" height="32" rx="6" fill="#1F5EFF"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 560" role="img" aria-label="Generic product overview layout">
+<title>Generic product overview layout</title>
+<rect width="960" height="560" fill="#f7f8fa"/>
+<rect x="24" y="24" width="912" height="56" rx="8" fill="#fff" stroke="#c9ced6"/>
+<rect x="48" y="44" width="140" height="16" rx="4" fill="#263142"/>
+<rect x="704" y="42" width="72" height="20" rx="4" fill="#e3e7ed"/>
+<rect x="792" y="42" width="112" height="20" rx="4" fill="#2864dc"/>
+<rect x="24" y="104" width="184" height="432" rx="8" fill="#fff" stroke="#c9ced6"/>
+<rect x="48" y="132" width="120" height="12" rx="3" fill="#8a94a3"/>
+<rect x="48" y="176" width="128" height="36" rx="6" fill="#e9efff"/>
+<rect x="48" y="228" width="112" height="12" rx="3" fill="#c9ced6"/>
+<rect x="48" y="260" width="124" height="12" rx="3" fill="#c9ced6"/>
+<rect x="232" y="104" width="704" height="112" rx="8" fill="#fff" stroke="#c9ced6"/>
+<rect x="256" y="132" width="260" height="20" rx="4" fill="#263142"/>
+<rect x="256" y="168" width="420" height="12" rx="3" fill="#8a94a3"/>
+<rect x="744" y="140" width="148" height="40" rx="6" fill="#2864dc"/>
+<rect x="232" y="240" width="224" height="176" rx="8" fill="#fff" stroke="#c9ced6"/>
+<rect x="480" y="240" width="224" height="176" rx="8" fill="#fff" stroke="#c9ced6"/>
+<rect x="728" y="240" width="208" height="176" rx="8" fill="#fff" stroke="#c9ced6"/>
+<rect x="256" y="268" width="112" height="14" rx="3" fill="#263142"/>
+<rect x="504" y="268" width="112" height="14" rx="3" fill="#263142"/>
+<rect x="752" y="268" width="112" height="14" rx="3" fill="#263142"/>
+<rect x="256" y="304" width="152" height="36" rx="5" fill="#e9edf3"/>
+<rect x="504" y="304" width="152" height="36" rx="5" fill="#e9edf3"/>
+<rect x="752" y="304" width="144" height="36" rx="5" fill="#e9edf3"/>
+<rect x="232" y="440" width="704" height="96" rx="8" fill="#fff" stroke="#c9ced6"/>
+<rect x="256" y="468" width="600" height="12" rx="3" fill="#c9ced6"/>
 </svg>
+Representation rationale: portable vector structure shows hierarchy, navigation, summary, action, and feedback regions without product-specific content.
