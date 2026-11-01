@@ -1,8 +1,9 @@
 SUPPORTING EVIDENCE SUMMARY
-- Reusable interfaces consistently benefit from visible hierarchy, concise labels, predictable navigation, and immediate state feedback.
-- Neutral surfaces and one accent preserve attention across planning, reading, tracking, and browsing contexts.
-- Mobile layouts are clearer when actions are prioritized, controls remain comfortably tappable, and secondary detail is progressively disclosed.
-- Accessibility improves when status combines text or shape with color, focus remains visible, and motion has a reduced mode.
-- Date- and sequence-based content supports list, calendar, and timeline views sharing one information model.
-- Planning and scheduling offers recurring content plus empty, active, completed, overdue, and filtered states for broad validation.
-- Evidence confidence: directional heuristic evidence; validate through task comprehension, completion, accessibility, and responsive review.
+- Reusable product interfaces consistently benefit from concise hierarchy, modular grouping, visible primary actions, and predictable navigation.
+- Responsive layouts are more robust when content priority determines collapse order instead of fixed desktop scaling.
+- Accessible foundations require semantic structure, visible focus, sufficient contrast, non-color cues, scalable text, adequate touch targets, and reduced-motion support.
+- Dense information is clearer with density controls and progressive disclosure.
+- Motion is most useful when it communicates continuity, state change, or completion; decorative motion adds distraction and sensitivity risk.
+- Neutral foundations with limited accent systems improve reuse and prevent color from carrying excessive meaning.
+- Evidence confidence is high for structural and accessibility patterns, medium for domain selection and visual emphasis, and low for untested brand-specific preferences.
+- Retain the selection unless review demonstrates ambiguity in primary action, hierarchy, accessibility, or responsive behavior.
