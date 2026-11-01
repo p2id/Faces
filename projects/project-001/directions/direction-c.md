@@ -1,17 +1,6 @@
-POSITIONING
-Light editorial planner that presents upcoming items as a readable sequence with clear next actions.
-
-PALETTE RATIONALE
-Soft neutral canvas, near-black text, lavender accent, and restrained coral for exceptions provide distinction without reducing clarity.
-
-TYPE RATIONALE
-Readable sans serif with generous line height and varied scale for overview, labels, and detail; numeric content stays compact and aligned.
-
-LAYOUT RULES
-Use an asymmetric overview with a dominant upcoming item and supporting sequence. On mobile, order content as now, next, later while preserving semantic order.
-
-MOTION INTENT
-Use gentle reveal and continuity between overview and detail. Keep transitions brief, optional, and subordinate to comprehension.
-
-AVOIDED TRAPS
-Avoid ambiguous editorial layouts, oversized decorative headings, hidden controls, novelty transitions, and emphasis that conflicts with priority.
+Positioning: Flexible planning workspace balancing overview, exploration, and gradual refinement.
+Palette rationale: Soft neutral base, charcoal text, green-teal accent, and pale supporting tints convey progress while maintaining calm contrast.
+Type rationale: Neutral sans serif with generous line height, clear section rhythm, and limited emphasis styles.
+Layout rules: Overview first, expandable groups second, detailed controls third; use 8-point spacing; provide density switching; collapse metadata before essential content.
+Motion intent: Gentle expand/collapse and inline confirmation; preserve orientation; remove interpolation in reduced-motion mode.
+Avoided traps: Gamified progress, oversized empty regions, hidden advanced controls, ambiguous icons, automatic rearrangement, and positive-color dependence.
