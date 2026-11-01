@@ -1,10 +1,8 @@
 # Audit trail
 - Project: project-001
-- Date: 2026-10-25
-- Scope: Sections E–H and supporting UX representations.
-- Representation rationale: SVG exposes inspectable structure; Mermaid expresses relationships; HTML demonstrates semantic layout and focus behavior; Markdown records intent, coverage, and controls.
-- Quality gates: syntax validity; token consistency; state completeness; responsive coverage; semantic structure; keyboard focus; contrast intent; readable type; reduced motion; neutral content; path integrity; metadata accuracy; gap disclosure.
-- Repository path intent: `/projects/project-001/ux/` contains project-specific artifacts; `/standards/` contains reusable rules; `/index/` contains navigation.
-- Writing rule: Use concise, neutral, observable language. State available information and recovery actions without blame or unsupported claims.
-- Publishing rule: Publish only reviewed, versioned, internally consistent files with stable names, date, project id, scope, and recorded gaps.
-- Status: Review-ready draft; no implementation or service behavior is specified.
+- Date: 2026-11-01
+- Scope: visual structure, state coverage, tokens, responsive behavior, flows, and semantic specimens.
+- Representation rationale: SVG provides portable visuals; Mermaid records relationships; HTML demonstrates semantic structure; Markdown records decisions and gates.
+- Quality gates: syntax; hierarchy; responsive reflow; keyboard access; visible focus; contrast AA; zoom; reduced motion; state completeness; neutral language; no backend engineering.
+- Publishing rule: publish only reviewed artifacts with stable filenames, date, project id, revision note, and gate status.
+- Change rule: append rationale and affected paths; do not silently replace approved behavior.
