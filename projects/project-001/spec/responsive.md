@@ -1,20 +1,17 @@
-# Breakpoints
-- xs: 0–479px
-- sm: 480–767px
-- md: 768–1023px
-- lg: 1024–1439px
-- xl: 1440px and above
+Breakpoints:
+- compact: 0–599px
+- medium: 600–959px
+- wide: 960px and above
 
-# Responsive Rules
-- Use fluid containers with 16px minimum side padding on xs–sm and 24px on md+.
-- xs: single column, collapsed navigation, stacked actions, list cards or controlled horizontal scrolling.
-- sm: single column; allow two-column summary cards when readable.
-- md: compact persistent navigation; two-column detail layouts when each column is at least 280px.
-- lg: full navigation; content max-width 1200px; use a four-column summary grid when space permits.
-- xl: preserve max-width 1440px and increase whitespace before increasing text size.
-- Touch targets are at least 44×44px.
-- Keep primary actions visible without horizontal scrolling.
-- Wrap labels rather than truncate meaning-bearing text.
-- Mobile modals use 16px margins and full-height sheets when needed.
-- Table headers remain readable; horizontal scrolling is a fallback.
-- Respect reduced-motion preferences at all breakpoints.
+Responsive rules:
+- Container padding: 16px compact, 24px medium, 32px wide.
+- Stack columns below 720px; enable split layouts at 960px.
+- Collapse header actions into overflow below 600px.
+- Search fills the row below 600px and shares controls above it.
+- Cards: one column compact, two columns medium, three columns wide.
+- Form fields are full width compact; paired fields may share rows from 720px.
+- Dialogs become full-height sheets compact and capped panels above 600px.
+- Maintain minimum 44×44px targets and minimum 14px text.
+- Allow wrapping; never clip essential labels or values.
+- Support 200% zoom without loss of function or unintended horizontal scrolling.
+- Reduce decorative spacing before reducing readable content.
