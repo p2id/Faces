@@ -1,63 +1,32 @@
-Date: 2026-11-01
-Project ID: project-001
+Project: project-001 | Date: 2026-11-02
 
-DOMINANT PATTERNS
-- Clear hierarchy with one primary action per view.
-- Modular cards, panels, tabs, filters, and status indicators.
-- Neutral foundation, restrained accent, strong contrast.
-- Responsive collapse from wide grid to narrow single-column priority.
-- Persistent context through title, location cue, summary, and consistent controls.
+DOMINANT: Clear hierarchy; one primary action; modular cards and panels; explicit status; progressive disclosure; responsive stacking.
+EMERGING: Command-style quick actions; inline validation; density controls; semantic color tokens; reduced-motion variants.
+DEPRECATED: Decorative gradients; unlabeled icon-only controls; deep modal chains; hover-only disclosure; fixed-width layouts; color-only states.
+OUTLIER: Resizable split panes; timeline or canvas views; monochrome high-contrast modes; command palettes; document-style layouts.
 
-EMERGING PATTERNS
-- Quick actions with visible alternatives.
-- Compact, comfortable, and expanded density modes.
-- Inline validation and contextual guidance.
-- Light, dark, and high-contrast tokenized themes.
-- Motion limited to state, continuity, and completion feedback.
+VISUAL DNA: Neutral surfaces, high-contrast text, one accent, 8px spacing rhythm, 12–16px radius, restrained borders and shadows, compact status tokens.
+INTERACTIONAL DNA: Obvious primary action, reversible changes, inline feedback, predictable focus order, keyboard-complete navigation, confirmation only for irreversible actions.
+ACCESSIBILITY DNA: Semantic structure, visible focus, minimum 44px targets, text labels beyond icons, non-color state cues, logical reading order, reduced-motion support, zoom and reflow resilience.
+RESPONSIVE DNA: Fluid spacing and type, content-first breakpoints, stacked cards, labeled narrow-screen rows, preserved task order, reachable controls, no core-task horizontal scrolling.
 
-DEPRECATED PATTERNS
-- Decorative gradients, blur, and excessive glass effects.
-- Auto-advancing carousels and carousel-dependent discovery.
-- Unlabeled icon-only controls.
-- Stacked modals and irreversible actions without recovery.
-- Low-contrast text and color-only status indicators.
+CANDIDATE DOMAINS
+Planning workspace: Organizes priorities, schedules, and progress into scannable views.
+Learning library: Supports discovery, structured reading, and completion tracking.
+Service request center: Guides intake, status review, and resolution steps.
+Resource directory: Supports filtering, comparison, and detail inspection.
+Finance overview: Presents categories, trends, and next actions without transaction execution.
+Content review board: Supports intake, annotation, decision states, and history.
 
-OUTLIER PATTERNS
-- Asymmetric emphasis for exceptional priority states.
-- Geometric empty states without illustration.
-- Split-view comparison for complex choices.
-- Static reduced-motion transitions with explicit state labels.
+WEIGHTED MATRIX
+Weights: clarity 25, reuse 20, accessibility 20, responsive fit 15, visual range 10, neutrality 10.
+Planning workspace: 5,5,5,5,4,5 = 4.85/5
+Learning library: 4,5,5,5,4,5 = 4.65/5
+Service request center: 5,4,5,4,3,5 = 4.55/5
+Resource directory: 4,5,5,5,4,5 = 4.65/5
+Finance overview: 4,4,4,4,4,4 = 4.00/5
+Content review board: 4,4,4,4,5,4 = 4.10/5
 
-EXTRACTED DNA
-Visual: neutral base, one accent family, 8-point spacing, 10–14px radius, 1px separators, restrained elevation, concise labels, limited semantic colors.
-Interactional: predictable focus order, one primary action per surface, reversible changes, inline feedback, explicit loading and completion states, keyboard-accessible controls.
-Accessibility: semantic structure, visible focus, minimum 4.5:1 text contrast, non-color status cues, scalable text, 44px minimum touch targets, reduced-motion option, no time-critical interaction by default.
-Responsive: 12-column wide grid and 4-column narrow grid; content-first collapse; fluid type within safe bounds; intentional overflow only for dense data; controls wrap before clipping.
-
-CANDIDATE PRODUCT DOMAINS
-1. Planning workspace — organizes priorities, schedules, and related materials in one adaptable view.
-2. Learning library — supports structured discovery, progress tracking, and reference access.
-3. Service directory — supports comparison, filtering, and selection of categorized offerings.
-4. Resource dashboard — summarizes availability, status, trends, and next actions.
-5. Configuration center — presents settings and safe, reversible changes.
-6. Collection browser — supports scanning, sorting, saving, and comparing grouped items.
-
-WEIGHTED SCORING MATRIX
-Weights: clarity 30%, reuse 25%, responsive fit 20%, accessibility fit 15%, flexibility 10%. Scores use a 1–5 scale; total is normalized to 100.
-
-Domain                  Clarity  Reuse  Responsive  A11y  Flexibility  Total
-Planning workspace       5        5      5           5     4            96
-Learning library         4        5      5           5     4            91
-Service directory        4        5      5           4     5            89
-Resource dashboard       5        4      4           5     4            88
-Configuration center     4        4      5           5     3            84
-Collection browser       4        5      4           4     5            86
-
-SELECTED DOMAIN RATIONALE
-Planning workspace ranks highest because it expresses hierarchy, modular composition, responsive behavior, reversible interaction, and accessible status communication without specialized visual assumptions.
-
-CYCLE LOCK
-Retain the selected domain, DNA, scoring weights, and primary direction for this cycle. Change only when documented evidence shows a structural or accessibility failure.
-
-FALLBACK RULE
-If the selected domain cannot support clear primary actions, responsive compression, or accessible status cues, use Learning library while retaining the same DNA and scoring weights.
+SELECTED DOMAIN RATIONALE: Planning workspace has the strongest composite fit, broad component coverage, clear responsive behavior, and high reuse across generic product contexts.
+CYCLE LOCK: Lock selected domain, core DNA, token logic, and accessibility baseline; vary only composition, density, and emphasis.
+FALLBACK RULE: If the selected domain does not fit the required scenario, use Resource directory while retaining the same DNA, accessibility baseline, and scoring criteria.
