@@ -1,6 +1,6 @@
-Positioning: Structured planning workspace optimized for comparison, review, and deliberate prioritization.
-Palette rationale: Cool-neutral canvas, deep ink, violet-blue accent, and high-contrast semantic markers create precision without aggressive saturation.
-Type rationale: Neutral sans serif with tabular numerals, compact labels, and strong weight contrast for comparisons and status.
-Layout rules: Split view on wide screens; stacked summary and detail on narrow screens; aligned comparison rows; visible filters that wrap before clipping.
-Motion intent: Low-amplitude panel transitions, stable sorting feedback, and explicit state cues; no parallax or automatic movement.
-Avoided traps: Spreadsheet overload, hidden filters, tiny controls, excessive borders, unexplained ranking, and context-obscuring panels.
+POSITIONING: Focused sequence for converting a broad objective into clear next steps.
+PALETTE RATIONALE: Cool white, slate text, violet accent, and muted semantic tokens distinguish stages without excessive urgency.
+TYPE RATIONALE: Neutral sans serif with clear weight contrast; 15–17px reading text; generous line height.
+LAYOUT RULES: Single primary column with compact context bar; labeled step groups; optional sticky action area; one task per mobile viewport.
+MOTION INTENT: Subtle progress interpolation and section reveals; no effects that obscure content, focus, or state.
+AVOIDED TRAPS: Forced wizard progression, hidden prerequisites, meaningless progress bars, premature validation, excessive instructions, scroll jumps.
