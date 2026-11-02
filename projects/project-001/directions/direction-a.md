@@ -1,6 +1,6 @@
-Positioning: Quietly capable planning workspace that converts priorities into a clear, adaptable sequence.
-Palette rationale: Warm-neutral canvas, graphite text, muted blue accent, and restrained semantic colors support focus without visual urgency.
-Type rationale: Legible sans serif with clear numerals, moderate x-height, and two primary weights for scanning.
-Layout rules: Context band first; responsive 12/4-column grid; one dominant action per view; grouped cards with short summaries; detail inline or in one side panel.
-Motion intent: Subtle 150–220ms transitions for reorder, reveal, and completion; preserve spatial continuity; honor reduced motion.
-Avoided traps: Decorative dashboards, competing primary actions, color-only priority, persistent popups, dense ungrouped lists, and ambiguous completion states.
+POSITIONING: Calm command center for organizing priorities, schedules, and progress.
+PALETTE RATIONALE: Warm gray surfaces, ink text, blue accent, and restrained semantic states keep hierarchy primary and actions clear.
+TYPE RATIONALE: Neutral sans serif; 16px base; 1.45 line height; compact display scale; tabular numerals only for comparison.
+LAYOUT RULES: Wide two-column frame; primary planning surface first; secondary summary rail collapses below; 8px grid; 24px desktop and 16px mobile outer padding; one dominant action per view.
+MOTION INTENT: 160–220ms opacity and position transitions confirm changes and preserve spatial continuity; disable nonessential motion when requested.
+AVOIDED TRAPS: Dashboard overload, excessive charts, tiny status text, competing primary actions, modal-first editing, color-only progress.
