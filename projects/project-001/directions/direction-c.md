@@ -1,6 +1,6 @@
-Positioning: Flexible planning workspace balancing overview, exploration, and gradual refinement.
-Palette rationale: Soft neutral base, charcoal text, green-teal accent, and pale supporting tints convey progress while maintaining calm contrast.
-Type rationale: Neutral sans serif with generous line height, clear section rhythm, and limited emphasis styles.
-Layout rules: Overview first, expandable groups second, detailed controls third; use 8-point spacing; provide density switching; collapse metadata before essential content.
-Motion intent: Gentle expand/collapse and inline confirmation; preserve orientation; remove interpolation in reduced-motion mode.
-Avoided traps: Gamified progress, oversized empty regions, hidden advanced controls, ambiguous icons, automatic rearrangement, and positive-color dependence.
+POSITIONING: Scan-first overview for comparing plans, states, and available paths.
+PALETTE RATIONALE: Neutral canvas, charcoal text, teal accent, and high-contrast semantic states support dense but legible comparison.
+TYPE RATIONALE: Compact sans serif; distinct label and numeral treatment; 14–16px body range; spacing and dividers carry hierarchy.
+LAYOUT RULES: Responsive comparison grid on wide screens; labeled stacked rows on narrow screens; filters remain secondary; sticky headers only when context is preserved; maintain touch targets.
+MOTION INTENT: Fast 120–180ms filter and sort transitions; preserve item position where possible; avoid disorienting animated reordering.
+AVOIDED TRAPS: Spreadsheet density, horizontal-scroll dependency, ambiguous sort state, hover-only detail, decorative graphics, occluding sticky elements.
