@@ -1,15 +1,20 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 380" role="img" aria-label="Responsive layout rules">
-<title>Responsive layout rules</title>
-<rect width="960" height="380" fill="#f7f8fa"/>
-<g font-family="Arial" fill="#263142">
-<text x="32" y="42" font-size="20" font-weight="700">Responsive composition</text>
-<text x="32" y="88" font-size="15">Compact: 0–639px</text><text x="32" y="116" font-size="13">Single column; navigation collapses; cards stack; primary actions expand.</text>
-<text x="32" y="164" font-size="15">Medium: 640–1023px</text><text x="32" y="192" font-size="13">Two-column content where space permits; actions remain available.</text>
-<text x="32" y="240" font-size="15">Wide: 1024px+</text><text x="32" y="268" font-size="13">Navigation rail, three-card summary, bounded content width.</text>
-<text x="32" y="320" font-size="13">Rules: no horizontal scrolling; preserve order; use 44px minimum touch targets; reflow at 200% zoom.</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 390" role="img" aria-labelledby="t d">
+<title id="t">Responsive layout rules</title>
+<desc id="d">Compact, medium, and wide layout behaviors.</desc>
+<rect width="1080" height="390" fill="#F7F8FA"/>
+<g font-family="sans-serif" fill="#263142">
+<rect x="24" y="24" width="320" height="320" rx="8" fill="#FFF" stroke="#D9DEE7"/>
+<rect x="380" y="24" width="320" height="320" rx="8" fill="#FFF" stroke="#D9DEE7"/>
+<rect x="736" y="24" width="320" height="320" rx="8" fill="#FFF" stroke="#D9DEE7"/>
+<text x="48" y="60" font-size="18">Compact · 320–599</text><text x="404" y="60" font-size="18">Medium · 600–1023</text><text x="760" y="60" font-size="18">Wide · 1024+</text>
+<g font-size="14" fill="#687386">
+<text x="48" y="100">Collapsed navigation</text><text x="48" y="128">Single-column content</text><text x="48" y="156">Stacked actions</text><text x="48" y="184">No horizontal overflow</text>
+<text x="404" y="100">Compact navigation</text><text x="404" y="128">Flexible two-column layout</text><text x="404" y="156">Grouped actions</text><text x="404" y="184">No clipped content</text>
+<text x="760" y="100">Persistent navigation</text><text x="760" y="128">Multi-column layout</text><text x="760" y="156">Context-aligned actions</text><text x="760" y="184">Readable max-width</text>
 </g>
-<rect x="650" y="72" width="96" height="180" rx="10" fill="#fff" stroke="#2864dc"/><rect x="770" y="72" width="112" height="180" rx="10" fill="#fff" stroke="#2864dc"/>
-<rect x="662" y="92" width="72" height="20" fill="#e9efff"/><rect x="782" y="92" width="88" height="20" fill="#e9efff"/>
-<rect x="662" y="128" width="72" height="72" fill="#e9edf3"/><rect x="782" y="128" width="40" height="72" fill="#e9edf3"/><rect x="830" y="128" width="40" height="72" fill="#e9edf3"/>
-</svg>
-Rationale: breakpoint rules prioritize reading order, touch access, bounded density, and predictable reflow.
+<path d="M48 232H320M404 232H676M760 232H1032" stroke="#315EFB" stroke-width="4"/>
+<text x="48" y="270" font-size="13">Targets ≥44px</text><text x="404" y="270" font-size="13">Targets ≥44px</text><text x="760" y="270" font-size="13">Keyboard/pointer parity</text>
+</g></svg>
+Rationale: Defines behavior by available space while preserving hierarchy and reading order.
+Quality gates: reflow, 200% zoom, keyboard access, target size, no clipping, and no forced horizontal scrolling.
+Path intent: /projects/project-001/2026-11-02/design/responsive/
