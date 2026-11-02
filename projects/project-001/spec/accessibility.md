@@ -1,14 +1,18 @@
 Targets:
-- Meet WCAG 2.2 AA for structure, contrast, keyboard access, focus, and input assistance.
-- Normal text contrast: at least 4.5:1; large text: at least 3:1.
-- UI boundaries and focus indicators: at least 3:1 against adjacent colors.
-- All controls, dialogs, menus, and pagination must be keyboard operable.
-- Focus must be visible, logical, unobscured, and restored after modal dismissal.
-- Use one page heading, ordered headings, landmarks, labels, and descriptions.
-- Associate errors programmatically with controls and provide recovery text.
-- Announce dynamic status politely; reserve assertive announcements for urgent errors.
-- Honor prefers-reduced-motion and prevent flashing content.
-- Use touch targets of at least 44×44px with adequate separation.
-- Support 200% text resize, reflow, high contrast, and meaningful text alternatives.
-- Provide text equivalents for visual summaries and status.
-- Never communicate state through color alone.
+- WCAG 2.2 AA conformance.
+- Complete keyboard operation for every interactive feature.
+- Visible focus indicator with at least 3:1 contrast against adjacent colors.
+- Semantic header, navigation, main, complementary, and footer landmarks.
+- One page-level heading with logical heading hierarchy.
+- Visible labels, descriptions, required status, and programmatic error associations.
+- Appropriate live regions for status, validation, loading completion, and errors.
+- Never use color as the sole state signal.
+- At least 4.5:1 contrast for normal text; 3:1 for large text, controls, and meaningful graphics.
+- Support 200% text resize and 400% reflow without loss of content or function.
+- Support screen readers, zoom, high contrast, and reduced motion.
+- Touch targets at least 44×44 CSS pixels.
+- Trap modal and drawer focus while open and restore focus on close.
+- Expose correct names, roles, values, and keyboard behavior for composite controls.
+- Provide text alternatives for meaningful graphics; hide decorative graphics from assistive technology.
+- Preserve content and recovery instructions after failures.
+- Avoid flashing and nonessential motion; honor prefers-reduced-motion.
