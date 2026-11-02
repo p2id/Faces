@@ -1,37 +1,38 @@
-Date: 2026-11-01
 Project: project-001
-Scope: Generic reusable product experience for browsing, viewing, and editing content.
+Date: 2026-11-02
+Product: Generic neutral product experience
 
 Surfaces:
-- Browse: navigation, title, search, filters, result list.
-- Detail: title, metadata, description, related content, actions.
-- Form: title, fields, guidance, validation, actions.
-- Feedback: loading, empty, success, warning, error, unavailable.
+- Desktop web: persistent navigation, workspace, contextual panel.
+- Tablet web: collapsible navigation, single-column workspace, optional panel.
+- Mobile web: compact header, primary content, bottom action area.
+- Shared: modal layer, notification region, loading, empty, and error views.
 
 Sections:
-- Header: product label, navigation, search, utility actions.
-- Main: page title, supporting text, controls, content.
-- Detail panel: summary, metadata, body, action row.
-- Form panel: field groups, help text, validation, submit row.
-- Footer: secondary links and support information.
+- Header: product label, page title, primary action, overflow menu.
+- Navigation: grouped destinations, current location, collapse control.
+- Workspace: summary, search, filters, results, pagination.
+- Context panel: secondary details, related actions, dismiss control.
+- Feedback: loading, success, warning, error, empty, offline messages.
+- Footer: support, legal, and version links.
 
 Real content examples:
-- Title: “Browse content”
-- Supporting text: “Find and organize reusable content.”
-- Search placeholder: “Search content”
-- Filter label: “Sort by”
-- Options: “Recently updated”, “Name”, “Most used”
-- Empty message: “No content matches these filters.”
-- Detail title: “Launch checklist”
-- Metadata: “12 items · Updated Nov 1, 2026”
-- Primary action: “Create content”
-- Secondary action: “Cancel”
-- Success message: “Content created.”
-- Error message: “Enter a title to continue.”
-- Offline notice: “Some content may be unavailable offline.”
+- Page title: “Activity”
+- Summary: “24 items updated this week”
+- Search label: “Search activity”
+- Filters: “Status”, “Date range”, “Category”
+- Primary action: “Create item”
+- Secondary action: “Export”
+- Empty title: “No activity found”
+- Empty body: “Try changing the filters or date range.”
+- Success: “Item created successfully.”
+- Error: “Unable to load activity. Try again.”
+- Confirmation: “Delete item?” / “This action cannot be undone.”
+- Pagination: “Showing 1–20 of 84 items”
 
 Content rules:
-- Use concise, literal, sentence-case labels.
-- Provide one primary action per region.
+- Use direct, neutral, sentence-case language.
+- Pair icon-only controls with accessible names.
+- State outcome, scope, and next step.
+- Do not imply completion before confirmation.
 - Preserve entered values after recoverable errors.
-- Never use color as the only state indicator.
