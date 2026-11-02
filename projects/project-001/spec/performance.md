@@ -1,15 +1,17 @@
 Budgets:
-- Critical CSS: ≤50 KB compressed.
-- Initial JavaScript: ≤150 KB compressed.
-- Above-fold media: ≤300 KB total.
-- Largest Contentful Paint: ≤2.5s on a typical mobile connection.
+- Initial HTML: ≤100 KB compressed.
+- Critical CSS: ≤40 KB compressed.
+- Initial JavaScript: ≤170 KB compressed.
+- Initial transfer: ≤500 KB compressed.
+- First Contentful Paint: ≤1.8s.
+- Largest Contentful Paint: ≤2.5s on a mid-tier mobile device.
 - Interaction to Next Paint: ≤200ms for common actions.
 - Cumulative Layout Shift: ≤0.10.
-- Time to first byte: ≤800ms where measured.
-- Fonts: ≤100 KB compressed.
-- Rendered DOM: target ≤1,500 nodes per surface.
-- Initial long tasks: none over 200ms.
-- Lazy-load below-fold media and reserve media dimensions.
-- Virtualize long lists and debounce search input.
-- Avoid layout-triggering animation.
-- Core content remains usable if non-critical media or motion fails.
+- Interactive content readiness: ≤3.5s.
+- Above-the-fold image: ≤150 KB each.
+- Fonts: maximum 2 families and 4 weights; subset and preload only critical faces.
+- Initial long tasks: none above 50ms.
+- Enabled animation: target 60fps.
+- Use lazy loading below the fold, reserved media dimensions, code splitting, and virtualization for long lists.
+- Prevent shifts from banners, validation, asynchronous content, and font swaps.
+- Do not autoplay media; defer nonessential third-party resources.
