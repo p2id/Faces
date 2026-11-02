@@ -1,22 +1,30 @@
 <!doctype html>
 <html lang="en">
-<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Generic Product Specimens</title></head>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Generic product specimens</title>
+<style>
+:root{--c:#f7f8fa;--s:#fff;--t:#263142;--m:#687386;--b:#d9dee7;--a:#315efb}
+*{box-sizing:border-box}body{margin:0;background:var(--c);color:var(--t);font:16px/1.5 system-ui,sans-serif}
+main{max-width:960px;margin:auto;padding:32px}.panel{background:var(--s);border:1px solid var(--b);border-radius:8px;padding:24px;margin-bottom:16px}
+.row{display:flex;gap:12px;align-items:center;justify-content:space-between;flex-wrap:wrap}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+button,input{font:inherit;min-height:44px;border:1px solid var(--b);border-radius:6px;padding:8px 12px}button.primary{background:var(--a);color:#fff;border-color:var(--a)}
+button:focus-visible,input:focus-visible{outline:3px solid #9db2ff;outline-offset:2px}label{display:block;font-weight:600;margin:12px 0 4px}.muted{color:var(--m)}.notice{border-left:4px solid var(--a);padding:12px;background:#eef2ff}
+@media(max-width:640px){main{padding:16px}.grid{grid-template-columns:1fr}.row>*{width:100%}}
+</style>
+</head>
 <body>
 <main>
-<h1>Overview</h1>
-<p>Clear status, useful summary, and one primary next action.</p>
-<section aria-label="Summary">
-<article><h2>Summary A</h2><p>Supporting value or status.</p><button type="button">Open</button></article>
-<article><h2>Summary B</h2><p>Supporting value or status.</p><button type="button">Review</button></article>
-</section>
-<form>
-<label for="field">Field label</label>
-<input id="field" name="field" aria-describedby="hint">
-<small id="hint">Short, specific guidance.</small>
-<button type="submit">Save</button>
-</form>
-<div role="status" aria-live="polite">Status feedback appears here.</div>
+<header class="panel row"><strong>Product workspace</strong><button class="primary">Primary action</button></header>
+<section class="panel"><h1>Overview</h1><p class="muted">A neutral summary of current product content.</p><div class="grid"><article><strong>Summary A</strong><p>—</p></article><article><strong>Summary B</strong><p>—</p></article><article><strong>Summary C</strong><p>—</p></article></div></section>
+<section class="panel"><h2>Focused input</h2><label for="field">Field label</label><input id="field" placeholder="Enter a value"><p class="muted">Short supporting guidance.</p><button class="primary">Continue</button></section>
+<section class="panel notice" role="status">Status message with a clear next step.</section>
 </main>
 </body>
 </html>
-Rationale: semantic structure, explicit labels, concise copy, status announcement, and native controls support reuse and accessibility review.
+Rationale: Demonstrates hierarchy, controls, status messaging, focus treatment, and responsive reflow.
+Quality gates: valid semantics, accessible names, visible focus, contrast, keyboard operation, and color-independent meaning.
+Writing rules: sentence case, concise labels, one clear action per control, explicit status and recovery language.
+Publishing rules: validate markup, retain token names, include viewport metadata, and publish reviewed static specimens only.
+Path intent: /projects/project-001/2026-11-02/specimens/
