@@ -1,14 +1,17 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 430" role="img" aria-label="Interface state matrix">
-<title>Interface state matrix</title>
-<rect width="960" height="430" fill="#f7f8fa"/>
-<g font-family="Arial" font-size="16" fill="#263142">
-<text x="32" y="40" font-weight="700">Surface</text><text x="220" y="40" font-weight="700">Default</text><text x="390" y="40" font-weight="700">Loading</text><text x="560" y="40" font-weight="700">Empty</text><text x="730" y="40" font-weight="700">Error / Recovery</text>
-<text x="32" y="92">Overview</text><text x="220" y="92">Content shown</text><text x="390" y="92">Reserved blocks</text><text x="560" y="92">Guidance</text><text x="730" y="92">Retry + detail</text>
-<text x="32" y="152">Collection</text><text x="220" y="152">Items + filters</text><text x="390" y="152">Row placeholders</text><text x="560" y="152">Create action</text><text x="730" y="152">Retry + preserve filters</text>
-<text x="32" y="212">Form</text><text x="220" y="212">Editable fields</text><text x="390" y="212">Disabled submit</text><text x="560" y="212">Optional fields</text><text x="730" y="212">Inline correction</text>
-<text x="32" y="272">Dialog</text><text x="220" y="272">Context + actions</text><text x="390" y="272">Progress indicator</text><text x="560" y="272">Not applicable</text><text x="730" y="272">Cancel + retry</text>
-<text x="32" y="332">Notification</text><text x="220" y="332">Transient feedback</text><text x="390" y="332">Queued feedback</text><text x="560" y="332">Hidden</text><text x="730" y="332">Persistent recovery</text>
-</g>
-<g stroke="#c9ced6" fill="none"><path d="M24 56H936M24 106H936M24 166H936M24 226H936M24 286H936M24 346H936M24 396H936"/><path d="M24 24V396M204 24V396M374 24V396M544 24V396M714 24V396M936 24V396"/></g>
-</svg>
-Coverage rationale: default, progress, empty, validation, failure, recovery, and success conditions are represented across core surfaces.
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 360" role="img" aria-labelledby="t d">
+<title id="t">Interface state matrix</title>
+<desc id="d">State coverage for navigation, summaries, collections, forms, and actions.</desc>
+<rect width="1000" height="360" fill="#FFF"/>
+<g font-family="sans-serif" font-size="13" fill="#263142">
+<rect x="20" y="20" width="960" height="40" fill="#E8ECF3"/>
+<text x="34" y="46">Area</text><text x="210" y="46">Default</text><text x="390" y="46">Loading</text><text x="570" y="46">Empty</text><text x="750" y="46">Error / recovery</text>
+<g fill="none" stroke="#D9DEE7"><path d="M20 60H980M20 116H980M20 172H980M20 228H980M20 284H980M20 340H980"/><path d="M190 20V340M370 20V340M550 20V340M730 20V340"/></g>
+<text x="34" y="94">Navigation</text><text x="210" y="94">Selected</text><text x="390" y="94">Placeholder</text><text x="570" y="94">No items</text><text x="750" y="94">Retry option</text>
+<text x="34" y="150">Summary</text><text x="210" y="150">Value + label</text><text x="390" y="150">Skeleton</text><text x="570" y="150">No value</text><text x="750" y="150">Inline notice</text>
+<text x="34" y="206">Collection</text><text x="210" y="206">Rows/cards</text><text x="390" y="206">Row skeletons</text><text x="570" y="206">Guidance</text><text x="750" y="206">Retry; retain context</text>
+<text x="34" y="262">Form</text><text x="210" y="262">Editable</text><text x="390" y="262">Disabled</text><text x="570" y="262">Blank</text><text x="750" y="262">Inline correction</text>
+<text x="34" y="318">Action</text><text x="210" y="318">Enabled</text><text x="390" y="318">Progress</text><text x="570" y="318">Unavailable</text><text x="750" y="318">Safe retry</text>
+</g></svg>
+Rationale: Makes non-default behavior explicit and reviewable.
+Quality gates: every primary area covers default, loading, empty, error, and recovery; status is not color-only.
+Path intent: /projects/project-001/2026-11-02/design/state-matrix/
