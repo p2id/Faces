@@ -1,38 +1,35 @@
-Global anatomy:
-- App shell: header, navigation, main landmark, optional footer.
-- Browse: title block, search, filter row, result collection, pagination or empty state.
-- Detail: back action, title, metadata, content, action row.
-- Form: title, grouped fields, help text, validation summary, action row.
-- Feedback: inline status, banner or toast, recovery action.
+Anatomy standards:
+- Page shell: skip link, header, navigation, breadcrumb, page heading, toolbar, main content, optional aside, footer.
+  - Variants: full navigation, collapsed navigation, single-column, two-column.
+  - States: loading, ready, empty, error, offline.
+  - Usage: establish predictable hierarchy and responsive reading order.
+  - Anti-patterns: competing headings, hidden primary actions, fixed regions covering content.
+  - Accessibility: landmarks, skip navigation, focus order, reflow support.
 
-Variants:
-- Density: comfortable, compact.
-- Layout: single-column, split-panel, stacked-mobile.
-- Emphasis: neutral, selected, warning, error.
-- Content length: short, standard, long.
+- Toolbar: search field, filters, sort control, primary action, overflow action.
+  - Variants: inline, stacked, compact.
+  - States: default, filtering, loading, disabled, error.
+  - Usage: group controls by task and show active filter count.
+  - Anti-patterns: unlabeled icons, excessive simultaneous filters, reset without confirmation.
+  - Accessibility: group label, keyboard order, announced result updates.
 
-States:
-- Global: loading, ready, empty, error, unavailable.
-- Interactive: hover, pressed, focus-visible, selected, disabled.
-- Transactional: submitting, success, recoverable-error.
+- Card: heading, supporting text, metadata, status, action area.
+  - Variants: content, selectable, interactive, loading.
+  - States: default, hover, focus-within, selected, disabled, loading.
+  - Usage: keep the interactive region consistent with its affordance.
+  - Anti-patterns: ambiguous nested interactions, meaning-hidden truncation.
+  - Accessibility: heading structure, visible focus, complete accessible names.
 
-Usage:
-- Maintain hierarchy from page title to section heading to field label.
-- Use progressive disclosure for secondary detail.
-- Keep primary actions in predictable locations.
-- Group related content with semantic structure and whitespace.
+- Modal: backdrop, dialog container, title, description, content, action group, close control.
+  - Variants: confirmation, form, information, destructive.
+  - States: closed, opening, open, submitting, success, error.
+  - Usage: keep scope narrow and provide an explicit cancel path.
+  - Anti-patterns: modal for routine navigation, destructive default, focus leakage.
+  - Accessibility: dialog semantics, focus containment, escape, restoration.
 
-Anti-patterns:
-- Decorative elements that resemble controls.
-- Unlabelled icon controls or ambiguous status icons.
-- Multiple visual styles for the same action.
-- Fixed-width content causing horizontal overflow.
-- Essential content hidden only at smaller widths.
-- Dialogs for routine reversible actions.
-
-Accessibility:
-- Use landmarks, semantic headings, labels, lists, and native controls.
-- Preserve logical reading and focus order across layouts.
-- Provide text alternatives for icons, media, status, and visual summaries.
-- Maintain focus visibility and state clarity at all contrast modes.
-- Support keyboard access, screen readers, zoom, reflow, reduced motion, and touch input.
+- Status message: semantic icon, title, body, optional action.
+  - Variants: inline, banner, toast, empty state.
+  - States: informational, success, warning, error, persistent.
+  - Usage: pair concise explanation with recovery or next action.
+  - Anti-patterns: color-only meaning, unexplained codes, disappearing recovery instructions.
+  - Accessibility: live-region selection, text alternative, contrast, reduced motion.
