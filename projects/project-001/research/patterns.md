@@ -1,32 +1,51 @@
-Project: project-001 | Date: 2026-11-02
+Date: 2026-11-03
+Project ID: project-001
 
-DOMINANT: Clear hierarchy; one primary action; modular cards and panels; explicit status; progressive disclosure; responsive stacking.
-EMERGING: Command-style quick actions; inline validation; density controls; semantic color tokens; reduced-motion variants.
-DEPRECATED: Decorative gradients; unlabeled icon-only controls; deep modal chains; hover-only disclosure; fixed-width layouts; color-only states.
-OUTLIER: Resizable split panes; timeline or canvas views; monochrome high-contrast modes; command palettes; document-style layouts.
+Dominant patterns:
+- Clear hierarchy, restrained color, generous spacing, modular cards, persistent primary actions.
+- Progressive disclosure, compact status summaries, predictable navigation, responsive stacking.
+Emerging patterns:
+- Adaptive density, contextual controls, shared design tokens, inline status feedback.
+Deprecated patterns:
+- Equal-weight dashboards, hover-only actions, gesture-only controls, decorative low-contrast effects.
+Outlier patterns:
+- Monochrome interfaces with one accent, timeline-first structures, oversized editorial headers in utility products.
 
-VISUAL DNA: Neutral surfaces, high-contrast text, one accent, 8px spacing rhythm, 12–16px radius, restrained borders and shadows, compact status tokens.
-INTERACTIONAL DNA: Obvious primary action, reversible changes, inline feedback, predictable focus order, keyboard-complete navigation, confirmation only for irreversible actions.
-ACCESSIBILITY DNA: Semantic structure, visible focus, minimum 44px targets, text labels beyond icons, non-color state cues, logical reading order, reduced-motion support, zoom and reflow resilience.
-RESPONSIVE DNA: Fluid spacing and type, content-first breakpoints, stacked cards, labeled narrow-screen rows, preserved task order, reachable controls, no core-task horizontal scrolling.
+Visual DNA:
+- Neutral canvas, dark readable text, one accent family, sparse semantic colors.
+- Medium-radius surfaces, subtle borders, low elevation, consistent spacing and alignment.
+Interactional DNA:
+- One primary action per context, reversible changes, inline validation, progressive disclosure.
+- Persistent location cues, non-blocking feedback, clear empty and error states.
+Accessibility DNA:
+- Strong contrast, visible focus, semantic headings, logical keyboard order, text alternatives.
+- Status expressed through text and structure, comfortable targets, reduced-motion support.
+Responsive DNA:
+- Fluid spacing, bounded content width, priority-based reordering, grid-to-stack transitions.
+- Secondary metadata collapses before primary actions; complex tables become labeled rows or scroll regions.
 
-CANDIDATE DOMAINS
-Planning workspace: Organizes priorities, schedules, and progress into scannable views.
-Learning library: Supports discovery, structured reading, and completion tracking.
-Service request center: Guides intake, status review, and resolution steps.
-Resource directory: Supports filtering, comparison, and detail inspection.
-Finance overview: Presents categories, trends, and next actions without transaction execution.
-Content review board: Supports intake, annotation, decision states, and history.
+Candidate domains:
+1. Planning workspace — Organizes goals, tasks, milestones, and status in a focused overview.
+2. Learning library — Supports discovery, structured content access, bookmarking, and review.
+3. Finance overview — Presents balances, activity, budgets, and alerts with high clarity.
+4. Routine planner — Organizes recurring activities, progress, and reminders.
+5. Travel organizer — Consolidates schedules, reservations, notes, and related details.
+6. Maintenance hub — Tracks recurring upkeep, records, supplies, and upcoming actions.
 
-WEIGHTED MATRIX
-Weights: clarity 25, reuse 20, accessibility 20, responsive fit 15, visual range 10, neutrality 10.
-Planning workspace: 5,5,5,5,4,5 = 4.85/5
-Learning library: 4,5,5,5,4,5 = 4.65/5
-Service request center: 5,4,5,4,3,5 = 4.55/5
-Resource directory: 4,5,5,5,4,5 = 4.65/5
-Finance overview: 4,4,4,4,4,4 = 4.00/5
-Content review board: 4,4,4,4,5,4 = 4.10/5
+Weighted scoring matrix:
+Weights: clarity 25%, reuse 20%, accessibility 20%, responsive fit 15%, differentiation 10%, neutrality 10%.
+Planning workspace: 9,9,9,9,7,9 = 8.70
+Learning library: 8,9,9,8,8,9 = 8.55
+Finance overview: 9,7,8,8,8,7 = 8.00
+Routine planner: 8,8,8,9,7,8 = 8.05
+Travel organizer: 8,8,8,8,9,8 = 8.10
+Maintenance hub: 8,8,9,8,7,9 = 8.15
 
-SELECTED DOMAIN RATIONALE: Planning workspace has the strongest composite fit, broad component coverage, clear responsive behavior, and high reuse across generic product contexts.
-CYCLE LOCK: Lock selected domain, core DNA, token logic, and accessibility baseline; vary only composition, density, and emphasis.
-FALLBACK RULE: If the selected domain does not fit the required scenario, use Resource directory while retaining the same DNA, accessibility baseline, and scoring criteria.
+Selected domain rationale:
+Planning workspace provides the broadest reusable test surface for overview, detail, progress, empty, warning, and completion states while remaining neutral and responsive.
+
+Cycle lock:
+Lock the planning domain, information hierarchy, token strategy, accessibility baseline, and responsive rules for 2026-11-03.
+
+Fallback rule:
+If clarity, accessibility, or content fit fails validation, switch to Learning library while preserving the visual DNA, scoring weights, and cycle date.
