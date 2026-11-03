@@ -1,37 +1,24 @@
-Component inventory and complete state sets:
-- Page shell: loading, ready, empty, error, offline, disabled-region.
-- Header: default, scrolled, compact, action-disabled, overflow-open.
-- Navigation: expanded, collapsed, selected, hover, focus-visible, disabled, loading.
-- Breadcrumbs: default, truncated, current, overflow.
-- Button: default, hover, focus-visible, pressed, disabled, loading, success, destructive.
-- Icon button: default, hover, focus-visible, pressed, disabled, loading, selected.
-- Text input: empty, filled, hover, focus, invalid, valid, disabled, readonly, loading.
-- Textarea: empty, filled, focus, invalid, valid, disabled, readonly.
-- Select: closed, open, empty, selected, invalid, disabled, loading.
-- Combobox: empty, typing, suggestions, selected, no-results, invalid, disabled.
-- Checkbox: unchecked, checked, indeterminate, focus-visible, disabled, invalid.
-- Radio group: unselected, selected, focus-visible, disabled, invalid.
-- Switch: off, on, focus-visible, disabled, loading.
-- Date control: empty, filled, open, invalid, unavailable-date, disabled.
-- Tabs: inactive, active, hover, focus-visible, disabled, overflow.
-- Badge: neutral, informative, positive, caution, negative, disabled.
-- Alert: info, success, warning, error, dismissible, persistent.
-- Toast: entering, visible, dismissing, action-available, expired.
-- Modal: closed, opening, open, submitting, success, error.
-- Drawer: closed, opening, open, loading, error.
-- Table: loading, populated, empty, row-hover, row-selected, sorted, filtered, pagination-disabled.
-- Card: default, hover, focus-within, selected, disabled, loading.
-- List: loading, populated, empty, filtered-empty, error.
-- Skeleton: active, reduced-motion, complete.
-- Progress: determinate, indeterminate, complete, error.
-- Tooltip: hidden, visible, delayed, touch-unavailable.
-- Pagination: default, current, hover, focus-visible, disabled, loading.
-- File region: idle, drag-over, uploading, complete, invalid, error, disabled.
-- Validation summary: hidden, visible, resolved, error.
-
-State rules:
-- Focus-visible is distinct and keyboard reachable.
-- Loading preserves geometry and identifies its affected region.
-- Errors explain the issue and provide recovery.
-- Disabled controls remain perceivable and are not focusable.
-- Irreversible actions require explicit confirmation.
+Component inventory and states:
+- Header: default; compact; scrolled; loading; unavailable.
+- Navigation: default; active; hover; focus-visible; expanded; collapsed; disabled.
+- Breadcrumbs: default; truncated; overflow-expanded; focus-visible.
+- Page header: default; loading; with-actions; action-disabled; error.
+- Tabs: default; active; hover; focus-visible; disabled; loading.
+- Button: default; hover; pressed; focus-visible; disabled; loading; success; error.
+- Icon button: default; hover; pressed; focus-visible; disabled; loading.
+- Text field: empty; filled; hover; focused; focus-visible; disabled; read-only; invalid; valid; loading.
+- Select: closed; open; hover; focused; selected; disabled; invalid; loading.
+- Checkbox: unchecked; checked; indeterminate; hover; focused; disabled; invalid.
+- Radio: unselected; selected; hover; focused; disabled; invalid.
+- Switch: off; on; hover; focused; disabled; loading.
+- Card: default; hoverable; focused; selected; disabled; loading.
+- Table: default; loading; empty; populated; row-hover; row-selected; sort-active; error.
+- Pagination: default; current; hover; focused; disabled; compact.
+- Modal: closed; opening; open; submitting; success; error; closing.
+- Toast: entering; visible; dismissing; success; info; warning; error.
+- Tooltip: hidden; delayed; visible; dismissed.
+- Empty state: default; filtered; initial; action-disabled.
+- Skeleton: loading; reduced-motion; complete.
+- Spinner: active; hidden; reduced-motion.
+- Inline message: info; success; warning; error; dismissible.
+- Error boundary: default; retrying; recovered; unrecoverable.
