@@ -1,18 +1,16 @@
 Targets:
-- WCAG 2.2 AA conformance.
-- Complete keyboard operation for every interactive feature.
-- Visible focus indicator with at least 3:1 contrast against adjacent colors.
-- Semantic header, navigation, main, complementary, and footer landmarks.
-- One page-level heading with logical heading hierarchy.
-- Visible labels, descriptions, required status, and programmatic error associations.
-- Appropriate live regions for status, validation, loading completion, and errors.
-- Never use color as the sole state signal.
-- At least 4.5:1 contrast for normal text; 3:1 for large text, controls, and meaningful graphics.
-- Support 200% text resize and 400% reflow without loss of content or function.
-- Support screen readers, zoom, high contrast, and reduced motion.
-- Touch targets at least 44×44 CSS pixels.
-- Trap modal and drawer focus while open and restore focus on close.
-- Expose correct names, roles, values, and keyboard behavior for composite controls.
-- Provide text alternatives for meaningful graphics; hide decorative graphics from assistive technology.
-- Preserve content and recovery instructions after failures.
-- Avoid flashing and nonessential motion; honor prefers-reduced-motion.
+- Conform to WCAG 2.2 AA.
+- Make all interactive elements keyboard reachable with logical order and visible focus.
+- Use a focus indicator equivalent to at least 2px with adequate contrast.
+- Maintain at least 4.5:1 contrast for normal text and 3:1 for large text, controls, and meaningful graphics.
+- Provide interactive targets of at least 44x44 CSS px.
+- Use native semantics and landmarks with one clear page heading.
+- Give every control a visible or programmatic accessible name.
+- Associate labels, instructions, required status, and validation messages with form controls.
+- Announce important dynamic status changes without unexpected focus movement.
+- Trap focus in dialogs, expose dialog name and purpose, and restore focus on close.
+- Identify collection headers, sort state, selection state, and item relationships.
+- Support prefers-reduced-motion; avoid flashing and rapid repetitive motion.
+- Support 200% zoom and reflow without loss of content or operation.
+- Confirm destructive actions and provide clear recovery.
+- Never communicate status or instructions through color alone.
