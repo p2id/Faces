@@ -1,5 +1,4 @@
-SELECTED: Direction A.
-RATIONALE: Provides the strongest balance of clarity, reuse, responsive resilience, and calm hierarchy for the selected Planning workspace domain.
-USE B WHEN: The primary experience is sequential and step-based.
-USE C WHEN: Comparison density is the dominant requirement.
-LOCK: Retain Direction A’s palette logic, type scale, spacing rhythm, accessibility baseline, and motion restraint; borrow other structures only when content requires them.
+Selected direction: Direction A.
+Rationale: Best balance of neutrality, accessibility, responsive clarity, reusable interaction patterns, and low visual noise.
+Decision criteria: Comprehension, task priority, contrast, responsive stability, content flexibility, and implementation clarity.
+Guardrails: Preserve one primary action per context, retain semantic status text, avoid identity-driven styling, and validate wide and narrow states.
