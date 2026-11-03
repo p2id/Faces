@@ -6,17 +6,12 @@ Breakpoints:
 - xl: 1280px and above
 
 Rules:
-- Use mobile-first layout.
-- xs/sm: one column, 16px page padding, drawer navigation, stacked records, full-width primary actions when useful.
-- md: 24px padding, collapsed navigation, optional two-column workspace, horizontal table scrolling.
-- lg: 32px padding, persistent navigation, workspace plus 320px panel, inline actions.
-- xl: 1440px maximum content width, workspace plus 360px panel, readable line lengths.
-- Preserve reading order when columns collapse.
-- Do not clip labels, errors, or entered text.
-- Do not require hover for essential information or actions.
-- Maintain 44px minimum touch targets.
-- Keep modal content within the viewport with internal scrolling.
-- Use container-aware components in variable-width regions.
-- Respect safe-area insets for fixed mobile controls.
-- Provide responsive cards or controlled scrolling for tables.
-- Move nonessential actions to overflow while retaining primary actions.
+- Use a fluid container with 16px minimum side padding and 1200px maximum content width.
+- xs/sm: single column; stack actions; collapse navigation; horizontally scroll tabs; full-width cards.
+- md: allow two-column content; retain compact navigation; keep filters inline when space permits.
+- lg/xl: persistent navigation; summary grid; inline page actions; full table where practical.
+- Preserve 44px interactive targets at every width.
+- Allow labels to wrap; never crop essential content.
+- Below md, use stacked collection rows only when labels and relationships remain clear; otherwise provide horizontal scrolling.
+- Use full-width modals with 16px margins on xs/sm and constrained width from md upward.
+- Respect zoom, text resizing, reduced motion, and narrow viewport reflow.
