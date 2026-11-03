@@ -1,38 +1,41 @@
 Project: project-001
-Date: 2026-11-02
-Product: Generic neutral product experience
+Date: 2026-11-03
+Purpose: Generic, neutral product experience for reviewing information, refining views, and completing focused actions.
 
 Surfaces:
-- Desktop web: persistent navigation, workspace, contextual panel.
-- Tablet web: collapsible navigation, single-column workspace, optional panel.
-- Mobile web: compact header, primary content, bottom action area.
-- Shared: modal layer, notification region, loading, empty, and error views.
+- Workspace: overview, summaries, filters, collections, recent updates.
+- Detail: title, metadata, content sections, related information, actions.
+- Overlay: dialog, form, confirmation, help, and status feedback.
+- System: loading, empty, validation, error, unavailable, and recovery states.
 
 Sections:
-- Header: product label, page title, primary action, overflow menu.
-- Navigation: grouped destinations, current location, collapse control.
-- Workspace: summary, search, filters, results, pagination.
-- Context panel: secondary details, related actions, dismiss control.
-- Feedback: loading, success, warning, error, empty, offline messages.
-- Footer: support, legal, and version links.
+1. Global header: product label, navigation, search, utility actions.
+2. Page header: breadcrumb, title, description, primary and secondary actions.
+3. Summary: metric cards with label, value, trend, and context.
+4. Content: tabs, filters, table or card collection, pagination.
+5. Feedback: inline validation, empty state, loading state, recovery message.
+6. Footer: secondary links, status text, and version label.
 
 Real content examples:
-- Page title: “Activity”
-- Summary: “24 items updated this week”
-- Search label: “Search activity”
-- Filters: “Status”, “Date range”, “Category”
-- Primary action: “Create item”
-- Secondary action: “Export”
-- Empty title: “No activity found”
-- Empty body: “Try changing the filters or date range.”
-- Success: “Item created successfully.”
-- Error: “Unable to load activity. Try again.”
-- Confirmation: “Delete item?” / “This action cannot be undone.”
-- Pagination: “Showing 1–20 of 84 items”
+- Product label: Workspace
+- Breadcrumb: Overview / Reports
+- Page title: Reports
+- Description: Review current results and refine the view with filters.
+- Primary action: Create report
+- Secondary action: Export
+- Metric labels: Total reports; Open items; Completion rate
+- Filter label: Status
+- Filter options: All; Draft; Active; Archived
+- Table columns: Name; Status; Updated; Category
+- Search placeholder: Search reports
+- Empty message: No reports match these filters.
+- Error message: Reports could not be loaded. Try again.
+- Success message: Report created successfully.
+- Confirmation: Remove this report? This action cannot be undone.
+- Pagination: Showing 1–20 of 84
 
 Content rules:
-- Use direct, neutral, sentence-case language.
+- Use concise sentence case and specific action labels.
 - Pair icon-only controls with accessible names.
-- State outcome, scope, and next step.
-- Do not imply completion before confirmation.
-- Preserve entered values after recoverable errors.
+- Preserve entered values after validation or loading failure.
+- Never use color as the only status indicator.
