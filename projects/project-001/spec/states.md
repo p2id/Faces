@@ -1,24 +1,27 @@
-Component inventory and states:
-- Header: default; compact; scrolled; loading; unavailable.
-- Navigation: default; active; hover; focus-visible; expanded; collapsed; disabled.
-- Breadcrumbs: default; truncated; overflow-expanded; focus-visible.
-- Page header: default; loading; with-actions; action-disabled; error.
-- Tabs: default; active; hover; focus-visible; disabled; loading.
-- Button: default; hover; pressed; focus-visible; disabled; loading; success; error.
-- Icon button: default; hover; pressed; focus-visible; disabled; loading.
-- Text field: empty; filled; hover; focused; focus-visible; disabled; read-only; invalid; valid; loading.
-- Select: closed; open; hover; focused; selected; disabled; invalid; loading.
-- Checkbox: unchecked; checked; indeterminate; hover; focused; disabled; invalid.
-- Radio: unselected; selected; hover; focused; disabled; invalid.
-- Switch: off; on; hover; focused; disabled; loading.
-- Card: default; hoverable; focused; selected; disabled; loading.
-- Table: default; loading; empty; populated; row-hover; row-selected; sort-active; error.
-- Pagination: default; current; hover; focused; disabled; compact.
-- Modal: closed; opening; open; submitting; success; error; closing.
-- Toast: entering; visible; dismissing; success; info; warning; error.
-- Tooltip: hidden; delayed; visible; dismissed.
-- Empty state: default; filtered; initial; action-disabled.
-- Skeleton: loading; reduced-motion; complete.
-- Spinner: active; hidden; reduced-motion.
-- Inline message: info; success; warning; error; dismissible.
-- Error boundary: default; retrying; recovered; unrecoverable.
+Component inventory:
+- Shell/navigation: default, collapsed, expanded, active, hover, focus-visible, disabled, loading
+- Breadcrumb: default, hover, focus-visible, current, truncated
+- Page header/action group: default, hover, focus-visible, pressed, disabled, loading
+- Button: default, hover, focus-visible, pressed, disabled, loading, success, error
+- Icon button: default, hover, focus-visible, pressed, disabled, loading
+- Text input: empty, filled, hover, focus, disabled, readonly, invalid, valid, loading
+- Textarea: empty, filled, hover, focus, disabled, readonly, invalid, valid
+- Select/combobox: closed, open, hover, focus, selected, disabled, invalid, loading, no-results
+- Checkbox: unchecked, checked, indeterminate, hover, focus-visible, disabled, invalid
+- Radio group: unselected, selected, hover, focus-visible, disabled, invalid
+- Switch: off, on, hover, focus-visible, disabled, loading
+- Date picker: closed, open, selected, range-selected, hover, focus-visible, disabled, invalid, unavailable
+- Tabs: default, hover, focus-visible, active, disabled, overflow
+- Filter chip: default, selected, hover, focus-visible, removable, disabled
+- Card: default, hover, focus-visible, selected, disabled, loading
+- Badge/status: neutral, informative, positive, warning, negative, disabled
+- Table: default, hover-row, selected-row, focus-row, loading, empty, error, responsive-overflow
+- Pagination: default, hover, focus-visible, current, disabled, loading
+- Alert/banner: info, success, warning, error, dismissible, persistent
+- Dialog: closed, opening, open, submitting, validation-error, success, closing
+- Toast: entering, visible, dismissing, success, warning, error, persistent
+- Tooltip: hidden, visible, focus-visible, delayed, clipped
+- Progress: not-started, active, paused, complete, error
+- Skeleton: loading, loaded, error
+- Empty state: default, filtered, actionable
+- Error state: recoverable, blocking, retrying
