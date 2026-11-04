@@ -1,41 +1,40 @@
+Product: Generic product experience
 Project: project-001
-Date: 2026-11-03
-Purpose: Generic, neutral product experience for reviewing information, refining views, and completing focused actions.
+Date: 2026-11-04
+Purpose: Review, find, edit, and confirm product information.
 
 Surfaces:
-- Workspace: overview, summaries, filters, collections, recent updates.
-- Detail: title, metadata, content sections, related information, actions.
-- Overlay: dialog, form, confirmation, help, and status feedback.
-- System: loading, empty, validation, error, unavailable, and recovery states.
+- Workspace shell
+- List, detail, and edit views
+- Feedback surfaces: loading, empty, validation, confirmation, success, and error
 
 Sections:
-1. Global header: product label, navigation, search, utility actions.
-2. Page header: breadcrumb, title, description, primary and secondary actions.
-3. Summary: metric cards with label, value, trend, and context.
-4. Content: tabs, filters, table or card collection, pagination.
-5. Feedback: inline validation, empty state, loading state, recovery message.
-6. Footer: secondary links, status text, and version label.
+- Global header: product label, navigation, utility actions
+- Page header: title, description, primary and secondary actions
+- Controls: search, filters, sorting, view options
+- Content: cards or table with title, status, metadata, and actions
+- Detail: summary, grouped fields, related information
+- Form: labels, hints, validation, cancel, save
+- Overlays: dialog, tooltip, toast, date picker
 
 Real content examples:
-- Product label: Workspace
-- Breadcrumb: Overview / Reports
-- Page title: Reports
-- Description: Review current results and refine the view with filters.
-- Primary action: Create report
-- Secondary action: Export
-- Metric labels: Total reports; Open items; Completion rate
-- Filter label: Status
-- Filter options: All; Draft; Active; Archived
-- Table columns: Name; Status; Updated; Category
-- Search placeholder: Search reports
-- Empty message: No reports match these filters.
-- Error message: Reports could not be loaded. Try again.
-- Success message: Report created successfully.
-- Confirmation: Remove this report? This action cannot be undone.
-- Pagination: Showing 1–20 of 84
+- Title: “Overview”
+- Description: “Review current items and recent changes.”
+- Search placeholder: “Search items”
+- Filter: “Status”
+- Options: “All”, “Active”, “Archived”
+- Columns: “Name”, “Status”, “Updated”, “Actions”
+- Empty message: “No items match these filters.”
+- Error message: “Items could not be loaded. Try again.”
+- Success message: “Changes saved.”
+- Dialog title: “Archive this item?”
+- Dialog action: “Archive”
+- Field label: “Display name”
+- Helper text: “Use a short, descriptive name.”
 
 Content rules:
-- Use concise sentence case and specific action labels.
-- Pair icon-only controls with accessible names.
-- Preserve entered values after validation or loading failure.
-- Never use color as the only status indicator.
+- Use concise, literal, sentence-case labels.
+- Keep one primary action per surface.
+- Preserve entered values after validation failure.
+- Give every icon-only action an accessible name.
+- Avoid decorative or anthropomorphic language.
