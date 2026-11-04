@@ -1,17 +1,18 @@
 Breakpoints:
-- xs: 0–479px
-- sm: 480–767px
+- xs: 0–359px
+- sm: 360–767px
 - md: 768–1023px
 - lg: 1024–1279px
 - xl: 1280px and above
 
 Rules:
-- Use a fluid container with 16px minimum side padding and 1200px maximum content width.
-- xs/sm: single column; stack actions; collapse navigation; horizontally scroll tabs; full-width cards.
-- md: allow two-column content; retain compact navigation; keep filters inline when space permits.
-- lg/xl: persistent navigation; summary grid; inline page actions; full table where practical.
-- Preserve 44px interactive targets at every width.
-- Allow labels to wrap; never crop essential content.
-- Below md, use stacked collection rows only when labels and relationships remain clear; otherwise provide horizontal scrolling.
-- Use full-width modals with 16px margins on xs/sm and constrained width from md upward.
-- Respect zoom, text resizing, reduced motion, and narrow viewport reflow.
+- Use a 4px spacing base and fluid containers.
+- xs/sm: one column, 16px page padding, full-width primary action, stacked form actions, collapsed navigation, responsive table rows or horizontal table scroll.
+- md: 24px page padding, optional two-column detail layout, compact navigation.
+- lg/xl: 32px page padding, 1200px maximum content width, persistent navigation, two- or three-column grids.
+- Keep all pointer targets at least 44×44px.
+- Scale headings fluidly; wrap essential labels before truncation.
+- Use horizontal scrolling only for dense tables or long values.
+- Dialog width: viewport minus 32px on xs/sm; 480px default and 720px wide variant from md.
+- Toasts: full-width near bottom on xs/sm; maximum 360px in a viewport corner from md.
+- Preserve reading order and focus order at every breakpoint.
