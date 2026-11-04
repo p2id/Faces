@@ -1,6 +1,17 @@
-Positioning: Structured planning workspace making progress and next actions immediately legible.
-Palette rationale: Light neutral foundation, charcoal structure, and high-contrast teal-green accent; semantic colors are sparse and text-supported.
-Type rationale: High-legibility sans-serif with distinct display, heading, body, and metadata tiers; values align consistently.
-Layout rules: Summary strip first, prioritized action list second, supporting detail third; collapse metadata before core actions on narrow screens.
-Motion intent: Subtle progress interpolation, clear insertion states, and restrained loading placeholders; avoid continuous animation.
-Avoided traps: False precision, equal emphasis, color-only progress, dense tables, premature personalization.
+Positioning:
+A structured planning canvas that makes sequence, state, and next action immediately legible.
+
+Palette rationale:
+Cool gray surfaces, dark text, restrained green progress cues, and limited amber attention cues separate states while text and shape preserve meaning.
+
+Type rationale:
+Highly legible sans serif with open counters, clear weight contrast, and generous line height supports dense information.
+
+Layout rules:
+Use a compact filter region on wide screens, stacked controls on narrow screens, two-level hierarchy, consistent card anatomy, and stable ordering.
+
+Motion intent:
+Use short directional transitions between overview and detail, with static state changes and reduced-motion alternatives.
+
+Avoided traps:
+No oversized sidebars, tiny metadata, looping progress animation, overloaded color semantics, or unpredictable reordering.
