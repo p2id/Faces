@@ -1,16 +1,15 @@
 Targets:
-- Conform to WCAG 2.2 AA.
-- Make all interactive elements keyboard reachable with logical order and visible focus.
-- Use a focus indicator equivalent to at least 2px with adequate contrast.
-- Maintain at least 4.5:1 contrast for normal text and 3:1 for large text, controls, and meaningful graphics.
-- Provide interactive targets of at least 44x44 CSS px.
-- Use native semantics and landmarks with one clear page heading.
-- Give every control a visible or programmatic accessible name.
-- Associate labels, instructions, required status, and validation messages with form controls.
-- Announce important dynamic status changes without unexpected focus movement.
-- Trap focus in dialogs, expose dialog name and purpose, and restore focus on close.
-- Identify collection headers, sort state, selection state, and item relationships.
-- Support prefers-reduced-motion; avoid flashing and rapid repetitive motion.
-- Support 200% zoom and reflow without loss of content or operation.
-- Confirm destructive actions and provide clear recovery.
-- Never communicate status or instructions through color alone.
+- WCAG 2.2 AA for all surfaces.
+- Text contrast: minimum 4.5:1; large text minimum 3:1.
+- Non-text contrast: minimum 3:1 for controls, icons, focus indicators, and boundaries.
+- Keyboard access for every action; visible focus; no unintended keyboard traps.
+- Focus indicator: minimum 2px outline with 2px offset where space permits.
+- Pointer targets: minimum 44×44 CSS pixels.
+- Use native controls, logical headings, and labelled landmarks.
+- Give every control an accessible name, including icon-only controls.
+- Associate labels, hints, and errors programmatically with fields.
+- Announce validation, save confirmation, loading completion, and errors through appropriate live regions.
+- Dialogs require an accessible name, focus containment, inert background, Escape handling, and focus restoration.
+- Respect prefers-reduced-motion; do not use color or motion as the sole status cue.
+- Associate table headers with cells and expose sort and selection state.
+- Support 200% zoom and reflow at 320px CSS width.
