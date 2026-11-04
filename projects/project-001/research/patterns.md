@@ -1,51 +1,58 @@
-Date: 2026-11-03
 Project ID: project-001
+Date: 2026-11-04
 
 Dominant patterns:
-- Clear hierarchy, restrained color, generous spacing, modular cards, persistent primary actions.
-- Progressive disclosure, compact status summaries, predictable navigation, responsive stacking.
+- Quiet neutral surfaces, strong text hierarchy, restrained accent color.
+- Modular cards, grouped sections, persistent primary action, progressive disclosure.
+- Mobile-first stacking with expanded multi-column desktop layouts.
+- Direct labels, visible states, concise summaries before detail.
+
 Emerging patterns:
-- Adaptive density, contextual controls, shared design tokens, inline status feedback.
+- Contextual summaries that surface next relevant information.
+- Tokenized spacing, color, type, and radius for consistent adaptation.
+- Inline filters, saved views, and lightweight preference controls.
+- Reduced-motion defaults with purposeful state transitions.
+
 Deprecated patterns:
-- Equal-weight dashboards, hover-only actions, gesture-only controls, decorative low-contrast effects.
+- Equal-weight dashboard panels and dense unstructured tables.
+- Decorative gradients that weaken contrast.
+- Icon-only critical actions and ambiguous status colors.
+- Long uninterrupted forms without grouping or completion feedback.
+
 Outlier patterns:
-- Monochrome interfaces with one accent, timeline-first structures, oversized editorial headers in utility products.
+- Editorial vertical rhythm within utility interfaces.
+- Wide-screen split views for overview and detail.
+- Large summary metrics paired with minimal supporting metadata.
 
 Visual DNA:
-- Neutral canvas, dark readable text, one accent family, sparse semantic colors.
-- Medium-radius surfaces, subtle borders, low elevation, consistent spacing and alignment.
+- Off-white or cool-neutral surfaces, dark text, one restrained accent, thin dividers, moderate radius, limited elevation, generous spacing.
 Interactional DNA:
-- One primary action per context, reversible changes, inline validation, progressive disclosure.
-- Persistent location cues, non-blocking feedback, clear empty and error states.
+- Clear action hierarchy, predictable controls, reversible changes, inline feedback, progressive disclosure, stable content placement.
 Accessibility DNA:
-- Strong contrast, visible focus, semantic headings, logical keyboard order, text alternatives.
-- Status expressed through text and structure, comfortable targets, reduced-motion support.
+- Strong contrast, visible keyboard focus, semantic reading order, persistent labels, text-plus-icon status cues, minimum 44px touch targets, reduced-motion support.
 Responsive DNA:
-- Fluid spacing, bounded content width, priority-based reordering, grid-to-stack transitions.
-- Secondary metadata collapses before primary actions; complex tables become labeled rows or scroll regions.
+- Mobile-first stacking, fluid spacing and type within limits, content-driven breakpoints, 12-column wide layouts, no essential horizontal scrolling.
 
-Candidate domains:
-1. Planning workspace — Organizes goals, tasks, milestones, and status in a focused overview.
-2. Learning library — Supports discovery, structured content access, bookmarking, and review.
-3. Finance overview — Presents balances, activity, budgets, and alerts with high clarity.
-4. Routine planner — Organizes recurring activities, progress, and reminders.
-5. Travel organizer — Consolidates schedules, reservations, notes, and related details.
-6. Maintenance hub — Tracks recurring upkeep, records, supplies, and upcoming actions.
+Candidate product domains:
+1. Planning workspace — Organizes priorities, schedules, and related items into a focused overview.
+2. Learning progress hub — Presents lessons, milestones, completion states, and next steps.
+3. Personal finance overview — Summarizes balances, activity, categories, and trends with low cognitive load.
+4. Wellness routine tracker — Organizes recurring routines, completion history, and progress signals.
+5. Home operations dashboard — Coordinates maintenance, recurring tasks, utilities, and household information.
 
-Weighted scoring matrix:
-Weights: clarity 25%, reuse 20%, accessibility 20%, responsive fit 15%, differentiation 10%, neutrality 10%.
-Planning workspace: 9,9,9,9,7,9 = 8.70
-Learning library: 8,9,9,8,8,9 = 8.55
-Finance overview: 9,7,8,8,8,7 = 8.00
-Routine planner: 8,8,8,9,7,8 = 8.05
-Travel organizer: 8,8,8,8,9,8 = 8.10
-Maintenance hub: 8,8,9,8,7,9 = 8.15
+Weighted scoring matrix, scores 1–5:
+Weights: Clarity 25; Reusability 20; Accessibility fit 20; Responsive fit 15; Differentiation 10; Density control 10.
+Planning workspace: 5,5,5,5,4,4 = 4.80
+Learning progress hub: 5,4,5,5,4,5 = 4.70
+Home operations dashboard: 4,5,4,4,5,4 = 4.35
+Personal finance overview: 4,4,5,4,4,4 = 4.20
+Wellness routine tracker: 4,4,4,5,4,4 = 4.15
 
 Selected domain rationale:
-Planning workspace provides the broadest reusable test surface for overview, detail, progress, empty, warning, and completion states while remaining neutral and responsive.
+Planning workspace has the highest combined score and provides reusable hierarchy, clear status communication, flexible content density, strong responsive behavior, and broad applicability.
 
 Cycle lock:
-Lock the planning domain, information hierarchy, token strategy, accessibility baseline, and responsive rules for 2026-11-03.
+Use project-001, 2026-11-04, Planning workspace, and the extracted DNA as fixed inputs for this cycle.
 
 Fallback rule:
-If clarity, accessibility, or content fit fails validation, switch to Learning library while preserving the visual DNA, scoring weights, and cycle date.
+If the selected domain becomes too specialized or content-heavy, use Learning progress hub while preserving the same scoring criteria, DNA, accessibility rules, and layout foundation.
