@@ -1,16 +1,16 @@
-Budgets:
-- Critical CSS: ≤50 KB compressed
-- Initial JavaScript: ≤170 KB compressed
-- First-load transfer: ≤500 KB compressed, excluding selected media
-- First Contentful Paint: ≤1.8 s
-- Largest Contentful Paint: ≤2.5 s
-- Interaction to Next Paint: ≤200 ms
-- Cumulative Layout Shift: ≤0.10
-- Interactive readiness: ≤3.5 s
-- Above-fold image: ≤150 KB each with reserved dimensions
-- Fonts: maximum 2 families and 4 weights; preload only the primary face
-- Animation: transform and opacity only; target 60 FPS
-- Collections over 100 items: render visible rows only
-- Loading feedback: skeleton within 300 ms without layout shift
-- Static assets: use content-hash caching
-- Measure Web Vitals and interaction latency without exposing sensitive content
+## Budgets
+- Initial route JavaScript: ≤170KB compressed.
+- Initial route CSS: ≤45KB compressed.
+- Critical fonts: ≤100KB compressed; prefer system or one variable font.
+- Above-fold images: ≤250KB total.
+- Initial transfer: ≤500KB compressed excluding optional media.
+- Largest Contentful Paint: ≤2.5s on a mid-tier mobile connection.
+- First Contentful Paint: ≤1.8s.
+- Interaction to Next Paint: ≤200ms.
+- Cumulative Layout Shift: ≤0.10.
+- Initial DOM: ≤1,500 nodes.
+- Main-thread task: ≤50ms.
+- Animation: 60fps target; animate transform and opacity only.
+- Waits over 300ms use dimension-preserving skeletons.
+- Lazy-load below-fold media and non-critical panels.
+- Do not preload non-critical resources.
