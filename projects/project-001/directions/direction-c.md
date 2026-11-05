@@ -1,17 +1,17 @@
-Positioning:
-An editorially paced overview that turns complex planning information into readable sequences.
+POSITIONING
+A data-rich monitoring surface focused on explainable trends, thresholds, and change.
 
-Palette rationale:
-Soft sand and white surfaces, dark ink text, and a restrained coral accent add warmth while maintaining contrast.
+PALETTE RATIONALE
+Use a cool-neutral canvas, deep ink text, pale grid surfaces, and one violet accent. Pair threshold states with labels, patterns, and directional markers.
 
-Type rationale:
-Use a restrained display style only for section titles, paired with a highly legible sans serif for controls, labels, and data.
+TYPE RATIONALE
+Use readable sans-serif text, tabular numerals for measurements, clear scale labels, and limited monospace for compact technical values.
 
-Layout rules:
-Use generous vertical rhythm, featured summary blocks, narrow reading measures for explanations, and modular detail sections that stack cleanly.
+LAYOUT RULES
+Present current state first, trend second, and detail third. Keep comparison controls near visualizations. Provide textual or tabular summaries and show one primary visualization at a time on narrow screens.
 
-Motion intent:
-Use subtle reveal and continuity cues without delaying content access or implying required motion.
+MOTION INTENT
+Animate only incremental change, range selection, and focus transitions. Provide static alternatives for reduced motion and avoid loops.
 
-Avoided traps:
-No ornamental control typography, excessive whitespace around critical actions, carousel-dependent content, low-contrast tint text, or decorative section breaks that obscure hierarchy.
+AVOIDED TRAPS
+Avoid decorative visualization, ambiguous axes, unsupported precision, flashing alerts, color-dependent interpretation, and competing charts.
