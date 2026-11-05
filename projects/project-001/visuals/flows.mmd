@@ -1,18 +1,18 @@
 flowchart TD
-  A[Open workspace] --> B{Content available?}
-  B -->|Yes| C[Review summary]
-  B -->|No| D[Show empty guidance]
-  C --> E{Primary action needed?}
-  E -->|No| F[Browse collection]
-  E -->|Yes| G[Open focused form]
-  G --> H{Input valid?}
-  H -->|No| I[Show inline correction]
+  A[Open surface] --> B[Default view]
+  B --> C{Content condition}
+  C -->|Available| D[Review summary]
+  C -->|None| E[Empty guidance]
+  C -->|Unavailable| X[Error recovery]
+  D --> F[Choose action]
+  E --> F
+  X --> B
+  F --> G[Enter or adjust input]
+  G --> H{Input valid}
+  H -->|No| I[Inline guidance]
   I --> G
-  H -->|Yes| J[Confirm action]
-  J --> K{Outcome available?}
-  K -->|Yes| L[Show updated state]
-  K -->|No| M[Show recovery option]
-  M --> K
-Rationale: Covers the shortest useful path and principal interruption paths without domain-specific assumptions.
-Quality gates: visible outcomes, preserved input, retained context during recovery, and perceivable completion.
-Path intent: /projects/project-001/2026-11-02/design/flows/
+  H -->|Yes| J[Review result]
+  J --> K{Confirm}
+  K -->|Revise| G
+  K -->|Proceed| L[Complete state]
+  %% Rationale: clear orientation, validation, recovery, and reversible revision paths.
