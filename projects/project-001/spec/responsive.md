@@ -1,18 +1,19 @@
-Breakpoints:
-- xs: 0–359px
-- sm: 360–767px
+## Breakpoints
+- xs: 0–479px
+- sm: 480–767px
 - md: 768–1023px
-- lg: 1024–1279px
-- xl: 1280px and above
+- lg: 1024–1439px
+- xl: 1440px+
 
-Rules:
-- Use a 4px spacing base and fluid containers.
-- xs/sm: one column, 16px page padding, full-width primary action, stacked form actions, collapsed navigation, responsive table rows or horizontal table scroll.
-- md: 24px page padding, optional two-column detail layout, compact navigation.
-- lg/xl: 32px page padding, 1200px maximum content width, persistent navigation, two- or three-column grids.
-- Keep all pointer targets at least 44×44px.
-- Scale headings fluidly; wrap essential labels before truncation.
-- Use horizontal scrolling only for dense tables or long values.
-- Dialog width: viewport minus 32px on xs/sm; 480px default and 720px wide variant from md.
-- Toasts: full-width near bottom on xs/sm; maximum 360px in a viewport corner from md.
-- Preserve reading order and focus order at every breakpoint.
+## Rules
+- Horizontal padding: 16px xs/sm, 24px md, 32px lg/xl.
+- Content max-width: 1200px; reading measure: 80ch.
+- xs/sm: single column, stacked actions, cards instead of tables where appropriate.
+- md: two columns only when the primary region remains at least 60% width.
+- lg/xl: allow persistent secondary panels and multi-column summaries.
+- Navigation collapses below md with an accessible menu control.
+- Summary cards: 1 column xs, 2 columns sm/md, 3–4 columns lg/xl.
+- Dialog: viewport width minus 32px xs; maximum 560px md+.
+- Minimum interactive target: 44×44px at all sizes.
+- Required content reflows or scrolls; it is not hidden solely by viewport width.
+- Support browser zoom and text scaling to 200% without loss of function.
