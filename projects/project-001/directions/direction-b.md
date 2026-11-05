@@ -1,17 +1,17 @@
-Positioning:
-A structured planning canvas that makes sequence, state, and next action immediately legible.
+POSITIONING
+A structured inventory workspace for locating, comparing, and inspecting records with minimal cognitive load.
 
-Palette rationale:
-Cool gray surfaces, dark text, restrained green progress cues, and limited amber attention cues separate states while text and shape preserve meaning.
+PALETTE RATIONALE
+Use soft neutral surfaces, graphite text, and a muted teal accent. Keep status colors sparse and reinforce them with text.
 
-Type rationale:
-Highly legible sans serif with open counters, clear weight contrast, and generous line height supports dense information.
+TYPE RATIONALE
+Use a highly legible sans-serif, compact table text, generous detail-view line height, and tabular numerals for quantities and dates.
 
-Layout rules:
-Use a compact filter region on wide screens, stacked controls on narrow screens, two-level hierarchy, consistent card anatomy, and stable ordering.
+LAYOUT RULES
+Keep search and filters prominent. Use a sortable table on wide screens and stacked records on narrow screens. Preserve selection context while showing details.
 
-Motion intent:
-Use short directional transitions between overview and detail, with static state changes and reduced-motion alternatives.
+MOTION INTENT
+Use subtle transitions for filtering, row selection, and detail changes. Preserve content position during updates and disable nonessential motion.
 
-Avoided traps:
-No oversized sidebars, tiny metadata, looping progress animation, overloaded color semantics, or unpredictable reordering.
+AVOIDED TRAPS
+Avoid spreadsheet overload, hidden filters, irreversible inline edits, tiny controls, and color-only status communication.
