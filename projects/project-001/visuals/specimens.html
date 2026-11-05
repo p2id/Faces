@@ -1,30 +1,12 @@
 <!doctype html>
 <html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Generic product specimens</title>
-<style>
-:root{--c:#f7f8fa;--s:#fff;--t:#263142;--m:#687386;--b:#d9dee7;--a:#315efb}
-*{box-sizing:border-box}body{margin:0;background:var(--c);color:var(--t);font:16px/1.5 system-ui,sans-serif}
-main{max-width:960px;margin:auto;padding:32px}.panel{background:var(--s);border:1px solid var(--b);border-radius:8px;padding:24px;margin-bottom:16px}
-.row{display:flex;gap:12px;align-items:center;justify-content:space-between;flex-wrap:wrap}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-button,input{font:inherit;min-height:44px;border:1px solid var(--b);border-radius:6px;padding:8px 12px}button.primary{background:var(--a);color:#fff;border-color:var(--a)}
-button:focus-visible,input:focus-visible{outline:3px solid #9db2ff;outline-offset:2px}label{display:block;font-weight:600;margin:12px 0 4px}.muted{color:var(--m)}.notice{border-left:4px solid var(--a);padding:12px;background:#eef2ff}
-@media(max-width:640px){main{padding:16px}.grid{grid-template-columns:1fr}.row>*{width:100%}}
-</style>
-</head>
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Generic UI specimens</title></head>
 <body>
 <main>
-<header class="panel row"><strong>Product workspace</strong><button class="primary">Primary action</button></header>
-<section class="panel"><h1>Overview</h1><p class="muted">A neutral summary of current product content.</p><div class="grid"><article><strong>Summary A</strong><p>—</p></article><article><strong>Summary B</strong><p>—</p></article><article><strong>Summary C</strong><p>—</p></article></div></section>
-<section class="panel"><h2>Focused input</h2><label for="field">Field label</label><input id="field" placeholder="Enter a value"><p class="muted">Short supporting guidance.</p><button class="primary">Continue</button></section>
-<section class="panel notice" role="status">Status message with a clear next step.</section>
+<h1>Product surface</h1>
+<nav aria-label="Primary"><a href="#overview">Overview</a> <a href="#items">Items</a> <a href="#insights">Insights</a></nav>
+<section id="overview" aria-labelledby="overview-title"><h2 id="overview-title">Overview</h2><p>Review current information and choose a next step.</p><button type="button">Start action</button></section>
+<section id="items" aria-labelledby="items-title"><h2 id="items-title">Items</h2><label for="query">Filter items</label><input id="query" type="search"><p role="status">No items match the current filter.</p></section>
+<aside aria-label="Feedback"><strong>Complete</strong><p>The action finished successfully.</p><button type="button">Continue</button></aside>
 </main>
-</body>
-</html>
-Rationale: Demonstrates hierarchy, controls, status messaging, focus treatment, and responsive reflow.
-Quality gates: valid semantics, accessible names, visible focus, contrast, keyboard operation, and color-independent meaning.
-Writing rules: sentence case, concise labels, one clear action per control, explicit status and recovery language.
-Publishing rules: validate markup, retain token names, include viewport metadata, and publish reviewed static specimens only.
-Path intent: /projects/project-001/2026-11-02/specimens/
+</body></html>
