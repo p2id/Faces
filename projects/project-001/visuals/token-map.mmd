@@ -1,32 +1,9 @@
-mindmap
-  root((Project 001 tokens))
-    Color
-      canvas #F7F8FA
-      surface #FFFFFF
-      text #263142
-      muted #687386
-      border #D9DEE7
-      accent #315EFB
-      critical #C43D4B
-    Typography
-      family system-sans
-      body 16px/24px
-      label 13px/18px
-      heading 24px/32px
-    Spacing
-      xs 4px
-      sm 8px
-      md 16px
-      lg 24px
-      xl 32px
-    Shape
-      small 4px
-      medium 8px
-      large 12px
-    Motion
-      fast 120ms
-      standard 200ms
-      reduced-motion supported
-Rationale: Semantic tokens provide consistent, portable visual decisions.
-Quality gates: stable names, AA contrast target, 4px spacing base, and reduced-motion alternative.
-Path intent: /projects/project-001/2026-11-02/design/tokens/
+flowchart LR
+  F[Foundation] --> S[Semantic]
+  S --> C[Component]
+  C --> E[Experience]
+  F --> F1[Color] & F2[Type] & F3[Spacing] & F4[Shape]
+  S --> S1[Surface] & S2[Content] & S3[Action] & S4[Feedback]
+  C --> C1[Navigation] & C2[Input] & C3[Status] & C4[Container]
+  E --> E1[Default] & E2[Focus] & E3[Disabled] & E4[Error] & E5[Complete]
+  %% Rationale: layered tokens preserve consistency and permit controlled adaptation.
