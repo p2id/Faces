@@ -1,39 +1,47 @@
-Shell
-- Anatomy: header, navigation, main region, optional complementary panel, footer.
-- Variants: full navigation, compact navigation, no complementary panel.
-- States: default, collapsed, expanded, loading.
-- Usage: maintain consistent landmarks and placement.
-- Anti-patterns: duplicate navigation, hidden current location, loading layout shift.
-- Accessibility: labelled landmarks, current navigation item, skip link, logical focus order.
+## Global shell
+- Anatomy: skip link, navigation, page container, header, main, status region.
+- Variants: expanded, collapsed, narrow content, wide content.
+- States: loading, ready, empty, error, unavailable.
+- Usage: consistent structure across surfaces.
+- Anti-patterns: changing navigation placement; missing page heading; load-induced layout shift.
+- Accessibility: landmarks, skip link, logical focus order, current-section indication.
 
-Page surface
-- Anatomy: breadcrumb, title, description, actions, controls, content region.
-- Variants: list, detail, form, dashboard, empty, error.
-- States: default, loading, empty, error, success.
-- Usage: establish one heading and one primary task.
-- Anti-patterns: multiple H1 headings, action-only header, unscannable text.
-- Accessibility: logical heading hierarchy, descriptive title, status announcements, adequate spacing.
+## Page header
+- Anatomy: context label, heading, supporting text, action group.
+- Variants: standard, compact, status, filter-enabled.
+- States: default, loading, action-disabled, validation-error.
+- Usage: state purpose and primary next action.
+- Anti-patterns: vague heading; multiple dominant actions; detached actions.
+- Accessibility: one clear heading, labelled actions, associated status.
 
-Content item
-- Anatomy: title, metadata, status, supporting text, optional icon, actions.
-- Variants: card, table row, list row, summary panel.
-- States: default, hover, focus, selected, disabled, loading, error.
-- Usage: show important information first and keep actions local.
-- Anti-patterns: unnamed clickable container, nested interactive controls, essential-text truncation.
-- Accessibility: meaningful name, visible state text, keyboard operation, sufficient contrast.
+## Summary region
+- Anatomy: metric label, value, comparison, optional status.
+- Variants: one-column, multi-column, compact.
+- States: loading, populated, unavailable, stale, error.
+- Usage: show high-value summaries before detail.
+- Anti-patterns: unexplained abbreviations; color-only trends; distracting motion.
+- Accessibility: textual trend meaning, labelled values, announced loading.
 
-Form section
-- Anatomy: section heading, fields, helper text, validation, action group.
-- Variants: single-column, two-column, progressive disclosure.
-- States: pristine, edited, submitting, invalid, saved, failed.
-- Usage: group related fields and preserve values after errors.
-- Anti-patterns: unexplained required fields, blur-only validation, destructive default action.
-- Accessibility: fieldset and legend where appropriate, explicit required state, linked errors, complete keyboard flow.
+## Collection region
+- Anatomy: search, filters, sort, result count, list/table, pagination.
+- Variants: table, card list, filtered, compact.
+- States: loading, populated, empty, filtered-empty, error, refreshing, selected.
+- Usage: keep controls near results and preserve filter context.
+- Anti-patterns: silent filter resets; inaccessible horizontal scroll; unannounced count changes.
+- Accessibility: labelled controls, list/table semantics, announced updates, keyboard pagination.
 
-Feedback surface
-- Anatomy: status marker, title, message, action, dismiss control.
-- Variants: inline alert, banner, toast, empty state, error state.
-- States: entering, visible, dismissing, persistent, resolved.
-- Usage: state what happened and the next available action.
-- Anti-patterns: timeout-only critical messages, vague failure text, excessive notification stacking.
-- Accessibility: match role and live-region priority to urgency; never rely on color alone.
+## Form region
+- Anatomy: field group, labels, controls, hints, errors, actions.
+- Variants: single-column, two-column, compact.
+- States: pristine, edited, submitting, invalid, valid, success, failure.
+- Usage: group related fields and keep actions consistent.
+- Anti-patterns: ambiguous labels; errors without guidance; destructive reset as default.
+- Accessibility: fieldset and legend where needed, error association, preserved focus.
+
+## Empty and error region
+- Anatomy: heading, explanation, optional decorative icon, next action.
+- Variants: initial empty, filtered-empty, recoverable error, unavailable.
+- States: visible, action-pending, resolved.
+- Usage: explain absence and provide the safest useful next step.
+- Anti-patterns: blame-oriented wording; delayed action; generic unrecoverable error.
+- Accessibility: meaningful heading, actionable text, announced status, no color-only meaning.
