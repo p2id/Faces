@@ -1,22 +1,13 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540" role="img" aria-label="Generic product experience layout">
-<rect width="960" height="540" fill="#fff"/>
-<rect x="24" y="24" width="912" height="64" rx="8" fill="#eef1f5"/>
-<rect x="48" y="44" width="150" height="24" rx="4" fill="#c7ced8"/>
-<rect x="720" y="44" width="88" height="24" rx="4" fill="#c7ced8"/>
-<rect x="824" y="44" width="72" height="24" rx="4" fill="#53657a"/>
-<rect x="24" y="112" width="220" height="404" rx="8" fill="#f4f6f8"/>
-<rect x="48" y="140" width="150" height="16" rx="4" fill="#aab5c2"/>
-<rect x="48" y="180" width="150" height="12" rx="4" fill="#d2d8df"/>
-<rect x="48" y="212" width="150" height="12" rx="4" fill="#d2d8df"/>
-<rect x="48" y="244" width="150" height="12" rx="4" fill="#d2d8df"/>
-<rect x="268" y="112" width="668" height="108" rx="8" fill="#f4f6f8"/>
-<rect x="296" y="140" width="250" height="20" rx="4" fill="#9aa6b5"/>
-<rect x="296" y="176" width="420" height="12" rx="4" fill="#d2d8df"/>
-<rect x="760" y="140" width="128" height="40" rx="6" fill="#53657a"/>
-<rect x="268" y="244" width="320" height="272" rx="8" fill="#f4f6f8"/>
-<rect x="616" y="244" width="320" height="272" rx="8" fill="#f4f6f8"/>
-<rect x="296" y="276" width="180" height="16" rx="4" fill="#aab5c2"/>
-<rect x="296" y="316" width="236" height="12" rx="4" fill="#d2d8df"/>
-<rect x="644" y="276" width="180" height="16" rx="4" fill="#aab5c2"/>
-<rect x="644" y="316" width="236" height="12" rx="4" fill="#d2d8df"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" aria-label="Generic product experience layout">
+<title>Generic product experience layout</title>
+<g fill="#F8FAFC" stroke="#334155" stroke-width="2">
+<rect x="32" y="32" width="1136" height="64" rx="8"/><rect x="32" y="112" width="224" height="560" rx="8"/>
+<rect x="280" y="112" width="888" height="120" rx="8"/><rect x="280" y="248" width="280" height="180" rx="8"/>
+<rect x="584" y="248" width="280" height="180" rx="8"/><rect x="888" y="248" width="280" height="180" rx="8"/>
+<rect x="280" y="448" width="888" height="224" rx="8"/>
+</g>
+<g fill="#475569" font-family="system-ui,sans-serif" font-size="16">
+<text x="64" y="72">Product surface</text><text x="64" y="150">Overview</text><text x="64" y="190">Items</text><text x="64" y="230">Insights</text><text x="64" y="270">Settings</text>
+<text x="312" y="150">Primary view</text><text x="312" y="286">Summary</text><text x="616" y="286">Activity</text><text x="920" y="286">Status</text><text x="312" y="486">Detail region</text>
+</g>
 </svg>
