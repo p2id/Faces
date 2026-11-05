@@ -1,58 +1,58 @@
-Project ID: project-001
-Date: 2026-11-04
+Project: project-001
+Date: 2026-11-05
 
-Dominant patterns:
-- Quiet neutral surfaces, strong text hierarchy, restrained accent color.
-- Modular cards, grouped sections, persistent primary action, progressive disclosure.
-- Mobile-first stacking with expanded multi-column desktop layouts.
-- Direct labels, visible states, concise summaries before detail.
+DOMINANT PATTERNS
+- Clear hierarchy with one primary task per view.
+- Modular cards, tables, filters, tabs, drawers, and progressive disclosure.
+- Neutral surfaces, restrained accents, consistent spacing, and visible system status.
+- Responsive layouts that reduce density without removing task context.
 
-Emerging patterns:
-- Contextual summaries that surface next relevant information.
-- Tokenized spacing, color, type, and radius for consistent adaptation.
-- Inline filters, saved views, and lightweight preference controls.
-- Reduced-motion defaults with purposeful state transitions.
+EMERGING PATTERNS
+- Contextual actions near the active content.
+- Inline validation, reversible changes, and persistent filter state.
+- Semantic design tokens and user-selectable density.
+- Motion used for orientation, confirmation, and state change only.
 
-Deprecated patterns:
-- Equal-weight dashboard panels and dense unstructured tables.
-- Decorative gradients that weaken contrast.
-- Icon-only critical actions and ambiguous status colors.
-- Long uninterrupted forms without grouping or completion feedback.
+DEPRECATED PATTERNS
+- Low-contrast text, excessive gradients, decorative glass effects, and visual clutter.
+- Modal interruptions for routine actions.
+- Unlabeled icon-only controls and hidden navigation.
+- Auto-advancing content without pause or control.
 
-Outlier patterns:
-- Editorial vertical rhythm within utility interfaces.
-- Wide-screen split views for overview and detail.
-- Large summary metrics paired with minimal supporting metadata.
+OUTLIER PATTERNS
+- Spatial relationship canvases.
+- Timeline-first layouts.
+- Synchronized split-pane inspection.
+- Keyboard-first command layers.
 
-Visual DNA:
-- Off-white or cool-neutral surfaces, dark text, one restrained accent, thin dividers, moderate radius, limited elevation, generous spacing.
-Interactional DNA:
-- Clear action hierarchy, predictable controls, reversible changes, inline feedback, progressive disclosure, stable content placement.
-Accessibility DNA:
-- Strong contrast, visible keyboard focus, semantic reading order, persistent labels, text-plus-icon status cues, minimum 44px touch targets, reduced-motion support.
-Responsive DNA:
-- Mobile-first stacking, fluid spacing and type within limits, content-driven breakpoints, 12-column wide layouts, no essential horizontal scrolling.
+EXTRACTED DNA
+- Visual: warm-neutral canvas, dark text, one restrained accent, 8-point spacing, medium-radius surfaces, shallow elevation, 1px dividers.
+- Interactional: direct manipulation, predictable focus order, inline feedback, visible selection, reversible actions, explicit confirmation for irreversible actions.
+- Accessibility: semantic structure, minimum 4.5:1 normal-text contrast, visible focus, keyboard parity, reduced-motion support, text-plus-symbol status, scalable type.
+- Responsive: fluid columns, priority-based hiding, preserved reading order, minimum 44px touch targets, stacked narrow layouts, horizontal overflow only for dense structured data.
 
-Candidate product domains:
-1. Planning workspace — Organizes priorities, schedules, and related items into a focused overview.
-2. Learning progress hub — Presents lessons, milestones, completion states, and next steps.
-3. Personal finance overview — Summarizes balances, activity, categories, and trends with low cognitive load.
-4. Wellness routine tracker — Organizes recurring routines, completion history, and progress signals.
-5. Home operations dashboard — Coordinates maintenance, recurring tasks, utilities, and household information.
+CANDIDATE PRODUCT DOMAINS
+- Operational dashboard: summarizes changing information and prioritizes next actions.
+- Inventory workspace: supports search, filtering, comparison, quantity, and detail inspection.
+- Schedule planner: organizes time-based items, dependencies, and exceptions.
+- Document review: supports structured reading, comparison, annotations, and state tracking.
+- Energy monitor: presents measurements, trends, thresholds, and period comparisons.
+- Dataset catalog: supports metadata discovery, filtering, quality indicators, and structured inspection.
 
-Weighted scoring matrix, scores 1–5:
-Weights: Clarity 25; Reusability 20; Accessibility fit 20; Responsive fit 15; Differentiation 10; Density control 10.
-Planning workspace: 5,5,5,5,4,4 = 4.80
-Learning progress hub: 5,4,5,5,4,5 = 4.70
-Home operations dashboard: 4,5,4,4,5,4 = 4.35
-Personal finance overview: 4,4,5,4,4,4 = 4.20
-Wellness routine tracker: 4,4,4,5,4,4 = 4.15
+WEIGHTED SCORING MATRIX
+Weights: hierarchy 25, responsive fit 20, accessibility value 20, reuse potential 20, visual range 15; scores 1–5.
+- Operational dashboard: 5, 5, 5, 5, 4 = 4.80/5
+- Inventory workspace: 5, 4, 5, 5, 4 = 4.60/5
+- Schedule planner: 4, 4, 4, 4, 5 = 4.20/5
+- Document review: 4, 4, 5, 4, 4 = 4.20/5
+- Energy monitor: 4, 5, 4, 4, 5 = 4.40/5
+- Dataset catalog: 4, 4, 5, 5, 4 = 4.40/5
 
-Selected domain rationale:
-Planning workspace has the highest combined score and provides reusable hierarchy, clear status communication, flexible content density, strong responsive behavior, and broad applicability.
+SELECTED DOMAIN RATIONALE
+Operational dashboard is selected because it provides the strongest balance of hierarchy, responsive behavior, accessibility value, component reuse, and generic applicability.
 
-Cycle lock:
-Use project-001, 2026-11-04, Planning workspace, and the extracted DNA as fixed inputs for this cycle.
+CYCLE LOCK
+Lock the selected domain, extracted DNA, accessibility baseline, and responsive rules for project-001 on 2026-11-05.
 
-Fallback rule:
-If the selected domain becomes too specialized or content-heavy, use Learning progress hub while preserving the same scoring criteria, DNA, accessibility rules, and layout foundation.
+FALLBACK RULE
+If hierarchy or accessibility fails review, use Inventory workspace. If responsive comprehension fails, use Dataset catalog. Preserve locked DNA unless a documented usability issue requires correction.
