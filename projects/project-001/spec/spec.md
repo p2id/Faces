@@ -1,40 +1,34 @@
-Product: Generic product experience
-Project: project-001
-Date: 2026-11-04
-Purpose: Review, find, edit, and confirm product information.
+date: 2026-11-05
+project_id: project-001
+scope: generic, neutral, reusable product experience
 
-Surfaces:
-- Workspace shell
-- List, detail, and edit views
-- Feedback surfaces: loading, empty, validation, confirmation, success, and error
+## Surfaces
+- Overview: summary metrics and recent activity.
+- Collection: searchable, filterable item list.
+- Detail: selected item information and actions.
+- Settings: display and preference controls.
+- Feedback: banners, dialogs, validation, and notifications.
 
-Sections:
-- Global header: product label, navigation, utility actions
-- Page header: title, description, primary and secondary actions
-- Controls: search, filters, sorting, view options
-- Content: cards or table with title, status, metadata, and actions
-- Detail: summary, grouped fields, related information
-- Form: labels, hints, validation, cancel, save
-- Overlays: dialog, tooltip, toast, date picker
+## Sections
+- Global navigation: product label, Overview, Collection, Settings.
+- Page header: title, supporting text, primary action.
+- Summary region: metric cards and trend context.
+- Main content: table or card list.
+- Secondary panel: filters, saved views, or guidance.
+- System feedback: loading, empty, error, and confirmation states.
 
-Real content examples:
-- Title: “Overview”
-- Description: “Review current items and recent changes.”
+## Real content examples
+- Product label: “Workspace”
+- Page title: “Overview”
+- Supporting text: “Review current activity and recent changes.”
+- Primary action: “Create item”
+- Metric labels: “Total items”, “Active items”, “Recent changes”
 - Search placeholder: “Search items”
-- Filter: “Status”
-- Options: “All”, “Active”, “Archived”
-- Columns: “Name”, “Status”, “Updated”, “Actions”
-- Empty message: “No items match these filters.”
+- Filter: “Status” / “All statuses”
+- Status values: “Active”, “Paused”, “Archived”
+- Empty message: “No items found”
+- Empty guidance: “Adjust the filters or create a new item.”
+- Success message: “Item created”
 - Error message: “Items could not be loaded. Try again.”
-- Success message: “Changes saved.”
-- Dialog title: “Archive this item?”
-- Dialog action: “Archive”
-- Field label: “Display name”
-- Helper text: “Use a short, descriptive name.”
-
-Content rules:
-- Use concise, literal, sentence-case labels.
-- Keep one primary action per surface.
-- Preserve entered values after validation failure.
-- Give every icon-only action an accessible name.
-- Avoid decorative or anthropomorphic language.
+- Dialog title: “Create item”
+- Dialog action: “Save item”
