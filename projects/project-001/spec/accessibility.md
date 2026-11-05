@@ -1,15 +1,17 @@
-Targets:
-- WCAG 2.2 AA for all surfaces.
-- Text contrast: minimum 4.5:1; large text minimum 3:1.
-- Non-text contrast: minimum 3:1 for controls, icons, focus indicators, and boundaries.
-- Keyboard access for every action; visible focus; no unintended keyboard traps.
-- Focus indicator: minimum 2px outline with 2px offset where space permits.
-- Pointer targets: minimum 44×44 CSS pixels.
-- Use native controls, logical headings, and labelled landmarks.
-- Give every control an accessible name, including icon-only controls.
-- Associate labels, hints, and errors programmatically with fields.
-- Announce validation, save confirmation, loading completion, and errors through appropriate live regions.
-- Dialogs require an accessible name, focus containment, inert background, Escape handling, and focus restoration.
-- Respect prefers-reduced-motion; do not use color or motion as the sole status cue.
-- Associate table headers with cells and expose sort and selection state.
-- Support 200% zoom and reflow at 320px CSS width.
+## Targets
+- WCAG 2.2 AA for keyboard, pointer, touch, zoom, and assistive technology.
+- Normal text contrast: at least 4.5:1; large text: at least 3:1.
+- Non-text UI contrast: at least 3:1.
+- Focus indicator: visible, at least 2px equivalent, with 3:1 contrast.
+- Interactive target size: minimum 44×44 CSS pixels.
+- Provide navigation, main, complementary, and status landmarks where applicable.
+- Use one logical heading hierarchy and one page-level heading.
+- Give every control a programmatic label and associate hints and errors.
+- Announce asynchronous updates and errors through suitable live regions.
+- Support logical tab order, keyboard operation, Escape dismissal, and dialog focus return.
+- Never convey state by color, position, motion, or shape alone.
+- Respect prefers-reduced-motion with a no-motion equivalent.
+- Support zoom/text resizing to 200% without clipping or loss of operation.
+- Expose table headers, list structure, dialog names, roles, and states.
+- Provide concise alternative text for informative graphics; mark decorative graphics accordingly.
+- Avoid auto-advancing content and time limits; provide pause or extension when unavoidable.
