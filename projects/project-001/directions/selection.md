@@ -1,11 +1,7 @@
-Selected direction:
-Direction A.
+SELECTED DIRECTION: A
 
-Rationale:
-Direction A most directly expresses the locked DNA, provides the strongest reusable foundation, and balances calm presentation with efficient scanning across screen sizes.
+RATIONALE
+Direction A best expresses the locked DNA, offers the broadest reuse, and provides a strong baseline for accessibility, responsive behavior, and structured information.
 
-Permitted influence:
-Use Direction B’s explicit status treatment and Direction C’s vertical rhythm only when they improve comprehension without changing the core system.
-
-Non-negotiables:
-Maintain strong contrast, semantic order, visible focus, minimum 44px targets, text-plus-icon status cues, progressive disclosure, stable responsive structure, and reduced-motion support.
+DECISION RULE
+Retain A unless review identifies a measurable failure in hierarchy, contrast, keyboard access, or narrow-layout comprehension. Use B when record inspection dominates. Use C when trend interpretation dominates.
