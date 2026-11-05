@@ -1,20 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 390" role="img" aria-labelledby="t d">
-<title id="t">Responsive layout rules</title>
-<desc id="d">Compact, medium, and wide layout behaviors.</desc>
-<rect width="1080" height="390" fill="#F7F8FA"/>
-<g font-family="sans-serif" fill="#263142">
-<rect x="24" y="24" width="320" height="320" rx="8" fill="#FFF" stroke="#D9DEE7"/>
-<rect x="380" y="24" width="320" height="320" rx="8" fill="#FFF" stroke="#D9DEE7"/>
-<rect x="736" y="24" width="320" height="320" rx="8" fill="#FFF" stroke="#D9DEE7"/>
-<text x="48" y="60" font-size="18">Compact · 320–599</text><text x="404" y="60" font-size="18">Medium · 600–1023</text><text x="760" y="60" font-size="18">Wide · 1024+</text>
-<g font-size="14" fill="#687386">
-<text x="48" y="100">Collapsed navigation</text><text x="48" y="128">Single-column content</text><text x="48" y="156">Stacked actions</text><text x="48" y="184">No horizontal overflow</text>
-<text x="404" y="100">Compact navigation</text><text x="404" y="128">Flexible two-column layout</text><text x="404" y="156">Grouped actions</text><text x="404" y="184">No clipped content</text>
-<text x="760" y="100">Persistent navigation</text><text x="760" y="128">Multi-column layout</text><text x="760" y="156">Context-aligned actions</text><text x="760" y="184">Readable max-width</text>
-</g>
-<path d="M48 232H320M404 232H676M760 232H1032" stroke="#315EFB" stroke-width="4"/>
-<text x="48" y="270" font-size="13">Targets ≥44px</text><text x="404" y="270" font-size="13">Targets ≥44px</text><text x="760" y="270" font-size="13">Keyboard/pointer parity</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 560" aria-label="Responsive layout guidance">
+<title>Responsive layout guidance</title>
+<g fill="#F8FAFC" stroke="#334155" stroke-width="2"><rect x="32" y="48" width="280" height="420" rx="18"/><rect x="360" y="48" width="360" height="420" rx="12"/><rect x="768" y="48" width="400" height="420" rx="8"/></g>
+<g fill="#334155" font-family="system-ui,sans-serif" font-size="18">
+<text x="64" y="88">Compact 320–599</text><text x="392" y="88">Medium 600–959</text><text x="800" y="88">Wide 960+</text>
+<text x="64" y="132">Single column</text><text x="64" y="164">Condensed navigation</text><text x="64" y="196">Stacked cards</text><text x="64" y="228">Persistent primary action</text>
+<text x="392" y="132">Selective two-column layout</text><text x="392" y="164">Visible navigation</text><text x="392" y="196">Grouped cards</text><text x="392" y="228">Detail follows summary</text>
+<text x="800" y="132">Full navigation</text><text x="800" y="164">Grid with maximum width</text><text x="800" y="196">Aligned summary and detail</text><text x="800" y="228">Expanded whitespace</text>
+<text x="64" y="310">Rules: preserve order and meaning; reflow before truncation; avoid horizontal scroll; maintain 44px minimum targets.</text>
 </g></svg>
-Rationale: Defines behavior by available space while preserving hierarchy and reading order.
-Quality gates: reflow, 200% zoom, keyboard access, target size, no clipping, and no forced horizontal scrolling.
-Path intent: /projects/project-001/2026-11-02/design/responsive/
