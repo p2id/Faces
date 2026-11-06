@@ -1,25 +1,20 @@
-## Component inventory and states
+# D — Component State Inventory
 - Button: default, hover, focus-visible, pressed, disabled, loading, destructive.
-- Icon button: default, hover, focus-visible, pressed, disabled, loading.
-- Text input: empty, filled, hover, focus-visible, disabled, read-only, invalid, valid.
-- Select: closed, hover, focus-visible, open, selected, disabled, invalid.
-- Checkbox: unchecked, checked, indeterminate, hover, focus-visible, disabled.
-- Radio: unselected, selected, hover, focus-visible, disabled.
+- Icon button: default, hover, focus-visible, pressed, selected, disabled, loading.
+- Text input: empty, filled, hover, focus-visible, disabled, read-only, error, success.
+- Search input: empty, filled, focused, loading, no-results, error, disabled.
+- Select: closed, hover, focus-visible, open, selected, disabled, error.
+- Checkbox: unchecked, checked, mixed, hover, focus-visible, disabled, error.
+- Radio: unselected, selected, hover, focus-visible, disabled, error.
 - Switch: off, on, hover, focus-visible, disabled.
-- Tabs: inactive, hover, focus-visible, active, disabled.
-- Card: default, hover, focus-visible, selected, disabled, loading.
-- Banner: info, success, warning, error, dismissible, persistent.
-- Toast: entering, visible, exiting, success, warning, error.
-- Dialog: closed, opening, open, submitting, validation-error, success, closing.
-- Table/list: loading, populated, empty, filtered-empty, error, refreshing, selected.
-- Pagination: available, current, disabled, first-page, last-page.
-- Tooltip: hidden, visible, delayed, unavailable.
-- Skeleton: visible, resolved, failed.
-- Navigation: expanded, collapsed, active, focus-visible, disabled.
-
-## State rules
-- Every interactive control exposes visible focus-visible and disabled states.
-- Selected, pressed, invalid, and loading states use text, icon, structure, or announcement in addition to color.
-- Loading preserves dimensions and prevents duplicate submission.
-- Empty, filtered-empty, and error states provide a concise next action.
-- Destructive actions require explicit confirmation.
+- Tabs: default, hover, focus-visible, selected, disabled.
+- Navigation item: default, hover, focus-visible, selected, disabled.
+- Table/list: loading, populated, selected, empty, filtered-empty, error.
+- Row/item: default, hover, focus-visible, selected, disabled, expanded.
+- Badge/status: neutral, informative, positive, caution, negative, disabled.
+- Tooltip: hidden, visible, dismissed.
+- Toast: entering, visible, success, informative, warning, error, dismissed.
+- Dialog: closed, opening, open, submitting, validation-error, closing.
+- Drawer: closed, opening, open, loading, error, closing.
+- Pagination: available, current, unavailable, disabled.
+- All interactive states: visible or programmatic indication, preserved focus, readable contrast, keyboard support.
