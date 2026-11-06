@@ -1,7 +1,2 @@
-SELECTED DIRECTION: A
-
-RATIONALE
-Direction A best expresses the locked DNA, offers the broadest reuse, and provides a strong baseline for accessibility, responsive behavior, and structured information.
-
-DECISION RULE
-Retain A unless review identifies a measurable failure in hierarchy, contrast, keyboard access, or narrow-layout comprehension. Use B when record inspection dominates. Use C when trend interpretation dominates.
+Selected: Direction A — Quiet Index.
+Rationale: Provides the strongest balance of retrieval clarity, accessibility, responsive resilience, and neutral reuse. Direction B is the comparison-heavy fallback; Direction C is the discovery-led fallback. Selection is locked for project-001 on 2026-11-06 unless the PATTERNS_MD fallback rule is triggered.
