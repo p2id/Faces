@@ -1,16 +1,5 @@
-## Budgets
-- Initial route JavaScript: ≤170KB compressed.
-- Initial route CSS: ≤45KB compressed.
-- Critical fonts: ≤100KB compressed; prefer system or one variable font.
-- Above-fold images: ≤250KB total.
-- Initial transfer: ≤500KB compressed excluding optional media.
-- Largest Contentful Paint: ≤2.5s on a mid-tier mobile connection.
-- First Contentful Paint: ≤1.8s.
-- Interaction to Next Paint: ≤200ms.
-- Cumulative Layout Shift: ≤0.10.
-- Initial DOM: ≤1,500 nodes.
-- Main-thread task: ≤50ms.
-- Animation: 60fps target; animate transform and opacity only.
-- Waits over 300ms use dimension-preserving skeletons.
-- Lazy-load below-fold media and non-critical panels.
-- Do not preload non-critical resources.
+# Performance Budgets
+- Initial route: JavaScript ≤170 KB compressed; CSS ≤45 KB; fonts ≤100 KB; critical media ≤150 KB.
+- Runtime: first contentful paint ≤1.8s; largest contentful paint ≤2.5s; interaction to next paint ≤200ms; cumulative layout shift ≤0.1; total blocking time ≤200ms.
+- UI: loading placeholder within 100ms; search debounce 250ms; animation 150–250ms; reduced-motion alternative; virtualize collections over 100 visible rows.
+- Delivery: lazy-load noncritical regions, compress media, reserve media/font space, cache immutable assets, measure compact/medium/expanded layouts.
