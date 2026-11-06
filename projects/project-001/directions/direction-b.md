@@ -1,17 +1,7 @@
-POSITIONING
-A structured inventory workspace for locating, comparing, and inspecting records with minimal cognitive load.
-
-PALETTE RATIONALE
-Use soft neutral surfaces, graphite text, and a muted teal accent. Keep status colors sparse and reinforce them with text.
-
-TYPE RATIONALE
-Use a highly legible sans-serif, compact table text, generous detail-view line height, and tabular numerals for quantities and dates.
-
-LAYOUT RULES
-Keep search and filters prominent. Use a sortable table on wide screens and stacked records on narrow screens. Preserve selection context while showing details.
-
-MOTION INTENT
-Use subtle transitions for filtering, row selection, and detail changes. Preserve content position during updates and disable nonessential motion.
-
-AVOIDED TRAPS
-Avoid spreadsheet overload, hidden filters, irreversible inline edits, tiny controls, and color-only status communication.
+Name: Signal Ledger
+Positioning: A structured library optimized for comparing records, states, and metadata.
+Palette rationale: Cool gray base, dark ink, pale blue structural fills, and amber limited to attention states; pair semantic colors with text or icons.
+Type rationale: Legible sans-serif hierarchy with tabular numerals for counts, dates, and versions; cap reading line length.
+Layout rules: Split overview/detail workspace, breathable rows, conditional sticky headers, removable visible filters, mobile conversion of columns into labeled sections.
+Motion intent: State transitions under 180ms, clear expand/collapse feedback, restrained loading indicators, no continuous animation.
+Avoided traps: Dashboard clutter, rainbow categorization, unexplained badges, adjacent destructive actions, hover-only information.
