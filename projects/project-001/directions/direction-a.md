@@ -1,17 +1,7 @@
-POSITIONING
-A calm operational dashboard that converts changing information into clear priorities and actions.
-
-PALETTE RATIONALE
-Use a warm-neutral canvas, dark text, slate surfaces, and one cool accent. Pair semantic status colors with labels and symbols.
-
-TYPE RATIONALE
-Use a legible sans-serif, three-level hierarchy, restrained weight changes, and tabular numerals for measurements.
-
-LAYOUT RULES
-Place navigation and context first, summary metrics next, and the primary table or visualization last. Use a responsive grid that becomes stacked content on narrow screens. Keep detail inspection adjacent or directly below the selected item.
-
-MOTION INTENT
-Use brief transitions for selection, loading, and panel changes. Respect reduced-motion preferences and avoid continuous animation.
-
-AVOIDED TRAPS
-Avoid metric overload, decorative charts, unexplained status colors, unexpected refresh behavior, deep nesting, and inaccessible visual summaries.
+Name: Quiet Index
+Positioning: A dependable knowledge library optimized for retrieval, scanning, and review.
+Palette rationale: Near-white canvas, graphite text, slate secondary text, and muted cobalt accent provide calm contrast and clear action emphasis.
+Type rationale: Neutral sans-serif with open counters and tabular numerals supports scanning, metadata, dates, and counts.
+Layout rules: Twelve-column desktop grid, persistent navigation, search-led header, result list with optional detail pane, one primary action per region, stacked mobile layout.
+Motion intent: Subtle 150–220ms transitions for focus, filtering, and pane changes; no looping motion; honor reduced motion.
+Avoided traps: Ornamental imagery, excessive cards, hidden filters, unlabeled primary icons, color-only status, modal-first reading.
