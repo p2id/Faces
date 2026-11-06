@@ -1,34 +1,30 @@
-date: 2026-11-05
-project_id: project-001
-scope: generic, neutral, reusable product experience
-
-## Surfaces
-- Overview: summary metrics and recent activity.
-- Collection: searchable, filterable item list.
-- Detail: selected item information and actions.
-- Settings: display and preference controls.
-- Feedback: banners, dialogs, validation, and notifications.
-
-## Sections
-- Global navigation: product label, Overview, Collection, Settings.
-- Page header: title, supporting text, primary action.
-- Summary region: metric cards and trend context.
-- Main content: table or card list.
-- Secondary panel: filters, saved views, or guidance.
-- System feedback: loading, empty, error, and confirmation states.
-
-## Real content examples
-- Product label: “Workspace”
-- Page title: “Overview”
-- Supporting text: “Review current activity and recent changes.”
-- Primary action: “Create item”
-- Metric labels: “Total items”, “Active items”, “Recent changes”
-- Search placeholder: “Search items”
-- Filter: “Status” / “All statuses”
-- Status values: “Active”, “Paused”, “Archived”
-- Empty message: “No items found”
-- Empty guidance: “Adjust the filters or create a new item.”
-- Success message: “Item created”
-- Error message: “Items could not be loaded. Try again.”
-- Dialog title: “Create item”
-- Dialog action: “Save item”
+# C — Product Experience Specification
+- Project: project-001
+- Date: 2026-11-06
+- Purpose: reusable interface for locating, reviewing, and updating product information.
+- Surfaces:
+  - Overview: navigation, heading, toolbar, collection, pagination.
+  - Detail: summary, grouped fields, status, edit, close.
+  - Feedback: inline validation, toast, confirmation dialog.
+- Sections:
+  1. Header: product title, page title, utility actions.
+  2. Navigation: Overview, Activity, Settings.
+  3. Toolbar: search, filters, sort, primary action.
+  4. Collection: title, metadata, status, row actions.
+  5. Empty/error area: explanation and recovery action.
+  6. Detail area: summary, attributes, actions.
+  7. Footer: version, help, legal links.
+- Real content examples:
+  - Page title: “Overview”
+  - Search placeholder: “Search settings”
+  - Filter: “Status”
+  - Options: “All”, “Active”, “Archived”
+  - Primary action: “Create item”
+  - Collection item: “Notification preferences”
+  - Metadata: “Updated 06 Nov 2026”
+  - Status: “Active”
+  - Empty message: “No items match these filters.”
+  - Success message: “Changes saved.”
+  - Error message: “Unable to save changes. Try again.”
+  - Confirmation: “Archive this item?”
+- Content rules: sentence case, literal labels, verb-led actions, inline recovery guidance, no color-only meaning, preserve entered values after errors.
