@@ -1,13 +1,26 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" aria-label="Generic product experience layout">
-<title>Generic product experience layout</title>
-<g fill="#F8FAFC" stroke="#334155" stroke-width="2">
-<rect x="32" y="32" width="1136" height="64" rx="8"/><rect x="32" y="112" width="224" height="560" rx="8"/>
-<rect x="280" y="112" width="888" height="120" rx="8"/><rect x="280" y="248" width="280" height="180" rx="8"/>
-<rect x="584" y="248" width="280" height="180" rx="8"/><rect x="888" y="248" width="280" height="180" rx="8"/>
-<rect x="280" y="448" width="888" height="224" rx="8"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" role="img" aria-label="Generic product overview wireframe">
+<title>Generic product overview</title>
+<rect width="960" height="540" fill="#f7f8fa"/>
+<g fill="#fff" stroke="#d7dce3">
+<rect x="24" y="24" width="912" height="64" rx="8"/>
+<rect x="24" y="112" width="216" height="404" rx="8"/>
+<rect x="264" y="112" width="672" height="156" rx="8"/>
+<rect x="264" y="292" width="672" height="224" rx="8"/>
 </g>
-<g fill="#475569" font-family="system-ui,sans-serif" font-size="16">
-<text x="64" y="72">Product surface</text><text x="64" y="150">Overview</text><text x="64" y="190">Items</text><text x="64" y="230">Insights</text><text x="64" y="270">Settings</text>
-<text x="312" y="150">Primary view</text><text x="312" y="286">Summary</text><text x="616" y="286">Activity</text><text x="920" y="286">Status</text><text x="312" y="486">Detail region</text>
+<g fill="#d7dce3">
+<rect x="48" y="44" width="180" height="24" rx="4"/>
+<rect x="680" y="42" width="96" height="28" rx="5"/>
+<rect x="792" y="42" width="112" height="28" rx="5" fill="#2457d6"/>
+<rect x="48" y="144" width="144" height="14" rx="3"/>
+<rect x="48" y="184" width="160" height="36" rx="5" fill="#e9efff"/>
+<rect x="48" y="236" width="160" height="14" rx="3"/>
+<rect x="48" y="272" width="140" height="14" rx="3"/>
+<rect x="296" y="144" width="300" height="22" rx="4" fill="#17202a"/>
+<rect x="296" y="184" width="500" height="14" rx="3"/>
+<rect x="296" y="212" width="420" height="14" rx="3"/>
+<rect x="296" y="324" width="192" height="16" rx="3" fill="#17202a"/>
+<rect x="296" y="368" width="184" height="112" rx="6" fill="#eef2f6"/>
+<rect x="504" y="368" width="184" height="112" rx="6" fill="#eef2f6"/>
+<rect x="712" y="368" width="184" height="112" rx="6" fill="#eef2f6"/>
 </g>
 </svg>
