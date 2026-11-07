@@ -1,5 +1,14 @@
-# Performance Budgets
-- Initial route: JavaScript ≤170 KB compressed; CSS ≤45 KB; fonts ≤100 KB; critical media ≤150 KB.
-- Runtime: first contentful paint ≤1.8s; largest contentful paint ≤2.5s; interaction to next paint ≤200ms; cumulative layout shift ≤0.1; total blocking time ≤200ms.
-- UI: loading placeholder within 100ms; search debounce 250ms; animation 150–250ms; reduced-motion alternative; virtualize collections over 100 visible rows.
-- Delivery: lazy-load noncritical regions, compress media, reserve media/font space, cache immutable assets, measure compact/medium/expanded layouts.
+Budgets:
+- Initial HTML: 50 KB compressed maximum.
+- Critical CSS: 30 KB compressed maximum.
+- Initial JavaScript: 150 KB compressed maximum.
+- Initial transfer: 500 KB compressed maximum, excluding selected media.
+- First Contentful Paint: 1.8 seconds maximum on representative 4G.
+- Largest Contentful Paint: 2.5 seconds maximum.
+- Interaction to Next Paint: 200 ms maximum for primary interactions.
+- Cumulative Layout Shift: 0.1 maximum.
+- Ready-to-use time: 3.5 seconds maximum on representative 4G.
+- Cached route transition: visible response within 100 ms; usable content within 1 second.
+- Reserve layout space, use responsive modern images, lazy-load below-fold media, and avoid unnecessary reflow.
+- Virtualize lists exceeding 100 visible records.
+- Use transform and opacity for motion; show progress after 300 ms; avoid blank error screens.
