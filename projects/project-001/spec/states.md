@@ -1,20 +1,34 @@
-# D — Component State Inventory
-- Button: default, hover, focus-visible, pressed, disabled, loading, destructive.
-- Icon button: default, hover, focus-visible, pressed, selected, disabled, loading.
-- Text input: empty, filled, hover, focus-visible, disabled, read-only, error, success.
-- Search input: empty, filled, focused, loading, no-results, error, disabled.
-- Select: closed, hover, focus-visible, open, selected, disabled, error.
-- Checkbox: unchecked, checked, mixed, hover, focus-visible, disabled, error.
-- Radio: unselected, selected, hover, focus-visible, disabled, error.
-- Switch: off, on, hover, focus-visible, disabled.
-- Tabs: default, hover, focus-visible, selected, disabled.
-- Navigation item: default, hover, focus-visible, selected, disabled.
-- Table/list: loading, populated, selected, empty, filtered-empty, error.
-- Row/item: default, hover, focus-visible, selected, disabled, expanded.
-- Badge/status: neutral, informative, positive, caution, negative, disabled.
-- Tooltip: hidden, visible, dismissed.
-- Toast: entering, visible, success, informative, warning, error, dismissed.
-- Dialog: closed, opening, open, submitting, validation-error, closing.
-- Drawer: closed, opening, open, loading, error, closing.
-- Pagination: available, current, unavailable, disabled.
-- All interactive states: visible or programmatic indication, preserved focus, readable contrast, keyboard support.
+Component inventory and states:
+- Shell: default, loading, offline, error, reduced-navigation.
+- Header: default, compact, action-disabled, overflow-open.
+- Navigation: default, active, hover, focus, collapsed, disabled.
+- Breadcrumb: default, current, truncated, overflow-open.
+- Page header: default, with-description, with-actions, loading.
+- Tabs: default, active, hover, focus, disabled, loading.
+- Summary card: default, hover, focus, loading, unavailable.
+- Search input: empty, filled, focused, invalid, disabled, read-only.
+- Select/filter: closed, open, selected, focused, invalid, disabled, loading.
+- Checkbox: unchecked, checked, indeterminate, focused, disabled, invalid.
+- Button: default, hover, pressed, focus, loading, disabled, destructive.
+- Link: default, hover, visited, focus, disabled.
+- Alert: info, success, warning, error, dismissible, persistent.
+- Data list: loading, populated, empty, filtered-empty, error, selected, sortable, paginated.
+- Row action menu: closed, open, focused, disabled.
+- Form field: default, focused, filled, invalid, valid, disabled, read-only.
+- Textarea: empty, filled, focused, invalid, disabled, read-only.
+- Date field: empty, valid, invalid, focused, disabled, read-only.
+- Dialog: closed, open, loading, submitting, validation-error, success, destructive-confirmation.
+- Toast: entering, visible, dismissing, success, warning, error.
+- Progress indicator: indeterminate, determinate, complete, error.
+- Skeleton: visible, replaced, reduced-motion.
+- Empty state: default, filtered, recovery.
+- Tooltip: hidden, visible, focus-visible, delayed.
+- Pagination: default, selected, previous-disabled, next-disabled, loading.
+- Divider: default, inset, emphasized.
+
+Rules:
+- Focus remains visible and moves logically.
+- Loading disables only conflicting actions.
+- Errors identify the affected control and recovery action.
+- Empty, filtered-empty, and error states use distinct copy.
+- Success feedback confirms completion without blocking progress.
