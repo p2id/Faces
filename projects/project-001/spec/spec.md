@@ -1,30 +1,40 @@
-# C — Product Experience Specification
-- Project: project-001
-- Date: 2026-11-06
-- Purpose: reusable interface for locating, reviewing, and updating product information.
-- Surfaces:
-  - Overview: navigation, heading, toolbar, collection, pagination.
-  - Detail: summary, grouped fields, status, edit, close.
-  - Feedback: inline validation, toast, confirmation dialog.
-- Sections:
-  1. Header: product title, page title, utility actions.
-  2. Navigation: Overview, Activity, Settings.
-  3. Toolbar: search, filters, sort, primary action.
-  4. Collection: title, metadata, status, row actions.
-  5. Empty/error area: explanation and recovery action.
-  6. Detail area: summary, attributes, actions.
-  7. Footer: version, help, legal links.
-- Real content examples:
-  - Page title: “Overview”
-  - Search placeholder: “Search settings”
-  - Filter: “Status”
-  - Options: “All”, “Active”, “Archived”
-  - Primary action: “Create item”
-  - Collection item: “Notification preferences”
-  - Metadata: “Updated 06 Nov 2026”
-  - Status: “Active”
-  - Empty message: “No items match these filters.”
-  - Success message: “Changes saved.”
-  - Error message: “Unable to save changes. Try again.”
-  - Confirmation: “Archive this item?”
-- Content rules: sentence case, literal labels, verb-led actions, inline recovery guidance, no color-only meaning, preserve entered values after errors.
+Project: project-001
+Date: 2026-11-07
+Product: Generic product experience
+
+Surfaces:
+- Responsive web workspace
+- Desktop application shell
+- Overview surface
+- Detail surface
+- Edit surface
+- Confirmation and feedback surface
+
+Sections:
+1. Shell: header, navigation, breadcrumb, page title, primary action.
+2. Overview: summary cards, search, filters, sortable list, pagination.
+3. Detail: summary, grouped fields, status, secondary actions.
+4. Edit: labeled fields, validation, save, cancel, unsaved-change confirmation.
+5. Feedback: loading, empty, success, warning, and error messaging.
+
+Real content examples:
+- Page title: “Overview”
+- Summary labels: “Total items”, “Active items”, “Needs review”
+- Search placeholder: “Search items”
+- Filter label: “Status”
+- Filter options: “All”, “Active”, “Archived”
+- Table headers: “Name”, “Status”, “Updated”, “Actions”
+- Example row: “Sample item” | “Active” | “07 Nov 2026” | “View”
+- Primary action: “Create item”
+- Save action: “Save changes”
+- Empty message: “No items match these filters.”
+- Error message: “Content could not be loaded. Try again.”
+- Confirmation title: “Discard changes?”
+- Confirmation action: “Discard”
+- Success message: “Changes saved.”
+
+Content rules:
+- Use concise, literal, sentence-case labels.
+- Preserve entered values after recoverable errors.
+- Pair irreversible actions with explicit confirmation.
+- Keep status meaning available through text, not color alone.
