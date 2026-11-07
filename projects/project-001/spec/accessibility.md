@@ -1,9 +1,16 @@
-# Accessibility Targets
-- WCAG 2.2 AA for applicable interface content.
-- Text contrast: at least 4.5:1; large text: at least 3:1.
-- Non-text contrast: at least 3:1 for controls, boundaries, and states.
-- Target size: minimum 24×24 CSS px; preferred 44×44 CSS px.
-- Keyboard: complete access, visible focus, logical order, no trap, Escape closes transient surfaces, focus restoration after close.
-- Semantics: native controls where possible; accessible names, roles, values, descriptions, labels, hints, errors, and status announcements.
-- Content: no color-only meaning; meaningful icon alternatives; 200% zoom and reflow; forced-colors and reduced-motion support.
-- Forms: identify requirements, associate errors programmatically, explain recovery, preserve entered values.
+Targets:
+- Meet WCAG 2.2 AA.
+- Provide keyboard access and logical tab order for every interactive control.
+- Use semantic landmarks, headings, lists, tables, labels, descriptions, and relationships.
+- Maintain text contrast of at least 4.5:1, large-text contrast of at least 3:1, and non-text contrast of at least 3:1.
+- Provide a visible focus indicator with at least 3:1 contrast.
+- Never communicate status by color alone.
+- Give every control a persistent accessible name; expose required, invalid, selected, expanded, and busy states.
+- Keep touch targets at least 44×44px.
+- Support 200% zoom and reflow at 320 CSS px without loss of content or function.
+- Dialogs trap focus, support Escape when appropriate, restore focus, and provide a named close action.
+- Associate errors with controls and announce status changes at an appropriate urgency.
+- Provide text alternatives for meaningful icons and hide decorative icons.
+- Expose table headers, row relationships, and sort direction.
+- Respect reduced-motion preferences and do not rely on animation.
+- Test keyboard use, screen readers, zoom, high contrast, reduced motion, and touch input.
