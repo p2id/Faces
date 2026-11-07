@@ -1,7 +1,6 @@
-Name: Quiet Index
-Positioning: A dependable knowledge library optimized for retrieval, scanning, and review.
-Palette rationale: Near-white canvas, graphite text, slate secondary text, and muted cobalt accent provide calm contrast and clear action emphasis.
-Type rationale: Neutral sans-serif with open counters and tabular numerals supports scanning, metadata, dates, and counts.
-Layout rules: Twelve-column desktop grid, persistent navigation, search-led header, result list with optional detail pane, one primary action per region, stacked mobile layout.
-Motion intent: Subtle 150–220ms transitions for focus, filtering, and pane changes; no looping motion; honor reduced motion.
-Avoided traps: Ornamental imagery, excessive cards, hidden filters, unlabeled primary icons, color-only status, modal-first reading.
+POSITIONING: Quiet precision; a dependable planning surface optimized for scanning, prioritization, and confident action.
+PALETTE RATIONALE: Layered neutrals establish structure; deep ink supports readability; blue marks primary actions; muted semantic colors communicate state without visual noise.
+TYPE RATIONALE: Legible sans-serif, clear numerals, compact labels, four predictable size levels, and weight-led hierarchy.
+LAYOUT RULES: Persistent navigation, clear header, primary planning surface, contextual detail beside or below, 8-point spacing, aligned columns, compact cards, progressive disclosure.
+MOTION INTENT: Short transitions for filtering, panel changes, reorder feedback, and saved-state confirmation; honor reduced-motion preferences.
+AVOIDED TRAPS: Dashboard clutter, decorative imagery, hidden hover actions, excessive containers, color-only status, and modal-first routine editing.
