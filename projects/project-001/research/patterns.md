@@ -1,45 +1,35 @@
-Project: project-001 | Date: 2026-11-06
+Project: project-001
+Date: 2026-11-07
 
-DOMINANT
-- Clear hierarchy, restrained color, modular surfaces, persistent navigation, visible status, progressive disclosure, inline validation.
+DOMINANT: Clear hierarchy; persistent orientation; compact cards and tables; progressive disclosure; visible primary actions; neutral surfaces with one functional accent.
+EMERGING: Command-style search; adaptive density; inline explanations; split-pane inspection; semantic status labels paired with icons or text.
+DEPRECATED: Decoration without meaning; equal-weight dashboards; hover-only actions; modal-first routine editing; color-only alerts; low-contrast placeholders.
+OUTLIER: Monochrome views with one exception color; timeline-grid hybrids; quiet text-led empty states; reversible inline changes.
 
-EMERGING
-- Adaptive density modes, semantic color tokens, keyboard-first command surfaces, reversible actions, explainable empty/loading/error states.
-
-DEPRECATED
-- Decorative gradients, hidden navigation, unlabeled icon-only controls, modal-heavy flows, placeholder-only labels, unstructured metric grids.
-
-OUTLIERS
-- Monochrome status systems using shape and text; split-pane overview/detail workspaces; compact command bars with visible discoverability.
-
-EXTRACTED DNA
-- Visual: neutral canvas, one restrained accent, 8-point spacing, 12-column grid, 10–14px radius, low elevation, strong alignment.
-- Interactional: direct manipulation, persistent context, progressive disclosure, explicit confirmation for irreversible actions, undo where feasible.
-- Accessibility: WCAG 2.2 AA target, semantic landmarks, visible focus, keyboard-complete operation, 44px minimum touch targets, non-color status cues, reduced-motion support.
-- Responsive: mobile-first stacking, fluid type scale, priority-based reordering, resilient tables, width-driven breakpoints.
+VISUAL DNA: Neutral canvas, elevated surfaces, thin borders, moderate radius, restrained accent, strong text hierarchy, consistent spacing, no required imagery.
+INTERACTIONAL DNA: Orientation before action; contextual secondary controls; preserved filter state; inline confirmation; undo where practical; explicit irreversible actions; complete loading, empty, error, and success states.
+ACCESSIBILITY DNA: WCAG 2.2 AA intent; visible focus; keyboard operation; semantic headings and labels; logical reading order; text expansion; reduced-motion support; status never conveyed by color alone.
+RESPONSIVE DNA: Prioritize content over device form; preserve task order; collapse secondary panels; maintain touch target separation; keep core actions free of horizontal overflow; retain context in scrollable data.
 
 CANDIDATE DOMAINS
-- Analytics workspace: Presents measures, comparisons, trends, and decision-support views.
-- Inventory console: Supports searchable records, status tracking, filtering, and controlled updates.
-- Knowledge library: Organizes reference content through retrieval, metadata, and review states.
-- Scheduling planner: Coordinates time-based items through calendar, list, and conflict views.
-- Content catalog: Manages discoverable assets, taxonomy, metadata, and lifecycle states.
-- Service request hub: Presents requests, priorities, progress, and resolution history.
+1. Planning workspace: organize priorities, time ranges, dependencies, and progress.
+2. Resource catalog: browse, filter, compare, and inspect structured items.
+3. Operational monitor: review conditions, exceptions, trends, and next actions.
+4. Knowledge organizer: structure references and reveal related details progressively.
+5. Financial overview: inspect balances, movements, categories, and periods.
+6. Configuration console: manage structured settings with validation and reversibility.
 
 WEIGHTED SCORING MATRIX
-Weights: Reusability 25, Clarity 20, Responsive fit 15, Accessibility fit 15, Visual expression 15, State simplicity 10.
-- Analytics workspace: 23+18+14+14+13+8 = 90
-- Inventory console: 22+18+14+14+12+8 = 88
-- Knowledge library: 24+19+14+14+12+8 = 91
-- Scheduling planner: 21+17+13+13+13+7 = 84
-- Content catalog: 23+18+14+14+13+8 = 90
-- Service request hub: 22+18+13+14+12+8 = 87
+Weights: clarity 30%, efficiency 25%, responsive fit 20%, accessibility fit 15%, distinctiveness 10%; scores 1–5.
 
-SELECTED DOMAIN RATIONALE
-Knowledge library selected for the highest reusable structure, strong retrieval patterns, broad responsive coverage, and neutral cross-context applicability.
+Domain                  Clarity Efficiency Responsive Accessibility Distinctiveness Total
+Planning workspace      5       5          5          5              4               4.80
+Resource catalog        5       4          5          5              3               4.45
+Operational monitor     4       5          4          4              4               4.30
+Knowledge organizer     4       4          5          5              4               4.35
+Financial overview      5       4          4          5              3               4.30
+Configuration console   4       4          4          4              4               4.00
 
-CYCLE LOCK
-Cycle 2026-11-06 is locked to the knowledge-library domain, restrained utility styling, responsive information hierarchy, and WCAG 2.2 AA intent.
-
-FALLBACK RULE
-If retrieval, metadata, or responsive states cannot be represented clearly, use Content catalog, then Analytics workspace, while retaining the extracted DNA and accessibility targets.
+SELECTED DOMAIN RATIONALE: Planning workspace offers the broadest reusable foundation for hierarchy, filtering, timelines, status, responsive density, progressive disclosure, and reversible actions.
+CYCLE LOCK: Lock the selected domain, visual DNA, interaction model, accessibility baseline, and responsive rules for the 2026-11-07 cycle.
+FALLBACK RULE: If planning requirements become overly specialized, use Resource catalog while preserving the locked visual, interaction, accessibility, and responsive principles.
