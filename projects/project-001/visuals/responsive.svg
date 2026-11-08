@@ -1,10 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 560" aria-label="Responsive layout guidance">
-<title>Responsive layout guidance</title>
-<g fill="#F8FAFC" stroke="#334155" stroke-width="2"><rect x="32" y="48" width="280" height="420" rx="18"/><rect x="360" y="48" width="360" height="420" rx="12"/><rect x="768" y="48" width="400" height="420" rx="8"/></g>
-<g fill="#334155" font-family="system-ui,sans-serif" font-size="18">
-<text x="64" y="88">Compact 320–599</text><text x="392" y="88">Medium 600–959</text><text x="800" y="88">Wide 960+</text>
-<text x="64" y="132">Single column</text><text x="64" y="164">Condensed navigation</text><text x="64" y="196">Stacked cards</text><text x="64" y="228">Persistent primary action</text>
-<text x="392" y="132">Selective two-column layout</text><text x="392" y="164">Visible navigation</text><text x="392" y="196">Grouped cards</text><text x="392" y="228">Detail follows summary</text>
-<text x="800" y="132">Full navigation</text><text x="800" y="164">Grid with maximum width</text><text x="800" y="196">Aligned summary and detail</text><text x="800" y="228">Expanded whitespace</text>
-<text x="64" y="310">Rules: preserve order and meaning; reflow before truncation; avoid horizontal scroll; maintain 44px minimum targets.</text>
-</g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 360" role="img" aria-label="Responsive layout bands">
+<title>Responsive layout bands</title>
+<g font-family="Arial,sans-serif" fill="#172033"><text x="32" y="32" font-size="18" font-weight="700">Responsive bands</text><text x="32" y="82" font-size="15">Compact</text><text x="32" y="178" font-size="15">Medium</text><text x="32" y="274" font-size="15">Wide</text></g>
+<g stroke="#cbd3df" fill="#f7f8fa"><rect x="128" y="48" width="300" height="64" rx="8"/><rect x="128" y="144" width="520" height="64" rx="8"/><rect x="128" y="240" width="760" height="64" rx="8"/></g>
+<g font-family="Arial,sans-serif" font-size="14" fill="#26344a"><text x="152" y="76">One column; collapsed navigation; stacked actions</text><text x="152" y="172">Flexible content; compact navigation; two-column cards</text><text x="152" y="268">Persistent navigation; bounded content; expanded cards</text><text x="152" y="292">44px minimum targets; no horizontal scroll; readable line length</text></g>
+</svg>
+Rationale: content-driven bands preserve task order while allowing reflow instead of desktop scaling.
+Coverage: compact, medium, wide, zoom, long labels, keyboard navigation, touch targets, and overflow.
+Quality gate: no clipping, overlap, required horizontal scroll, or broken focus order at 200% zoom.
+Repository path intent: /projects/project-001/design/sections/h/responsive.svg.
