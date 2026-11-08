@@ -1,26 +1,25 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" role="img" aria-label="Generic product overview wireframe">
-<title>Generic product overview</title>
-<rect width="960" height="540" fill="#f7f8fa"/>
-<g fill="#fff" stroke="#d7dce3">
-<rect x="24" y="24" width="912" height="64" rx="8"/>
-<rect x="24" y="112" width="216" height="404" rx="8"/>
-<rect x="264" y="112" width="672" height="156" rx="8"/>
-<rect x="264" y="292" width="672" height="224" rx="8"/>
-</g>
-<g fill="#d7dce3">
-<rect x="48" y="44" width="180" height="24" rx="4"/>
-<rect x="680" y="42" width="96" height="28" rx="5"/>
-<rect x="792" y="42" width="112" height="28" rx="5" fill="#2457d6"/>
-<rect x="48" y="144" width="144" height="14" rx="3"/>
-<rect x="48" y="184" width="160" height="36" rx="5" fill="#e9efff"/>
-<rect x="48" y="236" width="160" height="14" rx="3"/>
-<rect x="48" y="272" width="140" height="14" rx="3"/>
-<rect x="296" y="144" width="300" height="22" rx="4" fill="#17202a"/>
-<rect x="296" y="184" width="500" height="14" rx="3"/>
-<rect x="296" y="212" width="420" height="14" rx="3"/>
-<rect x="296" y="324" width="192" height="16" rx="3" fill="#17202a"/>
-<rect x="296" y="368" width="184" height="112" rx="6" fill="#eef2f6"/>
-<rect x="504" y="368" width="184" height="112" rx="6" fill="#eef2f6"/>
-<rect x="712" y="368" width="184" height="112" rx="6" fill="#eef2f6"/>
-</g>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 560" role="img" aria-label="Generic product workspace wireframe">
+<title>Workspace wireframe</title>
+<rect width="960" height="560" fill="#f7f8fa"/>
+<rect x="24" y="24" width="912" height="56" rx="8" fill="#172033"/>
+<rect x="48" y="44" width="180" height="16" rx="4" fill="#dfe5ef"/>
+<rect x="744" y="42" width="72" height="20" rx="10" fill="#52627a"/>
+<rect x="828" y="42" width="72" height="20" rx="10" fill="#79b8ff"/>
+<rect x="24" y="104" width="216" height="424" rx="8" fill="#fff" stroke="#d9dee8"/>
+<rect x="48" y="132" width="160" height="14" rx="4" fill="#26344a"/>
+<rect x="48" y="176" width="144" height="12" rx="4" fill="#8793a6"/>
+<rect x="48" y="208" width="144" height="12" rx="4" fill="#8793a6"/>
+<rect x="48" y="240" width="144" height="12" rx="4" fill="#8793a6"/>
+<rect x="264" y="104" width="672" height="424" rx="8" fill="#fff" stroke="#d9dee8"/>
+<rect x="296" y="136" width="312" height="28" rx="6" fill="#edf1f6"/>
+<rect x="296" y="192" width="196" height="104" rx="8" fill="#f7f8fa" stroke="#d9dee8"/>
+<rect x="516" y="192" width="196" height="104" rx="8" fill="#f7f8fa" stroke="#d9dee8"/>
+<rect x="736" y="192" width="168" height="104" rx="8" fill="#f7f8fa" stroke="#d9dee8"/>
+<rect x="296" y="328" width="608" height="16" rx="4" fill="#dfe5ef"/>
+<rect x="296" y="368" width="560" height="12" rx="4" fill="#edf1f6"/>
+<rect x="296" y="400" width="520" height="12" rx="4" fill="#edf1f6"/>
+<rect x="296" y="432" width="584" height="12" rx="4" fill="#edf1f6"/>
 </svg>
+Rationale: low-fidelity geometry establishes hierarchy, navigation, content grouping, and action placement without visual noise.
+Coverage: structure, focus order, contrast intent, responsive regions, and state-ready surfaces.
+Repository path intent: /projects/project-001/design/sections/e/wireframes.svg.
