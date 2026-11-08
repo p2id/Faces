@@ -1,6 +1,6 @@
-POSITIONING: Focused momentum; reduce friction between reviewing priorities and completing the next action.
-PALETTE RATIONALE: Neutral canvas, tinted work zones, near-black text, violet action accent, and low-saturation semantic states support focus.
-TYPE RATIONALE: Neutral sans-serif with generous x-height, dense metadata styling, and clear title, label, value, and timestamp distinctions.
-LAYOUT RULES: Top command region, two-column desktop layout, stacked narrow layout, persistent filter context, dominant primary list, expandable or side-panel detail.
-MOTION INTENT: Immediate feedback for selection, completion, filtering, and expansion; favor opacity and position changes over scale.
-AVOIDED TRAPS: Command-bar dependence, excessive accent use, endless scrolling without landmarks, small touch targets, and animation-heavy transitions.
+Positioning: Dense date planning for comparison, scanning, and controlled navigation.
+Palette rationale: Cool gray canvas, white content planes, deep navy text, and amber reserved for exceptions create signal separation.
+Type rationale: Compact sans-serif, aligned numerals, restrained line length, and distinct labels for dates, ranges, and states.
+Layout rules: Split view at wide widths; synchronized list and calendar panes; pinned summary; prioritized list on narrow screens; preserve selection context.
+Motion intent: Subtle pane transitions and row highlighting communicate continuity without disrupting reading.
+Avoided traps: Excessive borders, unbounded horizontal scrolling, tiny touch targets, dense color coding, hidden navigation state.
