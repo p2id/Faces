@@ -1,9 +1,21 @@
-flowchart LR
-  F[Foundation] --> S[Semantic]
-  S --> C[Component]
-  C --> E[Experience]
-  F --> F1[Color] & F2[Type] & F3[Spacing] & F4[Shape]
-  S --> S1[Surface] & S2[Content] & S3[Action] & S4[Feedback]
-  C --> C1[Navigation] & C2[Input] & C3[Status] & C4[Container]
-  E --> E1[Default] & E2[Focus] & E3[Disabled] & E4[Error] & E5[Complete]
-  %% Rationale: layered tokens preserve consistency and permit controlled adaptation.
+graph LR
+A[Foundation]-->B[Semantic]-->C[Component]-->D[Surface]
+A-->A1[space]
+A-->A2[type]
+A-->A3[color]
+A-->A4[radius]
+B-->B1[text.primary]
+B-->B2[text.muted]
+B-->B3[surface.canvas]
+B-->B4[action.primary]
+C-->C1[button]
+C-->C2[input]
+C-->C3[card]
+C-->C4[notice]
+Rationale: layered tokens enable visual change without changing component intent.
+Naming: lowercase dot notation; semantic names describe purpose, not hue or location.
+Coverage: color, typography, spacing, radius, border, elevation, motion, focus, and density.
+Quality gate: every component token maps to a semantic token, every semantic token maps to a foundation value, and contrast and focus values are verified.
+Repository path intent: /projects/project-001/design/sections/g/token-map.mmd.
+Writing rule: use sentence case, concise labels, action-first controls, and no decorative copy.
+Publishing rule: version changes, preserve migration aliases, and record removals in the audit record.
