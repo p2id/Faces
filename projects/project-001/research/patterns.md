@@ -1,35 +1,49 @@
-Project: project-001
-Date: 2026-11-07
+Project: project-001 | Date: 2026-11-08
 
-DOMINANT: Clear hierarchy; persistent orientation; compact cards and tables; progressive disclosure; visible primary actions; neutral surfaces with one functional accent.
-EMERGING: Command-style search; adaptive density; inline explanations; split-pane inspection; semantic status labels paired with icons or text.
-DEPRECATED: Decoration without meaning; equal-weight dashboards; hover-only actions; modal-first routine editing; color-only alerts; low-contrast placeholders.
-OUTLIER: Monochrome views with one exception color; timeline-grid hybrids; quiet text-led empty states; reversible inline changes.
+Dominant patterns:
+- Clear hierarchy with one primary action per surface.
+- Cards, lists, tables, and timelines for structured scanning.
+- Neutral surfaces, restrained accent color, thin dividers, limited elevation.
+- Progressive disclosure for secondary controls.
+- Explicit labels, visible focus, and status cues beyond color.
 
-VISUAL DNA: Neutral canvas, elevated surfaces, thin borders, moderate radius, restrained accent, strong text hierarchy, consistent spacing, no required imagery.
-INTERACTIONAL DNA: Orientation before action; contextual secondary controls; preserved filter state; inline confirmation; undo where practical; explicit irreversible actions; complete loading, empty, error, and success states.
-ACCESSIBILITY DNA: WCAG 2.2 AA intent; visible focus; keyboard operation; semantic headings and labels; logical reading order; text expansion; reduced-motion support; status never conveyed by color alone.
-RESPONSIVE DNA: Prioritize content over device form; preserve task order; collapse secondary panels; maintain touch target separation; keep core actions free of horizontal overflow; retain context in scrollable data.
+Emerging patterns:
+- Density modes, container-aware layouts, inline validation, contextual empty states, reduced-motion support.
 
-CANDIDATE DOMAINS
-1. Planning workspace: organize priorities, time ranges, dependencies, and progress.
-2. Resource catalog: browse, filter, compare, and inspect structured items.
-3. Operational monitor: review conditions, exceptions, trends, and next actions.
-4. Knowledge organizer: structure references and reveal related details progressively.
-5. Financial overview: inspect balances, movements, categories, and periods.
-6. Configuration console: manage structured settings with validation and reversibility.
+Deprecated patterns:
+- Decorative gradients, competing primary actions, hover-only controls, auto-advancing content, persistent motion, color-only status.
 
-WEIGHTED SCORING MATRIX
-Weights: clarity 30%, efficiency 25%, responsive fit 20%, accessibility fit 15%, distinctiveness 10%; scores 1–5.
+Outlier patterns:
+- Monochrome status systems, split-pane context preservation, timeline-table hybrids, compact controls with generous touch targets.
 
-Domain                  Clarity Efficiency Responsive Accessibility Distinctiveness Total
-Planning workspace      5       5          5          5              4               4.80
-Resource catalog        5       4          5          5              3               4.45
-Operational monitor     4       5          4          4              4               4.30
-Knowledge organizer     4       4          5          5              4               4.35
-Financial overview      5       4          4          5              3               4.30
-Configuration console   4       4          4          4              4               4.00
+Extracted DNA:
+- Visual: soft-neutral base, high-contrast text, restrained accent, consistent radius, modest elevation.
+- Interactional: predictable hierarchy, direct selection, reversible changes, explicit confirmation, progressive disclosure.
+- Accessibility: semantic regions, keyboard parity, visible focus, 44px minimum targets, readable contrast, text or shape status cues, reduced-motion support.
+- Responsive: fluid spacing, priority-based reduction, stacked controls below medium width, single-column fallback, persistent primary action visibility.
 
-SELECTED DOMAIN RATIONALE: Planning workspace offers the broadest reusable foundation for hierarchy, filtering, timelines, status, responsive density, progressive disclosure, and reversible actions.
-CYCLE LOCK: Lock the selected domain, visual DNA, interaction model, accessibility baseline, and responsive rules for the 2026-11-07 cycle.
-FALLBACK RULE: If planning requirements become overly specialized, use Resource catalog while preserving the locked visual, interaction, accessibility, and responsive principles.
+Candidate product domains:
+1. Date planning: Organizes dates, ranges, milestones, and related states across calendar, list, and timeline views.
+2. Resource allocation: Shows capacity, quantities, and distribution across periods and categories.
+3. Status monitoring: Summarizes conditions, trends, exceptions, and resolution states.
+4. Configuration workspace: Structures settings, rules, validation, and previews in progressive sections.
+5. Document review: Presents content, annotations, comparison states, and review progress.
+6. Inventory overview: Displays categorized items, quantities, availability, and change history.
+
+Weighted scoring matrix:
+Weights: clarity 25, reusability 20, responsive fit 20, accessibility 20, visual risk control 15.
+- Date planning: 5/5/5/5/4 = 96
+- Resource allocation: 4/4/4/4/4 = 80
+- Status monitoring: 5/4/5/5/5 = 96
+- Configuration workspace: 4/5/4/4/4 = 84
+- Document review: 4/4/4/5/4 = 82
+- Inventory overview: 4/4/4/4/4 = 80
+
+Selected domain rationale:
+Date planning provides strong hierarchy, multiple responsive representations, accessible state communication, and broad reusable component coverage without specialized assumptions.
+
+Cycle lock:
+Lock the selected domain, neutral palette, type scale, spacing rhythm, responsive rules, interaction vocabulary, and accessibility baseline.
+
+Fallback rule:
+If date planning becomes structurally overloaded, switch to status monitoring while preserving the locked visual, interactional, accessibility, and responsive DNA.
