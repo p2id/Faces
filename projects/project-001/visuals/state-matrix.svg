@@ -1,15 +1,15 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 390" role="img" aria-label="Component state matrix">
-<title>Component state matrix</title>
-<rect width="960" height="390" fill="#fff"/>
-<g font-family="Arial,sans-serif" font-size="14" fill="#17202a">
-<rect x="24" y="24" width="912" height="48" fill="#e9edf2"/>
-<g stroke="#d7dce3" fill="none"><rect x="24" y="72" width="912" height="264"/><path d="M200 24v312M360 24v312M520 24v312M680 24v312M24 120h912M24 168h912M24 216h912M24 264h912M24 312h912"/></g>
-<text x="44" y="54">Component</text><text x="220" y="54">Default</text><text x="380" y="54">Focus</text><text x="540" y="54">Disabled</text><text x="700" y="54">Error / Empty</text>
-<text x="44" y="102">Button</text><text x="220" y="102">Ready</text><text x="380" y="102">Visible ring</text><text x="540" y="102">Muted</text><text x="700" y="102">Inline message</text>
-<text x="44" y="150">Field</text><text x="220" y="150">Blank / value</text><text x="380" y="150">2px outline</text><text x="540" y="150">Read-only</text><text x="700" y="150">Required hint</text>
-<text x="44" y="198">Card</text><text x="220" y="198">Neutral</text><text x="380" y="198">Raised</text><text x="540" y="198">Unavailable</text><text x="700" y="198">No content</text>
-<text x="44" y="246">Navigation</text><text x="220" y="246">Inactive</text><text x="380" y="246">Keyboard focus</text><text x="540" y="246">Unavailable</text><text x="700" y="246">Current location</text>
-<text x="44" y="294">Dialog</text><text x="220" y="294">Closed</text><text x="380" y="294">Open focus</text><text x="540" y="294">Blocked</text><text x="700" y="294">Recovery prompt</text>
-</g>
-<text x="24" y="370" font-family="Arial,sans-serif" font-size="12" fill="#536170">Coverage: focus, unavailable, validation, empty, success, and recovery states.</text>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 420" role="img" aria-label="Interface state matrix">
+<title>Interface state matrix</title>
+<rect width="920" height="420" fill="#fff"/>
+<g font-family="Arial,sans-serif" font-size="16" fill="#172033"><text x="32" y="36" font-weight="700">Surface</text><text x="250" y="36" font-weight="700">Ready</text><text x="410" y="36" font-weight="700">Loading</text><text x="570" y="36" font-weight="700">Empty</text><text x="730" y="36" font-weight="700">Error</text></g>
+<g stroke="#cbd3df" fill="none"><path d="M24 52H896M24 124H896M24 196H896M24 268H896M24 340H896M24 52V340M232 52V340M392 52V340M552 52V340M712 52V340M896 52V340"/></g>
+<g font-family="Arial,sans-serif" font-size="15" fill="#26344a">
+<text x="40" y="96">Workspace</text><text x="40" y="168">Search</text><text x="40" y="240">Form</text><text x="40" y="312">Notice</text>
+<text x="250" y="96">Content and actions</text><text x="410" y="96">Skeleton blocks</text><text x="570" y="96">Guidance and action</text><text x="730" y="96">Recovery and retry</text>
+<text x="250" y="168">Results and count</text><text x="410" y="168">Progressive rows</text><text x="570" y="168">Query guidance</text><text x="730" y="168">Clear cause</text>
+<text x="250" y="240">Values and submit</text><text x="410" y="240">Disabled submit</text><text x="570" y="240">Optional prompt</text><text x="730" y="240">Field recovery</text>
+<text x="250" y="312">Persistent status</text><text x="410" y="312">Deferred status</text><text x="570" y="312">No notice</text><text x="730" y="312">Actionable notice</text>
+</g></svg>
+Rationale: explicit states prevent silent failure and align behavior across surfaces.
+Coverage: ready, loading, empty, error, disabled, focus, validation, reduced motion, and narrow-width variants.
+Repository path intent: /projects/project-001/design/sections/f/state-matrix.svg.
