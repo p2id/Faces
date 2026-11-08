@@ -1,16 +1,16 @@
-Targets:
-- Meet WCAG 2.2 AA.
-- Provide keyboard access and logical tab order for every interactive control.
-- Use semantic landmarks, headings, lists, tables, labels, descriptions, and relationships.
-- Maintain text contrast of at least 4.5:1, large-text contrast of at least 3:1, and non-text contrast of at least 3:1.
-- Provide a visible focus indicator with at least 3:1 contrast.
-- Never communicate status by color alone.
-- Give every control a persistent accessible name; expose required, invalid, selected, expanded, and busy states.
-- Keep touch targets at least 44×44px.
-- Support 200% zoom and reflow at 320 CSS px without loss of content or function.
-- Dialogs trap focus, support Escape when appropriate, restore focus, and provide a named close action.
-- Associate errors with controls and announce status changes at an appropriate urgency.
-- Provide text alternatives for meaningful icons and hide decorative icons.
-- Expose table headers, row relationships, and sort direction.
-- Respect reduced-motion preferences and do not rely on animation.
-- Test keyboard use, screen readers, zoom, high contrast, reduced motion, and touch input.
+# Section D — Accessibility Targets
+
+- Conformance: WCAG 2.2 AA.
+- Contrast: 4.5:1 for normal text, 3:1 for large text and meaningful graphics.
+- Non-text contrast: 3:1 for controls, boundaries, and focus indicators.
+- Keyboard: all functions operable without a pointer; no keyboard traps.
+- Focus: visible, persistent, and not fully obscured.
+- Touch: interactive targets at least 44×44px.
+- Structure: one page title, logical headings, landmarks, labels, and relationships.
+- Reflow: usable at 320px CSS width and 200% zoom without loss of content or function.
+- Motion: honor reduced-motion settings; animation is never the only information cue.
+- Forms: explicit labels, instructions, autocomplete where suitable, inline errors, and error summary when needed.
+- Dynamic updates: announce loading completion, result changes, success, and errors through suitable live regions.
+- Dialogs: expose name and purpose; move focus on open; contain focus; support Escape; restore focus on close.
+- Data: expose headers and row/column relationships; provide an equivalent readable presentation when required.
+- Content: plain language, sentence case, non-color status cues, predictable controls.
