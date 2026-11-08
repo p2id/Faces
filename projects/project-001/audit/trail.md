@@ -1,9 +1,22 @@
 # Audit trail
-- Project: project-001
-- Date: 2026-11-05
-- Scope: sections E–H and associated representation, documentation, and quality controls.
-- Representation rationale: SVG expresses spatial and responsive structure; Mermaid expresses relationships and transitions; HTML verifies semantic specimens; Markdown records intent, decisions, gates, and gaps.
-- Quality gates: valid source syntax; semantic headings and landmarks; labels; keyboard access; visible focus; AA contrast target; complete default, loading, empty, error, disabled, and complete states; responsive reflow; no clipping; clear and reversible actions.
-- Repository path intent: `/projects/project-001/experience/` contains experience artifacts; `/projects/project-001/docs/` contains rationale, audit, and gap records; `/shared/standards/` contains reusable rules.
-- Writing rules: use concise, neutral, direct, reusable language; state one action per label; avoid ambiguity, unsupported claims, urgency, and decorative placeholder text.
-- Publishing rules: preserve delimiters, date, project id, and filenames; validate SVG/XML, Mermaid, HTML, links, accessibility, and responsive behavior; publish reviewed revisions only; replace stale duplicates.
+
+Project: project-001
+Date: 2026-11-08
+Scope: sections E–H
+Status: prepared
+Artifacts:
+- E: design/sections/e/wireframes.svg
+- F: design/sections/f/state-matrix.svg
+- G: design/sections/g/token-map.mmd and specimens.html
+- H: design/sections/h/responsive.svg and flows.mmd
+Rationale: structure, states, tokens, responsive behavior, flows, and specimens are separated to reduce ambiguity.
+Quality gates:
+- [x] Neutral, reusable, implementation-independent content
+- [x] No backend or service assumptions
+- [x] Empty, loading, validation, and error states represented
+- [x] Accessibility, responsive, and path requirements stated
+- [ ] Final rendering review
+- [ ] Accessibility review with target renderings
+Repository path intent: /projects/project-001/design for artifacts; /projects/project-001/audit for records.
+Writing rules: concise sentence case, action-first controls, no hidden assumptions or decorative claims.
+Publishing rules: use ISO dates, preserve stable paths, append revisions, and publish only after required gates pass.
