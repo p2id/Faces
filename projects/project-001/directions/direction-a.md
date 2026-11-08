@@ -1,6 +1,6 @@
-POSITIONING: Quiet precision; a dependable planning surface optimized for scanning, prioritization, and confident action.
-PALETTE RATIONALE: Layered neutrals establish structure; deep ink supports readability; blue marks primary actions; muted semantic colors communicate state without visual noise.
-TYPE RATIONALE: Legible sans-serif, clear numerals, compact labels, four predictable size levels, and weight-led hierarchy.
-LAYOUT RULES: Persistent navigation, clear header, primary planning surface, contextual detail beside or below, 8-point spacing, aligned columns, compact cards, progressive disclosure.
-MOTION INTENT: Short transitions for filtering, panel changes, reorder feedback, and saved-state confirmation; honor reduced-motion preferences.
-AVOIDED TRAPS: Dashboard clutter, decorative imagery, hidden hover actions, excessive containers, color-only status, and modal-first routine editing.
+Positioning: Calm, structured date planning optimized for rapid orientation and straightforward selection.
+Palette rationale: Warm off-white base, charcoal text, muted blue accent, and soft slate states create focus without urgency.
+Type rationale: Neutral sans-serif, compact display scale, readable body size, tabular numerals, and clear weight contrast.
+Layout rules: Title and primary action first; date navigation above the main surface; calendar or timeline centered; secondary details collapsible; controls stack below medium width.
+Motion intent: Brief fades and positional transitions for view changes, selection confirmation, and expansion; honor reduced motion.
+Avoided traps: Decorative gradients, competing primary actions, hover-only controls, color-only status, persistent animation, tiny targets.
