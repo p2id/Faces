@@ -1,78 +1,108 @@
 color:
-  palette:
-    neutral:
-      "0": "#FFFFFF"
-      "50": "#F8FAFC"
-      "100": "#F1F5F9"
-      "200": "#E2E8F0"
-      "400": "#94A3B8"
-      "600": "#475569"
-      "700": "#334155"
-      "900": "#0F172A"
-    blue: {"600": "#2563EB", "700": "#1D4ED8"}
-    green: {"600": "#16A34A"}
-    amber: {"600": "#D97706"}
-    red: {"600": "#DC2626"}
-  surface:
-    canvas: "{color.palette.neutral.50}"
-    raised: "{color.palette.neutral.0}"
-    sunken: "{color.palette.neutral.100}"
-    inverse: "{color.palette.neutral.900}"
-  text:
-    primary: "{color.palette.neutral.900}"
-    secondary: "{color.palette.neutral.600}"
-    muted: "{color.palette.neutral.400}"
-    inverse: "{color.palette.neutral.0}"
-    link: "{color.palette.blue.700}"
-    on-primary: "{color.palette.neutral.0}"
+  background:
+    canvas: "#ffffff"
+    surface: "#f7f8fa"
+    raised: "#ffffff"
+    inverse: "#17202a"
+  content:
+    primary: "#17202a"
+    secondary: "#52606d"
+    muted: "#7b8794"
+    inverse: "#ffffff"
+    link: "#185abc"
   border:
-    default: "{color.palette.neutral.200}"
-    strong: "{color.palette.neutral.400}"
-    focus: "{color.palette.blue.600}"
-    error: "{color.palette.red.600}"
+    default: "#d9e2ec"
+    strong: "#9fb3c8"
+    focus: "#185abc"
+  status:
+    info: "#185abc"
+    success: "#16794c"
+    warning: "#9a6700"
+    error: "#b42318"
   action:
-    primary: "{color.palette.blue.600}"
-    primary-hover: "{color.palette.blue.700}"
-    secondary: "{color.palette.neutral.0}"
-    danger: "{color.palette.red.600}"
-  state:
-    success: "{color.palette.green.600}"
-    warning: "{color.palette.amber.600}"
-    error: "{color.palette.red.600}"
-    info: "{color.palette.blue.600}"
-    selected-surface: "#EFF6FF"
+    primary: "#185abc"
+    primaryHover: "#124a96"
+    danger: "#b42318"
 typography:
-  font-family: {"sans": "Inter, system-ui, sans-serif", "mono": "ui-monospace, SFMono-Regular, monospace"}
-  size: {"xs": "0.75rem", "sm": "0.875rem", "md": "1rem", "lg": "1.125rem", "xl": "1.5rem", "2xl": "2rem"}
-  weight: {"regular": 400, "medium": 500, "semibold": 600, "bold": 700}
-  line-height: {"tight": 1.2, "normal": 1.5, "relaxed": 1.7}
-spacing: {"1": "0.25rem", "2": "0.5rem", "3": "0.75rem", "4": "1rem", "5": "1.25rem", "6": "1.5rem", "8": "2rem", "10": "2.5rem", "12": "3rem"}
-radius: {"sm": "0.25rem", "md": "0.5rem", "lg": "0.75rem", "pill": "999px"}
-border: {"thin": "1px", "thick": "2px"}
+  fontFamily:
+    sans: "system-ui, sans-serif"
+    mono: "ui-monospace, monospace"
+  size:
+    xs: "0.75rem"
+    sm: "0.875rem"
+    md: "1rem"
+    lg: "1.25rem"
+    xl: "1.5rem"
+    display: "2rem"
+  weight:
+    regular: 400
+    medium: 500
+    semibold: 600
+    bold: 700
+  lineHeight:
+    tight: 1.2
+    normal: 1.5
+    relaxed: 1.7
+spacing:
+  "0": "0"
+  "1": "0.25rem"
+  "2": "0.5rem"
+  "3": "0.75rem"
+  "4": "1rem"
+  "6": "1.5rem"
+  "8": "2rem"
+  "12": "3rem"
+radius:
+  none: "0"
+  sm: "0.25rem"
+  md: "0.5rem"
+  lg: "0.75rem"
+  pill: "999px"
+border:
+  thin: "1px"
+  thick: "2px"
+  style: solid
 shadow:
-  none: "none"
-  sm: "0 1px 2px rgba(15,23,42,0.08)"
-  md: "0 4px 12px rgba(15,23,42,0.12)"
-  lg: "0 12px 32px rgba(15,23,42,0.16)"
-opacity: {"disabled": 0.5, "muted": 0.7, "overlay": 0.48}
+  none: none
+  sm: "0 1px 2px rgb(23 32 42 / 0.08)"
+  md: "0 4px 12px rgb(23 32 42 / 0.12)"
+opacity:
+  disabled: 0.5
+  muted: 0.72
+  overlay: 0.6
 motion:
-  duration: {"fast": "150ms", "normal": "200ms", "slow": "250ms"}
-  easing: {"standard": "cubic-bezier(0.2,0,0,1)"}
+  duration:
+    fast: "120ms"
+    base: "200ms"
+    slow: "320ms"
+  easing:
+    standard: "cubic-bezier(0.2, 0, 0, 1)"
+    emphasized: "cubic-bezier(0.2, 0, 0, 0.2)"
   reduced: "0ms"
 layout:
-  content-max: "1200px"
-  text-max: "720px"
-  page-gutter-compact: "{spacing.4}"
-  page-gutter-expanded: "{spacing.8}"
-  nav-width: "240px"
-  panel-width: "400px"
-size: {"control-sm": "32px", "control-md": "40px", "control-lg": "48px", "target-min": "44px", "icon-sm": "16px", "icon-md": "20px", "icon-lg": "24px"}
-z-index: {"base": 0, "sticky": 10, "dropdown": 20, "toast": 30, "dialog": 40}
+  contentMax: "80rem"
+  textMax: "42rem"
+  gutterSmall: "$spacing.4"
+  gutterMedium: "$spacing.6"
+  gutterLarge: "$spacing.8"
+  gridGap: "$spacing.4"
+size:
+  controlHeight: "2.75rem"
+  icon: "1.25rem"
+  touchTarget: "2.75rem"
+  sidebar: "15rem"
+zIndex:
+  base: 0
+  sticky: 10
+  dropdown: 20
+  overlay: 30
+  modal: 40
+  toast: 50
 state:
-  focus-ring: "0 0 0 3px rgba(37,99,235,0.32)"
-  disabled-opacity: "{opacity.disabled}"
-  hover-overlay: "rgba(15,23,42,0.04)"
-  pressed-overlay: "rgba(15,23,42,0.08)"
-  selected-border: "{color.palette.blue.600}"
-  error-border: "{color.palette.red.600}"
-  loading-opacity: "{opacity.muted}"
+  focusRing: "0 0 0 3px rgb(24 90 188 / 0.3)"
+  disabledOpacity: "$opacity.disabled"
+  hoverTransition: "all $motion.duration.fast $motion.easing.standard"
+  loadingOpacity: "$opacity.muted"
+  selectedBackground: "#eaf2ff"
+  errorBorder: "$color.status.error"
+  successBorder: "$color.status.success"
