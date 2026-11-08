@@ -1,12 +1,12 @@
-<!doctype html>
-<html lang="en">
-<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Generic UI specimens</title></head>
-<body>
-<main>
-<h1>Product surface</h1>
-<nav aria-label="Primary"><a href="#overview">Overview</a> <a href="#items">Items</a> <a href="#insights">Insights</a></nav>
-<section id="overview" aria-labelledby="overview-title"><h2 id="overview-title">Overview</h2><p>Review current information and choose a next step.</p><button type="button">Start action</button></section>
-<section id="items" aria-labelledby="items-title"><h2 id="items-title">Items</h2><label for="query">Filter items</label><input id="query" type="search"><p role="status">No items match the current filter.</p></section>
-<aside aria-label="Feedback"><strong>Complete</strong><p>The action finished successfully.</p><button type="button">Continue</button></aside>
-</main>
-</body></html>
+<section aria-label="Component specimens">
+<h1>Workspace</h1>
+<p>Review available content and choose a next action.</p>
+<form><label for="query">Search</label><input id="query" name="query" type="search" placeholder="Search content"><button type="submit">Search</button></form>
+<div role="status" aria-live="polite">Ready</div>
+<section aria-labelledby="summary-title"><h2 id="summary-title">Summary</h2><p>No content is available yet.</p><button type="button">Create content</button></section>
+<aside role="note">Use clear terms to refine the result.</aside>
+</section>
+Coverage: semantic landmarks, labels, keyboard access, visible status, empty state, action hierarchy, and neutral copy.
+Rationale: semantic HTML demonstrates accessible structure without coupling to a production implementation.
+Repository path intent: /projects/project-001/design/sections/g/specimens.html.
+Publishing rule: verify semantics, focus order, contrast, wrapping, and narrow-width rendering before release.
