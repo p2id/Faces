@@ -1,17 +1,15 @@
-# Section D — Performance Budgets
-
-- Largest Contentful Paint: ≤2.5s.
+Budgets:
+- Initial HTML: ≤100KB compressed.
+- Critical CSS: ≤30KB compressed.
+- Initial-route JavaScript: ≤170KB compressed.
+- Initial transfer: ≤500KB compressed, excluding requested media.
+- Largest Contentful Paint: ≤2.5s on a mid-tier mobile connection.
 - First Contentful Paint: ≤1.8s.
-- Interaction to Next Paint: ≤200ms.
+- Interaction to Next Paint: ≤200ms for common interactions.
 - Cumulative Layout Shift: ≤0.1.
-- Initial meaningful shell: ≤1s.
-- JavaScript per initial route: ≤170KB compressed.
-- CSS per initial route: ≤50KB compressed.
-- Fonts: maximum 2 families, 4 files, 120KB compressed total.
-- Primary images: ≤200KB each; use responsive sources and lazy loading below the fold.
-- Initial requests: ≤50, excluding required platform requests.
-- Long tasks: no initial main-thread task above 200ms.
-- Lists: virtualize collections above 100 visible records.
-- Search: debounce input by 200ms.
-- Loading: reserve media space and preserve scroll position during updates.
-- Monitoring: measure web vitals at all defined breakpoints.
+- Initial requests: ≤50, excluding optional integrations.
+- Fonts: at most two families and four weights.
+- Images: responsive, compressed, lazy-loaded below the fold.
+- Async content: reserve dimensions and provide localized loading and error states.
+- Long collections: use pagination or virtualization.
+- Test xs and md layouts with populated, empty, loading, and error content.
