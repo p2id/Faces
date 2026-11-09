@@ -1,15 +1,22 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 420" role="img" aria-label="Interface state matrix">
-<title>Interface state matrix</title>
-<rect width="920" height="420" fill="#fff"/>
-<g font-family="Arial,sans-serif" font-size="16" fill="#172033"><text x="32" y="36" font-weight="700">Surface</text><text x="250" y="36" font-weight="700">Ready</text><text x="410" y="36" font-weight="700">Loading</text><text x="570" y="36" font-weight="700">Empty</text><text x="730" y="36" font-weight="700">Error</text></g>
-<g stroke="#cbd3df" fill="none"><path d="M24 52H896M24 124H896M24 196H896M24 268H896M24 340H896M24 52V340M232 52V340M392 52V340M552 52V340M712 52V340M896 52V340"/></g>
-<g font-family="Arial,sans-serif" font-size="15" fill="#26344a">
-<text x="40" y="96">Workspace</text><text x="40" y="168">Search</text><text x="40" y="240">Form</text><text x="40" y="312">Notice</text>
-<text x="250" y="96">Content and actions</text><text x="410" y="96">Skeleton blocks</text><text x="570" y="96">Guidance and action</text><text x="730" y="96">Recovery and retry</text>
-<text x="250" y="168">Results and count</text><text x="410" y="168">Progressive rows</text><text x="570" y="168">Query guidance</text><text x="730" y="168">Clear cause</text>
-<text x="250" y="240">Values and submit</text><text x="410" y="240">Disabled submit</text><text x="570" y="240">Optional prompt</text><text x="730" y="240">Field recovery</text>
-<text x="250" y="312">Persistent status</text><text x="410" y="312">Deferred status</text><text x="570" y="312">No notice</text><text x="730" y="312">Actionable notice</text>
-</g></svg>
-Rationale: explicit states prevent silent failure and align behavior across surfaces.
-Coverage: ready, loading, empty, error, disabled, focus, validation, reduced motion, and narrow-width variants.
-Repository path intent: /projects/project-001/design/sections/f/state-matrix.svg.
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 390" role="img" aria-labelledby="t d">
+<title id="t">Generic interface state matrix</title>
+<desc id="d">Overview of ready, loading, empty, error, and disabled states.</desc>
+<rect width="900" height="390" fill="#f7f8fa"/>
+<rect x="24" y="24" width="852" height="48" fill="#17202a"/>
+<g font-family="sans-serif" font-size="14" fill="#fff">
+<text x="48" y="54">Surface</text><text x="220" y="54">Ready</text><text x="390" y="54">Loading</text><text x="560" y="54">Empty/Error</text><text x="735" y="54">Disabled</text>
+</g>
+<g fill="#fff" stroke="#c8d1da">
+<rect x="24" y="72" width="852" height="56"/><rect x="24" y="128" width="852" height="56"/><rect x="24" y="184" width="852" height="56"/><rect x="24" y="240" width="852" height="56"/><rect x="24" y="296" width="852" height="56"/>
+</g>
+<g font-family="sans-serif" font-size="13" fill="#263746">
+<text x="48" y="106">Overview</text><text x="220" y="106">Content</text><text x="390" y="106">Reserved geometry</text><text x="560" y="106">Explain state</text><text x="735" y="106">Muted action</text>
+<text x="48" y="162">Collection</text><text x="220" y="162">Rows and controls</text><text x="390" y="162">Stable row space</text><text x="560" y="162">Reset or retry</text><text x="735" y="162">Reason available</text>
+<text x="48" y="218">Detail</text><text x="220" y="218">Hierarchy</text><text x="390" y="218">Skeleton blocks</text><text x="560" y="218">Return path</text><text x="735" y="218">Unavailable</text>
+<text x="48" y="274">Empty</text><text x="220" y="274">None</text><text x="390" y="274">None</text><text x="560" y="274">Add or reset</text><text x="735" y="274">None</text>
+<text x="48" y="330">Error</text><text x="220" y="330">None</text><text x="390" y="330">None</text><text x="560" y="330">Retry or reset</text><text x="735" y="330">None</text>
+</g>
+</svg>
+Rationale: The matrix defines predictable behavior for each principal surface without implementation coupling.
+Quality gates: every state is visible; recovery is bounded; disabled status is not color-only; loading preserves geometry; copy is concise.
+Repository intent: store at /projects/project-001/design/states/.
