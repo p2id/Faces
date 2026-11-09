@@ -1,41 +1,43 @@
-# Section D — Shared Anatomy and Behavior
+Shared anatomy:
+- Layout: shell, container, region, stack, grid, divider.
+- Content: eyebrow, heading, description, label, value, metadata, helper text.
+- Controls: button, field, select, checkbox, tabs, pagination.
+- Feedback: status text, recovery action, progress indicator.
+- Navigation: skip link, breadcrumb, primary and contextual navigation.
 
-## Page Shell
-- Anatomy: navigation, main landmark, context header, content region, feedback region, footer.
-- Variants: persistent navigation, collapsed navigation, compact mobile.
-- States: loading, ready, degraded, offline, error.
-- Usage: keep title, navigation, and action placement consistent.
-- Anti-patterns: competing page titles, hidden primary action, layout shift during loading.
-- Accessibility: landmarks, skip link, heading order, logical focus order.
+Variants:
+- Density: comfortable, compact.
+- Emphasis: default, highlighted, critical.
+- Layout: single-column, split-column, table, card-list.
+- Interaction: static, interactive, selectable, expandable.
+- Width: fluid, constrained, full-bleed.
 
-## Control Bar
-- Anatomy: search, filters, sort, view control, reset action.
-- Variants: inline, wrapped, stacked, compact.
-- States: idle, active, loading, invalid, disabled.
-- Usage: place before results; expose active criteria and reset.
-- Anti-patterns: hidden active filters, unlabeled icons, silent result changes.
-- Accessibility: grouped controls, explicit labels, keyboard access, announced result updates.
+States:
+- Availability: loading, ready, empty, unavailable, error.
+- Interaction: hover, focused, pressed, selected, expanded, collapsed, disabled.
+- Validation: pristine, invalid, submitting, success.
+- Communication: info, success, warning, danger.
 
-## Results Region
-- Anatomy: count, result collection, pagination or load control, empty/error state.
-- Variants: cards, rows, dense data list.
-- States: loading, populated, no-results, filtered-empty, error, offline.
-- Usage: preserve ordering and selection during updates.
-- Anti-patterns: blank loading screen, unbounded loading, inaccessible virtualized content.
-- Accessibility: collection semantics, stable reading order, announced count changes, keyboard-equivalent actions.
+Usage:
+- Compose each region from one clear heading, purpose, and predictable actions.
+- Use semantic tokens for color, type, spacing, radius, elevation, motion, and state styling.
+- Keep actions adjacent to the content they affect.
+- Preserve structure across loading, populated, empty, and error states.
+- Use progressive disclosure for secondary detail.
 
-## Detail Region
-- Anatomy: title, metadata, summary, content sections, action group, close or back control.
-- Variants: inline panel, drawer, full-screen mobile panel.
-- States: closed, opening, open, loading, error, saving, success, closing.
-- Usage: retain context and provide a clear return path.
-- Anti-patterns: lost context, detached actions, adjacent destructive and primary actions without separation.
-- Accessibility: heading on open, focus management, labeled close/back action, status announcements, zoom support.
+Anti-patterns:
+- Do not use color, animation, iconography, or position as the only carrier of meaning.
+- Do not mix interaction models for equivalent controls.
+- Do not hide essential actions in inaccessible overflow menus.
+- Do not use excessive elevation, all-caps body copy, unexplained abbreviations, or placeholder-only labels.
+- Do not change control position when state changes.
+- Do not imply unsupported completion, status, urgency, or availability.
 
-## Empty and Error Feedback
-- Anatomy: title, explanation, next action, optional secondary action.
-- Variants: no-content, no-results, recoverable-error, blocking-error, offline.
-- States: visible, retrying, resolved.
-- Usage: explain condition and provide a next step.
-- Anti-patterns: blame-oriented language, generic error without recovery, empty state without action.
-- Accessibility: text alternatives to visual cues, sufficient contrast, keyboard access, live announcement.
+Accessibility:
+- Use semantic HTML and explicit accessible names.
+- Maintain WCAG 2.2 AA contrast and visible keyboard focus.
+- Provide keyboard equivalents for pointer actions.
+- Support zoom, reflow, reduced motion, and 44×44px touch targets.
+- Announce validation, loading completion, selection, and errors without stealing focus.
+- Relate headings, landmarks, tables, dialogs, and form descriptions programmatically.
+- Test default, focused, invalid, loading, empty, and error states.
