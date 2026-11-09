@@ -1,6 +1,6 @@
-Positioning: Calm, structured date planning optimized for rapid orientation and straightforward selection.
-Palette rationale: Warm off-white base, charcoal text, muted blue accent, and soft slate states create focus without urgency.
-Type rationale: Neutral sans-serif, compact display scale, readable body size, tabular numerals, and clear weight contrast.
-Layout rules: Title and primary action first; date navigation above the main surface; calendar or timeline centered; secondary details collapsible; controls stack below medium width.
-Motion intent: Brief fades and positional transitions for view changes, selection confirmation, and expansion; honor reduced motion.
-Avoided traps: Decorative gradients, competing primary actions, hover-only controls, color-only status, persistent animation, tiny targets.
+Positioning: Quiet precision for dependable planning and rapid status recognition.
+Palette rationale: Warm-neutral surfaces, cool dark text, muted blue accent, and restrained semantic colors create calm hierarchy.
+Type rationale: Neutral sans-serif, strong x-height, tabular numerals, and compact readable scale support time-based scanning.
+Layout rules: Two-level shell; summary strip above the schedule; stable filter row; adjacent detail panel on wide layouts; stacked detail below content on narrow layouts; one dominant action per view.
+Motion intent: Brief opacity and position transitions for panel changes; no decorative movement; honor reduced-motion preferences.
+Avoided traps: Overloaded grids, color-only availability, hidden conflicts, excessive badges, competing actions, and animated rearrangement.
