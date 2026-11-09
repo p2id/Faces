@@ -1,16 +1,19 @@
-# Section C — Responsive Rules
+Breakpoints:
+- xs: 0–479px
+- sm: 480–767px
+- md: 768–1023px
+- lg: 1024–1279px
+- xl: 1280px and above
 
-## Breakpoints
-- Small: 0–599px.
-- Medium: 600–1023px.
-- Large: 1024–1439px.
-- Wide: 1440px and above.
-
-## Rules
-- Small: single column; collapsed navigation; stacked controls; full-screen detail; 16px side padding.
-- Medium: optional two-column results/detail layout; wrapped controls; 24px side padding.
-- Large: persistent navigation; grid-based results/detail layout; inline controls; 32px side padding.
-- Wide: content max-width 1280px; increase whitespace without enlarging controls; preserve readable line length.
-- All sizes: minimum 44×44px target; logical reading order; no unnecessary horizontal scrolling; support portrait and landscape.
-- Reflow: usable at 320px width and 200% zoom.
-- Dense data: permit horizontal scrolling only within an explicitly labeled data region.
+Responsive rules:
+- Use a fluid container with 16px minimum inline padding and 1200px maximum width.
+- xs: single column; collapsed navigation; stacked cards; horizontal table scroll or card transformation; full-width primary actions.
+- sm: single column with optional two-column metric grid.
+- md: compact navigation; two- or three-column metrics; two-column forms where labels remain clear.
+- lg: persistent navigation; three- to five-column metrics; optional utility region.
+- xl: increase whitespace without exceeding 72ch body-text measure.
+- Keep interactive targets at least 44×44px at every width.
+- Keep primary actions visible without horizontal scrolling.
+- Wrap essential labels and messages; never truncate meaning.
+- Support 200% zoom and narrow-width reflow.
+- Prefer container-based adaptation over device-specific content forks.
