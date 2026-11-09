@@ -1,42 +1,37 @@
-# Section C — Product Experience Specification
-Date: 2026-11-08
 Project: project-001
+Date: 2026-11-09
+Purpose: Generic, neutral product experience for reviewing structured information and completing lightweight actions.
 
-## Surfaces
-- Overview: summary, controls, results, and primary action.
-- Detail: selected item information, status, metadata, and actions.
-- Preferences: display, notification, and layout settings.
-- Feedback: validation, loading, empty, success, warning, and error messages.
-- Compact: single-column mobile experience.
+Surfaces:
+- Overview: summary metrics, recent activity, primary actions.
+- Collection: searchable, filterable list or table.
+- Detail: title, metadata, content sections, related information.
+- Form: structured entry, validation, save and cancel actions.
+- Settings: grouped preferences with explicit save feedback.
 
-## Sections
-1. Navigation: product label, current location, utility links.
-2. Context header: page title, description, primary action.
-3. Control bar: search, filters, sort, view switch, reset.
-4. Results: count, cards or rows, pagination or load control.
-5. Detail: title, metadata, summary, content, actions.
-6. Feedback: inline messages, banners, dialogs, and notices.
-7. Footer: support, legal, and version information.
+Sections:
+- App shell: navigation, skip link, header, main content, optional utility region.
+- Page header: breadcrumb, title, description, primary and secondary actions.
+- Summary region: three to five metric cards with label, value, trend, and supporting text.
+- Content region: cards, tables, forms, explanatory help.
+- Status region: loading, empty, success, warning, and error communication.
+- Footer region: secondary links and version/date information where applicable.
 
-## Real Content Examples
-- Page title: “Workspace overview”
-- Description: “Review current items and continue a selected task.”
-- Primary action: “Create item”
-- Search placeholder: “Search items”
-- Filters: “Status”, “Category”, “Updated”
-- Sort options: “Recently updated”, “Name”, “Priority”
-- Result count: “24 items”
-- Card: “Quarterly planning”
-- Metadata: “Updated 8 Nov 2026 · 4 sections”
-- Empty message: “No items match these filters.”
-- Error message: “Items could not be loaded. Try again.”
-- Success message: “Item created successfully.”
-- Destructive action: “Delete item”
-- Confirmation: “Delete this item? This action cannot be undone.”
+Real content examples:
+- Title: Overview
+- Description: Review current activity and outstanding items.
+- Metrics: Open items — 24; Completed this period — 86; Average response time — 2h 18m.
+- Table columns: Item, Status, Updated, Category, Action.
+- Table row: Quarterly review; In progress; 09 Nov 2026; Planning; View.
+- Empty message: No items match the selected filters.
+- Validation: Enter a valid date range.
+- Success: Changes saved.
+- Error: This section could not be loaded. Try again.
+- Actions: Create item; Export view; Clear filters.
 
-## Content Rules
+Content rules:
 - Use concise, literal, sentence-case labels.
-- Place validation beside the affected control.
-- Preserve entered values after recoverable errors.
-- Pair each primary action with visible result feedback.
-- Do not communicate meaning through color alone.
+- Pair every status with text; never rely on color alone.
+- Preserve entered values after validation errors.
+- Make destructive actions explicit and reversible where possible.
+- Do not expose implementation details or unsupported claims.
