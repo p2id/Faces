@@ -1,49 +1,31 @@
-Project: project-001 | Date: 2026-11-08
+Project: project-001
+Date: 2026-11-09
 
-Dominant patterns:
-- Clear hierarchy with one primary action per surface.
-- Cards, lists, tables, and timelines for structured scanning.
-- Neutral surfaces, restrained accent color, thin dividers, limited elevation.
-- Progressive disclosure for secondary controls.
-- Explicit labels, visible focus, and status cues beyond color.
+Dominant patterns: Modular cards, structured lists, compact tables, progressive disclosure, persistent primary action, visible status, and complete empty/loading/error states.
+Emerging patterns: Contextual quick actions, inline editing, adaptive density, summary-first layouts, reduced-motion defaults, and reversible changes.
+Deprecated patterns: Unstructured dense dashboards, hidden navigation, decorative gradients, color-only status, auto-advancing motion, and placeholder-only fields.
+Outlier patterns: Spatial canvases, timeline-first navigation, and monochrome interfaces; use only when they materially improve comprehension.
 
-Emerging patterns:
-- Density modes, container-aware layouts, inline validation, contextual empty states, reduced-motion support.
+Visual DNA: Neutral layered surfaces, one functional accent, 8-point spacing rhythm, moderate corner radius, thin borders, restrained icons, and high text contrast.
+Interactional DNA: One dominant action per view, predictable navigation, reversible operations, inline validation, visible state feedback, and complete keyboard operation.
+Accessibility DNA: Semantic hierarchy, minimum 4.5:1 normal-text contrast, 3:1 large-text and control-boundary contrast, visible focus, minimum 44px targets, non-color status cues, labels independent of placeholders, and reduced-motion support.
+Responsive DNA: Content-first stacking, fluid columns, density reduction before truncation, persistent critical actions, labeled-row transformation for tables, and no horizontal scrolling for primary tasks.
 
-Deprecated patterns:
-- Decorative gradients, competing primary actions, hover-only controls, auto-advancing content, persistent motion, color-only status.
+Candidate domains:
+- Scheduling: Organizes time-based items, availability, conflicts, and reminders.
+- Resource planning: Coordinates capacity, allocation, dependencies, and priorities.
+- Knowledge organization: Structures reference material through collections, search, filters, and details.
+- Progress tracking: Shows milestones, status, trends, blockers, and completion history.
+- Content review: Supports inspection, annotation, approval, comparison, and revision states.
 
-Outlier patterns:
-- Monochrome status systems, split-pane context preservation, timeline-table hybrids, compact controls with generous touch targets.
+Weighted scoring matrix; scale 1–5. Weights: clarity 20%, repeatability 25%, accessibility 20%, responsive fit 20%, extensibility 15%.
+Domain                  Clarity  Repeatability  Accessibility  Responsive  Extensibility  Score
+Scheduling               4        5               4               5           4              4.45
+Knowledge organization   4        4               4               4           5              4.15
+Progress tracking        4        4               4               4           4              4.00
+Resource planning        4        4               3               4           4              3.80
+Content review           3        4               4               3           4              3.60
 
-Extracted DNA:
-- Visual: soft-neutral base, high-contrast text, restrained accent, consistent radius, modest elevation.
-- Interactional: predictable hierarchy, direct selection, reversible changes, explicit confirmation, progressive disclosure.
-- Accessibility: semantic regions, keyboard parity, visible focus, 44px minimum targets, readable contrast, text or shape status cues, reduced-motion support.
-- Responsive: fluid spacing, priority-based reduction, stacked controls below medium width, single-column fallback, persistent primary action visibility.
-
-Candidate product domains:
-1. Date planning: Organizes dates, ranges, milestones, and related states across calendar, list, and timeline views.
-2. Resource allocation: Shows capacity, quantities, and distribution across periods and categories.
-3. Status monitoring: Summarizes conditions, trends, exceptions, and resolution states.
-4. Configuration workspace: Structures settings, rules, validation, and previews in progressive sections.
-5. Document review: Presents content, annotations, comparison states, and review progress.
-6. Inventory overview: Displays categorized items, quantities, availability, and change history.
-
-Weighted scoring matrix:
-Weights: clarity 25, reusability 20, responsive fit 20, accessibility 20, visual risk control 15.
-- Date planning: 5/5/5/5/4 = 96
-- Resource allocation: 4/4/4/4/4 = 80
-- Status monitoring: 5/4/5/5/5 = 96
-- Configuration workspace: 4/5/4/4/4 = 84
-- Document review: 4/4/4/5/4 = 82
-- Inventory overview: 4/4/4/4/4 = 80
-
-Selected domain rationale:
-Date planning provides strong hierarchy, multiple responsive representations, accessible state communication, and broad reusable component coverage without specialized assumptions.
-
-Cycle lock:
-Lock the selected domain, neutral palette, type scale, spacing rhythm, responsive rules, interaction vocabulary, and accessibility baseline.
-
-Fallback rule:
-If date planning becomes structurally overloaded, switch to status monitoring while preserving the locked visual, interactional, accessibility, and responsive DNA.
+Selected domain rationale: Scheduling most effectively tests hierarchy, recurring actions, state visibility, conflict handling, responsive transformation, and accessible time-based presentation.
+Cycle lock: Lock Scheduling and the extracted DNA for this cycle; evaluate all directions against clarity, accessibility, responsive fit, and extensibility.
+Fallback rule: If scheduling density or responsive complexity reduces comprehension, switch to Knowledge organization while retaining the locked DNA.
