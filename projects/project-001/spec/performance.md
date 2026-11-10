@@ -1,15 +1,15 @@
 Budgets:
-- Initial HTML: ≤100KB compressed.
-- Critical CSS: ≤30KB compressed.
-- Initial-route JavaScript: ≤170KB compressed.
-- Initial transfer: ≤500KB compressed, excluding requested media.
-- Largest Contentful Paint: ≤2.5s on a mid-tier mobile connection.
-- First Contentful Paint: ≤1.8s.
-- Interaction to Next Paint: ≤200ms for common interactions.
-- Cumulative Layout Shift: ≤0.1.
-- Initial requests: ≤50, excluding optional integrations.
-- Fonts: at most two families and four weights.
-- Images: responsive, compressed, lazy-loaded below the fold.
-- Async content: reserve dimensions and provide localized loading and error states.
-- Long collections: use pagination or virtualization.
-- Test xs and md layouts with populated, empty, loading, and error content.
+- Initial route JavaScript: ≤170KB compressed.
+- Initial route CSS: ≤45KB compressed.
+- Critical fonts: ≤100KB; prefer system fonts.
+- LCP: ≤2.5s on representative mid-tier mobile 4G.
+- FCP: ≤1.8s.
+- INP: ≤200ms for common actions.
+- CLS: ≤0.10.
+- Ready-to-interact: ≤3.5s on mid-tier mobile.
+- Initial image payload: ≤150KB; omit nonessential imagery.
+- Above-fold requests: ≤20; defer noncritical resources.
+- Shell and skeleton: visible within 500ms with reserved dimensions.
+- Lists: virtualize above 100 items; paginate or incrementally reveal larger sets.
+- Input response: under 100ms; avoid unnecessary rerenders.
+- Empty, error, and offline states work without extra assets.
