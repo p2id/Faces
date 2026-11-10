@@ -1,15 +1,13 @@
 Targets:
-- Meet WCAG 2.2 AA for all supported surfaces.
-- Provide logical keyboard order, complete keyboard operation, no keyboard traps, and visible focus with at least 3:1 contrast.
-- Use one page-level heading, ordered heading hierarchy, and landmarks for navigation, main, complementary, and status regions.
-- Give every control a programmatic name; label icon-only controls.
-- Maintain text contrast of at least 4.5:1 for normal text and 3:1 for large text.
-- Maintain at least 3:1 contrast for meaningful non-text controls and indicators.
-- Communicate loading, errors, completion, and selection with text, using polite announcements for non-blocking changes.
-- Associate labels, hints, required indicators, and errors programmatically.
-- Provide table captions or accessible names, header associations, and sort state.
-- Label dialogs, move focus into them, constrain focus, and restore focus on close.
-- Respect prefers-reduced-motion; never make meaning depend on animation.
-- Preserve content and operation at 200% zoom and narrow reflow.
-- Use touch targets of at least 44×44px with adequate separation.
-- Use plain language, sentence case, and descriptive link text.
+- WCAG 2.2 AA.
+- Text contrast: at least 4.5:1 normal, 3:1 large; non-text controls and focus indicators at least 3:1.
+- Keyboard: all controls reachable in logical order; focus indicator is visible, 2px effective area, and at least 3:1 contrast.
+- Touch: interactive targets at least 44×44px with 8px separation.
+- Semantics: native controls preferred; unique accessible names; correct landmarks, headings, roles, values, and expanded/selected states.
+- Dialogs: move focus in on open, trap focus while modal, restore focus on close.
+- Forms: persistent labels, associated hints/errors, field-level recovery text, summary for multi-field errors.
+- Status: announce loading, completion, errors, and progress without unexpected focus movement.
+- Tables/lists: semantic headers, row context, keyboard selection, announced updates.
+- Reflow: support 200% text zoom and 400% reflow without loss of content or action.
+- Motion: honor prefers-reduced-motion; prevent flashing above three flashes per second.
+- Tooltips and hover content have keyboard and touch alternatives; state is never conveyed by color alone.
