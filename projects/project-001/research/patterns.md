@@ -1,31 +1,27 @@
+Date: 2026-11-10
 Project: project-001
-Date: 2026-11-09
-
-Dominant patterns: Modular cards, structured lists, compact tables, progressive disclosure, persistent primary action, visible status, and complete empty/loading/error states.
-Emerging patterns: Contextual quick actions, inline editing, adaptive density, summary-first layouts, reduced-motion defaults, and reversible changes.
-Deprecated patterns: Unstructured dense dashboards, hidden navigation, decorative gradients, color-only status, auto-advancing motion, and placeholder-only fields.
-Outlier patterns: Spatial canvases, timeline-first navigation, and monochrome interfaces; use only when they materially improve comprehension.
-
-Visual DNA: Neutral layered surfaces, one functional accent, 8-point spacing rhythm, moderate corner radius, thin borders, restrained icons, and high text contrast.
-Interactional DNA: One dominant action per view, predictable navigation, reversible operations, inline validation, visible state feedback, and complete keyboard operation.
-Accessibility DNA: Semantic hierarchy, minimum 4.5:1 normal-text contrast, 3:1 large-text and control-boundary contrast, visible focus, minimum 44px targets, non-color status cues, labels independent of placeholders, and reduced-motion support.
-Responsive DNA: Content-first stacking, fluid columns, density reduction before truncation, persistent critical actions, labeled-row transformation for tables, and no horizontal scrolling for primary tasks.
-
+Dominant patterns: neutral surfaces; modular cards; clear hierarchy; progressive disclosure; persistent search and filters; explicit loading, empty, error, and success states.
+Emerging patterns: adaptive density; token-based theming; inline validation; compact command areas; semantic status labels; reduced-motion defaults.
+Deprecated patterns: ornamental gradients; hidden navigation; icon-only actions; modal-heavy flows; low-contrast text; autoplay motion.
+Outlier patterns: asymmetric editorial grids; monochrome dense canvases; edge-to-edge data views; oversized single-action states.
+Visual DNA: restrained accent; 8px spacing rhythm; 10–14px radius; 1px borders; sparse elevation; strong contrast; consistent icon geometry.
+Interaction DNA: direct manipulation; reversible actions; predictable focus order; inline feedback; progressive disclosure; explicit confirmation for consequential changes.
+Accessibility DNA: WCAG AA contrast target; visible focus; semantic labels; 44px minimum touch targets; logical reading order; no color-only meaning; reduced-motion mode.
+Responsive DNA: mobile-first stacking; fluid type and spacing; priority-based collapse; two-column tablet layout; capped desktop measure; persistent primary action.
 Candidate domains:
-- Scheduling: Organizes time-based items, availability, conflicts, and reminders.
-- Resource planning: Coordinates capacity, allocation, dependencies, and priorities.
-- Knowledge organization: Structures reference material through collections, search, filters, and details.
-- Progress tracking: Shows milestones, status, trends, blockers, and completion history.
-- Content review: Supports inspection, annotation, approval, comparison, and revision states.
-
-Weighted scoring matrix; scale 1–5. Weights: clarity 20%, repeatability 25%, accessibility 20%, responsive fit 20%, extensibility 15%.
-Domain                  Clarity  Repeatability  Accessibility  Responsive  Extensibility  Score
-Scheduling               4        5               4               5           4              4.45
-Knowledge organization   4        4               4               4           5              4.15
-Progress tracking        4        4               4               4           4              4.00
-Resource planning        4        4               3               4           4              3.80
-Content review           3        4               4               3           4              3.60
-
-Selected domain rationale: Scheduling most effectively tests hierarchy, recurring actions, state visibility, conflict handling, responsive transformation, and accessible time-based presentation.
-Cycle lock: Lock Scheduling and the extracted DNA for this cycle; evaluate all directions against clarity, accessibility, responsive fit, and extensibility.
-Fallback rule: If scheduling density or responsive complexity reduces comprehension, switch to Knowledge organization while retaining the locked DNA.
+1. Planning workspace — organizes tasks, milestones, notes, and status in a structured overview.
+2. Learning library — presents lessons, reference material, progress, and retrieval tools with low cognitive load.
+3. Resource catalog — supports browsing, filtering, comparison, and saved selections across structured items.
+4. Wellness tracker — presents routines, trends, reminders, and reflections without clinical claims.
+5. Finance overview — summarizes budgets, transactions, goals, and alerts with clear status cues.
+6. Travel organizer — combines itinerary segments, reservations, checklists, and contextual details.
+Weighted scoring matrix; weights: clarity 25, extensibility 20, accessibility 20, responsive fit 15, distinctiveness 10, neutrality 10; scores are out of 5:
+Planning workspace: 5,5,5,5,3,5 = 4.7
+Learning library: 5,4,5,4,3,5 = 4.5
+Resource catalog: 4,5,5,5,4,5 = 4.7
+Wellness tracker: 4,4,5,4,3,4 = 4.1
+Finance overview: 5,4,5,4,4,3 = 4.4
+Travel organizer: 4,4,4,4,4,4 = 4.0
+Selected domain: Resource catalog. Rationale: highest balanced score, broad information structure, strong comparison behavior, neutral content model, and reliable adaptation across screen sizes.
+Cycle lock: selected domain, core tokens, accessibility baseline, responsive behavior, and three directions remain fixed for this cycle.
+Fallback rule: if catalog evidence is insufficient, switch to Planning workspace while retaining tokens, accessibility requirements, and responsive rules.
