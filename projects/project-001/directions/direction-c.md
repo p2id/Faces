@@ -1,6 +1,6 @@
-Positioning: Focused execution for completing the next important planning action with minimal friction.
-Palette rationale: High-contrast neutral base, vivid accent reserved for the current action, and semantic colors limited to exceptions and confirmations.
-Type rationale: System-neutral sans-serif, short labels, strong weight contrast, aligned numerals, and compact accessible scale improve focus.
-Layout rules: Single-column task surface; current item and next action remain prominent; secondary content expands inline; fixed actions become inline on narrow layouts.
-Motion intent: Minimal confirmation feedback and subtle state transitions; never alter reading order through motion.
-Avoided traps: Hidden context, irreversible gestures, unclear save state, modal-heavy flows, excessive simplification, and reliance on color or position alone.
+Positioning: High-signal control surface for dense comparison and repeat operations.
+Palette rationale: Light neutral canvas, near-black text, cobalt primary, green confirmation, and red error provide clear status; every color is paired with text or an icon.
+Type rationale: Compact grotesk with strong numeral clarity; 12–16px utility scale; alignment and weight distinguish labels, values, and status.
+Layout rules: Dense desktop grid with pinned key fields; mobile converts rows to labeled stacks; command area remains visible; columns have explicit priority; empty states explain available actions.
+Motion intent: Minimal transition budget; immediate feedback; short optional highlight pulses; no spatial movement for data updates; reduced motion removes pulses.
+Avoided traps: spreadsheet overload, color-only status, tiny hit areas, obstructive sticky elements, ambiguous bulk actions, and irreversible changes without confirmation.
