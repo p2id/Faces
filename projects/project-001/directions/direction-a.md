@@ -1,6 +1,6 @@
-Positioning: Quiet precision for dependable planning and rapid status recognition.
-Palette rationale: Warm-neutral surfaces, cool dark text, muted blue accent, and restrained semantic colors create calm hierarchy.
-Type rationale: Neutral sans-serif, strong x-height, tabular numerals, and compact readable scale support time-based scanning.
-Layout rules: Two-level shell; summary strip above the schedule; stable filter row; adjacent detail panel on wide layouts; stacked detail below content on narrow layouts; one dominant action per view.
-Motion intent: Brief opacity and position transitions for panel changes; no decorative movement; honor reduced-motion preferences.
-Avoided traps: Overloaded grids, color-only availability, hidden conflicts, excessive badges, competing actions, and animated rearrangement.
+Positioning: Quiet utility for fast scanning, comparison, and confident selection.
+Palette rationale: Warm off-white base, charcoal text, slate borders, muted teal accent, and amber status create hierarchy without decorative noise.
+Type rationale: Neutral sans serif with high x-height, three-level hierarchy, restrained weight changes, and tabular numerals where useful.
+Layout rules: 12-column desktop grid; two-column comparison regions; stacked mobile cards; 64–72ch reading measure; discoverable filters; anchored primary action.
+Motion intent: 120–180ms opacity and position transitions; no parallax; preserve context; provide an immediate reduced-motion alternative.
+Avoided traps: ungrouped dense tables, accent overuse, hidden filter state, ambiguous selection, decorative dashboard chrome, and unclear recovery paths.
