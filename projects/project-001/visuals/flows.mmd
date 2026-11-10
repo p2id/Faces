@@ -1,20 +1,14 @@
-flowchart TD
-A[Open workspace]-->B{Content available?}
-B-->|Yes|C[Review summary]
-B-->|No|D[Show empty guidance]
-C-->E{Choose action}
-E-->|Inspect|F[Open detail]
-E-->|Refine|G[Adjust filters]
-E-->|Create|H[Open form]
-G-->C
-H-->I{Input valid?}
-I-->|No|J[Show field guidance]
-I-->|Yes|K[Show confirmation]
-F-->L[Return to workspace]
-J-->H
-K-->L
-Rationale: the primary path is short, reversible, and supported by explicit recovery states.
-Coverage: entry, discovery, refinement, detail, creation, validation, confirmation, cancel, return, empty, and error paths.
-Repository path intent: /projects/project-001/design/sections/h/flows.mmd.
-Writing rule: use verbs, one decision per branch, and visible outcomes only.
-Publishing rule: align node labels with wireframes and state IDs; retire obsolete paths explicitly.
+flowchart LR
+  A[Entry] --> B[Overview]
+  B --> C[Detail]
+  C --> D[Input]
+  D --> E{Validation}
+  E -->|valid| F[Confirmation]
+  E -->|invalid| G[Correction]
+  G --> D
+  F --> H[Completion]
+  B --> I[Empty]
+  B --> J[Loading]
+  C --> K[Unavailable]
+  A --> L[Compact layout]
+  L --> B
