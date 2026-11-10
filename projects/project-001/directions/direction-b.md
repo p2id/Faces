@@ -1,6 +1,6 @@
-Positioning: Flexible overview for comparing time, priority, and workload at a glance.
-Palette rationale: Light neutral canvas, layered panels, charcoal text, green-blue accent, and low-saturation status tones support comparison without alarm.
-Type rationale: Humanist-neutral sans-serif, generous line height, distinct numerals, and clear label-value hierarchy improve scanning.
-Layout rules: Overview-first structure with list, timeline, and detail modes; shared filters persist across modes; secondary metrics collapse before core schedule content.
-Motion intent: Restrained crossfades and progressive disclosure explain mode changes while preserving spatial continuity; disable nonessential motion.
-Avoided traps: Dashboard sprawl, ambiguous modes, persistent narrow-screen side panels, tiny metadata, and decorative charts.
+Positioning: Editorial catalog that makes breadth approachable and navigable.
+Palette rationale: Cool gray foundation, deep ink text, soft blue accent, and pale lavender grouping tone create hierarchy while preserving contrast.
+Type rationale: Sans serif interface text with restrained display serif section titles, generous line height, and clear numeric treatment.
+Layout rules: Featured lead region followed by modular rows; consistent 16px gutters; fixed metadata order; rows become vertical sequences on mobile; filters expose a visible summary.
+Motion intent: 160–220ms section reveals; no continuous animation; preserve scroll position; use immediate state changes when reduced motion is enabled.
+Avoided traps: ambiguous magazine structure, oversized headings, required decorative imagery, hidden metadata, carousel dependence, and weak content prioritization.
