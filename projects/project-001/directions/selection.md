@@ -1,5 +1,5 @@
 Selected direction: Direction A.
-Rationale: Provides the strongest balance of clarity, repeatable planning behavior, responsive transformation, accessible state communication, and reusable visual DNA.
-Supporting influence: Use Direction B’s comparison modes only when they improve schedule comprehension.
-Motion constraint: Retain Direction C’s restrained feedback model.
-Acceptance checks: Clear primary action; readable time values; visible focus; non-color status cues; stable narrow-layout transformation; no decorative motion; complete empty, loading, error, and confirmation states.
+Rationale: strongest balance of neutrality, scanability, accessibility, responsive resilience, and reuse across catalog content types.
+Secondary influence: use Direction B grouping for discovery surfaces and Direction C density rules for comparison views.
+Decision lock: retain Direction A palette structure, type hierarchy, spacing rhythm, focus behavior, and motion constraints for the current cycle.
+Revisit trigger: reconsider only if sustained density, localization, or content-volume requirements reduce clarity under Direction A.
