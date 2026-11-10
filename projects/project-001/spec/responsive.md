@@ -2,18 +2,17 @@ Breakpoints:
 - xs: 0–479px
 - sm: 480–767px
 - md: 768–1023px
-- lg: 1024–1279px
-- xl: 1280px and above
+- lg: 1024–1439px
+- xl: 1440px+
 
-Responsive rules:
-- Use a fluid container with 16px minimum inline padding and 1200px maximum width.
-- xs: single column; collapsed navigation; stacked cards; horizontal table scroll or card transformation; full-width primary actions.
-- sm: single column with optional two-column metric grid.
-- md: compact navigation; two- or three-column metrics; two-column forms where labels remain clear.
-- lg: persistent navigation; three- to five-column metrics; optional utility region.
-- xl: increase whitespace without exceeding 72ch body-text measure.
-- Keep interactive targets at least 44×44px at every width.
-- Keep primary actions visible without horizontal scrolling.
-- Wrap essential labels and messages; never truncate meaning.
-- Support 200% zoom and narrow-width reflow.
-- Prefer container-based adaptation over device-specific content forks.
+Rules:
+- Container max-width 1280px; side padding 16px xs/sm, 24px md, 32px lg/xl.
+- xs: single column, collapsed navigation, stacked cards and controls, result rows instead of table.
+- sm: one-column content, two-column summary where space permits.
+- md: optional two-column detail layout; controls share a row only if each remains at least 160px.
+- lg/xl: three-column summary grid, visible table columns, persistent detail panel with 320px minimum width.
+- Keep 44px touch targets and 8px target gaps at every width.
+- Preserve reading order: heading → controls → results → detail.
+- Avoid horizontal scrolling for primary actions and essential status.
+- Do not reduce body text below 14px; reduce decorative spacing first.
+- Reduced-motion mode removes nonessential transitions and animated progress.
