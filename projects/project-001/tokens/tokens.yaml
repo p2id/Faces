@@ -1,58 +1,58 @@
-meta:
-  project: project-001
-  date: 2026-11-09
-  layer: semantic
 color:
   surface:
-    canvas: "#FFFFFF"
+    default: "#FFFFFF"
     subtle: "#F7F8FA"
     raised: "#FFFFFF"
-    inverse: "#17202A"
+    inverse: "#1F2937"
   content:
-    primary: "#17202A"
-    secondary: "#52606D"
-    muted: "#7B8794"
+    default: "#17202A"
+    muted: "#5B6673"
+    subtle: "#7A8591"
     inverse: "#FFFFFF"
-    link: "#155EEF"
+    disabled: "#9AA3AD"
   border:
-    default: "#D9E2EC"
-    strong: "#9FB3C8"
-    focus: "#155EEF"
-  status:
-    info: "#155EEF"
-    success: "#16794C"
-    warning: "#A15C00"
-    danger: "#C4320A"
-    infoSurface: "#EFF6FF"
-    successSurface: "#ECFDF3"
-    warningSurface: "#FFF7E6"
-    dangerSurface: "#FFF1F0"
+    default: "#D6DCE3"
+    strong: "#AAB4C0"
+    focus: "#2563EB"
+    error: "#C62828"
   action:
-    primary: "#155EEF"
-    primaryHover: "#004EEB"
-    primaryPressed: "#00359E"
-    secondary: "#FFFFFF"
-    danger: "#C4320A"
+    primary: "#2563EB"
+    primaryHover: "#1D4ED8"
+    primaryPressed: "#1E40AF"
+    secondary: "#E8EEF8"
+    quiet: "transparent"
+    disabled: "#E5E7EB"
+  status:
+    info: "#2563EB"
+    success: "#18794E"
+    caution: "#A15C00"
+    error: "#C62828"
+    neutral: "#5B6673"
+  state:
+    hover: "#F1F5F9"
+    selected: "#E8EEF8"
+    disabled: "#F3F4F6"
+    overlay: "rgba(15, 23, 42, 0.48)"
 typography:
   fontFamily:
-    sans: "Inter, system-ui, sans-serif"
-    mono: "ui-monospace, SFMono-Regular, monospace"
+    sans: "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif"
+    mono: "ui-monospace, SFMono-Regular, Menlo, monospace"
   size:
     xs: "0.75rem"
     sm: "0.875rem"
     md: "1rem"
     lg: "1.125rem"
     xl: "1.5rem"
-    display: "2rem"
+    xxl: "2rem"
   lineHeight:
     tight: "1.2"
     normal: "1.5"
-    loose: "1.7"
+    relaxed: "1.7"
   weight:
-    regular: "400"
-    medium: "500"
-    semibold: "600"
-    bold: "700"
+    regular: 400
+    medium: 500
+    semibold: 600
+    bold: 700
 spacing:
   "0": "0"
   "1": "0.25rem"
@@ -64,6 +64,7 @@ spacing:
   "8": "2rem"
   "10": "2.5rem"
   "12": "3rem"
+  "16": "4rem"
 radius:
   none: "0"
   sm: "0.25rem"
@@ -71,50 +72,54 @@ radius:
   lg: "0.75rem"
   pill: "999px"
 border:
-  thin: "1px"
-  thick: "2px"
+  width:
+    none: "0"
+    thin: "1px"
+    thick: "2px"
+  style: solid
 shadow:
   none: "none"
-  sm: "0 1px 2px rgba(23,32,42,0.08)"
-  md: "0 4px 12px rgba(23,32,42,0.12)"
-  lg: "0 12px 28px rgba(23,32,42,0.16)"
+  sm: "0 1px 2px rgba(15, 23, 42, 0.08)"
+  md: "0 4px 12px rgba(15, 23, 42, 0.12)"
+  lg: "0 12px 32px rgba(15, 23, 42, 0.16)"
 opacity:
-  disabled: "0.48"
-  muted: "0.72"
-  overlay: "0.64"
+  disabled: 0.55
+  muted: 0.72
+  overlay: 0.48
 motion:
   duration:
-    fast: "120ms"
-    standard: "200ms"
-    slow: "320ms"
+    fast: "100ms"
+    normal: "180ms"
+    slow: "280ms"
   easing:
-    standard: "cubic-bezier(0.2,0,0,1)"
-    enter: "cubic-bezier(0,0,0.2,1)"
-    exit: "cubic-bezier(0.4,0,1,1)"
+    standard: "cubic-bezier(0.2, 0, 0, 1)"
+    emphasis: "cubic-bezier(0.2, 0, 0, 1)"
   reduced: "0ms"
 layout:
-  contentMax: "75rem"
-  measure: "72ch"
-  pagePadding: "1rem"
-  gridGap: "1.5rem"
-  navWidth: "15rem"
+  contentMax: "80rem"
+  gutterXs: "{spacing.4}"
+  gutterMd: "{spacing.6}"
+  gutterLg: "{spacing.8}"
+  detailMin: "20rem"
+  gridGap: "{spacing.4}"
 size:
   controlHeight: "2.75rem"
   iconSm: "1rem"
   iconMd: "1.25rem"
   iconLg: "1.5rem"
   touchTarget: "2.75rem"
+  headerHeight: "4rem"
 zIndex:
-  base: "0"
-  sticky: "10"
-  dropdown: "20"
-  toast: "30"
-  modal: "40"
+  base: 0
+  sticky: 10
+  dropdown: 20
+  toast: 30
+  modal: 40
+  tooltip: 50
 state:
-  focusRing: "0 0 0 3px rgba(21,94,239,0.32)"
+  focusRing: "0 0 0 3px rgba(37, 99, 235, 0.32)"
   disabledOpacity: "{opacity.disabled}"
-  hoverTransition: "{motion.duration.fast} {motion.easing.standard}"
-  loadingOpacity: "0.64"
-  selectedSurface: "{color.status.infoSurface}"
-  errorBorder: "{color.status.danger}"
-  successBorder: "{color.status.success}"
+  selectedSurface: "{color.state.selected}"
+  hoverSurface: "{color.state.hover}"
+  errorBorder: "{color.border.error}"
+  loadingOpacity: "{opacity.muted}"
