@@ -1,5 +1,7 @@
-Selected direction: Direction A.
-Rationale: strongest balance of neutrality, scanability, accessibility, responsive resilience, and reuse across catalog content types.
-Secondary influence: use Direction B grouping for discovery surfaces and Direction C density rules for comparison views.
-Decision lock: retain Direction A palette structure, type hierarchy, spacing rhythm, focus behavior, and motion constraints for the current cycle.
-Revisit trigger: reconsider only if sustained density, localization, or content-volume requirements reduce clarity under Direction A.
+SELECTED_DIRECTION: Direction A
+RATIONALE
+Direction A best supports the selected analytics domain through clear scan-to-detail hierarchy, strong responsive fallback, broad reuse, and low ambiguity.
+ADAPTATION
+Use Direction A as the base; borrow Direction B comparison behavior for inspection and Direction C compact record treatment for narrow layouts.
+LOCKED_PRINCIPLES
+One dominant task per surface; semantic color discipline; visible status; accessible focus and labels; preserved responsive priority; purposeful motion only.
