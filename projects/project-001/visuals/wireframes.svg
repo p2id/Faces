@@ -1,18 +1,25 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" role="img" aria-labelledby="title desc">
-<title id="title">Generic product experience layouts</title>
-<desc id="desc">Overview, detail, input, feedback, and completion layout structure.</desc>
-<g fill="none" stroke="#263238" stroke-width="2">
-<rect x="24" y="24" width="912" height="492" rx="12" fill="#F7F9FA"/>
-<rect x="48" y="48" width="864" height="56" fill="#E8EEF0"/>
-<rect x="72" y="68" width="180" height="16" fill="#B8C5CA"/>
-<rect x="760" y="64" width="112" height="24" rx="4" fill="#CFD8DC"/>
-<rect x="48" y="128" width="240" height="340" fill="#FFF"/>
-<rect x="312" y="128" width="600" height="96" fill="#FFF"/>
-<rect x="312" y="248" width="288" height="220" fill="#FFF"/>
-<rect x="624" y="248" width="288" height="220" fill="#FFF"/>
-<path d="M72 154h150M72 182h126M72 210h142M336 154h360M336 180h300M336 278h160M336 302h206M648 278h160M648 302h190"/>
-<rect x="336" y="352" width="112" height="32" rx="4" fill="#DCE6E9"/>
-<rect x="648" y="352" width="112" height="32" rx="4" fill="#DCE6E9"/>
-</g>
-<g font-family="sans-serif" font-size="14" fill="#263238"><text x="48" y="500">Overview → detail → input → feedback → completion</text></g>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 560" role="img" aria-label="Generic product surface wireframe">
+<title>Generic product surface</title>
+<rect width="960" height="560" fill="#F7F8FA"/>
+<rect x="24" y="24" width="912" height="64" rx="8" fill="#FFF" stroke="#D9DEE7"/>
+<rect x="48" y="46" width="160" height="20" rx="4" fill="#AEB8C7"/>
+<rect x="744" y="44" width="72" height="28" rx="6" fill="#DDE3EC"/>
+<rect x="832" y="44" width="72" height="28" rx="6" fill="#1F5EFF"/>
+<rect x="24" y="112" width="224" height="420" rx="8" fill="#FFF" stroke="#D9DEE7"/>
+<rect x="48" y="144" width="160" height="16" rx="4" fill="#8995A7"/>
+<rect x="48" y="184" width="144" height="12" rx="4" fill="#D5DAE2"/>
+<rect x="48" y="216" width="144" height="12" rx="4" fill="#D5DAE2"/>
+<rect x="48" y="248" width="144" height="12" rx="4" fill="#D5DAE2"/>
+<rect x="272" y="112" width="664" height="196" rx="8" fill="#FFF" stroke="#D9DEE7"/>
+<rect x="304" y="144" width="280" height="24" rx="4" fill="#8995A7"/>
+<rect x="304" y="184" width="440" height="12" rx="4" fill="#D5DAE2"/>
+<rect x="304" y="208" width="360" height="12" rx="4" fill="#D5DAE2"/>
+<rect x="304" y="248" width="112" height="32" rx="6" fill="#1F5EFF"/>
+<rect x="272" y="332" width="320" height="200" rx="8" fill="#FFF" stroke="#D9DEE7"/>
+<rect x="616" y="332" width="320" height="200" rx="8" fill="#FFF" stroke="#D9DEE7"/>
 </svg>
+Rationale: low-fidelity geometry documents hierarchy, navigation, content grouping, primary action, and feedback regions without product-specific styling.
+Gate coverage: semantic order, focus order, contrast, target size, empty/loading/error placement, and responsive reflow.
+Path intent: repository/e/wireframes/product-shell.svg; retain editable source beside any rendered preview.
+Writing rule: labels must be concise, neutral, action-oriented, and free of implied affiliation.
+Publishing rule: validate SVG structure, inspect at 100% and 200%, and publish only after gate completion.
