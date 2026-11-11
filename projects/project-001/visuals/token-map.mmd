@@ -1,30 +1,17 @@
-mindmap
-  Design tokens
-    Color
-      canvas #F7F9FA
-      surface #FFFFFF
-      ink #263238
-      muted #607D8B
-      accent #2F6F8F
-      critical #B3261E
-    Type
-      body 16/24
-      label 14/20
-      heading 24/32
-    Space
-      xs 4
-      sm 8
-      md 16
-      lg 24
-      xl 32
-    Shape
-      control-radius 4
-      panel-radius 12
-      focus-ring 2px accent
-    Motion
-      duration 150ms
-      easing standard
-    Rules
-      contrast AA minimum
-      status not color-only
-      token names immutable
+graph TD
+A[Foundations] --> B[Color]
+A --> C[Typography]
+A --> D[Spacing]
+A --> E[Shape and elevation]
+B --> F[Semantic roles]
+C --> F
+D --> F
+E --> F
+F --> G[Component tokens]
+G --> H[Surfaces and specimens]
+Rationale: semantic tokens separate reusable intent from specific values and support consistent variation.
+Token groups: color.surface, color.text, color.border, color.action, color.status; type.family, type.scale, type.weight, type.leading; space.1–space.8; radius.sm–radius.lg; elevation.1–elevation.3; motion.fast–motion.standard.
+Gate coverage: contrast AA, scalable text, non-color status cues, spacing consistency, reduced-motion behavior, and documented fallbacks.
+Path intent: repository/f/tokens/token-map.mmd; keep names stable and values neutral.
+Writing rule: descriptions state purpose rather than affiliation or visual personality.
+Publishing rule: record impact, refresh specimens, and complete visual and accessibility checks before release.
