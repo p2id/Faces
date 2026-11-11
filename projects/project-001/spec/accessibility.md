@@ -1,13 +1,15 @@
-Targets:
-- WCAG 2.2 AA.
-- Text contrast: at least 4.5:1 normal, 3:1 large; non-text controls and focus indicators at least 3:1.
-- Keyboard: all controls reachable in logical order; focus indicator is visible, 2px effective area, and at least 3:1 contrast.
-- Touch: interactive targets at least 44×44px with 8px separation.
-- Semantics: native controls preferred; unique accessible names; correct landmarks, headings, roles, values, and expanded/selected states.
-- Dialogs: move focus in on open, trap focus while modal, restore focus on close.
-- Forms: persistent labels, associated hints/errors, field-level recovery text, summary for multi-field errors.
-- Status: announce loading, completion, errors, and progress without unexpected focus movement.
-- Tables/lists: semantic headers, row context, keyboard selection, announced updates.
-- Reflow: support 200% text zoom and 400% reflow without loss of content or action.
-- Motion: honor prefers-reduced-motion; prevent flashing above three flashes per second.
-- Tooltips and hover content have keyboard and touch alternatives; state is never conveyed by color alone.
+# Accessibility Targets
+- Meet WCAG 2.2 AA across all surfaces.
+- Provide keyboard access to every interactive element.
+- Use semantic landmarks, native controls, and one clear page heading.
+- Provide visible focus with a minimum 2px equivalent indicator.
+- Maintain 4.5:1 contrast for normal text, 3:1 for large text and non-text boundaries.
+- Provide accessible names for all controls, including icon-only controls.
+- Associate labels, instructions, required status, and errors programmatically.
+- Announce meaningful loading, result, success, and error changes appropriately.
+- Trap dialog focus, support Escape where appropriate, and restore focus on close.
+- Expose table headers, sort state, selection state, and relationships.
+- Do not use color alone for status; pair color with text or symbols.
+- Support 200% zoom, 320px reflow, high contrast, and reduced motion.
+- Maintain minimum 44×44px touch targets with adequate spacing.
+- Use plain language and actionable error recovery.
