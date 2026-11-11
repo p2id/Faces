@@ -1,20 +1,35 @@
+# Product Experience
+Date: 2026-11-11
 Project: project-001
-Date: 2026-11-10
-Purpose: generic interface for finding, reviewing, filtering, and updating structured information.
+Purpose: generic, neutral, reusable interface for reviewing and managing structured content.
 
-Surfaces:
-- Overview: summary, search, filters, results.
-- Detail: selected item, attributes, related actions.
-- Feedback: loading, empty, error, confirmation, progress.
+## Surfaces
+- Overview: summary, recent activity, status, primary action.
+- Collection: search, filters, sorting, grouped results.
+- Detail: title, attributes, related content, contextual actions.
+- Settings: display, notification, and preference controls.
 
-Sections:
-1. Header: “Workspace”, “Overview”, “Explore”, “Settings”.
-2. Heading: “Overview”; “Review current activity and recent changes.”
-3. Summary: “Open items — 24”; “Due soon — 6”; “Completion — 72%”.
-4. Controls: “Search items”; placeholder “Search by title or status”; “Status: All”; “Apply filters”.
-5. Results: “Recent items”; “Title”, “Status”, “Updated”, “Actions”.
-6. Example row: “Quarterly review”; “In progress”; “10 Nov 2026”; “Open”.
-7. Detail: “Quarterly review”; “In progress”; “Edit”; “Close”.
-8. Feedback: “No items match these filters.”; “Results could not be loaded.”; “Changes saved.”
+## Sections
+- Navigation: product label, section links, active location, utility actions.
+- Header: page title, description, primary action, optional secondary action.
+- Summary: metric cards, status indicators, trend descriptions.
+- Content: cards, lists, tables, forms, or empty states.
+- Feedback: loading, validation, success, warning, and error messages.
+- Footer: supporting links and version-independent information.
 
-Content rules: sentence case, concise labels, explicit verbs, visible status text, no unexplained abbreviations, no fabricated values. Primary path: overview → filter/search → select result → review detail → perform available action.
+## Real Content Examples
+- Title: “Overview”
+- Description: “Review current activity and key changes.”
+- Primary action: “Create item”
+- Search placeholder: “Search items”
+- Filter: “Filter by status”
+- Statuses: “Active”, “Paused”, “Archived”
+- Empty message: “No items match these filters.”
+- Loading message: “Loading content…”
+- Error message: “Content could not be loaded. Try again.”
+- Success message: “Item created successfully.”
+- Fields: “Name”, “Description”, “Status”
+- Validation: “Enter a name to continue.”
+- Table columns: “Name”, “Status”, “Updated”, “Actions”
+- Confirmation: “Remove this item?” / “This action cannot be undone.”
+- Actions: “Cancel”, “Remove”
