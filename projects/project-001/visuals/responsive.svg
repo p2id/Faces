@@ -1,18 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 410" role="img" aria-labelledby="title desc">
-<title id="title">Responsive layout rules</title>
-<desc id="desc">Wide, medium, and compact arrangements preserve hierarchy and context.</desc>
-<g fill="#FFF" stroke="#263238" stroke-width="2">
-<rect x="24" y="44" width="280" height="300" rx="12"/>
-<rect x="340" y="44" width="280" height="300" rx="12"/>
-<rect x="656" y="44" width="280" height="300" rx="12"/>
-</g>
-<g font-family="sans-serif" fill="#263238">
-<text x="42" y="78" font-size="18">Wide ≥1200</text>
-<text x="358" y="78" font-size="18">Medium 768–1199</text>
-<text x="674" y="78" font-size="18">Compact &lt;768</text>
-<g font-size="14">
-<text x="42" y="116">Two content columns</text><text x="42" y="144">Persistent navigation</text><text x="42" y="172">Inline actions</text><text x="42" y="240">Reflow, never crop</text><text x="42" y="268">Target ≥44×44px</text>
-<text x="358" y="116">One primary column</text><text x="358" y="144">Condensed navigation</text><text x="358" y="172">Grouped actions</text><text x="358" y="240">No horizontal scroll</text><text x="358" y="268">Preserve labels</text>
-<text x="674" y="116">Single column</text><text x="674" y="144">Collapsed navigation</text><text x="674" y="172">Full-width actions</text><text x="674" y="240">Priority order retained</text><text x="674" y="268">Context retained</text>
-</g></g>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 360" role="img" aria-label="Responsive layout model">
+<rect width="960" height="360" fill="#F7F8FA"/>
+<g fill="#FFF" stroke="#BFC7D4"><rect x="32" y="56" width="220" height="240" rx="8"/><rect x="280" y="40" width="280" height="256" rx="8"/><rect x="588" y="24" width="340" height="272" rx="8"/></g>
+<g fill="#DDE3EC"><rect x="56" y="80" width="172" height="24" rx="4"/><rect x="304" y="64" width="232" height="24" rx="4"/><rect x="612" y="48" width="292" height="24" rx="4"/></g>
+<g fill="#AEB8C7"><rect x="56" y="128" width="172" height="12" rx="4"/><rect x="304" y="112" width="232" height="12" rx="4"/><rect x="612" y="96" width="292" height="12" rx="4"/></g>
+<g fill="#1F5EFF"><rect x="56" y="248" width="80" height="28" rx="5"/><rect x="304" y="240" width="96" height="28" rx="5"/><rect x="612" y="232" width="112" height="28" rx="5"/></g>
+<g font-family="Arial,sans-serif" font-size="14" fill="#172033"><text x="86" y="328">compact</text><text x="382" y="328">medium</text><text x="720" y="328">wide</text></g>
 </svg>
+Model: compact uses one column; medium permits grouped panels; wide permits persistent navigation and multiple content columns.
+Rationale: behavior is defined by available space and content priority rather than device names.
+Gate coverage: no horizontal scrolling, logical reading order, keyboard access, 44px targets, 200% zoom, orientation changes, and reduced motion.
+Path intent: repository/g/responsive/layout-model.svg; retain breakpoint notes and viewport previews.
+Writing rule: essential labels and status remain available when controls stack, wrap, or truncate.
+Publishing rule: verify compact, medium, wide, zoomed, and orientation variants before release.
