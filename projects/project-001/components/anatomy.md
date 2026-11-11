@@ -1,13 +1,44 @@
-- Shell: header → navigation → main → optional detail → feedback layer.
-- Header: “Workspace”, navigation, page action; stable 64px height.
-- Heading: optional eyebrow, one H1, supporting text, primary action.
-- Controls: visible labels, search, filters, reset, result count; group related fields.
-- Summary card: label, value, supporting status, optional action; clickable only when it contains a clear link or button.
-- Result row: title, status, date, contextual action; title precedes metadata.
-- Detail panel: title, status, attributes, sections, primary/secondary actions, close control.
-- Feedback: inline errors near cause; page errors for route failure; toast for transient outcomes; dialog for decisions.
-- Variants: compact/comfortable density, stacked/split layout, table/card results, light/inverse surface.
-- States: default, hover, focus-visible, selected, loading, empty, error, disabled, submitting, success.
-- Usage: one primary action per region; stable labels; compose in reading order.
-- Anti-patterns: nested scrolling, excessive badges, hover-only actions, placeholder-as-instruction, low-contrast disabled content, irreversible action without confirmation.
-- Accessibility: preserve heading hierarchy and landmarks; maintain keyboard order; expose labels, errors, status, selection, and expansion; support zoom, reflow, screen readers, touch targets, and reduced motion.
+# Shared Anatomy
+- Page: navigation, location cue, page header, content regions, feedback, footer.
+- Navigation: product label, links, active indicator, collapse control, utility region.
+- Header: context, one H1, concise description, primary and secondary actions.
+- Container: consistent gutters, readable measure, responsive grid, vertical rhythm.
+- Control group: label, control, instructions, validation, action area.
+- Data region: heading, search/filter controls, result count, collection, empty/loading/error treatment.
+- Overlay: optional backdrop, labelled surface, content, close control, actions.
+
+## Variants
+- Density: comfortable, compact.
+- Emphasis: neutral, accent, positive, caution, negative, informative.
+- Layout: stacked, inline, split, responsive.
+- Content: populated, empty, loading, error, filtered.
+- Interaction: static, selectable, expandable, actionable.
+
+## States
+- Global: default, hover, pressed, focus-visible, selected, disabled, loading, success, error.
+- Layout: expanded, collapsed, reflowed, overflowed.
+- Data: empty, partial, populated, stale, filtered, sorted.
+- Form: pristine, dirty, invalid, valid, submitting, submitted.
+- Overlay: closed, opening, open, closing.
+
+## Usage
+- Prefer semantic structure and native controls.
+- Use consistent labels, verbs, spacing, and status language.
+- Keep primary actions visible and secondary actions quiet.
+- Preserve content order, focus order, and task continuity at every breakpoint.
+- Pair meaningful state changes with clear visual and textual cues.
+
+## Anti-Patterns
+- Do not rely on color, hover, motion, or position alone.
+- Do not hide essential actions behind unexplained icons or menus.
+- Do not use placeholder text as the only instruction.
+- Do not require horizontal scrolling for core tasks.
+- Do not remove focus indicators or auto-dismiss critical errors.
+- Do not use motion that distracts, flashes, or causes layout shift.
+
+## Accessibility
+- Meet WCAG 2.2 AA.
+- Provide keyboard access, visible focus, semantic structure, accessible names, and programmatic relationships.
+- Support 200% zoom, 320px reflow, reduced motion, and high-contrast-compatible boundaries.
+- Announce loading, success, error, and result-count changes appropriately.
+- Maintain 44px minimum touch targets and adequate spacing.
