@@ -1,15 +1,15 @@
-Budgets:
-- Initial route JavaScript: ≤170KB compressed.
-- Initial route CSS: ≤45KB compressed.
-- Critical fonts: ≤100KB; prefer system fonts.
-- LCP: ≤2.5s on representative mid-tier mobile 4G.
-- FCP: ≤1.8s.
-- INP: ≤200ms for common actions.
-- CLS: ≤0.10.
-- Ready-to-interact: ≤3.5s on mid-tier mobile.
-- Initial image payload: ≤150KB; omit nonessential imagery.
-- Above-fold requests: ≤20; defer noncritical resources.
-- Shell and skeleton: visible within 500ms with reserved dimensions.
-- Lists: virtualize above 100 items; paginate or incrementally reveal larger sets.
-- Input response: under 100ms; avoid unnecessary rerenders.
-- Empty, error, and offline states work without extra assets.
+# Performance Budgets
+- Initial JavaScript: ≤170KB compressed.
+- Initial CSS: ≤45KB compressed.
+- Critical fonts: ≤100KB compressed; maximum two families.
+- First Contentful Paint: ≤1.8s.
+- Largest Contentful Paint: ≤2.5s.
+- Interaction to Next Paint: ≤200ms.
+- Cumulative Layout Shift: ≤0.1.
+- Interactive-ready UI: ≤3.5s.
+- Above-fold image: ≤300KB each; use responsive formats.
+- Above-fold requests: ≤30.
+- Initial-render long task: <200ms.
+- Collections above 100 visible records: virtualize, paginate, or progressively reveal.
+- Show loading feedback within 100ms and preserve usable error recovery.
+- Test xs, md, and xl layouts with route-level Web Vitals.
