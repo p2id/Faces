@@ -1,16 +1,18 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 350" role="img" aria-labelledby="title desc">
-<title id="title">Interface state coverage matrix</title>
-<desc id="desc">Primary surfaces mapped to default, loading, empty, error, disabled, success, and compact states.</desc>
-<g font-family="sans-serif" font-size="13" fill="#263238" stroke="#607D8B" stroke-width="1">
-<rect width="900" height="350" fill="#F7F9FA" stroke="none"/>
-<rect x="24" y="20" width="852" height="38" fill="#DCE6E9"/>
-<path d="M24 58h852M24 106h852M24 154h852M24 202h852M24 250h852M24 298h852M24 20v310M164 20v310M264 20v310M364 20v310M464 20v310M564 20v310M664 20v310M764 20v310M876 20v310"/>
-<text x="38" y="44" stroke="none">Surface</text><text x="178" y="44" stroke="none">Default</text><text x="278" y="44" stroke="none">Load</text><text x="378" y="44" stroke="none">Empty</text><text x="478" y="44" stroke="none">Error</text><text x="578" y="44" stroke="none">Disabled</text><text x="678" y="44" stroke="none">Success</text><text x="778" y="44" stroke="none">Compact</text>
-<text x="38" y="88" stroke="none">Overview</text><text x="178" y="88" stroke="none">✓</text><text x="278" y="88" stroke="none">✓</text><text x="378" y="88" stroke="none">✓</text><text x="478" y="88" stroke="none">✓</text><text x="678" y="88" stroke="none">✓</text><text x="778" y="88" stroke="none">✓</text>
-<text x="38" y="136" stroke="none">Detail</text><text x="178" y="136" stroke="none">✓</text><text x="278" y="136" stroke="none">✓</text><text x="478" y="136" stroke="none">✓</text><text x="578" y="136" stroke="none">✓</text><text x="678" y="136" stroke="none">✓</text><text x="778" y="136" stroke="none">✓</text>
-<text x="38" y="184" stroke="none">Input</text><text x="178" y="184" stroke="none">✓</text><text x="278" y="184" stroke="none">✓</text><text x="378" y="184" stroke="none">✓</text><text x="478" y="184" stroke="none">✓</text><text x="578" y="184" stroke="none">✓</text><text x="678" y="184" stroke="none">✓</text><text x="778" y="184" stroke="none">✓</text>
-<text x="38" y="232" stroke="none">Feedback</text><text x="178" y="232" stroke="none">✓</text><text x="478" y="232" stroke="none">✓</text><text x="578" y="232" stroke="none">✓</text><text x="678" y="232" stroke="none">✓</text><text x="778" y="232" stroke="none">✓</text>
-<text x="38" y="280" stroke="none">Navigation</text><text x="178" y="280" stroke="none">✓</text><text x="578" y="280" stroke="none">✓</text><text x="778" y="280" stroke="none">✓</text>
-<text x="38" y="324" stroke="none">Gate</text><text x="178" y="324" stroke="none">Pass</text><text x="278" y="324" stroke="none">Pass</text><text x="378" y="324" stroke="none">Pass</text><text x="478" y="324" stroke="none">Pass</text><text x="578" y="324" stroke="none">Pass</text><text x="678" y="324" stroke="none">Pass</text><text x="778" y="324" stroke="none">Pass</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 420" role="img" aria-label="Component state matrix">
+<rect width="960" height="420" fill="#FFF"/>
+<g font-family="Arial,sans-serif" font-size="14" fill="#172033">
+<text x="32" y="32" font-size="20" font-weight="700">State matrix</text>
+<text x="32" y="74">Surface</text><text x="240" y="74">Default</text><text x="400" y="74">Progress</text><text x="560" y="74">Empty</text><text x="720" y="74">Error</text>
+<text x="32" y="124">Navigation</text><text x="240" y="124">Available</text><text x="400" y="124">Reduced</text><text x="560" y="124">Guidance</text><text x="720" y="124">Retry</text>
+<text x="32" y="174">Content list</text><text x="240" y="174">Rows</text><text x="400" y="174">Skeleton</text><text x="560" y="174">Explanation</text><text x="720" y="174">Recovery</text>
+<text x="32" y="224">Primary action</text><text x="240" y="224">Enabled</text><text x="400" y="224">Busy</text><text x="560" y="224">Disabled</text><text x="720" y="224">Retry-safe</text>
+<text x="32" y="274">Field</text><text x="240" y="274">Editable</text><text x="400" y="274">Read-only</text><text x="560" y="274">Optional</text><text x="720" y="274">Validation</text>
+<text x="32" y="324">Notice</text><text x="240" y="324">Neutral</text><text x="400" y="324">Progress</text><text x="560" y="324">Hidden</text><text x="720" y="324">Actionable</text>
 </g>
+<g stroke="#D9DEE7"><path d="M24 48H936M24 92H936M24 142H936M24 192H936M24 242H936M24 292H936M24 342H936M24 388H936"/><path d="M216 48V388M376 48V388M536 48V388M696 48V388"/></g>
 </svg>
+Rationale: a shared inventory makes interaction coverage explicit and prevents incomplete states.
+Gate coverage: default, progress, empty, disabled, validation, success, failure, retry, and cancellation are represented where applicable; status is never conveyed by color alone.
+Path intent: repository/f/states/state-matrix.svg; link each row to its related component specification.
+Writing rule: state text states condition, consequence, and available action without blame or pressure.
+Publishing rule: update the matrix before adding or releasing a component variant.
