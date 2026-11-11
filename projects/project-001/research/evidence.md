@@ -1,8 +1,8 @@
-Supporting evidence summary:
-- Common interface signals favor restrained contrast, modular grouping, compact navigation, and explicit state communication.
-- Accessibility signals favor visible focus, semantic labels, large targets, redundant status encoding, logical order, and reduced motion.
-- Responsive signals favor priority-based stacking, fluid spacing, capped reading width, and persistent primary actions.
-- Interaction signals favor reversible changes, inline feedback, progressive disclosure, and limited modal dependence.
-- Domain comparison favors Resource catalog for balanced extensibility, clarity, neutrality, and comparison-oriented structure.
-- Confidence: high for foundational patterns; medium for content density, visual distinctiveness, and domain-specific modules.
-- Evidence gaps: content volume, localization scope, data-density limits, and accent-color preference.
+EVIDENCE_SUMMARY
+Clear hierarchy, modular surfaces, direct actions, and visible status support broad product reuse.
+Dense information benefits from progressive disclosure, density controls, and responsive prioritization.
+Accessibility is strengthened by contrast, focus visibility, semantic labels, logical order, and non-color cues.
+Neutral foundations with one accent support adaptable visual systems.
+Motion is most useful for orientation, state change, continuity, and error prevention.
+Analytics workspace provides the strongest balance of reuse, clarity, responsive behavior, accessibility, and visual flexibility.
+Evidence is directional design guidance, not market research or implementation validation.
