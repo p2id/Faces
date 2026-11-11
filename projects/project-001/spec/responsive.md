@@ -1,18 +1,19 @@
-Breakpoints:
+# Breakpoints
 - xs: 0–479px
 - sm: 480–767px
 - md: 768–1023px
-- lg: 1024–1439px
-- xl: 1440px+
+- lg: 1024–1279px
+- xl: 1280px and above
 
-Rules:
-- Container max-width 1280px; side padding 16px xs/sm, 24px md, 32px lg/xl.
-- xs: single column, collapsed navigation, stacked cards and controls, result rows instead of table.
-- sm: one-column content, two-column summary where space permits.
-- md: optional two-column detail layout; controls share a row only if each remains at least 160px.
-- lg/xl: three-column summary grid, visible table columns, persistent detail panel with 320px minimum width.
-- Keep 44px touch targets and 8px target gaps at every width.
-- Preserve reading order: heading → controls → results → detail.
-- Avoid horizontal scrolling for primary actions and essential status.
-- Do not reduce body text below 14px; reduce decorative spacing first.
-- Reduced-motion mode removes nonessential transitions and animated progress.
+# Rules
+- Container: 16px gutters xs/sm, 24px md, 32px lg/xl; maximum width 1200px.
+- xs: single column, stacked actions, full-width controls, full-screen modal or drawer.
+- sm: single column with compact metric groups; stack actions when constrained.
+- md: optional two-column content; collapsible navigation; two-field form rows.
+- lg: persistent navigation allowed; 8/4 or 9/3 content splits; standard table columns.
+- xl: preserve readable text measure at 720px; avoid stretched controls.
+- Cards: four columns xl, three lg, two md, one xs/sm.
+- Tables: convert to cards or allow accessible horizontal scroll below md.
+- Controls: minimum 44px touch target at every breakpoint.
+- Layout changes preserve reading order, focus order, labels, and essential actions.
+- Honor reduced-motion preferences.
