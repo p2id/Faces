@@ -1,47 +1,64 @@
-PROJECT_ID: project-001
-DATE: 2026-11-11
-SCOPE: Generic, neutral, reusable product experience.
+Project: project-001
+Date: 2026-11-12
+Dominant patterns:
+- Clear hierarchy, compact headers, grouped panels, restrained borders, and progressive disclosure.
+- Task-first navigation with persistent primary actions and contextual secondary actions.
+- Structured views with aligned columns, filtering, sorting, visible status, and stable labels.
+- Neutral surfaces with one accent reserved for action, selection, and emphasis.
 
-DOMINANT_PATTERNS
-Clear hierarchy; modular cards, tables, filters, tabs, and summaries; restrained visual styling; visible status; controls adjacent to affected content.
+Emerging patterns:
+- Command search for rapid navigation across structured content.
+- Inline editing with reversible confirmation and preserved context.
+- Adaptive layouts that move from comparison views to prioritized single-column review.
+- Tokenized themes with contrast checks and reduced-motion support.
 
-EMERGING_PATTERNS
-Density modes; inline reversible editing; contextual summaries; progressive disclosure; responsive tables that become prioritized record lists.
+Deprecated patterns:
+- Decorative gradients without semantic purpose.
+- Hover-only navigation or actions.
+- Dense tables without responsive fallback or focus treatment.
+- Color-only status communication and ambiguous icon-only controls.
 
-DEPRECATED_PATTERNS
-Purpose-free gradients; hidden primary actions; equal-weight dashboard metrics; late validation; decorative motion; icon-only controls without labels.
+Outlier patterns:
+- Split-pane review with synchronized summary and detail.
+- Persistent comparison tray for selected records.
+- Collapsible utility rail that becomes an explicit drawer.
+- Structured empty states with direct next actions and minimal decoration.
 
-OUTLIER_PATTERNS
-Single-surface command layouts; text-first high-density views; persistent comparison panes; exception-focused views that elevate anomalies above routine content.
+Visual DNA:
+- Soft-neutral canvas, high-contrast text, one controlled accent, subtle elevation, 8px spacing rhythm, 10–14px radius, 1px separators, consistent icon geometry.
+- Emphasis scale: primary action, current state, supporting metadata.
 
-EXTRACTED_DNA
-Visual: neutral canvas, one accent, semantic status colors, 8px spacing rhythm, moderate radius, clear borders, restrained elevation.
-Interactional: predictable navigation, visible status, direct manipulation, inline validation, reversible actions, progressive disclosure, keyboard-complete controls.
-Accessibility: strong contrast, visible focus, logical reading order, semantic labels, non-color status cues, reduced-motion support, 44px minimum touch targets.
-Responsive: mobile-first priority order, single-column collapse, preserved primary action, adaptive tables, fluid type scale, content-driven breakpoints.
+Interactional DNA:
+- Immediate feedback, predictable focus order, reversible changes, stable navigation, explicit loading and error states, keyboard-complete controls, minimal modal interruption.
+- Filtering, sorting, selection, and pagination preserve context.
 
-CANDIDATE_PRODUCT_DOMAINS
-Analytics workspace — review trends, compare measures, and inspect exceptions in structured data.
-Scheduling planner — arrange time-based items, resolve conflicts, and review upcoming commitments.
-Inventory console — monitor quantities, identify thresholds, and update item records.
-Learning library — browse structured material, track progress, and resume selected content.
-Finance overview — inspect balances, categorize activity, and review period summaries.
-Service operations board — prioritize requests, inspect states, and coordinate repeatable actions.
+Accessibility DNA:
+- WCAG-aligned contrast, visible focus, semantic headings, labeled controls, non-color state cues, 44px minimum touch targets, logical reading order, reduced-motion support, and zoom-safe layouts.
 
-WEIGHTED_SCORING_MATRIX
-Weights: Reusability 30, Clarity 25, Responsive fit 20, Accessibility 15, Distinctiveness 10. Scores 1–5; totals normalized to 100.
-Analytics workspace: 5,5,5,4,4 = 94
-Scheduling planner: 4,4,4,4,4 = 80
-Inventory console: 5,4,5,4,3 = 87
-Learning library: 4,4,4,5,3 = 80
-Finance overview: 4,4,4,4,4 = 80
-Service operations board: 5,4,4,4,4 = 86
+Responsive DNA:
+- Desktop supports comparison and parallel context; tablet reduces secondary density; mobile prioritizes one task, stacks content, and moves utilities into drawers or sheets.
+- Breakpoints follow content needs; essential structured data may use controlled horizontal overflow.
 
-SELECTED_DOMAIN_RATIONALE
-Analytics workspace scores highest because it supports reusable information architecture, clear responsive transformations, accessible status communication, and multiple visual treatments without specialized assumptions.
+Candidate product domains:
+1. Data review workspace — Inspect, filter, compare, and annotate structured information.
+2. Schedule planning surface — Arrange time-based activities, dependencies, and capacity views.
+3. Reference library — Search, organize, and retrieve reusable knowledge assets.
+4. Catalog configuration surface — Browse, compare, configure, and review item attributes.
+5. Resource monitoring console — Observe trends, thresholds, exceptions, and historical summaries.
 
-CYCLE_LOCK
-Lock the selected domain, hierarchy, semantic palette, type scale, responsive priorities, and accessibility baseline. Allow only content, spacing, component, and interaction refinements.
+Weighted scoring matrix:
+Weights: clarity 25, recurring value 20, responsive fit 20, accessibility fit 20, extensibility 15.
+Data review workspace: 5/5/5/5/5 = 100
+Schedule planning surface: 4/4/4/4/4 = 80
+Reference library: 4/4/5/5/4 = 87
+Catalog configuration surface: 4/4/4/4/5 = 82
+Resource monitoring console: 4/5/4/4/4 = 84
 
-FALLBACK_RULE
-If the selected domain cannot preserve clarity, responsiveness, or accessibility, switch to Service operations board while retaining the same visual DNA, accessibility baseline, and scoring criteria.
+Selected domain rationale:
+Data review workspace ranks highest because its inspect-and-decide loop directly supports hierarchy, comparison, filtering, accessibility, and responsive patterns without specialized assumptions.
+
+Cycle lock:
+Lock project-001, date 2026-11-12, selected domain, visual DNA, interactional DNA, accessibility DNA, and responsive DNA for this cycle.
+
+Fallback rule:
+If the selected domain lacks a coherent primary task, accessible state model, or responsive layout, use Reference library, Resource monitoring console, Catalog configuration surface, then Schedule planning surface in score order.
