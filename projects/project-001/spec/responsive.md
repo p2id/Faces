@@ -1,19 +1,19 @@
-# Breakpoints
+Breakpoints:
 - xs: 0–479px
 - sm: 480–767px
 - md: 768–1023px
 - lg: 1024–1279px
 - xl: 1280px and above
 
-# Rules
-- Container: 16px gutters xs/sm, 24px md, 32px lg/xl; maximum width 1200px.
-- xs: single column, stacked actions, full-width controls, full-screen modal or drawer.
-- sm: single column with compact metric groups; stack actions when constrained.
-- md: optional two-column content; collapsible navigation; two-field form rows.
-- lg: persistent navigation allowed; 8/4 or 9/3 content splits; standard table columns.
-- xl: preserve readable text measure at 720px; avoid stretched controls.
-- Cards: four columns xl, three lg, two md, one xs/sm.
-- Tables: convert to cards or allow accessible horizontal scroll below md.
-- Controls: minimum 44px touch target at every breakpoint.
-- Layout changes preserve reading order, focus order, labels, and essential actions.
-- Honor reduced-motion preferences.
+Rules:
+- Use 16px minimum gutters on xs/sm and 24px on md and above.
+- xs/sm: single-column layout, collapsed navigation, stacked actions, full-width fields and dialogs.
+- md: compact navigation; permit two-column detail layouts when readable.
+- lg/xl: persistent navigation; constrain reading content to 720px; secondary panels up to 320px.
+- Wrap toolbar controls below 768px; preserve search and primary action priority.
+- Move low-priority filters into overflow controls on narrow screens.
+- Tables retain essential columns, support horizontal scrolling, and expose row details without hover.
+- Cards use one column on xs, two on sm/md, and additional columns only with 240px minimum card width.
+- Maintain 44px minimum touch targets at every breakpoint.
+- Respect safe-area insets on edge-to-edge surfaces.
+- Support 200% zoom and reflow without clipped content or hidden essential actions.
