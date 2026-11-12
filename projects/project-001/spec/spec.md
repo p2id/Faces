@@ -1,35 +1,35 @@
-# Product Experience
-Date: 2026-11-11
 Project: project-001
-Purpose: generic, neutral, reusable interface for reviewing and managing structured content.
+Date: 2026-11-12
+Scope: Generic, neutral, reusable product experience.
 
-## Surfaces
-- Overview: summary, recent activity, status, primary action.
-- Collection: search, filters, sorting, grouped results.
-- Detail: title, attributes, related content, contextual actions.
-- Settings: display, notification, and preference controls.
+Surfaces:
+- Workspace: header, navigation, toolbar, content area, feedback layer.
+- Collection: search, filters, sorting, result list or table, pagination.
+- Detail: breadcrumb, title, metadata, content sections, actions.
+- Feedback: inline validation, banners, toasts, empty, loading, and error recovery.
 
-## Sections
-- Navigation: product label, section links, active location, utility actions.
-- Header: page title, description, primary action, optional secondary action.
-- Summary: metric cards, status indicators, trend descriptions.
-- Content: cards, lists, tables, forms, or empty states.
-- Feedback: loading, validation, success, warning, and error messages.
-- Footer: supporting links and version-independent information.
+Sections:
+- Header: product label, current location, global actions.
+- Navigation: Overview, Library, Activity, Settings.
+- Toolbar: search, filter, sort, view controls, primary action.
+- Content: results, detail content, supporting metadata.
+- Actions: primary, secondary, quiet, destructive.
+- Feedback: status, validation, progress, recovery guidance.
 
-## Real Content Examples
-- Title: “Overview”
-- Description: “Review current activity and key changes.”
-- Primary action: “Create item”
+Real content examples:
+- Product label: “Workspace”
 - Search placeholder: “Search items”
-- Filter: “Filter by status”
-- Statuses: “Active”, “Paused”, “Archived”
+- Filter label: “Status”
+- Result title: “Quarterly planning”
+- Metadata: “Updated 12 Nov 2026 · 8 items”
+- Primary action: “Create item”
 - Empty message: “No items match these filters.”
-- Loading message: “Loading content…”
 - Error message: “Content could not be loaded. Try again.”
-- Success message: “Item created successfully.”
-- Fields: “Name”, “Description”, “Status”
-- Validation: “Enter a name to continue.”
-- Table columns: “Name”, “Status”, “Updated”, “Actions”
-- Confirmation: “Remove this item?” / “This action cannot be undone.”
-- Actions: “Cancel”, “Remove”
+- Success message: “Item saved.”
+
+Content rules:
+- Use concise sentence-case labels.
+- Pair icon-only controls with accessible names.
+- Do not imply completion before confirmation.
+- Preserve entered content during validation and recovery.
+- Use neutral, descriptive, non-personal language.
