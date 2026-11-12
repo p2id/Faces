@@ -1,15 +1,15 @@
-# Performance Budgets
-- Initial JavaScript: ≤170KB compressed.
-- Initial CSS: ≤45KB compressed.
-- Critical fonts: ≤100KB compressed; maximum two families.
+Budgets:
+- Critical CSS: ≤50 KB compressed.
+- Initial JavaScript: ≤150 KB compressed.
+- First-view transfer: ≤500 KB compressed, excluding selected media.
+- Largest Contentful Paint: ≤2.5s on a mid-tier mobile profile.
 - First Contentful Paint: ≤1.8s.
-- Largest Contentful Paint: ≤2.5s.
-- Interaction to Next Paint: ≤200ms.
+- Interaction to Next Paint: ≤200ms for common actions.
 - Cumulative Layout Shift: ≤0.1.
-- Interactive-ready UI: ≤3.5s.
-- Above-fold image: ≤300KB each; use responsive formats.
-- Above-fold requests: ≤30.
-- Initial-render long task: <200ms.
-- Collections above 100 visible records: virtualize, paginate, or progressively reveal.
-- Show loading feedback within 100ms and preserve usable error recovery.
-- Test xs, md, and xl layouts with route-level Web Vitals.
+- Primary action usable: ≤3s.
+- Route transition response: ≤500ms perceived response with pending feedback.
+- Skeleton or progress feedback: visible within 100ms.
+- Images: responsive formats, lazy-loaded below the fold, intrinsic dimensions reserved.
+- Collections: virtualize views exceeding 100 visible records.
+- Resilience: provide timeout, retry, and partial-content states.
+- Monitoring: track Core Web Vitals, bundle size, error rate, and interaction latency.
