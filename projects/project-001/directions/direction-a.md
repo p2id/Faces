@@ -1,12 +1,6 @@
-POSITIONING
-Calm command center for rapid scanning, prioritization, and exception review.
-PALETTE RATIONALE
-Warm white canvas, graphite text, slate surfaces, cool blue accent, and limited amber/red semantic states.
-TYPE RATIONALE
-Neutral sans-serif with tabular numerals, compact labels, and strong weight contrast for metric-to-detail hierarchy.
-LAYOUT RULES
-Persistent navigation; summary strip first; primary chart or table second; exception panel adjacent on wide screens and above detail on narrow screens; one dominant action per surface.
-MOTION INTENT
-Use short fades, directional transitions, and numeric interpolation for continuity; honor reduced-motion preferences.
-AVOIDED TRAPS
-Dashboard clutter, equal-weight cards, unlabeled icons, color-only status, ornamental gradients, and delayed task completion.
+Positioning: Calm, precise review surface optimized for scanning and confident comparison.
+Palette rationale: Warm off-white canvas, graphite text, slate panels, and deep blue accent provide hierarchy without noise.
+Type rationale: Neutral sans-serif with high legibility, tabular numerals, and three clear text tiers.
+Layout rules: Compact header; two-column desktop view; summary rail beside primary content; single-column mobile flow; 8px spacing rhythm; stable action placement.
+Motion intent: Short opacity and position transitions for state changes; no decorative movement; preserve context during filtering and expansion.
+Avoided traps: Overloaded dashboards, excessive borders, color-only status, hidden actions, animated charts, and modal-first flows.
