@@ -1,15 +1,15 @@
-# Accessibility Targets
-- Meet WCAG 2.2 AA across all surfaces.
-- Provide keyboard access to every interactive element.
-- Use semantic landmarks, native controls, and one clear page heading.
-- Provide visible focus with a minimum 2px equivalent indicator.
-- Maintain 4.5:1 contrast for normal text, 3:1 for large text and non-text boundaries.
-- Provide accessible names for all controls, including icon-only controls.
-- Associate labels, instructions, required status, and errors programmatically.
-- Announce meaningful loading, result, success, and error changes appropriately.
-- Trap dialog focus, support Escape where appropriate, and restore focus on close.
-- Expose table headers, sort state, selection state, and relationships.
-- Do not use color alone for status; pair color with text or symbols.
-- Support 200% zoom, 320px reflow, high contrast, and reduced motion.
-- Maintain minimum 44×44px touch targets with adequate spacing.
-- Use plain language and actionable error recovery.
+Targets:
+- Meet WCAG 2.2 AA for applicable content and interactions.
+- Text contrast: at least 4.5:1 normal text and 3:1 large text.
+- Non-text contrast: at least 3:1 for controls, focus indicators, and meaningful graphics.
+- Provide keyboard access, logical order, visible focus, and no keyboard traps.
+- Use a 2px or stronger focus indicator with sufficient contrast.
+- Provide programmatic name, role, value, and state for every control.
+- Use one logical heading hierarchy, landmarks, descriptive titles, and semantic structure.
+- Provide persistent form labels, instructions, inline errors, and recovery guidance.
+- Announce loading completion, validation, success, and errors without moving focus unnecessarily.
+- Support reduced motion and never use motion as the only status signal.
+- Support 200% text zoom, reflow, narrow viewports, and no loss of function.
+- Provide 44×44px minimum pointer targets and alternatives to drag or hover.
+- Do not use color alone to communicate status.
+- Use plain language and localized date and number formats.
