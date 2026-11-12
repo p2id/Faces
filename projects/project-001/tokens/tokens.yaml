@@ -1,53 +1,77 @@
+meta:
+  projectId: project-001
+  date: 2026-11-12
+  layer: semantic
 color:
   surface:
-    canvas: "#FFFFFF"
-    raised: "#F8FAFC"
-    sunken: "#F1F5F9"
-    inverse: "#0F172A"
+    default: "{color.neutral.0}"
+    raised: "{color.neutral.0}"
+    subtle: "{color.neutral.50}"
+    inverse: "{color.neutral.900}"
   text:
-    primary: "#0F172A"
-    secondary: "#475569"
-    muted: "#64748B"
-    inverse: "#FFFFFF"
-    on-accent: "#FFFFFF"
+    default: "{color.neutral.900}"
+    muted: "{color.neutral.600}"
+    inverse: "{color.neutral.0}"
+    onAccent: "{color.neutral.0}"
   border:
-    default: "#CBD5E1"
-    subtle: "#E2E8F0"
-    strong: "#94A3B8"
+    default: "{color.neutral.200}"
+    strong: "{color.neutral.400}"
+    focus: "{color.blue.600}"
   accent:
-    default: "#2563EB"
-    hover: "#1D4ED8"
-    pressed: "#1E40AF"
-    subtle: "#DBEAFE"
-  status:
-    positive: "#15803D"
-    positive-subtle: "#DCFCE7"
-    caution: "#A16207"
-    caution-subtle: "#FEF3C7"
-    negative: "#B91C1C"
-    negative-subtle: "#FEE2E2"
-    informative: "#0369A1"
-    informative-subtle: "#E0F2FE"
+    default: "{color.blue.600}"
+    hover: "{color.blue.700}"
+    active: "{color.blue.800}"
+    subtle: "{color.blue.50}"
+  state:
+    positive: "{color.green.700}"
+    positiveSubtle: "{color.green.50}"
+    caution: "{color.amber.700}"
+    cautionSubtle: "{color.amber.50}"
+    negative: "{color.red.700}"
+    negativeSubtle: "{color.red.50}"
+    info: "{color.blue.700}"
+    infoSubtle: "{color.blue.50}"
+  neutral:
+    "0": "#FFFFFF"
+    "50": "#F7F8FA"
+    "200": "#D8DDE6"
+    "400": "#8B95A7"
+    "600": "#5B6678"
+    "900": "#172033"
+  blue:
+    "50": "#EAF2FF"
+    "600": "#245EDB"
+    "700": "#1D4DB5"
+    "800": "#153A8A"
+  green:
+    "50": "#EAF8F0"
+    "700": "#167044"
+  amber:
+    "50": "#FFF6DA"
+    "700": "#8A5A00"
+  red:
+    "50": "#FDECEC"
+    "700": "#B42318"
 typography:
-  family:
-    sans: "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif"
-    mono: "ui-monospace, SFMono-Regular, Menlo, monospace"
+  fontFamily:
+    sans: "system-ui, sans-serif"
+    mono: "ui-monospace, monospace"
   size:
     xs: "0.75rem"
     sm: "0.875rem"
     md: "1rem"
     lg: "1.125rem"
     xl: "1.5rem"
-    2xl: "2rem"
+    display: "2rem"
+  lineHeight:
+    tight: "1.2"
+    normal: "1.5"
+    relaxed: "1.7"
   weight:
     regular: "400"
     medium: "500"
     semibold: "600"
     bold: "700"
-  line:
-    tight: "1.2"
-    normal: "1.5"
-    relaxed: "1.7"
 spacing:
   "0": "0"
   "1": "0.25rem"
@@ -59,7 +83,6 @@ spacing:
   "12": "3rem"
   "16": "4rem"
 radius:
-  none: "0"
   sm: "0.25rem"
   md: "0.5rem"
   lg: "0.75rem"
@@ -67,46 +90,45 @@ radius:
 border:
   thin: "1px"
   thick: "2px"
+  focus: "2px"
 shadow:
   none: "none"
-  sm: "0 1px 2px rgba(15,23,42,0.08)"
-  md: "0 4px 12px rgba(15,23,42,0.12)"
-  lg: "0 12px 32px rgba(15,23,42,0.16)"
+  sm: "0 1px 2px rgba(23,32,51,0.08)"
+  md: "0 4px 12px rgba(23,32,51,0.12)"
 opacity:
   disabled: "0.5"
   muted: "0.7"
   overlay: "0.6"
 motion:
-  fast: "120ms"
-  normal: "200ms"
-  slow: "320ms"
-  ease: "cubic-bezier(0.2,0,0,1)"
+  duration:
+    fast: "120ms"
+    standard: "200ms"
+    slow: "320ms"
+  easing:
+    standard: "cubic-bezier(0.2,0,0,1)"
+    exit: "cubic-bezier(0.4,0,1,1)"
   reduced: "0ms"
 layout:
-  content-max: "1200px"
-  reading-max: "720px"
-  gutter-xs: "{spacing.4}"
-  gutter-md: "{spacing.6}"
-  gutter-lg: "{spacing.8}"
+  contentMax: "75rem"
+  readingMax: "45rem"
+  panelMax: "20rem"
+  gutter: "{spacing.4}"
+  gutterWide: "{spacing.6}"
 size:
-  control-sm: "32px"
-  control-md: "40px"
-  control-lg: "48px"
-  touch-min: "44px"
-  icon-sm: "16px"
-  icon-md: "20px"
-  icon-lg: "24px"
-z-index:
+  control: "2.75rem"
+  icon: "1.25rem"
+  touchTarget: "2.75rem"
+zIndex:
   base: "0"
   sticky: "10"
-  dropdown: "100"
-  overlay: "200"
-  modal: "300"
-  toast: "400"
+  dropdown: "20"
+  overlay: "30"
+  modal: "40"
+  toast: "50"
 state:
-  focus-ring: "0 0 0 3px {color.accent.subtle}"
-  disabled-opacity: "{opacity.disabled}"
-  selected-surface: "{color.accent.subtle}"
-  error-border: "{color.status.negative}"
-  success-border: "{color.status.positive}"
-  interactive-transition: "color {motion.normal} {motion.ease}, background-color {motion.normal} {motion.ease}, border-color {motion.normal} {motion.ease}, box-shadow {motion.normal} {motion.ease}"
+  focusRing: "0 0 0 {border.focus} {color.border.focus}"
+  disabledOpacity: "{opacity.disabled}"
+  selectedSurface: "{color.accent.subtle}"
+  invalidBorder: "{color.state.negative}"
+  validBorder: "{color.state.positive}"
+  loadingOpacity: "{opacity.muted}"
