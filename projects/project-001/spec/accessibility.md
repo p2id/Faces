@@ -1,15 +1,17 @@
 Targets:
-- Meet WCAG 2.2 AA for applicable content and interactions.
-- Text contrast: at least 4.5:1 normal text and 3:1 large text.
-- Non-text contrast: at least 3:1 for controls, focus indicators, and meaningful graphics.
-- Provide keyboard access, logical order, visible focus, and no keyboard traps.
-- Use a 2px or stronger focus indicator with sufficient contrast.
-- Provide programmatic name, role, value, and state for every control.
-- Use one logical heading hierarchy, landmarks, descriptive titles, and semantic structure.
-- Provide persistent form labels, instructions, inline errors, and recovery guidance.
-- Announce loading completion, validation, success, and errors without moving focus unnecessarily.
-- Support reduced motion and never use motion as the only status signal.
-- Support 200% text zoom, reflow, narrow viewports, and no loss of function.
-- Provide 44×44px minimum pointer targets and alternatives to drag or hover.
-- Do not use color alone to communicate status.
-- Use plain language and localized date and number formats.
+- WCAG 2.2 AA.
+- Keyboard-complete operation for every interactive function.
+- Visible focus indicator with at least 3:1 contrast against adjacent colors.
+- Normal text contrast at least 4.5:1; large text at least 3:1.
+- Minimum interactive target size: 44×44px.
+- Meaning is never conveyed by color alone.
+- Every control has a programmatic name and required description.
+- Errors are associated with affected controls and provide correction guidance.
+- Status updates use suitable live-region behavior without unnecessary focus changes.
+- Dialogs move focus inside, constrain focus while open, and restore focus on close.
+- Preserve logical reading order at all widths.
+- Support 200% text resizing without loss of core function.
+- Respect reduced-motion preferences.
+- Use semantic landmarks, headings, lists, buttons, and form controls.
+- Do not require hover for essential content.
+- Test keyboard, screen reader, zoom, contrast, touch, and narrow layouts.
