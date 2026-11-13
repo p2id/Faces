@@ -1,18 +1,24 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 420" role="img" aria-label="Component state matrix">
-<rect width="960" height="420" fill="#FFF"/>
-<g font-family="Arial,sans-serif" font-size="14" fill="#172033">
-<text x="32" y="32" font-size="20" font-weight="700">State matrix</text>
-<text x="32" y="74">Surface</text><text x="240" y="74">Default</text><text x="400" y="74">Progress</text><text x="560" y="74">Empty</text><text x="720" y="74">Error</text>
-<text x="32" y="124">Navigation</text><text x="240" y="124">Available</text><text x="400" y="124">Reduced</text><text x="560" y="124">Guidance</text><text x="720" y="124">Retry</text>
-<text x="32" y="174">Content list</text><text x="240" y="174">Rows</text><text x="400" y="174">Skeleton</text><text x="560" y="174">Explanation</text><text x="720" y="174">Recovery</text>
-<text x="32" y="224">Primary action</text><text x="240" y="224">Enabled</text><text x="400" y="224">Busy</text><text x="560" y="224">Disabled</text><text x="720" y="224">Retry-safe</text>
-<text x="32" y="274">Field</text><text x="240" y="274">Editable</text><text x="400" y="274">Read-only</text><text x="560" y="274">Optional</text><text x="720" y="274">Validation</text>
-<text x="32" y="324">Notice</text><text x="240" y="324">Neutral</text><text x="400" y="324">Progress</text><text x="560" y="324">Hidden</text><text x="720" y="324">Actionable</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 430" role="img" aria-label="Interface state matrix">
+<title>Interface state matrix</title>
+<rect width="900" height="430" fill="#fff"/>
+<g font-family="Arial" font-size="16" fill="#101828">
+<text x="32" y="36">Surface</text><text x="220" y="36">Default</text><text x="380" y="36">Loading</text><text x="540" y="36">Empty</text><text x="700" y="36">Error</text>
 </g>
-<g stroke="#D9DEE7"><path d="M24 48H936M24 92H936M24 142H936M24 192H936M24 242H936M24 292H936M24 342H936M24 388H936"/><path d="M216 48V388M376 48V388M536 48V388M696 48V388"/></g>
+<g fill="#f9fafb" stroke="#d0d5dd">
+<rect x="24" y="56" width="852" height="62" rx="4"/>
+<rect x="24" y="124" width="852" height="62" rx="4"/>
+<rect x="24" y="192" width="852" height="62" rx="4"/>
+<rect x="24" y="260" width="852" height="62" rx="4"/>
+<rect x="24" y="328" width="852" height="62" rx="4"/>
+</g>
+<g font-family="Arial" font-size="14" fill="#344054">
+<text x="40" y="92">Overview</text><text x="40" y="160">Collection</text><text x="40" y="228">Detail</text><text x="40" y="296">Form</text><text x="40" y="364">Notification</text>
+<text x="220" y="92">Content + action</text><text x="380" y="92">Placeholder</text><text x="540" y="92">Guidance + action</text><text x="700" y="92">Recovery</text>
+<text x="220" y="160">Items + controls</text><text x="380" y="160">Skeleton</text><text x="540" y="160">Create prompt</text><text x="700" y="160">Retry guidance</text>
+<text x="220" y="228">Attributes</text><text x="380" y="228">Progressive reveal</text><text x="540" y="228">Unavailable notice</text><text x="700" y="228">Fallback</text>
+<text x="220" y="296">Fields + validation</text><text x="380" y="296">Disabled submit</text><text x="540" y="296">Not applicable</text><text x="700" y="296">Inline correction</text>
+<text x="220" y="364">Contextual status</text><text x="380" y="364">Pending</text><text x="540" y="364">Not applicable</text><text x="700" y="364">Actionable alert</text>
+</g>
 </svg>
-Rationale: a shared inventory makes interaction coverage explicit and prevents incomplete states.
-Gate coverage: default, progress, empty, disabled, validation, success, failure, retry, and cancellation are represented where applicable; status is never conveyed by color alone.
-Path intent: repository/f/states/state-matrix.svg; link each row to its related component specification.
-Writing rule: state text states condition, consequence, and available action without blame or pressure.
-Publishing rule: update the matrix before adding or releasing a component variant.
+Rationale: Explicit non-default states cover continuity, feedback, recovery, and content absence.
+Quality gates: every major surface has default, loading, empty, and error treatment; recovery is actionable; status never depends on color alone.
