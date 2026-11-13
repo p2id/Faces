@@ -1,35 +1,37 @@
 Project: project-001
-Date: 2026-11-12
-Scope: Generic, neutral, reusable product experience.
+Date: 2026-11-13
+Purpose: Generic, neutral product interface for reviewing options, editing values, and confirming changes.
 
 Surfaces:
-- Workspace: header, navigation, toolbar, content area, feedback layer.
-- Collection: search, filters, sorting, result list or table, pagination.
-- Detail: breadcrumb, title, metadata, content sections, actions.
-- Feedback: inline validation, banners, toasts, empty, loading, and error recovery.
+- Workspace: primary task area.
+- Context panel: related details and controls.
+- Feedback layer: validation, status, and confirmation.
+- Compact layout: essential content and actions at narrow widths.
 
 Sections:
-- Header: product label, current location, global actions.
-- Navigation: Overview, Library, Activity, Settings.
-- Toolbar: search, filter, sort, view controls, primary action.
-- Content: results, detail content, supporting metadata.
-- Actions: primary, secondary, quiet, destructive.
-- Feedback: status, validation, progress, recovery guidance.
+1. Header: product label, page title, primary action.
+2. Summary: purpose, current status, short guidance.
+3. Content: grouped fields, options, or records.
+4. Review: selected values and consequence note.
+5. Feedback: success, warning, error, and empty states.
+6. Footer: secondary action and date context.
 
 Real content examples:
-- Product label: “Workspace”
-- Search placeholder: “Search items”
-- Filter label: “Status”
-- Result title: “Quarterly planning”
-- Metadata: “Updated 12 Nov 2026 · 8 items”
-- Primary action: “Create item”
-- Empty message: “No items match these filters.”
-- Error message: “Content could not be loaded. Try again.”
-- Success message: “Item saved.”
+- Page title: “Review settings”
+- Summary: “Check the current selections before applying changes.”
+- Field: “Display mode”
+- Options: “Standard”, “Compact”, “High contrast”
+- Helper text: “This preference applies to this view.”
+- Primary action: “Apply changes”
+- Secondary action: “Cancel”
+- Confirmation: “Apply these changes now?”
+- Success: “Changes saved.”
+- Validation: “Select an option to continue.”
+- Empty: “No settings are available.”
+- Error: “Changes could not be applied. Try again.”
 
 Content rules:
-- Use concise sentence-case labels.
-- Pair icon-only controls with accessible names.
-- Do not imply completion before confirmation.
-- Preserve entered content during validation and recovery.
-- Use neutral, descriptive, non-personal language.
+- Use concise, literal, sentence-case labels.
+- Keep one primary action per surface.
+- Explain consequences before broad or irreversible changes.
+- Never imply completion without a completed state.
