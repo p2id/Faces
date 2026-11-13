@@ -1,17 +1,20 @@
 graph TD
 A[Foundations] --> B[Color]
-A --> C[Typography]
-A --> D[Spacing]
-A --> E[Shape and elevation]
-B --> F[Semantic roles]
-C --> F
-D --> F
-E --> F
-F --> G[Component tokens]
-G --> H[Surfaces and specimens]
-Rationale: semantic tokens separate reusable intent from specific values and support consistent variation.
-Token groups: color.surface, color.text, color.border, color.action, color.status; type.family, type.scale, type.weight, type.leading; space.1–space.8; radius.sm–radius.lg; elevation.1–elevation.3; motion.fast–motion.standard.
-Gate coverage: contrast AA, scalable text, non-color status cues, spacing consistency, reduced-motion behavior, and documented fallbacks.
-Path intent: repository/f/tokens/token-map.mmd; keep names stable and values neutral.
-Writing rule: descriptions state purpose rather than affiliation or visual personality.
-Publishing rule: record impact, refresh specimens, and complete visual and accessibility checks before release.
+A --> C[Type]
+A --> D[Space]
+A --> E[Shape]
+A --> F[Motion]
+B --> G[Semantic roles]
+C --> G
+D --> H[Layout roles]
+E --> H
+F --> I[Feedback roles]
+G --> J[Components]
+H --> J
+I --> J
+J --> K[Responsive surfaces]
+J --> L[State variants]
+Rationale: Foundations feed semantic roles, which feed components and responsive or state variants. This limits raw-value drift and supports reusable themes.
+Quality gates: stable semantic names; components reference roles rather than raw values; contrast covers text, controls, and status; reduced-motion alternatives exist.
+Repository path: projects/project-001/2026-11-13/tokens/token-map.mmd
+Publishing rules: UTF-8; deterministic ordering; one relation per line; stable identifiers; no generated timestamps.
