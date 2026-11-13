@@ -1,8 +1,11 @@
-Supporting evidence summary:
-- Strong information scent, stable navigation, visible status, and progressive disclosure improve scanability.
-- Neutral surfaces with one accent create hierarchy while limiting competing emphasis.
-- Structured content requires explicit sorting, filtering, focus treatment, and mobile prioritization.
-- Accessibility quality depends on semantic structure, contrast, keyboard reachability, non-color cues, adequate targets, and motion alternatives.
-- Responsive quality improves when breakpoints follow content needs and comparison data uses controlled overflow.
-- Common failure risks include hover-only controls, decorative complexity, color-only status, ambiguous icons, and unbounded density.
-- Confidence: high for shared DNA and domain selection; medium for exact density and component proportions pending validation.
+SUPPORTING EVIDENCE SUMMARY
+- Clear hierarchy, grouped controls, predictable navigation, and concise status language provide the strongest cross-domain usability foundation.
+- Modular layouts generalize across planning, browsing, monitoring, configuration, reporting, and catalog experiences.
+- Responsive evidence favors stacking, prioritization, and navigation compression over shrinking dense desktop layouts.
+- Accessibility evidence favors semantic structure, visible focus, redundant status encoding, readable contrast, and reduced motion.
+- Interaction evidence favors immediate feedback, reversible actions, local validation, and explicit state transitions.
+- Visual evidence favors neutral foundations, one controlled accent, subtle borders, limited elevation, and consistent spacing.
+- Recurring failure risks include dense ungrouped surfaces, decorative motion, hidden actions, low contrast, and color-only indicators.
+- Confidence is high for hierarchy, accessibility, responsiveness, and state feedback; medium for density and accent selection.
+- No product-specific content, brand system, analytics, or device distribution is assumed.
+- Evidence supports planning workspace as the reference domain with portable patterns.
