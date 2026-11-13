@@ -1,15 +1,21 @@
 Budgets:
-- Critical CSS: ≤50 KB compressed.
-- Initial JavaScript: ≤150 KB compressed.
-- First-view transfer: ≤500 KB compressed, excluding selected media.
-- Largest Contentful Paint: ≤2.5s on a mid-tier mobile profile.
+- Critical CSS: ≤50KB compressed.
+- Initial JavaScript: ≤150KB compressed.
+- Route-level JavaScript: ≤100KB compressed.
+- Above-fold media: ≤150KB total.
+- Largest Contentful Paint: ≤2.5s.
 - First Contentful Paint: ≤1.8s.
-- Interaction to Next Paint: ≤200ms for common actions.
+- Interaction to Next Paint: ≤200ms.
 - Cumulative Layout Shift: ≤0.1.
-- Primary action usable: ≤3s.
-- Route transition response: ≤500ms perceived response with pending feedback.
-- Skeleton or progress feedback: visible within 100ms.
-- Images: responsive formats, lazy-loaded below the fold, intrinsic dimensions reserved.
-- Collections: virtualize views exceeding 100 visible records.
-- Resilience: provide timeout, retry, and partial-content states.
-- Monitoring: track Core Web Vitals, bundle size, error rate, and interaction latency.
+- Control readiness: ≤3s on a mid-tier mobile device.
+- Initial requests: ≤25.
+- Main-thread blocking task: ≤50ms.
+- Visible list baseline: ≤100 rows without jank.
+
+Rules:
+- Reserve media dimensions.
+- Defer non-critical code.
+- Lazy-load below-fold content.
+- Avoid layout shifts and unnecessary reflows.
+- Keep loading indicators lightweight.
+- Use skeletons only when they communicate meaningful structure.
