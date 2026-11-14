@@ -1,17 +1,16 @@
 Targets:
-- WCAG 2.2 AA.
-- Keyboard-complete operation for every interactive function.
-- Visible focus indicator with at least 3:1 contrast against adjacent colors.
-- Normal text contrast at least 4.5:1; large text at least 3:1.
-- Minimum interactive target size: 44×44px.
-- Meaning is never conveyed by color alone.
-- Every control has a programmatic name and required description.
-- Errors are associated with affected controls and provide correction guidance.
-- Status updates use suitable live-region behavior without unnecessary focus changes.
-- Dialogs move focus inside, constrain focus while open, and restore focus on close.
-- Preserve logical reading order at all widths.
-- Support 200% text resizing without loss of core function.
-- Respect reduced-motion preferences.
-- Use semantic landmarks, headings, lists, buttons, and form controls.
-- Do not require hover for essential content.
-- Test keyboard, screen reader, zoom, contrast, touch, and narrow layouts.
+- Meet WCAG 2.2 AA.
+- Text contrast: at least 4.5:1; large text: at least 3:1.
+- Non-text boundaries and focus indicators: at least 3:1 against adjacent colors.
+- Focus indicator: visible, minimum 2px, with 2px offset where space permits.
+- Every control has an accessible name, role, state, and value.
+- Full keyboard operation, logical tab order, and no keyboard traps.
+- Dialogs trap focus while open, expose a title, support Escape, and restore focus on close.
+- Use landmarks, ordered headings, explicit labels, descriptions, and programmatic errors.
+- Announce status and alert messages without unnecessary focus movement.
+- Never use color alone for status, selection, validation, or required fields.
+- Provide text alternatives for meaningful icons; hide decorative icons from assistive technology.
+- Support 200% zoom and reflow at 320 CSS px without loss of content or function.
+- Respect reduced motion, forced colors, contrast preferences, and touch input.
+- Expose table headers, relationships, sort direction, and result counts.
+- Associate each form error with its field and corrective guidance.
