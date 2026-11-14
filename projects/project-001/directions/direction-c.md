@@ -1,17 +1,6 @@
-POSITIONING
-Measured monitoring console for recognizing states, exceptions, and trends with minimal cognitive noise.
-
-PALETTE RATIONALE
-Cool-gray foundation, high-contrast text, and restrained green-blue accent support neutral observation; warning and failure colors require text and icons.
-
-TYPE RATIONALE
-Highly legible sans-serif with tabular numerals for comparison; hierarchy favors states and key values over ornament.
-
-LAYOUT RULES
-Place summary metrics first, exceptions second, and detailed records third; support configurable density while preserving row height and column spacing.
-
-MOTION INTENT
-Use restrained refresh indicators, transition highlights, and expandable detail animation; provide static equivalents for reduced motion.
-
-AVOIDED TRAPS
-No flashing alerts, color-only status, uncontrolled movement, excessive metric tiles, or unreadable dense tables.
+Positioning: Quiet reference system optimized for retrieval, comparison, and durable context.
+Palette rationale: White and graphite foundation with moss positive states and rust exceptions; every semantic color is paired with text or an icon.
+Type rationale: Open, highly legible sans-serif with differentiated weights, readable body scale, and support for long labels.
+Layout rules: Search and filters first; grouped content below; optional side index on wide screens; stacked sections on narrow screens; preserve reading order.
+Motion intent: Minimal transitions for filtering, expansion, and confirmation; use clear static feedback when motion is reduced.
+Avoided traps: Endless feeds, hidden filter logic, metadata walls, tiny targets, hover-dependent previews, lost scroll position, unclear empty states.
