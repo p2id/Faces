@@ -1,86 +1,27 @@
+Date: 2026-11-14
 Project: project-001
-Date: 2026-11-13
-Scope: Generic product experience
-
-DOMINANT PATTERNS
-- Clear hierarchy with one primary action per surface.
-- Modular cards, lists, panels, tabs, tables, and status rows.
-- Neutral foundations with one restrained accent.
-- Persistent navigation, visible location, predictable back and close behavior.
-- Responsive stacking and prioritization instead of desktop shrinking.
-
-EMERGING PATTERNS
-- Searchable command surfaces with keyboard access.
-- Inline editing with explicit save and cancel states.
-- Summary views above detailed records.
-- Status encoded by text, icon, and color.
-- Motion limited to state feedback and orientation.
-
-DEPRECATED PATTERNS
-- Ungrouped dense dashboards.
-- Color-only status communication.
-- Gesture-only or hidden actions.
-- Auto-advancing content and unsolicited overlays.
-- Low-contrast decorative gradients.
-
-OUTLIER PATTERNS
-- Extremely sparse single-purpose surfaces.
-- Configurable expert tables.
-- Monochrome interfaces emphasizing shape and spacing.
-- Timeline or spatial layouts for sequence-heavy content.
-
-VISUAL DNA
-- Neutral background, elevated light surfaces, charcoal text, single blue, green, or violet accent.
-- 8px spacing rhythm, 10–14px radius, subtle borders, minimal shadows.
-- Strong titles, compact metadata, grouped controls, readable content width.
-- Simple line icons paired with labels.
-
-INTERACTIONAL DNA
-- One dominant action per surface.
-- Immediate acknowledgment after committed actions.
-- Reversible destructive actions with proportional confirmation.
-- Local validation, explicit empty/loading/success/warning/error states.
-- Keyboard-equivalent paths for pointer actions.
-
-ACCESSIBILITY DNA
-- WCAG 2.2 AA target.
-- At least 4.5:1 normal-text contrast and 3:1 large-text or graphical contrast.
-- Semantic landmarks, visible focus, logical focus order, labeled controls.
-- No color-only meaning; minimum 44x44 CSS px targets.
-- Reduced-motion mode and usable content at 200% zoom.
-
-RESPONSIVE DNA
-- Compact under 640px, medium 640–1023px, wide 1024px and above.
-- 12-column wide layout, 8-column medium layout, single primary column compact layout.
-- Navigation collapses without changing destinations.
-- Tables become prioritized rows or horizontal scroll regions.
-- Controls wrap or stack while preserving action order.
-- Recommended maximum content width: 1200px.
-
-CANDIDATE PRODUCT DOMAINS
-1. Planning workspace: organizes items, priorities, dates, and progress in a structured surface.
-2. Resource library: supports browsing, filtering, previewing, and organizing reusable content.
-3. Monitoring console: summarizes states, exceptions, trends, and detailed records.
-4. Configuration center: presents settings, rules, permissions, and validation in guided sections.
-5. Reporting studio: combines metric selection, comparison, annotation, and presentation-ready views.
-6. Service catalog: presents offerings with comparison, detail, and request states.
-
-WEIGHTED SCORING MATRIX
-Weights: clarity 25, responsive fit 20, accessibility fit 20, pattern coverage 20, distinctiveness 15.
-- Planning workspace: 23+18+19+19+12 = 91
-- Resource library: 22+19+18+18+13 = 90
-- Monitoring console: 20+16+17+20+14 = 87
-- Configuration center: 21+18+19+18+11 = 87
-- Reporting studio: 19+17+17+19+14 = 86
-- Service catalog: 21+19+18+17+12 = 87
-
-SELECTED DOMAIN RATIONALE
-Planning workspace selected because it supports the broadest reusable combination of hierarchy, status, filtering, responsive restructuring, inline actions, and accessible progress communication.
-
-CYCLE LOCK
-Locked domain: planning workspace.
-Locked principles: calm hierarchy, one primary action, explicit state feedback, responsive stacking, semantic accessibility.
-Locked exclusions: decorative density, color-only states, hidden navigation, automatic movement.
-
-FALLBACK RULE
-If planning signals are insufficient, switch to resource library while preserving palette discipline, component grammar, accessibility targets, responsive rules, and motion restraint.
+Dominant: modular cards, clear hierarchy, persistent navigation, progressive disclosure, compact status feedback, one primary action per region.
+Emerging: command-style shortcuts, contextual summaries, adjustable density, reduced-motion support, semantic color paired with labels or icons.
+Deprecated: hover-only actions, hidden navigation, ambiguous icon-only controls, decorative low-contrast gradients, unbounded feeds, motion-dependent feedback.
+Outlier: editorial-scale headings, vertical timelines for non-linear content, monochrome interfaces with one focal action, synchronized split panes.
+Visual DNA: neutral canvas, charcoal text, one restrained accent, 8px spacing base, 12px radius, subtle borders, limited elevation, breathable density.
+Interactional DNA: predictable focus order, immediate feedback, reversible actions, explicit empty/error states, progressive disclosure, keyboard parity, stable navigation.
+Accessibility DNA: strong contrast, semantic landmarks, logical headings, visible focus, scalable text, labeled controls, non-color status cues, reduced motion, 44px minimum targets.
+Responsive DNA: mobile-first stacking, content-driven breakpoints, fluid containers, preserved action priority, resilient wrapping, no fixed-height text regions, limited horizontal overflow.
+Candidate domains:
+1. Planning workspace: organizes dated items, priorities, progress, and supporting details.
+2. Knowledge library: supports structured capture, retrieval, filtering, and reading of reference content.
+3. Resource monitor: presents measures, thresholds, trends, and corrective actions.
+4. Learning catalog: groups sequenced content, completion states, and searchable references.
+5. Booking planner: coordinates availability, selections, confirmations, and schedule changes.
+6. Configuration console: presents grouped settings, validation, previews, and safe reset paths.
+Weighted scoring, 1–5; weights: reuse 25%, clarity 20%, accessibility 20%, responsive fit 15%, visual flexibility 10%, interaction depth 10%.
+Planning workspace: 5,5,5,5,5,4 = 4.85
+Knowledge library: 5,4,5,5,5,4 = 4.65
+Resource monitor: 4,4,4,4,4,5 = 4.10
+Learning catalog: 4,4,5,5,4,4 = 4.35
+Booking planner: 4,4,4,4,4,5 = 4.10
+Configuration console: 4,4,5,4,4,4 = 4.20
+Selected domain rationale: Planning workspace exercises the widest reusable range of hierarchy, dates, status, filtering, lists, detail views, validation, and responsive patterns without requiring domain-specific assumptions.
+Cycle lock: Use planning workspace, neutral terminology, interchangeable modules, and the selected foundation for this cycle; do not change domain, core layout model, or token system.
+Fallback rule: If the selected domain cannot demonstrate three interaction states and two responsive layouts, use knowledge library while retaining tokens, accessibility rules, and navigation principles.
