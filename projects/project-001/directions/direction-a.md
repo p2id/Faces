@@ -1,17 +1,6 @@
-POSITIONING
-Calm, structured planning surface for orientation, prioritization, and steady progress.
-
-PALETTE RATIONALE
-Warm-neutral canvas, light surfaces, charcoal text, and muted blue accent create focus without urgency; semantic colors remain state-specific.
-
-TYPE RATIONALE
-Neutral sans-serif with clear numeral distinction; compact labels support scanning while larger titles establish hierarchy.
-
-LAYOUT RULES
-Use a primary content column, compact summary band, prioritized list, filter row, and optional detail panel; retain 8px spacing and 1200px maximum width.
-
-MOTION INTENT
-Use short opacity and position transitions for panel changes, save acknowledgment, and list updates; honor reduced-motion settings.
-
-AVOIDED TRAPS
-No overloaded dashboard, hidden primary action, color-only progress, ornamental gradient, or auto-advancing content.
+Positioning: Calm operational clarity for ordered, scan-friendly planning.
+Palette rationale: Warm off-white canvas, charcoal text, slate borders, and muted blue accent create hierarchy with low visual noise.
+Type rationale: Neutral sans-serif with clear numerals, compact labels, readable body sizing, and generous line height.
+Layout rules: Fluid content rail; summary first, primary list second, detail third; one dominant action per region; 8px spacing grid.
+Motion intent: Brief 150–200ms fades and local position changes; static states remain fully understandable.
+Avoided traps: Dashboard clutter, weak contrast, excessive cards, hidden filters, color-only status, irreversible actions, decorative animation.
