@@ -1,21 +1,16 @@
 Budgets:
-- Critical CSS: ≤50KB compressed.
-- Initial JavaScript: ≤150KB compressed.
-- Route-level JavaScript: ≤100KB compressed.
-- Above-fold media: ≤150KB total.
-- Largest Contentful Paint: ≤2.5s.
-- First Contentful Paint: ≤1.8s.
-- Interaction to Next Paint: ≤200ms.
-- Cumulative Layout Shift: ≤0.1.
-- Control readiness: ≤3s on a mid-tier mobile device.
-- Initial requests: ≤25.
-- Main-thread blocking task: ≤50ms.
-- Visible list baseline: ≤100 rows without jank.
-
-Rules:
-- Reserve media dimensions.
-- Defer non-critical code.
-- Lazy-load below-fold content.
-- Avoid layout shifts and unnecessary reflows.
-- Keep loading indicators lightweight.
-- Use skeletons only when they communicate meaningful structure.
+- Critical CSS: <=50KB compressed.
+- Initial JavaScript: <=170KB compressed.
+- Initial transfer: <=400KB compressed, excluding selected media.
+- First Contentful Paint: <=1.8s.
+- Largest Contentful Paint: <=2.5s on a mid-tier mobile profile.
+- Interaction to Next Paint: <=200ms.
+- Cumulative Layout Shift: <=0.1.
+- Interactive readiness: <=3.5s.
+- Route transition response: <=100ms.
+- Input response: <=100ms.
+- Reserve dimensions for fonts, images, alerts, and asynchronous content.
+- Lazy-load below-fold media and noncritical panels.
+- Prefer system or preloaded variable fonts with limited families and weights.
+- Virtualize only large collections; preserve accessible semantics.
+- Keep default animation under 200ms and disable nonessential motion when requested.
