@@ -1,17 +1,6 @@
-POSITIONING
-Focused resource organizer for direct discovery, comparison, and reuse.
-
-PALETTE RATIONALE
-Cool-neutral background, light surfaces, and restrained violet accent separate discovery controls from content without competing with previews.
-
-TYPE RATIONALE
-Readable sans-serif with clear distinction between metadata, titles, and utility labels; controlled line length supports scanning.
-
-LAYOUT RULES
-Place search and filters above a responsive grid; switch to prioritized rows on compact screens; keep metadata adjacent to its item.
-
-MOTION INTENT
-Use subtle fade or scale feedback for selection, preview opening, and filter changes; never imply urgency.
-
-AVOIDED TRAPS
-No unstructured endless grid, hidden filter state, tiny metadata, hover-only action, or decorative preview that obscures content.
+Positioning: Focused momentum from selection through arrangement and confirmation.
+Palette rationale: Cool gray base, deep ink, pale lavender surfaces, and restrained amber for exceptions separate focus from alerts.
+Type rationale: Geometric sans-serif headings with highly legible body text, clear numeric alignment, and short readable measures.
+Layout rules: Two-column list/detail view on wide screens; prioritized single column on narrow screens; preserve context around actions; use tabs sparingly.
+Motion intent: Animate only local selection and reorder changes; honor reduced-motion preferences.
+Avoided traps: Drag-only controls, space-consuming sticky regions, ambiguous selection, hidden unsaved states, excessive pills, decorative gradients.
