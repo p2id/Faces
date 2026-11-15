@@ -1,9 +1,11 @@
-Supporting evidence summary:
-- Reusable product interfaces consistently benefit from clear hierarchy, modular regions, explicit states, stable navigation, and responsive stacking.
-- Accessible foundations require contrast, semantic structure, visible focus, keyboard access, readable scaling, adequate target sizes, and status cues beyond color.
-- Content-driven breakpoints and fluid containers adapt more reliably than device-specific layouts.
-- Progressive disclosure, concise labels, one primary action per region, and recoverable changes reduce cognitive load.
-- Motion is most effective for orientation and local state change; it must be brief, optional, and non-essential.
-- Planning workspace ranks highest because it covers the broadest set of transferable content, status, navigation, filtering, and detail patterns.
-- Confidence: high for foundational patterns; medium for domain selection because no product-specific research or analytics were supplied.
-- Evidence boundary: principle-based synthesis with no brand, identity, entity, tool, or backend assumptions.
+SUPPORTING EVIDENCE SUMMARY
+- Persistent context, scope, status, and primary actions improve orientation and task continuity.
+- Modular surfaces support varied content density without prescribing a specific industry.
+- Neutral foundations improve reuse; accents should communicate priority or state.
+- Labels, visible focus, text-plus-color status, and reduced-motion support improve accessibility.
+- Responsive layouts should preserve task order and primary actions while simplifying density.
+- Progressive disclosure reduces overload while retaining advanced capability.
+- Reversible actions and inline confirmation reduce ambiguity without unnecessary overlays.
+- Operations dashboards provide the broadest test surface for hierarchy, filtering, density, status, and responsive composition.
+- Confidence is high for hierarchy, accessibility, and responsive principles; medium for visual distinctiveness and domain preference.
+- Reconsider selection if scanability, status comprehension, narrow-width prioritization, or keyboard focus clarity fails.
