@@ -1,16 +1,16 @@
-Budgets:
-- Critical CSS: <=50KB compressed.
-- Initial JavaScript: <=170KB compressed.
-- Initial transfer: <=400KB compressed, excluding selected media.
-- First Contentful Paint: <=1.8s.
-- Largest Contentful Paint: <=2.5s on a mid-tier mobile profile.
-- Interaction to Next Paint: <=200ms.
-- Cumulative Layout Shift: <=0.1.
-- Interactive readiness: <=3.5s.
-- Route transition response: <=100ms.
-- Input response: <=100ms.
-- Reserve dimensions for fonts, images, alerts, and asynchronous content.
-- Lazy-load below-fold media and noncritical panels.
-- Prefer system or preloaded variable fonts with limited families and weights.
-- Virtualize only large collections; preserve accessible semantics.
-- Keep default animation under 200ms and disable nonessential motion when requested.
+# Section C — Performance Budgets
+
+- Critical initial payload: ≤200KB compressed.
+- Initial JavaScript: ≤150KB compressed.
+- Initial CSS: ≤60KB compressed.
+- Fonts: ≤2 families and ≤4 files; prefer system fonts.
+- Images: ≤100KB each by default, responsive and modern-format.
+- LCP: ≤2.5s on mid-tier mobile.
+- INP: ≤200ms for primary interactions.
+- CLS: ≤0.1.
+- FCP: ≤1.8s.
+- Interactive content: ≤3.5s on constrained mobile.
+- Above-the-fold DOM: under 1,500 nodes.
+- Reserve media and async-content dimensions.
+- Use skeletons only when content is expected after 300ms.
+- Avoid autoplay, blocking third-party resources, unnecessary polling, and layout-shifting content.
