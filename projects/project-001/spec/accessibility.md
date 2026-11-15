@@ -1,16 +1,15 @@
-Targets:
+# Section C — Accessibility Targets
+
 - Meet WCAG 2.2 AA.
-- Text contrast: at least 4.5:1; large text: at least 3:1.
-- Non-text boundaries and focus indicators: at least 3:1 against adjacent colors.
-- Focus indicator: visible, minimum 2px, with 2px offset where space permits.
-- Every control has an accessible name, role, state, and value.
-- Full keyboard operation, logical tab order, and no keyboard traps.
-- Dialogs trap focus while open, expose a title, support Escape, and restore focus on close.
-- Use landmarks, ordered headings, explicit labels, descriptions, and programmatic errors.
-- Announce status and alert messages without unnecessary focus movement.
-- Never use color alone for status, selection, validation, or required fields.
-- Provide text alternatives for meaningful icons; hide decorative icons from assistive technology.
-- Support 200% zoom and reflow at 320 CSS px without loss of content or function.
-- Respect reduced motion, forced colors, contrast preferences, and touch input.
-- Expose table headers, relationships, sort direction, and result counts.
-- Associate each form error with its field and corrective guidance.
+- Text contrast: minimum 4.5:1; large text: 3:1; non-text UI: 3:1.
+- Provide keyboard-complete operation and visible focus indicators of at least 2px.
+- Use semantic landmarks, one page-level heading, logical heading order, and descriptive links.
+- Give every control an accessible name; label icon-only controls.
+- Programmatically associate labels, hints, errors, required status, and values.
+- Announce dynamic alerts, validation results, loading completion, and toast content.
+- Trap focus in dialogs and drawers, support Escape, and restore focus on close.
+- Never communicate meaning through color alone.
+- Support 200% zoom, reflow, text resizing, forced colors, increased contrast, and reduced motion.
+- Use minimum 44×44px targets and avoid unadjustable time limits.
+- Expose list counts, progress values, selected states, and pagination position to assistive technology.
+- Keep reading and focus order aligned with visual order.
