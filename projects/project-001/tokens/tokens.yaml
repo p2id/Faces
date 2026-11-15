@@ -1,70 +1,58 @@
 meta:
-  project: project-001
-  date: 2026-11-13
+  date: "2026-11-15"
+  project: "project-001"
+  layer: semantic
 color:
-  neutral:
-    "0": "#ffffff"
-    "50": "#f8fafc"
-    "100": "#f1f5f9"
-    "300": "#cbd5e1"
-    "500": "#64748b"
-    "600": "#475569"
-    "900": "#0f172a"
-  blue:
-    "50": "#eff6ff"
-    "600": "#2563eb"
-    "700": "#1d4ed8"
   surface:
-    canvas: "{color.neutral.0}"
-    raised: "{color.neutral.50}"
-    subtle: "{color.neutral.100}"
-    inverse: "{color.neutral.900}"
-  text:
-    primary: "{color.neutral.900}"
-    secondary: "{color.neutral.600}"
-    muted: "{color.neutral.500}"
-    inverse: "{color.neutral.0}"
+    default: "#FFFFFF"
+    subtle: "#F7F8FA"
+    raised: "#FFFFFF"
+    inverse: "#17202A"
+    disabled: "#EEF0F2"
+  content:
+    primary: "#17202A"
+    secondary: "#52606D"
+    muted: "#7B8794"
+    inverse: "#FFFFFF"
+    disabled: "#9AA5B1"
+    link: "#155EEF"
   border:
-    default: "{color.neutral.300}"
-    strong: "{color.neutral.500}"
-    focus: "{color.blue.600}"
+    default: "#D9E2EC"
+    strong: "#9AA5B1"
+    focus: "#155EEF"
+    error: "#D92D20"
   accent:
-    default: "{color.blue.600}"
-    hover: "{color.blue.700}"
-    subtle: "{color.blue.50}"
-  success:
-    text: "#166534"
-    surface: "#f0fdf4"
-    border: "#86efac"
-  warning:
-    text: "#854d0e"
-    surface: "#fefce8"
-    border: "#fde047"
-  danger:
-    text: "#b91c1c"
-    surface: "#fef2f2"
-    border: "#fca5a5"
+    default: "#155EEF"
+    hover: "#0E4CB5"
+    active: "#0B3B8C"
+    subtle: "#EAF2FF"
+  state:
+    info: "#155EEF"
+    success: "#18864B"
+    caution: "#B54708"
+    error: "#D92D20"
 typography:
   fontFamily:
-    sans: "system-ui, sans-serif"
-    mono: "ui-monospace, monospace"
-  size:
+    sans: 'system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif'
+    mono: "ui-monospace, SFMono-Regular, Menlo, monospace"
+  fontSize:
     xs: "0.75rem"
     sm: "0.875rem"
     md: "1rem"
-    lg: "1.125rem"
+    lg: "1.25rem"
     xl: "1.5rem"
     display: "2rem"
-  weight:
-    regular: 400
-    medium: 500
-    semibold: 600
-    bold: 700
+  fontWeight:
+    regular: "400"
+    medium: "500"
+    semibold: "600"
+    bold: "700"
   lineHeight:
-    tight: 1.2
-    normal: 1.5
-    relaxed: 1.7
+    tight: "1.2"
+    normal: "1.5"
+    loose: "1.7"
 spacing:
+  "0": "0"
   "1": "0.25rem"
   "2": "0.5rem"
   "3": "0.75rem"
@@ -72,6 +60,7 @@ spacing:
   "6": "1.5rem"
   "8": "2rem"
   "12": "3rem"
+  "16": "4rem"
 radius:
   sm: "0.25rem"
   md: "0.5rem"
@@ -82,43 +71,47 @@ border:
   thick: "2px"
 shadow:
   none: "none"
-  sm: "0 1px 2px rgba(15,23,42,0.08)"
-  md: "0 4px 12px rgba(15,23,42,0.12)"
+  sm: "0 1px 2px rgb(23 32 42 / 0.08)"
+  md: "0 4px 12px rgb(23 32 42 / 0.12)"
+  lg: "0 12px 32px rgb(23 32 42 / 0.16)"
 opacity:
-  disabled: 0.5
-  muted: 0.7
-  overlay: 0.6
+  disabled: "0.5"
+  muted: "0.7"
+  overlay: "0.6"
 motion:
   duration:
-    fast: "120ms"
+    fast: "100ms"
     normal: "200ms"
     slow: "300ms"
   easing:
-    standard: "cubic-bezier(0.2,0,0,1)"
+    standard: "cubic-bezier(0.2, 0, 0, 1)"
+    emphasized: "cubic-bezier(0.2, 0, 0, 1)"
   reduced: "0ms"
 layout:
-  contentMax: "1200px"
-  wideMax: "1280px"
-  pagePadding: "{spacing.4}"
-  columnGap: "{spacing.6}"
-  sectionGap: "{spacing.8}"
+  contentMax: "80rem"
+  gutterXs: "{spacing.4}"
+  gutterMd: "{spacing.6}"
+  gutterLg: "{spacing.8}"
+  gridGap: "{spacing.4}"
+  railWidth: "15rem"
 size:
-  controlHeight: "44px"
-  icon: "20px"
-  iconSmall: "16px"
-  focusRing: "3px"
+  targetMin: "44px"
+  controlHeight: "40px"
+  controlHeightCompact: "32px"
+  iconSm: "16px"
+  iconMd: "20px"
+  iconLg: "24px"
 zIndex:
-  base: 0
-  sticky: 10
-  dropdown: 20
-  overlay: 30
-  dialog: 40
-  toast: 50
+  base: "0"
+  sticky: "10"
+  dropdown: "20"
+  overlay: "30"
+  toast: "40"
 state:
-  focusRing: "0 0 0 {size.focusRing} {color.border.focus}"
+  focusRing: "0 0 0 {border.thick} {color.border.focus}"
   disabledOpacity: "{opacity.disabled}"
-  loadingOpacity: "{opacity.muted}"
   selectedSurface: "{color.accent.subtle}"
-  errorSurface: "{color.danger.surface}"
-  successSurface: "{color.success.surface}"
-  warningSurface: "{color.warning.surface}"
+  errorSurface: "#FEF3F2"
+  successSurface: "#ECFDF3"
+  cautionSurface: "#FFFAEB"
+  infoSurface: "#EFF8FF"
