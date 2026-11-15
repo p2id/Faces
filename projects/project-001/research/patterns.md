@@ -1,27 +1,60 @@
-Date: 2026-11-14
 Project: project-001
-Dominant: modular cards, clear hierarchy, persistent navigation, progressive disclosure, compact status feedback, one primary action per region.
-Emerging: command-style shortcuts, contextual summaries, adjustable density, reduced-motion support, semantic color paired with labels or icons.
-Deprecated: hover-only actions, hidden navigation, ambiguous icon-only controls, decorative low-contrast gradients, unbounded feeds, motion-dependent feedback.
-Outlier: editorial-scale headings, vertical timelines for non-linear content, monochrome interfaces with one focal action, synchronized split panes.
-Visual DNA: neutral canvas, charcoal text, one restrained accent, 8px spacing base, 12px radius, subtle borders, limited elevation, breathable density.
-Interactional DNA: predictable focus order, immediate feedback, reversible actions, explicit empty/error states, progressive disclosure, keyboard parity, stable navigation.
-Accessibility DNA: strong contrast, semantic landmarks, logical headings, visible focus, scalable text, labeled controls, non-color status cues, reduced motion, 44px minimum targets.
-Responsive DNA: mobile-first stacking, content-driven breakpoints, fluid containers, preserved action priority, resilient wrapping, no fixed-height text regions, limited horizontal overflow.
-Candidate domains:
-1. Planning workspace: organizes dated items, priorities, progress, and supporting details.
-2. Knowledge library: supports structured capture, retrieval, filtering, and reading of reference content.
-3. Resource monitor: presents measures, thresholds, trends, and corrective actions.
-4. Learning catalog: groups sequenced content, completion states, and searchable references.
-5. Booking planner: coordinates availability, selections, confirmations, and schedule changes.
-6. Configuration console: presents grouped settings, validation, previews, and safe reset paths.
-Weighted scoring, 1–5; weights: reuse 25%, clarity 20%, accessibility 20%, responsive fit 15%, visual flexibility 10%, interaction depth 10%.
-Planning workspace: 5,5,5,5,5,4 = 4.85
-Knowledge library: 5,4,5,5,5,4 = 4.65
-Resource monitor: 4,4,4,4,4,5 = 4.10
-Learning catalog: 4,4,5,5,4,4 = 4.35
-Booking planner: 4,4,4,4,4,5 = 4.10
-Configuration console: 4,4,5,4,4,4 = 4.20
-Selected domain rationale: Planning workspace exercises the widest reusable range of hierarchy, dates, status, filtering, lists, detail views, validation, and responsive patterns without requiring domain-specific assumptions.
-Cycle lock: Use planning workspace, neutral terminology, interchangeable modules, and the selected foundation for this cycle; do not change domain, core layout model, or token system.
-Fallback rule: If the selected domain cannot demonstrate three interaction states and two responsive layouts, use knowledge library while retaining tokens, accessibility rules, and navigation principles.
+Date: 2026-11-15
+
+DOMINANT PATTERNS
+- Clear hierarchy with persistent navigation, context, primary action, and status.
+- Modular cards, tables, filters, tabs, summaries, and detail panels.
+- Neutral surfaces with restrained accent color and semantic status tokens.
+- Direct controls for search, sort, filter, select, expand, edit, and confirm.
+- Progressive disclosure for secondary detail and advanced options.
+
+EMERGING PATTERNS
+- Density controls for compact, standard, and spacious views.
+- Inline editing with explicit save, cancel, and validation states.
+- Persistent filter chips with readable query summaries.
+- Responsive split views that become stacked flows.
+- Semantic status conveyed through color, text, icons, and shape.
+
+DEPRECATED PATTERNS
+- Decorative gradients without functional meaning.
+- Hidden navigation and unlabeled icon-only controls.
+- Infinite scroll for task-critical information.
+- Modal-heavy routine interactions.
+- Color-only status communication.
+- Excessive blur, shadow, animation, or glass effects.
+
+OUTLIER PATTERNS
+- Persistent comparison rails for parallel review.
+- Timeline-plus-detail compositions for sequence-based information.
+- Saved view tokens preserving filter, sort, and density state.
+- Empty-state structures that show available content types without fabricated records.
+
+EXTRACTED DNA
+Visual: neutral canvas, dark readable text, one restrained accent, semantic status colors, thin borders, moderate radius, limited elevation, consistent 4/8 spacing rhythm.
+Interactional: predictable focus order, visible selection, inline validation, reversible actions, concise confirmation, keyboard operation, progressive disclosure.
+Accessibility: strong contrast, visible focus, labeled controls, semantic headings, text-equivalent status, practical target sizes, reduced-motion support, no color-only meaning.
+Responsive: fluid containers; wide layouts use navigation plus canvas; medium layouts reduce columns; narrow layouts stack sections, preserve primary actions, convert dense tables into labeled rows, and retain search and filter access.
+
+CANDIDATE PRODUCT DOMAINS
+1. Operations dashboard — summarizes status, priorities, metrics, and active work.
+2. Asset catalog — organizes searchable records, metadata, grouping, comparison, and lifecycle states.
+3. Planning workspace — presents schedules, capacity, dependencies, and adjustable views.
+4. Monitoring console — presents signals, thresholds, exceptions, and detail inspection.
+5. Document workspace — organizes structured content, revisions, annotations, and navigation.
+
+WEIGHTED SCORING MATRIX
+Weights: clarity 25, scalability 20, responsive fit 15, accessibility fit 15, distinctiveness 10, neutrality 15.
+Operations dashboard: 23+19+14+14+8+14 = 92/100.
+Asset catalog: 22+19+14+14+9+14 = 92/100.
+Planning workspace: 21+18+13+13+8+14 = 87/100.
+Monitoring console: 22+18+13+13+8+13 = 87/100.
+Document workspace: 21+18+14+14+8+14 = 89/100.
+
+SELECTED DOMAIN RATIONALE
+Operations dashboard is selected because it best exercises reusable hierarchy, modular information surfaces, responsive density, accessible status communication, and neutral product expression.
+
+CYCLE LOCK
+Lock the selected domain, extracted DNA, scoring weights, and three directions for 2026-11-15. Change only for a materially higher score or a documented accessibility or responsive failure.
+
+FALLBACK RULE
+If the selected domain fails a required constraint, use Asset catalog first, then Document workspace, while preserving the DNA and scoring method.
