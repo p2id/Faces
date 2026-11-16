@@ -1,60 +1,64 @@
 Project: project-001
-Date: 2026-11-15
+Date: 2026-11-16
 
 DOMINANT PATTERNS
-- Clear hierarchy with persistent navigation, context, primary action, and status.
-- Modular cards, tables, filters, tabs, summaries, and detail panels.
-- Neutral surfaces with restrained accent color and semantic status tokens.
-- Direct controls for search, sort, filter, select, expand, edit, and confirm.
-- Progressive disclosure for secondary detail and advanced options.
+- Clear title, concise context, and one primary action.
+- Grouped cards, lists, and tables with visible hierarchy.
+- Persistent navigation with explicit active state.
+- Neutral surfaces, restrained borders, and consistent spacing.
+- Progressive disclosure for secondary information.
 
 EMERGING PATTERNS
-- Density controls for compact, standard, and spacious views.
-- Inline editing with explicit save, cancel, and validation states.
-- Persistent filter chips with readable query summaries.
-- Responsive split views that become stacked flows.
-- Semantic status conveyed through color, text, icons, and shape.
+- Contextual actions placed beside relevant content.
+- Inline validation with reversible changes.
+- Density controls for compact and comfortable views.
+- Semantic design tokens shared across components.
+- Priority-based responsive stacking.
 
 DEPRECATED PATTERNS
-- Decorative gradients without functional meaning.
-- Hidden navigation and unlabeled icon-only controls.
-- Infinite scroll for task-critical information.
-- Modal-heavy routine interactions.
-- Color-only status communication.
-- Excessive blur, shadow, animation, or glass effects.
+- Decorative gradients without functional purpose.
+- Hover-only actions or status indicators.
+- Unstructured dense tables.
+- Excessive modal interruption.
+- Color-only feedback.
 
 OUTLIER PATTERNS
-- Persistent comparison rails for parallel review.
-- Timeline-plus-detail compositions for sequence-based information.
-- Saved view tokens preserving filter, sort, and density state.
-- Empty-state structures that show available content types without fabricated records.
+- Full-bleed dashboards with minimal navigation.
+- Timeline-first navigation.
+- Monochrome interfaces using typography as the main state signal.
+- Single-screen control panels with extreme density.
 
 EXTRACTED DNA
-Visual: neutral canvas, dark readable text, one restrained accent, semantic status colors, thin borders, moderate radius, limited elevation, consistent 4/8 spacing rhythm.
-Interactional: predictable focus order, visible selection, inline validation, reversible actions, concise confirmation, keyboard operation, progressive disclosure.
-Accessibility: strong contrast, visible focus, labeled controls, semantic headings, text-equivalent status, practical target sizes, reduced-motion support, no color-only meaning.
-Responsive: fluid containers; wide layouts use navigation plus canvas; medium layouts reduce columns; narrow layouts stack sections, preserve primary actions, convert dense tables into labeled rows, and retain search and filter access.
+Visual: neutral canvas, elevated content surfaces, 8px spacing rhythm, restrained accent, moderate radius, thin dividers, semantic status colors.
+Interactional: predictable navigation, visible primary action, inline guidance, explicit irreversible-action confirmation, clear empty/loading/error states, undo where practical.
+Accessibility: WCAG AA contrast target, keyboard-complete operation, visible focus, logical reading order, persistent labels, non-color status cues, touch targets of at least 44px.
+Responsive: fluid container with readable maximum width; split desktop layouts stack on smaller screens; wide tables become priority lists or scroll regions; navigation compresses without losing orientation.
 
 CANDIDATE PRODUCT DOMAINS
-1. Operations dashboard — summarizes status, priorities, metrics, and active work.
-2. Asset catalog — organizes searchable records, metadata, grouping, comparison, and lifecycle states.
-3. Planning workspace — presents schedules, capacity, dependencies, and adjustable views.
-4. Monitoring console — presents signals, thresholds, exceptions, and detail inspection.
-5. Document workspace — organizes structured content, revisions, annotations, and navigation.
+1. Inventory workspace: organizes items, quantities, filters, and detail states.
+2. Scheduling planner: presents dated entries, conflicts, filters, and list or timeline views.
+3. Analytics workspace: presents metrics, trends, comparisons, and supporting records.
+4. Knowledge library: supports categorized discovery, reading, metadata, and organization.
+5. Configuration center: groups preferences, rules, statuses, and validation.
+6. Content catalog: manages searchable records, classifications, previews, and states.
 
 WEIGHTED SCORING MATRIX
-Weights: clarity 25, scalability 20, responsive fit 15, accessibility fit 15, distinctiveness 10, neutrality 15.
-Operations dashboard: 23+19+14+14+8+14 = 92/100.
-Asset catalog: 22+19+14+14+9+14 = 92/100.
-Planning workspace: 21+18+13+13+8+14 = 87/100.
-Monitoring console: 22+18+13+13+8+13 = 87/100.
-Document workspace: 21+18+14+14+8+14 = 89/100.
+Weights: scanability 25, responsive fit 20, reuse 20, accessibility clarity 20, differentiation 15. Scores 1–5; totals /5.
+Inventory workspace: 4, 5, 5, 4, 3 = 4.25
+Scheduling planner: 4, 4, 4, 4, 4 = 4.00
+Analytics workspace: 5, 4, 4, 4, 4 = 4.25
+Knowledge library: 4, 5, 4, 5, 3 = 4.20
+Configuration center: 4, 5, 5, 5, 3 = 4.45
+Content catalog: 4, 4, 5, 4, 4 = 4.20
 
 SELECTED DOMAIN RATIONALE
-Operations dashboard is selected because it best exercises reusable hierarchy, modular information surfaces, responsive density, accessible status communication, and neutral product expression.
+Configuration center scores highest for reusable hierarchy, grouped controls, validation clarity, responsive behavior, and accessible state communication without requiring specialized visual assets.
 
 CYCLE LOCK
-Lock the selected domain, extracted DNA, scoring weights, and three directions for 2026-11-15. Change only for a materially higher score or a documented accessibility or responsive failure.
+Locked domain: Configuration center.
+Locked DNA: neutral surfaces, one accent, semantic states, compact spacing, visible focus, grouped sections, inline guidance, explicit completion state.
+Cycle: 2026-11-16.
+Project: project-001.
 
 FALLBACK RULE
-If the selected domain fails a required constraint, use Asset catalog first, then Document workspace, while preserving the DNA and scoring method.
+If the selected domain cannot express the required hierarchy or responsive behavior, use Inventory workspace while preserving all locked visual, interactional, accessibility, and responsive DNA.
