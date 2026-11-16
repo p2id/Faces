@@ -1,37 +1,44 @@
 Shared anatomy:
-- Page: landmark, header, title block, main content, feedback region, footer.
-- Action group: primary, secondary, optional tertiary action.
-- Form row: label, control, helper text, validation text.
-- Review block: summary, changed values, consequence note, confirmation action.
-- Collection: heading, status, rows, empty or error fallback.
+- Surface: canvas, container, border, elevation.
+- Hierarchy: context, heading, description, primary content, supporting content.
+- Control: label, value, affordance, feedback, action.
+- Feedback: status icon, concise message, recovery action.
+- Navigation: landmark, destination label, selected indicator, focus treatment.
 
 Variants:
 - Density: comfortable, compact.
-- Layout: single-column, split-panel, stacked-mobile.
-- Emphasis: neutral, accent, warning, error.
-- Interaction: static, selectable, expandable, dismissible.
+- Layout: single-column, split-view, full-width.
+- Emphasis: default, accent, muted, destructive.
+- Interaction: static, actionable, selectable, editable.
+- Viewport: desktop, tablet, mobile.
 
 States:
-- System: loading, ready, empty, unavailable, degraded, error.
-- Interaction: hover, focus-visible, pressed, selected, disabled.
-- Validation: untouched, valid, invalid, corrected.
-- Submission: idle, submitting, completed, failed.
+- Interaction: default, hover, focus-visible, pressed, selected, disabled.
+- Data: loading, populated, empty, no-results, error, success.
+- Connectivity: available, offline, reconnecting.
+- Validation: untouched, invalid, valid, submitting.
 
 Usage:
-- Keep anatomy consistent across surfaces.
-- Use hierarchy before decoration.
-- Place the primary action at the end of the task sequence.
-- Preserve content and action order across responsive layouts.
-- Pair each state change with clear text or an equivalent accessible signal.
+- Compose pages from named regions with one primary task per region.
+- Keep anatomy order stable across variants.
+- Use progressive disclosure for secondary details.
+- Keep status and recovery actions adjacent to affected content.
+- Preserve reading order during reflow.
 
 Anti-patterns:
-- Ambiguous labels, hidden prerequisites, unexplained abbreviations, layout shifts, clipped controls, color-only status, inaccessible custom controls, automatic destructive actions, excessive motion, hover-dependent content.
+- Unnamed controls or unlabeled icons.
+- Inconsistent action placement.
+- Hidden focus or hover-only functionality.
+- Color-only status.
+- Decorative density that harms scanning.
+- Modal use for content that fits inline.
+- Unexpected content reordering.
+- Empty, loading, or error states without explanation or next action.
 
 Accessibility:
-- Use semantic HTML and heading hierarchy.
-- Provide accessible names, descriptions, and associated errors.
-- Maintain keyboard access and visible focus.
-- Meet WCAG 2.2 AA contrast and resize requirements.
-- Maintain 44px minimum targets and logical reading order.
-- Announce meaningful status changes without unnecessary interruption.
-- Respect reduced-motion preferences without removing functionality.
+- Prefer semantic HTML before ARIA.
+- Give every control an accessible name and visible focus.
+- Preserve heading hierarchy, reading order, and keyboard operation.
+- Associate labels, hints, errors, and status updates programmatically.
+- Meet WCAG 2.2 AA contrast, zoom, reflow, target-size, and motion requirements.
+- Test keyboard use, screen reader output, 200% zoom, 400% reflow, and touch input.
