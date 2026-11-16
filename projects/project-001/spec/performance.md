@@ -1,16 +1,15 @@
-# Section C — Performance Budgets
-
-- Critical initial payload: ≤200KB compressed.
-- Initial JavaScript: ≤150KB compressed.
-- Initial CSS: ≤60KB compressed.
-- Fonts: ≤2 families and ≤4 files; prefer system fonts.
-- Images: ≤100KB each by default, responsive and modern-format.
-- LCP: ≤2.5s on mid-tier mobile.
-- INP: ≤200ms for primary interactions.
-- CLS: ≤0.1.
-- FCP: ≤1.8s.
-- Interactive content: ≤3.5s on constrained mobile.
-- Above-the-fold DOM: under 1,500 nodes.
-- Reserve media and async-content dimensions.
-- Use skeletons only when content is expected after 300ms.
-- Avoid autoplay, blocking third-party resources, unnecessary polling, and layout-shifting content.
+Budgets:
+- First meaningful render: ≤2.0s on a mid-range mobile connection.
+- Largest contentful paint: ≤2.5s.
+- Interaction to next paint: ≤200ms.
+- Cumulative layout shift: ≤0.10.
+- Initial JavaScript: ≤170KB compressed.
+- Initial CSS: ≤50KB compressed.
+- Initial font payload: ≤100KB; maximum two families and two weights.
+- Above-the-fold media: ≤250KB.
+- Main-thread blocking task: ≤50ms.
+- Route transition response: ≤500ms.
+- Show loading feedback within 300ms for continuing work.
+- Reserve media, table, and panel dimensions to prevent layout shift.
+- Defer noncritical content and below-fold media.
+- Prefer transform/opacity animation; disable nonessential motion when reduced motion is enabled.
