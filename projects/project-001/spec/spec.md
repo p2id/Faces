@@ -1,30 +1,40 @@
-# Section C — Product Experience Specification
-Date: 2026-11-15
 Project: project-001
+Date: 2026-11-16
+Scope: Generic reusable product experience
 
-## Surfaces
-- Shell: navigation, page title, utility actions.
-- Overview: summary metrics, prioritized content, recent updates.
-- Collection: search, filters, sorting, result list.
-- Detail: title, metadata, content, related actions.
-- Feedback: inline validation, alerts, confirmations.
-- Overlay: dialog, drawer, popover, tooltip.
+Surfaces:
+- Desktop application shell
+- Tablet application shell
+- Mobile application shell
+- Loading, empty, error, success, and offline views
 
-## Sections
-1. Header: product label, current section, utility action.
-2. Navigation: Overview, Collection, Settings.
-3. Main content: page title, description, primary task.
-4. Summary: metric cards such as “Open items 24”, “Due this week 7”, “Completion 68%”.
-5. Results: “Quarterly review”, “Release checklist”, “Usage summary”.
-6. Detail: “Quarterly review”, status “In progress”, due date “18 Nov 2026”.
-7. Guidance: instructions, help, recovery actions.
-8. Footer: version and supporting links where applicable.
+Sections:
+1. Header: product label, page title, primary action, overflow menu
+2. Navigation: destinations, selected destination, collapse control
+3. Summary: key metrics, trends, descriptions
+4. Main content: search, filters, sortable list, pagination
+5. Detail panel: selected title, metadata, actions, related information
+6. Feedback: validation, confirmation, alerts, snackbars
+7. Footer: secondary links, status text, support affordance
 
-## Content rules
-- Use sentence case, direct verbs, and concrete labels.
-- Prefer “Save changes”, “View details”, and “Try again”.
-- Empty: “No items match these filters.”
-- Error: “Unable to load results. Try again.”
-- Success: “Changes saved.”
-- Confirmation: “Remove this item? This action cannot be undone.”
-- Avoid fabricated urgency, ambiguous labels, and hidden conditions.
+Real content examples:
+- Page title: “Overview”
+- Primary action: “Create record”
+- Search placeholder: “Search records”
+- Filter label: “Status”
+- Filter options: “All”, “Active”, “Archived”
+- Metric labels: “Total records”, “Open items”, “Completion rate”
+- Table headers: “Name”, “Status”, “Updated”, “Category”
+- Empty message: “No records match these filters.”
+- Loading message: “Loading records…”
+- Error message: “Records could not be loaded. Try again.”
+- Success message: “Record created.”
+- Save action: “Save changes”
+- Cancel action: “Cancel”
+
+Content rules:
+- Use sentence case, concise labels, and explicit verbs.
+- Keep labels stable across surfaces.
+- Do not rely on color alone.
+- Preserve entered values after recoverable errors.
+- Use neutral, factual feedback.
