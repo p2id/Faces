@@ -1,7 +1,6 @@
-Name: Quiet Signal
-Positioning: A calm, high-clarity surface for scanning status and completing actions with minimal friction.
-Palette rationale: Warm neutral surfaces, charcoal text, and restrained blue focus attention without visual noise; status colors include text labels.
-Type rationale: Neutral sans-serif, strong x-height, two weights, and compact numeric styling support scanning.
-Layout rules: Persistent wide-screen navigation; context bar; summary row; primary table or card grid; adjacent or inline detail panel; 8px spacing rhythm.
-Motion intent: Brief opacity and position transitions clarify selection and panel changes; reduced-motion mode removes nonessential movement.
-Avoided traps: Decorative gradients, color-only alerts, hidden filters, excessive cards, modal dependency, and ambiguous icon controls.
+Positioning: Calm control surface for precise configuration and clear state visibility.
+Palette rationale: Warm neutral canvas, cool gray surfaces, deep text, one blue accent, and labeled semantic states.
+Type rationale: Neutral sans-serif with clear x-height, tabular numerals, and limited weight contrast.
+Layout rules: Centered max-width shell; persistent wide-screen navigation; grouped settings cards; two-column desktop detail; stacked smaller-screen sections.
+Motion intent: Short transitions for expansion, validation, and focus confirmation; no motion required for comprehension.
+Avoided traps: Gradients without purpose, hover-only actions, unexplained icons, color-only status, deep modal nesting, ambiguous completion.
