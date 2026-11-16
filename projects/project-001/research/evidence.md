@@ -1,11 +1,8 @@
 SUPPORTING EVIDENCE SUMMARY
-- Persistent context, scope, status, and primary actions improve orientation and task continuity.
-- Modular surfaces support varied content density without prescribing a specific industry.
-- Neutral foundations improve reuse; accents should communicate priority or state.
-- Labels, visible focus, text-plus-color status, and reduced-motion support improve accessibility.
-- Responsive layouts should preserve task order and primary actions while simplifying density.
-- Progressive disclosure reduces overload while retaining advanced capability.
-- Reversible actions and inline confirmation reduce ambiguity without unnecessary overlays.
-- Operations dashboards provide the broadest test surface for hierarchy, filtering, density, status, and responsive composition.
-- Confidence is high for hierarchy, accessibility, and responsive principles; medium for visual distinctiveness and domain preference.
-- Reconsider selection if scanability, status comprehension, narrow-width prioritization, or keyboard focus clarity fails.
+- Common product interfaces favor strong hierarchy, modular grouping, persistent orientation, and restrained chrome.
+- Accessible patterns favor contrast, visible focus, keyboard reachability, persistent labels, and status cues beyond color.
+- Responsive patterns favor fluid containers, priority-based stacking, compact navigation, and alternate wide-data representations.
+- Effective interaction patterns favor local context, reversible actions, inline feedback, predictable state changes, and fewer blocking interruptions.
+- Domain scoring favors Configuration center for reuse, accessibility clarity, responsive grouping, and scanability.
+- Negative evidence excludes decorative gradients, hover-only controls, dense unstructured tables, excessive modals, and ambiguous color states.
+- Confidence: medium; findings are generalized design-system evidence.
