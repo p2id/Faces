@@ -1,15 +1,17 @@
-# Section C — Accessibility Targets
-
-- Meet WCAG 2.2 AA.
-- Text contrast: minimum 4.5:1; large text: 3:1; non-text UI: 3:1.
-- Provide keyboard-complete operation and visible focus indicators of at least 2px.
-- Use semantic landmarks, one page-level heading, logical heading order, and descriptive links.
-- Give every control an accessible name; label icon-only controls.
-- Programmatically associate labels, hints, errors, required status, and values.
-- Announce dynamic alerts, validation results, loading completion, and toast content.
-- Trap focus in dialogs and drawers, support Escape, and restore focus on close.
-- Never communicate meaning through color alone.
-- Support 200% zoom, reflow, text resizing, forced colors, increased contrast, and reduced motion.
-- Use minimum 44×44px targets and avoid unadjustable time limits.
-- Expose list counts, progress values, selected states, and pagination position to assistive technology.
-- Keep reading and focus order aligned with visual order.
+Targets:
+- WCAG 2.2 AA.
+- Full keyboard access for every interactive control.
+- Focus indicator contrast of at least 3:1.
+- Normal text contrast of at least 4.5:1; large text and essential graphics at least 3:1.
+- Never communicate status by color alone.
+- Use semantic landmarks: header, navigation, main, complementary, footer.
+- Provide one clear page heading and logical heading hierarchy.
+- Associate every input with a visible label and programmatic hint/error text.
+- Announce dynamic alerts, loading completion, and validation results appropriately.
+- Manage focus for dialogs, drawers, menus, and transient feedback.
+- Trap focus only in modal dialogs and restore it on close.
+- Support 200% zoom and 400% reflow without loss of function.
+- Respect prefers-reduced-motion and avoid flashing content.
+- Provide accessible names for icon-only controls and meaningful table headers.
+- Ensure 44×44px touch targets with sufficient separation.
+- Do not use placeholder text as the only label.
