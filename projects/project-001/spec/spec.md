@@ -1,40 +1,24 @@
-Project: project-001
-Date: 2026-11-16
-Scope: Generic reusable product experience
-
-Surfaces:
-- Desktop application shell
-- Tablet application shell
-- Mobile application shell
-- Loading, empty, error, success, and offline views
-
-Sections:
-1. Header: product label, page title, primary action, overflow menu
-2. Navigation: destinations, selected destination, collapse control
-3. Summary: key metrics, trends, descriptions
-4. Main content: search, filters, sortable list, pagination
-5. Detail panel: selected title, metadata, actions, related information
-6. Feedback: validation, confirmation, alerts, snackbars
-7. Footer: secondary links, status text, support affordance
-
-Real content examples:
-- Page title: “Overview”
-- Primary action: “Create record”
-- Search placeholder: “Search records”
-- Filter label: “Status”
-- Filter options: “All”, “Active”, “Archived”
-- Metric labels: “Total records”, “Open items”, “Completion rate”
-- Table headers: “Name”, “Status”, “Updated”, “Category”
-- Empty message: “No records match these filters.”
-- Loading message: “Loading records…”
-- Error message: “Records could not be loaded. Try again.”
-- Success message: “Record created.”
-- Save action: “Save changes”
-- Cancel action: “Cancel”
-
-Content rules:
-- Use sentence case, concise labels, and explicit verbs.
-- Keep labels stable across surfaces.
-- Do not rely on color alone.
-- Preserve entered values after recoverable errors.
-- Use neutral, factual feedback.
+# C. Product Experience Specification
+- Date: 2026-11-17
+- Project: project-001
+- Surfaces: responsive web, compact mobile view, wide desktop view, keyboard navigation, screen-reader presentation.
+- Sections:
+  1. Header: product label, navigation, contextual action.
+  2. Overview: page title, summary, primary action.
+  3. Filters: search field, status filter, clear action.
+  4. Collection: list or card grid with status, metadata, and actions.
+  5. Detail: title, summary, attributes, related information.
+  6. Feedback: loading, empty, validation, success, warning, and error messages.
+  7. Footer: supporting links and version information.
+- Content examples:
+  - Title: “Workspace overview”
+  - Summary: “Review recent activity and outstanding items.”
+  - Primary action: “Create item”
+  - Search placeholder: “Search items”
+  - Filter: “Status: Active”
+  - Item: “Quarterly planning” / “Updated 17 Nov 2026” / “Active”
+  - Empty message: “No items match these filters.”
+  - Error message: “Items could not be displayed. Try again.”
+  - Success message: “Item created successfully.”
+- Content rules: sentence case, concise labels, explicit verbs, neutral language, no fabricated urgency.
+- Interaction rules: preserve context after actions; show validation beside the affected control; provide recovery for recoverable errors; confirm only irreversible actions.
