@@ -1,20 +1,25 @@
-graph TD
-A[Foundations] --> B[Color]
-A --> C[Type]
-A --> D[Space]
-A --> E[Shape]
-A --> F[Motion]
-B --> G[Semantic roles]
-C --> G
-D --> H[Layout roles]
-E --> H
-F --> I[Feedback roles]
-G --> J[Components]
-H --> J
-I --> J
-J --> K[Responsive surfaces]
-J --> L[State variants]
-Rationale: Foundations feed semantic roles, which feed components and responsive or state variants. This limits raw-value drift and supports reusable themes.
-Quality gates: stable semantic names; components reference roles rather than raw values; contrast covers text, controls, and status; reduced-motion alternatives exist.
-Repository path: projects/project-001/2026-11-13/tokens/token-map.mmd
-Publishing rules: UTF-8; deterministic ordering; one relation per line; stable identifiers; no generated timestamps.
+mindmap
+  root((Token map))
+    Color
+      canvas: #FFFFFF
+      surface: #F5F7FA
+      ink: #17212B
+      muted: #5B6875
+      accent: #2457D6
+      danger: #B3261E
+      border: #CBD5E1
+    Type
+      family: system sans
+      scale: 12/16/20/28
+      weight: 400/600/700
+      line-height: 1.4
+    Space
+      unit: 4px
+      values: 4/8/12/16/24/32/48
+    Shape
+      radius: 4/8/12
+      stroke: 1px
+    Motion
+      duration: 150ms
+      easing: standard ease
+Documentation: Semantic tokens centralize visual decisions and support later theme substitution. Representation rationale: MMD expresses hierarchy compactly. Dedicated path: /projects/project-001/sections/f/token-map.mmd. Quality gates: contrast target AA, semantic names used consistently, ordered type scale, base-unit spacing, and reduced-motion fallback.
