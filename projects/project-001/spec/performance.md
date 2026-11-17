@@ -1,15 +1,12 @@
-Budgets:
-- First meaningful render: ≤2.0s on a mid-range mobile connection.
-- Largest contentful paint: ≤2.5s.
-- Interaction to next paint: ≤200ms.
-- Cumulative layout shift: ≤0.10.
-- Initial JavaScript: ≤170KB compressed.
-- Initial CSS: ≤50KB compressed.
-- Initial font payload: ≤100KB; maximum two families and two weights.
-- Above-the-fold media: ≤250KB.
-- Main-thread blocking task: ≤50ms.
-- Route transition response: ≤500ms.
-- Show loading feedback within 300ms for continuing work.
-- Reserve media, table, and panel dimensions to prevent layout shift.
-- Defer noncritical content and below-fold media.
-- Prefer transform/opacity animation; disable nonessential motion when reduced motion is enabled.
+# Performance Budgets
+- Initial HTML: ≤50KB compressed.
+- Critical CSS: ≤40KB compressed.
+- Initial JavaScript: ≤170KB compressed; route total ≤350KB compressed.
+- Fonts: maximum 2 families and 4 files; ≤120KB compressed.
+- Images: ≤150KB per above-the-fold image; lazy-load below-the-fold media.
+- Network: maximum 2 render-blocking requests; no unnecessary third-party requests.
+- Core Web Vitals: LCP ≤2.5s, INP ≤200ms, CLS ≤0.1 on representative mobile conditions.
+- Rendering: first useful content ≤1.8s on a mid-tier mobile profile.
+- Runtime: reserve media dimensions; prevent loading shifts; virtualize collections above 100 rows.
+- Resilience: loading, empty, and error states render without optional assets.
+- Measurement: track route load, interaction latency, layout shift, and error rate without personal data.
