@@ -1,19 +1,11 @@
-Breakpoints:
-- xs: 0–479px
-- sm: 480–767px
-- md: 768–1023px
-- lg: 1024–1279px
-- xl: 1280px and above
-
-Rules:
-- Use a fluid container with 16px minimum side padding and 1200px maximum width.
-- xs/sm: single column, collapsed navigation, stacked actions when needed.
-- md: optional two-column summary/detail layout; collapsed navigation by default.
-- lg/xl: expanded navigation; 8–12 column grid; persistent detail panel when useful.
-- Reduce card padding from 24px to 16px below 768px.
-- Use prioritized columns, horizontal scrolling, or labeled rows for narrow tables.
-- Keep touch targets at least 44×44px.
-- Keep body text at least 16px.
-- Keep dialogs within 16px viewport margins; use full-height drawers on small screens.
-- Expose hover actions through focus and touch alternatives.
-- Reflow order: heading, primary action, filters, summary, content, supporting information.
+# Responsive Rules
+- Breakpoints: xs 0–479px; sm 480–767px; md 768–1023px; lg 1024–1439px; xl 1440px and above.
+- Container: full width below md; max-width 1200px at lg and above; horizontal padding 16px xs/sm, 24px md, 32px lg/xl.
+- Grid: 1 column xs, 2 sm, 3 md, 4 lg/xl; minimum card width 240px.
+- Header: stacked xs; compact horizontal sm; full navigation md and above; labelled overflow menu below md.
+- Forms: single column xs/sm; paired fields md and above; actions stack xs and align inline md and above.
+- Collections: convert dense tables to labelled cards below md; preserve reading order and actions.
+- Dialogs: full-screen xs/sm; centered panel up to 560px md and above.
+- Typography: display 28/34 xs, 32/38 md, 36/44 lg/xl; body minimum 16/24.
+- Controls: minimum 44×44px at all breakpoints.
+- Behavior: avoid unlabelled horizontal scrolling; preserve focus, validation, and action order during reflow.
