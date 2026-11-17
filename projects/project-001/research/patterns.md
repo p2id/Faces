@@ -1,64 +1,34 @@
-Project: project-001
-Date: 2026-11-16
+Date: 2026-11-17
+Project ID: project-001
 
-DOMINANT PATTERNS
-- Clear title, concise context, and one primary action.
-- Grouped cards, lists, and tables with visible hierarchy.
-- Persistent navigation with explicit active state.
-- Neutral surfaces, restrained borders, and consistent spacing.
-- Progressive disclosure for secondary information.
+Dominant patterns: clear hierarchy; modular cards and lists; one primary action per context; explicit status feedback; restrained semantic color; mobile-first reflow.
+Emerging patterns: contextual actions; density modes; persistent state summaries; tokenized themes; reduced-motion defaults; split overview/detail layouts.
+Deprecated patterns: equal-weight dashboards; hover-only actions; low-contrast text; stacked routine modals; decorative gradients; autoplay motion.
+Outlier patterns: synchronized split panes; sequence timelines; large decision summaries; offline-readable empty states; keyboard-first command surfaces.
 
-EMERGING PATTERNS
-- Contextual actions placed beside relevant content.
-- Inline validation with reversible changes.
-- Density controls for compact and comfortable views.
-- Semantic design tokens shared across components.
-- Priority-based responsive stacking.
+Visual DNA: warm-neutral canvas, cool-neutral surfaces, graphite text, one focused accent, medium radius, thin dividers, restrained elevation, consistent icon geometry.
+Interactional DNA: predictable navigation, immediate local feedback, reversible changes, safe defaults, progressive disclosure, preserved input after recoverable errors.
+Accessibility DNA: WCAG 2.2 AA target, visible focus, logical tab order, semantic grouping, minimum 44px targets, non-color status cues, scalable text, reduced motion, explicit error guidance.
+Responsive DNA: content-driven breakpoints, priority-first stacking, retained primary action, progressive navigation compression, stacked or scrollable data views, stable readable spacing.
 
-DEPRECATED PATTERNS
-- Decorative gradients without functional purpose.
-- Hover-only actions or status indicators.
-- Unstructured dense tables.
-- Excessive modal interruption.
-- Color-only feedback.
+Candidate domains
+Planning workspace — organizes priorities, sequences, statuses, and progress in a focused planning surface.
+Resource library — supports browsing, filtering, comparison, and saving of structured reference material.
+Status center — presents conditions, notices, changes, and resolution states with clear prioritization.
+Finance overview — summarizes budgets, transactions, trends, and threshold states with careful emphasis.
+Learning hub — organizes modules, completion states, practice activity, and next actions.
+Checklist board — supports repeatable checks, exceptions, completion states, and compact evidence.
 
-OUTLIER PATTERNS
-- Full-bleed dashboards with minimal navigation.
-- Timeline-first navigation.
-- Monochrome interfaces using typography as the main state signal.
-- Single-screen control panels with extreme density.
+Weighted scoring: clarity 30%, responsive fit 20%, accessibility leverage 20%, component reuse 15%, neutral suitability 15%; scores 1–5; total weighted score out of 5.
 
-EXTRACTED DNA
-Visual: neutral canvas, elevated content surfaces, 8px spacing rhythm, restrained accent, moderate radius, thin dividers, semantic status colors.
-Interactional: predictable navigation, visible primary action, inline guidance, explicit irreversible-action confirmation, clear empty/loading/error states, undo where practical.
-Accessibility: WCAG AA contrast target, keyboard-complete operation, visible focus, logical reading order, persistent labels, non-color status cues, touch targets of at least 44px.
-Responsive: fluid container with readable maximum width; split desktop layouts stack on smaller screens; wide tables become priority lists or scroll regions; navigation compresses without losing orientation.
+Domain                 Clarity Responsive Access Reuse Neutral Total
+Planning workspace        5        5         5      5      5    5.00
+Resource library          4        5         5      5      5    4.70
+Status center             5        4         5      4      5    4.65
+Finance overview          4        4         4      5      4    4.10
+Learning hub              4        5         5      4      4    4.45
+Checklist board           5        4         5      5      4    4.65
 
-CANDIDATE PRODUCT DOMAINS
-1. Inventory workspace: organizes items, quantities, filters, and detail states.
-2. Scheduling planner: presents dated entries, conflicts, filters, and list or timeline views.
-3. Analytics workspace: presents metrics, trends, comparisons, and supporting records.
-4. Knowledge library: supports categorized discovery, reading, metadata, and organization.
-5. Configuration center: groups preferences, rules, statuses, and validation.
-6. Content catalog: manages searchable records, classifications, previews, and states.
-
-WEIGHTED SCORING MATRIX
-Weights: scanability 25, responsive fit 20, reuse 20, accessibility clarity 20, differentiation 15. Scores 1–5; totals /5.
-Inventory workspace: 4, 5, 5, 4, 3 = 4.25
-Scheduling planner: 4, 4, 4, 4, 4 = 4.00
-Analytics workspace: 5, 4, 4, 4, 4 = 4.25
-Knowledge library: 4, 5, 4, 5, 3 = 4.20
-Configuration center: 4, 5, 5, 5, 3 = 4.45
-Content catalog: 4, 4, 5, 4, 4 = 4.20
-
-SELECTED DOMAIN RATIONALE
-Configuration center scores highest for reusable hierarchy, grouped controls, validation clarity, responsive behavior, and accessible state communication without requiring specialized visual assets.
-
-CYCLE LOCK
-Locked domain: Configuration center.
-Locked DNA: neutral surfaces, one accent, semantic states, compact spacing, visible focus, grouped sections, inline guidance, explicit completion state.
-Cycle: 2026-11-16.
-Project: project-001.
-
-FALLBACK RULE
-If the selected domain cannot express the required hierarchy or responsive behavior, use Inventory workspace while preserving all locked visual, interactional, accessibility, and responsive DNA.
+Selected domain rationale: Planning workspace provides the broadest neutral coverage of hierarchy, lists, filters, summaries, statuses, timelines, forms, empty states, and responsive transformations without specialized assumptions.
+Cycle lock: lock Planning workspace, warm-neutral visual DNA, one-primary-action rule, WCAG 2.2 AA targets, and mobile-first responsive behavior for 2026-11-17 and project-001.
+Fallback rule: if domain fit fails, use Resource library, then Status center, while retaining all locked accessibility, responsive, and interaction principles.
