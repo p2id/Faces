@@ -1,6 +1,6 @@
-Positioning: Quiet settings library that makes complex options easy to scan and understand.
-Palette rationale: Pale stone canvas, white reading surfaces, charcoal text, teal accent, and labeled warning callouts.
-Type rationale: High-legibility sans-serif with generous line height, sentence-case labels, and limited emphasis levels.
-Layout rules: Single readable content column with optional secondary index; purpose text starts each section; related controls stay grouped; smaller screens remove the index while preserving order.
-Motion intent: Gentle section expansion and completion cues; transitions never delay access to content.
-Avoided traps: Oversized introductory areas, decorative asset dependency, long uninterrupted forms, hidden advanced controls, ambiguous completion.
+Positioning: dense operational board for rapid scanning, triage, and repeatable updates.
+Palette rationale: cool-neutral foundation, light work surfaces, graphite text, focused violet accent for active state.
+Type rationale: compact sans-serif, tabular numerals, and measured labels support comparison without sacrificing zoom readability.
+Layout rules: resizable overview/detail panes, compact grouped rows, persistent filters, explicit selection, labeled mobile stacks, direct access to frequent actions.
+Motion intent: fast 120–180ms transitions for selection, filtering, and completion; preserve orientation and provide reduced-motion behavior.
+Avoided traps: spreadsheet overload, microscopic controls, ambiguous selection, keyboard traps, uncontrolled refresh, silent state changes.
