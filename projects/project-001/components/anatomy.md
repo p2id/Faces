@@ -1,44 +1,37 @@
-Shared anatomy:
-- Surface: canvas, container, border, elevation.
-- Hierarchy: context, heading, description, primary content, supporting content.
-- Control: label, value, affordance, feedback, action.
-- Feedback: status icon, concise message, recovery action.
-- Navigation: landmark, destination label, selected indicator, focus treatment.
-
-Variants:
-- Density: comfortable, compact.
-- Layout: single-column, split-view, full-width.
-- Emphasis: default, accent, muted, destructive.
-- Interaction: static, actionable, selectable, editable.
-- Viewport: desktop, tablet, mobile.
-
-States:
-- Interaction: default, hover, focus-visible, pressed, selected, disabled.
-- Data: loading, populated, empty, no-results, error, success.
-- Connectivity: available, offline, reconnecting.
-- Validation: untouched, invalid, valid, submitting.
-
-Usage:
-- Compose pages from named regions with one primary task per region.
-- Keep anatomy order stable across variants.
-- Use progressive disclosure for secondary details.
-- Keep status and recovery actions adjacent to affected content.
-- Preserve reading order during reflow.
-
-Anti-patterns:
-- Unnamed controls or unlabeled icons.
-- Inconsistent action placement.
-- Hidden focus or hover-only functionality.
-- Color-only status.
-- Decorative density that harms scanning.
-- Modal use for content that fits inline.
-- Unexpected content reordering.
-- Empty, loading, or error states without explanation or next action.
-
-Accessibility:
-- Prefer semantic HTML before ARIA.
-- Give every control an accessible name and visible focus.
-- Preserve heading hierarchy, reading order, and keyboard operation.
-- Associate labels, hints, errors, and status updates programmatically.
-- Meet WCAG 2.2 AA contrast, zoom, reflow, target-size, and motion requirements.
-- Test keyboard use, screen reader output, 200% zoom, 400% reflow, and touch input.
+# Shared Anatomy
+- Page shell: header, navigation, main content, feedback region, footer.
+  - Variants: full navigation, compact navigation.
+  - States: initial, loading, populated, empty, partial-error, error.
+  - Usage: preserve landmarks and content order.
+  - Anti-patterns: missing title; layout shift; duplicated navigation.
+  - Accessibility: one main landmark; one primary heading; skip link; named landmarks as needed.
+- Section header: eyebrow, heading, supporting text, action group.
+  - Variants: standard, compact, split action.
+  - States: default, loading, action-disabled.
+  - Usage: describe content before controls.
+  - Anti-patterns: decorative text replacing heading; unexplained icon action.
+  - Accessibility: valid heading hierarchy; action names expose purpose.
+- Filter bar: query field, filters, applied-filter summary, clear action.
+  - Variants: inline, stacked, collapsible.
+  - States: idle, active, loading, invalid, empty-result.
+  - Usage: summarize criteria and preserve them after refresh.
+  - Anti-patterns: hidden active filters; unclear clear action; color-only filter state.
+  - Accessibility: grouped controls; result changes announced; clear action named.
+- Content collection: item, status, metadata, primary and secondary actions.
+  - Variants: grid, list, compact list.
+  - States: loading, populated, selected, empty, error.
+  - Usage: keep repeated anatomy consistent and scannable.
+  - Anti-patterns: mixed alignment; truncated essential content; detached actions.
+  - Accessibility: semantic list structure; item headings; item-specific action context.
+- Feedback region: progress, empty message, alert, recovery action.
+  - Variants: inline, page-level, modal.
+  - States: pending, success, warning, error, unavailable.
+  - Usage: state what happened, impact, and next step.
+  - Anti-patterns: silent failure; indefinite spinner; success without result confirmation.
+  - Accessibility: suitable live-region politeness; text equivalent for icons and color.
+- Overlay: backdrop, surface, title, content, actions.
+  - Variants: dialog, popover, tooltip.
+  - States: hidden, opening, visible, closing.
+  - Usage: anchor popovers to triggers; close without unintended data loss.
+  - Anti-patterns: essential action in tooltip; off-screen focus; obscured dismissal.
+  - Accessibility: managed focus; correct role and name; consistent Escape and outside-click behavior.
