@@ -1,17 +1,14 @@
 flowchart TD
-A[Open surface] --> B{Content available?}
-B -- no --> C[Show empty guidance]
-B -- yes --> D[Review summary]
-D --> E{Input valid?}
-E -- no --> F[Show inline validation]
-E -- yes --> G[Confirm action]
-G --> H[Show progress]
-H --> I{Completed?}
-I -- yes --> J[Show updated state]
-I -- no --> K[Show recoverable error]
-K --> L[Retry or return]
-Rationale: the flow documents the primary path and non-ideal states without implementation details.
-Gate coverage: entry, decision, validation, confirmation, progress, success, failure, retry, cancellation, and return paths; consequential actions require explicit confirmation.
-Path intent: repository/g/flows/core-flow.mmd; maintain one source flow per experience objective.
-Writing rule: use plain verbs, explain outcomes, and avoid ambiguity, coercion, or preselected consequential choices.
-Publishing rule: render the diagram, compare every branch with the state matrix, and record unresolved gaps before release.
+A[Entry] --> B[Orient]
+B --> C{Required context present?}
+C -->|Yes| D[Review primary content]
+C -->|No| E[Show guidance]
+E --> F[Provide recovery action]
+D --> G{Primary action available?}
+G -->|Yes| H[Confirm intent]
+G -->|No| I[Explain constraint]
+H --> J[Show completion state]
+I --> K[Offer alternate path]
+J --> L[Retain relevant context]
+K --> L
+Documentation: The flow represents decisions, recovery, and completion without implementation detail. Representation rationale: MMD keeps relationships editable and reviewable. Dedicated path: /projects/project-001/sections/g/flows.mmd. Quality gates: no dead ends, every failure has a next step, consequential actions have confirmation, completion is explicit, and context is retained where appropriate. Writing rules: use short verb-led labels, one decision per node, neutral tone, and observable outcomes.
