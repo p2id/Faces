@@ -1,39 +1,21 @@
-Component inventory and states:
-- Application shell: default, loading, offline, constrained, error
-- Header: default, compact, action-disabled, overflow-open
-- Navigation: expanded, collapsed, selected, unselected, disabled
-- Breadcrumbs: default, truncated, overflow-open
-- Page heading: default, with-description, with-actions
-- Button: default, hover, focus-visible, pressed, disabled, loading, destructive
-- Icon button: default, hover, focus-visible, pressed, disabled, loading
-- Link: default, hover, focus-visible, visited, disabled
-- Text field: empty, filled, focused, hover, disabled, read-only, invalid, valid
-- Search field: empty, filled, focused, loading, no-results, invalid, disabled
-- Select: closed, open, selected, empty, focused, disabled, invalid
-- Checkbox: unchecked, checked, indeterminate, focused, disabled
-- Radio group: unselected, selected, focused, disabled, invalid
-- Switch: off, on, focused, disabled
-- Tabs: unselected, selected, focused, disabled
-- Chip/filter: inactive, active, removable, focused, disabled
-- Card: default, hover, focused, selected, disabled
-- Metric tile: default, loading, unavailable, positive, negative, neutral
-- Data table: loading, populated, empty, no-results, error, row-hover, row-selected, responsive
-- Pagination: default, first-page, middle-page, last-page, disabled, loading
-- Dialog: closed, opening, open, submitting, success, error
-- Drawer/detail panel: closed, opening, open, loading, error
-- Tooltip: hidden, visible, delayed
-- Alert/banner: info, success, warning, error, dismissible
-- Snackbar: queued, visible, dismissing
-- Progress: determinate, indeterminate, complete, error
-- Skeleton: visible, resolved
-- Menu: closed, open, item-focused, item-disabled
-- Date field: empty, filled, focused, invalid, disabled, read-only
-- Divider: default, inset, full-bleed
-
-State rules:
-- Focus-visible is distinct from hover.
-- Disabled controls are non-interactive.
-- Loading prevents duplicate submission.
-- Errors identify the issue and recovery action.
-- Empty states explain the condition and offer one relevant action.
-- Success states confirm completion without blocking continuation.
+# D. Component State Inventory
+- Page shell: initial, loading, populated, empty, partial-error, error, success.
+- Header: default, compact, expanded-navigation, focus-visible.
+- Navigation item: default, hover, focus-visible, active, disabled.
+- Button: default, hover, focus-visible, pressed, disabled, loading, destructive-confirmation.
+- Text field: empty, filled, hover, focus-visible, disabled, read-only, invalid, valid.
+- Select: closed, open, hover, focus-visible, selected, disabled, invalid.
+- Checkbox: unchecked, checked, mixed, hover, focus-visible, disabled.
+- Radio option: unselected, selected, hover, focus-visible, disabled, invalid.
+- Tabs: inactive, active, hover, focus-visible, disabled.
+- Card: default, hover, focus-visible, selected, disabled.
+- List row: default, hover, focus-visible, selected, disabled.
+- Badge: neutral, informational, positive, warning, negative, disabled.
+- Alert: informational, positive, warning, negative, dismissible, persistent.
+- Progress indicator: pending, active, complete, error.
+- Skeleton: loading, resolved, failed.
+- Dialog: closed, opening, open, closing, blocked.
+- Tooltip: hidden, visible, focus-visible.
+- Pagination: default, current, hover, focus-visible, disabled.
+- Empty state: default, filtered-empty, unavailable.
+- State rules: preserve layout during loading; keep disabled controls legible; expose error cause and recovery; never use color alone; retain visible focus.
