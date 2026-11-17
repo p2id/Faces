@@ -1,51 +1,28 @@
-meta:
-  project: project-001
-  date: 2026-11-16
-  layer: semantic
 color:
-  text:
-    default: "{color.neutral.900}"
-    muted: "{color.neutral.600}"
-    inverse: "{color.neutral.0}"
-    link: "{color.blue.700}"
-    onAccent: "{color.neutral.0}"
   surface:
-    canvas: "{color.neutral.0}"
-    default: "{color.neutral.0}"
-    subtle: "{color.neutral.50}"
-    raised: "{color.neutral.0}"
-    inverse: "{color.neutral.900}"
+    canvas: "#FFFFFF"
+    raised: "#F8FAFC"
+    inverse: "#0F172A"
+  text:
+    primary: "#0F172A"
+    secondary: "#475569"
+    muted: "#64748B"
+    inverse: "#FFFFFF"
+    link: "#1D4ED8"
   border:
-    default: "{color.neutral.200}"
-    strong: "{color.neutral.400}"
-    focus: "{color.blue.600}"
-  accent:
-    default: "{color.blue.600}"
-    hover: "{color.blue.700}"
-    pressed: "{color.blue.800}"
-  state:
-    info: "{color.blue.700}"
-    success: "{color.green.700}"
-    warning: "{color.amber.800}"
-    danger: "{color.red.700}"
-    disabled: "{color.neutral.400}"
-  neutral:
-    "0": "#FFFFFF"
-    "50": "#F8FAFC"
-    "200": "#E2E8F0"
-    "400": "#94A3B8"
-    "600": "#475569"
-    "900": "#0F172A"
-  blue:
-    "600": "#2563EB"
-    "700": "#1D4ED8"
-    "800": "#1E40AF"
-  green:
-    "700": "#15803D"
-  amber:
-    "800": "#92400E"
-  red:
-    "700": "#B91C1C"
+    default: "#CBD5E1"
+    subtle: "#E2E8F0"
+    strong: "#94A3B8"
+    focus: "#2563EB"
+  status:
+    info: "#2563EB"
+    positive: "#15803D"
+    warning: "#A16207"
+    negative: "#B91C1C"
+  action:
+    primary: "#1D4ED8"
+    primaryHover: "#1E40AF"
+    secondary: "#E2E8F0"
 typography:
   fontFamily:
     sans: "system-ui, sans-serif"
@@ -56,25 +33,16 @@ typography:
     md: "1rem"
     lg: "1.125rem"
     xl: "1.5rem"
-    display: "2rem"
+    display: "2.25rem"
+  lineHeight:
+    tight: "1.2"
+    normal: "1.5"
+    relaxed: "1.7"
   weight:
     regular: 400
     medium: 500
+    semibold: 600
     bold: 700
-  lineHeight:
-    tight: 1.2
-    normal: 1.5
-    relaxed: 1.7
-  body:
-    font: "{typography.fontFamily.sans}"
-    size: "{typography.size.md}"
-    weight: "{typography.weight.regular}"
-    lineHeight: "{typography.lineHeight.normal}"
-  heading:
-    font: "{typography.fontFamily.sans}"
-    size: "{typography.size.xl}"
-    weight: "{typography.weight.bold}"
-    lineHeight: "{typography.lineHeight.tight}"
 spacing:
   "0": "0"
   "1": "0.25rem"
@@ -84,64 +52,51 @@ spacing:
   "6": "1.5rem"
   "8": "2rem"
   "12": "3rem"
-  page: "{spacing.4}"
-  section: "{spacing.8}"
-  control: "{spacing.3}"
 radius:
   none: "0"
   sm: "0.25rem"
   md: "0.5rem"
   lg: "0.75rem"
   pill: "999px"
-  control: "{radius.md}"
-  card: "{radius.lg}"
 border:
   thin: "1px"
   thick: "2px"
-  default: "{border.thin} solid {color.border.default}"
-  focus: "{border.thick} solid {color.border.focus}"
 shadow:
   none: "none"
   sm: "0 1px 2px rgb(15 23 42 / 0.08)"
   md: "0 4px 12px rgb(15 23 42 / 0.12)"
-  raised: "{shadow.sm}"
 opacity:
   disabled: 0.5
   muted: 0.7
   overlay: 0.6
 motion:
   duration:
-    fast: "100ms"
-    standard: "200ms"
-    slow: "300ms"
+    instant: "0ms"
+    fast: "120ms"
+    normal: "200ms"
+    slow: "320ms"
   easing:
     standard: "cubic-bezier(0.2, 0, 0, 1)"
-    exit: "cubic-bezier(0.4, 0, 1, 1)"
-  reduced: "0ms"
 layout:
-  contentMax: "1200px"
-  sidebar: "240px"
-  detail: "360px"
-  gridGap: "{spacing.6}"
-  pagePadding: "{spacing.page}"
+  containerMax: "1200px"
+  contentMax: "720px"
+  gutter: "{spacing.4}"
+  sectionGap: "{spacing.8}"
 size:
-  touchTarget: "44px"
-  controlHeight: "40px"
+  controlHeight: "44px"
   iconSm: "16px"
   iconMd: "20px"
   iconLg: "24px"
 zIndex:
   base: 0
-  header: 10
-  sticky: 20
-  dropdown: 30
-  overlay: 40
-  modal: 50
-  toast: 60
+  sticky: 10
+  popover: 20
+  modal: 30
+  toast: 40
 state:
   focusRing: "0 0 0 3px rgb(37 99 235 / 0.35)"
   disabledOpacity: "{opacity.disabled}"
-  loadingOpacity: "{opacity.muted}"
-  errorBorder: "{color.red.700}"
-  successBorder: "{color.green.700}"
-  selectedSurface: "{color.neutral.50}"
+  hoverSurface: "{color.surface.raised}"
+  selectedSurface: "#DBEAFE"
+  errorBorder: "{color.status.negative}"
+  successBorder: "{color.status.positive}"
