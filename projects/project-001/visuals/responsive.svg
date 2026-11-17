@@ -1,14 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 360" role="img" aria-label="Responsive layout model">
-<rect width="960" height="360" fill="#F7F8FA"/>
-<g fill="#FFF" stroke="#BFC7D4"><rect x="32" y="56" width="220" height="240" rx="8"/><rect x="280" y="40" width="280" height="256" rx="8"/><rect x="588" y="24" width="340" height="272" rx="8"/></g>
-<g fill="#DDE3EC"><rect x="56" y="80" width="172" height="24" rx="4"/><rect x="304" y="64" width="232" height="24" rx="4"/><rect x="612" y="48" width="292" height="24" rx="4"/></g>
-<g fill="#AEB8C7"><rect x="56" y="128" width="172" height="12" rx="4"/><rect x="304" y="112" width="232" height="12" rx="4"/><rect x="612" y="96" width="292" height="12" rx="4"/></g>
-<g fill="#1F5EFF"><rect x="56" y="248" width="80" height="28" rx="5"/><rect x="304" y="240" width="96" height="28" rx="5"/><rect x="612" y="232" width="112" height="28" rx="5"/></g>
-<g font-family="Arial,sans-serif" font-size="14" fill="#172033"><text x="86" y="328">compact</text><text x="382" y="328">medium</text><text x="720" y="328">wide</text></g>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 300" role="img" aria-label="Responsive layout rules">
+<g fill="none" stroke="#263238" stroke-width="2">
+<rect x="24" y="24" width="280" height="240"/><rect x="340" y="24" width="280" height="240"/><rect x="656" y="24" width="280" height="240"/>
+<path d="M48 88h232M48 136h232M48 184h232M364 88h232M364 136h232M364 184h232M680 88h232M680 136h232M680 184h232"/>
+</g>
+<g font-family="sans-serif" font-size="14" fill="#263238">
+<text x="48" y="56">COMPACT ≤ 599</text><text x="364" y="56">MEDIUM 600–959</text><text x="680" y="56">WIDE ≥ 960</text>
+<text x="48" y="80">single column</text><text x="364" y="80">two flexible columns</text><text x="680" y="80">navigation plus content</text>
+<text x="48" y="118">stack regions</text><text x="364" y="118">retain priority order</text><text x="680" y="118">preserve reading width</text>
+<text x="48" y="166">44px targets</text><text x="364" y="166">fluid spacing</text><text x="680" y="166">stable anchor regions</text>
+<text x="48" y="214">no horizontal scroll</text><text x="364" y="214">no clipped labels</text><text x="680" y="214">no excess density</text>
+</g>
 </svg>
-Model: compact uses one column; medium permits grouped panels; wide permits persistent navigation and multiple content columns.
-Rationale: behavior is defined by available space and content priority rather than device names.
-Gate coverage: no horizontal scrolling, logical reading order, keyboard access, 44px targets, 200% zoom, orientation changes, and reduced motion.
-Path intent: repository/g/responsive/layout-model.svg; retain breakpoint notes and viewport previews.
-Writing rule: essential labels and status remain available when controls stack, wrap, or truncate.
-Publishing rule: verify compact, medium, wide, zoomed, and orientation variants before release.
+Documentation: Breakpoint rules describe layout behavior rather than device categories. Representation rationale: SVG shows parallel responsive modes at a glance. Dedicated path: /projects/project-001/sections/f/responsive.svg. Quality gates: compact, medium, and wide layouts preserve order, readable content, target size, zoom behavior, and overflow control.
