@@ -1,8 +1,1 @@
-SUPPORTING EVIDENCE SUMMARY
-- Common product interfaces favor strong hierarchy, modular grouping, persistent orientation, and restrained chrome.
-- Accessible patterns favor contrast, visible focus, keyboard reachability, persistent labels, and status cues beyond color.
-- Responsive patterns favor fluid containers, priority-based stacking, compact navigation, and alternate wide-data representations.
-- Effective interaction patterns favor local context, reversible actions, inline feedback, predictable state changes, and fewer blocking interruptions.
-- Domain scoring favors Configuration center for reuse, accessibility clarity, responsive grouping, and scanability.
-- Negative evidence excludes decorative gradients, hover-only controls, dense unstructured tables, excessive modals, and ambiguous color states.
-- Confidence: medium; findings are generalized design-system evidence.
+Supporting evidence summary: Repeated interface conventions favor clear hierarchy, modular grouping, direct feedback, explicit status, and restrained semantic color. Small-screen constraints favor priority ordering, progressive disclosure, persistent primary actions, and content-driven breakpoints. Accessibility guidance supports visible focus, non-color status cues, scalable type, adequate targets, reduced motion, and recoverable errors. Usability evidence favors recognition over recall, local validation, reversible actions, and preserved context. Tokenized spacing, type, radius, elevation, and color improve consistency. The selected domain exercises the widest reusable pattern set. Decorative complexity, hidden actions, modal stacking, and non-informative motion are excluded.
