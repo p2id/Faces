@@ -1,17 +1,14 @@
-Targets:
-- WCAG 2.2 AA.
-- Full keyboard access for every interactive control.
-- Focus indicator contrast of at least 3:1.
-- Normal text contrast of at least 4.5:1; large text and essential graphics at least 3:1.
-- Never communicate status by color alone.
-- Use semantic landmarks: header, navigation, main, complementary, footer.
-- Provide one clear page heading and logical heading hierarchy.
-- Associate every input with a visible label and programmatic hint/error text.
-- Announce dynamic alerts, loading completion, and validation results appropriately.
-- Manage focus for dialogs, drawers, menus, and transient feedback.
-- Trap focus only in modal dialogs and restore it on close.
-- Support 200% zoom and 400% reflow without loss of function.
-- Respect prefers-reduced-motion and avoid flashing content.
-- Provide accessible names for icon-only controls and meaningful table headers.
-- Ensure 44×44px touch targets with sufficient separation.
-- Do not use placeholder text as the only label.
+# Accessibility Targets
+- Standard: WCAG 2.2 AA.
+- Keyboard: logical tab order, visible focus, no traps, Escape closes dismissible overlays.
+- Semantics: native controls preferred; one primary heading; correct heading hierarchy; labelled landmarks.
+- Names: every control has an accessible name; icon-only controls have an accessible label.
+- Contrast: text and essential icons at least 4.5:1; large text at least 3:1; boundaries and focus indicators at least 3:1.
+- Color: status, selection, and errors use text, icons, or patterns in addition to color.
+- Motion: honor prefers-reduced-motion; replace nonessential transitions with instant changes.
+- Forms: persistent labels, pre-entry instructions, programmatic error associations, announced required state.
+- Dynamic content: polite status announcements; assertive announcements only for critical errors; move focus only when context changes.
+- Reflow: usable at 200% zoom and 320px CSS width without loss of content or function.
+- Touch: interactive targets at least 44×44px with adequate spacing.
+- Media: meaningful imagery has concise alternatives; decorative imagery has empty alternatives.
+- Timing: essential content does not expire without warning and extension.
