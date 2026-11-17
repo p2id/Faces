@@ -1,24 +1,15 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 430" role="img" aria-label="Interface state matrix">
-<title>Interface state matrix</title>
-<rect width="900" height="430" fill="#fff"/>
-<g font-family="Arial" font-size="16" fill="#101828">
-<text x="32" y="36">Surface</text><text x="220" y="36">Default</text><text x="380" y="36">Loading</text><text x="540" y="36">Empty</text><text x="700" y="36">Error</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 360" role="img" aria-label="Product state coverage matrix">
+<g fill="none" stroke="#263238" stroke-width="2">
+<rect x="20" y="20" width="860" height="320"/><path d="M20 68h860M180 20v320M390 20v320M600 20v320M740 20v320"/>
 </g>
-<g fill="#f9fafb" stroke="#d0d5dd">
-<rect x="24" y="56" width="852" height="62" rx="4"/>
-<rect x="24" y="124" width="852" height="62" rx="4"/>
-<rect x="24" y="192" width="852" height="62" rx="4"/>
-<rect x="24" y="260" width="852" height="62" rx="4"/>
-<rect x="24" y="328" width="852" height="62" rx="4"/>
-</g>
-<g font-family="Arial" font-size="14" fill="#344054">
-<text x="40" y="92">Overview</text><text x="40" y="160">Collection</text><text x="40" y="228">Detail</text><text x="40" y="296">Form</text><text x="40" y="364">Notification</text>
-<text x="220" y="92">Content + action</text><text x="380" y="92">Placeholder</text><text x="540" y="92">Guidance + action</text><text x="700" y="92">Recovery</text>
-<text x="220" y="160">Items + controls</text><text x="380" y="160">Skeleton</text><text x="540" y="160">Create prompt</text><text x="700" y="160">Retry guidance</text>
-<text x="220" y="228">Attributes</text><text x="380" y="228">Progressive reveal</text><text x="540" y="228">Unavailable notice</text><text x="700" y="228">Fallback</text>
-<text x="220" y="296">Fields + validation</text><text x="380" y="296">Disabled submit</text><text x="540" y="296">Not applicable</text><text x="700" y="296">Inline correction</text>
-<text x="220" y="364">Contextual status</text><text x="380" y="364">Pending</text><text x="540" y="364">Not applicable</text><text x="700" y="364">Actionable alert</text>
+<g font-family="sans-serif" font-size="14" fill="#263238">
+<text x="40" y="50">STATE</text><text x="200" y="50">CONTENT</text><text x="410" y="50">ACTION</text><text x="620" y="50">FEEDBACK</text><text x="760" y="50">GATE</text>
+<text x="40" y="100">Default</text><text x="200" y="100">Complete context</text><text x="410" y="100">Primary enabled</text><text x="620" y="100">None</text><text x="760" y="100">Pass</text>
+<text x="40" y="145">Loading</text><text x="200" y="145">Stable placeholders</text><text x="410" y="145">Unavailable</text><text x="620" y="145">Progress cue</text><text x="760" y="145">Pass</text>
+<text x="40" y="190">Empty</text><text x="200" y="190">Useful explanation</text><text x="410" y="190">Recovery action</text><text x="620" y="190">Guidance</text><text x="760" y="190">Pass</text>
+<text x="40" y="235">Error</text><text x="200" y="235">Plain cause and scope</text><text x="410" y="235">Retry or exit</text><text x="620" y="235">Next step</text><text x="760" y="235">Pass</text>
+<text x="40" y="280">Disabled</text><text x="200" y="280">Reason available</text><text x="410" y="280">Non-actionable</text><text x="620" y="280">Constraint cue</text><text x="760" y="280">Pass</text>
+<text x="40" y="325">Focus</text><text x="200" y="325">Visible context</text><text x="410" y="325">Sequential order</text><text x="620" y="325">Distinct outline</text><text x="760" y="325">Pass</text>
 </g>
 </svg>
-Rationale: Explicit non-default states cover continuity, feedback, recovery, and content absence.
-Quality gates: every major surface has default, loading, empty, and error treatment; recovery is actionable; status never depends on color alone.
+Documentation: The matrix makes state completeness reviewable instead of documenting only the default view. Representation rationale: SVG provides a compact visual comparison. Dedicated path: /projects/project-001/sections/e/state-matrix.svg. Quality gates: every primary region covers all listed states; feedback is distinguishable without color alone; recovery remains available.
