@@ -1,14 +1,15 @@
-# Accessibility Targets
-- Standard: WCAG 2.2 AA.
-- Keyboard: logical tab order, visible focus, no traps, Escape closes dismissible overlays.
-- Semantics: native controls preferred; one primary heading; correct heading hierarchy; labelled landmarks.
-- Names: every control has an accessible name; icon-only controls have an accessible label.
-- Contrast: text and essential icons at least 4.5:1; large text at least 3:1; boundaries and focus indicators at least 3:1.
-- Color: status, selection, and errors use text, icons, or patterns in addition to color.
-- Motion: honor prefers-reduced-motion; replace nonessential transitions with instant changes.
-- Forms: persistent labels, pre-entry instructions, programmatic error associations, announced required state.
-- Dynamic content: polite status announcements; assertive announcements only for critical errors; move focus only when context changes.
-- Reflow: usable at 200% zoom and 320px CSS width without loss of content or function.
-- Touch: interactive targets at least 44×44px with adequate spacing.
-- Media: meaningful imagery has concise alternatives; decorative imagery has empty alternatives.
-- Timing: essential content does not expire without warning and extension.
+Targets
+- WCAG 2.2 AA conformance.
+- Text contrast at least 4.5:1, or 3:1 for large text.
+- Non-text contrast at least 3:1.
+- All functionality operable by keyboard with visible 2px focus indication.
+- Interactive target minimum 44×44px.
+- Usable at 200% zoom and 320px CSS width without loss of function.
+- Honor prefers-reduced-motion; no essential information depends on motion.
+- Use one page heading, logical heading levels, landmarks, lists, labels, and programmatic relationships.
+- Provide persistent form labels, instructions, grouped controls, associated errors, and an error summary for multiple failures.
+- Announce meaningful dynamic updates with suitable live-region politeness.
+- Tables expose captions or names, headers, sort direction, row actions, and an accessible overflow strategy.
+- Dialogs move focus on open, contain focus, support Escape where appropriate, and restore focus on close.
+- Decorative icons are hidden from assistive technology; meaningful icons have accessible names.
+- Never communicate state by color alone.
