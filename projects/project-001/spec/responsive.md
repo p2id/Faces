@@ -1,11 +1,15 @@
-# Responsive Rules
-- Breakpoints: xs 0–479px; sm 480–767px; md 768–1023px; lg 1024–1439px; xl 1440px and above.
-- Container: full width below md; max-width 1200px at lg and above; horizontal padding 16px xs/sm, 24px md, 32px lg/xl.
-- Grid: 1 column xs, 2 sm, 3 md, 4 lg/xl; minimum card width 240px.
-- Header: stacked xs; compact horizontal sm; full navigation md and above; labelled overflow menu below md.
-- Forms: single column xs/sm; paired fields md and above; actions stack xs and align inline md and above.
-- Collections: convert dense tables to labelled cards below md; preserve reading order and actions.
-- Dialogs: full-screen xs/sm; centered panel up to 560px md and above.
-- Typography: display 28/34 xs, 32/38 md, 36/44 lg/xl; body minimum 16/24.
-- Controls: minimum 44×44px at all breakpoints.
-- Behavior: avoid unlabelled horizontal scrolling; preserve focus, validation, and action order during reflow.
+Breakpoints
+- xs: 0–479px
+- sm: 480–767px
+- md: 768–1023px
+- lg: 1024–1279px
+- xl: 1280px and above
+
+Rules
+- xs: 16px page padding; single column; menu-based navigation; stacked controls; full-width primary action; hide nonessential columns.
+- sm: 20px page padding; retain key columns; permit controlled table overflow; use two-column summary when space permits.
+- md: 24px page padding; collapsible navigation; controls wrap; dialog max-width 560px.
+- lg: 32px page padding; persistent 240px navigation; content max-width 1200px; actions remain visible.
+- xl: 40px page padding; content max-width 1440px; preserve readable line length and increase whitespace.
+- All widths: use fluid min/max sizing; maintain 44×44px targets; preserve reading order; do not rely on hover; support portrait and landscape.
+- Dense tables: use horizontal overflow only when necessary and provide accessible labels for hidden or off-screen columns.
