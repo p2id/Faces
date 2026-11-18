@@ -1,37 +1,50 @@
-# Shared Anatomy
-- Page shell: header, navigation, main content, feedback region, footer.
-  - Variants: full navigation, compact navigation.
-  - States: initial, loading, populated, empty, partial-error, error.
-  - Usage: preserve landmarks and content order.
-  - Anti-patterns: missing title; layout shift; duplicated navigation.
-  - Accessibility: one main landmark; one primary heading; skip link; named landmarks as needed.
-- Section header: eyebrow, heading, supporting text, action group.
-  - Variants: standard, compact, split action.
-  - States: default, loading, action-disabled.
-  - Usage: describe content before controls.
-  - Anti-patterns: decorative text replacing heading; unexplained icon action.
-  - Accessibility: valid heading hierarchy; action names expose purpose.
-- Filter bar: query field, filters, applied-filter summary, clear action.
-  - Variants: inline, stacked, collapsible.
-  - States: idle, active, loading, invalid, empty-result.
-  - Usage: summarize criteria and preserve them after refresh.
-  - Anti-patterns: hidden active filters; unclear clear action; color-only filter state.
-  - Accessibility: grouped controls; result changes announced; clear action named.
-- Content collection: item, status, metadata, primary and secondary actions.
-  - Variants: grid, list, compact list.
-  - States: loading, populated, selected, empty, error.
-  - Usage: keep repeated anatomy consistent and scannable.
-  - Anti-patterns: mixed alignment; truncated essential content; detached actions.
-  - Accessibility: semantic list structure; item headings; item-specific action context.
-- Feedback region: progress, empty message, alert, recovery action.
-  - Variants: inline, page-level, modal.
-  - States: pending, success, warning, error, unavailable.
-  - Usage: state what happened, impact, and next step.
-  - Anti-patterns: silent failure; indefinite spinner; success without result confirmation.
-  - Accessibility: suitable live-region politeness; text equivalent for icons and color.
-- Overlay: backdrop, surface, title, content, actions.
-  - Variants: dialog, popover, tooltip.
-  - States: hidden, opening, visible, closing.
-  - Usage: anchor popovers to triggers; close without unintended data loss.
-  - Anti-patterns: essential action in tooltip; off-screen focus; obscured dismissal.
-  - Accessibility: managed focus; correct role and name; consistent Escape and outside-click behavior.
+Page anatomy
+- Frame: navigation, main region, optional utility region.
+- Header: context, page title, description, primary action.
+- Summary: labeled metric cards and values.
+- Controls: search, filters, sort, reset.
+- Content: table or cards with loading, empty, and error alternatives.
+- Feedback: inline validation, banners, transient notifications.
+- Overlay: dialogs, popovers, and tooltips above content.
+
+Component anatomy
+- Control: label, input surface, supporting text, validation message.
+- Action: icon or text label, interaction surface, state indicator.
+- Collection: heading, description, controls, content, pagination.
+- Overlay: trigger, positioned surface, title/content, dismissal or confirmation.
+- Status: semantic indicator, text label, optional recovery action.
+
+Variants
+- Layout: full, compact, stacked, responsive overflow.
+- Density: comfortable, compact.
+- Emphasis: primary, secondary, quiet, destructive.
+- Feedback: informational, success, warning, error.
+
+States
+- Default, hover, focus-visible, active/selected, disabled, loading, empty, invalid, success, error, and dismissed where applicable.
+- State changes must be visible through text, structure, iconography, or motion-safe styling.
+
+Usage
+- Align related controls to a shared grid.
+- Maintain one clear hierarchy per section.
+- Use semantic elements before custom patterns.
+- Keep related actions adjacent and destructive actions distinct.
+- Preserve reading and keyboard order across layouts.
+
+Anti-patterns
+- Unlabeled controls or ambiguous icons.
+- Color-only state communication.
+- Excessive borders, shadows, motion, or nested containers.
+- Essential content removed on small screens without an equivalent path.
+- Placeholder text used for instructions.
+- Skeletons that shift layout or imply unavailable content.
+- Multiple competing primary actions.
+
+Accessibility
+- Every surface has a programmatic name and logical landmark.
+- Every control has a visible or programmatic label.
+- Every overlay manages focus predictably and supports appropriate dismissal.
+- Every collection exposes status, count, and empty/error meaning.
+- Visual, reading, and keyboard order remain aligned.
+- Reduced-motion preferences remove nonessential transitions.
+- Text remains usable at increased size, zoom, and narrow widths.
