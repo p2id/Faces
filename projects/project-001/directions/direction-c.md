@@ -1,6 +1,6 @@
-Positioning: dense operational board for rapid scanning, triage, and repeatable updates.
-Palette rationale: cool-neutral foundation, light work surfaces, graphite text, focused violet accent for active state.
-Type rationale: compact sans-serif, tabular numerals, and measured labels support comparison without sacrificing zoom readability.
-Layout rules: resizable overview/detail panes, compact grouped rows, persistent filters, explicit selection, labeled mobile stacks, direct access to frequent actions.
-Motion intent: fast 120–180ms transitions for selection, filtering, and completion; preserve orientation and provide reduced-motion behavior.
-Avoided traps: spreadsheet overload, microscopic controls, ambiguous selection, keyboard traps, uncontrolled refresh, silent state changes.
+Positioning: Minimal control surface optimized for rapid scanning and decisive state changes.
+Palette rationale: Near-monochrome base with cyan action color and orange exception color; limited accents create strong signals without noise.
+Type rationale: Highly legible sans-serif, compact labels, tabular numerals, uppercase only for short status tags, and generous dense-view line height.
+Layout rules: One dominant workspace, compact command row, segmented navigation, dense desktop table, stacked mobile cards, visible primary action.
+Motion intent: Fast 100–140ms feedback for toggles, filters, and status changes; prefer opacity or color transitions over positional animation.
+Avoided traps: Tiny text, icon-only controls, ambiguous monochrome states, excessive sticky elements, terminal-like styling, and rapid motion.
