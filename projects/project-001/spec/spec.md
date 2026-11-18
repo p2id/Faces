@@ -1,24 +1,40 @@
-# C. Product Experience Specification
-- Date: 2026-11-17
-- Project: project-001
-- Surfaces: responsive web, compact mobile view, wide desktop view, keyboard navigation, screen-reader presentation.
-- Sections:
-  1. Header: product label, navigation, contextual action.
-  2. Overview: page title, summary, primary action.
-  3. Filters: search field, status filter, clear action.
-  4. Collection: list or card grid with status, metadata, and actions.
-  5. Detail: title, summary, attributes, related information.
-  6. Feedback: loading, empty, validation, success, warning, and error messages.
-  7. Footer: supporting links and version information.
-- Content examples:
-  - Title: “Workspace overview”
-  - Summary: “Review recent activity and outstanding items.”
-  - Primary action: “Create item”
-  - Search placeholder: “Search items”
-  - Filter: “Status: Active”
-  - Item: “Quarterly planning” / “Updated 17 Nov 2026” / “Active”
-  - Empty message: “No items match these filters.”
-  - Error message: “Items could not be displayed. Try again.”
-  - Success message: “Item created successfully.”
-- Content rules: sentence case, concise labels, explicit verbs, neutral language, no fabricated urgency.
-- Interaction rules: preserve context after actions; show validation beside the affected control; provide recovery for recoverable errors; confirm only irreversible actions.
+Date: 2026-11-18
+Project: project-001
+Scope: Generic product experience for reviewing and managing records.
+
+Surfaces
+- Desktop workspace: navigation, header, summary, controls, content, feedback.
+- Tablet workspace: collapsible navigation, wrapped controls, content region.
+- Mobile workspace: compact header, stacked controls, single-column content.
+- Overlay layer: dialog, popover, tooltip, toast, banner.
+
+Sections
+1. Header: page title, description, primary action.
+2. Navigation: Overview, Records, Activity, Settings.
+3. Summary: Records, Needs review, Completed.
+4. Controls: search, status filter, date range, clear filters.
+5. Content: Recent records with Name, Status, Updated, Actions.
+6. Empty state: no matching records and recovery action.
+7. Error state: explanation and retry action.
+8. Confirmation: title, consequence, cancel, confirm.
+9. Feedback: success, warning, and error messages.
+10. Footer: support and legal links.
+
+Real content examples
+- Title: Records
+- Description: Review recent records and update their status.
+- Search placeholder: Search records
+- Status options: All statuses, Draft, In review, Complete
+- Date options: Last 7 days, Last 30 days, Custom range
+- Row: Quarterly review | In review | 18 Nov 2026 | View
+- Primary action: Create record
+- Secondary action: Export
+- Confirmation: Confirm archive
+- Body: This record will be removed from the active list.
+- Success: Record archived
+- Validation: Enter a valid date range.
+
+Content rules
+- Use sentence case, concise labels, explicit verbs, stable status names, and clear recovery actions.
+- Never use color as the sole meaning carrier.
+- Preserve entered values after validation failure.
