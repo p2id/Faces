@@ -1,15 +1,24 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 520" role="img" aria-label="Generic product layout wireframe">
-<title>Generic product layout</title>
-<g fill="none" stroke="#263238" stroke-width="2">
-<rect x="24" y="24" width="912" height="64"/><rect x="24" y="104" width="216" height="376"/>
-<rect x="264" y="104" width="432" height="176"/><rect x="728" y="104" width="208" height="176"/>
-<rect x="264" y="304" width="672" height="176"/>
-<path d="M48 132h168M288 132h264M752 132h160M288 332h608M288 368h280M288 404h280M288 440h144"/>
-</g>
-<g font-family="sans-serif" font-size="14" fill="#263238">
-<text x="48" y="62">PRODUCT FRAME</text><text x="48" y="122">NAVIGATION</text>
-<text x="288" y="122">PRIMARY CONTENT</text><text x="752" y="122">SUMMARY</text>
-<text x="288" y="322">DETAILS AND NEXT ACTION</text>
-</g>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" role="img" aria-label="Generic product interface wireframe">
+<title>Generic product interface</title>
+<rect width="960" height="540" fill="#f7f8fa"/>
+<rect x="24" y="24" width="912" height="64" rx="8" fill="#fff" stroke="#c9ced6"/>
+<rect x="48" y="46" width="180" height="20" rx="4" fill="#dfe4ea"/>
+<rect x="720" y="44" width="72" height="24" rx="12" fill="#dfe4ea"/>
+<rect x="808" y="44" width="80" height="24" rx="12" fill="#dfe4ea"/>
+<rect x="24" y="112" width="216" height="404" rx="8" fill="#fff" stroke="#c9ced6"/>
+<rect x="48" y="144" width="160" height="16" rx="4" fill="#dfe4ea"/>
+<rect x="48" y="184" width="152" height="40" rx="6" fill="#e8edf3"/>
+<rect x="48" y="240" width="152" height="40" rx="6" fill="#fff" stroke="#d8dde5"/>
+<rect x="48" y="296" width="152" height="40" rx="6" fill="#fff" stroke="#d8dde5"/>
+<rect x="264" y="112" width="672" height="404" rx="8" fill="#fff" stroke="#c9ced6"/>
+<rect x="296" y="144" width="360" height="28" rx="5" fill="#cfd6df"/>
+<rect x="296" y="192" width="568" height="12" rx="4" fill="#e2e6eb"/>
+<rect x="296" y="216" width="456" height="12" rx="4" fill="#e2e6eb"/>
+<rect x="296" y="264" width="168" height="112" rx="8" fill="#eef1f5"/>
+<rect x="488" y="264" width="168" height="112" rx="8" fill="#eef1f5"/>
+<rect x="680" y="264" width="168" height="112" rx="8" fill="#eef1f5"/>
+<rect x="296" y="416" width="160" height="32" rx="16" fill="#b9c3cf"/>
 </svg>
-Documentation: Low-fidelity geometry exposes hierarchy, grouping, and action priority before visual styling. Representation rationale: SVG preserves portable, inspectable layout structure. Dedicated path: /projects/project-001/sections/e/wireframes.svg. Quality gates: valid SVG, readable labels, no overlap, visible primary action, preserved reading order, and viewport-independent structure.
+Rationale: Persistent frame, navigation, hierarchy, repeated content, and one primary action provide a reusable baseline.
+Quality gates: hierarchy, landmarks, action priority, contrast, focus, and repeated-pattern consistency.
+Path intent: /projects/project-001/sections/e/wireframes.svg
