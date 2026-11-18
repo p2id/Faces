@@ -1,4 +1,7 @@
 Selected direction: Direction A.
-Rationale: strongest balance of neutrality, calm focus, responsive clarity, accessibility, and reusable component coverage. It adapts across product contexts without specialized assumptions and maintains explicit hierarchy, status, and action placement.
-Fallback order: Direction B for content-led experiences; Direction C for high-density scanning.
-Locked principles: warm-neutral foundation; restrained accent; one primary action per context; mobile-first reflow; WCAG 2.2 AA-oriented contrast and focus; explicit non-color status; informative motion only.
+Rationale:
+- Best fit for Operations insight.
+- Strongest balance of density, accessibility, responsive transformation, and reusable tokens.
+- Clear state hierarchy supports neutral presentation without identity or entity dependencies.
+- Direction B is the alternate for content-heavy presentation.
+- Direction C is the alternate for compact control-focused presentation.
