@@ -1,56 +1,83 @@
 color:
+  primitive:
+    white: "#FFFFFF"
+    black: "#111827"
+    gray100: "#F3F4F6"
+    gray300: "#D1D5DB"
+    gray500: "#6B7280"
+    gray700: "#374151"
+    blue600: "#2563EB"
+    blue700: "#1D4ED8"
+    green600: "#16A34A"
+    amber600: "#D97706"
+    red600: "#DC2626"
   surface:
-    canvas: "#FFFFFF"
-    raised: "#F8FAFC"
-    inverse: "#0F172A"
-  text:
-    primary: "#0F172A"
-    secondary: "#475569"
-    muted: "#64748B"
-    inverse: "#FFFFFF"
-    link: "#1D4ED8"
+    canvas: "{color.primitive.white}"
+    raised: "{color.primitive.white}"
+    subtle: "{color.primitive.gray100}"
+    inverse: "{color.primitive.black}"
+  content:
+    primary: "{color.primitive.gray700}"
+    secondary: "{color.primitive.gray500}"
+    inverse: "{color.primitive.white}"
+    disabled: "{color.primitive.gray500}"
+    link: "{color.primitive.blue700}"
   border:
-    default: "#CBD5E1"
-    subtle: "#E2E8F0"
-    strong: "#94A3B8"
-    focus: "#2563EB"
-  status:
-    info: "#2563EB"
-    positive: "#15803D"
-    warning: "#A16207"
-    negative: "#B91C1C"
+    default: "{color.primitive.gray300}"
+    strong: "{color.primitive.gray500}"
+    focus: "{color.primitive.blue600}"
+    error: "{color.primitive.red600}"
   action:
-    primary: "#1D4ED8"
-    primaryHover: "#1E40AF"
-    secondary: "#E2E8F0"
+    primary: "{color.primitive.blue600}"
+    primaryHover: "{color.primitive.blue700}"
+    primaryText: "{color.primitive.white}"
+    secondary: "{color.primitive.white}"
+    secondaryText: "{color.primitive.gray700}"
+  status:
+    info: "{color.primitive.blue600}"
+    success: "{color.primitive.green600}"
+    warning: "{color.primitive.amber600}"
+    error: "{color.primitive.red600}"
 typography:
   fontFamily:
-    sans: "system-ui, sans-serif"
-    mono: "ui-monospace, monospace"
+    sans: "Inter, ui-sans-serif, system-ui, sans-serif"
+    mono: "ui-monospace, SFMono-Regular, monospace"
   size:
     xs: "0.75rem"
     sm: "0.875rem"
     md: "1rem"
     lg: "1.125rem"
     xl: "1.5rem"
-    display: "2.25rem"
-  lineHeight:
-    tight: "1.2"
-    normal: "1.5"
-    relaxed: "1.7"
+    xxl: "2rem"
   weight:
     regular: 400
     medium: 500
     semibold: 600
     bold: 700
+  lineHeight:
+    tight: 1.2
+    normal: 1.5
+    relaxed: 1.65
+  body:
+    fontFamily: "{typography.fontFamily.sans}"
+    fontSize: "{typography.size.md}"
+    fontWeight: "{typography.weight.regular}"
+    lineHeight: "{typography.lineHeight.normal}"
+  heading:
+    fontFamily: "{typography.fontFamily.sans}"
+    fontSize: "{typography.size.xl}"
+    fontWeight: "{typography.weight.semibold}"
+    lineHeight: "{typography.lineHeight.tight}"
 spacing:
   "0": "0"
   "1": "0.25rem"
   "2": "0.5rem"
   "3": "0.75rem"
   "4": "1rem"
+  "5": "1.25rem"
   "6": "1.5rem"
   "8": "2rem"
+  "10": "2.5rem"
   "12": "3rem"
 radius:
   none: "0"
@@ -61,42 +88,51 @@ radius:
 border:
   thin: "1px"
   thick: "2px"
+  style: "solid"
 shadow:
   none: "none"
-  sm: "0 1px 2px rgb(15 23 42 / 0.08)"
-  md: "0 4px 12px rgb(15 23 42 / 0.12)"
+  sm: "0 1px 2px rgba(17,24,39,0.08)"
+  md: "0 4px 12px rgba(17,24,39,0.12)"
+  lg: "0 12px 32px rgba(17,24,39,0.16)"
 opacity:
   disabled: 0.5
   muted: 0.7
   overlay: 0.6
 motion:
   duration:
-    instant: "0ms"
     fast: "120ms"
     normal: "200ms"
-    slow: "320ms"
+    slow: "300ms"
   easing:
-    standard: "cubic-bezier(0.2, 0, 0, 1)"
+    standard: "cubic-bezier(0.2,0,0,1)"
+    emphasis: "cubic-bezier(0.2,0,0,1)"
+  reduced: "0ms"
 layout:
-  containerMax: "1200px"
-  contentMax: "720px"
-  gutter: "{spacing.4}"
+  contentMax: "90rem"
+  navWidth: "15rem"
+  dialogMax: "35rem"
+  controlGap: "{spacing.3}"
   sectionGap: "{spacing.8}"
 size:
-  controlHeight: "44px"
-  iconSm: "16px"
-  iconMd: "20px"
-  iconLg: "24px"
+  targetMin: "2.75rem"
+  controlHeight: "2.75rem"
+  iconSm: "1rem"
+  iconMd: "1.25rem"
+  iconLg: "1.5rem"
 zIndex:
   base: 0
   sticky: 10
-  popover: 20
-  modal: 30
-  toast: 40
+  dropdown: 20
+  toast: 30
+  modal: 40
 state:
-  focusRing: "0 0 0 3px rgb(37 99 235 / 0.35)"
+  focusRing: "0 0 0 3px rgba(37,99,235,0.35)"
+  hoverOpacity: 0.92
+  pressedScale: 0.98
   disabledOpacity: "{opacity.disabled}"
-  hoverSurface: "{color.surface.raised}"
-  selectedSurface: "#DBEAFE"
-  errorBorder: "{color.status.negative}"
-  successBorder: "{color.status.positive}"
+  loadingOpacity: "{opacity.muted}"
+  invalidBorder: "{color.border.error}"
+  selectedBackground: "{color.primitive.gray100}"
+  successBackground: "#F0FDF4"
+  warningBackground: "#FFFBEB"
+  errorBackground: "#FEF2F2"
