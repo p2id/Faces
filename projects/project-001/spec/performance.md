@@ -1,12 +1,20 @@
-# Performance Budgets
-- Initial HTML: ≤50KB compressed.
-- Critical CSS: ≤40KB compressed.
-- Initial JavaScript: ≤170KB compressed; route total ≤350KB compressed.
-- Fonts: maximum 2 families and 4 files; ≤120KB compressed.
-- Images: ≤150KB per above-the-fold image; lazy-load below-the-fold media.
-- Network: maximum 2 render-blocking requests; no unnecessary third-party requests.
-- Core Web Vitals: LCP ≤2.5s, INP ≤200ms, CLS ≤0.1 on representative mobile conditions.
-- Rendering: first useful content ≤1.8s on a mid-tier mobile profile.
-- Runtime: reserve media dimensions; prevent loading shifts; virtualize collections above 100 rows.
-- Resilience: loading, empty, and error states render without optional assets.
-- Measurement: track route load, interaction latency, layout shift, and error rate without personal data.
+Budgets
+- Initial JavaScript: <=170 KB compressed.
+- Initial CSS: <=50 KB compressed.
+- First contentful paint: <=1.8 s on mid-tier mobile.
+- Largest contentful paint: <=2.5 s.
+- Interaction to next paint: <=200 ms for common actions.
+- Cumulative layout shift: <=0.1.
+- Initial requests: <=35.
+- Above-the-fold media: <=200 KB total.
+- Font payload: <=100 KB; maximum two families and limited weights.
+- Visible list interaction: at least 50 FPS; virtualize lists over 200 rows.
+- Empty and error states render without optional assets.
+
+Rules
+- Lazy-load noncritical content.
+- Reserve media and content dimensions before loading.
+- Prefer transform and opacity for motion.
+- Avoid layout-triggering animation.
+- Use skeletons only for expected visible content.
+- Verify budgets in a production-like build on a mid-tier mobile profile.
