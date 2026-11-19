@@ -1,63 +1,79 @@
-Date: 2026-11-18 | Project ID: project-001
+Project: project-001
+Date: 2026-11-19
 
 Dominant patterns:
-- Modular cards, compact tables, persistent navigation, clear hierarchy, restrained color coding, visible status.
-- 8px spacing rhythm, 12–16px radius, concise labels, progressive disclosure, consistent surface tokens.
+- Structured cards, panels, tables, and summary bands.
+- Neutral surfaces with one restrained functional accent.
+- Persistent navigation, contextual actions, and progressive disclosure.
+- Clear loading, empty, validation, error, and success states.
+- Responsive grids that become prioritized stacks.
 
 Emerging patterns:
-- Dense-to-calm responsive layouts, tokenized color roles, container-aware reflow, inline validation, saved views, reduced-motion defaults.
-- Contextual filters, synchronized summary/detail views, compact trend visualizations, keyboard shortcuts.
+- Searchable command surfaces.
+- Adaptive density and configurable views.
+- Semantic tokens paired with text or icon status cues.
+- Container-aware layouts.
+- Motion focused on spatial continuity.
 
 Deprecated patterns:
-- Full-screen decorative imagery, hidden navigation, hover-only controls, modal stacking, autoplay motion, low-contrast text.
-- Color-only status communication, fixed-width layouts, ambiguous icon-only actions.
+- Decorative gradients competing with content.
+- Hidden gesture-only navigation.
+- Color-only status communication.
+- Excessive modal interruption.
+- Fixed-width layouts without narrow-screen adaptation.
 
 Outlier patterns:
-- Near-monochrome interfaces with one signal color.
-- Asymmetric grids for priority emphasis.
-- Split panes with synchronized overview and detail.
+- Monochrome interfaces with one high-contrast action color.
+- Split panes preserving overview during detail inspection.
+- Reversible inline editing.
+- Timeline or matrix views for dense comparison.
 
 Visual DNA:
-- Neutral surfaces, graphite text, one cool action accent, one warm exception accent, restrained borders, compact icons, consistent radius and shadow tokens.
-- Priority order: title, primary status, key metric, next action, supporting detail.
+- Warm or cool neutral surfaces, slate text, restrained semantic colors.
+- One functional accent, 8-point spacing, 10–14px radii, subtle borders.
+- Strong contrast, compact controls, consistent icon geometry.
 
-Interactional DNA:
-- Direct reversible actions, explicit confirmation for destructive actions, persistent state visibility, immediate feedback, predictable focus order.
-- Filters, sorting, expandable detail, and stable empty, loading, error, success, and offline-adjacent states.
+Interaction DNA:
+- Direct, reversible actions with nearby feedback.
+- Explicit focus, hover, pressed, loading, empty, error, and success states.
+- Progressive disclosure and preserved context.
+- Predictable keyboard order and visible primary actions.
 
 Accessibility DNA:
-- Semantic headings and landmarks, complete keyboard operation, visible focus, non-color status cues, reduced-motion alternative.
-- Minimum contrast targets: 4.5:1 normal text and 3:1 large text or essential graphics.
-- Persistent labels, associated descriptions, and non-disruptive status announcements.
+- WCAG-aligned contrast and non-color status cues.
+- Visible focus indicators and semantic heading structure.
+- Approximately 44px minimum touch targets where practical.
+- Reduced-motion alternative.
+- Associated labels, descriptions, and error messages.
 
 Responsive DNA:
-- Wide screens: persistent navigation, two-column workspace, optional detail rail.
-- Medium screens: collapsible navigation and stacked secondary panels.
-- Small screens: single-column flow, scrollable filters, table-to-card conversion, visible primary action.
-- Preserve task order and hierarchy; remove decoration before content.
+- 12-column wide grid, 6-column medium grid, prioritized narrow stack.
+- Fluid spacing and typography within bounded containers.
+- Side navigation transforms into compact top or bottom navigation.
+- Dense tables transform into prioritized cards or scroll regions.
+- Primary actions remain visible without fixed viewport assumptions.
 
-Candidate domains:
-1. Operations insight: Review recurring measures, states, trends, and exceptions in one structured workspace.
-2. Finance planning: Compare plans, allocations, forecasts, and variance signals.
-3. Content catalog: Browse, filter, preview, and compare structured items.
-4. Service status: Present current availability, notices, history, and conditions.
-5. Device control: Group, inspect, and adjust configurable system settings.
+Candidate product domains:
+- Operations dashboard — Monitors status, trends, exceptions, and prioritized actions.
+- Planning workspace — Organizes milestones, dependencies, resources, and progress.
+- Knowledge browser — Finds, filters, compares, and organizes structured content.
+- Quality review console — Inspects records, applies decisions, and tracks resolution states.
+- Configuration studio — Composes settings and reusable modules with immediate validation.
+- Analytics explorer — Examines metrics through filters, comparisons, and segments.
 
-Weighted scoring matrix (clarity 25%, reuse 20%, accessibility 20%, responsive fit 20%, distinctiveness 15%; scores 1–5):
-- Operations insight: 5, 4, 5, 5, 3 = 4.50
-- Finance planning: 4, 4, 5, 4, 3 = 4.05
-- Content catalog: 4, 5, 4, 5, 4 = 4.40
-- Service status: 5, 3, 5, 4, 3 = 4.10
-- Device control: 4, 4, 4, 3, 4 = 3.80
+Weighted scoring matrix, 1–5; weights: clarity 25%, reuse 20%, accessibility 20%, responsive fit 15%, distinction 10%, interaction depth 10%:
+- Operations dashboard: 5,5,5,5,4,5 = 4.85
+- Knowledge browser: 5,5,5,5,3,4 = 4.65
+- Planning workspace: 4,5,4,4,4,5 = 4.35
+- Quality review console: 4,4,5,4,4,5 = 4.35
+- Configuration studio: 4,4,4,4,5,5 = 4.15
+- Analytics explorer: 4,4,4,5,4,4 = 4.10
 
 Selected domain rationale:
-- Operations insight ranks highest because status-rich information supports the visual DNA, accessible state encoding, responsive density, and reusable components without requiring domain-specific identity.
+Operations dashboard provides the strongest reusable combination of hierarchy, status communication, filtering, responsive density, accessibility states, and interaction depth without requiring specialized styling.
 
 Cycle lock:
-- Date: 2026-11-18.
-- Project: project-001.
-- Domain: Operations insight.
-- Principles: neutral surfaces, explicit hierarchy, accessible states, responsive density, restrained motion.
+2026-11-19; project-001; operations dashboard; foundation tokens, responsive rules, accessibility requirements, and primary interaction model are fixed for this cycle.
 
 Fallback rule:
-- If new evidence materially weakens domain fit, use Content catalog while retaining the same DNA, scoring weights, accessibility requirements, and responsive rules.
+If the selected domain cannot support the required hierarchy or responsive behavior, use knowledge browser while preserving the extracted DNA.
