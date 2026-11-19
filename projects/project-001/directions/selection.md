@@ -1,7 +1,5 @@
 Selected direction: Direction A.
-Rationale:
-- Best fit for Operations insight.
-- Strongest balance of density, accessibility, responsive transformation, and reusable tokens.
-- Clear state hierarchy supports neutral presentation without identity or entity dependencies.
-- Direction B is the alternate for content-heavy presentation.
-- Direction C is the alternate for compact control-focused presentation.
+Rationale: It provides the best balance of clarity, reuse, accessibility, responsive behavior, and low cognitive load for a generic product experience.
+Supporting roles: Direction B supplies detail-inspection behavior; Direction C supplies optional modularity without changing the foundation.
+Locked decisions: Warm-neutral surfaces, slate text, one blue functional accent, 8-point spacing, semantic status cues, preserved context, responsive stacking, and reduced-motion support.
+Open validation points: Dense-panel content threshold, narrow-screen priority order, and contrast of all semantic states.
