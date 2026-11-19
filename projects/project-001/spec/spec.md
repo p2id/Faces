@@ -1,40 +1,36 @@
-Date: 2026-11-18
 Project: project-001
-Scope: Generic product experience for reviewing and managing records.
+Date: 2026-11-19
+Scope: Generic, neutral, reusable product experience.
 
-Surfaces
-- Desktop workspace: navigation, header, summary, controls, content, feedback.
-- Tablet workspace: collapsible navigation, wrapped controls, content region.
-- Mobile workspace: compact header, stacked controls, single-column content.
-- Overlay layer: dialog, popover, tooltip, toast, banner.
+Surfaces:
+- Desktop application shell
+- Responsive mobile surface
+- Overlay surface for dialogs, menus, and notices
+- Loading, empty, error, and success surfaces
 
-Sections
-1. Header: page title, description, primary action.
-2. Navigation: Overview, Records, Activity, Settings.
-3. Summary: Records, Needs review, Completed.
-4. Controls: search, status filter, date range, clear filters.
-5. Content: Recent records with Name, Status, Updated, Actions.
-6. Empty state: no matching records and recovery action.
-7. Error state: explanation and retry action.
-8. Confirmation: title, consequence, cancel, confirm.
-9. Feedback: success, warning, and error messages.
-10. Footer: support and legal links.
+Sections:
+1. Global navigation: product mark, primary links, utility actions.
+2. Page header: title, supporting text, primary and secondary actions.
+3. Summary area: metric cards and status labels.
+4. Workspace: search, filters, sortable list, detail region.
+5. Feedback area: inline messages, banners, and notices.
+6. Footer: secondary links and legal information.
 
-Real content examples
-- Title: Records
-- Description: Review recent records and update their status.
-- Search placeholder: Search records
-- Status options: All statuses, Draft, In review, Complete
-- Date options: Last 7 days, Last 30 days, Custom range
-- Row: Quarterly review | In review | 18 Nov 2026 | View
-- Primary action: Create record
-- Secondary action: Export
-- Confirmation: Confirm archive
-- Body: This record will be removed from the active list.
-- Success: Record archived
-- Validation: Enter a valid date range.
+Real content examples:
+- Page title: “Overview”
+- Supporting text: “Review current status and recent activity.”
+- Primary action: “Create item”
+- Secondary action: “Export”
+- Search placeholder: “Search items”
+- Empty message: “No items match these filters.”
+- Loading message: “Loading overview…”
+- Error message: “Unable to load this view. Try again.”
+- Success message: “Item created successfully.”
+- Status labels: “Active”, “Paused”, “Pending”
 
-Content rules
-- Use sentence case, concise labels, explicit verbs, stable status names, and clear recovery actions.
-- Never use color as the sole meaning carrier.
-- Preserve entered values after validation failure.
+Content rules:
+- Use concise sentence case.
+- Describe the outcome before the action.
+- Keep labels specific and reusable.
+- Pair status color with text or an icon.
+- Provide recovery actions for recoverable errors.
