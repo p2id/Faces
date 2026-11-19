@@ -1,15 +1,18 @@
-Breakpoints
-- xs: 0–479px
-- sm: 480–767px
-- md: 768–1023px
-- lg: 1024–1279px
-- xl: 1280px and above
+Breakpoints:
+- Small: 0–599px
+- Medium: 600–1023px
+- Large: 1024–1439px
+- Extra large: 1440px+
 
-Rules
-- xs: 16px page padding; single column; menu-based navigation; stacked controls; full-width primary action; hide nonessential columns.
-- sm: 20px page padding; retain key columns; permit controlled table overflow; use two-column summary when space permits.
-- md: 24px page padding; collapsible navigation; controls wrap; dialog max-width 560px.
-- lg: 32px page padding; persistent 240px navigation; content max-width 1200px; actions remain visible.
-- xl: 40px page padding; content max-width 1440px; preserve readable line length and increase whitespace.
-- All widths: use fluid min/max sizing; maintain 44×44px targets; preserve reading order; do not rely on hover; support portrait and landscape.
-- Dense tables: use horizontal overflow only when necessary and provide accessible labels for hidden or off-screen columns.
+Responsive rules:
+- Use a 4px spacing base and fluid container widths.
+- Small: one column, 16px page padding, stacked filters, full-width primary actions, collapsed navigation.
+- Medium: 24px page padding, optional two-column regions, compact navigation.
+- Large: 32px page padding, persistent navigation, workspace plus detail region.
+- Extra large: cap content at 1280px and preserve readable line length.
+- Collapse cards to one column below 640px content width.
+- Make tables scrollable or transform rows below 720px.
+- Use 16px viewport gutters for small-screen dialogs.
+- Keep pointer targets at least 44×44px.
+- Preserve essential actions; use labeled overflow only when needed.
+- Respect reduced-motion preferences at every breakpoint.
