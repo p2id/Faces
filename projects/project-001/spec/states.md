@@ -1,30 +1,32 @@
-Component inventory and complete state sets
-- Button: default, hover, focus-visible, pressed, disabled, loading, success, destructive.
-- Input: empty, filled, hover, focus, invalid, valid, disabled, read-only.
+Component inventory and complete state sets:
+- App shell: loading, ready, offline, error, compact.
+- Navigation: default, hover, focus-visible, active, expanded, collapsed, disabled.
+- Button: default, hover, focus-visible, pressed, loading, disabled, destructive.
+- Icon button: default, hover, focus-visible, pressed, loading, disabled.
+- Text input: empty, filled, hover, focus, invalid, valid, disabled, readonly.
+- Search field: empty, filled, loading, no-results, invalid, disabled.
 - Select: closed, hover, focus, open, selected, invalid, disabled.
-- Checkbox: unchecked, checked, indeterminate, hover, focus-visible, disabled, invalid.
-- Radio: unselected, selected, hover, focus-visible, disabled, invalid.
+- Checkbox: unchecked, checked, indeterminate, focus-visible, disabled.
+- Radio: unselected, selected, focus-visible, disabled.
+- Switch: off, on, focus-visible, disabled, pending.
 - Tabs: inactive, hover, focus-visible, active, disabled.
-- Navigation item: inactive, hover, focus-visible, active, disabled.
-- Card: default, hover, focus-visible, selected, disabled.
-- Table: loading, populated, sorted, filtered, row-hover, row-selected, empty, error.
-- Pagination: default, current, hover, focus-visible, disabled, loading.
-- Dialog: closed, opening, open, submitting, success, error, closing.
-- Popover: closed, opening, open, closing.
+- Card: default, hover, focus-visible, selected, disabled, loading.
+- List or table: loading, populated, empty, filtered-empty, refreshing, error.
+- Row: default, hover, focus-visible, selected, disabled.
+- Pagination: default, current, hover, focus-visible, disabled.
+- Badge: neutral, informative, positive, caution, negative, disabled.
+- Alert: informative, positive, caution, negative, dismissible.
+- Notice: entering, visible, exiting, dismissed.
+- Modal: closed, opening, open, submitting, error, success.
+- Drawer: closed, opening, open, submitting, error.
 - Tooltip: hidden, delayed, visible, dismissed.
-- Toast: hidden, visible, success, info, warning, error, dismissing.
-- Banner: informational, success, warning, error, dismissible.
-- Badge: neutral, informative, success, warning, error.
-- Date range picker: closed, open, partial, complete, invalid, disabled.
-- Skeleton: visible, resolved, failed.
-- Empty state: default, filtered.
-- Error state: recoverable, persistent, retrying.
-- Spinner: hidden, active, paused.
-- Divider: default, emphasized, vertical.
+- Progress: not-started, active, paused, complete, error.
+- Skeleton: loading, loaded, hidden.
+- Divider: default, emphasized, hidden.
 
-State requirements
-- Every interactive component has visible focus-visible, disabled, and loading behavior where applicable.
-- Invalid states include adjacent explanatory text.
-- Selected states use text, shape, or icon in addition to color.
-- Loading preserves layout and communicates progress.
-- Success and error states communicate completion and recovery.
+State rules:
+- Every interactive state has visible focus.
+- Disabled controls are non-interactive and readable.
+- Loading preserves layout and identifies the affected region.
+- Errors explain the issue and provide recovery when possible.
+- Empty states distinguish no content from no matching content.
