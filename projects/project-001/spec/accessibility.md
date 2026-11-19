@@ -1,15 +1,16 @@
-Targets
-- WCAG 2.2 AA conformance.
-- Text contrast at least 4.5:1, or 3:1 for large text.
-- Non-text contrast at least 3:1.
-- All functionality operable by keyboard with visible 2px focus indication.
-- Interactive target minimum 44×44px.
-- Usable at 200% zoom and 320px CSS width without loss of function.
-- Honor prefers-reduced-motion; no essential information depends on motion.
-- Use one page heading, logical heading levels, landmarks, lists, labels, and programmatic relationships.
-- Provide persistent form labels, instructions, grouped controls, associated errors, and an error summary for multiple failures.
-- Announce meaningful dynamic updates with suitable live-region politeness.
-- Tables expose captions or names, headers, sort direction, row actions, and an accessible overflow strategy.
-- Dialogs move focus on open, contain focus, support Escape where appropriate, and restore focus on close.
-- Decorative icons are hidden from assistive technology; meaningful icons have accessible names.
-- Never communicate state by color alone.
+Targets:
+- Meet WCAG 2.2 AA.
+- Text contrast: minimum 4.5:1 normal and 3:1 large text.
+- Non-text contrast: minimum 3:1 for controls, boundaries, and focus.
+- Focus indicator: visible, non-color-only, at least 2px equivalent perimeter.
+- Pointer and touch targets: minimum 44×44px.
+- Full keyboard operation and logical focus order.
+- Use semantic landmarks, headings, labels, descriptions, and table headers.
+- Announce status and error updates through suitable live regions.
+- Never use color as the sole status signal.
+- Give every control an accessible name.
+- Support 400% zoom and reflow without essential-content loss.
+- Respect reduced motion and avoid flashing content.
+- Associate each form error with its field and correction.
+- Trap dialog focus while open and restore focus on close.
+- Make language, direction, and page title programmatically determinable.
