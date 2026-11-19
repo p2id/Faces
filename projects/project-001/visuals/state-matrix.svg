@@ -1,16 +1,13 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 420" role="img" aria-label="Generic interface state matrix">
-<title>Interface state matrix</title>
-<g font-family="sans-serif" font-size="16" fill="#20242a">
-<text x="32" y="36" font-weight="bold">State</text><text x="220" y="36" font-weight="bold">Visible response</text><text x="650" y="36" font-weight="bold">Next action</text>
-<text x="32" y="86">Initial</text><text x="220" y="86">Structure and primary action</text><text x="650" y="86">Select or continue</text>
-<text x="32" y="136">Loading</text><text x="220" y="136">Stable shell and progress cue</text><text x="650" y="136">Wait or cancel</text>
-<text x="32" y="186">Empty</text><text x="220" y="186">Explanation and useful entry point</text><text x="650" y="186">Create or revise</text>
-<text x="32" y="236">Invalid</text><text x="220" y="236">Inline guidance near source</text><text x="650" y="236">Correct input</text>
-<text x="32" y="286">Complete</text><text x="220" y="286">Confirmation and retained context</text><text x="650" y="286">Review or close</text>
-<text x="32" y="336">Unavailable</text><text x="220" y="336">Reason, scope, and safe alternative</text><text x="650" y="336">Retry or return</text>
-</g>
-<g stroke="#c9ced6"><path d="M20 52H880M20 102H880M20 152H880M20 202H880M20 252H880M20 302H880M20 352H880"/></g>
-</svg>
-Rationale: Explicit states cover normal, exceptional, and recovery conditions.
-Quality gates: Each primary action has initial, loading, empty, invalid, complete, and unavailable behavior.
-Path intent: /projects/project-001/sections/e/state-matrix.svg
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 390" role="img" aria-label="Interface state matrix">
+<title>Interface State Matrix</title>
+<rect width="960" height="390" fill="#f7f8fa"/>
+<rect x="32" y="24" width="896" height="342" rx="8" fill="#fff" stroke="#c8ced8"/>
+<rect x="32" y="24" width="896" height="48" rx="8" fill="#eef1f5"/>
+<g font-family="Arial,sans-serif" font-size="15" fill="#293241">
+<text x="52" y="55">Pattern</text><text x="230" y="55">Default</text><text x="400" y="55">Focus</text><text x="570" y="55">Disabled</text><text x="750" y="55">Feedback</text>
+<text x="52" y="108">Action</text><text x="230" y="108">Ready</text><text x="400" y="108">Visible ring</text><text x="570" y="108">Muted</text><text x="750" y="108">Success/error</text>
+<text x="52" y="162">Input</text><text x="230" y="162">Empty/value</text><text x="400" y="162">Visible ring</text><text x="570" y="162">Read-only</text><text x="750" y="162">Hint/error</text>
+<text x="52" y="216">Navigation</text><text x="230" y="216">Available</text><text x="400" y="216">Visible ring</text><text x="570" y="216">Unavailable</text><text x="750" y="216">Current</text>
+<text x="52" y="270">Panel</text><text x="230" y="270">Loaded</text><text x="400" y="270">Contained</text><text x="570" y="270">Unavailable</text><text x="750" y="270">Loading/empty</text>
+<text x="52" y="324">Message</text><text x="230" y="324">Neutral</text><text x="400" y="324">N/A</text><text x="570" y="324">Muted</text><text x="750" y="324">Info/warning</text>
+</g></svg>
