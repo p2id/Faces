@@ -1,25 +1,18 @@
-mindmap
-  root((Token map))
-    Color
-      canvas: #FFFFFF
-      surface: #F5F7FA
-      ink: #17212B
-      muted: #5B6875
-      accent: #2457D6
-      danger: #B3261E
-      border: #CBD5E1
-    Type
-      family: system sans
-      scale: 12/16/20/28
-      weight: 400/600/700
-      line-height: 1.4
-    Space
-      unit: 4px
-      values: 4/8/12/16/24/32/48
-    Shape
-      radius: 4/8/12
-      stroke: 1px
-    Motion
-      duration: 150ms
-      easing: standard ease
-Documentation: Semantic tokens centralize visual decisions and support later theme substitution. Representation rationale: MMD expresses hierarchy compactly. Dedicated path: /projects/project-001/sections/f/token-map.mmd. Quality gates: contrast target AA, semantic names used consistently, ordered type scale, base-unit spacing, and reduced-motion fallback.
+graph TD
+T[Tokens] --> C[Color]
+T --> Y[Typography]
+T --> S[Spacing]
+T --> R[Radius]
+T --> E[Elevation]
+C --> C1[Canvas #F7F8FA]
+C --> C2[Surface #FFFFFF]
+C --> C3[Text #293241]
+C --> C4[Accent #2457D6]
+C --> C5[Critical #B42318]
+Y --> Y1[System sans]
+Y --> Y2[12/16 14/20 16/24 24/32]
+S --> S1[4px base]
+R --> R1[4 6 8 12px]
+E --> E1[0 1px 3px rgba(0,0,0,.12)]
+T -.-> Q[Contrast >= 4.5:1]
+T -.-> F[Focus always visible]
