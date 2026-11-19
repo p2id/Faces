@@ -1,20 +1,15 @@
-Budgets
-- Initial JavaScript: <=170 KB compressed.
-- Initial CSS: <=50 KB compressed.
-- First contentful paint: <=1.8 s on mid-tier mobile.
-- Largest contentful paint: <=2.5 s.
-- Interaction to next paint: <=200 ms for common actions.
-- Cumulative layout shift: <=0.1.
-- Initial requests: <=35.
-- Above-the-fold media: <=200 KB total.
-- Font payload: <=100 KB; maximum two families and limited weights.
-- Visible list interaction: at least 50 FPS; virtualize lists over 200 rows.
-- Empty and error states render without optional assets.
-
-Rules
-- Lazy-load noncritical content.
-- Reserve media and content dimensions before loading.
+Budgets:
+- Critical CSS: ≤50 KB compressed.
+- Initial JavaScript: ≤170 KB compressed.
+- Above-the-fold images: ≤300 KB total.
+- Largest Contentful Paint: ≤2.5s on a mid-tier mobile connection.
+- Interaction to Next Paint: ≤200ms for primary interactions.
+- Cumulative Layout Shift: ≤0.1.
+- First usable content: ≤3s on a mid-tier mobile connection.
+- Font payload: ≤100 KB compressed and at most two families.
+- Individual icons: ≤5 KB; prefer a shared SVG sprite.
+- Lazy-load below-viewport media.
+- Reserve dimensions for media and asynchronous regions.
+- Avoid blocking nonessential scripts and unnecessary animation.
 - Prefer transform and opacity for motion.
-- Avoid layout-triggering animation.
-- Use skeletons only for expected visible content.
-- Verify budgets in a production-like build on a mid-tier mobile profile.
+- Render inactive overlays and panels only when needed.
