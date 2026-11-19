@@ -1,14 +1,15 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 300" role="img" aria-label="Responsive layout rules">
-<g fill="none" stroke="#263238" stroke-width="2">
-<rect x="24" y="24" width="280" height="240"/><rect x="340" y="24" width="280" height="240"/><rect x="656" y="24" width="280" height="240"/>
-<path d="M48 88h232M48 136h232M48 184h232M364 88h232M364 136h232M364 184h232M680 88h232M680 136h232M680 184h232"/>
-</g>
-<g font-family="sans-serif" font-size="14" fill="#263238">
-<text x="48" y="56">COMPACT ≤ 599</text><text x="364" y="56">MEDIUM 600–959</text><text x="680" y="56">WIDE ≥ 960</text>
-<text x="48" y="80">single column</text><text x="364" y="80">two flexible columns</text><text x="680" y="80">navigation plus content</text>
-<text x="48" y="118">stack regions</text><text x="364" y="118">retain priority order</text><text x="680" y="118">preserve reading width</text>
-<text x="48" y="166">44px targets</text><text x="364" y="166">fluid spacing</text><text x="680" y="166">stable anchor regions</text>
-<text x="48" y="214">no horizontal scroll</text><text x="364" y="214">no clipped labels</text><text x="680" y="214">no excess density</text>
-</g>
-</svg>
-Documentation: Breakpoint rules describe layout behavior rather than device categories. Representation rationale: SVG shows parallel responsive modes at a glance. Dedicated path: /projects/project-001/sections/f/responsive.svg. Quality gates: compact, medium, and wide layouts preserve order, readable content, target size, zoom behavior, and overflow control.
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 370" role="img" aria-label="Responsive layout rules">
+<title>Responsive Layout Rules</title>
+<rect width="960" height="370" fill="#f7f8fa"/>
+<g font-family="Arial,sans-serif" fill="#293241">
+<rect x="32" y="24" width="280" height="320" rx="8" fill="#fff" stroke="#c8ced8"/>
+<rect x="340" y="24" width="280" height="320" rx="8" fill="#fff" stroke="#c8ced8"/>
+<rect x="648" y="24" width="280" height="320" rx="8" fill="#fff" stroke="#c8ced8"/>
+<text x="56" y="60" font-size="20">Compact</text><text x="364" y="60" font-size="20">Medium</text><text x="672" y="60" font-size="20">Wide</text>
+<text x="56" y="94" font-size="14">320–599px</text><text x="364" y="94" font-size="14">600–959px</text><text x="672" y="94" font-size="14">960px+</text>
+<text x="56" y="140" font-size="14">One column</text><text x="364" y="140" font-size="14">Flexible columns</text><text x="672" y="140" font-size="14">Navigation plus content</text>
+<text x="56" y="174" font-size="14">Collapsed navigation</text><text x="364" y="174" font-size="14">Condensed navigation</text><text x="672" y="174" font-size="14">Persistent navigation</text>
+<text x="56" y="208" font-size="14">24px page padding</text><text x="364" y="208" font-size="14">32px page padding</text><text x="672" y="208" font-size="14">40px page padding</text>
+<text x="56" y="242" font-size="14">Stack actions</text><text x="364" y="242" font-size="14">Wrap actions</text><text x="672" y="242" font-size="14">Inline actions</text>
+<text x="56" y="288" font-size="13">No horizontal scroll</text><text x="364" y="288" font-size="13">Readable line length</text><text x="672" y="288" font-size="13">Max width 1280px</text>
+</g></svg>
