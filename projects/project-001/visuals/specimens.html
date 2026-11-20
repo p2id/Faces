@@ -1,14 +1,16 @@
-<!doctype html>
-<html lang="en">
-<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Product specimen</title></head>
-<body>
-<main>
-<h1>Primary view</h1>
-<p>Concise context explains the current scope and available action.</p>
-<section aria-labelledby="summary"><h2 id="summary">Summary</h2><p>Clear status, essential value, and relevant constraint.</p><button type="button">Continue</button></section>
-<section aria-labelledby="empty"><h2 id="empty">Empty state</h2><p>No content is available in this view.</p><button type="button">Try again</button></section>
-<section aria-labelledby="error"><h2 id="error">Error state</h2><p>The view could not be completed. Review the condition and retry.</p><button type="button">Retry</button></section>
-</main>
-</body>
-</html>
-Documentation: The specimen is a semantic reference for hierarchy, labels, states, and accessible structure, not production implementation. Representation rationale: HTML preserves document semantics and content order. Dedicated path: /projects/project-001/sections/g/specimens.html. Quality gates: valid structure, one h1, ordered headings, explicit labels, visible state examples, keyboard-compatible controls, and no color-only meaning. Publishing rule: publish only after content, state, contrast, and responsive checks pass.
+<section aria-label="Generic product interface specimens">
+<style>
+:root{font:16px/1.5 system-ui,sans-serif;color:#17202a;background:#f7f9fa}
+.specimen{max-width:720px;margin:16px auto;padding:24px;background:#fff;border:1px solid #b7c0c8;border-radius:10px}
+.field{display:grid;gap:6px;margin:16px 0}.input{padding:10px;border:1px solid #9aa7b2;border-radius:6px}
+.button{padding:10px 16px;border:0;border-radius:6px;background:#3978a8;color:#fff}
+.button:focus,.input:focus{outline:2px solid #3978a8;outline-offset:2px}.notice{padding:12px;background:#e7f0fb;border-left:4px solid #3978a8}.muted{color:#5c6873}
+</style>
+<article class="specimen">
+<h1>Primary surface</h1>
+<p class="muted">Concise supporting text establishes purpose and expected outcome.</p>
+<div class="notice" role="status">Guidance appears close to the affected control.</div>
+<label class="field">Input label<input class="input" type="text" aria-describedby="hint"><small id="hint" class="muted">Optional guidance or format note.</small></label>
+<button class="button" type="button">Continue</button>
+</article>
+</section>
