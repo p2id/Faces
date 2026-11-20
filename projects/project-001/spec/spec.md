@@ -1,36 +1,38 @@
 Project: project-001
-Date: 2026-11-19
-Scope: Generic, neutral, reusable product experience.
+Date: 2026-11-20
+Purpose: Generic, neutral product experience for browsing, reviewing, and configuring content.
 
 Surfaces:
-- Desktop application shell
-- Responsive mobile surface
-- Overlay surface for dialogs, menus, and notices
-- Loading, empty, error, and success surfaces
+- App shell: navigation, title, search, utility actions.
+- Collection: query, filters, sorting, result list.
+- Detail: summary, attributes, status, actions.
+- Feedback: validation, alerts, confirmations, empty and error states.
+- Overlay: dialog, popover, menu, tooltip.
 
 Sections:
-1. Global navigation: product mark, primary links, utility actions.
-2. Page header: title, supporting text, primary and secondary actions.
-3. Summary area: metric cards and status labels.
-4. Workspace: search, filters, sortable list, detail region.
-5. Feedback area: inline messages, banners, and notices.
-6. Footer: secondary links and legal information.
+1. Header: “Overview”, navigation, search, settings.
+2. Overview: “Recent items”, summary metrics, “View all”.
+3. Collection: “All items”, filters, sort, result cards.
+4. Detail: “Item overview”, status, attributes, “Edit”, “Back”.
+5. Empty state: “No items yet”, “Create an item”.
+6. Error state: “Unable to load items”, “Try again”.
+7. Footer: help, terms, version.
 
-Real content examples:
-- Page title: “Overview”
-- Supporting text: “Review current status and recent activity.”
-- Primary action: “Create item”
-- Secondary action: “Export”
-- Search placeholder: “Search items”
-- Empty message: “No items match these filters.”
-- Loading message: “Loading overview…”
-- Error message: “Unable to load this view. Try again.”
-- Success message: “Item created successfully.”
-- Status labels: “Active”, “Paused”, “Pending”
+Content examples:
+- Navigation: “Overview”, “Items”, “Reports”.
+- Search placeholder: “Search items”.
+- Card title: “Quarterly planning”.
+- Metadata: “Updated 20 Nov 2026 · 4 attributes”.
+- Status: “Ready”.
+- Primary action: “Create item”.
+- Confirmation: “Changes saved”.
+- Validation: “Enter a valid name”.
+- Filters: “Status”, “Date”, “Category”.
+- Sorting: “Newest first”, “Oldest first”.
 
 Content rules:
-- Use concise sentence case.
-- Describe the outcome before the action.
-- Keep labels specific and reusable.
-- Pair status color with text or an icon.
-- Provide recovery actions for recoverable errors.
+- Use concise sentence-case labels.
+- Make actions verb-led and specific.
+- Preserve entered values after errors.
+- Provide recovery actions for failures.
+- Never rely on color alone.
