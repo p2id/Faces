@@ -1,14 +1,13 @@
 flowchart TD
-A[Entry] --> B[Orient]
-B --> C{Required context present?}
-C -->|Yes| D[Review primary content]
-C -->|No| E[Show guidance]
-E --> F[Provide recovery action]
-D --> G{Primary action available?}
-G -->|Yes| H[Confirm intent]
-G -->|No| I[Explain constraint]
-H --> J[Show completion state]
-I --> K[Offer alternate path]
-J --> L[Retain relevant context]
-K --> L
-Documentation: The flow represents decisions, recovery, and completion without implementation detail. Representation rationale: MMD keeps relationships editable and reviewable. Dedicated path: /projects/project-001/sections/g/flows.mmd. Quality gates: no dead ends, every failure has a next step, consequential actions have confirmation, completion is explicit, and context is retained where appropriate. Writing rules: use short verb-led labels, one decision per node, neutral tone, and observable outcomes.
+  A[Entry surface] --> B[Review primary content]
+  B --> C{Input required?}
+  C -- No --> D[Continue or exit]
+  C -- Yes --> E[Complete input]
+  E --> F{Valid state?}
+  F -- No --> G[Show local guidance]
+  G --> E
+  F -- Yes --> H[Confirm action]
+  H --> I[Show outcome]
+  I --> J[Offer next relevant action]
+  B --> K[Open supporting detail]
+  K --> L[Return to primary surface]
