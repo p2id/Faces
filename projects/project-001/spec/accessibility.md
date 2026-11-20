@@ -1,16 +1,16 @@
 Targets:
 - Meet WCAG 2.2 AA.
-- Text contrast: minimum 4.5:1 normal and 3:1 large text.
-- Non-text contrast: minimum 3:1 for controls, boundaries, and focus.
-- Focus indicator: visible, non-color-only, at least 2px equivalent perimeter.
-- Pointer and touch targets: minimum 44×44px.
-- Full keyboard operation and logical focus order.
-- Use semantic landmarks, headings, labels, descriptions, and table headers.
-- Announce status and error updates through suitable live regions.
-- Never use color as the sole status signal.
-- Give every control an accessible name.
-- Support 400% zoom and reflow without essential-content loss.
-- Respect reduced motion and avoid flashing content.
-- Associate each form error with its field and correction.
-- Trap dialog focus while open and restore focus on close.
-- Make language, direction, and page title programmatically determinable.
+- Make all controls keyboard operable.
+- Maintain logical focus order and visible focus indicators.
+- Contain focus within open dialogs and restore it on close.
+- Reach 4.5:1 contrast for normal text and 3:1 for large text and UI boundaries.
+- Do not use color as the sole state cue.
+- Give every control an accessible name, role, state, and value.
+- Provide persistent form labels, instructions, and associated errors.
+- Announce status changes without unexpected focus movement.
+- Provide skip navigation and meaningful landmarks.
+- Use a logical heading hierarchy.
+- Mark decorative graphics appropriately and provide useful alternatives when needed.
+- Respect prefers-reduced-motion.
+- Use touch targets of at least 44×44 CSS pixels.
+- Support text resize to 200% and reflow to 400% viewport width.
