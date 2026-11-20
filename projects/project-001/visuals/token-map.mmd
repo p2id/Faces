@@ -1,18 +1,31 @@
-graph TD
-T[Tokens] --> C[Color]
-T --> Y[Typography]
-T --> S[Spacing]
-T --> R[Radius]
-T --> E[Elevation]
-C --> C1[Canvas #F7F8FA]
-C --> C2[Surface #FFFFFF]
-C --> C3[Text #293241]
-C --> C4[Accent #2457D6]
-C --> C5[Critical #B42318]
-Y --> Y1[System sans]
-Y --> Y2[12/16 14/20 16/24 24/32]
-S --> S1[4px base]
-R --> R1[4 6 8 12px]
-E --> E1[0 1px 3px rgba(0,0,0,.12)]
-T -.-> Q[Contrast >= 4.5:1]
-T -.-> F[Focus always visible]
+mindmap
+  root((Product UI tokens))
+    Color
+      Surface: #F7F9FA
+      Panel: #FFFFFF
+      Text: #17202A
+      Muted: #5C6873
+      Border: #B7C0C8
+      Accent: #3978A8
+      Success: #2F7D4A
+      Warning: #A66B00
+      Error: #B33A3A
+    Type
+      Family: system sans
+      Body: 16px / 1.5
+      Label: 14px / 1.4
+      Heading: 24px / 1.2
+    Space
+      Unit: 4px
+      Compact: 8px
+      Standard: 16px
+      Section: 24px
+      Layout: 32px
+    Shape
+      Control radius: 6px
+      Panel radius: 10px
+      Focus ring: 2px
+    Motion
+      Duration: 160ms
+      Easing: ease-out
+      Reduced motion: static
