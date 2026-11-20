@@ -1,13 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 390" role="img" aria-label="Interface state matrix">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 420" role="img" aria-label="Interface state matrix">
 <title>Interface State Matrix</title>
-<rect width="960" height="390" fill="#f7f8fa"/>
-<rect x="32" y="24" width="896" height="342" rx="8" fill="#fff" stroke="#c8ced8"/>
-<rect x="32" y="24" width="896" height="48" rx="8" fill="#eef1f5"/>
-<g font-family="Arial,sans-serif" font-size="15" fill="#293241">
-<text x="52" y="55">Pattern</text><text x="230" y="55">Default</text><text x="400" y="55">Focus</text><text x="570" y="55">Disabled</text><text x="750" y="55">Feedback</text>
-<text x="52" y="108">Action</text><text x="230" y="108">Ready</text><text x="400" y="108">Visible ring</text><text x="570" y="108">Muted</text><text x="750" y="108">Success/error</text>
-<text x="52" y="162">Input</text><text x="230" y="162">Empty/value</text><text x="400" y="162">Visible ring</text><text x="570" y="162">Read-only</text><text x="750" y="162">Hint/error</text>
-<text x="52" y="216">Navigation</text><text x="230" y="216">Available</text><text x="400" y="216">Visible ring</text><text x="570" y="216">Unavailable</text><text x="750" y="216">Current</text>
-<text x="52" y="270">Panel</text><text x="230" y="270">Loaded</text><text x="400" y="270">Contained</text><text x="570" y="270">Unavailable</text><text x="750" y="270">Loading/empty</text>
-<text x="52" y="324">Message</text><text x="230" y="324">Neutral</text><text x="400" y="324">N/A</text><text x="570" y="324">Muted</text><text x="750" y="324">Info/warning</text>
+<style>text{font:14px system-ui;fill:#17202a}.c{fill:#fff;stroke:#b7c0c8}</style>
+<rect width="960" height="420" fill="#f7f9fa"/><text x="24" y="34" font-size="20" font-weight="bold">State coverage</text>
+<g transform="translate(24 56)"><path d="M210 0v304M390 0v304M570 0v304M750 0v304" stroke="#b7c0c8"/>
+<rect class="c" width="912" height="304"/><path d="M0 48h912M0 112h912M0 176h912M0 240h912" stroke="#b7c0c8"/>
+<g font-weight="bold"><text x="16" y="30">Surface</text><text x="226" y="30">Default</text><text x="406" y="30">Loading</text><text x="586" y="30">Empty</text><text x="766" y="30">Error / recovery</text></g>
+<text x="16" y="78">Primary content</text><text x="226" y="78">Visible</text><text x="406" y="78">Reserved</text><text x="586" y="78">Guidance</text><text x="766" y="78">Inline message</text>
+<text x="16" y="142">Input control</text><text x="226" y="142">Editable</text><text x="406" y="142">Disabled</text><text x="586" y="142">Prompt</text><text x="766" y="142">Validation</text>
+<text x="16" y="206">Action area</text><text x="226" y="206">Enabled</text><text x="406" y="206">Progress</text><text x="586" y="206">Secondary</text><text x="766" y="206">Retry / revise</text>
+<text x="16" y="270">Navigation</text><text x="226" y="270">Current</text><text x="406" y="270">Stable</text><text x="586" y="270">Reduced</text><text x="766" y="270">Preserved</text>
 </g></svg>
