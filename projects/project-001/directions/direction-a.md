@@ -1,6 +1,6 @@
-Positioning: Calm operational clarity for fast scanning and confident action.
-Palette rationale: Warm neutral surfaces reduce fatigue; deep slate text supports readability; one blue accent marks active controls without brand dependence.
-Type rationale: Neutral sans-serif with tabular numerals supports compact labels, metrics, and aligned values.
-Layout rules: Persistent navigation, summary band, two-column main region, prioritized exception panel, and stacked narrow-screen transformation.
-Motion intent: Restrained 120–180ms transitions preserve spatial continuity; no motion is required to understand state.
-Avoided traps: Decorative dashboards, color-only status, overloaded metric tiles, hidden primary actions, and unclear hierarchy.
+positioning: Calm, high-signal overview where priority and state are immediately legible.
+palette_rationale: Warm-neutral background, cool-neutral surfaces, near-black text, and one restrained blue accent; status also uses labels, symbols, or patterns.
+type_rationale: Neutral sans serif with strong x-height, clear numerals, and two primary weights for hierarchy.
+layout_rules: Compact navigation; bounded content width; summary row first; grouped cards below; dense areas require labels and spacing.
+motion_intent: Brief opacity and position transitions for state changes; no decorative motion; honor reduced motion.
+avoided_traps: Excessive whitespace; ambiguous cards; color-only alerts; hidden actions; decorative charts without interpretation.
