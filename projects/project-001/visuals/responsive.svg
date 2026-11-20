@@ -1,15 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 370" role="img" aria-label="Responsive layout rules">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 420" role="img" aria-label="Responsive layout rules">
 <title>Responsive Layout Rules</title>
-<rect width="960" height="370" fill="#f7f8fa"/>
-<g font-family="Arial,sans-serif" fill="#293241">
-<rect x="32" y="24" width="280" height="320" rx="8" fill="#fff" stroke="#c8ced8"/>
-<rect x="340" y="24" width="280" height="320" rx="8" fill="#fff" stroke="#c8ced8"/>
-<rect x="648" y="24" width="280" height="320" rx="8" fill="#fff" stroke="#c8ced8"/>
-<text x="56" y="60" font-size="20">Compact</text><text x="364" y="60" font-size="20">Medium</text><text x="672" y="60" font-size="20">Wide</text>
-<text x="56" y="94" font-size="14">320–599px</text><text x="364" y="94" font-size="14">600–959px</text><text x="672" y="94" font-size="14">960px+</text>
-<text x="56" y="140" font-size="14">One column</text><text x="364" y="140" font-size="14">Flexible columns</text><text x="672" y="140" font-size="14">Navigation plus content</text>
-<text x="56" y="174" font-size="14">Collapsed navigation</text><text x="364" y="174" font-size="14">Condensed navigation</text><text x="672" y="174" font-size="14">Persistent navigation</text>
-<text x="56" y="208" font-size="14">24px page padding</text><text x="364" y="208" font-size="14">32px page padding</text><text x="672" y="208" font-size="14">40px page padding</text>
-<text x="56" y="242" font-size="14">Stack actions</text><text x="364" y="242" font-size="14">Wrap actions</text><text x="672" y="242" font-size="14">Inline actions</text>
-<text x="56" y="288" font-size="13">No horizontal scroll</text><text x="364" y="288" font-size="13">Readable line length</text><text x="672" y="288" font-size="13">Max width 1280px</text>
+<style>text{font:14px system-ui;fill:#17202a}.b{fill:#fff;stroke:#9aa7b2;stroke-width:2}.x{fill:#dceeff}.n{fill:#eef2f5}</style>
+<rect width="960" height="420" fill="#f7f9fa"/><text x="24" y="34" font-size="20" font-weight="bold">Responsive composition</text>
+<g transform="translate(24 60)">
+<rect class="b" width="270" height="300" rx="10"/><text x="20" y="32" font-weight="bold">Small · 320–599</text><rect class="x" x="20" y="56" width="230" height="34" rx="5"/><rect class="n" x="20" y="106" width="230" height="100" rx="5"/><rect class="x" x="20" y="222" width="230" height="38" rx="5"/><text x="20" y="282">Single column; stacked actions</text>
+<rect class="b" x="310" width="270" height="300" rx="10"/><text x="330" y="32" font-weight="bold">Medium · 600–1023</text><rect class="x" x="330" y="56" width="230" height="34" rx="5"/><rect class="n" x="330" y="106" width="150" height="100" rx="5"/><rect class="n" x="490" y="106" width="70" height="100" rx="5"/><rect class="x" x="330" y="222" width="150" height="38" rx="5"/><text x="330" y="282">Flexible grid; compact panel</text>
+<rect class="b" x="620" width="294" height="300" rx="10"/><text x="640" y="32" font-weight="bold">Large · 1024+</text><rect class="x" x="640" y="56" width="254" height="34" rx="5"/><rect class="n" x="640" y="106" width="168" height="100" rx="5"/><rect class="n" x="820" y="106" width="74" height="100" rx="5"/><rect class="x" x="640" y="222" width="130" height="38" rx="5"/><text x="640" y="282">Two-column; bounded width</text>
 </g></svg>
