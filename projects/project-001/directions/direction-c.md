@@ -1,6 +1,6 @@
-Positioning: Modular control surface for adaptable monitoring and configuration.
-Palette rationale: Near-monochrome foundations emphasize modules; green, amber, and red remain sparse semantic signals.
-Type rationale: Variable sans-serif supports density changes; monospace is limited to values requiring alignment.
-Layout rules: Resizable modules follow a consistent grid; controls stay near affected content; narrow layouts reorder by priority.
-Motion intent: Drag, reorder, and resize feedback is immediate and low amplitude; persistent changes receive clear nonmotion confirmation.
-Avoided traps: Inaccessible novelty interactions, ungrouped controls, hidden configuration state, decorative motion, and indiscriminate shrinking.
+positioning: Legible status narrative prioritizing sequence, context, and exception explanation.
+palette_rationale: Paper-like neutral surface, charcoal text, muted green accent, and high-contrast warning treatment reinforced by shape and label.
+type_rationale: Humanist sans serif for readable body text, restrained heading weight, and generous line height.
+layout_rules: Single primary column; narrow context rail at wide widths; summaries precede detail; sequence views remain text-readable at all sizes.
+motion_intent: Focused disclosure and state-update transitions only; no looping motion; reduced-motion mode removes interpolation.
+avoided_traps: Overly editorial styling; ungrouped text blocks; implied certainty; low-contrast muted text; ornamental dividers.
