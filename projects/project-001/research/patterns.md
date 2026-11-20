@@ -1,79 +1,29 @@
-Project: project-001
-Date: 2026-11-19
-
-Dominant patterns:
-- Structured cards, panels, tables, and summary bands.
-- Neutral surfaces with one restrained functional accent.
-- Persistent navigation, contextual actions, and progressive disclosure.
-- Clear loading, empty, validation, error, and success states.
-- Responsive grids that become prioritized stacks.
-
-Emerging patterns:
-- Searchable command surfaces.
-- Adaptive density and configurable views.
-- Semantic tokens paired with text or icon status cues.
-- Container-aware layouts.
-- Motion focused on spatial continuity.
-
-Deprecated patterns:
-- Decorative gradients competing with content.
-- Hidden gesture-only navigation.
-- Color-only status communication.
-- Excessive modal interruption.
-- Fixed-width layouts without narrow-screen adaptation.
-
-Outlier patterns:
-- Monochrome interfaces with one high-contrast action color.
-- Split panes preserving overview during detail inspection.
-- Reversible inline editing.
-- Timeline or matrix views for dense comparison.
-
-Visual DNA:
-- Warm or cool neutral surfaces, slate text, restrained semantic colors.
-- One functional accent, 8-point spacing, 10–14px radii, subtle borders.
-- Strong contrast, compact controls, consistent icon geometry.
-
-Interaction DNA:
-- Direct, reversible actions with nearby feedback.
-- Explicit focus, hover, pressed, loading, empty, error, and success states.
-- Progressive disclosure and preserved context.
-- Predictable keyboard order and visible primary actions.
-
-Accessibility DNA:
-- WCAG-aligned contrast and non-color status cues.
-- Visible focus indicators and semantic heading structure.
-- Approximately 44px minimum touch targets where practical.
-- Reduced-motion alternative.
-- Associated labels, descriptions, and error messages.
-
-Responsive DNA:
-- 12-column wide grid, 6-column medium grid, prioritized narrow stack.
-- Fluid spacing and typography within bounded containers.
-- Side navigation transforms into compact top or bottom navigation.
-- Dense tables transform into prioritized cards or scroll regions.
-- Primary actions remain visible without fixed viewport assumptions.
-
-Candidate product domains:
-- Operations dashboard — Monitors status, trends, exceptions, and prioritized actions.
-- Planning workspace — Organizes milestones, dependencies, resources, and progress.
-- Knowledge browser — Finds, filters, compares, and organizes structured content.
-- Quality review console — Inspects records, applies decisions, and tracks resolution states.
-- Configuration studio — Composes settings and reusable modules with immediate validation.
-- Analytics explorer — Examines metrics through filters, comparisons, and segments.
-
-Weighted scoring matrix, 1–5; weights: clarity 25%, reuse 20%, accessibility 20%, responsive fit 15%, distinction 10%, interaction depth 10%:
-- Operations dashboard: 5,5,5,5,4,5 = 4.85
-- Knowledge browser: 5,5,5,5,3,4 = 4.65
-- Planning workspace: 4,5,4,4,4,5 = 4.35
-- Quality review console: 4,4,5,4,4,5 = 4.35
-- Configuration studio: 4,4,4,4,5,5 = 4.15
-- Analytics explorer: 4,4,4,5,4,4 = 4.10
-
-Selected domain rationale:
-Operations dashboard provides the strongest reusable combination of hierarchy, status communication, filtering, responsive density, accessibility states, and interaction depth without requiring specialized styling.
-
-Cycle lock:
-2026-11-19; project-001; operations dashboard; foundation tokens, responsive rules, accessibility requirements, and primary interaction model are fixed for this cycle.
-
-Fallback rule:
-If the selected domain cannot support the required hierarchy or responsive behavior, use knowledge browser while preserving the extracted DNA.
+project_id: project-001
+date: 2026-11-20
+dominant_patterns: Clear hierarchy; grouped cards; compact tables; persistent navigation; restrained surfaces; explicit loading, empty, error, and success states; 8px spacing rhythm.
+emerging_patterns: Adaptive density; progressive disclosure; semantic color with labels and symbols; split-pane comparison; reduced-motion presets; tokenized responsive layouts.
+deprecated_patterns: Decorative gradients; hover-only information; unlabeled icon controls; modal-heavy flows; color-only status; dense ungrouped content; unnecessary horizontal scrolling.
+outlier_patterns: Monochrome interfaces with one accent; inline validation; variable-density views; context-preserving side panels; compact command surfaces.
+visual_dna: Neutral backgrounds; high-contrast text; one primary accent; thin borders; moderate radius; restrained elevation; consistent icon geometry; minimal ornament.
+interactional_dna: Predictable focus order; direct controls; visible selection; inline feedback; reversible actions; stable control placement; explicit state transitions.
+accessibility_dna: WCAG 2.2 AA target; semantic structure; visible focus; keyboard parity; 44px minimum targets; 200% zoom tolerance; reduced-motion support; non-color status cues.
+responsive_dna: Mobile-first; fluid bounded type scale; one-column base; two-column expansion when useful; priority-based reflow; 16px minimum outer spacing; no horizontal scrolling for core content.
+candidate_domains:
+1. Operations overview: Displays grouped states, trends, priorities, and exceptions.
+2. Resource planning: Arranges capacity, priorities, allocations, and time ranges.
+3. Configuration center: Presents settings, rules, dependencies, and validation states.
+4. Knowledge index: Organizes searchable reference material, categories, and metadata.
+5. Quality review: Supports comparison of findings, conditions, and resolution states.
+6. Progress tracker: Shows stages, milestones, dependencies, and completion signals.
+scoring_weights: clarity=25, reuse=20, responsive_fit=20, accessibility=20, distinctiveness=15.
+weighted_matrix_0_to_5:
+operations_overview: clarity=5 reuse=5 responsive_fit=5 accessibility=5 distinctiveness=4 total=4.80
+resource_planning: clarity=4 reuse=4 responsive_fit=4 accessibility=4 distinctiveness=4 total=4.00
+configuration_center: clarity=5 reuse=5 responsive_fit=4 accessibility=5 distinctiveness=3 total=4.60
+knowledge_index: clarity=4 reuse=5 responsive_fit=5 accessibility=5 distinctiveness=3 total=4.40
+quality_review: clarity=5 reuse=4 responsive_fit=4 accessibility=5 distinctiveness=4 total=4.45
+progress_tracker: clarity=4 reuse=4 responsive_fit=5 accessibility=5 distinctiveness=4 total=4.40
+selected_domain: operations_overview
+selected_domain_rationale: Highest weighted score and broadest support for reusable hierarchy, accessible state communication, responsive grouping, and neutral presentation.
+cycle_lock: Lock the selected domain, shared DNA, core states, and accessibility baseline for this cycle; allow only clarity, contrast, and responsive corrections.
+fallback_rule: If evidence is insufficient or scores tie, retain the highest-scoring neutral domain and shared DNA without adding specialized assumptions.
