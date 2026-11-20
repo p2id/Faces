@@ -1,18 +1,19 @@
 Breakpoints:
-- Small: 0–599px
-- Medium: 600–1023px
-- Large: 1024–1439px
-- Extra large: 1440px+
+- xs: 0–479px
+- sm: 480–767px
+- md: 768–1023px
+- lg: 1024–1279px
+- xl: 1280px and above
 
-Responsive rules:
-- Use a 4px spacing base and fluid container widths.
-- Small: one column, 16px page padding, stacked filters, full-width primary actions, collapsed navigation.
-- Medium: 24px page padding, optional two-column regions, compact navigation.
-- Large: 32px page padding, persistent navigation, workspace plus detail region.
-- Extra large: cap content at 1280px and preserve readable line length.
-- Collapse cards to one column below 640px content width.
-- Make tables scrollable or transform rows below 720px.
-- Use 16px viewport gutters for small-screen dialogs.
-- Keep pointer targets at least 44×44px.
-- Preserve essential actions; use labeled overflow only when needed.
-- Respect reduced-motion preferences at every breakpoint.
+Rules:
+- Use a fluid layout with 1200px maximum content width.
+- xs/sm: single column, collapsed navigation, filter dialog, stacked cards, labeled rows instead of tables.
+- md: allow two-column detail layouts and optional persistent filters.
+- lg/xl: persistent navigation, multi-column cards, side-by-side summary and detail.
+- Collapse secondary header actions before the primary action.
+- Keep touch targets at least 44×44px.
+- Use 16px minimum narrow-screen gutters and 24–32px wide-screen gutters.
+- Avoid horizontal scrolling and hover-only controls.
+- Support 200% zoom without loss of content or controls.
+- Support portrait and landscape orientations.
+- Truncation must provide an accessible full value.
