@@ -1,39 +1,47 @@
 Button
-- Anatomy: label, optional icon, optional loading indicator.
-- Variants: primary, secondary, quiet, destructive, icon-only.
-- States: default, hover, focus-visible, pressed, loading, disabled.
-- Usage: trigger a clear action; use one primary action per region.
-- Anti-patterns: vague labels, unnamed icon-only controls, nested buttons, unexplained disabled actions.
-- Accessibility: native button semantics, keyboard activation, 44×44px target, announced loading state.
+- Anatomy: label, optional icon, focus ring, progress indicator.
+- Variants: primary, secondary, tertiary, destructive, icon-only.
+- States: default, hover, focus-visible, pressed, disabled, loading, success.
+- Usage: use one primary action per region; label the result, such as “Create item”.
+- Anti-patterns: vague labels, unnamed icon-only controls, unexplained disabled actions.
+- Accessibility: native button semantics, preserved label while loading, exposed busy state.
 
-Text input
-- Anatomy: label, input, optional hint, validation message.
-- Variants: single-line, search, numeric, multiline.
-- States: empty, filled, hover, focus, invalid, valid, disabled, readonly.
-- Usage: collect one clearly defined value.
-- Anti-patterns: placeholder-only labels, unexplained validation, excessive formatting constraints.
-- Accessibility: programmatic label, description and error association, visible focus, suitable autocomplete.
+TextInput
+- Anatomy: label, field, hint, error, optional affordance.
+- Variants: text, search, compact, read-only.
+- States: empty, filled, focus, disabled, read-only, invalid, valid, loading.
+- Usage: provide a persistent label and concise hint.
+- Anti-patterns: placeholder-only labels, delayed error context, clearing entered values.
+- Accessibility: programmatic label and description; associated error; keyboard support.
 
-Select and menu
-- Anatomy: trigger, value, popup, options, optional search.
-- Variants: select, menu, combobox.
-- States: closed, open, focused, selected, invalid, disabled.
-- Usage: choose from a bounded set.
-- Anti-patterns: hover-only menus, inaccessible custom listboxes, long unsearchable option sets.
-- Accessibility: correct expanded and selected semantics, keyboard navigation, focus restoration.
+Select
+- Anatomy: label, trigger, value, indicator, listbox, options.
+- Variants: single, grouped, compact.
+- States: closed, open, focused, selected, disabled, invalid, loading.
+- Usage: use for bounded choices and show the current value.
+- Anti-patterns: excessive options, nested scrolling, unannounced value changes.
+- Accessibility: correct combobox/listbox semantics, keyboard navigation, expanded state.
 
-Dialog and drawer
-- Anatomy: title, description, content, action area, close control.
-- Variants: modal, confirmation, side drawer.
-- States: closed, opening, open, submitting, error, success.
-- Usage: contain a focused task or important confirmation.
-- Anti-patterns: nested overlays, missing close path, destructive default action.
-- Accessibility: labeled container, focus containment, Escape support, inert background, focus restoration.
+Dialog
+- Anatomy: title, description, content, close control, action group.
+- Variants: confirmation, form, informational.
+- States: closed, opening, open, submitting, success, error, closing.
+- Usage: reserve for focused tasks or consequential decisions.
+- Anti-patterns: stacked dialogs, dismiss-only critical content, escaped focus.
+- Accessibility: labeled modal, focus containment, safe Escape dismissal, focus restoration.
 
-Alert and notice
-- Anatomy: status icon, message, optional detail, optional action, dismiss control.
-- Variants: informative, positive, caution, negative.
-- States: entering, visible, exiting, dismissed.
-- Usage: place important status near affected content; use notices for brief non-blocking feedback.
-- Anti-patterns: auto-dismiss critical errors, color-only meaning, excessive stacking.
-- Accessibility: suitable live-region politeness, readable duration, dismissible content, clear action names.
+Card
+- Anatomy: container, heading, metadata, status, action area.
+- Variants: content, selectable, interactive, loading.
+- States: default, hover, focus, selected, disabled, loading, error.
+- Usage: group related information; make the whole card interactive only when needed.
+- Anti-patterns: nested interactive controls, ambiguous click area, decorative text-as-action.
+- Accessibility: logical heading, clear action name, keyboard access when interactive.
+
+Alert
+- Anatomy: tone indicator, title, message, optional action, dismiss control.
+- Variants: info, success, warning, error.
+- States: visible, dismissible, persistent.
+- Usage: explain status and next step near affected content.
+- Anti-patterns: color-only messaging, auto-dismissed errors, vague messages.
+- Accessibility: suitable status or alert role, readable contrast, named actions.
