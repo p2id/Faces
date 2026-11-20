@@ -1,15 +1,16 @@
 Budgets:
-- Critical CSS: ≤50 KB compressed.
-- Initial JavaScript: ≤170 KB compressed.
-- Above-the-fold images: ≤300 KB total.
-- Largest Contentful Paint: ≤2.5s on a mid-tier mobile connection.
-- Interaction to Next Paint: ≤200ms for primary interactions.
+- Critical CSS: ≤50KB compressed.
+- Initial JavaScript: ≤150KB compressed.
+- First-view transfer: ≤500KB compressed.
+- First Contentful Paint: ≤1.8s.
+- Largest Contentful Paint: ≤2.5s.
+- Interaction to Next Paint: ≤200ms.
 - Cumulative Layout Shift: ≤0.1.
-- First usable content: ≤3s on a mid-tier mobile connection.
-- Font payload: ≤100 KB compressed and at most two families.
-- Individual icons: ≤5 KB; prefer a shared SVG sprite.
-- Lazy-load below-viewport media.
-- Reserve dimensions for media and asynchronous regions.
-- Avoid blocking nonessential scripts and unnecessary animation.
-- Prefer transform and opacity for motion.
-- Render inactive overlays and panels only when needed.
+- Common route transition: ≤500ms perceived response.
+- Input feedback: ≤100ms.
+- Individual images: generally ≤200KB and responsive.
+- Reserve media dimensions to prevent layout shifts.
+- Defer non-critical media, overlays, and secondary resources.
+- Paginate or virtualize lists exceeding 100 visible records.
+- Show skeletons after 300ms and an actionable error after 10s.
+- Reduce or remove animation when prefers-reduced-motion is enabled.
