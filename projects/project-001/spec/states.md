@@ -1,35 +1,33 @@
-Component inventory:
-- AppShell: default, compact-navigation, navigation-expanded, loading, offline, error.
-- Header: default, scrolled, search-open, menu-open, disabled-action.
-- Navigation: default, hover, focus-visible, active, selected, collapsed, expanded, disabled.
-- Button: default, hover, focus-visible, pressed, disabled, loading, destructive, success.
-- IconButton: default, hover, focus-visible, pressed, disabled, loading, selected.
-- TextInput: empty, filled, hover, focus, disabled, read-only, invalid, valid, loading.
-- SearchInput: empty, filled, focus, loading, no-results, invalid, disabled.
-- Select: closed, open, focused, selected, disabled, invalid, loading.
+Component inventory and states:
+- App shell: loading, ready, compact, navigation-selected, offline, error.
+- Header: default, scrolled, compact, focus-visible, disabled-action.
+- Navigation: default, selected, hover, pressed, focus-visible, disabled, collapsed.
+- Button: default, hover, pressed, focus-visible, disabled, loading, success, error.
+- Icon button: default, hover, pressed, focus-visible, disabled, loading.
+- Link: default, hover, visited, focus-visible, disabled.
+- Input: empty, filled, hover, focus, invalid, valid, disabled, read-only.
+- Text area: empty, filled, hover, focus, invalid, valid, disabled, read-only.
+- Select: closed, open, selected, hover, focus-visible, invalid, disabled.
 - Checkbox: unchecked, checked, indeterminate, hover, focus-visible, disabled, invalid.
-- RadioGroup: unselected, selected, hover, focus-visible, disabled, invalid.
-- Switch: off, on, hover, focus-visible, disabled, loading.
-- Tabs: default, hover, focus-visible, selected, disabled, overflow.
-- Breadcrumbs: default, hover, focus, current, truncated.
-- Card: default, hover, focus, selected, disabled, loading, error.
-- List: populated, loading, empty, no-results, error, partial.
-- Badge: neutral, info, success, warning, error, muted.
+- Radio: unselected, selected, hover, focus-visible, disabled, invalid.
+- Toggle: off, on, hover, focus-visible, disabled, loading.
+- Tabs: default, selected, hover, pressed, focus-visible, disabled.
+- Card: default, hover, pressed, selected, focus-visible, disabled, loading, error.
+- List row: default, hover, pressed, selected, focus-visible, disabled, loading.
+- Badge: neutral, informative, positive, warning, negative, disabled.
 - Alert: info, success, warning, error, dismissible, persistent.
-- Tooltip: hidden, visible, dismissed.
-- Popover: closed, open, focused, positioned, dismissed.
-- Menu: closed, open, hover, focus, selected, disabled-item, empty.
-- Dialog: closed, opening, open, submitting, success, error, closing.
-- Pagination: default, selected, previous-disabled, next-disabled, loading.
-- Skeleton: visible, resolved, error.
-- Toast: queued, visible, paused, dismissed, action-complete.
-- Divider: default, subtle, strong.
+- Toast: entering, visible, exiting, success, warning, error.
+- Modal: opening, open, closing, blocked, error.
+- Drawer: opening, open, closing, blocked.
+- Tooltip: hidden, visible, focus-visible, delayed.
+- Skeleton: loading, complete, error.
+- Empty state: default, filtered, error-recovery.
+- Pagination: default, current, hover, pressed, focus-visible, disabled, loading.
+- Divider: default, subtle, emphasized.
 
 State rules:
-- Loading preserves layout and exposes progress semantics.
-- Errors explain the issue and provide recovery.
-- Empty states explain the next step without implying failure.
-- Disabled controls remain readable.
-- Focus-visible indicators are persistent and high contrast.
-- Selected states use a non-color cue.
-- Irreversible actions require explicit labels and confirmation.
+- Disabled controls remain perceivable and explain unavailable actions where needed.
+- Loading preserves dimensions and prevents duplicate actions.
+- Errors identify location, cause, and correction.
+- Success confirms completion without blocking continued use.
+- Focus remains logical through all state changes.
