@@ -1,12 +1,14 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 420" role="img" aria-label="Interface state matrix">
-<title>Interface State Matrix</title>
-<style>text{font:14px system-ui;fill:#17202a}.c{fill:#fff;stroke:#b7c0c8}</style>
-<rect width="960" height="420" fill="#f7f9fa"/><text x="24" y="34" font-size="20" font-weight="bold">State coverage</text>
-<g transform="translate(24 56)"><path d="M210 0v304M390 0v304M570 0v304M750 0v304" stroke="#b7c0c8"/>
-<rect class="c" width="912" height="304"/><path d="M0 48h912M0 112h912M0 176h912M0 240h912" stroke="#b7c0c8"/>
-<g font-weight="bold"><text x="16" y="30">Surface</text><text x="226" y="30">Default</text><text x="406" y="30">Loading</text><text x="586" y="30">Empty</text><text x="766" y="30">Error / recovery</text></g>
-<text x="16" y="78">Primary content</text><text x="226" y="78">Visible</text><text x="406" y="78">Reserved</text><text x="586" y="78">Guidance</text><text x="766" y="78">Inline message</text>
-<text x="16" y="142">Input control</text><text x="226" y="142">Editable</text><text x="406" y="142">Disabled</text><text x="586" y="142">Prompt</text><text x="766" y="142">Validation</text>
-<text x="16" y="206">Action area</text><text x="226" y="206">Enabled</text><text x="406" y="206">Progress</text><text x="586" y="206">Secondary</text><text x="766" y="206">Retry / revise</text>
-<text x="16" y="270">Navigation</text><text x="226" y="270">Current</text><text x="406" y="270">Stable</text><text x="586" y="270">Reduced</text><text x="766" y="270">Preserved</text>
-</g></svg>
+<title>Interface state matrix</title>
+<rect width="960" height="420" fill="#fff"/>
+<g font-family="Arial,sans-serif" font-size="16" fill="#17202a">
+<text x="32" y="38" font-weight="bold">Component state matrix</text>
+<text x="32" y="82">Component</text><text x="240" y="82">Default</text><text x="420" y="82">Focus</text><text x="600" y="82">Error</text><text x="780" y="82">Disabled</text>
+<text x="32" y="132">Input</text><text x="240" y="132">Empty hint</text><text x="420" y="132">Visible outline</text><text x="600" y="132">Message + outline</text><text x="780" y="132">Muted fill</text>
+<text x="32" y="182">Action</text><text x="240" y="182">Primary fill</text><text x="420" y="182">Contrast ring</text><text x="600" y="182">Not applicable</text><text x="780" y="182">Muted fill</text>
+<text x="32" y="232">Panel</text><text x="240" y="232">Content</text><text x="420" y="232">Not applicable</text><text x="600" y="232">Inline alert</text><text x="780" y="232">Reduced contrast</text>
+<text x="32" y="282">Loading</text><text x="240" y="282">Placeholder</text><text x="420" y="282">Not applicable</text><text x="600" y="282">Retry option</text><text x="780" y="282">Not applicable</text>
+<text x="32" y="348">Gate: every interactive state has visible focus, readable feedback, keyboard order, and non-color status.</text>
+</g>
+<g stroke="#d7dce3" fill="none"><path d="M24 56h912M24 100h912M24 148h912M24 198h912M24 248h912M24 300h912"/></g>
+</svg>
