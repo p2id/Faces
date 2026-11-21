@@ -1,13 +1,13 @@
 flowchart TD
-  A[Entry surface] --> B[Review primary content]
-  B --> C{Input required?}
-  C -- No --> D[Continue or exit]
-  C -- Yes --> E[Complete input]
-  E --> F{Valid state?}
-  F -- No --> G[Show local guidance]
+  A[Entry] --> B[Orient]
+  B --> C{Required input complete?}
+  C -- No --> D[Show inline guidance]
+  D --> C
+  C -- Yes --> E[Review summary]
+  E --> F{Confirm action?}
+  F -- No --> G[Return to edit]
   G --> E
-  F -- Yes --> H[Confirm action]
-  H --> I[Show outcome]
-  I --> J[Offer next relevant action]
-  B --> K[Open supporting detail]
-  K --> L[Return to primary surface]
+  F -- Yes --> H[Show completion state]
+  H --> I[Offer next relevant action]
+  Q[Quality gates: labels; focus; keyboard order; readable errors; recovery; non-color status; reduced motion] -.-> B
+  Q -.-> H
