@@ -1,16 +1,13 @@
-<section aria-label="Generic product interface specimens">
-<style>
-:root{font:16px/1.5 system-ui,sans-serif;color:#17202a;background:#f7f9fa}
-.specimen{max-width:720px;margin:16px auto;padding:24px;background:#fff;border:1px solid #b7c0c8;border-radius:10px}
-.field{display:grid;gap:6px;margin:16px 0}.input{padding:10px;border:1px solid #9aa7b2;border-radius:6px}
-.button{padding:10px 16px;border:0;border-radius:6px;background:#3978a8;color:#fff}
-.button:focus,.input:focus{outline:2px solid #3978a8;outline-offset:2px}.notice{padding:12px;background:#e7f0fb;border-left:4px solid #3978a8}.muted{color:#5c6873}
-</style>
-<article class="specimen">
-<h1>Primary surface</h1>
-<p class="muted">Concise supporting text establishes purpose and expected outcome.</p>
-<div class="notice" role="status">Guidance appears close to the affected control.</div>
-<label class="field">Input label<input class="input" type="text" aria-describedby="hint"><small id="hint" class="muted">Optional guidance or format note.</small></label>
-<button class="button" type="button">Continue</button>
-</article>
+<section aria-labelledby="specimen-title">
+<h1 id="specimen-title">Generic product experience specimens</h1>
+<form>
+<label for="field">Required input</label>
+<input id="field" name="field" placeholder="Enter a value" aria-describedby="hint error">
+<p id="hint">Use a concise, meaningful value.</p>
+<p id="error" role="alert" hidden>Check this value and try again.</p>
+<button type="submit">Continue</button>
+<button type="button">Cancel</button>
+</form>
+<aside role="status" aria-live="polite">Status appears here without color alone.</aside>
 </section>
+<!-- Rules: semantic structure; explicit labels; one primary action; no placeholder-only instructions; all states documented. -->
