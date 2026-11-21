@@ -1,8 +1,3 @@
-evidence_summary:
-- Requirements specify a generic, neutral, reusable product experience for project-001 dated 2026-11-20.
-- Reusable interfaces consistently benefit from clear hierarchy, grouped information, explicit states, restrained styling, and predictable interaction.
-- Accessibility baseline requires semantic structure, visible focus, keyboard parity, sufficient targets, zoom tolerance, reduced-motion support, and non-color cues.
-- Responsive baseline requires mobile-first composition, priority-based reflow, bounded content width, and no horizontal scrolling for core content.
-- Operations overview scores highest because it exercises hierarchy, states, grouping, comparison, and responsive behavior without specialized assumptions.
-- Confidence: medium; no domain-specific references or visual source material were supplied.
-- Scope: visual and interaction direction only; no backend, identity, entity, or tool assumptions.
+Supporting evidence summary: Established interface conventions consistently favor clear hierarchy, low visual noise, progressive disclosure, visible status, contrast-safe color, keyboard access, reduced motion, and mobile-first reflow. Planning workspace ranks highest because it exercises navigation, grouping, progress, empty, error, and completion states without specialized assumptions. No supporting evidence favors decorative complexity, hidden state, color-only feedback, stacked dialogs, or fixed-width composition.
+
+Confidence: medium-high for reusable interface principles; medium for domain ranking because product-specific usage evidence was not supplied.
