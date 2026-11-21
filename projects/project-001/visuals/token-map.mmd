@@ -1,31 +1,30 @@
 mindmap
   root((Product UI tokens))
     Color
-      Surface: #F7F9FA
-      Panel: #FFFFFF
-      Text: #17202A
-      Muted: #5C6873
-      Border: #B7C0C8
-      Accent: #3978A8
-      Success: #2F7D4A
-      Warning: #A66B00
-      Error: #B33A3A
-    Type
-      Family: system sans
-      Body: 16px / 1.5
-      Label: 14px / 1.4
-      Heading: 24px / 1.2
-    Space
-      Unit: 4px
-      Compact: 8px
-      Standard: 16px
-      Section: 24px
-      Layout: 32px
+      canvas #F7F8FA
+      surface #FFFFFF
+      text #17202A
+      muted #667085
+      accent #1F2937
+      danger #B42318
+    Spacing
+      1 4px
+      2 8px
+      3 16px
+      4 24px
+      5 32px
     Shape
-      Control radius: 6px
-      Panel radius: 10px
-      Focus ring: 2px
+      radius 6px
+      border 1px
+      focus 2px
+    Type
+      base 16px/24px
+      heading 28px/34px
+      label 14px/20px
     Motion
-      Duration: 160ms
-      Easing: ease-out
-      Reduced motion: static
+      standard 160ms
+      reduced none
+  rationale
+    semantic tokens support reuse
+    contrast supports legibility
+    spacing supports hierarchy
