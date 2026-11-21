@@ -1,10 +1,20 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 520" role="img" aria-label="Generic product experience wireframes">
-<title>Generic Product Experience</title>
-<style>text{font:14px system-ui;fill:#17202a}.f{fill:#fff;stroke:#9aa7b2;stroke-width:2}.m{fill:#eef2f5}.a{fill:#dceeff;stroke:#3978a8}</style>
-<rect width="960" height="520" fill="#f7f9fa"/>
-<g transform="translate(28 28)">
-<rect class="f" width="904" height="64" rx="10"/><rect class="m" x="20" y="20" width="150" height="24" rx="4"/><rect class="m" x="570" y="20" width="90" height="24" rx="4"/><rect class="a" x="680" y="16" width="180" height="32" rx="6"/>
-<text x="0" y="106" font-size="18">Primary surface</text>
-<rect class="f" y="124" width="600" height="300" rx="10"/><rect class="m" x="24" y="150" width="300" height="20" rx="3"/><rect class="m" x="24" y="188" width="500" height="12" rx="3"/><rect class="m" x="24" y="212" width="420" height="12" rx="3"/><rect class="a" x="24" y="258" width="132" height="36" rx="6"/><rect class="m" x="24" y="330" width="552" height="64" rx="6"/>
-<rect class="f" x="624" y="124" width="280" height="300" rx="10"/><text x="648" y="158">Supporting panel</text><rect class="m" x="648" y="204" width="190" height="14" rx="3"/><rect class="m" x="648" y="236" width="216" height="14" rx="3"/><rect class="a" x="648" y="292" width="120" height="34" rx="6"/>
-</g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" role="img" aria-label="Generic product interface wireframe">
+<title>Generic product interface wireframe</title>
+<rect width="960" height="600" fill="#f7f8fa"/>
+<rect x="32" y="24" width="896" height="64" rx="8" fill="#fff" stroke="#d7dce3"/>
+<rect x="56" y="45" width="160" height="22" rx="4" fill="#d7dce3"/>
+<rect x="720" y="45" width="72" height="22" rx="4" fill="#e8ebef"/>
+<rect x="808" y="45" width="88" height="22" rx="4" fill="#1f2937"/>
+<rect x="32" y="112" width="584" height="456" rx="8" fill="#fff" stroke="#d7dce3"/>
+<rect x="56" y="144" width="320" height="28" rx="4" fill="#1f2937"/>
+<rect x="56" y="188" width="480" height="14" rx="4" fill="#d7dce3"/>
+<rect x="56" y="212" width="400" height="14" rx="4" fill="#d7dce3"/>
+<rect x="56" y="260" width="144" height="42" rx="6" fill="#1f2937"/>
+<rect x="56" y="336" width="512" height="144" rx="6" fill="#eef1f4"/>
+<rect x="640" y="112" width="288" height="456" rx="8" fill="#fff" stroke="#d7dce3"/>
+<rect x="664" y="144" width="176" height="22" rx="4" fill="#1f2937"/>
+<rect x="664" y="192" width="216" height="12" rx="4" fill="#d7dce3"/>
+<rect x="664" y="216" width="180" height="12" rx="4" fill="#d7dce3"/>
+<rect x="664" y="264" width="216" height="96" rx="6" fill="#eef1f4"/>
+<rect x="664" y="392" width="112" height="40" rx="6" fill="#1f2937"/>
+</svg>
