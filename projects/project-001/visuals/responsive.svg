@@ -1,9 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 420" role="img" aria-label="Responsive layout rules">
-<title>Responsive Layout Rules</title>
-<style>text{font:14px system-ui;fill:#17202a}.b{fill:#fff;stroke:#9aa7b2;stroke-width:2}.x{fill:#dceeff}.n{fill:#eef2f5}</style>
-<rect width="960" height="420" fill="#f7f9fa"/><text x="24" y="34" font-size="20" font-weight="bold">Responsive composition</text>
-<g transform="translate(24 60)">
-<rect class="b" width="270" height="300" rx="10"/><text x="20" y="32" font-weight="bold">Small · 320–599</text><rect class="x" x="20" y="56" width="230" height="34" rx="5"/><rect class="n" x="20" y="106" width="230" height="100" rx="5"/><rect class="x" x="20" y="222" width="230" height="38" rx="5"/><text x="20" y="282">Single column; stacked actions</text>
-<rect class="b" x="310" width="270" height="300" rx="10"/><text x="330" y="32" font-weight="bold">Medium · 600–1023</text><rect class="x" x="330" y="56" width="230" height="34" rx="5"/><rect class="n" x="330" y="106" width="150" height="100" rx="5"/><rect class="n" x="490" y="106" width="70" height="100" rx="5"/><rect class="x" x="330" y="222" width="150" height="38" rx="5"/><text x="330" y="282">Flexible grid; compact panel</text>
-<rect class="b" x="620" width="294" height="300" rx="10"/><text x="640" y="32" font-weight="bold">Large · 1024+</text><rect class="x" x="640" y="56" width="254" height="34" rx="5"/><rect class="n" x="640" y="106" width="168" height="100" rx="5"/><rect class="n" x="820" y="106" width="74" height="100" rx="5"/><rect class="x" x="640" y="222" width="130" height="38" rx="5"/><text x="640" y="282">Two-column; bounded width</text>
-</g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 360" role="img" aria-label="Responsive layout rules">
+<title>Responsive layout rules</title>
+<rect width="960" height="360" fill="#f7f8fa"/>
+<g font-family="Arial,sans-serif" fill="#17202a">
+<text x="32" y="36" font-size="18" font-weight="bold">Responsive behavior</text>
+<text x="32" y="76" font-size="15">Small: 0–639px</text><text x="352" y="76" font-size="15">Medium: 640–1023px</text><text x="672" y="76" font-size="15">Large: 1024px+</text>
+<text x="32" y="300" font-size="14">Rules: preserve priority; stack columns; keep actions reachable; prevent overflow; retain 44px minimum targets.</text>
+</g>
+<rect x="32" y="96" width="240" height="160" rx="8" fill="#fff" stroke="#ccd3dc"/><rect x="56" y="120" width="192" height="24" fill="#d7dce3"/><rect x="56" y="160" width="192" height="64" fill="#eef1f4"/>
+<rect x="352" y="96" width="256" height="160" rx="8" fill="#fff" stroke="#ccd3dc"/><rect x="376" y="120" width="208" height="24" fill="#d7dce3"/><rect x="376" y="160" width="96" height="64" fill="#eef1f4"/><rect x="488" y="160" width="96" height="64" fill="#eef1f4"/>
+<rect x="672" y="96" width="256" height="160" rx="8" fill="#fff" stroke="#ccd3dc"/><rect x="696" y="120" width="208" height="24" fill="#d7dce3"/><rect x="696" y="160" width="128" height="64" fill="#eef1f4"/><rect x="840" y="160" width="64" height="64" fill="#eef1f4"/>
+</svg>
