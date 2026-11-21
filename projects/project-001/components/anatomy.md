@@ -1,39 +1,40 @@
-AppShell
-- Anatomy: skip link, header, navigation, main landmark, optional footer.
-- Variants: full navigation, compact navigation, embedded surface.
-- States: default, loading, offline, error.
-- Usage: provide stable landmarks and consistent navigation.
-- Anti-patterns: competing primary navigation, hidden current location.
-- Accessibility: one main landmark, visible current item, keyboard skip link.
+System anatomy:
+- Shell: header, navigation, main content, optional complementary region, footer.
+- Page frame: context line, one H1, supporting text, primary action, content sections.
+- Content section: heading, description, aligned content, local actions, status or empty treatment.
+- Form section: grouped fields, labels, help text, validation summary, action row.
+- Feedback layer: inline message near source, global alert for broad impact, toast for noncritical confirmation.
+- Responsive layer: layout changes without changing meaning, order, or action priority.
 
-Collection
-- Anatomy: heading, search, filters, sort, result count, list, pagination.
-- Variants: grid, list, table-like rows, filtered view.
-- States: populated, loading, empty, no-results, error, partial.
-- Usage: keep query and filter context visible; provide reset and recovery.
-- Anti-patterns: silent filter changes, unbounded lists, inaccessible table patterns.
-- Accessibility: announce result changes; label controls; preserve focus after updates.
+Variants:
+- Density: comfortable, compact.
+- Emphasis: neutral, informative, positive, warning, negative.
+- Layout: single-column, split-column, grid, list.
+- Interaction: static, selectable, actionable, modal.
+- Content: populated, empty, filtered-empty, loading, error.
 
-Detail
-- Anatomy: back link, heading, status, summary, attributes, primary and secondary actions.
-- Variants: read-only, editable, compact.
-- States: loading, populated, editing, saving, saved, validation-error, load-error.
-- Usage: establish hierarchy and place the primary action near the heading.
-- Anti-patterns: indistinct destructive action, lost unsaved values, unexplained status.
-- Accessibility: heading hierarchy, meaningful landmarks, error summary, status announcement.
+States:
+- System: loading, ready, empty, filtered-empty, partial-error, error, complete.
+- Interaction: default, hover, pressed, focus-visible, selected, disabled.
+- Form: untouched, focused, invalid, valid, submitting, submitted.
+- Motion: entering, stable, exiting, reduced-motion.
 
-Feedback
-- Anatomy: semantic tone, concise message, recovery or dismiss action.
-- Variants: inline, banner, toast, dialog.
-- States: info, success, warning, error, persistent, dismissed.
-- Usage: place feedback at the point of impact and provide next steps.
-- Anti-patterns: flashing content, vague errors, essential information only in a toast.
-- Accessibility: appropriate live-region behavior, sufficient duration, pause or dismiss controls.
+Usage:
+- Prefer semantic elements and progressive enhancement.
+- Pair each action with a clear outcome and stable placement.
+- Keep content scannable, readable, and localization-resilient.
+- Apply semantic tokens consistently.
+- Preserve focus and entered content during transitions and errors.
 
-Overlay
-- Anatomy: trigger, surface, title or label, content, close or selection control.
-- Variants: tooltip, popover, menu, dialog.
-- States: closed, opening, open, focused, dismissed.
-- Usage: anchor to the trigger and provide predictable dismissal.
-- Anti-patterns: hover-only content, off-screen positioning, unclear nested escape.
-- Accessibility: keyboard parity, focus management, Escape behavior, trigger relationship.
+Anti-patterns:
+- Unlabeled controls, ambiguous icons, hidden errors, layout shifts, color-only meaning.
+- Deep nesting, dense ungrouped content, forced page scrolling, unpausable motion.
+- Arbitrary colors, inconsistent spacing, competing primary actions.
+- Placeholder-only instructions, disappearing critical feedback, destructive actions without confirmation.
+
+Accessibility:
+- Target WCAG 2.2 AA with keyboard-complete interaction.
+- Provide landmarks, headings, names, roles, values, descriptions, and states.
+- Meet 4.5:1 body-text contrast and 3:1 large-text and non-text contrast.
+- Use 44×44px targets, visible focus, zoom/reflow support, and reduced-motion support.
+- Announce dynamic changes appropriately and preserve logical focus.
