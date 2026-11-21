@@ -1,12 +1,8 @@
 # Audit trail
 - Project: project-001
-- Date: 2026-11-17
-- Scope: generic product experience, sections E–H
-- Outputs: wireframes, state matrix, token map, responsive rules, flow map, HTML specimens
-- Representation rationale: SVG for geometry; MMD for relationships; HTML for semantic specimens; MD for rationale, controls, and gaps.
-- Quality gates: syntax, state completeness, accessibility intent, responsive behavior, neutral language, and path consistency.
-- Path intent: keep each artifact under its owning section within /projects/project-001/.
-- Exclusions: backend behavior, identity data, external references, and implementation claims.
-- Writing rule: concise, observable, neutral, reusable, and action-oriented.
-- Publishing rule: keep source formats, stable filenames, synchronized dates, and complete artifact sets.
-- Status: ready for repository review
+- Date: 2026-11-21
+- Scope: sections E–H for a generic product experience.
+- Representation rationale: SVG expresses layout and viewport behavior; MMD expresses relationships and paths; HTML expresses semantic states; Markdown records rationale, gates, paths, and publication rules.
+- Quality gates: syntax, hierarchy, contrast, focus, keyboard order, target size, readable feedback, recovery, reduced motion, responsive reflow, and overflow prevention.
+- Path intent: store artifacts at `projects/project-001/2026-11-21/`; store shared rules at `standards/`; keep indexes at project and repository roots.
+- Publishing rule: publish only reviewed, complete, stable, dated artifacts with no private or implementation-specific content.
