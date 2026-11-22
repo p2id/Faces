@@ -1,6 +1,6 @@
-Positioning: Calm command surface for organizing complex work into clear next steps.
-Palette rationale: Warm light neutral base, deep ink text, cool secondary surfaces, and saturated blue accent for primary action and progress; semantic states use labels and icons as well as color.
-Type rationale: Neutral sans-serif with strong x-height, two primary weights, compact labels, and restrained summary sizing.
-Layout rules: Twelve-column desktop grid, 24px outer gutters, 16px internal spacing, one dominant summary region, grouped cards, stack below 720px, primary action near reading start.
-Motion intent: Short ease-out transitions for state changes, subtle progress interpolation, no looping motion, complete reduced-motion alternative.
-Avoided traps: dashboard overload, excessive badges, ambiguous click areas, floating action clutter, low-contrast labels, decorative gradients.
+Positioning: Calm operational workspace optimized for rapid scanning and low cognitive load.
+Palette rationale: Warm off-white canvas, graphite text, slate surfaces, and muted blue accent create focus without visual severity; amber and red are state-only.
+Type rationale: Neutral sans serif with strong numeral clarity, moderate x-height, and two primary weights.
+Layout rules: Persistent wide-screen navigation, 12-column grid, compact summary row, structured primary list, right-side detail panel, stacked layout below 760px.
+Motion intent: 120–180ms fades and panel transitions; preserve spatial continuity; honor reduced-motion settings.
+Avoided traps: Excessive cards, decorative gradients, hidden filters, unlabeled icons, ambiguous date formats, and adjacent destructive and primary actions.
