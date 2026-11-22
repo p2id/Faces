@@ -1,26 +1,23 @@
+Date: 2026-11-22
 Project: project-001
-Date: 2026-11-21
-Purpose: Generic product interface for reviewing information, selecting options, editing content, and confirming actions.
+Purpose: Generic product interface for reviewing, filtering, and organizing structured information.
 
 Surfaces:
-- App shell: header, navigation, main content, utility region.
-- Overview: summary, filters, item list, primary action.
-- Detail: title, metadata, content, related actions.
-- Form: labeled fields, validation, confirmation.
-- Feedback: loading, empty, success, warning, error.
+- Workspace: navigation, header, filters, summary, content.
+- Overlay: menus, dialogs, tooltips, notifications.
+- Compact view: collapsed navigation, stacked content, responsive data layout.
 
 Sections:
-- Header: “Workspace”; navigation “Overview”, “Details”, “Settings”; action “Help”.
-- Overview: “Overview”; “Review current items and continue where needed.”
-- Summary: “Total 24”, “Active 18”, “Needs review 3”.
-- Filters: label “Status”; options “All”, “Active”, “Archived”.
-- List: “Recent items”; “Quarterly plan”, “Release notes”, “Research summary”; “Updated 21 Nov 2026”.
-- Detail: “Quarterly plan”; “Active”; “A concise plan for the next review period.”; actions “Edit”, “Save”.
-- Form: “Title”, “Description”, “Status”; placeholder “Enter a title”; actions “Cancel”, “Save changes”.
-- Feedback: “Changes saved.”, “Review the highlighted fields.”, “Something went wrong. Try again.”, “No items match these filters.”
+1. Header: “Overview” and “Review current information and recent activity.”
+2. Filters: “Search records”, “All statuses”, “Select date”, “Apply filters”.
+3. Summary: “Total items”, “Active items”, “Updated today”.
+4. Data: “Recent items”; columns “Name”, “Status”, “Updated”, “Actions”.
+5. Empty: “No items match these filters.”; action “Clear filters”.
+6. Feedback: “Filters applied.”; “Unable to load items. Try again.”
+7. Footer: “Last updated: 22 Nov 2026, 09:01”.
 
 Content rules:
-- Use sentence case, concise labels, neutral language, and explicit outcomes.
-- Keep one primary action per region.
-- Pair status color with text or an icon.
-- Preserve entered values after validation failure.
+- Use concise sentence-case labels and neutral status terms.
+- Keep labels visible during loading and validation.
+- Provide one primary action per section.
+- Do not rely on icons, color, or placeholder text alone.
