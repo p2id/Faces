@@ -1,13 +1,11 @@
-<section aria-labelledby="specimen-title">
-<h1 id="specimen-title">Generic product experience specimens</h1>
-<form>
-<label for="field">Required input</label>
-<input id="field" name="field" placeholder="Enter a value" aria-describedby="hint error">
-<p id="hint">Use a concise, meaningful value.</p>
-<p id="error" role="alert" hidden>Check this value and try again.</p>
-<button type="submit">Continue</button>
-<button type="button">Cancel</button>
-</form>
-<aside role="status" aria-live="polite">Status appears here without color alone.</aside>
+<section data-project="project-001" data-date="2026-11-22">
+<h1>Generic Product Experience</h1>
+<p class="status">Status: ready for review</p>
+<nav aria-label="Primary"><a href="#overview">Overview</a><a href="#details">Details</a><a href="#settings">Settings</a></nav>
+<main>
+<section id="overview"><h2>Overview</h2><p>Clear context, current status, and one primary next action.</p><button type="button">Primary action</button></section>
+<section id="details"><h2>Details</h2><label>Search <input type="search" placeholder="Search"></label><p role="status">No matching items.</p></section>
+<section id="settings"><h2>Settings</h2><label>Display mode <select><option>Standard</option><option>Compact</option></select></label></section>
+</main>
+<footer><small>Required checks: labels, keyboard order, visible focus, contrast, zoom, and reduced motion.</small></footer>
 </section>
-<!-- Rules: semantic structure; explicit labels; one primary action; no placeholder-only instructions; all states documented. -->
