@@ -6,14 +6,14 @@ Breakpoints:
 - xl: 1280px and above
 
 Rules:
-- Use a base-first layout with a 1200px maximum content width and 16px minimum gutters.
-- xs/sm: single column, collapsed navigation, stacked form actions, full-width primary action.
-- md: allow two columns when each remains readable; retain compact navigation.
-- lg/xl: persistent navigation where space permits; use 2–4 column summary grids.
-- Constrain reading text to 65–75ch.
-- Convert tables to cards or localized horizontal scrolling below md.
-- Dialogs are near-full-width below sm and max 560px otherwise.
-- Drawers become bottom sheets below sm.
-- Maintain 44px minimum targets at every width.
-- Preserve semantic order, focus order, labels, and action priority.
-- Prevent page-level horizontal scrolling.
+- Use a 4px spacing unit and at least 16px page padding.
+- xs: single column, collapsed navigation, stacked cards, labeled data rows, full-width primary actions.
+- sm: one or two card columns, wrapped filters, horizontally scrollable secondary data.
+- md: two card columns, compact navigation option, filters may occupy two rows.
+- lg: persistent navigation, three summary columns, full data columns.
+- xl: cap content at 1440px and increase outer gutters.
+- Maintain 44px minimum interactive targets at every width.
+- Preserve heading, status, validation, primary-action, and focus order.
+- Do not hide essential information solely because of viewport width.
+- Support 320px reflow without clipping or overlapping.
+- Use stable reserved space for asynchronous content.
