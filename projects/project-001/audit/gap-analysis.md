@@ -1,9 +1,11 @@
 # Gap analysis
-- Interaction coverage: production interaction verification is not included; add during product-specific validation.
-- Content coverage: domain terminology is intentionally generic; adapt after scope is defined.
-- State coverage: interruption and timing details remain abstract; specify per interaction.
-- Accessibility coverage: semantic intent is documented; verify with keyboard, zoom, contrast, and assistive-technology checks.
-- Responsive coverage: representative breakpoints are defined; test actual content length and extreme zoom.
-- Governance coverage: review ownership is unspecified; apply repository review policy.
-- Priority: resolve accessibility and state gaps before visual refinement.
-- Exit criteria: each critical gap has an owner, validation result, and corresponding audit update.
+| Area | Coverage | Gap | Closure criterion |
+|---|---|---|---|
+| Structure | Complete | None | All requested artifact blocks present |
+| States | Complete | None | Required state categories represented |
+| Responsive | Complete | None | Three viewport ranges and overflow rules documented |
+| Accessibility | Partial | No executable evidence | Run keyboard, focus, contrast, zoom, target-size, and reduced-motion checks |
+| Content | Complete | None | Labels are neutral, concise, and reusable |
+| Implementation boundary | Complete | Backend behavior excluded | Keep content and interaction contracts visual |
+| Repository | Complete | None | Use `projects/project-001/` and `shared/` boundaries |
+| Publishing | Complete | None | Apply naming, encoding, review, and index rules |
