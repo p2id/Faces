@@ -1,8 +1,16 @@
 # Audit trail
-- Project: project-001
-- Date: 2026-11-21
-- Scope: sections E–H for a generic product experience.
-- Representation rationale: SVG expresses layout and viewport behavior; MMD expresses relationships and paths; HTML expresses semantic states; Markdown records rationale, gates, paths, and publication rules.
-- Quality gates: syntax, hierarchy, contrast, focus, keyboard order, target size, readable feedback, recovery, reduced motion, responsive reflow, and overflow prevention.
-- Path intent: store artifacts at `projects/project-001/2026-11-21/`; store shared rules at `standards/`; keep indexes at project and repository roots.
-- Publishing rule: publish only reviewed, complete, stable, dated artifacts with no private or implementation-specific content.
+- Project: `project-001`
+- Date: `2026-11-22`
+- Scope: layout, states, tokens, responsive rules, flows, specimens, and documentation.
+- Representation rationale: SVG provides portable visual structure; Mermaid expresses relationships and transitions; HTML demonstrates semantic specimens; Markdown records decisions, gates, and coverage.
+- Quality gates:
+  - [x] Generic, neutral, reusable language
+  - [x] No backend engineering or external dependencies
+  - [x] Default, loading, empty, error, validation, and recovery states
+  - [x] Compact, medium, and wide responsive behavior
+  - [x] Keyboard order, visible focus, contrast, zoom, target size, and reduced-motion requirements
+  - [x] Stable project id and date
+  - [x] Dedicated repository path intent
+- Writing rules: use concise, neutral, action-oriented labels; state outcomes and recovery options explicitly; avoid identity data, entity-specific claims, secrets, and unsupported status.
+- Publishing rules: publish only validated artifacts; preserve delimiter names and filenames; use UTF-8; update the local README, indexes, audit trail, and gap analysis together.
+- Change record: artifact set prepared for review; executable validation evidence remains a follow-up item.
