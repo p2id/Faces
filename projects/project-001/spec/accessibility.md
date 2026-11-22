@@ -1,15 +1,16 @@
 Targets:
-- WCAG 2.2 AA conformance.
-- Semantic landmarks: header, nav, main, complementary, footer.
-- One descriptive H1 and logical heading hierarchy.
-- Keyboard-complete interaction with visible focus equivalent to at least a 2px indicator.
-- Minimum interactive target: 44×44 CSS px.
-- Text contrast: at least 4.5:1; large text and non-text UI: at least 3:1.
-- Never use color, position, motion, or sound as the sole meaning.
-- Programmatically associate labels, descriptions, required states, and errors.
-- Announce dynamic status with an appropriate live region.
-- Dialogs expose name, role, and state; trap focus while open and restore it on close.
-- Support 200% zoom, text resizing, reflow, high contrast, and screen readers.
-- Respect reduced-motion preferences and avoid unpausable auto-advancing content.
-- Use locale-aware dates and plain, explicit instructions.
-- Validate on submission and field exit without excessive error interruption.
+- WCAG 2.2 AA.
+- Text contrast at least 4.5:1; large text at least 3:1.
+- Non-text contrast at least 3:1 for controls, focus indicators, and meaningful graphics.
+- All controls operable by keyboard without pointer input.
+- Visible, unobscured focus indicator equivalent to at least 2px.
+- Interactive targets at least 44x44 CSS pixels.
+- One page heading, logical heading hierarchy, named landmarks, and skip-to-content path.
+- Persistent labels, programmatic descriptions, grouped fields, and associated errors.
+- Tables include an accessible name, header associations, and announced sort state.
+- Dialogs have labels, focus containment, Escape handling when safe, and focus restoration.
+- Menus and tabs expose selected and expanded states programmatically.
+- Dynamic status uses an appropriate live region and does not steal focus unnecessarily.
+- Support 200% text zoom, 320px width, reflow, and reduced-motion preference.
+- Icons are decorative only when redundant; meaningful icons have accessible names.
+- Errors identify the affected control, explain correction, and do not rely on color alone.
