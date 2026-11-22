@@ -1,14 +1,15 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 420" role="img" aria-label="Interface state matrix">
-<title>Interface state matrix</title>
-<rect width="960" height="420" fill="#fff"/>
-<g font-family="Arial,sans-serif" font-size="16" fill="#17202a">
-<text x="32" y="38" font-weight="bold">Component state matrix</text>
-<text x="32" y="82">Component</text><text x="240" y="82">Default</text><text x="420" y="82">Focus</text><text x="600" y="82">Error</text><text x="780" y="82">Disabled</text>
-<text x="32" y="132">Input</text><text x="240" y="132">Empty hint</text><text x="420" y="132">Visible outline</text><text x="600" y="132">Message + outline</text><text x="780" y="132">Muted fill</text>
-<text x="32" y="182">Action</text><text x="240" y="182">Primary fill</text><text x="420" y="182">Contrast ring</text><text x="600" y="182">Not applicable</text><text x="780" y="182">Muted fill</text>
-<text x="32" y="232">Panel</text><text x="240" y="232">Content</text><text x="420" y="232">Not applicable</text><text x="600" y="232">Inline alert</text><text x="780" y="232">Reduced contrast</text>
-<text x="32" y="282">Loading</text><text x="240" y="282">Placeholder</text><text x="420" y="282">Not applicable</text><text x="600" y="282">Retry option</text><text x="780" y="282">Not applicable</text>
-<text x="32" y="348">Gate: every interactive state has visible focus, readable feedback, keyboard order, and non-color status.</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 430" role="img" aria-label="Product experience state matrix">
+<title>Project-001 state matrix</title>
+<g fill="none" stroke="#243142" stroke-width="2">
+<rect x="20" y="20" width="860" height="390"/>
+<path d="M220 20v390M440 20v390M660 20v390M20 80h860M20 146h860M20 212h860M20 278h860M20 344h860"/>
 </g>
-<g stroke="#d7dce3" fill="none"><path d="M24 56h912M24 100h912M24 148h912M24 198h912M24 248h912M24 300h912"/></g>
+<g fill="#243142" font-family="sans-serif" font-size="14">
+<text x="40" y="57">Surface</text><text x="250" y="57">Default</text><text x="470" y="57">Loading</text><text x="690" y="57">Empty or error</text>
+<text x="40" y="118">Overview</text><text x="250" y="118">Content and action</text><text x="470" y="118">Placeholder</text><text x="690" y="118">Recovery action</text>
+<text x="40" y="184">Form</text><text x="250" y="184">Editable fields</text><text x="470" y="184">Disabled fields</text><text x="690" y="184">Inline guidance</text>
+<text x="40" y="250">List</text><text x="250" y="250">Rows and controls</text><text x="470" y="250">Row placeholders</text><text x="690" y="250">No matching items</text>
+<text x="40" y="316">Dialog</text><text x="250" y="316">Confirm or cancel</text><text x="470" y="316">Progress</text><text x="690" y="316">Blocked or retry</text>
+<text x="40" y="382">Feedback</text><text x="250" y="382">Success notice</text><text x="470" y="382">Pending notice</text><text x="690" y="382">Failure notice</text>
+</g>
 </svg>
