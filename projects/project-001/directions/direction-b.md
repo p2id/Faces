@@ -1,6 +1,6 @@
-Positioning: Editorial planning canvas emphasizing sequence, context, and progress.
-Palette rationale: Pale sand background, paper-like surfaces, charcoal type, and restrained terracotta accent for warmth while preserving contrast.
-Type rationale: Readable grotesk for controls with modest serif section titles; limited scale variation and clear hierarchy.
-Layout rules: Wide reading measure, asymmetric lead block, sequence rail, compact metadata, rail-to-section collapse below 720px, safe horizontal comparison behavior.
-Motion intent: Gentle reveal for newly exposed context, direct sequence transitions, no parallax, no auto-advance.
-Avoided traps: ornamental typography, oversized hero areas, ambiguous sequence order, animation-dependent comprehension, excessive editorial decoration.
+Positioning: Structured planning surface balancing overview, time context, and focused detail.
+Palette rationale: Cool neutral canvas, light surfaces, deep navy text, and restrained teal accent support precision; semantic colors are limited to status and validation.
+Type rationale: Legible sans serif with tabular numerals for dates and values, clear heading scale, and generous line height.
+Layout rules: Utility bar, compact navigation rail, primary time or sequence view, persistent filter row, optional detail drawer, 8px spacing rhythm, 44px minimum controls, prioritized stacking below 900px.
+Motion intent: Subtle selection emphasis, drawer transitions up to 180ms, no auto-play or parallax, and quiet immediate feedback.
+Avoided traps: Grid overload, hidden overflow, hover-only information, color-only status, validation layout shift, and excessive modal use.
