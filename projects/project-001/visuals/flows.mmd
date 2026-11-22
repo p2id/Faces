@@ -1,13 +1,14 @@
 flowchart TD
-  A[Entry] --> B[Orient]
-  B --> C{Required input complete?}
-  C -- No --> D[Show inline guidance]
-  D --> C
-  C -- Yes --> E[Review summary]
-  E --> F{Confirm action?}
-  F -- No --> G[Return to edit]
+  A[Entry surface] --> B[Review context]
+  B --> C{Input required?}
+  C -- No --> D[View result]
+  C -- Yes --> E[Enter or select value]
+  E --> F{Valid?}
+  F -- No --> G[Show inline guidance]
   G --> E
-  F -- Yes --> H[Show completion state]
-  H --> I[Offer next relevant action]
-  Q[Quality gates: labels; focus; keyboard order; readable errors; recovery; non-color status; reduced motion] -.-> B
-  Q -.-> H
+  F -- Yes --> H[Confirm action]
+  H --> I{Complete?}
+  I -- Yes --> J[Show success state]
+  I -- No --> K[Show pending or recovery state]
+  K --> L[Retry or return]
+  L --> B
