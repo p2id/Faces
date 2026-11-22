@@ -1,71 +1,101 @@
 ===PATTERNS_MD===
-Project: project-001 | Date: 2026-10-19
+Date: 2026-11-22
+Project ID: project-001
 
-Dominant: clear hierarchy, restrained surfaces, compact navigation, progressive disclosure, persistent orientation, and task-focused feedback.
-Emerging: adaptive density, contextual summaries, modular cards, quiet status signaling, reversible actions, and preference-aware layouts.
-Deprecated: ornamental gradients, dense control chrome, hidden critical actions, excessive modal interruption, decorative motion, and low-contrast secondary text.
-Outlier: compressed command-style layouts optimized for speed but limited discoverability.
+Dominant patterns:
+- Clear hierarchy, compact headers, grouped content, persistent navigation, and visible state.
+- List, table, card, split-pane, and detail-drawer structures with consistent alignment.
+- Neutral surfaces, restrained accent color, semantic status colors, and high-contrast text.
+- Search, filter, sort, selection, inline edit, and reversible actions.
 
-Visual DNA: neutral foundation, one restrained accent, tonal layering, crisp dividers, moderate radius, purposeful iconography, and content-led composition.
-Interactional DNA: predictable focus order, direct manipulation, progressive disclosure, immediate state feedback, reversible actions, and low-friction recovery.
-Accessibility DNA: semantic structure, visible focus, keyboard parity, strong contrast, non-color status cues, scalable text, reduced-motion support, and generous hit areas.
-Responsive DNA: fluid containers, priority-based content reduction, stacked narrow layouts, preserved primary actions, adaptive navigation, and stable reading rhythm.
+Emerging patterns:
+- Compact, comfortable, and expanded density modes.
+- Contextual action bars that reduce repeated navigation.
+- Progressive disclosure for advanced options.
+- Responsive reflow from multi-column views to prioritized stacks.
+- User-configurable columns, filters, and view preferences.
+
+Deprecated patterns:
+- Low-contrast decorative gradients.
+- Deep navigation without location context.
+- Unlabeled icon-only controls.
+- Auto-advancing panels, persistent popups, and irreversible primary actions.
+
+Outlier patterns:
+- Split views preserving overview while exposing detail.
+- Instructional empty states without decorative illustration.
+- Inline validation with reserved space to prevent layout shift.
+- Dense data views with explicit overflow and density controls.
+
+Extracted DNA:
+Visual: neutral canvas, limited elevation, 8px spacing rhythm, 1px borders, medium-radius geometry, one primary accent, semantic color reserved for state.
+Interactional: predictable focus order, explicit selection, visible hover and pressed states, keyboard-complete actions, reversible destructive operations, immediate non-blocking feedback.
+Accessibility: strong contrast, visible focus, semantic headings and landmarks, text labels for controls, minimum 44px targets, reduced-motion support, no color-only meaning.
+Responsive: fluid containers, mobile-first priority, readable minimum widths, stacked content below tablet width, controlled overflow for dense data, persistent primary action where practical.
 
 Candidate domains:
-1. Planning workspace — organizes priorities and related information into an adaptive overview.
-2. Learning library — supports discovery, structured reading, progress tracking, and reference retrieval.
-3. Service management — coordinates requests, statuses, records, and next actions in a transparent sequence.
-4. Resource catalog — enables browsing, comparison, filtering, and detailed inspection of reusable items.
-5. Wellness tracker — presents routines, trends, reminders, and summaries without clinical claims.
-6. Content review space — supports collecting, annotating, comparing, and approving structured material.
+- Planning calendar: organizes dates, schedules, and related details in a time-based workspace.
+- Knowledge library: structures searchable reference items with metadata, filters, and detail views.
+- Metrics dashboard: presents values, trends, comparisons, and status summaries.
+- Asset catalog: manages browsable records with previews, attributes, and batch controls.
+- Preference console: groups configurable options with explicit state and validation.
+- Workflow board: presents ordered items across states with filtering and movement.
 
-Weighted scoring matrix, scale 1–5; weights: reusability 25%, clarity 20%, responsive fit 20%, accessibility fit 20%, visual range 15%.
-Planning workspace: 5, 5, 5, 4, 5 = 4.80
-Learning library: 5, 4, 5, 5, 4 = 4.65
-Service management: 4, 5, 4, 4, 4 = 4.20
-Resource catalog: 5, 4, 5, 4, 5 = 4.65
-Wellness tracker: 4, 4, 5, 4, 4 = 4.20
-Content review space: 4, 4, 4, 5, 4 = 4.20
+Weighted scoring matrix:
+Weights: clarity 25%, task fit 20%, responsive behavior 20%, accessibility 20%, extensibility 15%. Scores: 1–5.
 
-Selected domain: Planning workspace. Rationale: it provides the broadest reusable model for hierarchy, status, filtering, prioritization, responsive behavior, and reversible actions.
-Cycle lock: retain the selected domain, scoring weights, and core DNA for this cycle; evaluate only within the defined directions.
-Fallback rule: if clarity or responsive fit fails validation, use Learning library without changing the visual DNA or accessibility baseline.
+Domain                 Clarity  Fit  Responsive  Access  Extensibility  Total
+Planning calendar      4.6      4.5  4.5         4.4     4.3            4.47
+Knowledge library      4.5      4.4  4.3         4.5     4.6            4.46
+Metrics dashboard      4.2      4.3  4.1         4.2     4.4            4.24
+Asset catalog          4.1      4.0  4.0         4.2     4.3            4.10
+Preference console     4.4      4.1  4.4         4.6     4.1            4.32
+Workflow board         4.3      4.5  3.9         4.1     4.5            4.27
+
+Selected domain rationale: Planning calendar scores highest and provides reusable patterns for time, grouping, filtering, detail, status, and responsive prioritization.
+Cycle lock: Planning calendar, extracted DNA, scoring weights, and Direction B are fixed for 2026-11-22.
+Fallback rule: If calendar assumptions fail validation, use Knowledge library while preserving the extracted DNA, accessibility rules, responsive rules, and scoring weights.
 
 ===EVIDENCE_MD===
-Evidence summary: durable product interfaces benefit from visible hierarchy, stable orientation, concise labels, predictable state changes, progressive disclosure, and task-focused feedback. Neutral tonal systems reduce visual competition, while one restrained accent supports emphasis. Responsive quality improves when secondary content collapses before primary actions and reading order remains stable. Accessibility quality improves through semantic structure, keyboard parity, visible focus, contrast, non-color status cues, scalable type, and reduced-motion support. Planning workspace ranks highest because it exercises the widest reusable set of navigation, prioritization, status, comparison, and responsive patterns.
+Supporting evidence summary:
+- Reusable interface conventions favor clear hierarchy, compact spacing, semantic status, and predictable navigation.
+- Time-based structures support transferable patterns for grouping, filtering, detail inspection, and priority.
+- Neutral palettes with one restrained accent improve scanability and reduce visual competition.
+- Progressive disclosure supports compact screens without removing advanced capability.
+- Keyboard access, visible focus, semantic labeling, reduced motion, and non-color status encoding are baseline requirements.
+- Reversible actions, stable layouts, and explicit confirmation reduce interaction errors.
+- Planning calendar has the highest weighted fit across clarity, task fit, responsive behavior, accessibility, and extensibility.
+- Evidence confidence: moderate; general principles are reusable, while domain assumptions require validation.
 
 ===DIRECTION_A===
-Positioning: calm command center for prioritizing information and next actions.
-Palette rationale: warm white, graphite, soft gray, and muted blue create focus without urgency.
-Type rationale: neutral sans-serif with clear numeric forms supports scanning, hierarchy, and compact metadata.
-Layout rules: use a responsive two-region frame; keep primary context persistent; group content into ordered modules; expose detail progressively.
-Motion intent: use short fades and position shifts for state changes; preserve spatial continuity; honor reduced-motion preferences.
-Avoided traps: dense control walls, competing accents, deep nesting, persistent overlays, decorative motion, and hidden critical actions.
+Positioning: Calm operational workspace optimized for rapid scanning and low cognitive load.
+Palette rationale: Warm off-white canvas, graphite text, slate surfaces, and muted blue accent create focus without visual severity; amber and red are state-only.
+Type rationale: Neutral sans serif with strong numeral clarity, moderate x-height, and two primary weights.
+Layout rules: Persistent wide-screen navigation, 12-column grid, compact summary row, structured primary list, right-side detail panel, stacked layout below 760px.
+Motion intent: 120–180ms fades and panel transitions; preserve spatial continuity; honor reduced-motion settings.
+Avoided traps: Excessive cards, decorative gradients, hidden filters, unlabeled icons, ambiguous date formats, and adjacent destructive and primary actions.
 
 ===DIRECTION_B===
-Positioning: modular overview for comparing relationships, categories, and status.
-Palette rationale: cool gray with muted teal and amber status tones provides separation without visual noise.
-Type rationale: high-legibility sans-serif with clear weight contrast distinguishes labels, values, and supporting text.
-Layout rules: use an adaptable card grid with consistent alignment; reserve wide modules for summaries; collapse secondary modules before primary content.
-Motion intent: use subtle transitions between overview and detail; animate only changed regions and status updates.
-Avoided traps: card fragmentation, equal emphasis everywhere, color-only meaning, excessive rounding, and unstable reflow.
+Positioning: Structured planning surface balancing overview, time context, and focused detail.
+Palette rationale: Cool neutral canvas, light surfaces, deep navy text, and restrained teal accent support precision; semantic colors are limited to status and validation.
+Type rationale: Legible sans serif with tabular numerals for dates and values, clear heading scale, and generous line height.
+Layout rules: Utility bar, compact navigation rail, primary time or sequence view, persistent filter row, optional detail drawer, 8px spacing rhythm, 44px minimum controls, prioritized stacking below 900px.
+Motion intent: Subtle selection emphasis, drawer transitions up to 180ms, no auto-play or parallax, and quiet immediate feedback.
+Avoided traps: Grid overload, hidden overflow, hover-only information, color-only status, validation layout shift, and excessive modal use.
 
 ===DIRECTION_C===
-Positioning: focused sequential workspace for completing one priority at a time.
-Palette rationale: deep charcoal text on pale neutral surfaces with a restrained violet accent supports concentration and progression.
-Type rationale: reading-optimized sans-serif proportions support extended text while a compact weight scale preserves task hierarchy.
-Layout rules: use one dominant column with an optional supporting rail; keep actions near relevant content; separate stages with clear landmarks.
-Motion intent: use restrained slide and reveal transitions to explain progression; avoid auto-advancing content and preserve position on return.
-Avoided traps: tunnel navigation, hidden context, oversized hero areas, mandatory linearity, and state-dependent action movement.
+Positioning: Flexible information surface for configurable views and progressive detail.
+Palette rationale: Light gray canvas, white surfaces, charcoal text, and violet-blue accent support customization while maintaining neutrality; semantic colors remain sparse.
+Type rationale: Compact sans serif with distinct labels, values, and supporting text; tabular numerals for comparison.
+Layout rules: Resizable content frame, configurable density, optional secondary column, grouped controls above content, adjacent or below-detail view, single-column fallback below 640px.
+Motion intent: Soft expand and collapse transitions, clear reorder feedback, no continuous motion, and reduced-motion alternatives.
+Avoided traps: Unbounded customization, inconsistent alignment, overloaded settings, excessive disclosure levels, tiny targets, and controls without persistent state.
 
 ===DIRECTION_SELECTION===
-Chosen direction: A.
-Rationale: it offers the strongest balance of reuse, orientation, responsive behavior, accessibility, and low cognitive load for a generic product experience.
-Secondary direction: B for comparison, categorization, or status visibility.
-Guardrails: retain neutral styling, semantic hierarchy, keyboard parity, visible focus, non-color status cues, scalable type, and reduced-motion support.
+Selected direction: Direction B — Structured planning surface.
+Rationale: Best fit for the locked Planning calendar domain while remaining transferable to library, dashboard, catalog, preference, and board experiences. It combines hierarchy, responsive prioritization, accessibility, and restrained visual identity.
+Lock scope: Direction B, selected domain, extracted DNA, palette logic, type logic, layout rules, motion limits, and avoided traps.
+Fallback: Use Direction A for lower-density operational experiences; use Direction C when configurable views are the primary requirement.
 
 ===CHANGELOG_ENTRY===
-Date: 2026-10-19
-Project: project-001
-Entry: Established reusable interface patterns, evidence, candidate-domain scoring, selected domain, cycle lock, fallback rule, three visual directions, and direction selection.
-Status: locked for the current design cycle.
+2026-11-22 | project-001 | Added pattern inventory, extracted visual/interactional/accessibility/responsive DNA, candidate-domain scoring matrix, selected Planning calendar domain, supporting evidence summary, three design directions, Direction B selection, cycle lock, and fallback rules.
