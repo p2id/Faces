@@ -1,3 +1,9 @@
-Supporting evidence summary: Established interface conventions consistently favor clear hierarchy, low visual noise, progressive disclosure, visible status, contrast-safe color, keyboard access, reduced motion, and mobile-first reflow. Planning workspace ranks highest because it exercises navigation, grouping, progress, empty, error, and completion states without specialized assumptions. No supporting evidence favors decorative complexity, hidden state, color-only feedback, stacked dialogs, or fixed-width composition.
-
-Confidence: medium-high for reusable interface principles; medium for domain ranking because product-specific usage evidence was not supplied.
+Supporting evidence summary:
+- Reusable interface conventions favor clear hierarchy, compact spacing, semantic status, and predictable navigation.
+- Time-based structures support transferable patterns for grouping, filtering, detail inspection, and priority.
+- Neutral palettes with one restrained accent improve scanability and reduce visual competition.
+- Progressive disclosure supports compact screens without removing advanced capability.
+- Keyboard access, visible focus, semantic labeling, reduced motion, and non-color status encoding are baseline requirements.
+- Reversible actions, stable layouts, and explicit confirmation reduce interaction errors.
+- Planning calendar has the highest weighted fit across clarity, task fit, responsive behavior, accessibility, and extensibility.
+- Evidence confidence: moderate; general principles are reusable, while domain assumptions require validation.
