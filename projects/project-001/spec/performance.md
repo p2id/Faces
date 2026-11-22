@@ -1,16 +1,15 @@
 Budgets:
-- Initial HTML: ≤50KB compressed.
-- Critical CSS: ≤30KB compressed.
-- Initial JavaScript: ≤150KB compressed.
-- Route-specific JavaScript: ≤75KB compressed.
-- Fonts: ≤2 families, ≤4 files, ≤150KB total.
-- Above-fold image: ≤200KB each.
-- Largest Contentful Paint: ≤2.5s on mid-tier mobile over 4G.
-- First Contentful Paint: ≤1.8s.
-- Interaction to Next Paint: ≤200ms.
-- Cumulative Layout Shift: ≤0.1.
-- Initial requests: ≤60.
-- Avoid noncritical render-blocking resources.
-- Reserve media and loading-placeholder dimensions.
-- Lazy-load below-fold media and respect reduced-data settings.
-- Test xs, sm, and lg layouts.
+- Initial HTML: 100KB compressed maximum.
+- Critical CSS: 50KB compressed maximum.
+- Initial JavaScript: 150KB compressed maximum.
+- Initial transfer: 500KB compressed maximum.
+- Largest Contentful Paint: 2.5s maximum.
+- Interaction latency: 100ms maximum.
+- Cumulative Layout Shift: 0.1 maximum.
+- Time to interactive: 3.5s maximum on a mid-tier mobile device.
+- Route visual response: 200ms maximum.
+- Available content completion: 1.5s target.
+- Images use responsive dimensions, modern formats, lazy loading below the fold, and reserved space.
+- Use no more than two font families and three weights.
+- Virtualize long lists and avoid blocking overlays.
+- Monitor Web Vitals, bundle size, long tasks, and interaction latency.
