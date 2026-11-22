@@ -1,12 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 360" role="img" aria-label="Responsive layout rules">
-<title>Responsive layout rules</title>
-<rect width="960" height="360" fill="#f7f8fa"/>
-<g font-family="Arial,sans-serif" fill="#17202a">
-<text x="32" y="36" font-size="18" font-weight="bold">Responsive behavior</text>
-<text x="32" y="76" font-size="15">Small: 0–639px</text><text x="352" y="76" font-size="15">Medium: 640–1023px</text><text x="672" y="76" font-size="15">Large: 1024px+</text>
-<text x="32" y="300" font-size="14">Rules: preserve priority; stack columns; keep actions reachable; prevent overflow; retain 44px minimum targets.</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 420" role="img" aria-label="Responsive layout rules">
+<title>Project-001 responsive rules</title>
+<g fill="none" stroke="#243142" stroke-width="2">
+<rect x="20" y="30" width="280" height="330" rx="8"/>
+<rect x="340" y="30" width="280" height="330" rx="8"/>
+<rect x="660" y="30" width="280" height="330" rx="8"/>
 </g>
-<rect x="32" y="96" width="240" height="160" rx="8" fill="#fff" stroke="#ccd3dc"/><rect x="56" y="120" width="192" height="24" fill="#d7dce3"/><rect x="56" y="160" width="192" height="64" fill="#eef1f4"/>
-<rect x="352" y="96" width="256" height="160" rx="8" fill="#fff" stroke="#ccd3dc"/><rect x="376" y="120" width="208" height="24" fill="#d7dce3"/><rect x="376" y="160" width="96" height="64" fill="#eef1f4"/><rect x="488" y="160" width="96" height="64" fill="#eef1f4"/>
-<rect x="672" y="96" width="256" height="160" rx="8" fill="#fff" stroke="#ccd3dc"/><rect x="696" y="120" width="208" height="24" fill="#d7dce3"/><rect x="696" y="160" width="128" height="64" fill="#eef1f4"/><rect x="840" y="160" width="64" height="64" fill="#eef1f4"/>
+<g fill="#243142" font-family="sans-serif" font-size="14">
+<text x="40" y="60">Compact: 0–599px</text><text x="40" y="92">Single column</text><text x="40" y="118">Collapsed navigation</text><text x="40" y="144">Stacked actions</text><text x="40" y="170">24px page padding</text>
+<text x="360" y="60">Medium: 600–959px</text><text x="360" y="92">Flexible two-column</text><text x="360" y="118">Compact navigation</text><text x="360" y="144">Wrapped actions</text><text x="360" y="170">32px page padding</text>
+<text x="680" y="60">Wide: 960px+</text><text x="680" y="92">12-column grid</text><text x="680" y="118">Persistent navigation</text><text x="680" y="144">Inline actions</text><text x="680" y="170">40px page padding</text>
+<text x="40" y="220">Shared rules</text><text x="40" y="248">No horizontal overflow</text><text x="40" y="274">Targets at least 44px</text><text x="40" y="300">Reading-order preservation</text><text x="40" y="326">Usable at increased zoom</text>
+</g>
 </svg>
