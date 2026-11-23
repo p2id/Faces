@@ -1,23 +1,33 @@
-Date: 2026-11-22
-Project: project-001
-Purpose: Generic product interface for reviewing, filtering, and organizing structured information.
+# Section C — Product Specification
+Date: 2026-11-23
+Project ID: project-001
 
-Surfaces:
-- Workspace: navigation, header, filters, summary, content.
-- Overlay: menus, dialogs, tooltips, notifications.
-- Compact view: collapsed navigation, stacked content, responsive data layout.
+## Surfaces
+- Workspace: responsive overview and collection surface.
+- Detail: focused content and metadata surface.
+- Overlay: modal, drawer, popover, and tooltip surface.
+- Feedback: loading, empty, validation, success, warning, and error surface.
 
-Sections:
-1. Header: “Overview” and “Review current information and recent activity.”
-2. Filters: “Search records”, “All statuses”, “Select date”, “Apply filters”.
-3. Summary: “Total items”, “Active items”, “Updated today”.
-4. Data: “Recent items”; columns “Name”, “Status”, “Updated”, “Actions”.
-5. Empty: “No items match these filters.”; action “Clear filters”.
-6. Feedback: “Filters applied.”; “Unable to load items. Try again.”
-7. Footer: “Last updated: 22 Nov 2026, 09:01”.
+## Sections
+- Header: product label, page title, contextual actions.
+- Navigation: primary locations and active-location indicator.
+- Summary: description, metrics, and status.
+- Collection: search, filters, sort, list, cards, or table.
+- Detail: title, fields, supporting content, and actions.
+- Feedback: status messages and recovery actions.
+- Footer: secondary information and links.
 
-Content rules:
-- Use concise sentence-case labels and neutral status terms.
-- Keep labels visible during loading and validation.
-- Provide one primary action per section.
-- Do not rely on icons, color, or placeholder text alone.
+## Content Examples
+- Product label: “Workspace”
+- Page title: “Overview”
+- Description: “Review available content and current status.”
+- Search placeholder: “Search resources”
+- Filter: “Status”
+- Filter options: “All”, “Active”, “Archived”
+- Metrics: “Available”, “In review”, “Updated today”
+- Primary action: “Create resource”
+- Secondary action: “Export summary”
+- Empty message: “No resources match these filters.”
+- Error message: “Content could not be loaded. Try again.”
+- Success message: “Changes saved.”
+- Confirmation: “Remove this item? This action cannot be undone.”
