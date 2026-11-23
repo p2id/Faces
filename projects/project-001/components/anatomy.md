@@ -1,45 +1,47 @@
-Global anatomy:
-- Shell: navigation, header, main content, overlay layer.
-- Section: heading, supporting text, controls, content, feedback.
-- Control: visible label, value, affordance, state indicator, focus indicator.
-- Feedback: concise message, optional status icon, corrective action.
+# Section D — Shared Anatomy
 
-Variants:
-- Density: comfortable, compact.
-- Emphasis: primary, secondary, muted.
-- Content: populated, loading, empty, error, unavailable.
-- Layout: single column, split panel, grid, responsive rows.
+## Page Shell
+- Anatomy: header, navigation, main region, optional footer.
+- Variants: full navigation, collapsed navigation, focused detail.
+- States: loading, ready, empty, error, offline.
+- Usage: provide consistent hierarchy and landmarks.
+- Anti-patterns: multiple page titles, hidden navigation, loading layout shifts.
+- Accessibility: landmarks, one primary heading, logical focus order, skip-to-content link.
 
-States:
-- Rest: neutral surface and content.
-- Hover: non-layout-moving surface or border change.
-- Focus: visible high-contrast ring.
-- Selected: persistent selected treatment and programmatic state.
-- Disabled: reduced emphasis with an available explanation.
-- Loading: stable dimensions and progress indication.
-- Error: clear cause, affected area, and correction path.
-- Empty: explain absence and provide a relevant next action.
-- Success: confirm completion without blocking continuation.
+## Search and Filter Bar
+- Anatomy: search field, filter controls, applied-filter summary, clear action.
+- Variants: inline, stacked, compact.
+- States: default, populated, filtering, no-results, invalid, disabled.
+- Usage: narrow a collection while preserving context.
+- Anti-patterns: silent filter resets, unlabeled controls, missing clear-all action.
+- Accessibility: visible labels, grouped controls, announced result changes, keyboard access.
 
-Usage:
-- Present purpose before controls.
-- Group related controls before content.
-- Keep terminology consistent across labels and messages.
-- Use progressive disclosure for secondary detail.
+## Card
+- Anatomy: heading, supporting text, metadata, optional media, action area.
+- Variants: informational, selectable, interactive, compact.
+- States: default, hover, focus, selected, disabled, loading, error.
+- Usage: group related content for scanning.
+- Anti-patterns: nested conflicting links, dense unstructured text, decorative media used as meaning.
+- Accessibility: meaningful heading, one clear interactive target, decorative media hidden from assistive technology.
 
-Anti-patterns:
-- Placeholder-only labels.
-- Color-only state communication.
-- Decorative motion that delays access.
-- Unbounded text lines or dense control clusters.
-- Hidden essential content at narrow widths.
-- Ambiguous actions such as “Submit”.
-- Visual order that conflicts with keyboard order.
+## Badge
+- Anatomy: text label, optional status icon.
+- Variants: neutral, informative, positive, caution, negative.
+- States: default, selected, disabled.
+- Usage: show concise status or category context.
+- Anti-patterns: badge as sole action, color-only meaning, excessive badge density.
+- Accessibility: meaningful text, supplementary icon, sufficient contrast.
 
-Accessibility:
-- Use semantic structure and native controls.
-- Maintain WCAG 2.2 AA contrast and keyboard operation.
-- Provide visible focus, logical order, labels, descriptions, and errors.
-- Announce dynamic status without unnecessary interruption.
-- Support reduced motion, zoom, reflow, and 320px layouts.
-- Give every icon-only control an accessible name.
+## Feedback Block
+- Anatomy: status indicator, heading, explanation, recovery or next action.
+- Variants: initial empty, filtered empty, skeleton loading, recoverable error, terminal error.
+- States: visible, transitioning, resolved.
+- Usage: explain current status and next available action.
+- Anti-patterns: blank screens, indefinite spinner, blame-oriented copy, unconfirmed destructive recovery.
+- Accessibility: announce meaningful changes, preserve layout, provide text equivalents, respect reduced motion.
+
+## General Contract
+- Tokens are the visual source of truth.
+- Components expose semantic states rather than implementation details.
+- Content remains understandable without color, motion, hover, or pointer input.
+- Interactive regions retain stable dimensions during loading and error transitions.
