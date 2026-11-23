@@ -1,15 +1,19 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 430" role="img" aria-label="Product experience state matrix">
-<title>Project-001 state matrix</title>
-<g fill="none" stroke="#243142" stroke-width="2">
-<rect x="20" y="20" width="860" height="390"/>
-<path d="M220 20v390M440 20v390M660 20v390M20 80h860M20 146h860M20 212h860M20 278h860M20 344h860"/>
-</g>
-<g fill="#243142" font-family="sans-serif" font-size="14">
-<text x="40" y="57">Surface</text><text x="250" y="57">Default</text><text x="470" y="57">Loading</text><text x="690" y="57">Empty or error</text>
-<text x="40" y="118">Overview</text><text x="250" y="118">Content and action</text><text x="470" y="118">Placeholder</text><text x="690" y="118">Recovery action</text>
-<text x="40" y="184">Form</text><text x="250" y="184">Editable fields</text><text x="470" y="184">Disabled fields</text><text x="690" y="184">Inline guidance</text>
-<text x="40" y="250">List</text><text x="250" y="250">Rows and controls</text><text x="470" y="250">Row placeholders</text><text x="690" y="250">No matching items</text>
-<text x="40" y="316">Dialog</text><text x="250" y="316">Confirm or cancel</text><text x="470" y="316">Progress</text><text x="690" y="316">Blocked or retry</text>
-<text x="40" y="382">Feedback</text><text x="250" y="382">Success notice</text><text x="470" y="382">Pending notice</text><text x="690" y="382">Failure notice</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 430" role="img" aria-label="Product state matrix">
+<title>Product state matrix</title>
+<rect width="980" height="430" fill="#fff"/>
+<g font-family="Arial,sans-serif" font-size="14" fill="#263449">
+<rect x="24" y="24" width="932" height="48" fill="#e9edf3"/>
+<text x="44" y="54">Surface</text><text x="220" y="54">Initial</text><text x="370" y="54">Loading</text><text x="520" y="54">Empty</text><text x="670" y="54">Error</text><text x="820" y="54">Complete</text>
+<g stroke="#d9dee7" fill="none"><rect x="24" y="72" width="932" height="288"/><path d="M200 24v336M350 24v336M500 24v336M650 24v336M800 24v336M24 120h932M24 168h932M24 216h932M24 264h932M24 312h932"/></g>
+<text x="44" y="104">Shell</text><text x="220" y="104">Ready</text><text x="370" y="104">Progress</text><text x="520" y="104">Guidance</text><text x="670" y="104">Recovery</text><text x="820" y="104">Ready</text>
+<text x="44" y="152">Collection</text><text x="220" y="152">Items</text><text x="370" y="152">Placeholder</text><text x="520" y="152">Next step</text><text x="670" y="152">Retry</text><text x="820" y="152">Items</text>
+<text x="44" y="200">Detail</text><text x="220" y="200">Summary</text><text x="370" y="200">Placeholder</text><text x="520" y="200">Not found</text><text x="670" y="200">Retry</text><text x="820" y="200">Summary</text>
+<text x="44" y="248">Form</text><text x="220" y="248">Blank</text><text x="370" y="248">Submitting</text><text x="520" y="248">Prompt</text><text x="670" y="248">Inline fix</text><text x="820" y="248">Confirmation</text>
+<text x="44" y="296">Search</text><text x="220" y="296">Ready</text><text x="370" y="296">Progress</text><text x="520" y="296">No match</text><text x="670" y="296">Retry</text><text x="820" y="296">Results</text>
+<text x="44" y="344">Notice</text><text x="220" y="344">Hidden</text><text x="370" y="344">Hidden</text><text x="520" y="344">Hidden</text><text x="670" y="344">Actionable</text><text x="820" y="344">Dismissed</text>
 </g>
 </svg>
+Rationale: the matrix makes state completeness reviewable and prevents default-state coverage from masking operational gaps.
+Quality gates: every surface defines initial, loading, empty, error, and completion behavior; recovery is actionable; status does not depend on color alone.
+Repository path intent: /projects/project-001/sections/e/state-matrix.svg
+Publishing rule: update on every surface, state, or transition change; do not publish undefined terminal states.
