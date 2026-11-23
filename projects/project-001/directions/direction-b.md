@@ -1,6 +1,6 @@
-Positioning: Structured planning surface balancing overview, time context, and focused detail.
-Palette rationale: Cool neutral canvas, light surfaces, deep navy text, and restrained teal accent support precision; semantic colors are limited to status and validation.
-Type rationale: Legible sans serif with tabular numerals for dates and values, clear heading scale, and generous line height.
-Layout rules: Utility bar, compact navigation rail, primary time or sequence view, persistent filter row, optional detail drawer, 8px spacing rhythm, 44px minimum controls, prioritized stacking below 900px.
-Motion intent: Subtle selection emphasis, drawer transitions up to 180ms, no auto-play or parallax, and quiet immediate feedback.
-Avoided traps: Grid overload, hidden overflow, hover-only information, color-only status, validation layout shift, and excessive modal use.
+Positioning: Efficient, utility-led, and information-dense; prioritizes retrieval and comparison.
+Palette rationale: Cool gray foundation, white content planes, dark text, and a high-contrast green accent reserved for positive or completed states.
+Type rationale: Legible sans-serif with tabular numerals, concise labels, and clear scale differences between controls, headings, and metadata.
+Layout rules: Compact toolbar, persistent filters, dense list or split pane on wide screens, stacked rows on small screens, stable action placement.
+Motion intent: Minimal state feedback through color, border, and short transitions near 120ms; movement is never required for comprehension.
+Avoided traps: Small targets, filter overload, hidden horizontal overflow, unexplained badges, and noisy status colors.
