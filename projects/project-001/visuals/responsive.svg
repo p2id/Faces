@@ -1,14 +1,19 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 420" role="img" aria-label="Responsive layout rules">
-<title>Project-001 responsive rules</title>
-<g fill="none" stroke="#243142" stroke-width="2">
-<rect x="20" y="30" width="280" height="330" rx="8"/>
-<rect x="340" y="30" width="280" height="330" rx="8"/>
-<rect x="660" y="30" width="280" height="330" rx="8"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 400" role="img" aria-label="Responsive layout rules">
+<title>Responsive layout rules</title>
+<rect width="960" height="400" fill="#f7f8fa"/>
+<g font-family="Arial,sans-serif" fill="#263449">
+<rect x="24" y="40" width="280" height="300" rx="8" fill="#fff" stroke="#d9dee7"/>
+<rect x="340" y="40" width="280" height="300" rx="8" fill="#fff" stroke="#d9dee7"/>
+<rect x="656" y="40" width="280" height="300" rx="8" fill="#fff" stroke="#d9dee7"/>
+<text x="48" y="74" font-size="18">Compact ≤639</text><text x="364" y="74" font-size="18">Medium 640–1023</text><text x="680" y="74" font-size="18">Wide ≥1024</text>
+<g fill="#e8eefc">
+<rect x="48" y="104" width="232" height="42" rx="6"/><rect x="48" y="162" width="232" height="88" rx="6"/><rect x="48" y="266" width="232" height="42" rx="6"/>
+<rect x="364" y="104" width="96" height="204" rx="6"/><rect x="476" y="104" width="120" height="88" rx="6"/><rect x="476" y="208" width="120" height="100" rx="6"/>
+<rect x="680" y="104" width="160" height="204" rx="6"/><rect x="856" y="104" width="56" height="88" rx="6"/><rect x="856" y="208" width="56" height="100" rx="6"/>
 </g>
-<g fill="#243142" font-family="sans-serif" font-size="14">
-<text x="40" y="60">Compact: 0–599px</text><text x="40" y="92">Single column</text><text x="40" y="118">Collapsed navigation</text><text x="40" y="144">Stacked actions</text><text x="40" y="170">24px page padding</text>
-<text x="360" y="60">Medium: 600–959px</text><text x="360" y="92">Flexible two-column</text><text x="360" y="118">Compact navigation</text><text x="360" y="144">Wrapped actions</text><text x="360" y="170">32px page padding</text>
-<text x="680" y="60">Wide: 960px+</text><text x="680" y="92">12-column grid</text><text x="680" y="118">Persistent navigation</text><text x="680" y="144">Inline actions</text><text x="680" y="170">40px page padding</text>
-<text x="40" y="220">Shared rules</text><text x="40" y="248">No horizontal overflow</text><text x="40" y="274">Targets at least 44px</text><text x="40" y="300">Reading-order preservation</text><text x="40" y="326">Usable at increased zoom</text>
 </g>
 </svg>
+Rationale: the representation shows structural reflow rather than scaled screenshots; navigation collapses, content stacks, and actions remain reachable.
+Quality gates: no horizontal scrolling, preserved reading order, 44×44px minimum targets, 320px reflow, 200% zoom usability, and orientation support.
+Repository path intent: /projects/project-001/sections/e/responsive.svg
+Publishing rule: validate defined bands and intermediate widths; record breakpoint rationale and affected surfaces.
