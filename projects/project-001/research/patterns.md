@@ -1,56 +1,60 @@
-Date: 2026-11-22
-Project ID: project-001
+Project: project-001 | Date: 2026-11-23
 
-Dominant patterns:
-- Clear hierarchy, compact headers, grouped content, persistent navigation, and visible state.
-- List, table, card, split-pane, and detail-drawer structures with consistent alignment.
-- Neutral surfaces, restrained accent color, semantic status colors, and high-contrast text.
-- Search, filter, sort, selection, inline edit, and reversible actions.
+DOMINANT PATTERNS
+- Clear hierarchy with one primary action and grouped secondary actions.
+- Modular cards, lists, filters, and compact metadata blocks.
+- Progressive disclosure for secondary detail.
+- Persistent orientation through section labels and active states.
+- Responsive stacking with preserved action order.
 
-Emerging patterns:
-- Compact, comfortable, and expanded density modes.
-- Contextual action bars that reduce repeated navigation.
-- Progressive disclosure for advanced options.
-- Responsive reflow from multi-column views to prioritized stacks.
-- User-configurable columns, filters, and view preferences.
+EMERGING PATTERNS
+- Semantic design tokens for color, spacing, radius, type, and motion.
+- Contextual actions that reduce navigation depth.
+- Inline validation, reversible changes, and explicit status feedback.
+- Density controls for scanning and focused reading.
+- Content-aware empty, loading, and error states.
 
-Deprecated patterns:
-- Low-contrast decorative gradients.
-- Deep navigation without location context.
-- Unlabeled icon-only controls.
-- Auto-advancing panels, persistent popups, and irreversible primary actions.
+DEPRECATED PATTERNS
+- Decorative gradients without functional purpose.
+- Equal-weight dashboards with excessive visual density.
+- Gesture-only navigation and hidden controls.
+- Auto-advancing content and non-dismissible motion.
+- Status communicated by color alone.
 
-Outlier patterns:
-- Split views preserving overview while exposing detail.
-- Instructional empty states without decorative illustration.
-- Inline validation with reserved space to prevent layout shift.
-- Dense data views with explicit overflow and density controls.
+OUTLIER PATTERNS
+- Edge-to-edge command surfaces for frequent actions.
+- Split-pane detail views preserving list context.
+- Monochrome status systems reinforced by labels and shapes.
+- Timeline layouts for strictly sequential information.
 
-Extracted DNA:
-Visual: neutral canvas, limited elevation, 8px spacing rhythm, 1px borders, medium-radius geometry, one primary accent, semantic color reserved for state.
-Interactional: predictable focus order, explicit selection, visible hover and pressed states, keyboard-complete actions, reversible destructive operations, immediate non-blocking feedback.
-Accessibility: strong contrast, visible focus, semantic headings and landmarks, text labels for controls, minimum 44px targets, reduced-motion support, no color-only meaning.
-Responsive: fluid containers, mobile-first priority, readable minimum widths, stacked content below tablet width, controlled overflow for dense data, persistent primary action where practical.
+EXTRACTED DNA
+- Visual: neutral surfaces, one accent color, high-contrast text, 8-point spacing rhythm, medium radii, restrained dividers.
+- Interactional: predictable navigation, direct manipulation, visible state changes, explicit confirmation for consequential actions, undo where practical.
+- Accessibility: semantic structure, keyboard parity, visible focus, minimum 44px targets, WCAG AA contrast, reduced-motion support, labels independent of color.
+- Responsive: mobile-first flow, 16px minimum side padding, 4-column small-screen grid, 12-column wide-screen grid, fluid type, controlled overflow.
 
-Candidate domains:
-- Planning calendar: organizes dates, schedules, and related details in a time-based workspace.
-- Knowledge library: structures searchable reference items with metadata, filters, and detail views.
-- Metrics dashboard: presents values, trends, comparisons, and status summaries.
-- Asset catalog: manages browsable records with previews, attributes, and batch controls.
-- Preference console: groups configurable options with explicit state and validation.
-- Workflow board: presents ordered items across states with filtering and movement.
+CANDIDATE PRODUCT DOMAINS
+1. Content library: discover, organize, filter, save, and resume informational material.
+2. Learning planner: structure topics, milestones, references, and completion states.
+3. Commerce catalog: browse, compare, filter, and review item information.
+4. Travel planner: coordinate places, dates, reservations, and sequential plans.
+5. Personal finance: organize balances, transactions, budgets, and summaries.
+6. Wellness tracker: present routines, measurements, trends, and reminders without clinical claims.
 
-Weighted scoring matrix:
-Weights: clarity 25%, task fit 20%, responsive behavior 20%, accessibility 20%, extensibility 15%. Scores: 1–5.
+WEIGHTED SCORING MATRIX
+Weights: Reusability 30; clarity 25; responsive fit 20; accessibility fit 15; visual flexibility 10.
+- Content library: 5,5,5,5,5 = 5.00
+- Learning planner: 5,4,5,5,4 = 4.65
+- Commerce catalog: 4,4,5,4,5 = 4.35
+- Personal finance: 4,4,4,4,4 = 4.00
+- Wellness tracker: 4,4,4,4,3 = 3.95
+- Travel planner: 4,3,4,4,4 = 3.85
 
-Domain                 Clarity  Fit  Responsive  Access  Extensibility  Total
-Planning calendar      4.6      4.5  4.5         4.4     4.3            4.47
-Knowledge library      4.5      4.4  4.3         4.5     4.6            4.46
-Metrics dashboard      4.2      4.3  4.1         4.2     4.4            4.24
-Asset catalog          4.1      4.0  4.0         4.2     4.3            4.10
-Preference console     4.4      4.1  4.4         4.6     4.1            4.32
-Workflow board         4.3      4.5  3.9         4.1     4.5            4.27
+SELECTED DOMAIN RATIONALE
+Content library offers the broadest reusable information model for browse, search, filtering, detail, saving, resuming, metadata, and responsive density without requiring specialized claims.
 
-Selected domain rationale: Planning calendar scores highest and provides reusable patterns for time, grouping, filtering, detail, status, and responsive prioritization.
-Cycle lock: Planning calendar, extracted DNA, scoring weights, and Direction B are fixed for 2026-11-22.
-Fallback rule: If calendar assumptions fail validation, use Knowledge library while preserving the extracted DNA, accessibility rules, responsive rules, and scoring weights.
+CYCLE LOCK
+Lock the selected domain, core hierarchy, token baseline, accessibility requirements, and primary interaction model. Allow only refinements that preserve these constraints.
+
+FALLBACK RULE
+If content density, evidence, or viewport constraints conflict, retain accessibility and action clarity; use a single-column layout, one accent color, static motion, explicit labels, and progressive disclosure.
