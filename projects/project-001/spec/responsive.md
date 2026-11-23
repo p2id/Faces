@@ -1,19 +1,21 @@
-Breakpoints:
+# Section C — Responsive Rules
+## Breakpoints
 - xs: 0–479px
 - sm: 480–767px
 - md: 768–1023px
-- lg: 1024–1279px
-- xl: 1280px and above
+- lg: 1024–1439px
+- xl: 1440px+
 
-Rules:
-- Use a 4px spacing unit and at least 16px page padding.
-- xs: single column, collapsed navigation, stacked cards, labeled data rows, full-width primary actions.
-- sm: one or two card columns, wrapped filters, horizontally scrollable secondary data.
-- md: two card columns, compact navigation option, filters may occupy two rows.
-- lg: persistent navigation, three summary columns, full data columns.
-- xl: cap content at 1440px and increase outer gutters.
-- Maintain 44px minimum interactive targets at every width.
-- Preserve heading, status, validation, primary-action, and focus order.
-- Do not hide essential information solely because of viewport width.
-- Support 320px reflow without clipping or overlapping.
-- Use stable reserved space for asynchronous content.
+## Rules
+- Use fluid widths with a 1200px maximum content width.
+- xs: single column, stacked actions, full-width controls.
+- sm: single column; allow two-up cards at 160px minimum card width.
+- md: optional two-column layout; navigation may collapse.
+- lg: persistent navigation and two-column detail layouts.
+- xl: expand collections while preserving readable text measure.
+- Collapse header actions into overflow below md.
+- Convert low-priority tables to cards below sm; permit horizontal scrolling only for dense tables.
+- Use 16px dialog edge margins on xs/sm; constrain dialogs above md.
+- Drawers use full width on xs and maximum 480px on md+.
+- Preserve 44×44px minimum interactive targets.
+- Preserve 24px page gutters at md and 32px at lg+.
