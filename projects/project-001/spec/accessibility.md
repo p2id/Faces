@@ -1,16 +1,17 @@
-Targets:
-- WCAG 2.2 AA.
-- Text contrast at least 4.5:1; large text at least 3:1.
-- Non-text contrast at least 3:1 for controls, focus indicators, and meaningful graphics.
-- All controls operable by keyboard without pointer input.
-- Visible, unobscured focus indicator equivalent to at least 2px.
-- Interactive targets at least 44x44 CSS pixels.
-- One page heading, logical heading hierarchy, named landmarks, and skip-to-content path.
-- Persistent labels, programmatic descriptions, grouped fields, and associated errors.
-- Tables include an accessible name, header associations, and announced sort state.
-- Dialogs have labels, focus containment, Escape handling when safe, and focus restoration.
-- Menus and tabs expose selected and expanded states programmatically.
-- Dynamic status uses an appropriate live region and does not steal focus unnecessarily.
-- Support 200% text zoom, 320px width, reflow, and reduced-motion preference.
-- Icons are decorative only when redundant; meaningful icons have accessible names.
-- Errors identify the affected control, explain correction, and do not rely on color alone.
+# Section D — Accessibility Targets
+- Target WCAG 2.2 AA.
+- All functionality is keyboard operable with a visible focus indicator.
+- Normal text contrast is at least 4.5:1; large text is at least 3:1.
+- Non-text controls and boundaries meet 3:1 contrast.
+- Interactive targets are at least 44×44 CSS px.
+- Use landmarks, one page-level heading, logical heading order, and reading order.
+- Every control has an accessible name; icon-only controls have explicit labels.
+- Labels, descriptions, and validation messages are programmatically associated.
+- Loading, success, warning, and error changes use suitable live-region behavior.
+- Dialogs move focus inward, constrain focus while open, support Escape, and restore focus.
+- Tables expose captions, headers, relationships, sorting, filtering, and row-action names.
+- Tabs expose tablist, tab, tabpanel, selected, and keyboard behavior.
+- Status is not communicated by color alone.
+- Support 200% zoom, reflow, narrow viewports, and reduced-motion preferences.
+- Avoid flashing content; provide text alternatives for meaningful non-text content.
+- Error messages identify the affected control, issue, and corrective action.
