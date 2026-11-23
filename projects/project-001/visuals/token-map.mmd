@@ -1,29 +1,21 @@
-mindmap
-  root((Project-001 tokens))
-    Color
-      Canvas #FFFFFF
-      Surface #F5F7FA
-      Text #17212B
-      Muted #5B6875
-      Accent #2457D6
-      Critical #B42318
-    Space
-      xs 4px
-      sm 8px
-      md 16px
-      lg 24px
-      xl 40px
-    Type
-      Body 16/24
-      Label 14/20
-      Heading 24/32
-    Shape
-      Radius 6px
-      Border 1px
-    Motion
-      Duration 160ms
-      Reduced motion supported
-    Rationale
-      Semantic names
-      Theme substitution
-      Consistent contrast
+flowchart LR
+A[Color] --> A1[Canvas #F7F8FA]
+A --> A2[Surface #FFFFFF]
+A --> A3[Text #263449]
+A --> A4[Accent #315FCE]
+B[Type] --> B1[Display 28/34]
+B --> B2[Heading 20/26]
+B --> B3[Body 16/24]
+B --> B4[Meta 13/18]
+C[Space] --> C1[4]
+C --> C2[8]
+C --> C3[16]
+C --> C4[24]
+C --> C5[32]
+D[Shape] --> D1[Radius 8]
+D --> D2[Control 6]
+D --> D3[Border 1px]
+Rationale: semantic tokens separate design intent from values, enabling consistent revision and reuse.
+Quality gates: WCAG AA contrast, readable type, scale-based spacing, semantic names, and documented deprecated aliases.
+Repository path intent: /projects/project-001/sections/e/token-map.mmd
+Writing and publishing rules: use sentence case, concise labels, one action per control, stable token names, and no raw values outside token definitions; publish after contrast and regression checks.
