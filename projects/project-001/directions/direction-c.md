@@ -1,6 +1,6 @@
-Positioning: Flexible information surface for configurable views and progressive detail.
-Palette rationale: Light gray canvas, white surfaces, charcoal text, and violet-blue accent support customization while maintaining neutrality; semantic colors remain sparse.
-Type rationale: Compact sans serif with distinct labels, values, and supporting text; tabular numerals for comparison.
-Layout rules: Resizable content frame, configurable density, optional secondary column, grouped controls above content, adjacent or below-detail view, single-column fallback below 640px.
-Motion intent: Soft expand and collapse transitions, clear reorder feedback, no continuous motion, and reduced-motion alternatives.
-Avoided traps: Unbounded customization, inconsistent alignment, overloaded settings, excessive disclosure levels, tiny targets, and controls without persistent state.
+Positioning: Focused, immersive, and sequential; prioritizes resuming one item without losing context.
+Palette rationale: Deep neutral shell, light reading surface, soft amber progress accent, and high-contrast primary text.
+Type rationale: Restrained sans-serif for controls paired with a readable text face for extended content; limit weight variation.
+Layout rules: Single dominant content column, persistent progress indicator, optional contextual rail on wide screens, bottom action region on small screens.
+Motion intent: Gentle continuity between list and detail states below 200ms; avoid parallax, autoplay, and motion-dependent orientation.
+Avoided traps: Low-contrast secondary text, excessive immersion, hidden exit controls, overly dark reading surfaces, and progress shown by color alone.
