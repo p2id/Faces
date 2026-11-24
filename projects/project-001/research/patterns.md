@@ -1,60 +1,59 @@
-Project: project-001 | Date: 2026-11-23
+Date: 2026-11-24
+Project: project-001
 
-DOMINANT PATTERNS
-- Clear hierarchy with one primary action and grouped secondary actions.
-- Modular cards, lists, filters, and compact metadata blocks.
-- Progressive disclosure for secondary detail.
-- Persistent orientation through section labels and active states.
-- Responsive stacking with preserved action order.
+Dominant patterns:
+- Calm utility: neutral surfaces, strong hierarchy, restrained decoration.
+- Modular composition: grouped controls, cards, panels, and progressive disclosure.
+- Direct interaction: visible actions, inline feedback, reversible changes.
+- Priority-based responsiveness: preserve task order instead of shrinking everything equally.
 
-EMERGING PATTERNS
-- Semantic design tokens for color, spacing, radius, type, and motion.
-- Contextual actions that reduce navigation depth.
-- Inline validation, reversible changes, and explicit status feedback.
-- Density controls for scanning and focused reading.
-- Content-aware empty, loading, and error states.
+Emerging patterns:
+- Contextual empty states with useful next actions.
+- Persistent overview paired with focused detail.
+- Tokenized themes with semantic status colors.
+- Motion limited to confirmation and state change.
 
-DEPRECATED PATTERNS
-- Decorative gradients without functional purpose.
-- Equal-weight dashboards with excessive visual density.
-- Gesture-only navigation and hidden controls.
-- Auto-advancing content and non-dismissible motion.
-- Status communicated by color alone.
+Deprecated patterns:
+- Low-contrast decorative gradients.
+- Gesture-only navigation.
+- Equal-weight dashboard widgets.
+- Auto-advancing content and irreversible primary actions.
 
-OUTLIER PATTERNS
-- Edge-to-edge command surfaces for frequent actions.
-- Split-pane detail views preserving list context.
-- Monochrome status systems reinforced by labels and shapes.
-- Timeline layouts for strictly sequential information.
+Outlier patterns:
+- Extremely sparse focus views.
+- Split-pane overview/detail layouts.
+- Monochrome interfaces with one accent.
+- Timeline structures applied beyond calendar contexts.
 
-EXTRACTED DNA
-- Visual: neutral surfaces, one accent color, high-contrast text, 8-point spacing rhythm, medium radii, restrained dividers.
-- Interactional: predictable navigation, direct manipulation, visible state changes, explicit confirmation for consequential actions, undo where practical.
-- Accessibility: semantic structure, keyboard parity, visible focus, minimum 44px targets, WCAG AA contrast, reduced-motion support, labels independent of color.
-- Responsive: mobile-first flow, 16px minimum side padding, 4-column small-screen grid, 12-column wide-screen grid, fluid type, controlled overflow.
+Extracted DNA:
+- Visual: neutral canvas, one accent, semantic status colors, 8px spacing rhythm, moderate radii, thin borders, restrained elevation.
+- Interactional: one primary action per view, persistent context, inline validation, predictable keyboard order, reversible destructive actions.
+- Accessibility: strong contrast, visible focus, labeled icons, 44px minimum targets, non-color status cues, reduced-motion support.
+- Responsive: 12-column desktop grid, 8-column tablet adaptation, single-column mobile flow, preserved priority order, limited horizontal overflow.
 
-CANDIDATE PRODUCT DOMAINS
-1. Content library: discover, organize, filter, save, and resume informational material.
-2. Learning planner: structure topics, milestones, references, and completion states.
-3. Commerce catalog: browse, compare, filter, and review item information.
-4. Travel planner: coordinate places, dates, reservations, and sequential plans.
-5. Personal finance: organize balances, transactions, budgets, and summaries.
-6. Wellness tracker: present routines, measurements, trends, and reminders without clinical claims.
+Candidate domains:
+- Planning and scheduling: organizes time-based items with clear priority, status, and detail views.
+- Catalog and inventory: manages browsable records, filters, quantities, and item details.
+- Analytics and reporting: presents summaries, comparisons, trends, and drill-down information.
+- Learning and reference library: organizes searchable resources through categories, progress, and detail.
+- Budget and resource tracking: records allocations, usage, thresholds, and historical changes.
+- Form and application builder: structures creation, validation, review, and revision steps.
 
-WEIGHTED SCORING MATRIX
-Weights: Reusability 30; clarity 25; responsive fit 20; accessibility fit 15; visual flexibility 10.
-- Content library: 5,5,5,5,5 = 5.00
-- Learning planner: 5,4,5,5,4 = 4.65
-- Commerce catalog: 4,4,5,4,5 = 4.35
-- Personal finance: 4,4,4,4,4 = 4.00
-- Wellness tracker: 4,4,4,4,3 = 3.95
-- Travel planner: 4,3,4,4,4 = 3.85
+Weighted scoring matrix:
+Weights: clarity 30%, extensibility 25%, responsive fit 20%, accessibility fit 15%, distinctiveness 10%.
+Domain | Clarity | Extensibility | Responsive | Accessibility | Distinctiveness | Total
+Planning and scheduling | 9 | 9 | 8 | 9 | 7 | 8.55
+Catalog and inventory | 8 | 9 | 8 | 8 | 7 | 8.15
+Analytics and reporting | 8 | 8 | 7 | 8 | 8 | 7.85
+Learning and reference library | 8 | 8 | 9 | 9 | 6 | 8.15
+Budget and resource tracking | 8 | 8 | 8 | 8 | 7 | 7.95
+Form and application builder | 9 | 8 | 8 | 9 | 7 | 8.35
 
-SELECTED DOMAIN RATIONALE
-Content library offers the broadest reusable information model for browse, search, filtering, detail, saving, resuming, metadata, and responsive density without requiring specialized claims.
+Selected domain rationale:
+Planning and scheduling leads because it tests hierarchy, responsive prioritization, semantic states, progressive disclosure, and reversible interaction without requiring specialized visual language.
 
-CYCLE LOCK
-Lock the selected domain, core hierarchy, token baseline, accessibility requirements, and primary interaction model. Allow only refinements that preserve these constraints.
+Cycle lock:
+Lock planning and scheduling for this cycle; preserve the extracted DNA and selected direction unless clarity, accessibility, or responsive fit materially fails.
 
-FALLBACK RULE
-If content density, evidence, or viewport constraints conflict, retain accessibility and action clarity; use a single-column layout, one accent color, static motion, explicit labels, and progressive disclosure.
+Fallback rule:
+If the selected domain or direction fails two or more weighted criteria, switch to form and application builder while preserving tokens, accessibility rules, and interaction principles.
