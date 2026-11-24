@@ -1,33 +1,26 @@
-# Section C — Product Specification
-Date: 2026-11-23
-Project ID: project-001
+# Product Experience Specification
+- Date: 2026-11-24
+- Project ID: project-001
+- Purpose: neutral interface for viewing, filtering, and organizing product information.
 
 ## Surfaces
-- Workspace: responsive overview and collection surface.
-- Detail: focused content and metadata surface.
-- Overlay: modal, drawer, popover, and tooltip surface.
-- Feedback: loading, empty, validation, success, warning, and error surface.
+- Workspace: header, navigation, content, utility actions.
+- Detail: title, metadata, summary, structured information, actions.
+- Overlay: dialog, drawer, menu, toast, confirmation.
+- Status: loading, empty, offline, and error feedback.
 
 ## Sections
-- Header: product label, page title, contextual actions.
-- Navigation: primary locations and active-location indicator.
-- Summary: description, metrics, and status.
-- Collection: search, filters, sort, list, cards, or table.
-- Detail: title, fields, supporting content, and actions.
-- Feedback: status messages and recovery actions.
-- Footer: secondary information and links.
+- Header: “Product workspace”, “Search”, “Create item”.
+- Navigation: “Overview”, “Activity”, “Settings”.
+- Overview: “Project status”, “Active”, “Last updated 24 Nov 2026”.
+- Summary cards: “Open items 12”, “Completed 48”, “Next review 02 Dec 2026”.
+- Activity: “Specification updated”, “Validation completed”, “Review scheduled”.
+- Detail: “Project overview”, “Description”, “Status”, “Dates”.
+- Empty state: “No activity recorded yet.”, “Refresh”.
+- Error state: “Content could not be loaded.”, “Try again”.
+- Confirmation: “Remove this item?”, “Cancel”, “Remove”.
 
-## Content Examples
-- Product label: “Workspace”
-- Page title: “Overview”
-- Description: “Review available content and current status.”
-- Search placeholder: “Search resources”
-- Filter: “Status”
-- Filter options: “All”, “Active”, “Archived”
-- Metrics: “Available”, “In review”, “Updated today”
-- Primary action: “Create resource”
-- Secondary action: “Export summary”
-- Empty message: “No resources match these filters.”
-- Error message: “Content could not be loaded. Try again.”
-- Success message: “Changes saved.”
-- Confirmation: “Remove this item? This action cannot be undone.”
+## Content Rules
+- Use concise sentence-case labels and literal status values.
+- Store dates as 2026-11-24; display dates as 24 Nov 2026.
+- Do not imply unavailable data, completion, verification, or capability.
