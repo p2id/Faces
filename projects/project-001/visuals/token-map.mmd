@@ -1,21 +1,35 @@
-flowchart LR
-A[Color] --> A1[Canvas #F7F8FA]
-A --> A2[Surface #FFFFFF]
-A --> A3[Text #263449]
-A --> A4[Accent #315FCE]
-B[Type] --> B1[Display 28/34]
-B --> B2[Heading 20/26]
-B --> B3[Body 16/24]
-B --> B4[Meta 13/18]
-C[Space] --> C1[4]
-C --> C2[8]
-C --> C3[16]
-C --> C4[24]
-C --> C5[32]
-D[Shape] --> D1[Radius 8]
-D --> D2[Control 6]
-D --> D3[Border 1px]
-Rationale: semantic tokens separate design intent from values, enabling consistent revision and reuse.
-Quality gates: WCAG AA contrast, readable type, scale-based spacing, semantic names, and documented deprecated aliases.
-Repository path intent: /projects/project-001/sections/e/token-map.mmd
-Writing and publishing rules: use sentence case, concise labels, one action per control, stable token names, and no raw values outside token definitions; publish after contrast and regression checks.
+mindmap
+  root((project-001 tokens))
+    Color
+      canvas #F7F8FA
+      surface #FFFFFF
+      text #1F2937
+      muted #667085
+      border #C8CED8
+      accent #315EFB
+      critical #C2413B
+    Type
+      family system sans
+      body 16
+      small 14
+      heading 24
+      line-height 1.4
+    Space
+      xs 4
+      sm 8
+      md 16
+      lg 24
+      xl 32
+    Shape
+      radius 6
+      card-radius 8
+      stroke 1
+    Motion
+      duration 160ms
+      easing ease-out
+      reduced-motion preserves clarity
+    Gates
+      contrast AA
+      visible focus
+      token-only styling
+      documented exceptions
