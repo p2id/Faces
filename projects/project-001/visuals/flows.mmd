@@ -1,14 +1,16 @@
 flowchart TD
-  A[Entry surface] --> B[Review context]
-  B --> C{Input required?}
-  C -- No --> D[View result]
-  C -- Yes --> E[Enter or select value]
-  E --> F{Valid?}
-  F -- No --> G[Show inline guidance]
-  G --> E
-  F -- Yes --> H[Confirm action]
-  H --> I{Complete?}
-  I -- Yes --> J[Show success state]
-  I -- No --> K[Show pending or recovery state]
-  K --> L[Retry or return]
-  L --> B
+  A[Open product surface] --> B{Content available?}
+  B -->|yes| C[Review structured content]
+  B -->|no| D[Show empty guidance]
+  C --> E{Action valid?}
+  E -->|yes| F[Show confirmed state]
+  E -->|no| G[Show inline correction]
+  F --> H[Offer next relevant surface]
+  G --> C
+  D --> H
+  H --> I[Preserve context and focus]
+  I --> J[Complete or exit]
+  classDef decision fill:#fff4cc,stroke:#8a6d1d,color:#1f2937;
+  classDef state fill:#eef2ff,stroke:#315EFB,color:#1f2937;
+  class B,E decision;
+  class D,F,G,I state;
