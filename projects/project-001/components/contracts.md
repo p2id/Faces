@@ -1,49 +1,9 @@
-# Section D — Component Contracts
-
-## Button
-- Anatomy: label, optional icon, optional loading indicator.
-- Variants: primary, secondary, tertiary, danger, icon-only.
-- States: default, hover, focus-visible, pressed, disabled, loading, selected.
-- Usage: trigger one clearly labeled action.
-- Anti-patterns: vague labels, nested buttons, icon-only control without a name.
-- Accessibility: native button semantics, keyboard operation, stable loading label and dimensions.
-
-## Text Input
-- Anatomy: label, field, hint, validation message, optional adornment.
-- Variants: single-line, search, multiline, readonly.
-- States: empty, filled, hover, focus, valid, invalid, disabled, readonly, loading.
-- Usage: collect one clearly defined value.
-- Anti-patterns: placeholder as label, detached errors, unlabeled adornments.
-- Accessibility: associated label and description, exposed invalid state, autocomplete where applicable.
-
-## Select
-- Anatomy: label, trigger, value, option list, hint, validation message.
-- Variants: single, multi-select, grouped.
-- States: closed, open, empty, selected, focus, invalid, disabled, loading.
-- Usage: select from a finite set.
-- Anti-patterns: using for free text, hidden options, color-only status.
-- Accessibility: native semantics where suitable; expose expanded, selected, disabled, and keyboard states.
-
-## Data Table
-- Anatomy: caption, headers, rows, cells, sorting, pagination.
-- Variants: compact, standard, selectable, responsive-card fallback.
-- States: loading, populated, sorted, filtered, selected, empty, error, paginated.
-- Usage: compare structured values.
-- Anti-patterns: clipped headings, ambiguous sorting, unannounced updates, unlabeled row actions.
-- Accessibility: semantic headers, accessible caption, announced sorting/filter results, named row actions.
-
-## Modal
-- Anatomy: backdrop, title, description, content, actions, close control.
-- Variants: confirmation, form, informational.
-- States: closed, opening, open, submitting, success, error, closing.
-- Usage: focused decisions or required information.
-- Anti-patterns: nested modals, routine content in modals, destructive action without confirmation.
-- Accessibility: dialog name, focus management, Escape support, focus restoration, usable backdrop contrast.
-
-## Toast and Banner
-- Anatomy: status indicator, message, optional action, dismissal control.
-- Variants: informational, success, warning, error.
-- States: hidden, visible, dismissing, persistent.
-- Usage: toast for transient status; banner for persistent page-relevant status.
-- Anti-patterns: critical content only in toast, auto-dismissed errors, competing notifications.
-- Accessibility: suitable live-region behavior, sufficient duration, explicit dismissal, status beyond color.
+# Component Contracts
+- Button: anatomy = label plus optional icon; variants = primary, secondary, quiet, destructive; states = default, hover, focus, pressed, loading, success, error, disabled; usage = one clear action per group; anti-patterns = unlabeled icon, vague label, nested button; accessibility = native button, accessible name, busy state, keyboard support.
+- Field: anatomy = label, control, hint, error; variants = text, search, select, multiline; states = empty, filled, focus, valid, invalid, disabled, read-only; usage = persistent label and actionable validation; anti-patterns = placeholder-only label, color-only error; accessibility = label association and hint/error description.
+- Card: anatomy = heading, content, metadata, optional action; variants = static, interactive, selected; states = default, hover, focus, selected, loading, disabled; usage = group related information; anti-patterns = unclear whole-card action, excessive nesting; accessibility = logical heading and one clear target.
+- Badge: anatomy = concise text; variants = neutral, info, success, warning, danger; states = visible, disabled; usage = supplemental status; anti-patterns = color-only meaning, long sentence; accessibility = meaningful text and contrast.
+- Table: anatomy = caption, headers, rows, cells, pagination; variants = compact, standard; states = loading, populated, empty, error, sorted, selected; usage = compare structured data; anti-patterns = layout table, unlabeled row actions; accessibility = semantic headers and exposed sort/selection state.
+- Dialog: anatomy = title, description, content, actions, close; variants = alert, form, confirmation; states = closed, opening, open, submitting, success, error, closing; usage = interrupt only when needed; anti-patterns = stacked dialogs, destructive default; accessibility = labeled dialog, focus containment, Escape close, focus restoration.
+- Navigation: anatomy = landmark, label, list, items, current marker; variants = sidebar, compact, tabs; states = default, active, hover, focus, disabled; usage = stable section movement; anti-patterns = hover-only access, duplicate unlabeled landmarks; accessibility = navigation label and current/selected semantics.
+- Toast: anatomy = status icon, message, action, dismiss; variants = info, success, warning, danger; states = entering, visible, action-focus, dismissing, expired; usage = transient nonblocking feedback; anti-patterns = critical error only in toast, forced dismissal; accessibility = live status and keyboard-accessible actions.
