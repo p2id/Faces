@@ -1,17 +1,16 @@
-# Section D — Accessibility Targets
-- Target WCAG 2.2 AA.
-- All functionality is keyboard operable with a visible focus indicator.
-- Normal text contrast is at least 4.5:1; large text is at least 3:1.
-- Non-text controls and boundaries meet 3:1 contrast.
-- Interactive targets are at least 44×44 CSS px.
-- Use landmarks, one page-level heading, logical heading order, and reading order.
-- Every control has an accessible name; icon-only controls have explicit labels.
-- Labels, descriptions, and validation messages are programmatically associated.
-- Loading, success, warning, and error changes use suitable live-region behavior.
-- Dialogs move focus inward, constrain focus while open, support Escape, and restore focus.
-- Tables expose captions, headers, relationships, sorting, filtering, and row-action names.
-- Tabs expose tablist, tab, tabpanel, selected, and keyboard behavior.
-- Status is not communicated by color alone.
-- Support 200% zoom, reflow, narrow viewports, and reduced-motion preferences.
-- Avoid flashing content; provide text alternatives for meaningful non-text content.
-- Error messages identify the affected control, issue, and corrective action.
+# Accessibility Targets
+- Meet WCAG 2.2 AA.
+- Text contrast: minimum 4.5:1 normal and 3:1 large text.
+- Non-text contrast: minimum 3:1 for controls, boundaries, and focus.
+- Focus indicator: visible, minimum 2px equivalent, not obscured.
+- Keyboard: all controls, menus, dialogs, tabs, fields, and tables operable by keyboard.
+- Focus management: logical order, modal containment, restoration after close.
+- Target size: minimum 44×44 CSS px.
+- Reflow: usable at 200% zoom and 320px CSS width.
+- Semantics: native controls or correct roles, names, values, and relationships.
+- Status: announce loading, validation, success, and errors without losing context.
+- Errors: identify location, explain correction, preserve entered values.
+- Color: never use color as the sole meaning.
+- Motion: honor prefers-reduced-motion; no essential meaning depends on animation.
+- Language: declare document language and use readable sentence-case text.
+- Data structures: expose table headers, tab selection, dialog labeling, and menu relationships.
