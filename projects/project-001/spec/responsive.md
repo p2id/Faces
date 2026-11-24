@@ -1,21 +1,17 @@
-# Section C — Responsive Rules
-## Breakpoints
-- xs: 0–479px
-- sm: 480–767px
-- md: 768–1023px
-- lg: 1024–1439px
-- xl: 1440px+
+# Breakpoints
+- Base: 0–359px; one column, 16px page padding.
+- Small: 360–767px; one column, 16–20px padding.
+- Medium: 768–1199px; two-column layouts where useful, 24px padding.
+- Large: 1200–1439px; max content width 1120px, 32px padding.
+- Wide: 1440px+; centered max width 1280px, 40px outer padding.
 
 ## Rules
-- Use fluid widths with a 1200px maximum content width.
-- xs: single column, stacked actions, full-width controls.
-- sm: single column; allow two-up cards at 160px minimum card width.
-- md: optional two-column layout; navigation may collapse.
-- lg: persistent navigation and two-column detail layouts.
-- xl: expand collections while preserving readable text measure.
-- Collapse header actions into overflow below md.
-- Convert low-priority tables to cards below sm; permit horizontal scrolling only for dense tables.
-- Use 16px dialog edge margins on xs/sm; constrain dialogs above md.
-- Drawers use full width on xs and maximum 480px on md+.
-- Preserve 44×44px minimum interactive targets.
-- Preserve 24px page gutters at md and 32px at lg+.
+- Collapse header actions into overflow below 768px.
+- Convert navigation to compact selector or horizontal scroll below 768px.
+- Use one column below 768px, two at 768px, and three or four at 1200px.
+- Prioritize table columns; move secondary data to detail below 768px.
+- Use bottom-sheet dialogs and full-width drawers below 768px.
+- Maintain 44×44px minimum targets at every width.
+- Preserve reading order, focus order, contrast, and action prominence.
+- Avoid essential horizontal scrolling; allow only dense data regions to scroll.
+- Respect safe-area insets and reduced-motion preferences.
