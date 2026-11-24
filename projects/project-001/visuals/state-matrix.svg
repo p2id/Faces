@@ -1,19 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 430" role="img" aria-label="Product state matrix">
-<title>Product state matrix</title>
-<rect width="980" height="430" fill="#fff"/>
-<g font-family="Arial,sans-serif" font-size="14" fill="#263449">
-<rect x="24" y="24" width="932" height="48" fill="#e9edf3"/>
-<text x="44" y="54">Surface</text><text x="220" y="54">Initial</text><text x="370" y="54">Loading</text><text x="520" y="54">Empty</text><text x="670" y="54">Error</text><text x="820" y="54">Complete</text>
-<g stroke="#d9dee7" fill="none"><rect x="24" y="72" width="932" height="288"/><path d="M200 24v336M350 24v336M500 24v336M650 24v336M800 24v336M24 120h932M24 168h932M24 216h932M24 264h932M24 312h932"/></g>
-<text x="44" y="104">Shell</text><text x="220" y="104">Ready</text><text x="370" y="104">Progress</text><text x="520" y="104">Guidance</text><text x="670" y="104">Recovery</text><text x="820" y="104">Ready</text>
-<text x="44" y="152">Collection</text><text x="220" y="152">Items</text><text x="370" y="152">Placeholder</text><text x="520" y="152">Next step</text><text x="670" y="152">Retry</text><text x="820" y="152">Items</text>
-<text x="44" y="200">Detail</text><text x="220" y="200">Summary</text><text x="370" y="200">Placeholder</text><text x="520" y="200">Not found</text><text x="670" y="200">Retry</text><text x="820" y="200">Summary</text>
-<text x="44" y="248">Form</text><text x="220" y="248">Blank</text><text x="370" y="248">Submitting</text><text x="520" y="248">Prompt</text><text x="670" y="248">Inline fix</text><text x="820" y="248">Confirmation</text>
-<text x="44" y="296">Search</text><text x="220" y="296">Ready</text><text x="370" y="296">Progress</text><text x="520" y="296">No match</text><text x="670" y="296">Retry</text><text x="820" y="296">Results</text>
-<text x="44" y="344">Notice</text><text x="220" y="344">Hidden</text><text x="370" y="344">Hidden</text><text x="520" y="344">Hidden</text><text x="670" y="344">Actionable</text><text x="820" y="344">Dismissed</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 300" role="img" aria-label="Component state matrix">
+<title>Component state matrix</title>
+<rect width="960" height="300" fill="#fff"/>
+<g font-family="system-ui,sans-serif" font-size="16" fill="#1f2937">
+<text x="32" y="36" font-weight="700">Component</text><text x="216" y="36" font-weight="700">Default</text><text x="376" y="36" font-weight="700">Focus</text><text x="536" y="36" font-weight="700">Busy</text><text x="696" y="36" font-weight="700">Empty</text><text x="816" y="36" font-weight="700">Error</text>
+<text x="32" y="96">Navigation</text><text x="216" y="96">visible</text><text x="376" y="96">outline</text><text x="536" y="96">stable</text><text x="696" y="96">hidden</text><text x="816" y="96">notice</text>
+<text x="32" y="152">Card</text><text x="216" y="152">content</text><text x="376" y="152">outline</text><text x="536" y="152">skeleton</text><text x="696" y="152">prompt</text><text x="816" y="152">message</text>
+<text x="32" y="208">Control</text><text x="216" y="208">enabled</text><text x="376" y="208">outline</text><text x="536" y="208">disabled</text><text x="696" y="208">available</text><text x="816" y="208">inline</text>
 </g>
+<g stroke="#c8ced8" fill="none"><path d="M24 52H936M24 108H936M24 164H936M24 220H936M24 260H936"/><path d="M24 20V260M200 20V260M360 20V260M520 20V260M680 20V260M800 20V260M936 20V260"/></g>
+<text x="32" y="286" font-family="system-ui,sans-serif" font-size="13" fill="#667085">Coverage: default, focus, busy, empty, error, disabled, selected, and recovery.</text>
 </svg>
-Rationale: the matrix makes state completeness reviewable and prevents default-state coverage from masking operational gaps.
-Quality gates: every surface defines initial, loading, empty, error, and completion behavior; recovery is actionable; status does not depend on color alone.
-Repository path intent: /projects/project-001/sections/e/state-matrix.svg
-Publishing rule: update on every surface, state, or transition change; do not publish undefined terminal states.
