@@ -1,6 +1,6 @@
-Positioning: Efficient, utility-led, and information-dense; prioritizes retrieval and comparison.
-Palette rationale: Cool gray foundation, white content planes, dark text, and a high-contrast green accent reserved for positive or completed states.
-Type rationale: Legible sans-serif with tabular numerals, concise labels, and clear scale differences between controls, headings, and metadata.
-Layout rules: Compact toolbar, persistent filters, dense list or split pane on wide screens, stacked rows on small screens, stable action placement.
-Motion intent: Minimal state feedback through color, border, and short transitions near 120ms; movement is never required for comprehension.
-Avoided traps: Small targets, filter overload, hidden horizontal overflow, unexplained badges, and noisy status colors.
+Positioning: Structured insight from compact overview to focused detail.
+Palette rationale: Cool gray foundation, indigo accent, and muted semantic tones create analytical focus without visual saturation.
+Type rationale: Legible sans-serif with tabular numerals and strong size contrast improves comparison of dates, quantities, and summaries.
+Layout rules: Place summary before grouped records; keep filters visible or clearly summarized; use split view on desktop, stacked content on tablet, and disclosure rows on mobile.
+Motion intent: Use gentle expansion, filter acknowledgment, and loading transitions; avoid decorative loops and motion-only alerts.
+Avoided traps: Equal-weight widgets, excessive charts, tiny labels, dense unprioritized tables, and persistent notification noise.
