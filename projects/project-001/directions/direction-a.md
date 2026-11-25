@@ -1,6 +1,6 @@
-Positioning: Calm operational clarity for planning, review, and lightweight coordination.
-Palette rationale: Warm off-white canvas, graphite text, slate surfaces, cobalt accent, and reserved semantic colors support focus and clear status.
-Type rationale: Neutral sans-serif with readable numerals, moderate x-height, and two primary weights supports scanning and compact controls.
-Layout rules: Keep title and context visible; place the primary action at the top on wide screens and first in the mobile flow; use one dominant content region with an optional detail rail.
-Motion intent: Use brief transitions for panel changes, confirmation, and reorder; honor reduced-motion preferences.
-Avoided traps: Calendar clutter, color-only meaning, oversized headers, hidden filters, premature automation, and irreversible actions.
+Positioning: Calm command surface for prioritizing time-bound work and revealing the next meaningful state.
+Palette rationale: Warm white and graphite surfaces with slate structure and restrained blue accent; amber and red reserved for exception states.
+Type rationale: Neutral sans serif, strong numeric alignment, compact labels, and a two-level heading hierarchy for fast scanning.
+Layout rules: Persistent wide-screen navigation; summary strip above a two-column workspace; 1200px content cap; filters adjacent to results; single-column mobile collapse.
+Motion intent: 150–200ms opacity and position transitions for state changes; no looping motion; honor reduced-motion preferences.
+Avoided traps: dashboard clutter, excessive metric tiles, ambiguous status colors, hover-only controls, nested modals, and ornamental gradients.
