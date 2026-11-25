@@ -1,17 +1,20 @@
-# Breakpoints
-- Base: 0–359px; one column, 16px page padding.
-- Small: 360–767px; one column, 16–20px padding.
-- Medium: 768–1199px; two-column layouts where useful, 24px padding.
-- Large: 1200–1439px; max content width 1120px, 32px padding.
-- Wide: 1440px+; centered max width 1280px, 40px outer padding.
+Breakpoints:
+- xs: 0–479px.
+- sm: 480–767px.
+- md: 768–1023px.
+- lg: 1024–1279px.
+- xl: 1280px and above.
 
-## Rules
-- Collapse header actions into overflow below 768px.
-- Convert navigation to compact selector or horizontal scroll below 768px.
-- Use one column below 768px, two at 768px, and three or four at 1200px.
-- Prioritize table columns; move secondary data to detail below 768px.
-- Use bottom-sheet dialogs and full-width drawers below 768px.
-- Maintain 44×44px minimum targets at every width.
-- Preserve reading order, focus order, contrast, and action prominence.
-- Avoid essential horizontal scrolling; allow only dense data regions to scroll.
-- Respect safe-area insets and reduced-motion preferences.
+Rules:
+- Grid: 4 columns xs/sm, 8 columns md, 12 columns lg/xl.
+- Page padding: 16px xs/sm, 24px md, 32px lg/xl.
+- Collapse header actions below 768px.
+- Convert detail view to a full-width section below 768px.
+- Stack multi-column content below 768px.
+- Convert tables to labelled stacked rows below 640px.
+- Wrap filters below 1024px; use horizontal control scrolling below 480px.
+- Use full-width cards below 768px.
+- Keep interactive targets at least 44×44px.
+- Use 16px dialog side margins below 480px.
+- Prevent page-level horizontal scrolling.
+- Preserve readable line length and content order at every width.
