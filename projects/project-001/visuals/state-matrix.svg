@@ -1,12 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 300" role="img" aria-label="Component state matrix">
-<title>Component state matrix</title>
-<rect width="960" height="300" fill="#fff"/>
-<g font-family="system-ui,sans-serif" font-size="16" fill="#1f2937">
-<text x="32" y="36" font-weight="700">Component</text><text x="216" y="36" font-weight="700">Default</text><text x="376" y="36" font-weight="700">Focus</text><text x="536" y="36" font-weight="700">Busy</text><text x="696" y="36" font-weight="700">Empty</text><text x="816" y="36" font-weight="700">Error</text>
-<text x="32" y="96">Navigation</text><text x="216" y="96">visible</text><text x="376" y="96">outline</text><text x="536" y="96">stable</text><text x="696" y="96">hidden</text><text x="816" y="96">notice</text>
-<text x="32" y="152">Card</text><text x="216" y="152">content</text><text x="376" y="152">outline</text><text x="536" y="152">skeleton</text><text x="696" y="152">prompt</text><text x="816" y="152">message</text>
-<text x="32" y="208">Control</text><text x="216" y="208">enabled</text><text x="376" y="208">outline</text><text x="536" y="208">disabled</text><text x="696" y="208">available</text><text x="816" y="208">inline</text>
-</g>
-<g stroke="#c8ced8" fill="none"><path d="M24 52H936M24 108H936M24 164H936M24 220H936M24 260H936"/><path d="M24 20V260M200 20V260M360 20V260M520 20V260M680 20V260M800 20V260M936 20V260"/></g>
-<text x="32" y="286" font-family="system-ui,sans-serif" font-size="13" fill="#667085">Coverage: default, focus, busy, empty, error, disabled, selected, and recovery.</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 220" role="img" aria-label="Generic interface state matrix">
+<title>project-001 state matrix</title>
+<g fill="none" stroke="#243447" stroke-width="2"><rect x="20" y="30" width="140" height="52" rx="7"/><rect x="180" y="30" width="140" height="52" rx="7"/><rect x="340" y="30" width="140" height="52" rx="7"/><rect x="500" y="30" width="140" height="52" rx="7"/><rect x="660" y="30" width="140" height="52" rx="7"/><path d="M160 56h20M320 56h20M480 56h20M640 56h20"/><rect x="100" y="140" width="140" height="52" rx="7"/><rect x="350" y="140" width="140" height="52" rx="7"/><rect x="600" y="140" width="140" height="52" rx="7"/></g>
+<g font-family="sans-serif" font-size="14" fill="#243447" text-anchor="middle"><text x="90" y="61">Default</text><text x="250" y="61">Focus</text><text x="410" y="61">Progress</text><text x="570" y="61">Complete</text><text x="730" y="61">Unavailable</text><text x="170" y="171">Empty</text><text x="420" y="171">Error</text><text x="670" y="171">Disabled</text></g>
 </svg>
+Rationale: The matrix makes normal, transient, exceptional, and unavailable conditions explicit.
+Quality gates: every interactive element defines all applicable states; status is not color-only; recovery or exit behavior is specified; layout remains stable.
+Path intent: repository/design/2026-11-25/project-001/state-matrix.svg.
+Publishing rule: reject missing states, ambiguous status, or absent recovery guidance.
