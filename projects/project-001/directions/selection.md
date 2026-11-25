@@ -1,5 +1,5 @@
 Selected direction: Direction A.
-Rationale: It best balances clarity, reuse, accessibility, responsive resilience, and visual restraint for the locked planning and scheduling domain.
-Selection criteria: predictable hierarchy, low cognitive load, semantic color discipline, efficient mobile collapse, and clear reversible actions.
-Guardrails: Use neutral surfaces, one accent, explicit labels, visible focus, non-color status cues, reduced-motion support, and one primary action per view.
-Fallback: Use Direction C when creation and revision dominate; use Direction B when reporting and comparison dominate.
+Rationale: Provides the strongest balance of clarity, neutrality, responsive resilience, accessibility, and domain transfer while expressing the selected operational-planning domain.
+Secondary direction: Direction B for comparison-heavy screens.
+Constraint: Direction C may inform search and review states but does not replace the primary shell.
+Selection lock: Apply Direction A as the baseline for 2026-11-25 and project-001.
