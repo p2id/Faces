@@ -1,16 +1,15 @@
-# Accessibility Targets
-- Meet WCAG 2.2 AA.
-- Text contrast: minimum 4.5:1 normal and 3:1 large text.
-- Non-text contrast: minimum 3:1 for controls, boundaries, and focus.
-- Focus indicator: visible, minimum 2px equivalent, not obscured.
-- Keyboard: all controls, menus, dialogs, tabs, fields, and tables operable by keyboard.
-- Focus management: logical order, modal containment, restoration after close.
-- Target size: minimum 44×44 CSS px.
-- Reflow: usable at 200% zoom and 320px CSS width.
-- Semantics: native controls or correct roles, names, values, and relationships.
-- Status: announce loading, validation, success, and errors without losing context.
-- Errors: identify location, explain correction, preserve entered values.
-- Color: never use color as the sole meaning.
-- Motion: honor prefers-reduced-motion; no essential meaning depends on animation.
-- Language: declare document language and use readable sentence-case text.
-- Data structures: expose table headers, tab selection, dialog labeling, and menu relationships.
+Targets:
+- WCAG 2.2 AA conformance.
+- Text contrast at least 4.5:1; large text at least 3:1.
+- Non-text contrast at least 3:1 for controls, boundaries, and focus indicators.
+- Interactive target size at least 44×44 CSS px.
+- Visible keyboard focus: minimum 2px outline with 3:1 contrast.
+- Full keyboard access with logical order and no keyboard traps.
+- Use semantic landmarks, headings, lists, tables, buttons, and form controls.
+- Labels remain visible; descriptions and errors are programmatically associated.
+- Dialogs provide labelled titles, controlled focus, escape handling, and focus return.
+- Announce status changes politely; reserve assertive announcements for urgent errors.
+- Never rely on color, position, shape, or motion alone.
+- Support 200% zoom, 320px reflow, and prefers-reduced-motion.
+- Provide skip navigation, descriptive page titles, and meaningful accessible names.
+- Hide decorative icons from assistive technology.
