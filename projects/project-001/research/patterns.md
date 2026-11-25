@@ -1,59 +1,58 @@
-Date: 2026-11-24
-Project: project-001
+Project ID: project-001 | Date: 2026-11-25
 
-Dominant patterns:
-- Calm utility: neutral surfaces, strong hierarchy, restrained decoration.
-- Modular composition: grouped controls, cards, panels, and progressive disclosure.
-- Direct interaction: visible actions, inline feedback, reversible changes.
-- Priority-based responsiveness: preserve task order instead of shrinking everything equally.
+DOMINANT PATTERNS
+- Structured workspace with stable navigation, clear title, summary status, focused content, and persistent primary action.
+- Neutral surfaces, one controlled accent, restrained borders, moderate density, and consistent spacing.
+- Progressive disclosure through summaries, expandable details, inline validation, and reversible actions.
+- Responsive cards, lists, and tables that preserve hierarchy across viewport sizes.
 
-Emerging patterns:
-- Contextual empty states with useful next actions.
-- Persistent overview paired with focused detail.
-- Tokenized themes with semantic status colors.
-- Motion limited to confirmation and state change.
+EMERGING PATTERNS
+- Command-style search for navigation, filtering, and quick access.
+- Preview-before-commit with visible change summaries.
+- Semantic status tokens combining color, icon, and text.
+- Content-driven layout adaptation using flexible containers.
 
-Deprecated patterns:
-- Low-contrast decorative gradients.
-- Gesture-only navigation.
-- Equal-weight dashboard widgets.
-- Auto-advancing content and irreversible primary actions.
+DEPRECATED PATTERNS
+- Decorative gradients without functional purpose.
+- Deep navigation trees, modal stacking, and hover-only controls.
+- Color-only status communication.
+- Persistent animation, autoplay content, and ornamental illustration.
 
-Outlier patterns:
-- Extremely sparse focus views.
-- Split-pane overview/detail layouts.
-- Monochrome interfaces with one accent.
-- Timeline structures applied beyond calendar contexts.
+OUTLIER PATTERNS
+- Split-pane comparison for review-heavy contexts.
+- Timeline or dependency views where sequence is primary.
+- Monochrome interfaces with a single high-salience exception state.
+- Keyboard-first command surfaces for expert operation.
 
-Extracted DNA:
-- Visual: neutral canvas, one accent, semantic status colors, 8px spacing rhythm, moderate radii, thin borders, restrained elevation.
-- Interactional: one primary action per view, persistent context, inline validation, predictable keyboard order, reversible destructive actions.
-- Accessibility: strong contrast, visible focus, labeled icons, 44px minimum targets, non-color status cues, reduced-motion support.
-- Responsive: 12-column desktop grid, 8-column tablet adaptation, single-column mobile flow, preserved priority order, limited horizontal overflow.
+EXTRACTED DNA
+Visual: neutral surfaces, 8px spacing base, 1px dividers, 10–14px radius, one accent family, high-contrast text, restrained elevation.
+Interactional: direct manipulation, predictable focus order, explicit confirmation for consequential actions, undo or cancel where practical, and visible empty, loading, and error states.
+Accessibility: WCAG 2.2 AA target, 4.5:1 body-text contrast, 3:1 large-text and graphical contrast, 44px minimum touch target, keyboard parity, reduced-motion support, semantic labels, and no color-only meaning.
+Responsive: mobile-first priority, single-column layout below 720px, two-column composition from 960px, capped reading width, stacked replacement for wide tables, and persistent primary action.
 
-Candidate domains:
-- Planning and scheduling: organizes time-based items with clear priority, status, and detail views.
-- Catalog and inventory: manages browsable records, filters, quantities, and item details.
-- Analytics and reporting: presents summaries, comparisons, trends, and drill-down information.
-- Learning and reference library: organizes searchable resources through categories, progress, and detail.
-- Budget and resource tracking: records allocations, usage, thresholds, and historical changes.
-- Form and application builder: structures creation, validation, review, and revision steps.
+CANDIDATE PRODUCT DOMAINS
+- Operational planning: organizes time-bound items, priorities, dependencies, and progress.
+- Resource inventory: tracks categorized records, availability, condition, and movement.
+- Knowledge reference: structures indexed content, summaries, relationships, and revisions.
+- Financial overview: presents categorized values, trends, thresholds, and period comparisons.
+- Quality monitoring: surfaces measurements, deviations, thresholds, and review states.
+- Configuration catalog: presents reusable settings, versions, validation, and publication states.
 
-Weighted scoring matrix:
-Weights: clarity 30%, extensibility 25%, responsive fit 20%, accessibility fit 15%, distinctiveness 10%.
-Domain | Clarity | Extensibility | Responsive | Accessibility | Distinctiveness | Total
-Planning and scheduling | 9 | 9 | 8 | 9 | 7 | 8.55
-Catalog and inventory | 8 | 9 | 8 | 8 | 7 | 8.15
-Analytics and reporting | 8 | 8 | 7 | 8 | 8 | 7.85
-Learning and reference library | 8 | 8 | 9 | 9 | 6 | 8.15
-Budget and resource tracking | 8 | 8 | 8 | 8 | 7 | 7.95
-Form and application builder | 9 | 8 | 8 | 9 | 7 | 8.35
+WEIGHTED SCORING MATRIX
+Weights: clarity 25, reuse 25, responsive fit 20, accessibility fit 15, distinction 15. Scores 1–5; total = weighted score / 5.
+Domain                    Clarity Reuse Responsive Access Distinction Total
+Operational planning          5      5       5         5        4       4.85
+Resource inventory            5      5       4         5        3       4.55
+Knowledge reference           4      5       5         5        3       4.40
+Financial overview            4      4       4         5        4       4.15
+Quality monitoring            4      4       5         4        4       4.20
+Configuration catalog         4      5       4         4        4       4.25
 
-Selected domain rationale:
-Planning and scheduling leads because it tests hierarchy, responsive prioritization, semantic states, progressive disclosure, and reversible interaction without requiring specialized visual language.
+SELECTED DOMAIN RATIONALE
+Operational planning offers the strongest combination of hierarchy, status visibility, filtering, chronology, responsive transformation, and reusable interaction patterns while remaining generic and neutral.
 
-Cycle lock:
-Lock planning and scheduling for this cycle; preserve the extracted DNA and selected direction unless clarity, accessibility, or responsive fit materially fails.
+CYCLE LOCK
+Lock operational planning as the reference domain for 2026-11-25 and project-001. Preserve the extracted DNA, scoring weights, and selected rationale for this cycle.
 
-Fallback rule:
-If the selected domain or direction fails two or more weighted criteria, switch to form and application builder while preserving tokens, accessibility rules, and interaction principles.
+FALLBACK RULE
+If the selected domain fails neutrality, accessibility, or responsive validation, use resource inventory without changing the extracted DNA.
