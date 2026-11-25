@@ -1,35 +1,32 @@
 mindmap
   root((project-001 tokens))
     Color
-      canvas #F7F8FA
-      surface #FFFFFF
-      text #1F2937
-      muted #667085
-      border #C8CED8
-      accent #315EFB
-      critical #C2413B
+      canvas: #F7F9FB
+      surface: #FFFFFF
+      text: #17212B
+      muted: #5B6875
+      accent: #2457D6
+      positive: #167A52
+      critical: #B42318
+      border: #CBD5E1
     Type
-      family system sans
-      body 16
-      small 14
-      heading 24
-      line-height 1.4
+      family: system sans
+      body: 1rem/1.5
+      label: .875rem/1.25
+      heading: 1.5rem/1.2
     Space
-      xs 4
-      sm 8
-      md 16
-      lg 24
-      xl 32
+      unit: 4px
+      control: 40px
+      panel: 24px
+      section: 32px
     Shape
-      radius 6
-      card-radius 8
-      stroke 1
+      radius-sm: 6px
+      radius-md: 10px
+      focus-ring: 2px
     Motion
-      duration 160ms
-      easing ease-out
-      reduced-motion preserves clarity
-    Gates
-      contrast AA
-      visible focus
-      token-only styling
-      documented exceptions
+      duration: 160ms
+      easing: ease-out
+Rationale: Semantic tokens reduce visual drift and support responsive reuse.
+Quality gates: names are semantic; contrast intent meets WCAG AA; repeated values use tokens; reduced motion is defined.
+Path intent: repository/design/2026-11-25/project-001/tokens.mmd.
+Publishing rule: token changes require impact notes and updated specimens.
