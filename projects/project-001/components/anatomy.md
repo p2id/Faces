@@ -1,37 +1,41 @@
-# Shared Anatomy
-- Page shell: skip link, header, navigation, main landmark, optional footer.
-- Header: product label, section title, search, primary action, overflow action.
-- Navigation: labeled landmark, ordered items, active indicator, collapse control.
-- Section: heading, supporting text, content group, local actions.
-- Control group: visible label, control, hint, validation message, status.
-- Data view: caption or heading, field labels, values, statuses, empty state.
-- Overlay: backdrop, title, description, content, actions, close control.
+System anatomy:
+- Shell: skip link, header, navigation, main landmark, detail region, notification region.
+- Header: page title, contextual actions, responsive overflow.
+- Workspace: summary, control group, content region, pagination or progressive loading.
+- Item: semantic heading, description, status, metadata, action affordance.
+- Form: grouped fields, labels, hints, validation messages, action row.
+- Overlay: backdrop, panel, title, content, actions, close behavior.
+- Feedback: status text, recovery action, dismissal control.
 
-## Variants
+Variants:
 - Density: comfortable, compact.
-- Emphasis: primary, secondary, quiet, destructive.
-- Layout: inline, stacked, split, full-width.
-- Surface: flat, bordered, raised.
-- Content: loading, populated, empty, error.
+- Layout: list, grid, split detail.
+- Theme: light, high-contrast-compatible.
+- Content: populated, empty, filtered-empty, loading, error.
 
-## States
-- Interactive elements: default, hover, focus-visible, pressed or selected, disabled, loading, success, error.
-- Content surfaces: loading, populated, empty, error, offline.
-- State changes preserve context, announce meaningful updates, and do not rely on color alone.
+States:
+- Available, hover, pressed, focus-visible, selected, disabled, loading, success, warning, error, restricted, reduced-motion.
 
-## Usage
-- Use one primary action per surface.
-- Keep labels specific: “Save changes”, “Try again”, “View details”.
-- Group related information and maintain consistent alignment.
-- Use progressive disclosure for secondary detail.
-- Preserve entered values and selections after validation failure.
+Usage:
+- Compose surfaces from semantic landmarks and reusable components.
+- Keep hierarchy consistent: page title, section heading, item heading.
+- Use progressive disclosure for secondary details.
+- Keep primary actions and feedback in stable locations.
+- Place recovery actions near affected content.
 
-## Anti-Patterns
-- Avoid placeholder-only labels, unlabeled icons, hover-only information, nested interactive elements, layout shifts, irreversible actions without confirmation, and modal navigation.
-- Do not hide essential content behind color, animation, tooltip, or horizontal scrolling.
-- Do not represent unavailable data as complete, successful, or verified.
+Anti-patterns:
+- Decorative text used as structure.
+- Unlabelled icons or controls.
+- Modal use for routine editing.
+- Flashing content, infinite motion, or motion-only feedback.
+- Dense layouts requiring page-level horizontal scrolling.
+- Hidden errors, ambiguous status labels, or routine styling for destructive actions.
+- Nested interactive elements and duplicated accessible names.
 
-## Accessibility
-- Prefer semantic HTML before ARIA.
-- Provide names, roles, values, descriptions, focus order, keyboard operation, and status announcements.
-- Maintain WCAG 2.2 AA contrast, 44px targets, visible focus, 200% zoom, 320px reflow, and reduced-motion behavior.
+Accessibility:
+- Use semantic HTML and explicit control names.
+- Preserve keyboard order and visible focus across responsive layouts.
+- Pair visual status with text or an accessible description.
+- Support zoom, reflow, reduced motion, high contrast, and announcements.
+- Maintain 44×44px targets and WCAG 2.2 AA contrast.
+- Ensure empty, loading, and error states explain the condition and next action.
