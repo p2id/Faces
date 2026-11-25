@@ -1,26 +1,23 @@
-# Product Experience Specification
-- Date: 2026-11-24
-- Project ID: project-001
-- Purpose: neutral interface for viewing, filtering, and organizing product information.
+Project: project-001
+Date: 2026-11-25
 
-## Surfaces
-- Workspace: header, navigation, content, utility actions.
-- Detail: title, metadata, summary, structured information, actions.
-- Overlay: dialog, drawer, menu, toast, confirmation.
-- Status: loading, empty, offline, and error feedback.
+Surfaces:
+- Overview workspace: summary, controls, item collection, detail view.
+- Preferences surface: display density and layout settings.
+- Feedback surface: inline validation, banners, toasts, confirmation dialogs.
 
-## Sections
-- Header: “Product workspace”, “Search”, “Create item”.
-- Navigation: “Overview”, “Activity”, “Settings”.
-- Overview: “Project status”, “Active”, “Last updated 24 Nov 2026”.
-- Summary cards: “Open items 12”, “Completed 48”, “Next review 02 Dec 2026”.
-- Activity: “Specification updated”, “Validation completed”, “Review scheduled”.
-- Detail: “Project overview”, “Description”, “Status”, “Dates”.
-- Empty state: “No activity recorded yet.”, “Refresh”.
-- Error state: “Content could not be loaded.”, “Try again”.
-- Confirmation: “Remove this item?”, “Cancel”, “Remove”.
+Sections:
+1. Header: page title “Overview”; action “Add item”.
+2. Summary: “12 items”, “3 pending”, “Updated today”.
+3. Controls: search “Search items”; filter “All statuses”; sort “Recently updated”.
+4. Collection: item title, status, description, metadata, and actions.
+5. Detail view: “Item details”, editable fields, “Save changes”.
+6. Empty state: “No items found”; “Try changing the filters or search terms.”
+7. Preferences: “Display preferences”; “Comfortable”, “Compact”, “Automatic”.
+8. Confirmation: “Discard unsaved changes?”; “Keep editing”; “Discard”.
 
-## Content Rules
-- Use concise sentence-case labels and literal status values.
-- Store dates as 2026-11-24; display dates as 24 Nov 2026.
-- Do not imply unavailable data, completion, verification, or capability.
+Content rules:
+- Use sentence case, concise labels, and verb-led actions.
+- Pair status color with text or an accessible description.
+- Preserve entered values after validation errors.
+- Provide recovery actions for empty, loading, and error states.
