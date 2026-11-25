@@ -1,16 +1,16 @@
-# Performance Budgets
-- Critical CSS: ≤40 KB compressed.
+Budgets:
+- Critical CSS: ≤50 KB compressed.
 - Initial JavaScript: ≤170 KB compressed.
-- First-load transfer: ≤500 KB compressed, excluding optional media.
-- First Contentful Paint: ≤1.8 s.
-- Largest Contentful Paint: ≤2.5 s on mid-tier mobile.
-- Interaction to Next Paint: ≤200 ms.
+- Initial transfer: ≤500 KB compressed.
+- First Contentful Paint: ≤1.8s.
+- Largest Contentful Paint: ≤2.5s.
+- Interaction to Next Paint: ≤200ms.
 - Cumulative Layout Shift: ≤0.1.
-- Interactive readiness: ≤3.5 s on representative mobile.
-- Route transition: ≤500 ms perceived response.
-- Input acknowledgement: ≤100 ms.
-- Fonts: maximum two families and four loaded weights.
-- Images: responsive formats, explicit dimensions, lazy-load below fold.
-- Lists: virtualize collections over 100 rows.
-- Resilience: render shell and nonblocking status while optional content loads.
-- Test on 4G, mid-tier mobile CPU, 320px width, zoom, and reduced motion.
+- Interactive readiness: ≤3.5s.
+- Animation duration: ≤240ms; use no essential motion for reduced-motion users.
+- Lazy-load below-fold media and reserve media dimensions.
+- Use system font fallback and limit font weights.
+- Virtualize collections above 100 rows.
+- Defer non-critical overlays and secondary content.
+- Prevent layout shifts from banners, validation, loading, and dynamic content.
+- Cache static assets with immutable fingerprints.
