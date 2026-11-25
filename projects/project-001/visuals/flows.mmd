@@ -1,16 +1,16 @@
 flowchart TD
-  A[Open product surface] --> B{Content available?}
-  B -->|yes| C[Review structured content]
-  B -->|no| D[Show empty guidance]
-  C --> E{Action valid?}
-  E -->|yes| F[Show confirmed state]
-  E -->|no| G[Show inline correction]
-  F --> H[Offer next relevant surface]
-  G --> C
-  D --> H
-  H --> I[Preserve context and focus]
-  I --> J[Complete or exit]
-  classDef decision fill:#fff4cc,stroke:#8a6d1d,color:#1f2937;
-  classDef state fill:#eef2ff,stroke:#315EFB,color:#1f2937;
-  class B,E decision;
-  class D,F,G,I state;
+  A[Overview] --> B{Available content?}
+  B -- Yes --> C[Open detail]
+  B -- No --> D[Show empty guidance]
+  C --> E{Input valid?}
+  E -- No --> F[Show inline correction]
+  F --> C
+  E -- Yes --> G[Confirm action]
+  G --> H{Accepted?}
+  H -- Yes --> I[Show completion]
+  H -- No --> J[Show recoverable error]
+  J --> C
+Rationale: The flow covers entry, validation, confirmation, completion, empty content, and recovery without implementation detail.
+Quality gates: every branch has feedback; invalid input is preserved; completion differs from progress; recovery returns to a safe prior state; sequence is keyboard-compatible.
+Path intent: repository/design/2026-11-25/project-001/flows.mmd.
+Publishing rule: use stable node names, literal labels, and no implementation dependencies.
