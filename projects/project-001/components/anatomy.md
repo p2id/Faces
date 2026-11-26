@@ -1,41 +1,17 @@
-System anatomy:
-- Shell: skip link, header, navigation, main landmark, detail region, notification region.
-- Header: page title, contextual actions, responsive overflow.
-- Workspace: summary, control group, content region, pagination or progressive loading.
-- Item: semantic heading, description, status, metadata, action affordance.
-- Form: grouped fields, labels, hints, validation messages, action row.
-- Overlay: backdrop, panel, title, content, actions, close behavior.
-- Feedback: status text, recovery action, dismissal control.
+Page anatomy:
+- Shell: header, navigation, main, optional side panel, footer.
+- Header: page title, context label, primary action, utility actions.
+- Summary: metric cards, status badges, supporting text.
+- Filters: search, select controls, date field, clear action.
+- Content: heading, list/table, pagination, empty/error feedback.
+- Detail: title, grouped fields, metadata, action group.
+- Feedback: inline errors, banners, dialogs, toasts.
+- Responsive transformation: collapsed navigation, wrapped filters, card-based lists, detail below content.
 
-Variants:
-- Density: comfortable, compact.
-- Layout: list, grid, split detail.
-- Theme: light, high-contrast-compatible.
-- Content: populated, empty, filtered-empty, loading, error.
-
-States:
-- Available, hover, pressed, focus-visible, selected, disabled, loading, success, warning, error, restricted, reduced-motion.
-
-Usage:
-- Compose surfaces from semantic landmarks and reusable components.
-- Keep hierarchy consistent: page title, section heading, item heading.
-- Use progressive disclosure for secondary details.
-- Keep primary actions and feedback in stable locations.
-- Place recovery actions near affected content.
-
-Anti-patterns:
-- Decorative text used as structure.
-- Unlabelled icons or controls.
-- Modal use for routine editing.
-- Flashing content, infinite motion, or motion-only feedback.
-- Dense layouts requiring page-level horizontal scrolling.
-- Hidden errors, ambiguous status labels, or routine styling for destructive actions.
-- Nested interactive elements and duplicated accessible names.
-
-Accessibility:
-- Use semantic HTML and explicit control names.
-- Preserve keyboard order and visible focus across responsive layouts.
-- Pair visual status with text or an accessible description.
-- Support zoom, reflow, reduced motion, high contrast, and announcements.
-- Maintain 44×44px targets and WCAG 2.2 AA contrast.
-- Ensure empty, loading, and error states explain the condition and next action.
+Reusable component guidance:
+- Anatomy: label, content, supporting text, action area, feedback region as applicable.
+- Variants: compact, standard, emphasized, read-only, destructive.
+- States: loading, ready, empty, invalid, disabled, selected, success, error.
+- Usage: preserve hierarchy, group related controls, expose the next valid action.
+- Anti-patterns: competing primary actions, unexplained icons, hidden status, excessive decoration, unconfirmed irreversible actions.
+- Accessibility: semantic landmarks, logical reading order, visible focus, text alternatives, sufficient contrast, keyboard parity, 320px reflow, reduced-motion support.
