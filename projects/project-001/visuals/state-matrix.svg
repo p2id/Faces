@@ -1,9 +1,19 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 220" role="img" aria-label="Generic interface state matrix">
-<title>project-001 state matrix</title>
-<g fill="none" stroke="#243447" stroke-width="2"><rect x="20" y="30" width="140" height="52" rx="7"/><rect x="180" y="30" width="140" height="52" rx="7"/><rect x="340" y="30" width="140" height="52" rx="7"/><rect x="500" y="30" width="140" height="52" rx="7"/><rect x="660" y="30" width="140" height="52" rx="7"/><path d="M160 56h20M320 56h20M480 56h20M640 56h20"/><rect x="100" y="140" width="140" height="52" rx="7"/><rect x="350" y="140" width="140" height="52" rx="7"/><rect x="600" y="140" width="140" height="52" rx="7"/></g>
-<g font-family="sans-serif" font-size="14" fill="#243447" text-anchor="middle"><text x="90" y="61">Default</text><text x="250" y="61">Focus</text><text x="410" y="61">Progress</text><text x="570" y="61">Complete</text><text x="730" y="61">Unavailable</text><text x="170" y="171">Empty</text><text x="420" y="171">Error</text><text x="670" y="171">Disabled</text></g>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 420" role="img" aria-label="Generic component state matrix">
+<title>Generic component state matrix</title>
+<rect width="900" height="420" fill="#fff"/>
+<g fill="none" stroke="#b8c2cc">
+<rect x="24" y="24" width="852" height="360"/>
+<path d="M24 72h852M24 124h852M24 176h852M24 228h852M24 280h852M24 332h852M240 24v360M400 24v360M560 24v360M720 24v360"/>
+</g>
+<g font-family="sans-serif" font-size="13" fill="#263238">
+<text x="40" y="56">Element</text><text x="272" y="56">Default</text><text x="432" y="56">Focus</text><text x="592" y="56">Disabled</text><text x="752" y="56">Error</text>
+<text x="40" y="106">Control</text><text x="272" y="106">Ready</text><text x="432" y="106">Focus ring</text><text x="592" y="106">Unavailable</text><text x="752" y="106">Correction</text>
+<text x="40" y="158">Field</text><text x="272" y="158">Empty/value</text><text x="432" y="158">Active</text><text x="592" y="158">Read-only</text><text x="752" y="158">Message</text>
+<text x="40" y="210">Panel</text><text x="272" y="210">Loaded</text><text x="432" y="210">Selected</text><text x="592" y="210">Unavailable</text><text x="752" y="210">Recovery</text>
+<text x="40" y="262">Notice</text><text x="272" y="262">Informative</text><text x="432" y="262">Persistent</text><text x="592" y="262">Suppressed</text><text x="752" y="262">Actionable</text>
+<text x="40" y="314">View</text><text x="272" y="314">Content</text><text x="432" y="314">Transition</text><text x="592" y="314">Unavailable</text><text x="752" y="314">Retry</text>
+</g>
 </svg>
-Rationale: The matrix makes normal, transient, exceptional, and unavailable conditions explicit.
-Quality gates: every interactive element defines all applicable states; status is not color-only; recovery or exit behavior is specified; layout remains stable.
-Path intent: repository/design/2026-11-25/project-001/state-matrix.svg.
-Publishing rule: reject missing states, ambiguous status, or absent recovery guidance.
+Rationale: Explicit states prevent default-only specifications and support predictable behavior.
+Quality gates: default, focus, disabled, and error states exist; meaning does not depend on color; recovery text is defined.
+Repository intent: /projects/project-001/sections/e/state-matrix.svg is authoritative and aligns with token and flow names.
