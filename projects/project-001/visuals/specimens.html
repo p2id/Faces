@@ -1,11 +1,25 @@
-<section data-project="project-001" data-date="2026-11-22">
-<h1>Generic Product Experience</h1>
-<p class="status">Status: ready for review</p>
-<nav aria-label="Primary"><a href="#overview">Overview</a><a href="#details">Details</a><a href="#settings">Settings</a></nav>
-<main>
-<section id="overview"><h2>Overview</h2><p>Clear context, current status, and one primary next action.</p><button type="button">Primary action</button></section>
-<section id="details"><h2>Details</h2><label>Search <input type="search" placeholder="Search"></label><p role="status">No matching items.</p></section>
-<section id="settings"><h2>Settings</h2><label>Display mode <select><option>Standard</option><option>Compact</option></select></label></section>
-</main>
-<footer><small>Required checks: labels, keyboard order, visible focus, contrast, zoom, and reduced motion.</small></footer>
-</section>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Generic Product Specimens</title>
+<style>
+:root{--surface:#fff;--canvas:#f7f8fa;--content:#263238;--line:#cbd2db;--action:#2457a6}
+*{box-sizing:border-box}body{margin:0;background:var(--canvas);color:var(--content);font:16px/1.5 system-ui,sans-serif}
+main{max-width:880px;margin:auto;padding:32px}.panel{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:24px;margin:16px 0}
+label{display:block;font-weight:600;margin-bottom:6px}input{width:100%;padding:10px;border:1px solid var(--line);border-radius:5px}
+button{margin-top:16px;padding:10px 16px;border:0;border-radius:5px;background:var(--action);color:#fff}
+button:focus,input:focus{outline:3px solid #9ec5ff;outline-offset:2px}.notice{border-left:4px solid var(--action);padding:12px;background:#edf4ff}
+</style>
+</head>
+<body><main>
+<h1>Overview</h1>
+<section class="panel"><h2>Primary action</h2><p>Review the current state and continue when ready.</p><label for="value">Value</label><input id="value" name="value" aria-describedby="hint"><small id="hint">Use a concise value.</small><br><button type="button">Continue</button></section>
+<section class="panel"><h2>Informative state</h2><div class="notice" role="status">The current view is ready for review.</div></section>
+</main></body>
+</html>
+Rationale: The specimen demonstrates hierarchy, semantic labels, focus visibility, and a neutral status pattern.
+Quality gates: valid HTML; associated labels; visible focus; responsive width; no color-only meaning; no external dependencies.
+Repository intent: /projects/project-001/sections/h/specimens.html is a review reference, not a production implementation.
+Writing and publishing rules: use sentence case, concise neutral copy, accessible names, and no unresolved placeholders.
