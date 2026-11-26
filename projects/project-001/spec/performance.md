@@ -1,16 +1,14 @@
 Budgets:
-- Critical CSS: ≤50 KB compressed.
-- Initial JavaScript: ≤170 KB compressed.
-- Initial transfer: ≤500 KB compressed.
+- Initial JavaScript: ≤150 KB compressed.
+- Initial CSS: ≤40 KB compressed.
 - First Contentful Paint: ≤1.8s.
 - Largest Contentful Paint: ≤2.5s.
 - Interaction to Next Paint: ≤200ms.
 - Cumulative Layout Shift: ≤0.1.
-- Interactive readiness: ≤3.5s.
-- Animation duration: ≤240ms; use no essential motion for reduced-motion users.
-- Lazy-load below-fold media and reserve media dimensions.
-- Use system font fallback and limit font weights.
-- Virtualize collections above 100 rows.
-- Defer non-critical overlays and secondary content.
-- Prevent layout shifts from banners, validation, loading, and dynamic content.
-- Cache static assets with immutable fingerprints.
+- Main-thread blocking task: ≤50ms.
+- Above-the-fold images: ≤150 KB total.
+- Fonts: ≤2 families, ≤4 weights, ≤120 KB total.
+- Reserve media and async-content dimensions.
+- Defer noncritical panels and icons.
+- Prefer system fonts and CSS over image-based text.
+- Keep transitions ≤200ms; disable them for reduced motion.
