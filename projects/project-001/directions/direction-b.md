@@ -1,6 +1,6 @@
-Positioning: Quiet reference workspace for comparing priorities, dependencies, and progress with minimal visual noise.
-Palette rationale: Cool gray foundation with muted indigo accent; semantic states pair color with text and icon treatment.
-Type rationale: Legible sans serif, generous line height, tabular numerals, and clear separation between labels, values, and annotations.
-Layout rules: Split-pane comparison on wide screens; ordered single stream on narrow screens; visible filter and sort state; inline detail before overlays.
-Motion intent: Subtle pane resizing and inline expansion under 180ms; preserve spatial continuity; disable nonessential motion when requested.
-Avoided traps: oversized hero areas, dense ungrouped tables, hidden filter state, abrupt context changes, and color-only meaning.
+Positioning: Focused discovery surface for search, filtering, rapid scanning, and comparison.
+Palette rationale: Near-white base, pale grouped surfaces, graphite text, and restrained violet accent distinguish navigation, results, and selection without noise.
+Type rationale: Neutral sans-serif with generous line height; strong distinction among title, query, filter, and supporting metadata.
+Layout rules: Search anchors the header; filters remain visible; results support dense list and card modes; detail opens in a resizable adjacent panel; narrow layouts stack by priority.
+Motion intent: Immediate filter feedback, subtle selection transitions, and stable loading placeholders; no movement that changes reading order.
+Avoided traps: hidden filters, unexplained endless scrolling, ambiguous selection, tiny controls, abrupt context loss, and color-only feedback.
