@@ -1,15 +1,16 @@
 Targets:
-- WCAG 2.2 AA conformance.
-- Text contrast at least 4.5:1; large text at least 3:1.
-- Non-text contrast at least 3:1 for controls, boundaries, and focus indicators.
-- Interactive target size at least 44×44 CSS px.
-- Visible keyboard focus: minimum 2px outline with 3:1 contrast.
-- Full keyboard access with logical order and no keyboard traps.
-- Use semantic landmarks, headings, lists, tables, buttons, and form controls.
-- Labels remain visible; descriptions and errors are programmatically associated.
-- Dialogs provide labelled titles, controlled focus, escape handling, and focus return.
-- Announce status changes politely; reserve assertive announcements for urgent errors.
-- Never rely on color, position, shape, or motion alone.
-- Support 200% zoom, 320px reflow, and prefers-reduced-motion.
-- Provide skip navigation, descriptive page titles, and meaningful accessible names.
-- Hide decorative icons from assistive technology.
+- WCAG 2.2 AA.
+- Full keyboard operation and visible focus.
+- Text contrast ≥4.5:1; large text ≥3:1.
+- Non-text controls and meaningful graphics ≥3:1.
+- Interactive targets ≥44×44px.
+- Semantic header, navigation, main, aside, and footer landmarks.
+- One descriptive page heading with logical heading order.
+- Persistent visible labels for all fields; adjacent, specific errors.
+- Announce validation, async status, and toast updates with live regions.
+- Never use color alone for status, errors, or selection.
+- Dialogs provide a name, trap focus, support Escape, and restore focus.
+- Correct roles, names, values, and relationships for tables, tabs, menus, and lists.
+- Reflow at 320px CSS width; support zoom and text size to 200%.
+- Respect prefers-reduced-motion.
+- Provide accessible names for icon-only controls and meaningful alternatives for graphics.
