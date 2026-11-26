@@ -1,16 +1,11 @@
 # Audit trail
-- Project: `project-001`
-- Date: `2026-11-22`
-- Scope: layout, states, tokens, responsive rules, flows, specimens, and documentation.
-- Representation rationale: SVG provides portable visual structure; Mermaid expresses relationships and transitions; HTML demonstrates semantic specimens; Markdown records decisions, gates, and coverage.
-- Quality gates:
-  - [x] Generic, neutral, reusable language
-  - [x] No backend engineering or external dependencies
-  - [x] Default, loading, empty, error, validation, and recovery states
-  - [x] Compact, medium, and wide responsive behavior
-  - [x] Keyboard order, visible focus, contrast, zoom, target size, and reduced-motion requirements
-  - [x] Stable project id and date
-  - [x] Dedicated repository path intent
-- Writing rules: use concise, neutral, action-oriented labels; state outcomes and recovery options explicitly; avoid identity data, entity-specific claims, secrets, and unsupported status.
-- Publishing rules: publish only validated artifacts; preserve delimiter names and filenames; use UTF-8; update the local README, indexes, audit trail, and gap analysis together.
-- Change record: artifact set prepared for review; executable validation evidence remains a follow-up item.
+
+- Project: project-001
+- Date: 2026-11-26
+- Scope: sections E–H covering structure, states, tokens, responsiveness, flows, and specimens.
+- Representation rationale: SVG records geometry; MMD records relationships and paths; HTML records semantic behavior; Markdown records decisions and governance.
+- Quality gate coverage: syntax, naming, state completeness, accessibility cues, responsive behavior, traceability, and publication readiness.
+- Repository path intent: `/projects/project-001/sections/{e,f,g,h}/` contains authoritative sources; previews are non-authoritative.
+- Change rule: record date, artifact, reason, and gate result for each revision.
+- Publication rule: publish only validated files with stable names and resolved references.
+- Exclusions: backend engineering, identity or entity references, workflow leakage, harmful or deceptive content, and human or anthropomorphic elements.
