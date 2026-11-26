@@ -1,58 +1,32 @@
-Project ID: project-001 | Date: 2026-11-25
+Date: 2026-11-26
+Project ID: project-001
 
-DOMINANT PATTERNS
-- Structured workspace with stable navigation, clear title, summary status, focused content, and persistent primary action.
-- Neutral surfaces, one controlled accent, restrained borders, moderate density, and consistent spacing.
-- Progressive disclosure through summaries, expandable details, inline validation, and reversible actions.
-- Responsive cards, lists, and tables that preserve hierarchy across viewport sizes.
+Dominant: clear hierarchy; modular cards and lists; persistent search; visible status; progressive disclosure; neutral surfaces with one accent.
+Emerging: command navigation; adjustable density; inline validation; resizable contextual panels; comparison-preserving detail views.
+Deprecated: decorative gradients; hidden navigation; icon-only controls; modal-first flows; color-only states; ungrouped long forms.
+Outlier: monochrome surfaces with one action color; dense data paired with reading mode; spatially flexible panels with fixed alignment anchors.
 
-EMERGING PATTERNS
-- Command-style search for navigation, filtering, and quick access.
-- Preview-before-commit with visible change summaries.
-- Semantic status tokens combining color, icon, and text.
-- Content-driven layout adaptation using flexible containers.
+Visual DNA: 8px spacing grid, 1px borders, 8–12px radius, layered neutrals, restrained accent, semantic colors reserved for states, high density with clear edge padding.
+Interactional DNA: predictable focus order, one primary action per region, progressive disclosure, inline validation, reversible actions, persistent status, keyboard-complete controls.
+Accessibility DNA: strong contrast, visible focus, text plus icon or pattern for status, 44px minimum touch target, reduced-motion option, logical headings, labels independent of placeholders.
+Responsive DNA: compact/comfortable/expanded density tiers; fluid columns; secondary rail minimum 280px; stacked narrow layouts; tables become labeled rows; actions remain reachable without horizontal scrolling.
 
-DEPRECATED PATTERNS
-- Decorative gradients without functional purpose.
-- Deep navigation trees, modal stacking, and hover-only controls.
-- Color-only status communication.
-- Persistent animation, autoplay content, and ornamental illustration.
+Candidate domains:
+1. Planning workspace — organizes goals, schedules, dependencies, and progress.
+2. Knowledge library — supports search, filtering, comparison, and reference review.
+3. Operations dashboard — presents metrics, alerts, trends, and drill-down detail.
+4. Configuration studio — supports structured setup, validation, preview, and controlled release.
+5. Learning catalog — organizes modules, prerequisites, progress, and review paths.
+6. Inventory catalog — supports item discovery, comparison, status, and grouped actions.
 
-OUTLIER PATTERNS
-- Split-pane comparison for review-heavy contexts.
-- Timeline or dependency views where sequence is primary.
-- Monochrome interfaces with a single high-salience exception state.
-- Keyboard-first command surfaces for expert operation.
+Weighted matrix: weights = clarity 25, extensibility 20, accessibility 20, responsive fit 15, distinctiveness 10, interaction safety 10; scores 1–5; total shown as /100.
+Planning workspace: 4,5,4,5,4,4 = 86
+Knowledge library: 5,5,5,4,3,5 = 91
+Operations dashboard: 4,4,4,4,5,3 = 79
+Configuration studio: 4,5,4,4,4,4 = 84
+Learning catalog: 4,4,5,5,3,5 = 84
+Inventory catalog: 4,4,4,4,4,4 = 80
 
-EXTRACTED DNA
-Visual: neutral surfaces, 8px spacing base, 1px dividers, 10–14px radius, one accent family, high-contrast text, restrained elevation.
-Interactional: direct manipulation, predictable focus order, explicit confirmation for consequential actions, undo or cancel where practical, and visible empty, loading, and error states.
-Accessibility: WCAG 2.2 AA target, 4.5:1 body-text contrast, 3:1 large-text and graphical contrast, 44px minimum touch target, keyboard parity, reduced-motion support, semantic labels, and no color-only meaning.
-Responsive: mobile-first priority, single-column layout below 720px, two-column composition from 960px, capped reading width, stacked replacement for wide tables, and persistent primary action.
-
-CANDIDATE PRODUCT DOMAINS
-- Operational planning: organizes time-bound items, priorities, dependencies, and progress.
-- Resource inventory: tracks categorized records, availability, condition, and movement.
-- Knowledge reference: structures indexed content, summaries, relationships, and revisions.
-- Financial overview: presents categorized values, trends, thresholds, and period comparisons.
-- Quality monitoring: surfaces measurements, deviations, thresholds, and review states.
-- Configuration catalog: presents reusable settings, versions, validation, and publication states.
-
-WEIGHTED SCORING MATRIX
-Weights: clarity 25, reuse 25, responsive fit 20, accessibility fit 15, distinction 15. Scores 1–5; total = weighted score / 5.
-Domain                    Clarity Reuse Responsive Access Distinction Total
-Operational planning          5      5       5         5        4       4.85
-Resource inventory            5      5       4         5        3       4.55
-Knowledge reference           4      5       5         5        3       4.40
-Financial overview            4      4       4         5        4       4.15
-Quality monitoring            4      4       5         4        4       4.20
-Configuration catalog         4      5       4         4        4       4.25
-
-SELECTED DOMAIN RATIONALE
-Operational planning offers the strongest combination of hierarchy, status visibility, filtering, chronology, responsive transformation, and reusable interaction patterns while remaining generic and neutral.
-
-CYCLE LOCK
-Lock operational planning as the reference domain for 2026-11-25 and project-001. Preserve the extracted DNA, scoring weights, and selected rationale for this cycle.
-
-FALLBACK RULE
-If the selected domain fails neutrality, accessibility, or responsive validation, use resource inventory without changing the extracted DNA.
+Selected domain rationale: Knowledge library scores highest overall and exercises retrieval, filtering, comparison, metadata, detail, empty, and responsive states without requiring specialized assumptions.
+Cycle lock: selected domain, neutral DNA, accessibility baseline, responsive tiers, and direction criteria are locked for 2026-11-26.
+Fallback rule: if the selected domain requires repeated exceptions to the DNA or accessibility baseline, use Planning workspace with the same criteria and visual system.
