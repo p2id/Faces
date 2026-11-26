@@ -1,16 +1,19 @@
 flowchart TD
-  A[Overview] --> B{Available content?}
-  B -- Yes --> C[Open detail]
-  B -- No --> D[Show empty guidance]
-  C --> E{Input valid?}
-  E -- No --> F[Show inline correction]
-  F --> C
-  E -- Yes --> G[Confirm action]
-  G --> H{Accepted?}
-  H -- Yes --> I[Show completion]
-  H -- No --> J[Show recoverable error]
-  J --> C
-Rationale: The flow covers entry, validation, confirmation, completion, empty content, and recovery without implementation detail.
-Quality gates: every branch has feedback; invalid input is preserved; completion differs from progress; recovery returns to a safe prior state; sequence is keyboard-compatible.
-Path intent: repository/design/2026-11-25/project-001/flows.mmd.
-Publishing rule: use stable node names, literal labels, and no implementation dependencies.
+  A[Entry] --> B[View overview]
+  B --> C{Choose action}
+  C --> D[Edit or configure]
+  C --> E[Review details]
+  D --> F{Valid state?}
+  F -->|No| G[Show local correction]
+  G --> D
+  F -->|Yes| H[Confirm change]
+  H --> I[Show completed state]
+  E --> J[Return to overview]
+  I --> J
+  J --> B
+
+Rationale: The path covers orientation, action, validation, confirmation, completion, and return.
+Quality gates: each action has a destination; invalid states have local guidance; completion differs from progress; return is available.
+Repository intent: /projects/project-001/sections/h/flows.mmd is the canonical interaction narrative.
+Writing rule: use short neutral verbs and one outcome per node.
+Publishing rule: publish only when node names match the state matrix and responsive behavior is documented.
