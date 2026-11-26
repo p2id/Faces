@@ -1,10 +1,20 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 300" role="img" aria-label="Generic responsive layout guidance">
-<title>project-001 responsive layouts</title>
-<g fill="none" stroke="#243447" stroke-width="2"><rect x="20" y="25" width="180" height="240" rx="10" fill="#f7f9fb"/><rect x="240" y="25" width="280" height="240" rx="10" fill="#f7f9fb"/><rect x="560" y="25" width="320" height="240" rx="10" fill="#f7f9fb"/><path d="M42 70h136M42 96h136M42 122h136M262 70h236M262 96h236M262 122h236M582 70h276M582 96h276M582 122h276"/><rect x="42" y="150" width="136" height="70" rx="6"/><rect x="262" y="150" width="108" height="70" rx="6"/><rect x="390" y="150" width="108" height="70" rx="6"/><rect x="582" y="150" width="126" height="70" rx="6"/><rect x="732" y="150" width="126" height="70" rx="6"/></g>
-<g font-family="sans-serif" font-size="14" fill="#243447" text-anchor="middle"><text x="110" y="51">Compact</text><text x="380" y="51">Medium</text><text x="720" y="51">Wide</text></g>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 460" role="img" aria-label="Generic responsive layout model">
+<title>Generic responsive layout model</title>
+<g fill="#f7f8fa" stroke="#9aa6b2">
+<rect x="24" y="32" width="240" height="360" rx="10"/>
+<rect x="288" y="32" width="384" height="360" rx="10"/>
+<rect x="696" y="32" width="240" height="360" rx="10"/>
+</g>
+<g fill="#dde3ea">
+<rect x="48" y="72" width="192" height="34" rx="5"/><rect x="48" y="128" width="192" height="120" rx="5"/><rect x="48" y="270" width="192" height="80" rx="5"/>
+<rect x="312" y="72" width="336" height="34" rx="5"/><rect x="312" y="128" width="336" height="120" rx="5"/><rect x="312" y="270" width="160" height="80" rx="5"/><rect x="488" y="270" width="160" height="80" rx="5"/>
+<rect x="720" y="72" width="192" height="34" rx="5"/><rect x="720" y="128" width="120" height="222" rx="5"/><rect x="856" y="128" width="56" height="222" rx="5"/>
+</g>
+<g font-family="sans-serif" font-size="14" fill="#263238">
+<text x="48" y="56">Compact</text><text x="312" y="56">Medium</text><text x="720" y="56">Wide</text>
+<text x="48" y="378">Stacked regions</text><text x="312" y="378">Split utility areas</text><text x="720" y="378">Persistent context rail</text>
+</g>
 </svg>
-Rationale: Content reflows before shrinking and preserves primary actions without device-specific assumptions.
-Rules: compact uses one column; medium may use two regions; wide uses bounded content and an optional secondary region; targets are at least 40px; primary content does not scroll horizontally.
-Quality gates: test 320px, 768px, 1280px, 200% zoom, focus order, overflow, and reduced motion.
-Path intent: repository/design/2026-11-25/project-001/responsive.svg.
-Publishing rule: include breakpoint evidence and document exceptions.
+Rationale: Layout behavior is defined by available space rather than device labels.
+Quality gates: no horizontal overflow; primary content precedes secondary content; controls remain reachable at every width.
+Repository intent: /projects/project-001/sections/g/responsive.svg records layout intent; consuming specifications define exact measurements.
