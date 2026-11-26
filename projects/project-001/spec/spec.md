@@ -1,23 +1,34 @@
-Project: project-001
-Date: 2026-11-25
+Scope: Generic, neutral product experience.
+Date: 2026-11-26.
+Project: project-001.
 
 Surfaces:
-- Overview workspace: summary, controls, item collection, detail view.
-- Preferences surface: display density and layout settings.
-- Feedback surface: inline validation, banners, toasts, confirmation dialogs.
+- Overview workspace
+- Detail panel
+- Filter and search surface
+- Feedback surface
+- Confirmation dialog
 
 Sections:
-1. Header: page title “Overview”; action “Add item”.
-2. Summary: “12 items”, “3 pending”, “Updated today”.
-3. Controls: search “Search items”; filter “All statuses”; sort “Recently updated”.
-4. Collection: item title, status, description, metadata, and actions.
-5. Detail view: “Item details”, editable fields, “Save changes”.
-6. Empty state: “No items found”; “Try changing the filters or search terms.”
-7. Preferences: “Display preferences”; “Comfortable”, “Compact”, “Automatic”.
-8. Confirmation: “Discard unsaved changes?”; “Keep editing”; “Discard”.
+1. Header: “Overview”, context “Project 001”, action “Create item”.
+2. Summary: “Current status”, “12 items”, “3 require review”.
+3. Filters: “Search items”, “Status”, “Date range”, “Clear filters”.
+4. List: “Item”, “Status”, “Updated”, “Actions”.
+5. Detail: “Details”, “Configuration”, “Activity”.
+6. Actions: “Cancel”, “Save changes”.
+
+Content examples:
+- Item: “Quarterly review”
+- Status: “In review”
+- Updated: “2026-11-26”
+- Empty: “No items match the selected filters.”
+- Validation: “Enter a value before saving.”
+- Success: “Changes saved.”
+- Error: “Unable to load this section. Try again.”
+- Confirmation: “Delete this item? This action cannot be undone.”
 
 Content rules:
-- Use sentence case, concise labels, and verb-led actions.
-- Pair status color with text or an accessible description.
+- Use concise sentence case and descriptive actions.
+- Format dates as YYYY-MM-DD.
+- Pair color with text or an icon.
 - Preserve entered values after validation errors.
-- Provide recovery actions for empty, loading, and error states.
