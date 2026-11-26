@@ -1,32 +1,22 @@
-mindmap
-  root((project-001 tokens))
-    Color
-      canvas: #F7F9FB
-      surface: #FFFFFF
-      text: #17212B
-      muted: #5B6875
-      accent: #2457D6
-      positive: #167A52
-      critical: #B42318
-      border: #CBD5E1
-    Type
-      family: system sans
-      body: 1rem/1.5
-      label: .875rem/1.25
-      heading: 1.5rem/1.2
-    Space
-      unit: 4px
-      control: 40px
-      panel: 24px
-      section: 32px
-    Shape
-      radius-sm: 6px
-      radius-md: 10px
-      focus-ring: 2px
-    Motion
-      duration: 160ms
-      easing: ease-out
-Rationale: Semantic tokens reduce visual drift and support responsive reuse.
-Quality gates: names are semantic; contrast intent meets WCAG AA; repeated values use tokens; reduced motion is defined.
-Path intent: repository/design/2026-11-25/project-001/tokens.mmd.
-Publishing rule: token changes require impact notes and updated specimens.
+flowchart LR
+  F[Foundation] --> S[Semantic]
+  S --> C[Component]
+  F --> F1[Color]
+  F --> F2[Type]
+  F --> F3[Space]
+  F --> F4[Shape]
+  S --> S1[Surface]
+  S --> S2[Content]
+  S --> S3[Action]
+  S --> S4[Status]
+  C --> C1[Control]
+  C --> C2[Field]
+  C --> C3[Panel]
+  C --> C4[Notice]
+
+Documentation: Foundation values are raw; semantic values express purpose; component values express local usage.
+Rationale: Layering supports consistency and controlled reuse.
+Quality gates: every reference resolves; component definitions use semantic tokens; names use lowercase dot notation; contrast remains reviewable.
+Repository intent: /projects/project-001/sections/f/token-map.mmd is authoritative.
+Writing rule: describe purpose and usage, not implementation detail.
+Publishing rule: publish only validated names with project id and date metadata.
