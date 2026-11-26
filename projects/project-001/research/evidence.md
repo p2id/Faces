@@ -1,9 +1,8 @@
-SUPPORTING EVIDENCE SUMMARY
-- Stable navigation, titles, summaries, and primary actions support rapid orientation.
-- Cards, lists, and tables adapt effectively from multi-column desktop layouts to stacked mobile records.
-- Neutral surfaces and one accent establish hierarchy without requiring brand-specific assets.
-- Progressive disclosure reduces initial density while preserving detail access.
-- Visible focus, semantic status text, keyboard parity, and reduced-motion support improve accessibility robustness.
-- Operational planning scored highest because it exercises prioritization, status, filtering, chronology, dependencies, empty states, and responsive reflow.
-- Resource inventory is a suitable fallback because its record, category, status, and search structures are broadly reusable.
-- Confidence: high for layout and accessibility DNA; medium for domain selection; low transfer risk.
+Supporting evidence summary:
+- Reusable interface conventions favor hierarchy, modular content, visible state, and progressive disclosure.
+- List, card, and split-panel structures support scanning, comparison, and contextual detail.
+- Neutral palettes reduce semantic ambiguity; one accent improves action prioritization.
+- Contrast, focus treatment, touch targets, text alternatives, and reduced motion form the baseline quality set.
+- Responsive quality improves when content reflows by priority instead of merely shrinking.
+- Knowledge-library behavior provides the broadest reusable test surface for search, filters, metadata, comparison, detail, and empty states.
+- Confidence: directional and suitable for the initial cycle; validate against later content requirements.
