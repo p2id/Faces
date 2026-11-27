@@ -1,22 +1,25 @@
-Component inventory:
-- App shell: loading, ready, empty, error, offline, disabled.
-- Header/navigation: default, active, collapsed, expanded, focus, disabled.
-- Button: default, hover, pressed, focus-visible, loading, disabled, destructive.
-- Text input: empty, filled, hover, focus, valid, invalid, disabled, read-only.
-- Select: closed, open, empty, selected, focus, invalid, disabled.
-- Date field: empty, filled, open, selected, invalid, disabled.
-- Checkbox: unchecked, checked, indeterminate, focus, invalid, disabled.
-- Radio group: unselected, selected, focus, invalid, disabled.
-- Tabs: inactive, active, hover, focus, disabled.
-- Filter bar: default, applied, expanded, collapsed, loading, empty.
-- List/table: loading, populated, empty, filtered-empty, error, selected, focus.
-- Row menu: closed, open, focus, disabled.
-- Card/panel: default, hover, selected, loading, error, disabled.
-- Status badge: neutral, positive, caution, negative, informative, disabled.
-- Alert/banner: info, success, warning, error, dismissible, persistent.
-- Dialog: closed, opening, open, submitting, validation-error, success, error.
-- Tooltip: hidden, visible, delayed, keyboard-visible.
-- Pagination: first, middle, last, disabled, loading.
-- Skeleton: visible, resolved, error.
-- Toast: entering, visible, exiting, dismissed.
-- Link: default, hover, visited, focus, disabled.
+component_inventory:
+- app_shell: default, loading, error, empty, success
+- navigation_item: default, hover, focus-visible, active, disabled
+- button: default, hover, focus-visible, active, disabled, loading, success, error
+- text_input: empty, filled, hover, focus-visible, disabled, loading, error, success
+- select: closed, open, hover, focus-visible, disabled, loading, error
+- checkbox: unchecked, checked, indeterminate, hover, focus-visible, disabled, error
+- tab: inactive, hover, focus-visible, active, disabled
+- card: default, hover, focus-visible, selected, disabled, loading, error
+- table: default, loading, empty, error
+- pagination: default, hover, focus-visible, active, disabled
+- toast: info, success, warning, error, dismissed
+- modal: closed, open, loading, error, success
+
+state_rules:
+- default: normal emphasis and available interaction
+- hover: subtle surface or border change; never the sole status signal
+- focus-visible: visible 2px focus ring with offset
+- active: pressed treatment during activation
+- disabled: reduced emphasis and no action
+- loading: preserve geometry, expose progress, prevent duplicate activation
+- error: semantic color plus text or icon label
+- empty: explain absence and provide a relevant next action
+- success: confirm completion with persistent inline text or status message
+- selected, checked, indeterminate: visible mark plus programmatic state
