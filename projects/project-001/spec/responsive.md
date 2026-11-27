@@ -1,19 +1,21 @@
-Breakpoints:
-- xs: 0–479px
-- sm: 480–767px
-- md: 768–1023px
-- lg: 1024–1279px
-- xl: 1280px and above
+breakpoints:
+- compact: 0-599px
+- medium: 600-959px
+- expanded: 960-1279px
+- wide: 1280px+
 
-Rules:
-- Content max-width: 1200px; use fluid widths.
-- xs: 16px gutters, one column, stacked actions, full-width controls, cards instead of tables.
-- sm: 20px gutters, wrapped filters, two-column summary when space permits.
-- md: 24px gutters, optional persistent navigation, list and detail may share a row.
-- lg: 32px gutters, two-column workspace, detail panel max-width 400px.
-- xl: 40px outer gutters; retain 1200px content cap.
-- Maintain 44px minimum targets.
-- Wrap text; never clip essential labels or status.
-- Preserve action order: primary, secondary, destructive.
-- Use bottom sheets below 480px and centered dialogs from 768px.
-- Respect zoom, text enlargement, and reduced-motion preferences.
+responsive_rules:
+- Use mobile-first styles.
+- Content padding: 16px compact, 24px medium, 32px expanded and wide.
+- Shell: one column compact; two-region layout expanded and wide.
+- Navigation: collapse secondary links compact; retain the current location label.
+- Grid: one column compact, two medium, three expanded, four wide.
+- Card minimum width: 240px.
+- Filters: stacked compact; inline medium and above.
+- Tables: transform to labeled cards below 600px when relationships remain clear.
+- Actions: full-width compact; inline and right-aligned expanded and wide.
+- Dialogs: full-height with 16px inset compact; max-width 560px medium and above.
+- Typography: display 28/34 compact; 36/44 expanded; body 16/24 all sizes.
+- Targets: minimum 44x44px at every breakpoint.
+- Overflow: wrap labels; use horizontal scrolling only for genuinely tabular content.
+- Never rely on hover-only actions or conceal essential content through truncation.
