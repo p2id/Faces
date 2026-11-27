@@ -1,132 +1,107 @@
 meta:
-  project: project-001
-  date: 2026-11-26
+  projectId: project-001
+  date: 2026-11-27
 color:
-  surface:
-    canvas: "{color.neutral.0}"
-    default: "{color.neutral.50}"
-    raised: "{color.neutral.0}"
-    muted: "{color.neutral.100}"
-    inverse: "{color.neutral.900}"
-  content:
-    primary: "{color.neutral.900}"
-    secondary: "{color.neutral.600}"
-    muted: "{color.neutral.500}"
-    inverse: "{color.neutral.0}"
-    link: "{color.blue.700}"
+  background:
+    canvas: "#FFFFFF"
+    surface: "#F7F8FA"
+    raised: "#FFFFFF"
+    inverse: "#17202A"
+  text:
+    primary: "#17202A"
+    secondary: "#52606D"
+    muted: "#6B7785"
+    inverse: "#FFFFFF"
+    link: "#2457C5"
   border:
-    default: "{color.neutral.300}"
-    strong: "{color.neutral.500}"
-    focus: "{color.blue.600}"
+    default: "#D9E0E7"
+    strong: "#AEB8C4"
+    focus: "#2457C5"
+  accent:
+    primary: "#2457C5"
+    hover: "{color.accent.pressed}"
+    pressed: "#19439A"
   status:
-    positive: "{color.green.700}"
-    caution: "{color.amber.700}"
-    negative: "{color.red.700}"
-    informative: "{color.blue.700}"
-  neutral:
-    "0": "#FFFFFF"
-    "50": "#F8FAFC"
-    "100": "#F1F5F9"
-    "300": "#CBD5E1"
-    "500": "#64748B"
-    "600": "#475569"
-    "900": "#0F172A"
-  blue:
-    "600": "#2563EB"
-    "700": "#1D4ED8"
-  green:
-    "700": "#15803D"
-  amber:
-    "700": "#B45309"
-  red:
-    "700": "#B91C1C"
+    info: "#2457C5"
+    success: "#18794E"
+    warning: "#A15C00"
+    error: "#B42318"
 typography:
-  family:
-    base: "system-ui, sans-serif"
+  fontFamily:
+    sans: "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif"
+    mono: "ui-monospace, SFMono-Regular, Menlo, monospace"
   size:
-    body: "1rem"
-    small: "0.875rem"
-    heading: "1.5rem"
+    xs: "12px"
+    sm: "14px"
+    md: "16px"
+    lg: "20px"
+    xl: "28px"
+    display: "36px"
+  lineHeight:
+    tight: "1.2"
+    normal: "1.5"
+    relaxed: "1.7"
   weight:
-    regular: "400"
-    medium: "500"
-    bold: "700"
-  line:
-    body: "1.5"
-    heading: "1.25"
+    regular: 400
+    medium: 500
+    semibold: 600
+    bold: 700
 spacing:
-  "0": "0"
-  "1": "0.25rem"
-  "2": "0.5rem"
-  "3": "0.75rem"
-  "4": "1rem"
-  "6": "1.5rem"
-  "8": "2rem"
-  "12": "3rem"
+  "0": "0px"
+  "1": "4px"
+  "2": "8px"
+  "3": "12px"
+  "4": "16px"
+  "5": "20px"
+  "6": "24px"
+  "8": "32px"
+  "10": "40px"
+  "12": "48px"
 radius:
-  sm: "0.25rem"
-  md: "0.5rem"
-  lg: "0.75rem"
+  sm: "4px"
+  md: "8px"
+  lg: "12px"
   pill: "999px"
 border:
-  width:
-    default: "1px"
-    strong: "2px"
-  style: solid
+  thin: "1px"
+  focus: "2px"
 shadow:
   none: "none"
-  sm: "0 1px 2px rgb(15 23 42 / 0.08)"
-  md: "0 4px 12px rgb(15 23 42 / 0.12)"
+  sm: "0 1px 2px rgb(23 32 42 / 0.08)"
+  md: "0 4px 12px rgb(23 32 42 / 0.12)"
 opacity:
-  disabled: "0.5"
-  overlay: "0.6"
-  subtle: "0.72"
+  disabled: 0.48
+  muted: 0.72
+  overlay: 0.56
 motion:
   duration:
-    fast: "100ms"
-    base: "200ms"
-    slow: "300ms"
+    fast: "120ms"
+    normal: "200ms"
+    slow: "320ms"
   easing:
     standard: "cubic-bezier(0.2, 0, 0, 1)"
+    enter: "cubic-bezier(0, 0, 0.2, 1)"
   reduced: "0ms"
 layout:
-  content:
-    max: "1200px"
-  gutter:
-    xs: "1rem"
-    sm: "1.25rem"
-    md: "1.5rem"
-    lg: "2rem"
-    xl: "2.5rem"
+  contentMax: "1200px"
+  gutterCompact: "{spacing.4}"
+  gutterExpanded: "{spacing.8}"
+  gridGap: "{spacing.6}"
 size:
-  target:
-    min: "44px"
-  control:
-    height: "40px"
-  icon:
-    sm: "16px"
-    md: "20px"
-    lg: "24px"
+  controlHeight: "44px"
+  iconSm: "16px"
+  iconMd: "20px"
+  iconLg: "24px"
+  badge: "32px"
 zIndex:
-  base: "0"
-  sticky: "10"
-  dropdown: "20"
-  overlay: "30"
-  dialog: "40"
-  toast: "50"
+  base: 0
+  sticky: 10
+  dropdown: 20
+  overlay: 30
+  toast: 40
 state:
-  hover:
-    surface: "{color.neutral.100}"
-  pressed:
-    surface: "{color.neutral.300}"
-  focus:
-    ring: "{color.blue.600}"
-  selected:
-    surface: "{color.blue.600}"
-  disabled:
-    content: "{color.neutral.500}"
-    opacity: "{opacity.disabled}"
-  error:
-    border: "{color.red.700}"
-  success:
-    content: "{color.green.700}"
+  focusRing: "0 0 0 2px {color.border.focus}"
+  disabledTextOpacity: "{opacity.disabled}"
+  selectedBackground: "#EAF0FF"
+  errorBorder: "{color.status.error}"
+  successBorder: "{color.status.success}"
