@@ -1,39 +1,31 @@
-Button
-- Anatomy: label, optional icon, optional progress indicator.
-- Variants: primary, secondary, tertiary, destructive, icon-only.
-- States: default, hover, pressed, focus-visible, loading, disabled.
-- Usage: one primary action per region; label the outcome.
-- Anti-patterns: vague labels, unnamed icons, unexplained disabled actions.
-- Accessibility: native button semantics, keyboard activation, 44px target, announced loading.
+global:
+- anatomy: label or heading, content or control, optional description, status, action
+- variants: neutral, primary, quiet, destructive only when necessary
+- states: default, hover, focus-visible, active, disabled, loading, success, error, empty as applicable
+- usage: use semantic HTML, stable labels, token references, and geometry-preserving state changes
+- anti-patterns: placeholder-as-label, color-only status, clipped text, nested interactive controls, hover-only actions
+- accessibility: keyboard operation, accessible names, 44px targets, visible focus, announced status
 
-Text input
-- Anatomy: label, input, hint, error, optional count.
-- Variants: single-line, multiline, read-only.
-- States: empty, filled, focus, valid, invalid, disabled, read-only.
-- Usage: keep labels visible; use hints for format examples.
-- Anti-patterns: placeholder-only labels, color-only errors, silent value loss.
-- Accessibility: explicit label, hint/error description, announced validation.
+button:
+- anatomy: label, optional leading icon, optional trailing icon
+- variants: primary, secondary, quiet
+- states: default, hover, focus-visible, active, disabled, loading, success, error
+- usage: use one primary action per region; retain an understandable loading label
+- anti-patterns: unnamed icon-only control, ambiguous label, unexplained disabled action
+- accessibility: native button semantics, Enter and Space support, busy status while loading
 
-Select
-- Anatomy: label, trigger, value, list, hint, error.
-- Variants: single, grouped, searchable.
-- States: closed, open, empty, selected, focus, invalid, disabled.
-- Usage: use for bounded choices; show the selected value.
-- Anti-patterns: excessive lists, hidden values, unsupported custom controls.
-- Accessibility: expose expanded state, controls relationship, keyboard navigation, Escape, focus.
+input:
+- anatomy: label, field, description, error or success message
+- variants: text, search, number
+- states: empty, filled, hover, focus-visible, disabled, loading, error, success
+- usage: use a persistent label and validate after interaction or submission
+- anti-patterns: silent validation, destructive clearing, placeholder-only instructions
+- accessibility: label association, described instructions, invalid state, keyboard editing
 
-List/table
-- Anatomy: caption or heading, columns, rows, status, actions.
-- Variants: compact, standard, card-converted.
-- States: loading, populated, empty, filtered-empty, error, selected.
-- Usage: align values by type; keep row actions consistent.
-- Anti-patterns: inaccessible sorting, clipped values, color-only status.
-- Accessibility: semantic structure, row/column relationships, sort state, responsive alternative.
-
-Dialog
-- Anatomy: title, description, content, close control, actions.
-- Variants: confirmation, form, informational.
-- States: closed, opening, open, submitting, validation-error, success, error.
-- Usage: reserve for focused decisions or short tasks.
-- Anti-patterns: nested dialogs, destructive default, accidental background dismissal.
-- Accessibility: named dialog, focus trap, Escape, restoration, clear actions.
+dialog:
+- anatomy: backdrop, labelled title, body, actions, close control
+- variants: alert, form, informational
+- states: closed, open, loading, error, success
+- usage: reserve for focused decisions; provide explicit cancel behavior
+- anti-patterns: stacked dialogs, unexpected dismissal, background interaction
+- accessibility: dialog semantics, focus containment, safe Escape behavior, focus restoration
