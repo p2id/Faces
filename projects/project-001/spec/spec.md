@@ -1,34 +1,42 @@
-Scope: Generic, neutral product experience.
-Date: 2026-11-26.
-Project: project-001.
+project_id: project-001
+date: 2026-11-27
+scope: generic neutral product experience
 
-Surfaces:
-- Overview workspace
-- Detail panel
-- Filter and search surface
-- Feedback surface
-- Confirmation dialog
+surfaces:
+- application shell
+- overview surface
+- collection surface
+- detail surface
+- feedback surface
+- overlay surface
 
-Sections:
-1. Header: “Overview”, context “Project 001”, action “Create item”.
-2. Summary: “Current status”, “12 items”, “3 require review”.
-3. Filters: “Search items”, “Status”, “Date range”, “Clear filters”.
-4. List: “Item”, “Status”, “Updated”, “Actions”.
-5. Detail: “Details”, “Configuration”, “Activity”.
-6. Actions: “Cancel”, “Save changes”.
+sections:
+- header: title, navigation, utility action
+- overview: summary, metrics, filters
+- collection: search, filter, table or list, pagination
+- detail: title, metadata, grouped content, actions
+- feedback: loading, empty, success, error
+- overlay: dialog, toast, popover
 
-Content examples:
-- Item: “Quarterly review”
-- Status: “In review”
-- Updated: “2026-11-26”
-- Empty: “No items match the selected filters.”
-- Validation: “Enter a value before saving.”
-- Success: “Changes saved.”
-- Error: “Unable to load this section. Try again.”
-- Confirmation: “Delete this item? This action cannot be undone.”
+real_content_examples:
+- title: "Overview"
+- summary: "Review current activity and recent changes."
+- metric: "Active items — 24"
+- search_label: "Search items"
+- filter_label: "Status"
+- filter_value: "All statuses"
+- primary_action: "Create item"
+- secondary_action: "Export list"
+- empty_title: "No items found"
+- empty_body: "Adjust the search or filters and try again."
+- error_message: "Content could not be loaded. Try again."
+- success_message: "Changes saved."
+- cancel_action: "Cancel"
+- confirm_action: "Confirm"
 
-Content rules:
-- Use concise sentence case and descriptive actions.
-- Format dates as YYYY-MM-DD.
-- Pair color with text or an icon.
-- Preserve entered values after validation errors.
+content_rules:
+- Use sentence case and concise labels.
+- Use explicit action verbs.
+- Do not imply urgency without evidence.
+- Preserve meaning at narrow widths and increased text size.
+- Keep labels stable across surfaces.
