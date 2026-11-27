@@ -1,5 +1,4 @@
-Selected direction: Direction B.
-Rationale: Best fit for the Knowledge library domain and priorities of retrieval, filtering, scanning, comparison, accessibility, and responsive reflow.
-Decision weights: clarity 30%, accessibility 25%, responsive fit 20%, extensibility 15%, visual restraint 10%.
-Cycle status: Locked for 2026-11-26.
-Fallback: Use Direction A when sustained reading dominates; use Direction C when structured editing dominates.
+SELECTED: Direction A.
+RATIONALE: Provides the strongest balance of clarity, accessibility, responsive resilience, and neutral reuse for the selected Planning workspace domain.
+SECONDARY_OPTIONS: Direction B for sequence-led content; Direction C for precision-led configuration.
+DECISION_RULE: Retain Direction A unless compact validation fails or evidence shows that ordered content or configuration controls dominate the experience.
