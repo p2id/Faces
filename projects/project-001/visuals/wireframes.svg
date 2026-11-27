@@ -1,32 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 560" role="img" aria-label="Generic product layout wireframe">
-<title>Generic product layout wireframe</title>
-<rect width="960" height="560" fill="#f7f8fa"/>
-<g fill="#fff" stroke="#cbd2db">
-<rect x="24" y="24" width="912" height="64" rx="8"/>
-<rect x="24" y="112" width="216" height="404" rx="8"/>
-<rect x="264" y="112" width="432" height="192" rx="8"/>
-<rect x="728" y="112" width="208" height="192" rx="8"/>
-<rect x="264" y="328" width="672" height="188" rx="8"/>
-</g>
-<g fill="#dde3ea">
-<rect x="48" y="45" width="128" height="18" rx="4"/>
-<rect x="792" y="45" width="112" height="18" rx="4"/>
-<rect x="48" y="144" width="144" height="14" rx="3"/>
-<rect x="48" y="180" width="160" height="12" rx="3"/>
-<rect x="288" y="144" width="220" height="22" rx="4"/>
-<rect x="288" y="184" width="360" height="12" rx="3"/>
-<rect x="752" y="144" width="120" height="18" rx="4"/>
-<rect x="752" y="184" width="144" height="12" rx="3"/>
-<rect x="288" y="360" width="240" height="18" rx="4"/>
-<rect x="288" y="400" width="584" height="12" rx="3"/>
-</g>
-<g font-family="sans-serif" font-size="12" fill="#52606d">
-<text x="48" y="136">NAVIGATION</text>
-<text x="288" y="136">PRIMARY CONTENT</text>
-<text x="752" y="136">CONTEXT PANEL</text>
-<text x="288" y="352">SECONDARY CONTENT</text>
-</g>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" role="img" aria-label="Generic product experience wireframe">
+<title>Generic product experience wireframe</title>
+<g fill="none" stroke="#334155" stroke-width="2"><rect x="24" y="24" width="912" height="64" rx="8"/><rect x="24" y="104" width="216" height="404" rx="8"/><rect x="264" y="104" width="432" height="404" rx="8"/><rect x="730" y="104" width="206" height="190" rx="8"/><rect x="730" y="310" width="206" height="198" rx="8"/><rect x="48" y="128" width="168" height="18" rx="4"/><rect x="48" y="168" width="120" height="12" rx="4"/><rect x="48" y="198" width="144" height="12" rx="4"/><rect x="288" y="128" width="280" height="24" rx="4"/><rect x="288" y="174" width="368" height="16" rx="4"/><rect x="288" y="210" width="368" height="118" rx="6"/><rect x="288" y="352" width="176" height="112" rx="6"/><rect x="480" y="352" width="176" height="112" rx="6"/><rect x="754" y="128" width="158" height="24" rx="4"/><rect x="754" y="174" width="134" height="12" rx="4"/><rect x="754" y="220" width="142" height="38" rx="6"/><rect x="754" y="334" width="158" height="20" rx="4"/><rect x="754" y="374" width="142" height="12" rx="4"/><rect x="754" y="404" width="142" height="12" rx="4"/></g>
+<g fill="#64748b" font-family="sans-serif" font-size="14"><text x="48" y="64">Product surface</text><text x="48" y="486">Navigation</text><text x="288" y="486">Primary content</text><text x="754" y="278">Context panel</text><text x="754" y="492">Secondary panel</text></g>
 </svg>
-Rationale: Low-fidelity geometry establishes hierarchy and regions before visual refinement.
-Quality gates: valid XML, accessible title and label, complete landmarks, no clipped regions.
-Repository intent: /projects/project-001/sections/e/wireframes.svg is authoritative; previews are derived.
+Rationale: Low-fidelity structure exposes hierarchy, grouping, navigation, and priority without brand-specific assumptions.
+Quality gates: valid SVG; labelled regions; logical reading order; no decorative dependency; legible from 320 to 1440 px.
+Repository intent: /projects/project-001/sections/E/wireframes.svg is the canonical structural reference.
+Writing and publishing: use short neutral labels; publish only after hierarchy, accessibility, spacing, and breakpoint checks pass.
