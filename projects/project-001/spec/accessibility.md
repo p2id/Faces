@@ -1,16 +1,16 @@
-Targets:
-- WCAG 2.2 AA.
-- Full keyboard operation and visible focus.
-- Text contrast ≥4.5:1; large text ≥3:1.
-- Non-text controls and meaningful graphics ≥3:1.
-- Interactive targets ≥44×44px.
-- Semantic header, navigation, main, aside, and footer landmarks.
-- One descriptive page heading with logical heading order.
-- Persistent visible labels for all fields; adjacent, specific errors.
-- Announce validation, async status, and toast updates with live regions.
-- Never use color alone for status, errors, or selection.
-- Dialogs provide a name, trap focus, support Escape, and restore focus.
-- Correct roles, names, values, and relationships for tables, tabs, menus, and lists.
-- Reflow at 320px CSS width; support zoom and text size to 200%.
-- Respect prefers-reduced-motion.
-- Provide accessible names for icon-only controls and meaningful alternatives for graphics.
+targets:
+- Meet WCAG 2.2 AA.
+- Use semantic HTML and logical reading and focus order.
+- Contrast: 4.5:1 normal text; 3:1 large text and graphical boundaries.
+- Focus: visible 2px ring with 3:1 contrast against adjacent colors.
+- Interactive targets: minimum 44x44px.
+- Zoom and reflow: usable at 200% zoom and 400% equivalent narrow width.
+- Motion: honor prefers-reduced-motion; never require animation to understand status.
+- Forms: persistent labels, clear instructions, associated errors, recovery guidance.
+- Status: announce loading, success, and error states without unnecessary focus changes.
+- Controls: every control has an accessible name and keyboard operation.
+- Icons: pair icon-only controls with accessible names; do not use color alone.
+- Tables: provide caption or title, header associations, and row or column context.
+- Dialogs: labelled title, focus containment, safe Escape behavior, and focus restoration.
+- Navigation: provide landmarks, current-location indication, and a skip-to-main link.
+- Content: preserve meaning when text size, contrast, or input method changes.
