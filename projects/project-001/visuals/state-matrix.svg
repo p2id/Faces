@@ -1,19 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 420" role="img" aria-label="Generic component state matrix">
-<title>Generic component state matrix</title>
-<rect width="900" height="420" fill="#fff"/>
-<g fill="none" stroke="#b8c2cc">
-<rect x="24" y="24" width="852" height="360"/>
-<path d="M24 72h852M24 124h852M24 176h852M24 228h852M24 280h852M24 332h852M240 24v360M400 24v360M560 24v360M720 24v360"/>
-</g>
-<g font-family="sans-serif" font-size="13" fill="#263238">
-<text x="40" y="56">Element</text><text x="272" y="56">Default</text><text x="432" y="56">Focus</text><text x="592" y="56">Disabled</text><text x="752" y="56">Error</text>
-<text x="40" y="106">Control</text><text x="272" y="106">Ready</text><text x="432" y="106">Focus ring</text><text x="592" y="106">Unavailable</text><text x="752" y="106">Correction</text>
-<text x="40" y="158">Field</text><text x="272" y="158">Empty/value</text><text x="432" y="158">Active</text><text x="592" y="158">Read-only</text><text x="752" y="158">Message</text>
-<text x="40" y="210">Panel</text><text x="272" y="210">Loaded</text><text x="432" y="210">Selected</text><text x="592" y="210">Unavailable</text><text x="752" y="210">Recovery</text>
-<text x="40" y="262">Notice</text><text x="272" y="262">Informative</text><text x="432" y="262">Persistent</text><text x="592" y="262">Suppressed</text><text x="752" y="262">Actionable</text>
-<text x="40" y="314">View</text><text x="272" y="314">Content</text><text x="432" y="314">Transition</text><text x="592" y="314">Unavailable</text><text x="752" y="314">Retry</text>
-</g>
-</svg>
-Rationale: Explicit states prevent default-only specifications and support predictable behavior.
-Quality gates: default, focus, disabled, and error states exist; meaning does not depend on color; recovery text is defined.
-Repository intent: /projects/project-001/sections/e/state-matrix.svg is authoritative and aligns with token and flow names.
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 420" role="img" aria-label="Generic interface state matrix">
+<g fill="none" stroke="#334155" stroke-width="2"><rect x="20" y="20" width="860" height="360" rx="8"/><path d="M20 76h860M190 20v360M360 20v360M530 20v360M700 20v360"/><path d="M20 136h860M20 196h860M20 256h860M20 316h860"/></g>
+<g fill="#334155" font-family="sans-serif" font-size="14"><text x="38" y="54">Surface</text><text x="210" y="54">Default</text><text x="380" y="54">Loading</text><text x="550" y="54">Empty</text><text x="720" y="54">Error</text><text x="38" y="112">Overview</text><text x="210" y="112">Content and actions</text><text x="380" y="112">Placeholder</text><text x="550" y="112">Guidance</text><text x="720" y="112">Recovery action</text><text x="38" y="172">Collection</text><text x="210" y="172">Rows and filters</text><text x="380" y="172">Progressive rows</text><text x="550" y="172">Create or adjust</text><text x="720" y="172">Retry and preserve input</text><text x="38" y="232">Detail</text><text x="210" y="232">Attributes and controls</text><text x="380" y="232">Stable shell</text><text x="550" y="232">Not available</text><text x="720" y="232">Inline explanation</text><text x="38" y="292">Form</text><text x="210" y="292">Editable fields</text><text x="380" y="292">Submit disabled</text><text x="550" y="292">Prompt</text><text x="720" y="292">Field correction</text><text x="38" y="352">Global</text><text x="210" y="352">Ready</text><text x="380" y="352">Busy indicator</text><text x="550" y="352">No records</text><text x="720" y="352">Non-blocking notice</text></g></svg>
+Rationale: A shared state vocabulary prevents default-only specifications and makes recovery behavior explicit.
+Quality gates: every surface covers default, loading, empty, and error; focus and disabled states are defined; recovery is reachable.
+Repository intent: /projects/project-001/sections/E/state-matrix.svg is the state coverage artifact.
+Writing and publishing: explain the condition and next action without blame or alarm; reject publication when an interactive surface lacks an empty or recovery treatment.
