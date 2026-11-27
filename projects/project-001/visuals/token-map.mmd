@@ -1,22 +1,33 @@
-flowchart LR
-  F[Foundation] --> S[Semantic]
-  S --> C[Component]
-  F --> F1[Color]
-  F --> F2[Type]
-  F --> F3[Space]
-  F --> F4[Shape]
-  S --> S1[Surface]
-  S --> S2[Content]
-  S --> S3[Action]
-  S --> S4[Status]
-  C --> C1[Control]
-  C --> C2[Field]
-  C --> C3[Panel]
-  C --> C4[Notice]
-
-Documentation: Foundation values are raw; semantic values express purpose; component values express local usage.
-Rationale: Layering supports consistency and controlled reuse.
-Quality gates: every reference resolves; component definitions use semantic tokens; names use lowercase dot notation; contrast remains reviewable.
-Repository intent: /projects/project-001/sections/f/token-map.mmd is authoritative.
-Writing rule: describe purpose and usage, not implementation detail.
-Publishing rule: publish only validated names with project id and date metadata.
+mindmap
+  root((project-001 token map))
+    Color
+      canvas: #FFFFFF
+      surface: #F8FAFC
+      text: #0F172A
+      muted: #64748B
+      accent: #2563EB
+      danger: #B91C1C
+      border: #CBD5E1
+    Type
+      family: system sans
+      scale: 12/16/20/24/32
+      line-height: 1.25-1.6
+    Space
+      unit: 4px
+      steps: 1,2,3,4,6,8,12,16
+    Shape
+      radius: 4/8/12
+      border: 1px
+    Motion
+      duration: 120-240ms
+      easing: ease-out
+      reduced-motion: none
+    Usage
+      semantic names over raw values
+      contrast AA minimum
+      no color-only meaning
+      stable focus indicator
+Rationale: Semantic tokens support consistency and future theme substitution.
+Quality gates: contrast is checked; names are reusable; raw values are not used in documented components; reduced motion is specified.
+Repository intent: /shared/standards/tokens/project-001-token-map.mmd stores the portable token map.
+Writing and publishing: document intent, value, and permitted use; use sentence case; publish changes only with contrast and regression checks.
