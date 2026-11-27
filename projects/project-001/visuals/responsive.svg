@@ -1,20 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 460" role="img" aria-label="Generic responsive layout model">
-<title>Generic responsive layout model</title>
-<g fill="#f7f8fa" stroke="#9aa6b2">
-<rect x="24" y="32" width="240" height="360" rx="10"/>
-<rect x="288" y="32" width="384" height="360" rx="10"/>
-<rect x="696" y="32" width="240" height="360" rx="10"/>
-</g>
-<g fill="#dde3ea">
-<rect x="48" y="72" width="192" height="34" rx="5"/><rect x="48" y="128" width="192" height="120" rx="5"/><rect x="48" y="270" width="192" height="80" rx="5"/>
-<rect x="312" y="72" width="336" height="34" rx="5"/><rect x="312" y="128" width="336" height="120" rx="5"/><rect x="312" y="270" width="160" height="80" rx="5"/><rect x="488" y="270" width="160" height="80" rx="5"/>
-<rect x="720" y="72" width="192" height="34" rx="5"/><rect x="720" y="128" width="120" height="222" rx="5"/><rect x="856" y="128" width="56" height="222" rx="5"/>
-</g>
-<g font-family="sans-serif" font-size="14" fill="#263238">
-<text x="48" y="56">Compact</text><text x="312" y="56">Medium</text><text x="720" y="56">Wide</text>
-<text x="48" y="378">Stacked regions</text><text x="312" y="378">Split utility areas</text><text x="720" y="378">Persistent context rail</text>
-</g>
-</svg>
-Rationale: Layout behavior is defined by available space rather than device labels.
-Quality gates: no horizontal overflow; primary content precedes secondary content; controls remain reachable at every width.
-Repository intent: /projects/project-001/sections/g/responsive.svg records layout intent; consuming specifications define exact measurements.
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 430" role="img" aria-label="Responsive layout rules">
+<g fill="none" stroke="#334155" stroke-width="2"><rect x="24" y="28" width="180" height="340" rx="8"/><rect x="230" y="28" width="300" height="340" rx="8"/><rect x="556" y="28" width="380" height="340" rx="8"/><path d="M48 82h132M48 112h92M48 160h132M48 190h108M48 238h132M48 268h82"/><path d="M254 82h252M254 118h220M254 166h252M254 206h252M254 246h118M390 246h116M254 294h252"/><path d="M580 82h332M580 126h332M580 178h156M752 178h160M580 226h332M580 274h160M752 274h160M580 322h332"/></g>
+<g fill="#334155" font-family="sans-serif" font-size="15"><text x="48" y="56">Compact · 320–599</text><text x="254" y="56">Medium · 600–1023</text><text x="580" y="56">Wide · 1024+</text><text x="24" y="402">Rules: stack regions; collapse secondary navigation; preserve the primary action; use fluid type and spacing; avoid horizontal scroll.</text></g></svg>
+Rationale: The representation communicates layout priority rather than device-specific decoration.
+Quality gates: check 320, 768, and 1440 px; support keyboard navigation and 200% zoom; preserve reflow; use touch targets of at least 44 px.
+Repository intent: /projects/project-001/sections/F/responsive.svg defines breakpoint behavior for implementation-neutral review.
+Writing and publishing: describe behavior rather than framework classes; publish with compact, medium, and wide checks.
