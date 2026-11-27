@@ -1,8 +1,7 @@
-Supporting evidence summary:
-- Reusable interface conventions favor hierarchy, modular content, visible state, and progressive disclosure.
-- List, card, and split-panel structures support scanning, comparison, and contextual detail.
-- Neutral palettes reduce semantic ambiguity; one accent improves action prioritization.
-- Contrast, focus treatment, touch targets, text alternatives, and reduced motion form the baseline quality set.
-- Responsive quality improves when content reflows by priority instead of merely shrinking.
-- Knowledge-library behavior provides the broadest reusable test surface for search, filters, metadata, comparison, detail, and empty states.
-- Confidence: directional and suitable for the initial cycle; validate against later content requirements.
+SUPPORTING_EVIDENCE_SUMMARY
+Observed evidence supports visible hierarchy, predictable actions, progressive disclosure, compact status communication, and stable responsive stacking.
+Accessibility evidence prioritizes contrast, focus visibility, semantic labels, target sizing, text-supported status, and reduced motion.
+Responsive evidence indicates that dense multi-column layouts degrade at narrow widths; stacked content and persistent primary actions are safer defaults.
+Selection evidence favors Planning workspace at 92/100 because it combines clarity, reuse, responsive fit, and visual neutrality.
+Risk evidence includes excessive density, accent overuse, modal depth, hidden controls, and decorative movement.
+Validation signals: primary action is discoverable; focus order is logical; status meaning survives grayscale; compact layouts avoid horizontal scrolling; reduced motion removes nonessential transitions.
